@@ -2415,6 +2415,804 @@
     "image": "https://www.em-c.kz/upload/resize_cache/iblock/b82/600_600_140cd750bba9870f18aada2478b24840a/b82c6cce195da933fce2eab14d79b079.jpeg"
   },
   {
+    "id": "adilet_al-01-ageratum",
+    "name": "ALDA AL-01 Агератум",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-01-ageratum/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9209_1.webp"
+  },
+  {
+    "id": "adilet_al-02-muskari",
+    "name": "ALDA AL-02 Мускари",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-02-muskari/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9210_1.webp"
+  },
+  {
+    "id": "adilet_al-03-viola",
+    "name": "ALDA AL-03 Виола",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-03-viola/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9211_1.webp"
+  },
+  {
+    "id": "adilet_al-04-shabo",
+    "name": "ALDA AL-04 Шабо",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-04-shabo/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9212_1.webp"
+  },
+  {
+    "id": "adilet_al-06-kosmeya",
+    "name": "ALDA AL-06 Космея",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-06-kosmeya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9214_1.webp"
+  },
+  {
+    "id": "adilet_al-07-obrieta",
+    "name": "ALDA AL-07 Обриета",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-07-obrieta/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9215_1.webp"
+  },
+  {
+    "id": "adilet_al-08-korall",
+    "name": "ALDA AL-08 Коралл",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/al-08-korall/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9216_1.webp"
+  },
+  {
+    "id": "adilet_alda-al-10-garvish",
+    "name": "ALDA AL-10 Гарвиш",
+    "category": "ПВХ плёнка: Solid Color",
+    "url": "https://adilet.net/all/alda-al-10-garvish/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/15526_1.webp"
+  },
+  {
+    "id": "adilet_a-001-topaz",
+    "name": "AURA A-001 Топаз",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-001-topaz/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9859_1.webp"
+  },
+  {
+    "id": "adilet_a-002-albit",
+    "name": "AURA A-002 Альбит",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-002-albit/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9860_1.webp"
+  },
+  {
+    "id": "adilet_a-004-serdolik",
+    "name": "AURA A-004 Сердолик",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-004-serdolik/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9862_1.webp"
+  },
+  {
+    "id": "adilet_a-005-morion",
+    "name": "AURA A-005 Морион",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-005-morion/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9863_1.webp"
+  },
+  {
+    "id": "adilet_a-006-oniks",
+    "name": "AURA A-006 Оникс",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-006-oniks/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9864_1.webp"
+  },
+  {
+    "id": "adilet_a-007-aleksandrit",
+    "name": "AURA A-007 Александрит",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-007-aleksandrit/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9865_1.webp"
+  },
+  {
+    "id": "adilet_a-008-sapfir",
+    "name": "AURA A-008 Сапфир",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-008-sapfir/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9866_1.webp"
+  },
+  {
+    "id": "adilet_carbon-cbr-1-egret",
+    "name": "CARBON CBR-1 Эгрет",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/carbon-cbr-1-egret/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17851_1.webp"
+  },
+  {
+    "id": "adilet_carbon-cbr-2-obsidian",
+    "name": "CARBON CBR-2 Обсидиан",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/carbon-cbr-2-obsidian/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17852_1.webp"
+  },
+  {
+    "id": "adilet_carbon-cbr-3-shejd",
+    "name": "CARBON CBR-3 Шейд",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/carbon-cbr-3-shejd/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17853_1.webp"
+  },
+  {
+    "id": "adilet_carbon-cbr-4-spejs",
+    "name": "CARBON CBR-4 Спейс",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/carbon-cbr-4-spejs/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17854_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-05-kannolo",
+    "name": "DONATA DA-05 Канноло",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-05-kannolo/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9255_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-06-kapreze",
+    "name": "DONATA DA-06 Капрезе",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-06-kapreze/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9256_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-07-kolomba",
+    "name": "DONATA DA-07 Коломба",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-07-kolomba/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9257_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-08-nochiata",
+    "name": "DONATA DA-08 Ночиата",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-08-nochiata/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9258_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-09-bushe",
+    "name": "DONATA DA-09 Буше",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-09-bushe/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9259_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-10-pandora",
+    "name": "DONATA DA-10 Пандора",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-10-pandora/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9260_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-13-spumoni",
+    "name": "DONATA DA-13 Спумони",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-13-spumoni/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9263_1.webp"
+  },
+  {
+    "id": "adilet_donata-da-14-torrone",
+    "name": "DONATA DA-14 Торроне",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/donata-da-14-torrone/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9264_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-01-regul",
+    "name": "ION IN-01 Регул",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-01-regul/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17064_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-02-spika",
+    "name": "ION IN-02 Спика",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-02-spika/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17065_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-03-kapella",
+    "name": "ION IN-03 Капелла",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-03-kapella/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17066_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-04-kanopus",
+    "name": "ION IN-04 Канопус",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-04-kanopus/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17067_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-05-fegda",
+    "name": "ION IN-05 Фегда",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-05-fegda/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17068_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-06-kastor",
+    "name": "ION IN-06 Кастор",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-06-kastor/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17069_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-07-shedar",
+    "name": "ION IN-07 Шедар",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-07-shedar/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17070_1.webp"
+  },
+  {
+    "id": "adilet_ion-in-11-shaula",
+    "name": "ION IN-11 Шаула",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ion-in-11-shaula/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17074_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-01",
+    "name": "KOMBAT MK-01 Барака",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-01/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17885_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-02",
+    "name": "KOMBAT MK-02 Горо",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-02/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17886_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-03",
+    "name": "KOMBAT MK-03 Дайро",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-03/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17887_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-04",
+    "name": "KOMBAT MK-04 Джакс",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-04/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17888_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-05",
+    "name": "KOMBAT MK-05 Дивора",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-05/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17889_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-06",
+    "name": "KOMBAT MK-06 Куанчи",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-06/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17890_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-07",
+    "name": "KOMBAT MK-07 Кейдж",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-07/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17891_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-08",
+    "name": "KOMBAT MK-08 Кабал",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/kombat-mk-08/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17892_1.webp"
+  },
+  {
+    "id": "adilet_ma-01-gejranger",
+    "name": "MARBLE MA-01 Гейрангер",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-01-gejranger/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9526_1.webp"
+  },
+  {
+    "id": "adilet_ma-02-kajlas",
+    "name": "MARBLE MA-02 Кайлас",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-02-kajlas/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9527_1.webp"
+  },
+  {
+    "id": "adilet_ma-03-rejnir",
+    "name": "MARBLE MA-03 Рейнир",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-03-rejnir/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9528_1.webp"
+  },
+  {
+    "id": "adilet_ma-05-uistler",
+    "name": "MARBLE MA-05 Уистлер",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-05-uistler/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9530_1.webp"
+  },
+  {
+    "id": "adilet_ma-09-pilatus",
+    "name": "MARBLE MA-09 Пилатус",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-09-pilatus/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9534_1.webp"
+  },
+  {
+    "id": "adilet_ma-10-krejdl",
+    "name": "MARBLE MA-10 Крейдл",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-10-krejdl/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9535_1.webp"
+  },
+  {
+    "id": "adilet_ma-11-ficroj",
+    "name": "MARBLE MA-11 Фицрой",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/ma-11-ficroj/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9536_1.webp"
+  },
+  {
+    "id": "adilet_marble-ma-21-etna",
+    "name": "MARBLE MA-21 Этна",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/marble-ma-21-etna/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17085_1.webp"
+  },
+  {
+    "id": "adilet_marble-ma-22-agilera",
+    "name": "MARBLE MA-22 Агилера",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/marble-ma-22-agilera/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17086_1.webp"
+  },
+  {
+    "id": "adilet_marble-ma-23-marra",
+    "name": "MARBLE MA-23 Марра",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/marble-ma-23-marra/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17097_1.webp"
+  },
+  {
+    "id": "adilet_marble-ma-24-kroskat",
+    "name": "MARBLE MA-24 Кроскат",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/marble-ma-24-kroskat/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17098_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-01-skafarka",
+    "name": "SHELL SH-01 Скафарка",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-01-skafarka/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17099_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-02-aulika",
+    "name": "SHELL SH-02 Аулика",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-02-aulika/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17100_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-03-galeya",
+    "name": "SHELL SH-03 Галея",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-03-galeya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17101_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-04-mureks",
+    "name": "SHELL SH-04 Мурекс",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-04-mureks/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17102_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-05-lambis",
+    "name": "SHELL SH-05 Ламбис",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-05-lambis/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17103_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-06-cipreya",
+    "name": "SHELL SH-06 Ципрея",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-06-cipreya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17104_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-07-nassa",
+    "name": "SHELL SH-07 Насса",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-07-nassa/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17105_1.webp"
+  },
+  {
+    "id": "adilet_shell-sh-08-bubles",
+    "name": "SHELL SH-08 Бублес",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/shell-sh-08-bubles/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17106_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-01-funduk",
+    "name": "ARBOR AR-01 Фундук",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-01-funduk/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16671_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-02-piniya",
+    "name": "ARBOR AR-02 Пиния",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-02-piniya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16672_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-03-pekan",
+    "name": "ARBOR AR-03 Пекан",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-03-pekan/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16673_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-04-makadami",
+    "name": "ARBOR AR-04 Макадами",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-04-makadami/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16674_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-05-betel",
+    "name": "ARBOR AR-05 Бетель",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-05-betel/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16675_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-06-keshyu",
+    "name": "ARBOR AR-06 Кешью",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-06-keshyu/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16676_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-07-chilim",
+    "name": "ARBOR AR-07 Чилим",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-07-chilim/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16677_1.webp"
+  },
+  {
+    "id": "adilet_arbor-ar-08-kanarium",
+    "name": "ARBOR AR-08 Канариум",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/arbor-ar-08-kanarium/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16678_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-01-snou",
+    "name": "ART WOOD AW-01 Сноу",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-01-snou/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9217_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-02-kejmstoun",
+    "name": "ART WOOD AW-02 Кеймстоун",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-02-kejmstoun/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9218_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-03-send",
+    "name": "ART WOOD AW-03 Сенд",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-03-send/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9219_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-05-pit",
+    "name": "ART WOOD AW-05 Пит",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-05-pit/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9221_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-06-klej",
+    "name": "ART WOOD AW-06 Клэй",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-06-klej/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9222_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-13-sirokko",
+    "name": "ART WOOD AW-13 Сирокко",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-13-sirokko/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16669_1.webp"
+  },
+  {
+    "id": "adilet_art-wood-aw-14-karif",
+    "name": "ART WOOD AW-14 Кариф",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/art-wood-aw-14-karif/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16670_1.webp"
+  },
+  {
+    "id": "adilet_be-01-ancio",
+    "name": "BELLA BE-01 Анцио",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/be-01-ancio/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9234_1.webp"
+  },
+  {
+    "id": "adilet_be-04-kapri",
+    "name": "BELLA BE-04 Капри",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/be-04-kapri/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9237_1.webp"
+  },
+  {
+    "id": "adilet_be-05-paviya",
+    "name": "BELLA BE-05 Павия",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/be-05-paviya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9238_1.webp"
+  },
+  {
+    "id": "adilet_be-07-ustika",
+    "name": "BELLA BE-07 Устика",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/be-07-ustika/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9240_1.webp"
+  },
+  {
+    "id": "adilet_be-08-fodzha",
+    "name": "BELLA BE-08 Фоджа",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/be-08-fodzha/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9241_1.webp"
+  },
+  {
+    "id": "adilet_deep-wood-dw-001-amarant",
+    "name": "DEEP WOOD DW-001 Амарант",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/deep-wood-dw-001-amarant/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9242_1.webp"
+  },
+  {
+    "id": "adilet_deep-wood-dw-002-lipa",
+    "name": "DEEP WOOD DW-002 Липа",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/deep-wood-dw-002-lipa/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9243_1.webp"
+  },
+  {
+    "id": "adilet_deep-wood-dw-004-topol",
+    "name": "DEEP WOOD DW-004 Тополь",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/deep-wood-dw-004-topol/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9245_1.webp"
+  },
+  {
+    "id": "adilet_deep-wood-dw-010-tis",
+    "name": "DEEP WOOD DW-010 Тис",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/deep-wood-dw-010-tis/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9247_1.webp"
+  },
+  {
+    "id": "adilet_deep-wood-dw-011-platan",
+    "name": "DEEP WOOD DW-011 Платан",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/deep-wood-dw-011-platan/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/9248_1.webp"
+  },
+  {
+    "id": "adilet_dream-wood-belyj-1084-w18p",
+    "name": "DREAM WOOD Белый 1084-W18P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/dream-wood-belyj-1084-w18p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16884_1.webp"
+  },
+  {
+    "id": "adilet_dream-wood-grafit-0020-w18p",
+    "name": "DREAM WOOD Графит 0020-W18P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/dream-wood-grafit-0020-w18p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16885_1.webp"
+  },
+  {
+    "id": "adilet_dream-wood-metall-0022-w18p",
+    "name": "DREAM WOOD Металл 0022-W18P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/dream-wood-metall-0022-w18p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16888_1.webp"
+  },
+  {
+    "id": "adilet_dream-wood-mokko-0010-w18p",
+    "name": "DREAM WOOD Мокко 0010-W18P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/dream-wood-mokko-0010-w18p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16889_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-19",
+    "name": "KOMBAT MK-19 Смоук",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-19/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17903_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-20",
+    "name": "KOMBAT MK-20 Соня",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-20/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17904_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-21",
+    "name": "KOMBAT MK-21 Страйкер",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-21/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17905_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-22",
+    "name": "KOMBAT MK-22 Люкан",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-22/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17906_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-23",
+    "name": "KOMBAT MK-23 ШанЦзун",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-23/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17907_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-24",
+    "name": "KOMBAT MK-24 ШаоКан",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-24/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17908_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-25",
+    "name": "KOMBAT MK-25 Шива",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-25/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17909_1.webp"
+  },
+  {
+    "id": "adilet_kombat-mk-26",
+    "name": "KOMBAT MK-26 Шинок",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/kombat-mk-26/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17910_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-01-assal",
+    "name": "RIFT RF-01 Ассаль",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-01-assal/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16890_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-02-afar",
+    "name": "RIFT RF-02 Афар",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-02-afar/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16891_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-03-garda",
+    "name": "RIFT RF-03 Гарда",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-03-garda/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16892_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-04-ghor",
+    "name": "RIFT RF-04 Гхор",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-04-ghor/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16893_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-05-danakil",
+    "name": "RIFT RF-05 Данакиль",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-05-danakil/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16894_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-07-ikariya",
+    "name": "RIFT RF-07 Икария",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-07-ikariya/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16895_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-08-lut",
+    "name": "RIFT RF-08 Лут",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-08-lut/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16896_1.webp"
+  },
+  {
+    "id": "adilet_rift-rf-09-kattara",
+    "name": "RIFT RF-09 Каттара",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/rift-rf-09-kattara/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/16897_1.webp"
+  },
+  {
+    "id": "adilet_akaciya-svetlaya-e1201-h8p",
+    "name": "Акация светлая E1201-H8P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/akaciya-svetlaya-e1201-h8p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17914_1.webp"
+  },
+  {
+    "id": "adilet_akaciya-temnaya-e1202-h8p",
+    "name": "Акация темная E1202-H8P",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/akaciya-temnaya-e1202-h8p/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17915_1.webp"
+  },
+  {
+    "id": "adilet_altajskaya-listvennica-temnaya-a2901-n9r",
+    "name": "Алтайская лиственница темная А2901-Н9Р",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/altajskaya-listvennica-temnaya-a2901-n9r/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17917_1.webp"
+  },
+  {
+    "id": "adilet_beloe-derevo-1155-bd",
+    "name": "Белое дерево 1155 BD",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/beloe-derevo-1155-bd/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17913_1.webp"
+  },
+  {
+    "id": "adilet_buk-naturalnyj-mbp-2050-2",
+    "name": "Бук натуральный MBP 2050-2",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/buk-naturalnyj-mbp-2050-2/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17918_1.webp"
+  },
+  {
+    "id": "adilet_vanilnoe-derevo-rr101",
+    "name": "Ванильное дерево РР101",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/vanilnoe-derevo-rr101/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17919_1.webp"
+  },
+  {
+    "id": "adilet_venge-1998-b",
+    "name": "Венге 1998 B",
+    "category": "ПВХ плёнка: Wood",
+    "url": "https://adilet.net/all/venge-1998-b/",
+    "image": "https://adilet.net/wp-content/uploads/rct/file/post/webp/17920_1.webp"
+  },
+  {
     "id": "fanera_03mm_2_4_k",
     "name": "Фанера 03мм 2/4 (к)",
     "category": "Фанера",
