@@ -376,64 +376,31 @@
     els.chips.appendChild(favChip);
   }
 
-  // ---- боковая шторка: категории сгруппированы по сайтам-источникам ----
+  // ---- боковая шторка: плоский список категорий ----
   function buildDrawer(){
-    var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
+    var catCounts = {};
     state.items.forEach(function(it){
-      var g = siteGroupOf(it.category);
-      if (!groups[g]) groups[g] = { cats: {}, total: 0 };
-      groups[g].total++;
-      groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
+      catCounts[it.category] = (catCounts[it.category] || 0) + 1;
     });
+    var catNames = Object.keys(catCounts).sort();
 
     els.drawerAll.className = 'drawer-item' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
     els.drawerFav.className = 'drawer-item' + (state.favOnly ? ' active' : '');
 
     els.drawerGroups.innerHTML = '';
-    SITE_ORDER.forEach(function(key){
-      var g = groups[key];
-      if (!g) return;
-      var meta = SITE_META[key] || { title: key, subtitle: '' };
-      var catNames = Object.keys(g.cats).sort();
-
-      var isExpanded = !!state.expandedGroups[key] ||
-        (!state.favOnly && catNames.indexOf(state.category) !== -1);
-
-      var groupEl = document.createElement('div');
-      groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
-      groupEl.setAttribute('data-site', key);
-
-      var header = document.createElement('div');
-      header.className = 'drawer-group-header';
-      header.innerHTML =
-        '<div><div class="drawer-group-title">' + meta.title + '</div>' +
-        '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div></div>' +
-        '<div class="drawer-group-arrow">▶</div>';
-      header.onclick = function(){
-        state.expandedGroups[key] = !isExpanded;
+    catNames.forEach(function(catName){
+      var sub = document.createElement('div');
+      sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
+      sub.innerHTML = '<span>' + catName + '</span><span class="n">' + catCounts[catName] + '</span>';
+      sub.onclick = function(){
+        state.category = catName;
+        state.favOnly = false;
+        render();
+        buildChips();
         buildDrawer();
+        closeDrawer();
       };
-      groupEl.appendChild(header);
-
-      var subitemsWrap = document.createElement('div');
-      subitemsWrap.className = 'drawer-subitems';
-      catNames.forEach(function(catName){
-        var sub = document.createElement('div');
-        sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
-        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
-        sub.onclick = function(){
-          state.category = catName;
-          state.favOnly = false;
-          render();
-          buildChips();
-          buildDrawer();
-          closeDrawer();
-        };
-        subitemsWrap.appendChild(sub);
-      });
-      groupEl.appendChild(subitemsWrap);
-
-      els.drawerGroups.appendChild(groupEl);
+      els.drawerGroups.appendChild(sub);
     });
   }
 
@@ -506,14 +473,16 @@
 
       var thumbWrap = document.createElement('div');
       thumbWrap.className = 'thumb-wrap';
-      if (item.image) {
+      var thumbSrc = (Array.isArray(item.images) && item.images[0]) ? item.images[0] : item.image;
+      if (thumbSrc) {
         thumbWrap.classList.add('skeleton');
         var img = document.createElement('img');
         img.loading = 'lazy';
+        img.decoding = 'async';
         img.alt = item.name;
         img.onload = function(){ img.classList.add('loaded'); thumbWrap.classList.remove('skeleton'); };
         img.onerror = function(){ thumbWrap.classList.remove('skeleton'); };
-        img.src = item.image;
+        img.src = thumbSrc;
         thumbWrap.appendChild(img);
       } else {
         var noimg = document.createElement('div');
