@@ -26,6 +26,14 @@
   }
   .search::placeholder{color:var(--hint);}
 
+  .topbar-row{display:flex;gap:8px;align-items:center;}
+  .search{flex:1;}
+  .menu-btn{
+    flex:0 0 auto;width:40px;height:40px;border-radius:10px;border:none;
+    background:var(--secbg);color:var(--text);font-size:18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+
   .chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none;}
   .chips::-webkit-scrollbar{display:none;}
   .chip{
@@ -35,6 +43,41 @@
   }
   .chip.active{background:var(--button);color:var(--button-text);}
   .chip.fav.active{background:#e0245e;color:#fff;}
+
+  /* боковая шторка с категориями по сайтам-источникам */
+  .drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;z-index:60;}
+  .drawer-overlay.open{display:block;}
+  .drawer{
+    position:fixed;top:0;left:0;bottom:0;width:84%;max-width:320px;background:var(--bg);
+    z-index:61;transform:translateX(-105%);transition:transform .25s ease;overflow-y:auto;
+    padding:16px 12px;box-shadow:2px 0 16px rgba(0,0,0,0.2);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  .drawer-title{font-size:16px;font-weight:700;}
+  .drawer-close{
+    width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
+    align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
+  }
+  .drawer-item{padding:11px 10px;border-radius:8px;cursor:pointer;font-size:14.5px;margin-bottom:2px;}
+  .drawer-item.active{background:var(--button);color:var(--button-text);}
+  .drawer-group{margin-top:8px;border-top:1px solid var(--secbg);padding-top:6px;}
+  .drawer-group-header{
+    display:flex;justify-content:space-between;align-items:center;padding:10px 10px;
+    cursor:pointer;border-radius:8px;
+  }
+  .drawer-group-title{font-weight:700;font-size:14px;}
+  .drawer-group-sub{font-weight:400;font-size:11.5px;color:var(--hint);margin-top:2px;}
+  .drawer-group-arrow{transition:transform .2s;color:var(--hint);font-size:12px;flex:0 0 auto;margin-left:8px;}
+  .drawer-group.expanded .drawer-group-arrow{transform:rotate(90deg);}
+  .drawer-subitems{max-height:0;overflow:hidden;transition:max-height .25s ease;padding-left:8px;}
+  .drawer-group.expanded .drawer-subitems{max-height:700px;}
+  .drawer-subitem{
+    display:flex;justify-content:space-between;gap:8px;padding:9px 10px;border-radius:8px;
+    font-size:13.5px;color:var(--text);cursor:pointer;
+  }
+  .drawer-subitem.active{background:var(--secbg);font-weight:600;}
+  .drawer-subitem .n{color:var(--hint);font-size:11.5px;flex:0 0 auto;}
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
@@ -91,12 +134,26 @@
 <body>
 <div id="app">
   <div class="topbar">
-    <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
+    <div class="topbar-row">
+      <button class="menu-btn" id="menuBtn" aria-label="Категории">☰</button>
+      <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
+    </div>
     <div class="chips" id="chips"></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-title">Категории</div>
+    <div class="drawer-close" id="drawerClose">✕</div>
+  </div>
+  <div class="drawer-item" id="drawerAll">Все материалы</div>
+  <div class="drawer-item" id="drawerFav">★ Избранное</div>
+  <div id="drawerGroups"></div>
 </div>
 
 <div class="viewer" id="viewer">
@@ -117,7 +174,8 @@
     category: 'Все',
     favOnly: false,
     query: '',
-    favorites: []
+    favorites: [],
+    expandedGroups: {}
   };
 
   var els = {
@@ -131,8 +189,31 @@
     vname: document.getElementById('vname'),
     vcat: document.getElementById('vcat'),
     vcopy: document.getElementById('vcopy'),
-    vclose: document.getElementById('vclose')
+    vclose: document.getElementById('vclose'),
+    menuBtn: document.getElementById('menuBtn'),
+    drawer: document.getElementById('drawer'),
+    drawerOverlay: document.getElementById('drawerOverlay'),
+    drawerClose: document.getElementById('drawerClose'),
+    drawerAll: document.getElementById('drawerAll'),
+    drawerFav: document.getElementById('drawerFav'),
+    drawerGroups: document.getElementById('drawerGroups')
   };
+
+  // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
+  // Категории неймспейсятся по префиксу названия — это позволяет добавлять
+  // новые сайты/категории в скрапере без правок фронтенда: всё, что не
+  // "ПВХ плёнка: ..." и не "Акриловый камень ...", считается материалами em-c.kz.
+  function siteGroupOf(cat){
+    if (cat.indexOf('ПВХ плёнка') === 0) return 'adilet';
+    if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
+    return 'emc';
+  }
+  var SITE_META = {
+    emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы' },
+    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ' },
+    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень' }
+  };
+  var SITE_ORDER = ['emc', 'adilet', 'interstone'];
 
   // ---- избранное: Telegram CloudStorage с фоллбеком на localStorage ----
   // CloudStorage доступен не во всех версиях клиента Telegram (и отсутствует
@@ -190,6 +271,7 @@
       .then(function(data){
         state.items = data;
         buildChips();
+        buildDrawer();
         render();
       })
       .catch(function(){
@@ -198,22 +280,37 @@
       });
   }
 
+  // Полный список категорий теперь живёт в боковой шторке (сгруппирован по
+  // сайтам-источникам, см. buildDrawer). Здесь — только быстрый доступ:
+  // "Все", активный фильтр (если выбран через шторку) и "Избранное".
   function buildChips(){
-    var cats = ['Все'];
-    state.items.forEach(function(it){ if (cats.indexOf(it.category) === -1) cats.push(it.category); });
     els.chips.innerHTML = '';
-    cats.forEach(function(cat){
-      var chip = document.createElement('div');
-      chip.className = 'chip' + (cat === state.category ? ' active' : '');
-      chip.textContent = cat;
-      chip.onclick = function(){
-        state.category = cat;
-        state.favOnly = false;
+
+    var allChip = document.createElement('div');
+    allChip.className = 'chip' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
+    allChip.textContent = 'Все';
+    allChip.onclick = function(){
+      state.category = 'Все';
+      state.favOnly = false;
+      render();
+      buildChips();
+      buildDrawer();
+    };
+    els.chips.appendChild(allChip);
+
+    if (state.category !== 'Все' && !state.favOnly) {
+      var curChip = document.createElement('div');
+      curChip.className = 'chip active';
+      curChip.textContent = state.category + '  ✕';
+      curChip.onclick = function(){
+        state.category = 'Все';
         render();
         buildChips();
+        buildDrawer();
       };
-      els.chips.appendChild(chip);
-    });
+      els.chips.appendChild(curChip);
+    }
+
     var favChip = document.createElement('div');
     favChip.className = 'chip fav' + (state.favOnly ? ' active' : '');
     favChip.textContent = '★ Избранное';
@@ -221,9 +318,98 @@
       state.favOnly = !state.favOnly;
       render();
       buildChips();
+      buildDrawer();
     };
     els.chips.appendChild(favChip);
   }
+
+  // ---- боковая шторка: категории сгруппированы по сайтам-источникам ----
+  function buildDrawer(){
+    var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
+    state.items.forEach(function(it){
+      var g = siteGroupOf(it.category);
+      if (!groups[g]) groups[g] = { cats: {}, total: 0 };
+      groups[g].total++;
+      groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
+    });
+
+    els.drawerAll.className = 'drawer-item' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
+    els.drawerFav.className = 'drawer-item' + (state.favOnly ? ' active' : '');
+
+    els.drawerGroups.innerHTML = '';
+    SITE_ORDER.forEach(function(key){
+      var g = groups[key];
+      if (!g) return;
+      var meta = SITE_META[key] || { title: key, subtitle: '' };
+      var catNames = Object.keys(g.cats).sort();
+
+      var isExpanded = !!state.expandedGroups[key] ||
+        (!state.favOnly && catNames.indexOf(state.category) !== -1);
+
+      var groupEl = document.createElement('div');
+      groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
+
+      var header = document.createElement('div');
+      header.className = 'drawer-group-header';
+      header.innerHTML =
+        '<div><div class="drawer-group-title">' + meta.title + '</div>' +
+        '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div></div>' +
+        '<div class="drawer-group-arrow">▶</div>';
+      header.onclick = function(){
+        state.expandedGroups[key] = !isExpanded;
+        buildDrawer();
+      };
+      groupEl.appendChild(header);
+
+      var subitemsWrap = document.createElement('div');
+      subitemsWrap.className = 'drawer-subitems';
+      catNames.forEach(function(catName){
+        var sub = document.createElement('div');
+        sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
+        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
+        sub.onclick = function(){
+          state.category = catName;
+          state.favOnly = false;
+          render();
+          buildChips();
+          buildDrawer();
+          closeDrawer();
+        };
+        subitemsWrap.appendChild(sub);
+      });
+      groupEl.appendChild(subitemsWrap);
+
+      els.drawerGroups.appendChild(groupEl);
+    });
+  }
+
+  function openDrawer(){
+    els.drawer.classList.add('open');
+    els.drawerOverlay.classList.add('open');
+  }
+  function closeDrawer(){
+    els.drawer.classList.remove('open');
+    els.drawerOverlay.classList.remove('open');
+  }
+
+  els.menuBtn.onclick = openDrawer;
+  els.drawerClose.onclick = closeDrawer;
+  els.drawerOverlay.onclick = closeDrawer;
+  els.drawerAll.onclick = function(){
+    state.category = 'Все';
+    state.favOnly = false;
+    render();
+    buildChips();
+    buildDrawer();
+    closeDrawer();
+  };
+  els.drawerFav.onclick = function(){
+    state.favOnly = !state.favOnly;
+    render();
+    buildChips();
+    buildDrawer();
+    closeDrawer();
+  };
 
   function matches(item){
     if (state.favOnly && state.favorites.indexOf(item.id) === -1) return false;
