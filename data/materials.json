@@ -1,5 +1,537 @@
 [
   {
+    "id": "interstone_cloudy-mount",
+    "name": "A-401 Cloudy Mount",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/cloudy-mount",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_asphalt-material",
+    "name": "A-403 Asphalt Material",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/asphalt-material",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_space-galaxy",
+    "name": "A-406 Space Galaxy",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/space-galaxy",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_cotton-wool",
+    "name": "A-410 Cotton Wool",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/cotton-wool",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_precious-stone",
+    "name": "A-411 Precious Stone",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/precious-stone",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_citron-blossom",
+    "name": "A-412 Citron Blossom",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/citron-blossom",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_historical-spot",
+    "name": "A-414 Historical Spot",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/historical-spot",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-416-visible-horizon",
+    "name": "A-416 Visible Horizon",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-416-visible-horizon",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-416%20Visible%20Horizon.jpg"
+  },
+  {
+    "id": "interstone_a-417-global-cruise",
+    "name": "A-417 Global Cruise",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-417-global-cruise",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-417%20Global%20Cruise.jpg"
+  },
+  {
+    "id": "interstone_a-419-cromium-atom",
+    "name": "A-419 Cromium Atom",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-419-cromium-atom",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-419%20Cromium%20Atom.jpg"
+  },
+  {
+    "id": "interstone_a-421-coal-mine",
+    "name": "A-421 Coal Mine",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-421-coal-mine",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-421%20Coal%20Mine%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_snow-pile",
+    "name": "A-422 Snow Pile",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/snow-pile",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-423-industrial-draft",
+    "name": "A-423 Industrial Draft",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-423-industrial-draft",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-423%20Industrial%20Draft%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_a-424-loft-design",
+    "name": "A-424 Loft Design",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-424-loft-design",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-425-urban-project",
+    "name": "A-425 Urban Project",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-425-urban-project",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/A-425%20Urban%20Project%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_a-426-onyx",
+    "name": "A-426 Onyx gravel",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-426-onyx",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-427-primo",
+    "name": "A-427 Primo",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-427-primo",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-428-andes",
+    "name": "A-428 Andes",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-428-andes",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_a-429-conrete-quartz",
+    "name": "A-429 Conrete Quartz",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/a-429-conrete-quartz",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_c-801-arezzo",
+    "name": "C-801 Arezzo",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/c-801-arezzo",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_c-802-piacenza",
+    "name": "C-802 Piacenza",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/c-802-piacenza",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_c-803-salerno",
+    "name": "C-803 Salerno",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/c-803-salerno",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_c-808-rossano",
+    "name": "C-808 Rossano",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/c-808-rossano",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/C-808-Rossano/c808%20zoom.jpg"
+  },
+  {
+    "id": "interstone_c-809-angiari",
+    "name": "C-809 Angiari",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/c-809-angiari",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/C-809%20Angiari/c%20809%202.jpg"
+  },
+  {
+    "id": "interstone_d-301-poppy-seed",
+    "name": "D-301 Poppy Seed",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-301-poppy-seed",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-301.jpg"
+  },
+  {
+    "id": "interstone_d-302-morning-coffee",
+    "name": "D-302 Morning Coffee",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-302-morning-coffee",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-302%20Morning%20Coffee.jpg"
+  },
+  {
+    "id": "interstone_d-304-ice-cream",
+    "name": "D-304 Ice-Cream",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-304-ice-cream",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-304%20Ice-Cream.jpg"
+  },
+  {
+    "id": "interstone_d-307-aspen-pie",
+    "name": "D-307 Aspen Pie",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-307-aspen-pie",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-307%20Aspen%20Pie.jpg"
+  },
+  {
+    "id": "interstone_d-308-cubic-mint",
+    "name": "D-308 Cubic Mint",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-308-cubic-mint",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-308%20Cubic%20Mint.jpg"
+  },
+  {
+    "id": "interstone_d-309-mushroom-soup",
+    "name": "D-309 Mushroom Soup",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-309-mushroom-soup",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-309%20Mushroom%20Soup.jpg"
+  },
+  {
+    "id": "interstone_d-310-herbal-ash",
+    "name": "D-310 Herbal Ash",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-310-herbal-ash",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-310%20Herbal%20Ash.jpg"
+  },
+  {
+    "id": "interstone_d-312-pietra-absorb",
+    "name": "D-312 Pietra Absorb",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-312-pietra-absorb",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-312%20Pietra%20Absorb%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_d-313-milky-way",
+    "name": "D-313 Milky Way",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-313-milky-way",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-313%20Milky%20Way%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_d-314-arctic-ice",
+    "name": "D-314 Arctic Ice",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-314-arctic-ice",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-314%20Arctic%20Ice%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_d-315-spacemen-food",
+    "name": "D-315 Spacemen Food",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-315-spacemen-food",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-315%20Spacemen%20Food%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_d-318-velvet-bean",
+    "name": "D-318 Velvet Bean",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-318-velvet-bean",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/D-318%20Velvet%20Bean%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_d-320-soil",
+    "name": "D-320 Soil",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/d-320-soil",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_e-603-snowy-moscow",
+    "name": "E-603 Snowy Moscow",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/e-603-snowy-moscow",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/E-603%20Snowy%20Moscow.jpg"
+  },
+  {
+    "id": "interstone_e-605-indian-mantra",
+    "name": "E-605 Indian Mantra",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/e-605-indian-mantra",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/E-605%20%283%29.jpg"
+  },
+  {
+    "id": "interstone_e-609-business-tokio",
+    "name": "E-609 Business Tokio",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/e-609-business-tokio",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/E-609.jpg"
+  },
+  {
+    "id": "interstone_e-618-saturn-ring",
+    "name": "E-618 Saturn Ring",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/e-618-saturn-ring",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/E-618%20Saturn%20Ring.jpg"
+  },
+  {
+    "id": "interstone_j-504-cut-diamond",
+    "name": "J-504 Cut Diamond",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/j-504-cut-diamond",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/J-504%20Cut%20Diamond.jpg"
+  },
+  {
+    "id": "interstone_j-505-pearl-necklace",
+    "name": "J-505 Pearl Necklace",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/j-505-pearl-necklace",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/J-505%20Pearl%20Necklace.jpg"
+  },
+  {
+    "id": "interstone_j-509-american-obsidian",
+    "name": "J-509 American Obsidian",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/j-509-american-obsidian",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/J-509%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_j-510-terazzo-bianco",
+    "name": "J-510 Terazzo Bianco",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/j-510-terazzo-bianco",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/J-510%20Terazzo%20Bianco%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-605-notte-bianca",
+    "name": "M-605 Notte Bianca",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-605-notte-bianca",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M%20605%20Notte%20Bianca/M%20605%20Notte%20Bianca.jpg"
+  },
+  {
+    "id": "interstone_m-610-amiata-bianca",
+    "name": "M-610 Amiata Bianca",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-610-amiata-bianca",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M%20610%20Amiata%20Bianca/M%20610%20Amiata%20Bianca.jpg"
+  },
+  {
+    "id": "interstone_m-701-hazel-flow",
+    "name": "M-701 Ð Hazel Flow",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-701-hazel-flow",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M_701_A.jpg"
+  },
+  {
+    "id": "interstone_m-703-water-weed",
+    "name": "M-703 A Water Weed",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-703-water-weed",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-703%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-704-shell-surface",
+    "name": "M-704 A Shell Surface",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-704-shell-surface",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-704%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-705-lake-coast",
+    "name": "M-705 A Lake Coast",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-705-lake-coast",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-705%20B.jpg"
+  },
+  {
+    "id": "interstone_m-706-stormy-sea",
+    "name": "M-706 A Stormy Sea",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-706-stormy-sea",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-706%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-707-noble-pearl",
+    "name": "M-707 А Noble Pearl",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-707-noble-pearl",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-707%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-708-deep-water",
+    "name": "M-708 A Deep Water",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-708-deep-water",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M_708_A.jpg"
+  },
+  {
+    "id": "interstone_m-710-float-rock",
+    "name": "M-710 A Float Rock",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-710-float-rock",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-710%20Float%20Rock%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-711-sparkling-wave",
+    "name": "M-711 A Sparkling Wave",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-711-sparkling-wave",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-711%20Sparkling%20Wave%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-712-stylish-moon",
+    "name": "M-712 A Stylish Moon",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-712-stylish-moon",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M_712_A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-713-whitesand-beach",
+    "name": "M-713 A Whitesand Beach",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-713-whitesand-beach",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-713%20Whitesand%20Beach%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-715-beton-bridge",
+    "name": "M-715 A Beton Bridge",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-715-beton-bridge",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-715%20Beton%20Bridge%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-717-shrimp-crust",
+    "name": "M-717 A Shrimp Crust",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-717-shrimp-crust",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-717%20Shrimp%20Crust%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-718-neptun-trident",
+    "name": "M-718 А Neptun Trident",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-718-neptun-trident",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-718%20Neptun%20Trident%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-719-octopus-ink",
+    "name": "M-719 А Octopus Ink",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-719-octopus-ink",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-719%20Octopus%20Ink%20side%20A%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-720-a-carrara-lunar",
+    "name": "M-720 A Carrara Lunar",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-720-a-carrara-lunar",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_m-723-a-timber-wolf",
+    "name": "M-723 A Timber Wolf",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-723-a-timber-wolf",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_m-727-a-venice",
+    "name": "M-727 A Venice",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-727-a-venice",
+    "image": "https://interstone.kz/front/img/icon/rotator-arr-left.svg"
+  },
+  {
+    "id": "interstone_m-732-marble-mirage",
+    "name": "M-732 Marble Mirage",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-732-marble-mirage",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-732%20Marble%20Mirage/M-732%20Marble%20Mirage_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_m-798-black-pearl",
+    "name": "M-798 Black Pearl",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-798-black-pearl",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/M-798-Black-Pearl/M-798-Black-Pearl_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p-104-pure-white",
+    "name": "P-104 Pure White",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-104-pure-white",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-104_N_010%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_p-107-pure-red",
+    "name": "P-107 Pure Red",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-107-pure-red",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-107-Pure-Red/P-107-Pure-Red_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p119-whale-white",
+    "name": "P-119 Whale White",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p119-whale-white",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P119%20Whale%20White/P119%20Whale%20White_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p-197-deep-sea",
+    "name": "P-197 Deep Sea",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-197-deep-sea",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-197%20Deep%20Sea/P-197%20Deep%20Sea_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p-198-mango",
+    "name": "P-198 Mango",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-198-mango",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-198-Mango/P-198-Mango_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p-199-pure-orange",
+    "name": "P-199 Pure Orange",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-199-pure-orange",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-199-Pure-Orange/P-199-Pure-Orange_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_p-427-green-lime",
+    "name": "P-427 Green Lime",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/p-427-green-lime",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/P-427-Green-Lime/P-427-Green-Lime_ZOOM.jpg"
+  },
+  {
+    "id": "interstone_s-204-creamy-sand",
+    "name": "S-204 Creamy Sand",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/s-204-creamy-sand",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/S-204%20%282%29.jpg"
+  },
+  {
+    "id": "interstone_m-724-cloud-concrete",
+    "name": "М-724 Cloud Concrete",
+    "category": "Акриловый камень GRANDEX",
+    "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-724-cloud-concrete",
+    "image": "https://interstone.kz/media/images/1280/products-gallery/Grandex/%D0%9C-724%20Cloud%20Concrete/%D0%9C-724%20Cloud%20Concrete_ZOOM.jpg"
+  },
+  {
     "id": "dvp_1_7kh2_75m_3_2mm",
     "name": "ДВП 1,7х2,75м 3,2мм",
     "category": "ДВП",
