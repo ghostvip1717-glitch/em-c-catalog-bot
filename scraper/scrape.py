@@ -17,6 +17,8 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+import scrape_adilet
+
 BASE_URL = "https://www.em-c.kz"
 
 # slug раздела -> человекочитаемое название категории
@@ -111,6 +113,14 @@ def main() -> None:
             continue
         print(f"[scrape]   найдено {len(items)} позиций", file=sys.stderr)
         all_items.extend(items)
+
+    print("[scrape] adilet.net (плёнка ПВХ)...", file=sys.stderr)
+    try:
+        adilet_items = scrape_adilet.scrape_all()
+        print(f"[scrape]   найдено {len(adilet_items)} позиций", file=sys.stderr)
+        all_items.extend(adilet_items)
+    except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
+        print(f"[scrape] ошибка при скрапинге adilet.net: {exc}", file=sys.stderr)
 
     # убираем дубликаты по id, если товар встретился в нескольких категориях
     seen = {}
