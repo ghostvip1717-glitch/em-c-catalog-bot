@@ -110,7 +110,7 @@
 <script>
 (function(){
   var tg = window.Telegram ? window.Telegram.WebApp : null;
-  if (tg) { tg.ready(); tg.expand(); }
+  if (tg) { try { tg.ready(); tg.expand(); } catch(e){} }
 
   var state = {
     items: [],
@@ -135,24 +135,41 @@
   };
 
   // ---- избранное: Telegram CloudStorage с фоллбеком на localStorage ----
+  // CloudStorage доступен не во всех версиях клиента Telegram (и отсутствует
+  // вовсе при открытии страницы вне Telegram) — вызов может синхронно кинуть
+  // исключение ("WebAppMethodUnsupported"), поэтому всё оборачиваем в try/catch.
+  function cloudStorageAvailable(){
+    return !!(tg && tg.CloudStorage && tg.isVersionAtLeast && tg.isVersionAtLeast('6.9'));
+  }
+
   function loadFavorites(cb){
-    if (tg && tg.CloudStorage) {
-      tg.CloudStorage.getItem('favorites', function(err, value){
-        if (!err && value) {
-          try { state.favorites = JSON.parse(value); } catch(e){ state.favorites = []; }
-        }
+    if (cloudStorageAvailable()) {
+      try {
+        tg.CloudStorage.getItem('favorites', function(err, value){
+          if (!err && value) {
+            try { state.favorites = JSON.parse(value); } catch(e){ state.favorites = []; }
+          }
+          cb();
+        });
+      } catch (e) {
+        loadFavoritesLocal();
         cb();
-      });
+      }
     } else {
-      try { state.favorites = JSON.parse(localStorage.getItem('favorites') || '[]'); } catch(e){ state.favorites = []; }
+      loadFavoritesLocal();
       cb();
     }
   }
 
+  function loadFavoritesLocal(){
+    try { state.favorites = JSON.parse(localStorage.getItem('favorites') || '[]'); } catch(e){ state.favorites = []; }
+  }
+
   function saveFavorites(){
     var json = JSON.stringify(state.favorites);
-    if (tg && tg.CloudStorage) {
-      tg.CloudStorage.setItem('favorites', json, function(){});
+    if (cloudStorageAvailable()) {
+      try { tg.CloudStorage.setItem('favorites', json, function(){}); }
+      catch (e) { localStorage.setItem('favorites', json); }
     } else {
       localStorage.setItem('favorites', json);
     }
@@ -276,10 +293,14 @@
   function copyText(text){
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function(){
-        if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('success');
-        if (tg && tg.showPopup) {
-          tg.showPopup({ message: 'Скопировано: ' + text });
-        }
+        try { if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('success'); } catch(e){}
+        try {
+          if (tg && tg.showPopup && tg.isVersionAtLeast && tg.isVersionAtLeast('6.2')) {
+            tg.showPopup({ message: 'Скопировано: ' + text });
+          } else {
+            alert('Скопировано: ' + text);
+          }
+        } catch(e){ alert('Скопировано: ' + text); }
       });
     }
   }
