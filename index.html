@@ -95,7 +95,6 @@
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;border-top:3px solid transparent;
-    box-shadow:0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
     transition:transform .12s ease;
   }
   .card:active{transform:scale(0.97);}
@@ -147,17 +146,30 @@
     opacity:0;pointer-events:none;transition:opacity .2s ease;
   }
   .viewer.open{opacity:1;pointer-events:auto;}
-  .viewer img{
+  .vswipe{width:100%;display:flex;align-items:center;justify-content:center;max-height:70vh;overflow:hidden;position:relative;}
+  .vswipe img{
     max-width:100%;max-height:70vh;border-radius:8px;object-fit:contain;
-    transform:scale(.96);transition:transform .2s ease;
+    transform:scale(.96);transition:transform .2s ease;user-select:none;-webkit-user-drag:none;
   }
-  .viewer.open img{transform:scale(1);}
-  .viewer .vname{color:#fff;font-size:15px;margin-top:14px;text-align:center;}
+  .viewer.open .vswipe img{transform:scale(1);}
+  .vdots{display:flex;gap:6px;justify-content:center;margin-top:10px;min-height:14px;}
+  .vdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
+  .vdot.active{background:#fff;transform:scale(1.2);}
+  .vnav{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 6px;pointer-events:none;}
+  .vnavbtn{
+    background:rgba(0,0,0,0.45);border:none;color:#fff;font-size:28px;
+    width:40px;height:40px;border-radius:50%;cursor:pointer;pointer-events:auto;
+    display:flex;align-items:center;justify-content:center;line-height:1;
+    transition:background .15s,opacity .2s;flex:0 0 auto;
+  }
+  .vnavbtn:active{background:rgba(0,0,0,0.75);}
+  .vnavbtn.hidden{opacity:0;pointer-events:none;}
+  .viewer .vname{color:#fff;font-size:15px;margin-top:12px;text-align:center;}
   .viewer .vcat{color:#bbb;font-size:12px;margin-top:4px;}
   .viewer .vclose{
     position:absolute;top:16px;right:16px;color:#fff;font-size:22px;
     width:36px;height:36px;display:flex;align-items:center;justify-content:center;
-    background:rgba(255,255,255,0.15);border-radius:50%;cursor:pointer;
+    background:rgba(255,255,255,0.15);border-radius:50%;cursor:pointer;z-index:1;
   }
   .viewer .vcopy{
     margin-top:16px;border:none;border-radius:10px;padding:10px 20px;font-size:14px;
@@ -192,7 +204,14 @@
 
 <div class="viewer" id="viewer">
   <div class="vclose" id="vclose">✕</div>
-  <img id="vimg" src="" alt="">
+  <div class="vswipe" id="vswipe">
+    <img id="vimg" src="" alt="">
+    <div class="vnav">
+      <button class="vnavbtn hidden" id="vprev">‹</button>
+      <button class="vnavbtn hidden" id="vnext">›</button>
+    </div>
+  </div>
+  <div class="vdots" id="vdots"></div>
   <div class="vname" id="vname"></div>
   <div class="vcat" id="vcat"></div>
   <button class="vcopy" id="vcopy">Скопировать название/код</button>
@@ -552,13 +571,64 @@
     }
   }
 
+  var viewerState = { images: [], idx: 0 };
+
+  function showViewerImage(){
+    var imgs = viewerState.images;
+    var idx = viewerState.idx;
+    els.vimg.src = imgs[idx] || '';
+    var dotsEl = document.getElementById('vdots');
+    dotsEl.innerHTML = '';
+    if (imgs.length > 1){
+      imgs.forEach(function(_, i){
+        var dot = document.createElement('div');
+        dot.className = 'vdot' + (i === idx ? ' active' : '');
+        dotsEl.appendChild(dot);
+      });
+    }
+    var prevBtn = document.getElementById('vprev');
+    var nextBtn = document.getElementById('vnext');
+    prevBtn.className = 'vnavbtn' + (idx === 0 ? ' hidden' : '');
+    nextBtn.className = 'vnavbtn' + (idx >= imgs.length - 1 ? ' hidden' : '');
+  }
+
   function openViewer(item){
-    els.vimg.src = item.image || '';
+    var imgs = Array.isArray(item.images) ? item.images : (item.image ? [item.image] : []);
+    viewerState.images = imgs;
+    viewerState.idx = 0;
     els.vname.textContent = item.name;
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
+    showViewerImage();
     els.viewer.classList.add('open');
   }
+
+  document.getElementById('vprev').onclick = function(e){
+    e.stopPropagation();
+    if (viewerState.idx > 0){ viewerState.idx--; showViewerImage(); }
+  };
+  document.getElementById('vnext').onclick = function(e){
+    e.stopPropagation();
+    if (viewerState.idx < viewerState.images.length - 1){ viewerState.idx++; showViewerImage(); }
+  };
+
+  var swipeStartX = 0, swipeStartY = 0;
+  var vswipeEl = document.getElementById('vswipe');
+  vswipeEl.addEventListener('touchstart', function(e){
+    swipeStartX = e.touches[0].clientX;
+    swipeStartY = e.touches[0].clientY;
+  }, {passive:true});
+  vswipeEl.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - swipeStartX;
+    var dy = e.changedTouches[0].clientY - swipeStartY;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40){
+      if (dx < 0 && viewerState.idx < viewerState.images.length - 1){
+        viewerState.idx++; showViewerImage();
+      } else if (dx > 0 && viewerState.idx > 0){
+        viewerState.idx--; showViewerImage();
+      }
+    }
+  }, {passive:true});
 
   els.vclose.onclick = function(){ els.viewer.classList.remove('open'); };
   els.viewer.addEventListener('click', function(e){
