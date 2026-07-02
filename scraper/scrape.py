@@ -18,6 +18,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import scrape_adilet
+import scrape_interstone
 
 BASE_URL = "https://www.em-c.kz"
 
@@ -121,6 +122,14 @@ def main() -> None:
         all_items.extend(adilet_items)
     except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
         print(f"[scrape] ошибка при скрапинге adilet.net: {exc}", file=sys.stderr)
+
+    print("[scrape] interstone.kz (акриловый камень GRANDEX)...", file=sys.stderr)
+    try:
+        interstone_items = scrape_interstone.scrape_all()
+        print(f"[scrape]   найдено {len(interstone_items)} позиций", file=sys.stderr)
+        all_items.extend(interstone_items)
+    except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
+        print(f"[scrape] ошибка при скрапинге interstone.kz: {exc}", file=sys.stderr)
 
     # убираем дубликаты по id, если товар встретился в нескольких категориях
     seen = {}
