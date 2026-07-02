@@ -19,7 +19,7 @@
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
   #app{padding:8px 10px 24px;}
 
-  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;}
+  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;box-shadow:0 1px 0 rgba(0,0,0,0.06);}
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -39,14 +39,17 @@
   .chip{
     flex:0 0 auto;padding:7px 14px;border-radius:16px;background:var(--secbg);
     color:var(--text);font-size:13px;white-space:nowrap;cursor:pointer;user-select:none;
-    border:1px solid transparent;
+    border:1px solid transparent;transition:background-color .15s ease,color .15s ease;
   }
   .chip.active{background:var(--button);color:var(--button-text);}
   .chip.fav.active{background:#e0245e;color:#fff;}
 
   /* боковая шторка с категориями по сайтам-источникам */
-  .drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;z-index:60;}
-  .drawer-overlay.open{display:block;}
+  .drawer-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:60;
+    opacity:0;pointer-events:none;transition:opacity .25s ease;
+  }
+  .drawer-overlay.open{opacity:1;pointer-events:auto;}
   .drawer{
     position:fixed;top:0;left:0;bottom:0;width:84%;max-width:320px;background:var(--bg);
     z-index:61;transform:translateX(-105%);transition:transform .25s ease;overflow-y:auto;
@@ -59,13 +62,16 @@
     width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
     align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
   }
-  .drawer-item{padding:11px 10px;border-radius:8px;cursor:pointer;font-size:14.5px;margin-bottom:2px;}
+  .drawer-item{padding:11px 10px;border-radius:8px;cursor:pointer;font-size:14.5px;margin-bottom:2px;transition:background-color .15s ease;}
   .drawer-item.active{background:var(--button);color:var(--button-text);}
   .drawer-group{margin-top:8px;border-top:1px solid var(--secbg);padding-top:6px;}
   .drawer-group-header{
-    display:flex;justify-content:space-between;align-items:center;padding:10px 10px;
-    cursor:pointer;border-radius:8px;
+    display:flex;justify-content:space-between;align-items:center;padding:10px 8px 10px 10px;
+    cursor:pointer;border-radius:8px;border-left:3px solid transparent;transition:background-color .15s ease;
   }
+  .drawer-group[data-site="emc"] .drawer-group-header{border-left-color:#2481cc;}
+  .drawer-group[data-site="adilet"] .drawer-group-header{border-left-color:#c08a2e;}
+  .drawer-group[data-site="interstone"] .drawer-group-header{border-left-color:#7c8591;}
   .drawer-group-title{font-weight:700;font-size:14px;}
   .drawer-group-sub{font-weight:400;font-size:11.5px;color:var(--hint);margin-top:2px;}
   .drawer-group-arrow{transition:transform .2s;color:var(--hint);font-size:12px;flex:0 0 auto;margin-left:8px;}
@@ -87,37 +93,65 @@
   @media(min-width:480px){.grid{grid-template-columns:repeat(3,1fr);}}
 
   .card{
-    background:var(--secbg);border-radius:12px;overflow:hidden;position:relative;
-    display:flex;flex-direction:column;
+    background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
+    display:flex;flex-direction:column;border-top:3px solid transparent;
+    box-shadow:0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+    transition:transform .12s ease;
   }
-  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:1/1;background:#e2e2e5;cursor:pointer;}
-  .card img{width:100%;height:100%;object-fit:cover;display:block;}
+  .card:active{transform:scale(0.97);}
+  .card.appear{animation:cardIn .3s ease both;}
+  @keyframes cardIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+  /* сдержанные цветовые акценты по сайтам-источникам */
+  .card[data-site="emc"]{border-top-color:#2481cc;}
+  .card[data-site="adilet"]{border-top-color:#c08a2e;}
+  .card[data-site="interstone"]{border-top-color:#7c8591;}
+  .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
+
+  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:1/1;background:var(--secbg);cursor:pointer;overflow:hidden;}
+  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
+  .card img.loaded{opacity:1;}
   .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:6px;}
+
+  /* skeleton-плейсхолдеры на время загрузки */
+  @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
+  .skeleton{
+    background-image:linear-gradient(90deg, var(--secbg) 25%, rgba(120,120,130,0.14) 37%, var(--secbg) 63%);
+    background-size:400px 100%;animation:shimmer 1.4s ease infinite;
+  }
+  .skeleton-card{border-radius:14px;aspect-ratio:1;}
 
   .heart{
     position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;
     background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;
-    font-size:15px;cursor:pointer;
+    font-size:15px;cursor:pointer;transition:background-color .15s ease;
   }
-  .heart.active{background:#e0245e;}
+  .heart.active{background:#e0245e;animation:heartPop .25s ease;}
+  @keyframes heartPop{0%{transform:scale(1);}45%{transform:scale(1.25);}100%{transform:scale(1);}}
 
-  .info{padding:8px 8px 10px;flex:1;display:flex;flex-direction:column;gap:4px;}
-  .name{font-size:12.5px;line-height:1.3;font-weight:500;min-height:31px;}
-  .cat{font-size:10.5px;color:var(--hint);}
+  .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
+  .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
+  .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
   .copy-btn{
-    margin-top:auto;border:none;border-radius:8px;padding:6px 0;font-size:11.5px;
-    background:var(--button);color:var(--button-text);cursor:pointer;
+    margin-top:auto;border:none;border-radius:8px;padding:7px 0;font-size:11.5px;font-weight:600;
+    background:var(--button);color:var(--button-text);cursor:pointer;transition:transform .1s ease,opacity .1s ease;
   }
+  .copy-btn:active{transform:scale(0.96);opacity:.85;}
 
   .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
 
   /* fullscreen viewer */
   .viewer{
-    position:fixed;inset:0;background:rgba(0,0,0,0.92);display:none;
+    position:fixed;inset:0;background:rgba(0,0,0,0.92);display:flex;
     align-items:center;justify-content:center;flex-direction:column;z-index:50;padding:16px;
+    opacity:0;pointer-events:none;transition:opacity .2s ease;
   }
-  .viewer.open{display:flex;}
-  .viewer img{max-width:100%;max-height:70vh;border-radius:8px;object-fit:contain;}
+  .viewer.open{opacity:1;pointer-events:auto;}
+  .viewer img{
+    max-width:100%;max-height:70vh;border-radius:8px;object-fit:contain;
+    transform:scale(.96);transition:transform .2s ease;
+  }
+  .viewer.open img{transform:scale(1);}
   .viewer .vname{color:#fff;font-size:15px;margin-top:14px;text-align:center;}
   .viewer .vcat{color:#bbb;font-size:12px;margin-top:4px;}
   .viewer .vclose{
@@ -209,9 +243,9 @@
     return 'emc';
   }
   var SITE_META = {
-    emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы' },
-    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ' },
-    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень' }
+    emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#2481cc' },
+    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ', color: '#c08a2e' },
+    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень', color: '#7c8591' }
   };
   var SITE_ORDER = ['emc', 'adilet', 'interstone'];
 
@@ -348,6 +382,7 @@
 
       var groupEl = document.createElement('div');
       groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
+      groupEl.setAttribute('data-site', key);
 
       var header = document.createElement('div');
       header.className = 'drawer-group-header';
@@ -421,23 +456,45 @@
     return true;
   }
 
+  // Пока каталог не загружен, показываем "дышащие" плейсхолдеры карточек —
+  // это выглядит опрятнее пустого экрана и снижает ощущение подвисания.
+  function renderSkeleton(){
+    els.grid.innerHTML = '';
+    els.empty.style.display = 'none';
+    els.count.textContent = 'Загрузка каталога…';
+    for (var i = 0; i < 8; i++) {
+      var sk = document.createElement('div');
+      sk.className = 'skeleton skeleton-card';
+      els.grid.appendChild(sk);
+    }
+  }
+
   function render(){
     var filtered = state.items.filter(matches);
     els.count.textContent = filtered.length + ' материал(ов)';
     els.grid.innerHTML = '';
     els.empty.style.display = filtered.length ? 'none' : 'block';
 
-    filtered.forEach(function(item){
+    filtered.forEach(function(item, idx){
+      var site = siteGroupOf(item.category);
+      var siteColor = (SITE_META[site] || {}).color || 'transparent';
+
       var card = document.createElement('div');
-      card.className = 'card';
+      card.className = 'card appear';
+      card.setAttribute('data-site', site);
+      // лёгкий "каскадный" эффект появления, без задержки для длинных списков
+      card.style.animationDelay = Math.min(idx * 12, 240) + 'ms';
 
       var thumbWrap = document.createElement('div');
       thumbWrap.className = 'thumb-wrap';
       if (item.image) {
+        thumbWrap.classList.add('skeleton');
         var img = document.createElement('img');
-        img.src = item.image;
         img.loading = 'lazy';
         img.alt = item.name;
+        img.onload = function(){ img.classList.add('loaded'); thumbWrap.classList.remove('skeleton'); };
+        img.onerror = function(){ thumbWrap.classList.remove('skeleton'); };
+        img.src = item.image;
         thumbWrap.appendChild(img);
       } else {
         var noimg = document.createElement('div');
@@ -460,7 +517,11 @@
       name.textContent = item.name;
       var cat = document.createElement('div');
       cat.className = 'cat';
-      cat.textContent = item.category;
+      var dot = document.createElement('span');
+      dot.className = 'source-dot';
+      dot.style.background = siteColor;
+      cat.appendChild(dot);
+      cat.appendChild(document.createTextNode(item.category));
       var copyBtn = document.createElement('button');
       copyBtn.className = 'copy-btn';
       copyBtn.textContent = 'Копировать';
@@ -514,6 +575,7 @@
     }, 150);
   });
 
+  renderSkeleton();
   loadFavorites(loadCatalog);
 })();
 </script>
