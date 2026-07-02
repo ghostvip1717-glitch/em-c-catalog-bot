@@ -21,6 +21,27 @@
     "image": "https://www.em-c.kz/upload/resize_cache/iblock/ab4/600_600_140cd750bba9870f18aada2478b24840a/ab4968d833adbb83a1dc51aaca241b4c.jpeg"
   },
   {
+    "id": "dsp_2_50kh1_83_16mm",
+    "name": "ДСП 2,50х1,83 16мм",
+    "category": "ДСП",
+    "url": "https://www.em-c.kz/catalog/dsp_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/abf/600_600_140cd750bba9870f18aada2478b24840a/abf64aa90dfc5cc8956637c0f80e8b4d.jpeg"
+  },
+  {
+    "id": "dsp_2_75_1_83_16mm_shlif_ems",
+    "name": "ДСП 2,75*1,83*16мм шлиф ЕМС",
+    "category": "ДСП",
+    "url": "https://www.em-c.kz/catalog/dsp_2_75_1_83_16mm_shlif_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/abf/600_600_140cd750bba9870f18aada2478b24840a/abf64aa90dfc5cc8956637c0f80e8b4d.jpeg"
+  },
+  {
+    "id": "dsp_2_75kh1_83_16mm",
+    "name": "ДСП 2,75х1,83 16мм",
+    "category": "ДСП",
+    "url": "https://www.em-c.kz/catalog/dsp_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/abf/600_600_140cd750bba9870f18aada2478b24840a/abf64aa90dfc5cc8956637c0f80e8b4d.jpeg"
+  },
+  {
     "id": "ldsp_blue_sky_goluboe_nebo_ems",
     "name": "ЛДСП BLUE SKY (Голубое небо) (ЕМС)",
     "category": "ЛДСП",
@@ -35,6 +56,2288 @@
     "image": "https://www.em-c.kz/upload/resize_cache/iblock/577/600_600_140cd750bba9870f18aada2478b24840a/dit1tzuil73w6vrj7xzmeoeznfju39r6.jpg"
   },
   {
+    "id": "ldsp_avelano_u_9118_ts",
+    "name": "ЛДСП Авелано U 9118 TS",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_avelano_u_9118_ts.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/52d/600_600_140cd750bba9870f18aada2478b24840a/52de116cbd1861cf7f8bdf9d9be74d26.jpeg"
+  },
+  {
+    "id": "ldsp_adriatika_chfmk",
+    "name": "ЛДСП Адриатика (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_adriatika_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/7f1/600_600_140cd750bba9870f18aada2478b24840a/hlbml38ip7ol8yd5plpzb2los1pkz7zq.jpg"
+  },
+  {
+    "id": "ldsp_alebastr_pavlovskiy_serebristyy_f_412_f02_2800kh2070kh16mm_std",
+    "name": "ЛДСП Алебастр Павловский серебристый F.412.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_alebastr_pavlovskiy_serebristyy_f_412_f02_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/753/600_600_140cd750bba9870f18aada2478b24840a/nei0n4tgnyyprcfdjy3vjg8rcjdwjmy8.jpg"
+  },
+  {
+    "id": "ldsp_alyuminiy_chfmk",
+    "name": "ЛДСП Алюминий (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_alyuminiy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4d2/600_600_140cd750bba9870f18aada2478b24840a/4d2b422b2d97ba4b884e9439abae643e.jpeg"
+  },
+  {
+    "id": "ldsp_antratsit_0164_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Антрацит  0164 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_antratsit_0164_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/545/600_600_140cd750bba9870f18aada2478b24840a/5457f28509732863c3f3b0a4d80db2ba.jpeg"
+  },
+  {
+    "id": "ldsp_antratsit_0164_re_2_75kh1_83_16mm",
+    "name": "ЛДСП Антрацит 0164 РЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_antratsit_0164_re_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cf7/600_600_140cd750bba9870f18aada2478b24840a/di2qxbg9ufuegr2mfkzfc06ohqrqv221.jpg"
+  },
+  {
+    "id": "ldsp_artvud_svetlyy_k_083_sn_2_5_1_83_16mm",
+    "name": "ЛДСП Артвуд Светлый К 083 SN 2,5*1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_artvud_svetlyy_k_083_sn_2_5_1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/02b/600_600_140cd750bba9870f18aada2478b24840a/02b6f899200771cd682b3ccb4737691d.jpeg"
+  },
+  {
+    "id": "ldsp_artvud_temnyy_k_084_sn_2_5_1_83_16mm",
+    "name": "ЛДСП Артвуд Темный К 084 SN 2,5*1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_artvud_temnyy_k_084_sn_2_5_1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/8eb/600_600_140cd750bba9870f18aada2478b24840a/8ebccfc4a72717f723219616548fd503.jpeg"
+  },
+  {
+    "id": "ldsp_aruba_venge_chfmk",
+    "name": "ЛДСП Аруба венге (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_aruba_venge_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5c1/600_600_140cd750bba9870f18aada2478b24840a/5c1c9a1ff7719afab9dd0e08ec7ac96f.jpeg"
+  },
+  {
+    "id": "ldsp_atele_svetlyy_4298_su_2_8_2_07_16mm",
+    "name": "ЛДСП Ателье светлый  4298  SU  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_atele_svetlyy_4298_su_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e86/600_600_140cd750bba9870f18aada2478b24840a/e8688b3b4699ed7fab41fe59a049ed6d.jpeg"
+  },
+  {
+    "id": "ldsp_atele_temnyy_4299_su_2_8_2_07_16mm",
+    "name": "ЛДСП Ателье темный  4299  SU  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_atele_temnyy_4299_su_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/90e/600_600_140cd750bba9870f18aada2478b24840a/90ef622280fd2bf32fecd7485e4c0ca7.jpeg"
+  },
+  {
+    "id": "ldsp_aura_k_lmt",
+    "name": "ЛДСП Аура К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_aura_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/958/600_600_140cd750bba9870f18aada2478b24840a/ohnhf87zt7pmqsn8mt8twp7anmwrcchj.jpg"
+  },
+  {
+    "id": "ldsp_afeliya_w_lmt",
+    "name": "ЛДСП Афелия W  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_afeliya_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/999/600_600_140cd750bba9870f18aada2478b24840a/ikowt4jkpvsge6c0ddkst18kcqgizhm0.jpg"
+  },
+  {
+    "id": "ldsp_bambuk_r_lmt",
+    "name": "ЛДСП Бамбук R  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bambuk_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c54/600_600_140cd750bba9870f18aada2478b24840a/c543194b072cd00d7d5980690bd3a53f.jpeg"
+  },
+  {
+    "id": "ldsp_bambuk_w_lmt",
+    "name": "ЛДСП Бамбук W  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bambuk_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c54/600_600_140cd750bba9870f18aada2478b24840a/c543194b072cd00d7d5980690bd3a53f.jpeg"
+  },
+  {
+    "id": "ldsp_barbi_barbie_ems",
+    "name": "ЛДСП Барби (BARBIE) (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_barbi_barbie_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/203/600_600_140cd750bba9870f18aada2478b24840a/q509w5uw2oxadea66gikjbwciuakuf0m.jpg"
+  },
+  {
+    "id": "ldsp_baunti_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Баунти (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_baunti_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a82/600_600_140cd750bba9870f18aada2478b24840a/a82598ff88d7b7ef8c452016fb8c883d.jpeg"
+  },
+  {
+    "id": "ldsp_bezhevyy_0522_re_2_50kh1_83_16mm",
+    "name": "ЛДСП Бежевый 0522 РЕ  2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bezhevyy_0522_re_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/845/600_600_140cd750bba9870f18aada2478b24840a/8455f770065796fdc7112a62c0e79205.jpeg"
+  },
+  {
+    "id": "ldsp_bezhevyy_kremovyy_m_338_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Бежевый кремовый М.338.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bezhevyy_kremovyy_m_338_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f59/600_600_140cd750bba9870f18aada2478b24840a/764u5dfsupna1v0na7trgvnrv8va0xas.jpg"
+  },
+  {
+    "id": "ldsp_bezhevyy_lnyanoy_m_328_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Бежевый льняной М.328.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bezhevyy_lnyanoy_m_328_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/beb/600_600_140cd750bba9870f18aada2478b24840a/8ab2wwtcxl39jvo4jtxb8zaw5i6vp92r.jpg"
+  },
+  {
+    "id": "ldsp_bezhevyy_fon_chfmk",
+    "name": "ЛДСП Бежевый фон (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bezhevyy_fon_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d36/600_600_140cd750bba9870f18aada2478b24840a/d3650ae30d87b95142afb0b3e8f9175a.jpeg"
+  },
+  {
+    "id": "ldsp_belaya_listvennitsa_u_2149_pr",
+    "name": "ЛДСП Белая лиственница U 2149 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belaya_listvennitsa_u_2149_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ab6/600_600_140cd750bba9870f18aada2478b24840a/ab6e38fb6c38dd402159ed157ea589eb.jpeg"
+  },
+  {
+    "id": "ldsp_belosnezhnyy_u_lmt",
+    "name": "ЛДСП Белоснежный U  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belosnezhnyy_u_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belosnezhnyy_u_2_75kh1_83_10mm_lmt",
+    "name": "ЛДСП Белоснежный U  2,75х1,83 10мм  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belosnezhnyy_u_2_75kh1_83_10mm_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_pory_dereva_0101_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Белый (поры дерева)  0101 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_pory_dereva_0101_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cb3/600_600_140cd750bba9870f18aada2478b24840a/cb36d7708f24501758be9211450fccd4.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_loft_u_15_651070_110_lf",
+    "name": "ЛДСП Белый Loft U 15-651070-110 LF",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_loft_u_15_651070_110_lf.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_o_lmt",
+    "name": "ЛДСП Белый О  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_o_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_o_lmt_vlagostoykaya",
+    "name": "ЛДСП Белый О  (ЛМТ) влагостойкая",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_o_lmt_vlagostoykaya.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_r_lmt",
+    "name": "ЛДСП Белый Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_t_pory_dereva_lmt",
+    "name": "ЛДСП Белый Т (поры дерева)  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_t_pory_dereva_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cb3/600_600_140cd750bba9870f18aada2478b24840a/cb36d7708f24501758be9211450fccd4.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_ekspo_u_1605_sm",
+    "name": "ЛДСП Белый Экспо U 1605 SM",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_ekspo_u_1605_sm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm",
+    "name": "ЛДСП Белый бриллиант  8681 SM  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_brilliant_8681_sm_2_50kh1_83_16mm",
+    "name": "ЛДСП Белый бриллиант 8681 SM  2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_brilliant_8681_sm_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_gladkiy_0101_sm_2_75kh1_83kh16mm",
+    "name": "ЛДСП Белый гладкий 0101 SM 2,75х1,83х16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_gladkiy_0101_sm_2_75kh1_83kh16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_gladkiy_0110_sm_2_50kh1_83_16mm",
+    "name": "ЛДСП Белый гладкий 0110 SM  2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_gladkiy_0110_sm_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_gladkiy_0110_sm_2_75kh1_83_16mm",
+    "name": "ЛДСП Белый гладкий 0110 SM 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_gladkiy_0110_sm_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_gladkiy_605_sm_2_8_2_07_16mm",
+    "name": "ЛДСП Белый гладкий 605 SM 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_gladkiy_605_sm_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_sneg_8685_sm_2_50kh1_83_16mm",
+    "name": "ЛДСП Белый снег 8685 SM  2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_sneg_8685_sm_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_snezhnyy_m_101_w01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Белый снежный М.101.W01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_snezhnyy_m_101_w01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_fasadnyy_0110_re_2_50kh1_83_16mm",
+    "name": "ЛДСП Белый фасадный 0110 РЕ  2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_fasadnyy_0110_re_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_fasadnyy_0110_re_2_75kh1_83_16mm",
+    "name": "ЛДСП Белый фасадный 0110 РЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_fasadnyy_0110_re_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4ed/600_600_140cd750bba9870f18aada2478b24840a/tis9ye1ps8udw36yvs0e52m8vju47mx0.jpeg"
+  },
+  {
+    "id": "ldsp_belyy_fon_chfmk",
+    "name": "ЛДСП Белый фон (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_fon_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d54/600_600_140cd750bba9870f18aada2478b24840a/d54f4d7490dd20f85bafdb5ba97641aa.jpeg"
+  },
+  {
+    "id": "ldsp_bereza_nordik_t_lmt",
+    "name": "ЛДСП Береза нордик Т  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bereza_nordik_t_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/6a2/600_600_140cd750bba9870f18aada2478b24840a/6a2f4a21bd4b2a1ce491fa8e284324ae.jpeg"
+  },
+  {
+    "id": "ldsp_beton_816_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Бетон 816 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_816_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ef0/600_600_140cd750bba9870f18aada2478b24840a/ef057530521c51a4d475a82301c80a3d.jpeg"
+  },
+  {
+    "id": "ldsp_beton_layt_818_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Бетон Лайт 818 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_layt_818_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/83f/600_600_140cd750bba9870f18aada2478b24840a/83f36c4ffdff6c8bedb36588a91d3f86.jpeg"
+  },
+  {
+    "id": "ldsp_beton_norilskiy_snezhnyy_f_411_f01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Бетон Норильский снежный F.411.F01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_norilskiy_snezhnyy_f_411_f01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bd3/600_600_140cd750bba9870f18aada2478b24840a/mweu4bkp8ri1bxgc2u6zreu58bf39ace.jpg"
+  },
+  {
+    "id": "ldsp_beton_payn_svetlyy_u_31148_pr",
+    "name": "ЛДСП Бетон Пайн Светлый U 31148 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_svetlyy_u_31148_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2c1/600_600_140cd750bba9870f18aada2478b24840a/2c155c64dec5380f4b12bfbdc3587870.jpeg"
+  },
+  {
+    "id": "ldsp_beton_portlend_819_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Бетон Портленд 819 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_portlend_819_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/258/600_600_140cd750bba9870f18aada2478b24840a/258577719686381de03342356c978d65.jpeg"
+  },
+  {
+    "id": "ldsp_beton_payn_belyy_r_lmt",
+    "name": "ЛДСП Бетон пайн белый R  (Лмт)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_belyy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1b4/600_600_140cd750bba9870f18aada2478b24840a/1b4fa0f671ddce326a9f796e399586fa.jpeg"
+  },
+  {
+    "id": "ldsp_beton_payn_belyy_r_2_75kh1_83_10mm_lmt",
+    "name": "ЛДСП Бетон пайн белый R  2,75х1,83 10мм  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_belyy_r_2_75kh1_83_10mm_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1b4/600_600_140cd750bba9870f18aada2478b24840a/1b4fa0f671ddce326a9f796e399586fa.jpeg"
+  },
+  {
+    "id": "ldsp_beton_payn_svetlyy_chfmk_tisnenie_shagren",
+    "name": "ЛДСП Бетон пайн светлый (ЧФМК) (тиснение  Шагрень)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_svetlyy_chfmk_tisnenie_shagren.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/74d/600_600_140cd750bba9870f18aada2478b24840a/vx2s937yvq98f59uwldarmq1e5fberts.jpg"
+  },
+  {
+    "id": "ldsp_beton_payn_ekzotik_r_lmt",
+    "name": "ЛДСП Бетон пайн экзотик R  (Лмт)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_ekzotik_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d43/600_600_140cd750bba9870f18aada2478b24840a/d43b2fe2672af18356f83a3ed89646cd.jpeg"
+  },
+  {
+    "id": "ldsp_betonnyy_kamen_k_350_rt_2_8_2_07_16mm",
+    "name": "ЛДСП Бетонный камень К 350 RT 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_betonnyy_kamen_k_350_rt_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/37d/600_600_140cd750bba9870f18aada2478b24840a/37dd4e2202db41cc70773f36092a219c.jpeg"
+  },
+  {
+    "id": "ldsp_bob_payn_u_1127_pr",
+    "name": "ЛДСП Боб Пайн U 1127 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bob_payn_u_1127_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/717/600_600_140cd750bba9870f18aada2478b24840a/717c4679a1de3fd22f27566c8a12caa7.jpeg"
+  },
+  {
+    "id": "ldsp_bodega_belyy_chfmk",
+    "name": "ЛДСП Бодега белый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bodega_belyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/357/600_600_140cd750bba9870f18aada2478b24840a/357cbfed31060acf810aefe56341ab46.jpeg"
+  },
+  {
+    "id": "ldsp_bodego_belaya_ems",
+    "name": "ЛДСП Бодего Белая (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bodego_belaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c70/600_600_140cd750bba9870f18aada2478b24840a/nufld3r17rl26nl4qfksiacjg3uru081.jpg"
+  },
+  {
+    "id": "ldsp_buk_bavariya_0381_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Бук бавария 0381 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_buk_bavariya_0381_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/52a/600_600_140cd750bba9870f18aada2478b24840a/52a158df9f23ddf1c3eff85801373a6a.jpeg"
+  },
+  {
+    "id": "ldsp_buk_bavariya_109_svetlyy_chfmk",
+    "name": "ЛДСП Бук бавария 109 светлый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_buk_bavariya_109_svetlyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/665/600_600_140cd750bba9870f18aada2478b24840a/8cr6gm7wquv02t4bps406fqj10pcithb.jpg"
+  },
+  {
+    "id": "ldsp_bunratti_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Бунратти (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_bunratti_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b02/600_600_140cd750bba9870f18aada2478b24840a/b02b3d12a6d5ea2f9d54cbaaf32d5e67.jpeg"
+  },
+  {
+    "id": "ldsp_vatervud_u_31170_pr",
+    "name": "ЛДСП Ватервуд U 31170 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_vatervud_u_31170_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b7b/600_600_140cd750bba9870f18aada2478b24840a/b7babd4a46557f99938657eba6536de5.jpeg"
+  },
+  {
+    "id": "ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Венге цаво 3354 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/189/600_600_140cd750bba9870f18aada2478b24840a/1895041a39c21af578445234fc975991.jpeg"
+  },
+  {
+    "id": "ldsp_vinterberg_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Винтерберг (ЧФМК) (тиснение Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_vinterberg_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ede/600_600_140cd750bba9870f18aada2478b24840a/ede8e8df72b6f1b6680610435f285d6a.jpeg"
+  },
+  {
+    "id": "ldsp_vishnya_oksford_chfmk",
+    "name": "ЛДСП Вишня оксфорд (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_vishnya_oksford_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/929/600_600_140cd750bba9870f18aada2478b24840a/92956ae64a1d22f7f1b7298423487ee9.jpeg"
+  },
+  {
+    "id": "ldsp_vishnya_oksford_0088_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Вишня оксфорд 0088 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_vishnya_oksford_0088_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e34/600_600_140cd750bba9870f18aada2478b24840a/e349be3b6a6c0f17a4b754cddb3e9983.jpeg"
+  },
+  {
+    "id": "ldsp_vybelenoe_derevo_r_lmt",
+    "name": "ЛДСП Выбеленое дерево R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_vybelenoe_derevo_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/646/600_600_140cd750bba9870f18aada2478b24840a/64696c87c53830d5608173b4920914a9.jpeg"
+  },
+  {
+    "id": "ldsp_gikori_dzhekson_svetlyy_2_75_1_83_16mm_ems",
+    "name": "ЛДСП Гикори Джексон светлый 2,75*1,83*16мм (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_gikori_dzhekson_svetlyy_2_75_1_83_16mm_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0a5/600_600_140cd750bba9870f18aada2478b24840a/iqzvhy3ao4vpoyevcfsduz92wo0epon3.jpg"
+  },
+  {
+    "id": "ldsp_gikori_kingston_579_wml2_8_2_07_16mm",
+    "name": "ЛДСП Гикори Кингстон 579 WML2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_gikori_kingston_579_wml2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/49f/600_600_140cd750bba9870f18aada2478b24840a/49f2b2fbf0ac91717cc6a4c1eda598cb.jpeg"
+  },
+  {
+    "id": "ldsp_gikori_rokford_naturalnyy_k_086_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Гикори Рокфорд Натуральный К 086 PW 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_gikori_rokford_naturalnyy_k_086_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/142/600_600_140cd750bba9870f18aada2478b24840a/1424b68701d3d8b27aeb158233cab5b2.jpeg"
+  },
+  {
+    "id": "ldsp_gikori_rokford_svetlyy_k_085_pw_2_5_1_83_16mm",
+    "name": "ЛДСП Гикори Рокфорд Светлый К 085 PW 2,5*1,83 *16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_gikori_rokford_svetlyy_k_085_pw_2_5_1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a17/600_600_140cd750bba9870f18aada2478b24840a/a17b0710054d577987fae4a6351e0d21.jpeg"
+  },
+  {
+    "id": "ldsp_glinyanyy_seryy_s_096_re_2_8_2_07_16mm",
+    "name": "ЛДСП Глиняный серый С 096 РЕ 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_glinyanyy_seryy_s_096_re_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/396/600_600_140cd750bba9870f18aada2478b24840a/39695e3127c4a34911e9bfa40a9549b6.jpeg"
+  },
+  {
+    "id": "ldsp_grafit_k_lmt",
+    "name": "ЛДСП Графит К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_grafit_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a98/600_600_140cd750bba9870f18aada2478b24840a/8wujyx9zw2ftyurwqvbtpbtd0q5ko3zh.jpeg"
+  },
+  {
+    "id": "ldsp_grafit_r_lmt",
+    "name": "ЛДСП Графит Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_grafit_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/63f/600_600_140cd750bba9870f18aada2478b24840a/63fe0d7daa4b03bc36096e636290ff7f.jpeg"
+  },
+  {
+    "id": "ldsp_grey_foks_u_1134_pr",
+    "name": "ЛДСП Грей Фокс U 1134 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_grey_foks_u_1134_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/366/600_600_140cd750bba9870f18aada2478b24840a/3663f6af6715c8b447cc4723f96bfa96.jpeg"
+  },
+  {
+    "id": "ldsp_grineri_r_lmt",
+    "name": "ЛДСП Гринери Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_grineri_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a25/600_600_140cd750bba9870f18aada2478b24840a/a253de0a8e264154172b5c4756d152aa.jpeg"
+  },
+  {
+    "id": "ldsp_dasti_grin_u_3513_pe",
+    "name": "ЛДСП Дасти Грин U 3513 PE",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dasti_grin_u_3513_pe.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ed3/600_600_140cd750bba9870f18aada2478b24840a/5jwtkll0j92ic6wfd0fk9c496h3u77hc.jpg"
+  },
+  {
+    "id": "ldsp_dub_alpiyskiy_u_1158_mp",
+    "name": "ЛДСП Дуб Альпийский U 1158 MP",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_alpiyskiy_u_1158_mp.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/671/600_600_140cd750bba9870f18aada2478b24840a/vohtuczyh3azzlrhjd54mzwiu93qche7.jpg"
+  },
+  {
+    "id": "ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Апрельский Шоколадный (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a25/600_600_140cd750bba9870f18aada2478b24840a/wcfiixjhiq9hd58pvif5ovkwkhc1jr7a.jpg"
+  },
+  {
+    "id": "ldsp_dub_aprelskiy_nordik_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Апрельский нордик (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_aprelskiy_nordik_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2ea/600_600_140cd750bba9870f18aada2478b24840a/gybgjzyulhj81n705c8m9p6d2hm8krlp.jpg"
+  },
+  {
+    "id": "ldsp_dub_astrakhanskiy_belyenyy_d_303_w04_2800kh2070kh16mm_std",
+    "name": "ЛДСП Дуб Астраханский белёный D.303.W04 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_astrakhanskiy_belyenyy_d_303_w04_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/837/600_600_140cd750bba9870f18aada2478b24840a/qafbplfr3yuh6azqtcv4xajpf5fkf24p.jpg"
+  },
+  {
+    "id": "ldsp_dub_belozerskiy_snezhnyy_d_325_w04_2800kh2070kh16mm_std",
+    "name": "ЛДСП Дуб Белозерский снежный D.325.W04 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_belozerskiy_snezhnyy_d_325_w04_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1a0/600_600_140cd750bba9870f18aada2478b24840a/a4d8ms5ws87hb6u2unbjpj2h7wzmzgn3.jpg"
+  },
+  {
+    "id": "ldsp_dub_bordo_layt_380_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Бордо Лайт 380 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_bordo_layt_380_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/32a/600_600_140cd750bba9870f18aada2478b24840a/32a317dd5d7463bf90d9abeb3e694c99.jpeg"
+  },
+  {
+    "id": "ldsp_dub_vellington_370_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Веллингтон 370 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_vellington_370_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/73e/600_600_140cd750bba9870f18aada2478b24840a/73e27b0c26edc76d0d0e538e31a12d57.jpeg"
+  },
+  {
+    "id": "ldsp_dub_vertsaska_u_2130_pr",
+    "name": "ЛДСП Дуб Верцаска U 2130 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_vertsaska_u_2130_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e7e/600_600_140cd750bba9870f18aada2478b24840a/e7eeb1b387f4c44eb5d588fb998ff9cf.jpeg"
+  },
+  {
+    "id": "ldsp_dub_vodan_u_604_pr_2_75kh1_83_16mm",
+    "name": "ЛДСП Дуб Водан U 604 PR 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_vodan_u_604_pr_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e78/600_600_140cd750bba9870f18aada2478b24840a/m19h0d08auq2hokgxf63ywtmd26pz9c9.jpg"
+  },
+  {
+    "id": "ldsp_dub_votan_a_ems",
+    "name": "ЛДСП Дуб Вотан (А) (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_a_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c72/600_600_140cd750bba9870f18aada2478b24840a/c72b8b4b9bd2485075f5d06102e471e8.jpeg"
+  },
+  {
+    "id": "ldsp_dub_votan_chfmk",
+    "name": "ЛДСП Дуб Вотан (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bd3/600_600_140cd750bba9870f18aada2478b24840a/bd36b4aa8455196ab4517879c9e2cfe4.jpeg"
+  },
+  {
+    "id": "ldsp_dub_votan_376_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Вотан 376 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_376_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bd3/600_600_140cd750bba9870f18aada2478b24840a/bd36b4aa8455196ab4517879c9e2cfe4.jpeg"
+  },
+  {
+    "id": "ldsp_dub_votan_r_2_75kh1_83_10mm_lmt",
+    "name": "ЛДСП Дуб Вотан R  2,75х1,83 10мм  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c72/600_600_140cd750bba9870f18aada2478b24840a/c72b8b4b9bd2485075f5d06102e471e8.jpeg"
+  },
+  {
+    "id": "ldsp_dub_votan_r_lmt",
+    "name": "ЛДСП Дуб Вотан R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c72/600_600_140cd750bba9870f18aada2478b24840a/c72b8b4b9bd2485075f5d06102e471e8.jpeg"
+  },
+  {
+    "id": "ldsp_dub_votan_u_2167_pr",
+    "name": "ЛДСП Дуб Вотан U 2167 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_u_2167_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c72/600_600_140cd750bba9870f18aada2478b24840a/c72b8b4b9bd2485075f5d06102e471e8.jpeg"
+  },
+  {
+    "id": "ldsp_dub_garden_svetlyy_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Гарден светлый (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_garden_svetlyy_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/7d8/600_600_140cd750bba9870f18aada2478b24840a/bn05zxe0mvnhi5bbii6o9dmxglbrn46u.jpg"
+  },
+  {
+    "id": "ldsp_dub_granzh_pesochnyy_k_356_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Гранж песочный К 356 PW 2,8*2,07 *16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_granzh_pesochnyy_k_356_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/7a5/600_600_140cd750bba9870f18aada2478b24840a/qkzqymvkrbs9k51ahth9v9vtvth5lj7z.jpeg"
+  },
+  {
+    "id": "ldsp_dub_dargo_d_lmt",
+    "name": "ЛДСП Дуб Дарго D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_dargo_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e63/600_600_140cd750bba9870f18aada2478b24840a/egmz6eliunlyngrdvrwggmciw3mqcdc2.jpg"
+  },
+  {
+    "id": "ldsp_dub_delano_ems",
+    "name": "ЛДСП Дуб Делано (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_delano_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0a5/600_600_140cd750bba9870f18aada2478b24840a/iqzvhy3ao4vpoyevcfsduz92wo0epon3.jpg"
+  },
+  {
+    "id": "ldsp_dub_delano_naturalnyy_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Делано натуральный (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_delano_naturalnyy_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/87c/600_600_140cd750bba9870f18aada2478b24840a/630j2gz4qd2jcdxqepmkdgysr1wrs1jz.jpg"
+  },
+  {
+    "id": "ldsp_dub_zolotistyy_u_1148_pr_",
+    "name": "ЛДСП Дуб Золотистый U 1148 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_zolotistyy_u_1148_pr_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e71/600_600_140cd750bba9870f18aada2478b24840a/znon0dramrw7zcl660yqpxn02jc3t40l.jpg"
+  },
+  {
+    "id": "ldsp_dub_irlandskiy_u_31156_pr",
+    "name": "ЛДСП Дуб Ирландский U 31156 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_irlandskiy_u_31156_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/48b/600_600_140cd750bba9870f18aada2478b24840a/48be4e8c2503ff1f8b3a789e4ee048d5.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kanzas_377_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Канзас 377 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kanzas_377_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/6d8/600_600_140cd750bba9870f18aada2478b24840a/kwnqv57oflrrd5ctbnul9eoc5vbl56s2.jpg"
+  },
+  {
+    "id": "ldsp_dub_kantri_zolotoy_389_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Кантри Золотой 389 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kantri_zolotoy_389_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1ab/600_600_140cd750bba9870f18aada2478b24840a/1abfa252142b36ba1524f99296c7dc99.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kanon_365_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Каньон 365 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kanon_365_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/935/600_600_140cd750bba9870f18aada2478b24840a/e32wx3d24ff3c67b9u055v042higng02.jpg"
+  },
+  {
+    "id": "ldsp_dub_kanon_u_2157_pr",
+    "name": "ЛДСП Дуб Каньон U 2157 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kanon_u_2157_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2d8/600_600_140cd750bba9870f18aada2478b24840a/2d80f89ccc4852aee7f04573d50da1d1.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Кастелло Медовый К 358 PW 2,8*2,07 *16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/76f/600_600_140cd750bba9870f18aada2478b24840a/76f08f77f60844d8e960817c4de7a63d.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kastello_seryy_k_357_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Кастелло Серый К 357 PW 2,8*2,07 *16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kastello_seryy_k_357_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ce0/600_600_140cd750bba9870f18aada2478b24840a/ce0c78b385b81a6ccb171be9b7c2ba3e.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kolomenskiy_pryanyy_d_342_s01_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Дуб Коломенский пряный D.342.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kolomenskiy_pryanyy_d_342_s01_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/88f/600_600_140cd750bba9870f18aada2478b24840a/u2hzdxnz1t2eaigt8sh87403cn9yzb3r.jpg"
+  },
+  {
+    "id": "ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт Белый К 001 РW 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3d1/600_600_140cd750bba9870f18aada2478b24840a/3d134c65ed7fcc80e3472a271d71238c.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт Золотой К 003 PW 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4c9/600_600_140cd750bba9870f18aada2478b24840a/5nggzqukcnaol9m8bkokabmz69riwwq6.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт Серый К 002 РW 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/7d1/600_600_140cd750bba9870f18aada2478b24840a/7d1ecfe270d78e03f6fb6cf78844ecda.jpeg"
+  },
+  {
+    "id": "ldsp_dub_kraft_tabachnyy_k_004_rw_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт Табачный К 004 РW 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_tabachnyy_k_004_rw_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3fd/600_600_140cd750bba9870f18aada2478b24840a/gwuge33o6ybf0e7bnonrhuc9o8kby1g7.jpg"
+  },
+  {
+    "id": "ldsp_dub_kraft_belyy_k_001_pw_2_75kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт белый К 001 PW 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_belyy_k_001_pw_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/127/600_600_140cd750bba9870f18aada2478b24840a/h9p6eqdg0r2dsp6phw9ixkeyt5bjjnh8.jpg"
+  },
+  {
+    "id": "ldsp_dub_kraft_tabachnyy_k_004_pw_2_75kh1_83_16mm",
+    "name": "ЛДСП Дуб Крафт табачный К 004 PW 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_tabachnyy_k_004_pw_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f3c/600_600_140cd750bba9870f18aada2478b24840a/ji0hrghn2ptfv5kgta3estjl0xn5hs6b.jpg"
+  },
+  {
+    "id": "ldsp_dub_monastyrskiy_375_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Монастырский 375 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_monastyrskiy_375_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/8cd/600_600_140cd750bba9870f18aada2478b24840a/8cd08b2477e34b7a824defb06f46036e.jpeg"
+  },
+  {
+    "id": "ldsp_dub_monterey_384_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Монтерей 384 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_monterey_384_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d91/600_600_140cd750bba9870f18aada2478b24840a/d91c3599cc41ecc9231590eff49d05f2.jpeg"
+  },
+  {
+    "id": "ldsp_dub_navara_386_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Навара 386 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_navara_386_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e3b/600_600_140cd750bba9870f18aada2478b24840a/e3b05799cab54f47cacd4f01465c34a7.jpeg"
+  },
+  {
+    "id": "ldsp_dub_neyvo_d_lmt",
+    "name": "ЛДСП Дуб Нейво D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_neyvo_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/97b/600_600_140cd750bba9870f18aada2478b24840a/sy1ttxqmjhau7flsk5i1xyqjxkrh00n4.jpg"
+  },
+  {
+    "id": "ldsp_dub_novgorodskiy_pesochnyy_d_319_w04_2800kh2070kh16mm_std",
+    "name": "ЛДСП Дуб Новгородский песочный D.319.W04 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_novgorodskiy_pesochnyy_d_319_w04_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/76b/600_600_140cd750bba9870f18aada2478b24840a/bcof5w77f5ucc6yuhrkkyr7eed0nayu5.jpg"
+  },
+  {
+    "id": "ldsp_dub_provans_390_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Прованс 390 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_provans_390_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c20/600_600_140cd750bba9870f18aada2478b24840a/c2076b08352218983dac2916b340037b.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_svetlyy_a_ems",
+    "name": "ЛДСП Дуб Сонома светлый (А) (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_svetlyy_a_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4c7/600_600_140cd750bba9870f18aada2478b24840a/r59dyn1ar2l1l1ew3idqa3wzi8v2c6oe.jpg"
+  },
+  {
+    "id": "ldsp_dub_starooskolskiy_grechishnyy_d_506_w04_2800kh2070kh16mm_std",
+    "name": "ЛДСП Дуб Старооскольский гречишный D.506.W04 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_starooskolskiy_grechishnyy_d_506_w04_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/57f/600_600_140cd750bba9870f18aada2478b24840a/rbc90m85w9mwo630bvjl0p8hc0pcj2ln.jpg"
+  },
+  {
+    "id": "ldsp_dub_stirling_374_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Стирлинг 374 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_stirling_374_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/60b/600_600_140cd750bba9870f18aada2478b24840a/60b3a50e050778a3ffc9f184c5c482d6.jpeg"
+  },
+  {
+    "id": "ldsp_dub_toronto_382_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Торонто 382 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_toronto_382_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3a8/600_600_140cd750bba9870f18aada2478b24840a/3a8f0d996f65c483f6d4ed0d18bb91fe.jpeg"
+  },
+  {
+    "id": "ldsp_dub_turin_svetlyy_ems",
+    "name": "ЛДСП Дуб Турин светлый (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_turin_svetlyy_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0a5/600_600_140cd750bba9870f18aada2478b24840a/iqzvhy3ao4vpoyevcfsduz92wo0epon3.jpg"
+  },
+  {
+    "id": "ldsp_dub_fokstrot_g_706_sn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Фокстрот G 706 SN  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_fokstrot_g_706_sn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/944/600_600_140cd750bba9870f18aada2478b24840a/qkw9nt247yd36y8h2k97w2wdp266w1yu.jpg"
+  },
+  {
+    "id": "ldsp_dub_fristayl_g_704_sn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Фристайл G 704 SN  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_fristayl_g_704_sn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/24f/600_600_140cd750bba9870f18aada2478b24840a/hwoifnt0zs7c6vbv1wxdmwvbekjgfdrw.jpg"
+  },
+  {
+    "id": "ldsp_dub_kharbor_zolotoy_k_361_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Харбор золотой К 361 PW 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kharbor_zolotoy_k_361_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cfd/600_600_140cd750bba9870f18aada2478b24840a/cfdb03607180d56e901b00eb19637608.jpeg"
+  },
+  {
+    "id": "ldsp_dub_khelen_g_703_sn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Хелен G 703 SN  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_khelen_g_703_sn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d60/600_600_140cd750bba9870f18aada2478b24840a/0t3ylxwqdzwrr3r9b2mwhv4q1mas0nci.jpg"
+  },
+  {
+    "id": "ldsp_dub_chesterfild_003_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Честерфильд 003 (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_chesterfild_003_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ee8/600_600_140cd750bba9870f18aada2478b24840a/5cg5oe0svdej0jiq6zppc9mat1tnb79w.jpg"
+  },
+  {
+    "id": "ldsp_dub_shavinigan_u_31199_pr",
+    "name": "ЛДСП Дуб Шавиниган U 31199 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_shavinigan_u_31199_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/503/600_600_140cd750bba9870f18aada2478b24840a/zr67txd4czyuqpoixv3rcbzuszereext.jpg"
+  },
+  {
+    "id": "ldsp_dub_elison_svetlyy_395_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Элисон светлый 395 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_elison_svetlyy_395_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bcd/600_600_140cd750bba9870f18aada2478b24840a/yc4grzyb25cu6gx8w9lhwv0b1s7rfert.jpg"
+  },
+  {
+    "id": "ldsp_dub_elison_temnyy_396_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Элисон темный 396 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_elison_temnyy_396_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/863/600_600_140cd750bba9870f18aada2478b24840a/y9rzsr7vggd4rwxzb48qbsod81ibkkgy.jpg"
+  },
+  {
+    "id": "ldsp_dub_endgreyn_neobrabotannyy_k_105_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Эндгрейн Необработанный К 105 PW 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_endgreyn_neobrabotannyy_k_105_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/272/600_600_140cd750bba9870f18aada2478b24840a/6qapplmegvk266ki3921xy9hz79zwzzf.jpg"
+  },
+  {
+    "id": "ldsp_dub_endgreyn_elegantnyy_k_107_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Эндгрейн Элегантный К 107 PW 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_endgreyn_elegantnyy_k_107_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4fc/600_600_140cd750bba9870f18aada2478b24840a/4fc0ac1587ee9393fcf2f05fff683399.jpeg"
+  },
+  {
+    "id": "ldsp_dub_yukkon_358_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Дуб Юккон 358 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_yukkon_358_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/be7/600_600_140cd750bba9870f18aada2478b24840a/be7e5b5cda0b49f1cdaac1ee02f99df5.jpeg"
+  },
+  {
+    "id": "ldsp_dub_atlanta_chfmk",
+    "name": "ЛДСП Дуб атланта (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_atlanta_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/23c/600_600_140cd750bba9870f18aada2478b24840a/23cc1baf6f15839d95c191d373a9b44f.jpeg"
+  },
+  {
+    "id": "ldsp_dub_barrik_svetlyy_chfmk",
+    "name": "ЛДСП Дуб баррик светлый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_barrik_svetlyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/92d/600_600_140cd750bba9870f18aada2478b24840a/92d3b2ced46fd7f6d73b2d6475c4248c.jpeg"
+  },
+  {
+    "id": "ldsp_dub_barrik_temnyy_chfmk",
+    "name": "ЛДСП Дуб баррик темный (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_barrik_temnyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/168/600_600_140cd750bba9870f18aada2478b24840a/168cdc29942cee1d04309f4aeed286bf.jpeg"
+  },
+  {
+    "id": "ldsp_dub_belfort_3885_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб белфорт 3885 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_belfort_3885_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/276/600_600_140cd750bba9870f18aada2478b24840a/2762f2847038e3de8292b4fcaac09256.jpeg"
+  },
+  {
+    "id": "ldsp_dub_galiano_t_lmt",
+    "name": "ЛДСП Дуб галиано Т  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_galiano_t_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b27/600_600_140cd750bba9870f18aada2478b24840a/b27f30347528bd5ef17b2d885abff870.jpeg"
+  },
+  {
+    "id": "ldsp_dub_dymchatyy_w_lmt",
+    "name": "ЛДСП Дуб дымчатый W (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_dymchatyy_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/da0/600_600_140cd750bba9870f18aada2478b24840a/tqqup439fm0yjbd02z84jansccjun5xf.jpg"
+  },
+  {
+    "id": "ldsp_dub_kalyari_t_lmt",
+    "name": "ЛДСП Дуб кальяри Т (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_kalyari_t_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/40d/600_600_140cd750bba9870f18aada2478b24840a/40d25f063177f2af21aff8e0e087feec.jpeg"
+  },
+  {
+    "id": "ldsp_dub_marsala_t_lmt",
+    "name": "ЛДСП Дуб марсала Т (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_marsala_t_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a63/600_600_140cd750bba9870f18aada2478b24840a/a63b023363e89819896f71be65d80576.jpeg"
+  },
+  {
+    "id": "ldsp_dub_mlechnyy_chfmk",
+    "name": "ЛДСП Дуб млечный (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_mlechnyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1d0/600_600_140cd750bba9870f18aada2478b24840a/1d077b9a95b8de9cf3fbb52b8aececf7.jpeg"
+  },
+  {
+    "id": "ldsp_dub_molochnyy_8622_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб молочный 8622 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_molochnyy_8622_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/de0/600_600_140cd750bba9870f18aada2478b24840a/de00751ebf53ad94716971c5d41eb111.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sakramento_svetlyy_u_3192_pr",
+    "name": "ЛДСП Дуб сакраменто светлый U 3192 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sakramento_svetlyy_u_3192_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/72c/600_600_140cd750bba9870f18aada2478b24840a/72c7553db24d81fd127ef3061834633c.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sakramento_temnyy_u_3194_pr",
+    "name": "ЛДСП Дуб сакраменто темный U 3194 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sakramento_temnyy_u_3194_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/155/600_600_140cd750bba9870f18aada2478b24840a/155922073df1c80ea2a001c9cde61319.jpeg"
+  },
+  {
+    "id": "ldsp_dub_samdal_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб самдал (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_samdal_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/27d/600_600_140cd750bba9870f18aada2478b24840a/27d90871e84afc3306a024bcf1df1946.jpeg"
+  },
+  {
+    "id": "ldsp_dub_seryy_u_2169_pr",
+    "name": "ЛДСП Дуб серый U 2169 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_seryy_u_2169_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/05e/600_600_140cd750bba9870f18aada2478b24840a/05e1195f512e789e9def28643b6a6c66.jpeg"
+  },
+  {
+    "id": "ldsp_dub_solsberi_r_lmt",
+    "name": "ЛДСП Дуб солсбери R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_solsberi_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c1d/600_600_140cd750bba9870f18aada2478b24840a/c1df670cc94f0519122ef788b20594bf.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_003_chfmk",
+    "name": "ЛДСП Дуб сонома 003 (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_003_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/649/600_600_140cd750bba9870f18aada2478b24840a/649263ccc3d1f18bb209869cfa09434e.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб сонома 3025 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2f6/600_600_140cd750bba9870f18aada2478b24840a/2f65df1868ca9d04129fcecc28f41128.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_3025_pr_2_75kh1_83_16mm",
+    "name": "ЛДСП Дуб сонома 3025 PR 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_3025_pr_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2f6/600_600_140cd750bba9870f18aada2478b24840a/2f65df1868ca9d04129fcecc28f41128.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_r_lmt",
+    "name": "ЛДСП Дуб сонома R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2e7/600_600_140cd750bba9870f18aada2478b24840a/2e7409b9febe34faf579a64bbe1bafb5.jpeg"
+  },
+  {
+    "id": "ldsp_dub_sonoma_svetlyy_ems",
+    "name": "ЛДСП Дуб сонома светлый (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_svetlyy_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3d0/600_600_140cd750bba9870f18aada2478b24840a/7dq6k720tzppqqj648d8g14p36u9j3vb.jpeg"
+  },
+  {
+    "id": "ldsp_dub_shamoni_svetlyy_u_2156_pr",
+    "name": "ЛДСП Дуб шамони светлый U 2156 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_shamoni_svetlyy_u_2156_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/56d/600_600_140cd750bba9870f18aada2478b24840a/56d0ed088076c3d2cf510962746fc934.jpeg"
+  },
+  {
+    "id": "ldsp_duo_k_lmt",
+    "name": "ЛДСП Дуо К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_duo_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/19f/600_600_140cd750bba9870f18aada2478b24840a/aut6c6aewjrkm00zc8oy26yk1k39q85y.jpg"
+  },
+  {
+    "id": "ldsp_dymchato_seryy_u_3509_fr",
+    "name": "ЛДСП Дымчато-Серый U 3509 FR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_dymchato_seryy_u_3509_fr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f71/600_600_140cd750bba9870f18aada2478b24840a/ghyd875on4vbb1eoyimm48dangbjoe7k.jpg"
+  },
+  {
+    "id": "ldsp_zheleznyy_kamen_k_352_rt_2_8_2_07_16mm",
+    "name": "ЛДСП Железный камень К 352 RT 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_zheleznyy_kamen_k_352_rt_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ac2/600_600_140cd750bba9870f18aada2478b24840a/ac2d441907cc6c392b88732bdbdc42f0.jpeg"
+  },
+  {
+    "id": "ldsp_zelenyy_elovyy_m_604_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Зеленый еловый М.604.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_zelenyy_elovyy_m_604_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/512/600_600_140cd750bba9870f18aada2478b24840a/8il4eq2hamz5v8dtmkut9rd2s733bioi.jpg"
+  },
+  {
+    "id": "ldsp_zoloto_amurskoe_rozovoe_f_347_m01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Золото Амурское розовое F.347.M01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_zoloto_amurskoe_rozovoe_f_347_m01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0f9/600_600_140cd750bba9870f18aada2478b24840a/402scif216i540sju9br382qo1rtvd52.jpg"
+  },
+  {
+    "id": "ldsp_izvestnyak_leningradskiy_dymchatyy_f_410_f02_2800kh2070kh16mm_std",
+    "name": "ЛДСП Известняк Ленинградский дымчатый F.410.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_izvestnyak_leningradskiy_dymchatyy_f_410_f02_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c78/600_600_140cd750bba9870f18aada2478b24840a/qqt8p32gss8bcluwirdc7ys8h9jsf0ay.jpg"
+  },
+  {
+    "id": "ldsp_imbir_r_lmt",
+    "name": "ЛДСП Имбирь Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_imbir_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/622/600_600_140cd750bba9870f18aada2478b24840a/62254789b3f345fbec78a0fbf3e6c957.jpeg"
+  },
+  {
+    "id": "ldsp_intra_r_lmt",
+    "name": "ЛДСП Интра R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_intra_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bea/600_600_140cd750bba9870f18aada2478b24840a/bea9948530f6731d1c22eff566b32ff9.jpeg"
+  },
+  {
+    "id": "ldsp_iris_u_lmt",
+    "name": "ЛДСП Ирис U (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_iris_u_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/528/600_600_140cd750bba9870f18aada2478b24840a/5281e5f703b63e7298be9802f59186da.jpeg"
+  },
+  {
+    "id": "ldsp_iris_r_lmt",
+    "name": "ЛДСП Ирис Р (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_iris_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/528/600_600_140cd750bba9870f18aada2478b24840a/5281e5f703b63e7298be9802f59186da.jpeg"
+  },
+  {
+    "id": "ldsp_kaylas_u_9713_sm1",
+    "name": "ЛДСП Кайлас U 9713 SM1",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kaylas_u_9713_sm1.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1ec/600_600_140cd750bba9870f18aada2478b24840a/oxkh1yu395g51jw6j3u26w2lopyybc3u.jpg"
+  },
+  {
+    "id": "ldsp_kalipso_t_lmt",
+    "name": "ЛДСП Калипсо Т  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kalipso_t_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d50/600_600_140cd750bba9870f18aada2478b24840a/d50ac1d4c86044f1ce9804ca603de92f.jpeg"
+  },
+  {
+    "id": "ldsp_kamen_cvetlyy_loft_u_3706_lf",
+    "name": "ЛДСП Камень Cветлый Loft U 3706 LF",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kamen_cvetlyy_loft_u_3706_lf.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9ad/600_600_140cd750bba9870f18aada2478b24840a/9ad52e734ca4100a48a2b82f9d3283b4.jpeg"
+  },
+  {
+    "id": "ldsp_kamen_temnyy_loft_u_3705_lf",
+    "name": "ЛДСП Камень Темный Loft U 3705 LF",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kamen_temnyy_loft_u_3705_lf.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2b8/600_600_140cd750bba9870f18aada2478b24840a/2b8140b17c0e2943e7465946f5bcc4f2.jpeg"
+  },
+  {
+    "id": "ldsp_kanon_ledyanoy_r_lmt",
+    "name": "ЛДСП Каньон ледяной R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kanon_ledyanoy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3e2/600_600_140cd750bba9870f18aada2478b24840a/3e25e52e741b7abdbf221878aff252dc.jpeg"
+  },
+  {
+    "id": "ldsp_kanon_peschanyy_r_lmt",
+    "name": "ЛДСП Каньон песчаный R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kanon_peschanyy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/87a/600_600_140cd750bba9870f18aada2478b24840a/87ae649d98167d6e24aea22184d190fe.jpeg"
+  },
+  {
+    "id": "ldsp_kapuchino_chfmk",
+    "name": "ЛДСП Капучино (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kapuchino_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/35a/600_600_140cd750bba9870f18aada2478b24840a/35a950b1989b25ac81730ae8e3c7a018.jpeg"
+  },
+  {
+    "id": "ldsp_kapuchino_806_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Капучино 806 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kapuchino_806_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/500/600_600_140cd750bba9870f18aada2478b24840a/500e41c6aad52961df0d316195d8c7cf.jpeg"
+  },
+  {
+    "id": "ldsp_kapuchino_r_lmt",
+    "name": "ЛДСП Капучино R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kapuchino_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c55/600_600_140cd750bba9870f18aada2478b24840a/c5503d6951ff90eac1dcfde71b0704a6.jpeg"
+  },
+  {
+    "id": "ldsp_kashemir_chfmk",
+    "name": "ЛДСП Кашемир (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/17a/600_600_140cd750bba9870f18aada2478b24840a/17aa7863c7d708d21b56d4706c2f4248.jpg"
+  },
+  {
+    "id": "ldsp_kashemir_5981_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Кашемир 5981 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_5981_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/818/600_600_140cd750bba9870f18aada2478b24840a/vwbij5n7lfj195asva4rb3oin2hgup52.jpg"
+  },
+  {
+    "id": "ldsp_kashemir_5981_re_2_75kh1_83_16mm",
+    "name": "ЛДСП Кашемир 5981 РЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_5981_re_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/17a/600_600_140cd750bba9870f18aada2478b24840a/17aa7863c7d708d21b56d4706c2f4248.jpg"
+  },
+  {
+    "id": "ldsp_kvarts_kolskiy_smolyanoy_f_407_f02_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Кварц Кольский смоляной F.407.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kvarts_kolskiy_smolyanoy_f_407_f02_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c8d/600_600_140cd750bba9870f18aada2478b24840a/97im39d2w51wv2blzet35wk4u3wiz535.jpg"
+  },
+  {
+    "id": "ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std",
+    "name": "ЛДСП Кварц Петрозаводский дымчатый F.345.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/384/600_600_140cd750bba9870f18aada2478b24840a/p2yqbvwm4k8z0u42ty1znyyzwl9beeck.jpg"
+  },
+  {
+    "id": "ldsp_keyptaun_d_lmt",
+    "name": "ЛДСП Кейптаун D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_keyptaun_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1d2/600_600_140cd750bba9870f18aada2478b24840a/1d2c19ba19a566eb6ecaa8145d4faef5.jpeg"
+  },
+  {
+    "id": "ldsp_klen_0375_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Клен 0375 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_klen_0375_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b39/600_600_140cd750bba9870f18aada2478b24840a/b398eb46db8ea07d1934535d02b4d18e.jpeg"
+  },
+  {
+    "id": "ldsp_klen_tanzau_chfmk",
+    "name": "ЛДСП Клен танзау (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_klen_tanzau_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c45/600_600_140cd750bba9870f18aada2478b24840a/c45d19cabb6c874e0224bdc749b0c955.jpeg"
+  },
+  {
+    "id": "ldsp_korichnevyy_muskatnyy_m_518_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Коричневый мускатный М.518.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_korichnevyy_muskatnyy_m_518_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/514/600_600_140cd750bba9870f18aada2478b24840a/xr3iy2fucv0zv1dgwhau0kdshh92v4kv.jpg"
+  },
+  {
+    "id": "ldsp_kendi_k_lmt",
+    "name": "ЛДСП Кэнди К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_kendi_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5dd/600_600_140cd750bba9870f18aada2478b24840a/k75uk6h0o794pvgun6go2ic5cmj0xyt3.jpg"
+  },
+  {
+    "id": "ldsp_laym_chfmk",
+    "name": "ЛДСП Лайм (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_laym_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d8d/600_600_140cd750bba9870f18aada2478b24840a/d8d2a65cca5e289c066ad647381173bc.jpeg"
+  },
+  {
+    "id": "ldsp_latun_barnaulskaya_satinirovannaya_f_336_m01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Латунь Барнаульская сатинированная F.336.M01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_latun_barnaulskaya_satinirovannaya_f_336_m01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/adb/600_600_140cd750bba9870f18aada2478b24840a/6ypo3c2byiyi5idc13ep8qgd0n0hob0x.jpg"
+  },
+  {
+    "id": "ldsp_ledyanoe_derevo_581_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Ледяное дерево 581 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_ledyanoe_derevo_581_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5aa/600_600_140cd750bba9870f18aada2478b24840a/5aa018a901d35e99397daf2d1714a3f5.jpeg"
+  },
+  {
+    "id": "ldsp_lilo_k_lmt",
+    "name": "ЛДСП Лило К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_lilo_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/475/600_600_140cd750bba9870f18aada2478b24840a/nb7p3avooic4o5beaj058toy64vv4rmj.jpg"
+  },
+  {
+    "id": "ldsp_listvennitsa_sibirskaya_525_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Лиственница сибирская 525 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_listvennitsa_sibirskaya_525_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/dc7/600_600_140cd750bba9870f18aada2478b24840a/dc7ce7ea433cca29d62905731818f50b.jpeg"
+  },
+  {
+    "id": "ldsp_lyen_tverskoy_molochnyy_f_324_t01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Лён Тверской молочный F.324.T01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_lyen_tverskoy_molochnyy_f_324_t01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f04/600_600_140cd750bba9870f18aada2478b24840a/idyoegqx0pm1m5iexkpqmtu7bm71l6ix.jpg"
+  },
+  {
+    "id": "ldsp_lyen_tverskoy_seryy_f_404_t01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Лён Тверской серый F.404.T01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_lyen_tverskoy_seryy_f_404_t01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/08c/600_600_140cd750bba9870f18aada2478b24840a/8d3790556csjzbq8fvntfey3o5nmlq1c.jpg"
+  },
+  {
+    "id": "ldsp_martsipan_k_lmt",
+    "name": "ЛДСП Марципан К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_martsipan_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/757/600_600_140cd750bba9870f18aada2478b24840a/pwkexn07ns5cblyw40o9a4g764xjr08c.jpg"
+  },
+  {
+    "id": "ldsp_metall_bruklin_808_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Металл Бруклин 808 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_metall_bruklin_808_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cf0/600_600_140cd750bba9870f18aada2478b24840a/cf024f59e533b545c1a124b2bf54bca6.jpeg"
+  },
+  {
+    "id": "ldsp_metropolitan_grey_u_9705_re",
+    "name": "ЛДСП Метрополитан Грей U 9705 РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_metropolitan_grey_u_9705_re.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/8c3/600_600_140cd750bba9870f18aada2478b24840a/8c3d0bc0f0fe28483842759b78dd7522.jpeg"
+  },
+  {
+    "id": "ldsp_molokay_u_9111_pr",
+    "name": "ЛДСП Молокай U 9111 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_molokay_u_9111_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/6f8/600_600_140cd750bba9870f18aada2478b24840a/6f8878cd908cf3aa2d53a3799ed0ebb8.jpeg"
+  },
+  {
+    "id": "ldsp_mramor_karrara_hd_851_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Мрамор Каррара HD 851 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_mramor_karrara_hd_851_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e22/600_600_140cd750bba9870f18aada2478b24840a/e224b1f9b06fa240a31309ecb344c71f.jpeg"
+  },
+  {
+    "id": "ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Мрамор Неро Маркина 854 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/557/600_600_140cd750bba9870f18aada2478b24840a/mrioeoov60adzpf4dd0a3wdw6l6fy29b.jpg"
+  },
+  {
+    "id": "ldsp_muza_k_lmt",
+    "name": "ЛДСП Муза К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_muza_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5e1/600_600_140cd750bba9870f18aada2478b24840a/ikk12zq7k260cg9wt509mvcc3hvshfuq.jpg"
+  },
+  {
+    "id": "ldsp_munlayt_u_3700_re",
+    "name": "ЛДСП Мунлайт U 3700 РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_munlayt_u_3700_re.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/39a/600_600_140cd750bba9870f18aada2478b24840a/dnfi8xj4irzdf83h040e2uldzkin3p7i.jpg"
+  },
+  {
+    "id": "ldsp_navi_u_1600_c_re",
+    "name": "ЛДСП Нави U 1600/C РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_navi_u_1600_c_re.html",
+    "image": "https://www.em-c.kz/upload/iblock/6f4/45rxreus7y4fk7iir2no9ikuwo2t5taf.jpg"
+  },
+  {
+    "id": "ldsp_neyro_k_lmt",
+    "name": "ЛДСП Нейро К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_neyro_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f05/600_600_140cd750bba9870f18aada2478b24840a/inp22ol211y7ka0pukdg58pfe15qjhvr.jpg"
+  },
+  {
+    "id": "ldsp_noche_gvarneri_chfmk",
+    "name": "ЛДСП Ноче гварнери (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_noche_gvarneri_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1a6/600_600_140cd750bba9870f18aada2478b24840a/1a6c129c6582122a04a5ef7e37749e5d.jpeg"
+  },
+  {
+    "id": "ldsp_noche_ekko_ems",
+    "name": "ЛДСП Ноче экко (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_noche_ekko_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ae7/600_600_140cd750bba9870f18aada2478b24840a/ae74797295479a7292b9ccb8e9d6d15a.jpeg"
+  },
+  {
+    "id": "ldsp_noche_ekko_chfmk",
+    "name": "ЛДСП Ноче экко (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_noche_ekko_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ae7/600_600_140cd750bba9870f18aada2478b24840a/ae74797295479a7292b9ccb8e9d6d15a.jpeg"
+  },
+  {
+    "id": "ldsp_okeano_u_9716_sm",
+    "name": "ЛДСП Океано U 9716 SM",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_okeano_u_9716_sm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/04b/600_600_140cd750bba9870f18aada2478b24840a/4sdx7n1qfducgk10voqs74fl5bltgywk.jpg"
+  },
+  {
+    "id": "ldsp_olkha_gorskaya_1912_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Ольха горская 1912 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_olkha_gorskaya_1912_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/6da/600_600_140cd750bba9870f18aada2478b24840a/6da0589263d41dde6eb34a57325e8ff4.jpeg"
+  },
+  {
+    "id": "ldsp_olkha_naturalnaya_chfmk",
+    "name": "ЛДСП Ольха натуральная (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_olkha_naturalnaya_chfmk.html",
+    "image": "https://www.em-c.kz/upload/iblock/7ec/7ece24080610795e53bc767d0bf97cae.jpeg"
+  },
+  {
+    "id": "ldsp_oniks_chfmk",
+    "name": "ЛДСП Оникс  (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_oniks_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1ba/600_600_140cd750bba9870f18aada2478b24840a/4zpke0wb234c0ykyu5pmsszs4uj6t66r.jpg"
+  },
+  {
+    "id": "ldsp_oniks_817_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Оникс 817 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_oniks_817_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/09f/600_600_140cd750bba9870f18aada2478b24840a/09ff232da91bb4e0ab7beb0ce8c34365.jpeg"
+  },
+  {
+    "id": "ldsp_oranzh_chfmk",
+    "name": "ЛДСП Оранж (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_oranzh_chfmk.html",
+    "image": "https://www.em-c.kz/upload/iblock/b54/594a0a696fg4h4ol4cl8b041smb3ddb1.jpg"
+  },
+  {
+    "id": "ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Орех Американский 216 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/066/600_600_140cd750bba9870f18aada2478b24840a/dno5ner7t3lcg4tkomwhan3wf13lpone.jpg"
+  },
+  {
+    "id": "ldsp_orekh_bruno_d_lmt",
+    "name": "ЛДСП Орех Бруно D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_bruno_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/61e/600_600_140cd750bba9870f18aada2478b24840a/uioyuwktm4ncog1xdolkqym8rz4m4sl5.jpg"
+  },
+  {
+    "id": "ldsp_orekh_rostovskiy_grechishnyy_d_500_s01_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Орех Ростовский гречишный D.500.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_rostovskiy_grechishnyy_d_500_s01_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e62/600_600_140cd750bba9870f18aada2478b24840a/8f87sbywhegkzoto0jang681wl1atmoz.jpg"
+  },
+  {
+    "id": "ldsp_orekh_svetlogradskiy_kakao_d_507_s01_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Орех Светлоградский какао D.507.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_svetlogradskiy_kakao_d_507_s01_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/db5/600_600_140cd750bba9870f18aada2478b24840a/6gi0329jpr6d9mxpsdjg9nixl5zuayhr.jpg"
+  },
+  {
+    "id": "ldsp_orekh_selekt_svetlyy_k_008_pw_2_8_2_07_16mm",
+    "name": "ЛДСП Орех Селект Светлый К 008 PW 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_selekt_svetlyy_k_008_pw_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e0a/600_600_140cd750bba9870f18aada2478b24840a/e0af1db6268527c52e29fb5585933327.jpeg"
+  },
+  {
+    "id": "ldsp_orekh_geplankt_5648_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Орех гепланкт  5648 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_geplankt_5648_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/034/600_600_140cd750bba9870f18aada2478b24840a/034293c73c6364c642d0510f4e1a438f.jpeg"
+  },
+  {
+    "id": "ldsp_orekh_neapol_w_lmt",
+    "name": "ЛДСП Орех неаполь W (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_neapol_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d3b/600_600_140cd750bba9870f18aada2478b24840a/d3bf812282a0c6b7e7ac66241822e9d2.jpeg"
+  },
+  {
+    "id": "ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Орех экко  9459 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/538/600_600_140cd750bba9870f18aada2478b24840a/538722e128abc33bd7af8fea02b8fab4.jpeg"
+  },
+  {
+    "id": "ldsp_orinoko_r_lmt",
+    "name": "ЛДСП Ориноко R  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_orinoko_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/052/600_600_140cd750bba9870f18aada2478b24840a/052aa079951290257d116ff623bd01a8.jpeg"
+  },
+  {
+    "id": "ldsp_palmira_r_lmt",
+    "name": "ЛДСП Пальмира R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_palmira_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0c6/600_600_140cd750bba9870f18aada2478b24840a/0c6a49c5946d14977a4daf8f9e3841f1.jpeg"
+  },
+  {
+    "id": "ldsp_palmira_w_lmt",
+    "name": "ЛДСП Пальмира W (Лмт)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_palmira_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/668/600_600_140cd750bba9870f18aada2478b24840a/ekyh43w2tx07pnofv4gxlkc5yml661rc.jpeg"
+  },
+  {
+    "id": "ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Персидский жемчуг 810 РО 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/178/600_600_140cd750bba9870f18aada2478b24840a/0mge08ae40i28296akahvwr3mxhevm1z.jpg"
+  },
+  {
+    "id": "ldsp_pikar_ems",
+    "name": "ЛДСП Пикар (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_pikar_ems.html",
+    "image": "https://www.em-c.kz/upload/iblock/e00/hdoa09eoouyxz57ozrkmyrhq4owdddet.jpeg"
+  },
+  {
+    "id": "ldsp_pikard_chfmk",
+    "name": "ЛДСП Пикард (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_pikard_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3fa/600_600_140cd750bba9870f18aada2478b24840a/3fa11138939fdf42531cb976fb01c365.jpeg"
+  },
+  {
+    "id": "ldsp_pluto_u_9717_re",
+    "name": "ЛДСП Плуто U 9717 РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_pluto_u_9717_re.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/495/600_600_140cd750bba9870f18aada2478b24840a/11bi4vgs2dblivu0eym07jcvutf4w3cn.jpg"
+  },
+  {
+    "id": "ldsp_ramukh_belyy_5649_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Рамух белый 5649 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_ramukh_belyy_5649_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/eb5/600_600_140cd750bba9870f18aada2478b24840a/eb5e51bfe36747e31601baf8d89cea8d.jpeg"
+  },
+  {
+    "id": "ldsp_reyn_k_lmt",
+    "name": "ЛДСП Рейн К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_reyn_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/470/600_600_140cd750bba9870f18aada2478b24840a/b15w0qu67v2aj1jols51zs8x4y6xw0ul.jpg"
+  },
+  {
+    "id": "ldsp_rozovyy_drevesnyy_m_709_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Розовый древесный М.709.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_rozovyy_drevesnyy_m_709_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/96f/600_600_140cd750bba9870f18aada2478b24840a/m21jcm37ceos7ylhvqgue1pi6s8su7lp.jpg"
+  },
+  {
+    "id": "ldsp_rozovyy_zhemchug_r_lmt",
+    "name": "ЛДСП Розовый жемчуг Р (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_rozovyy_zhemchug_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d1c/600_600_140cd750bba9870f18aada2478b24840a/d1c79985cc1fd11ca75c7b78b023d973.jpeg"
+  },
+  {
+    "id": "ldsp_rozovyy_marevyy_m_705_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Розовый маревый М.705.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_rozovyy_marevyy_m_705_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/076/600_600_140cd750bba9870f18aada2478b24840a/vtq9b0rmh5nb7u62wp9lo6lyvff40ege.jpg"
+  },
+  {
+    "id": "ldsp_ruskeala_k_lmt",
+    "name": "ЛДСП Рускеала К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_ruskeala_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/72f/600_600_140cd750bba9870f18aada2478b24840a/ljvmnygjw09wi3hs6jphd00dpiis4mo6.jpg"
+  },
+  {
+    "id": "ldsp_sabiya_u_9709_sm1",
+    "name": "ЛДСП Сабия U 9709 SM1",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sabiya_u_9709_sm1.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0d3/600_600_140cd750bba9870f18aada2478b24840a/72bxudga0w8qmsbypr4lv2bznuhdzq19.jpg"
+  },
+  {
+    "id": "ldsp_santyago_chernyy_2750_1830_16mm_ems",
+    "name": "ЛДСП Сантьяго черный 2750*1830*16мм(ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_santyago_chernyy_2750_1830_16mm_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/565/600_600_140cd750bba9870f18aada2478b24840a/wym9gg5iqzpbd8snbufmy2q1s82gnphc.jpg"
+  },
+  {
+    "id": "ldsp_satin_7045_re_2_8_2_07_16mm",
+    "name": "ЛДСП Сатин  7045 РЕ  2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_satin_7045_re_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/58b/600_600_140cd750bba9870f18aada2478b24840a/58bfa0bda44c2768bd10362a3d68bb04.jpeg"
+  },
+  {
+    "id": "ldsp_svetlo_seryy_chfmk",
+    "name": "ЛДСП Светло - серый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_svetlo_seryy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cef/600_600_140cd750bba9870f18aada2478b24840a/cefbafe6f20193c5474aa49b5eaf194d.jpeg"
+  },
+  {
+    "id": "ldsp_svetlyy_zelenyy_s_322_bs_2800_2070_16mm",
+    "name": "ЛДСП Светлый зеленый С 322 BS 2800*2070*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_svetlyy_zelenyy_s_322_bs_2800_2070_16mm.html",
+    "image": "https://www.em-c.kz/upload/iblock/373/mok6tq4mf1f9xfr3go6445dhbdzh58ai.png"
+  },
+  {
+    "id": "ldsp_serebro_chukotskoe_dymchatoe_f_405_m01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Серебро Чукотское дымчатое F.405.M01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_serebro_chukotskoe_dymchatoe_f_405_m01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/849/600_600_140cd750bba9870f18aada2478b24840a/c642rmw8vti9vfqzpgi63dkjrl5idraq.jpg"
+  },
+  {
+    "id": "ldsp_serebro_chukotskoe_chernoe_f_400_m01_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Серебро Чукотское черное F.400.M01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_serebro_chukotskoe_chernoe_f_400_m01_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b86/600_600_140cd750bba9870f18aada2478b24840a/bh8odox636dlu8axv82p4rt5rvheikjj.jpg"
+  },
+  {
+    "id": "ldsp_seryy_grafit_0162_re_2_5kh1_83_16mm",
+    "name": "ЛДСП Серый Графит  0162  РЕ  2,5х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_grafit_0162_re_2_5kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/977/600_600_140cd750bba9870f18aada2478b24840a/97754c2e03f8f9e7832458f450c31798.jpeg"
+  },
+  {
+    "id": "ldsp_seryy_dymchatyy_chfmk",
+    "name": "ЛДСП Серый Дымчатый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_dymchatyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/495/600_600_140cd750bba9870f18aada2478b24840a/495e1767360db97f33551c4ae7257fca.jpg"
+  },
+  {
+    "id": "ldsp_seryy_kamen_chfmk",
+    "name": "ЛДСП Серый Камень (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_kamen_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c7c/600_600_140cd750bba9870f18aada2478b24840a/c7c644038abf258d74e412ce9c4f843e.jpg"
+  },
+  {
+    "id": "ldsp_seryy_kaspiy_svetlyy_ems",
+    "name": "ЛДСП Серый Каспий светлый (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_kaspiy_svetlyy_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5da/600_600_140cd750bba9870f18aada2478b24840a/a0eihjwb7z78z3tjd8hoifelx7g3osnz.jpg"
+  },
+  {
+    "id": "ldsp_seryy_kaspiy_temnyy_ems",
+    "name": "ЛДСП Серый Каспий темный (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_kaspiy_temnyy_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/021/600_600_140cd750bba9870f18aada2478b24840a/5u6wo5p30g1iky9v8djiv4idh0cszeza.jpg"
+  },
+  {
+    "id": "ldsp_seryy_vulkanicheskiy_m_427_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Серый вулканический М.427.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_vulkanicheskiy_m_427_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/3f4/600_600_140cd750bba9870f18aada2478b24840a/7gjkjh3f712m72mixwmqw1t7l7wkk80p.jpg"
+  },
+  {
+    "id": "ldsp_seryy_grafit_0162_pe_2_75kh1_83_16mm",
+    "name": "ЛДСП Серый графит 0162 PЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_grafit_0162_pe_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/977/600_600_140cd750bba9870f18aada2478b24840a/97754c2e03f8f9e7832458f450c31798.jpeg"
+  },
+  {
+    "id": "ldsp_seryy_kamen_0112_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Серый камень 0112 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_kamen_0112_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d90/600_600_140cd750bba9870f18aada2478b24840a/d901894d602d426eecd9daa9f742e59e.jpeg"
+  },
+  {
+    "id": "ldsp_seryy_kamen_0112_pe_2_75kh1_83_16mm",
+    "name": "ЛДСП Серый камень 0112 PЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_kamen_0112_pe_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/abf/600_600_140cd750bba9870f18aada2478b24840a/abf6a2cf5833b3341a1442f058e8220d.jpeg"
+  },
+  {
+    "id": "ldsp_seryy_temnyy_121_chfmk",
+    "name": "ЛДСП Серый темный 121  (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_seryy_temnyy_121_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a7c/600_600_140cd750bba9870f18aada2478b24840a/jr5l1cfyjsvghayqzmi1tz413cz51ru5.jpg"
+  },
+  {
+    "id": "ldsp_siniy_skalistyy_m_201_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Синий скалистый М.201.S01 2800х2070х16мм  STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_siniy_skalistyy_m_201_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/349/600_600_140cd750bba9870f18aada2478b24840a/px4en90mhx1chn1njky1z9feg8yvd3oc.jpg"
+  },
+  {
+    "id": "ldsp_skandi_r_lmt",
+    "name": "ЛДСП Сканди R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_skandi_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/fbf/600_600_140cd750bba9870f18aada2478b24840a/fbfa6a848ed3ff18bb9aa48d85a30f4e.jpeg"
+  },
+  {
+    "id": "ldsp_slanets_altayskiy_smolyanoy_f_417_f02_2800kh2070kh16mm_std",
+    "name": "ЛДСП Сланец Алтайский смоляной F.417.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_slanets_altayskiy_smolyanoy_f_417_f02_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ded/600_600_140cd750bba9870f18aada2478b24840a/348vd1drxbzaits9uhbmlxf23tv63qaw.jpg"
+  },
+  {
+    "id": "ldsp_slanets_altayskiy_snezhnyy_f_416_f02_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Сланец Алтайский снежный F.416.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_slanets_altayskiy_snezhnyy_f_416_f02_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/068/600_600_140cd750bba9870f18aada2478b24840a/kbp2gi8myz8am3dsbb48y4o7ababrf00.jpg"
+  },
+  {
+    "id": "ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Слоновая кость С 341 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/43b/600_600_140cd750bba9870f18aada2478b24840a/43b7254c59d1be8c69a4178eeeef0078.jpeg"
+  },
+  {
+    "id": "ldsp_slonovaya_kost_s_341_re_2_75kh1_83_16mm",
+    "name": "ЛДСП Слоновая кость С 341 РЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_slonovaya_kost_s_341_re_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/683/600_600_140cd750bba9870f18aada2478b24840a/gc0qxtuaponf3tuusefrbgb29rnfw8fy.jpg"
+  },
+  {
+    "id": "ldsp_sleyt_v_lmt",
+    "name": "ЛДСП Слэйт V  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sleyt_v_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/672/600_600_140cd750bba9870f18aada2478b24840a/672113674ebb8bf3fc1d3b9f2a4f9e35.jpeg"
+  },
+  {
+    "id": "ldsp_solnechnyy_r_lmt",
+    "name": "ЛДСП Солнечный Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_solnechnyy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/559/600_600_140cd750bba9870f18aada2478b24840a/5593f155ba7034484fd42d1a246bce3d.jpeg"
+  },
+  {
+    "id": "ldsp_sonata_l_lmt",
+    "name": "ЛДСП Соната L  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sonata_l_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/51d/600_600_140cd750bba9870f18aada2478b24840a/51d78d975f58b9ffe58a9f1ab06f3d0f.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_kanon_529_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Сосна Каньон 529 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_kanon_529_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/71c/600_600_140cd750bba9870f18aada2478b24840a/71cca7c324c9e84a36cf2f7414acdc8f.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_kastsina_542_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Сосна Касцина 542 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_kastsina_542_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aee/600_600_140cd750bba9870f18aada2478b24840a/aeedda14ca1e50d2ffa044ea6bb22937.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_murmanskaya_snezhnaya_d_339_f02_2800kh2070kh16mm_std",
+    "name": "ЛДСП Сосна Мурманская снежная D.339.F02 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_murmanskaya_snezhnaya_d_339_f02_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/937/600_600_140cd750bba9870f18aada2478b24840a/1ochm6i5q6vwjzqiqgd5xmqddbl61bk4.jpg"
+  },
+  {
+    "id": "ldsp_sosna_randers_540_wml2_8_2_07_16mm",
+    "name": "ЛДСП Сосна Рандерс 540 WML2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_randers_540_wml2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/46e/600_600_140cd750bba9870f18aada2478b24840a/46e4097314cf86dc6ca9b30c80e61540.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_santorini_r_lmt",
+    "name": "ЛДСП Сосна Санторини R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_santorini_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/141/600_600_140cd750bba9870f18aada2478b24840a/14133b8f63932165ee446f70d119ef81.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_santorini_w_lmt",
+    "name": "ЛДСП Сосна Санторини W (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_santorini_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/141/600_600_140cd750bba9870f18aada2478b24840a/14133b8f63932165ee446f70d119ef81.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_belaya_loft_k_010_sn_2_5_1_83_16mm",
+    "name": "ЛДСП Сосна белая Loft К 010 SN 2,5*1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_belaya_loft_k_010_sn_2_5_1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cdf/600_600_140cd750bba9870f18aada2478b24840a/cdf48ad937de8e44409fb1f4d61c33ab.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_dzhekson_535_wml_2_8_2_07_16mm",
+    "name": "ЛДСП Сосна джексон 535 WML 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_dzhekson_535_wml_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/542/600_600_140cd750bba9870f18aada2478b24840a/54202513837e5e30065adf0669277665.jpeg"
+  },
+  {
+    "id": "ldsp_sosna_skandinaviya_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Сосна скандинавия (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_sosna_skandinaviya_chfmk_tisnenie_wood_line.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/10e/600_600_140cd750bba9870f18aada2478b24840a/5iff4dbovr2j7f64d00irsjjxrvqkt7n.jpg"
+  },
+  {
+    "id": "ldsp_soul_d_lmt",
+    "name": "ЛДСП Соул D  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_soul_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/78b/600_600_140cd750bba9870f18aada2478b24840a/19m33dxib60cvkayp5d3oxggq6xkb3xv.jpg"
+  },
+  {
+    "id": "ldsp_soft_k_lmt",
+    "name": "ЛДСП Софт К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_soft_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e20/600_600_140cd750bba9870f18aada2478b24840a/e20a880036da3515641df196d22949c5.jpeg"
+  },
+  {
+    "id": "ldsp_tayga_k_lmt",
+    "name": "ЛДСП Тайга К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tayga_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e88/600_600_140cd750bba9870f18aada2478b24840a/309jcd2glzsj9sn63h1v55p4d2k90q1z.jpg"
+  },
+  {
+    "id": "ldsp_tegola_s_315_pw_2800_2070_16mm",
+    "name": "ЛДСП Тегола С 315 PW 2800*2070*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tegola_s_315_pw_2800_2070_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/639/600_600_140cd750bba9870f18aada2478b24840a/tgdjkj5x4alchoqm236g6ts3ei0gvs20.jpg"
+  },
+  {
+    "id": "ldsp_temno_seryy_loft_u_2601_lf",
+    "name": "ЛДСП Темно-серый Loft U 2601 LF",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_temno_seryy_loft_u_2601_lf.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c46/600_600_140cd750bba9870f18aada2478b24840a/c463a70fbeeebbf0fe0bf7d93c71fb68.jpeg"
+  },
+  {
+    "id": "ldsp_titan_3894_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Титан  3894 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_titan_3894_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ef9/600_600_140cd750bba9870f18aada2478b24840a/ef985eee38f9bf908eea90c3b467c2d3.jpeg"
+  },
+  {
+    "id": "ldsp_transilvaniya_k_lmt",
+    "name": "ЛДСП Трансильвания К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_transilvaniya_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/285/600_600_140cd750bba9870f18aada2478b24840a/285f42f0284a7050bd01d4213d8bddc6.jpeg"
+  },
+  {
+    "id": "ldsp_tuya_u_1118_pr",
+    "name": "ЛДСП Туя U 1118 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tuya_u_1118_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ba3/600_600_140cd750bba9870f18aada2478b24840a/ba32b925eecfea14ca872a7318f768be.jpeg"
+  },
+  {
+    "id": "ldsp_tefiya_2750_1830_16mm_ems",
+    "name": "ЛДСП Тэфия 2750*1830*16мм (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tefiya_2750_1830_16mm_ems.html",
+    "image": "https://www.em-c.kz/bitrix/templates/aspro_max/images/svg/noimage_product.svg"
+  },
+  {
+    "id": "ldsp_ugolnyy_kamen_k_353_rt_2_8_2_07_16mm",
+    "name": "ЛДСП Угольный камень К 353 RT 2,8*2,07 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_ugolnyy_kamen_k_353_rt_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/531/600_600_140cd750bba9870f18aada2478b24840a/531265dcda77586e98d63056f73e81e3.jpeg"
+  },
+  {
+    "id": "ldsp_ulichnyy_beton_svetlyy_ems",
+    "name": "ЛДСП Уличный бетон светлый (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_ulichnyy_beton_svetlyy_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4e0/600_600_140cd750bba9870f18aada2478b24840a/j88lruujitlx6hosuy2glgsgc8fed7py.jpg"
+  },
+  {
+    "id": "ldsp_uni_nero_chfmk",
+    "name": "ЛДСП Уни Неро (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_uni_nero_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bc6/600_600_140cd750bba9870f18aada2478b24840a/bc69ee032431458340b7df14ecc7d672.jpg"
+  },
+  {
+    "id": "ldsp_fayerstoun_ems",
+    "name": "ЛДСП Файерстоун (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_fayerstoun_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0a5/600_600_140cd750bba9870f18aada2478b24840a/iqzvhy3ao4vpoyevcfsduz92wo0epon3.jpg"
+  },
+  {
+    "id": "ldsp_feba_chfmk",
+    "name": "ЛДСП Феба (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_feba_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c7c/600_600_140cd750bba9870f18aada2478b24840a/c7c644038abf258d74e412ce9c4f843e.jpg"
+  },
+  {
+    "id": "ldsp_feniks_d_lmt",
+    "name": "ЛДСП Феникс D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_feniks_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/552/600_600_140cd750bba9870f18aada2478b24840a/552483ad20e0af0e7827f8ecd1a4f0a2.jpeg"
+  },
+  {
+    "id": "ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Фиолетовый небесный М.202.S01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d57/600_600_140cd750bba9870f18aada2478b24840a/6eb30l4y90x7dtgh3i8z39ru0lxtv5jb.jpg"
+  },
+  {
+    "id": "ldsp_frost_k_lmt",
+    "name": "ЛДСП Фрост К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_frost_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/587/600_600_140cd750bba9870f18aada2478b24840a/pworf8vthwhcux8i2o0jt344yilughvc.jpg"
+  },
+  {
+    "id": "ldsp_khronos_d_lmt",
+    "name": "ЛДСП Хронос D (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_khronos_d_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/46d/600_600_140cd750bba9870f18aada2478b24840a/46d65b3a0b9ded3948ed9a1e33e79287.jpeg"
+  },
+  {
+    "id": "ldsp_khyugge_k_lmt",
+    "name": "ЛДСП Хюгге К  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_khyugge_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/29a/600_600_140cd750bba9870f18aada2478b24840a/7j30io98s208t6lmebhjovs5tbpcgo5x.jpg"
+  },
+  {
+    "id": "ldsp_tsement_vyatskiy_tumannyy_f_434_f01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Цемент Вятский туманный F.434.F01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_vyatskiy_tumannyy_f_434_f01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/89e/600_600_140cd750bba9870f18aada2478b24840a/agkhq1umom3gio82txaaer92d7y0cne7.jpg"
+  },
+  {
+    "id": "ldsp_tsement_k_lmt",
+    "name": "ЛДСП Цемент К  (Лмт)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_k_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b22/600_600_140cd750bba9870f18aada2478b24840a/b229dd8838718d40d6e9b90d12d07aeb.jpeg"
+  },
+  {
+    "id": "ldsp_tsement_svetlyy_chfmk",
+    "name": "ЛДСП Цемент светлый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_svetlyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/084/600_600_140cd750bba9870f18aada2478b24840a/0847b3d6a2f116374c1400bc7cc0a3f7.jpeg"
+  },
+  {
+    "id": "ldsp_tsement_svetlyy_u_3719_re",
+    "name": "ЛДСП Цемент светлый U 3719 РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_svetlyy_u_3719_re.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/373/600_600_140cd750bba9870f18aada2478b24840a/3731dbfe274aa3ae690f8003ba7025c5.jpeg"
+  },
+  {
+    "id": "ldsp_tsement_temnyy_chfmk",
+    "name": "ЛДСП Цемент темный (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_temnyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/bee/600_600_140cd750bba9870f18aada2478b24840a/qvv2qq483ejbsghkx0hxq9im8jji73bb.jpg"
+  },
+  {
+    "id": "ldsp_tsement_temnyy_u_3720_re",
+    "name": "ЛДСП Цемент темный U 3720 РЕ",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_tsement_temnyy_u_3720_re.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/25e/600_600_140cd750bba9870f18aada2478b24840a/25e931588764e56496b6579af097512a.jpeg"
+  },
+  {
+    "id": "ldsp_chernyy_0190_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Черный  0190 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_chernyy_0190_pe_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/80c/600_600_140cd750bba9870f18aada2478b24840a/80c42b457abffdb55b8eb6ea2387fbe6.jpeg"
+  },
+  {
+    "id": "ldsp_chernyy_0190_pe_2_75kh1_83_16mm",
+    "name": "ЛДСП Черный 0190 PЕ 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_chernyy_0190_pe_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/80c/600_600_140cd750bba9870f18aada2478b24840a/80c42b457abffdb55b8eb6ea2387fbe6.jpeg"
+  },
+  {
+    "id": "ldsp_chernyy_r_lmt",
+    "name": "ЛДСП Черный Р  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_chernyy_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/af7/600_600_140cd750bba9870f18aada2478b24840a/af7fb9a9a15cff9b15d82f9610ff61bd.jpeg"
+  },
+  {
+    "id": "ldsp_chernyy_yasen_u_31136_pr",
+    "name": "ЛДСП Черный ясень U 31136 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_chernyy_yasen_u_31136_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b29/600_600_140cd750bba9870f18aada2478b24840a/b2927d95bb4faa364b97c207709ee1e9.jpeg"
+  },
+  {
+    "id": "ldsp_chili_r_lmt",
+    "name": "ЛДСП Чили Р (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_chili_r_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/afe/600_600_140cd750bba9870f18aada2478b24840a/afe84201fbabed0bf98844c927736ca7.jpeg"
+  },
+  {
+    "id": "ldsp_shteyn_svetlyy_u_1159_pr",
+    "name": "ЛДСП Штейн Светлый U 1159 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_shteyn_svetlyy_u_1159_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/857/600_600_140cd750bba9870f18aada2478b24840a/8574cfbf4c9b16c5c60ede6559db5c81.jpeg"
+  },
+  {
+    "id": "ldsp_shteyn_temnyy_u_1160_pr",
+    "name": "ЛДСП Штейн Темный U 1160 PR",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_shteyn_temnyy_u_1160_pr.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/2a3/600_600_140cd750bba9870f18aada2478b24840a/2a32463fd97ab8fe19fa91fd098768c4.jpeg"
+  },
+  {
+    "id": "ldsp_enigma_871_re_2_8_2_07_16mm",
+    "name": "ЛДСП Энигма 871 РЕ 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_enigma_871_re_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/6df/600_600_140cd750bba9870f18aada2478b24840a/3f8bq51sr18tov7cc76la1jkbifrhd10.jpg"
+  },
+  {
+    "id": "ldsp_yasen_w_lmt",
+    "name": "ЛДСП Ясень W  (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_w_lmt.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/4f0/600_600_140cd750bba9870f18aada2478b24840a/l4vywrp7pcn7yoyofiw5fokln8wn68kq.jpg"
+  },
+  {
+    "id": "ldsp_yasen_ankor_svetlyy_4780_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Ясень Анкор Светлый 4780 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_ankor_svetlyy_4780_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e3c/600_600_140cd750bba9870f18aada2478b24840a/e3c9866af4fcb48378509b576fbc0104.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_koimbra_461_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Ясень Коимбра 461 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_koimbra_461_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d4f/600_600_140cd750bba9870f18aada2478b24840a/d4f2e2b22001bb1b201845f08cc7584c.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_orlando_466_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Ясень Орландо 466 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_orlando_466_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f9f/600_600_140cd750bba9870f18aada2478b24840a/f9f94df0ffb6e7c38c6ae2f074a59268.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_snezhnyy_463_swn_2_8_2_07_16mm",
+    "name": "ЛДСП Ясень Снежный 463 SWN 2,8*2,07*16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_snezhnyy_463_swn_2_8_2_07_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/5a7/600_600_140cd750bba9870f18aada2478b24840a/5a7244d0b479a97641a8098a19e117a7.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_tverskoy_lnyanoy_d_305_w01_2800kh2070kh16mm_std",
+    "name": "ЛДСП Ясень Тверской льняной D.305.W01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_tverskoy_lnyanoy_d_305_w01_2800kh2070kh16mm_std.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d78/600_600_140cd750bba9870f18aada2478b24840a/q8aqks0e85deoj177x35t0bz1bnd4wo8.jpg"
+  },
+  {
+    "id": "ldsp_yasen_tverskoy_rzhanoy_d_306_w01_2800kh2070kh16mm_std_",
+    "name": "ЛДСП Ясень Тверской ржаной D.306.W01 2800х2070х16мм STD",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_tverskoy_rzhanoy_d_306_w01_2800kh2070kh16mm_std_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b95/600_600_140cd750bba9870f18aada2478b24840a/cekw24dbcy560mtcxohrxmj2tu8k2ydl.jpg"
+  },
+  {
+    "id": "ldsp_yasen_ankor_belyy_chfmk",
+    "name": "ЛДСП Ясень анкор белый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_ankor_belyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/8ec/600_600_140cd750bba9870f18aada2478b24840a/8ecd31c3dd1ed02521c80ba7b9590f22.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_ankor_svetlyy_chfmk",
+    "name": "ЛДСП Ясень анкор светлый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_ankor_svetlyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/e1f/600_600_140cd750bba9870f18aada2478b24840a/e1f5d515facfcab2b0cf10fa3ab6e10e.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_ankor_temnyy_chfmk",
+    "name": "ЛДСП Ясень анкор темный (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_ankor_temnyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/cfa/600_600_140cd750bba9870f18aada2478b24840a/cfaa433f3be78679a1a23fbd0ec04ba9.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_svetlyy_chfmk",
+    "name": "ЛДСП Ясень шимо светлый (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_svetlyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/460/600_600_140cd750bba9870f18aada2478b24840a/460b65e836c10b35f2edf1d76eee9802.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_svetlyy_3356_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Ясень шимо светлый 3356 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_svetlyy_3356_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c86/600_600_140cd750bba9870f18aada2478b24840a/c867a0b917f9a2d1a826269813596fe5.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm",
+    "name": "ЛДСП Ясень шимо светлый 3356 PR 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c86/600_600_140cd750bba9870f18aada2478b24840a/c867a0b917f9a2d1a826269813596fe5.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_temnyy_chfmk",
+    "name": "ЛДСП Ясень шимо темный (ЧФМК)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_chfmk.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c34/600_600_140cd750bba9870f18aada2478b24840a/c3465eb2169940983d2c73c3ab67261e.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Ясень шимо темный 3357 PR 2,50х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/c7b/600_600_140cd750bba9870f18aada2478b24840a/c7b0e07dffaa426aebc38e7c944affb2.jpeg"
+  },
+  {
+    "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_75kh1_83_16mm",
+    "name": "ЛДСП Ясень шимо темный 3357 PR 2,75х1,83 16мм",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_3357_pr_2_75kh1_83_16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/fd5/600_600_140cd750bba9870f18aada2478b24840a/fd58cb20203125d265a1ec607403eaf6.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_06mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 06мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_06mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_08mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 08мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_08mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_10mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 10мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_10mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_12mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 12мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_12mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_16mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 16мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_16mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_22mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 22мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_22mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_25mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 25мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_25mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8_2_07_28mm_shlifovannaya_ems",
+    "name": "МДФ 2,8*2,07 28мм шлифованная (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8_2_07_28mm_shlifovannaya_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/9b4/600_600_140cd750bba9870f18aada2478b24840a/9b4f305f33380eda4f4a41688920ab34.jpeg"
+  },
+  {
+    "id": "mdf_2_8kh2_07_laminirovannaya_10_mm_ems",
+    "name": "МДФ 2,8х2,07 ламинированная 10 мм (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8kh2_07_laminirovannaya_10_mm_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/afb/600_600_140cd750bba9870f18aada2478b24840a/afb347408ddb9a517c10494acd6b612b.jpeg"
+  },
+  {
+    "id": "mdf_2_8kh2_07_laminirovannaya_18_mm_ems",
+    "name": "МДФ 2,8х2,07 ламинированная 18 мм (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8kh2_07_laminirovannaya_18_mm_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/afb/600_600_140cd750bba9870f18aada2478b24840a/afb347408ddb9a517c10494acd6b612b.jpeg"
+  },
+  {
+    "id": "mdf_2_8kh2_07_laminirovannaya_19_mm_ems",
+    "name": "МДФ 2,8х2,07 ламинированная 19 мм (ЕМС)",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_2_8kh2_07_laminirovannaya_19_mm_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/afb/600_600_140cd750bba9870f18aada2478b24840a/afb347408ddb9a517c10494acd6b612b.jpeg"
+  },
+  {
+    "id": "mdf_m_laminir_2_st_dub_santana_5521_pw_2800kh2070kh16mm",
+    "name": "МДФ М ламинир. 2-ст Дуб Сантана 5521 PW 2800х2070х16мм",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_m_laminir_2_st_dub_santana_5521_pw_2800kh2070kh16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/0f3/600_600_140cd750bba9870f18aada2478b24840a/j7crw2n2g8myz3crje1v3tsen0y79grx.jpg"
+  },
+  {
+    "id": "mdf_m_laminir_2_st_mramor_petra_grafitovyy_u_704_cb_2800kh2070kh16mm",
+    "name": "МДФ М ламинир. 2-ст Мрамор Пьетра Графитовый U 704 CB 2800х2070х16мм",
+    "category": "МДФ",
+    "url": "https://www.em-c.kz/catalog/mdf_m_laminir_2_st_mramor_petra_grafitovyy_u_704_cb_2800kh2070kh16mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/18a/600_600_140cd750bba9870f18aada2478b24840a/g5lcjhvvcbg6rrzd57bdtsvq34mg5hhn.jpg"
+  },
+  {
     "id": "mdf_uv_design_2400_1200_9_zh_b115_2",
     "name": "MDF UV DESIGN 2400*1200*9  ZH-B115 (2)",
     "category": "МДФ UV",
@@ -47,5 +2350,341 @@
     "category": "МДФ UV",
     "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_a232_2.html",
     "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "mdf_uv_design_2400_1200_9_zh_b007_2",
+    "name": "MDF UV DESIGN 2400*1200*9 ZH-B007 (2)",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_b007_2.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "mdf_uv_design_2400_1200_9_zh_b019_2",
+    "name": "MDF UV DESIGN 2400*1200*9 ZH-B019 (2)",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_b019_2.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "mdf_uv_design_2400_1200_9_zh_mc001_3",
+    "name": "MDF UV DESIGN 2400*1200*9 ZH-MC001 (3)",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_mc001_3.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "set_12_serebr_linii_na_oranzhevom_mdf_uv_2440_1220_18_mm_zp",
+    "name": "SET-12 Серебр. линии на оранжевом MDF UV 2440*1220*18 мм ZP",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/set_12_serebr_linii_na_oranzhevom_mdf_uv_2440_1220_18_mm_zp.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "_3015_m_mdf_uv_1220x2440x18mm",
+    "name": "№ 3015-М MDF UV 1220x2440x18мм",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/_3015_m_mdf_uv_1220x2440x18mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/669/600_600_140cd750bba9870f18aada2478b24840a/6692c8d7c5e81e09589791d8d2857939.jpeg"
+  },
+  {
+    "id": "_3027_m_mdf_uv_1220x2440x18mm",
+    "name": "№ 3027-М MDF UV 1220x2440x18мм",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/_3027_m_mdf_uv_1220x2440x18mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a8f/600_600_140cd750bba9870f18aada2478b24840a/a8fc0c0a2bef33ed2d3f7fb63c005d1d.jpeg"
+  },
+  {
+    "id": "_9247_m_mdf_uv_1220x2440x18mm",
+    "name": "№ 9247-М MDF UV 1220x2440x18мм",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/_9247_m_mdf_uv_1220x2440x18mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/a6b/600_600_140cd750bba9870f18aada2478b24840a/a6bc9a1ec339aafe5b485ec9a7172bf8.jpeg"
+  },
+  {
+    "id": "116_boff_nvt_mdf_uv_1220x2440x18mm",
+    "name": "№116 BOFF NVT  MDF UV  1220x2440x18мм",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/116_boff_nvt_mdf_uv_1220x2440x18mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/75a/600_600_140cd750bba9870f18aada2478b24840a/75a325e3b0a3b32109155f26b00b2fa6.jpeg"
+  },
+  {
+    "id": "83_code_nvt_mdf_uv_1220x2440x18mm",
+    "name": "№83 CODE NVT  MDF UV  1220x2440x18мм",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/83_code_nvt_mdf_uv_1220x2440x18mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/b82/600_600_140cd750bba9870f18aada2478b24840a/b82c6cce195da933fce2eab14d79b079.jpeg"
+  },
+  {
+    "id": "fanera_03mm_2_4_k",
+    "name": "Фанера 03мм 2/4 (к)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_03mm_2_4_k.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_06mm_2_4_k",
+    "name": "Фанера 06мм 2/4 (к)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_06mm_2_4_k.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_08mm_2_4_k",
+    "name": "Фанера 08мм 2/4(к)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_08mm_2_4_k.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh10mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х10мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh10mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh12mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х12мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh12mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh15mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х15мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh15mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh18mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х18мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh18mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh6mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х6мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh6mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_fk_1525kh1525kh8mm_kazakhstan",
+    "name": "Фанера ФК 1525х1525х8мм (Казахстан)",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_fk_1525kh1525kh8mm_kazakhstan.html",
+    "image": "https://www.em-c.kz/upload/iblock/46c/yn5rtku9cuulf4tntb60p4279xcvqxod.png"
+  },
+  {
+    "id": "fanera_kleenaya_e_0_5_1525kh1525kh10mm_iii_iv_fsf_nsh",
+    "name": "Фанера клееная Е-0,5 1525х1525х10мм III/IV FSF НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_e_0_5_1525kh1525kh10mm_iii_iv_fsf_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525_1525_8mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525*1525*8мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525_1525_8mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh10mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х10мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh10mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh10mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х10мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh10mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh12mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х12мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh12mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh12mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х12мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh12mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh15mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х15мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh15mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh15mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х15мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh15mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh18mm_sort_iii_iv_nsh_",
+    "name": "Фанера клееная ФК 1525х1525х18мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh18mm_sort_iii_iv_nsh_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh21mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х21мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh21mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh21mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х21мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh21mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh3mm_sort_ii_ii",
+    "name": "Фанера клееная ФК 1525х1525х3мм сорт II/II",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh3mm_sort_ii_ii.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh3mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х3мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh3mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh3mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х3мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh3mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh4mm_sort_ii_ii",
+    "name": "Фанера клееная ФК 1525х1525х4мм сорт II/II",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh4mm_sort_ii_ii.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh4mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х4мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh4mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh4mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х4мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh4mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh6mm_sort_ii_ii_",
+    "name": "Фанера клееная ФК 1525х1525х6мм сорт II/II",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh6mm_sort_ii_ii_.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh6mm_sort_ii_iv",
+    "name": "Фанера клееная ФК 1525х1525х6мм сорт II/IV",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh6mm_sort_ii_iv.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "fanera_kleenaya_fk_1525kh1525kh6mm_sort_iii_iv_nsh",
+    "name": "Фанера клееная ФК 1525х1525х6мм сорт III/IV НШ",
+    "category": "Фанера",
+    "url": "https://www.em-c.kz/catalog/fanera_kleenaya_fk_1525kh1525kh6mm_sort_iii_iv_nsh.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/834/600_600_140cd750bba9870f18aada2478b24840a/8342caca6c0d2dfd6f48e1c173e2a7ba.jpeg"
+  },
+  {
+    "id": "lkhdf_belyy_0110_re_2800_2070_2_5mm",
+    "name": "ЛХДФ Белый 0110 РЕ 2800*2070*2,5мм",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/lkhdf_belyy_0110_re_2800_2070_2_5mm.html",
+    "image": "https://www.em-c.kz/upload/iblock/339/3392b4ce6b332f900109a76b5d5a44b2.jpeg"
+  },
+  {
+    "id": "khdf_belyy_2_8",
+    "name": "ХДФ Белый 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_belyy_2_8.html",
+    "image": "https://www.em-c.kz/upload/iblock/27c/27c7598083e4b777245649a4bde8e89a.jpeg"
+  },
+  {
+    "id": "khdf_buk_bavariya_2_8",
+    "name": "ХДФ Бук бавария 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_buk_bavariya_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/49b/600_600_140cd750bba9870f18aada2478b24840a/49b7cd14eacd948e5b7f575d8712fa42.jpeg"
+  },
+  {
+    "id": "khdf_venge_2_8",
+    "name": "ХДФ Венге 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_venge_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/19c/600_600_140cd750bba9870f18aada2478b24840a/19cb263ac07513dd892d025242fd9be8.jpeg"
+  },
+  {
+    "id": "khdf_dub_sonoma_svetlyy_2_8",
+    "name": "ХДФ Дуб сонома светлый 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_dub_sonoma_svetlyy_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/df8/600_600_140cd750bba9870f18aada2478b24840a/df893310af540594b1a8be4df3398357.jpeg"
+  },
+  {
+    "id": "khdf_klen_2_8",
+    "name": "ХДФ Клен 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_klen_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/d1a/600_600_140cd750bba9870f18aada2478b24840a/d1a44bc62c9b973e6b21b9400125a61a.jpeg"
+  },
+  {
+    "id": "khdf_orekh_ekko_2_8",
+    "name": "ХДФ Орех экко 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_orekh_ekko_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/94b/600_600_140cd750bba9870f18aada2478b24840a/94b731f32e3374c3968741533d0291dc.jpeg"
+  },
+  {
+    "id": "khdf_kholodnyy_seryy_2_8",
+    "name": "ХДФ Холодный серый 2,8",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_kholodnyy_seryy_2_8.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/59b/600_600_140cd750bba9870f18aada2478b24840a/59b7caa1597fe9012610ed2a4aae33a8.jpeg"
+  },
+  {
+    "id": "khdf_neshlifovannyy_2800kh2070kh3_mm",
+    "name": "ХДФ нешлифованный 2800х2070х3 мм",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_neshlifovannyy_2800kh2070kh3_mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f12/600_600_140cd750bba9870f18aada2478b24840a/f1277c2cc8dd8f9bfee8eeda8ff91974.jpeg"
+  },
+  {
+    "id": "khdf_neshlifovannyy_2800kh2070kh4_mm",
+    "name": "ХДФ нешлифованный 2800х2070х4 мм",
+    "category": "ХДФ",
+    "url": "https://www.em-c.kz/catalog/khdf_neshlifovannyy_2800kh2070kh4_mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/f12/600_600_140cd750bba9870f18aada2478b24840a/f1277c2cc8dd8f9bfee8eeda8ff91974.jpeg"
   }
 ]
