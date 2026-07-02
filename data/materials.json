@@ -1,0 +1,51 @@
+[
+  {
+    "id": "dvp_1_7kh2_75m_3_2mm",
+    "name": "ДВП 1,7х2,75м 3,2мм",
+    "category": "ДВП",
+    "url": "https://www.em-c.kz/catalog/dvp_1_7kh2_75m_3_2mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/85c/600_600_140cd750bba9870f18aada2478b24840a/85c1dfef6aad1614969b7bbebbc6d292.jpeg"
+  },
+  {
+    "id": "dvp_tolshch_3_4mm_2745_1700_mm",
+    "name": "ДВП толщ.3,4мм, 2745*1700*мм",
+    "category": "ДВП",
+    "url": "https://www.em-c.kz/catalog/dvp_tolshch_3_4mm_2745_1700_mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/85c/600_600_140cd750bba9870f18aada2478b24840a/85c1dfef6aad1614969b7bbebbc6d292.jpeg"
+  },
+  {
+    "id": "dvpo_belaya_2745_1700_3_2mm",
+    "name": "ДВПО белая 2745*1700*3,2мм",
+    "category": "ДВП",
+    "url": "https://www.em-c.kz/catalog/dvpo_belaya_2745_1700_3_2mm.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/ab4/600_600_140cd750bba9870f18aada2478b24840a/ab4968d833adbb83a1dc51aaca241b4c.jpeg"
+  },
+  {
+    "id": "ldsp_blue_sky_goluboe_nebo_ems",
+    "name": "ЛДСП BLUE SKY (Голубое небо) (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_blue_sky_goluboe_nebo_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/1c1/600_600_140cd750bba9870f18aada2478b24840a/3yjmtocyf80ucj7nqbngsrm3ci9dg4aa.jpg"
+  },
+  {
+    "id": "ldsp_frosty_mint_moroznaya_myata_ems",
+    "name": "ЛДСП FROSTY MINT (Морозная мята) (ЕМС)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_frosty_mint_moroznaya_myata_ems.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/577/600_600_140cd750bba9870f18aada2478b24840a/dit1tzuil73w6vrj7xzmeoeznfju39r6.jpg"
+  },
+  {
+    "id": "mdf_uv_design_2400_1200_9_zh_b115_2",
+    "name": "MDF UV DESIGN 2400*1200*9  ZH-B115 (2)",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_b115_2.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  },
+  {
+    "id": "mdf_uv_design_2400_1200_9_zh_a232_2",
+    "name": "MDF UV DESIGN 2400*1200*9 ZH-A232 (2)",
+    "category": "МДФ UV",
+    "url": "https://www.em-c.kz/catalog/mdf_uv_design_2400_1200_9_zh_a232_2.html",
+    "image": "https://www.em-c.kz/upload/resize_cache/iblock/aa3/600_600_140cd750bba9870f18aada2478b24840a/aa385cc43bb2c55b829ae64923f21ca1.jpeg"
+  }
+]
