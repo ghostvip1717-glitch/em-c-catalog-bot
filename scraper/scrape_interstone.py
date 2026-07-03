@@ -75,21 +75,51 @@ def parse_product_page(html: str, slug: str) -> dict | None:
         return None
     name = title_el.get_text(strip=True)
 
-    image = None
+    # Раньше фото искалось через img[src*="products-gallery"] с фолбэком на
+    # "первый img в галерее" — но у части товаров реальные фото лежат по
+    # другому пути (/media/images/1280/stones/GRANDEX/...), без "products-gallery"
+    # в URL. Тогда селектор не находил совпадений, и фолбэк подхватывал первый
+    # попавшийся <img> в блоке галереи — им оказывалась иконка стрелки
+    # пагинации (rotator-arr-left.svg), которая в разметке идёт раньше фото.
+    #
+    # Теперь вместо привязки к конкретной подстроке пути берём ВСЕ <img> внутри
+    # .product-gallery, что ведут на реальные загруженные фото (путь содержит
+    # "/media/images/"), и явно отбрасываем иконки интерфейса (путь содержит
+    # "/front/img/icon/" — стрелки, лупа, крестик и т.п.). Так же убираем
+    # дубли между версией 1280px и 320px одного и того же файла.
     gallery = soup.select_one(".product-gallery")
     scope = gallery if gallery else soup
-    img = scope.select_one('img[src*="products-gallery"]') or scope.select_one("img")
-    if img:
-        image = img.get("src") or img.get("data-src")
-    if image and image.startswith("/"):
-        image = BASE_URL + image
+
+    images: list[str] = []
+    seen_filenames: set[str] = set()
+    for img in scope.select("img"):
+        src = img.get("src") or img.get("data-src")
+        if not src:
+            continue
+        if "/front/img/icon/" in src:
+            continue  # иконки интерфейса (стрелки, лупа) — не фото товара
+        if "/media/images/" not in src:
+            continue
+        if src.startswith("/"):
+            src = BASE_URL + src
+        # /media/images/1280/... и /media/images/320/... — одно и то же фото
+        # в разных размерах; оставляем только первую (крупную, 1280) версию.
+        filename = src.rsplit("/", 1)[-1]
+        if filename in seen_filenames:
+            continue
+        seen_filenames.add(filename)
+        images.append(src)
+
+    if not images:
+        print(f"[scrape_interstone] предупреждение: не найдено ни одного фото для {slug}", file=sys.stderr)
 
     return {
         "id": "interstone_" + slug,
         "name": name,
         "category": CATEGORY_NAME,
         "url": f"{BASE_URL}/stones/akrilovyy-kamen/grandex/colors/{slug}",
-        "image": image,
+        "image": images[0] if images else None,
+        "images": images,
     }
 
 
