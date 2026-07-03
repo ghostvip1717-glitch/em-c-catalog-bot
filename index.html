@@ -19,7 +19,7 @@
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
   #app{padding:8px 10px 24px;}
 
-  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;box-shadow:0 1px 0 rgba(0,0,0,0.06);}
+  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--secbg);}
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -46,44 +46,61 @@
 
   /* боковая шторка с категориями по сайтам-источникам */
   .drawer-overlay{
-    position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:60;
-    opacity:0;pointer-events:none;transition:opacity .25s ease;
+    position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:60;
+    opacity:0;pointer-events:none;transition:opacity .28s ease;
   }
   .drawer-overlay.open{opacity:1;pointer-events:auto;}
   .drawer{
-    position:fixed;top:0;left:0;bottom:0;width:84%;max-width:320px;background:var(--bg);
-    z-index:61;transform:translateX(-105%);transition:transform .25s ease;overflow-y:auto;
-    padding:16px 12px;box-shadow:2px 0 16px rgba(0,0,0,0.2);
+    position:fixed;top:0;left:0;bottom:0;width:86%;max-width:330px;background:var(--bg);
+    z-index:61;transform:translateX(-102%);transition:transform .32s cubic-bezier(.22,.61,.36,1);
+    overflow-y:auto;-webkit-overflow-scrolling:touch;padding:18px 14px 24px;
+    border-right:1px solid var(--secbg);
   }
   .drawer.open{transform:translateX(0);}
-  .drawer-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
-  .drawer-title{font-size:16px;font-weight:700;}
+  .drawer.dragging{transition:none;}
+  .drawer-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+  .drawer-title{font-size:17px;font-weight:700;letter-spacing:.1px;}
   .drawer-close{
     width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
     align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
+    transition:background-color .15s ease,transform .15s ease;
   }
-  .drawer-item{padding:11px 10px;border-radius:8px;cursor:pointer;font-size:14.5px;margin-bottom:2px;transition:background-color .15s ease;}
+  .drawer-close:active{transform:scale(0.9);}
+
+  .drawer-item{
+    padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
+    margin-bottom:4px;transition:background-color .15s ease,color .15s ease;
+  }
   .drawer-item.active{background:var(--button);color:var(--button-text);}
-  .drawer-group{margin-top:8px;border-top:1px solid var(--secbg);padding-top:6px;}
-  .drawer-group-header{
-    display:flex;justify-content:space-between;align-items:center;padding:10px 8px 10px 10px;
-    cursor:pointer;border-radius:8px;border-left:3px solid transparent;transition:background-color .15s ease;
+
+  .drawer-section-label{
+    font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--hint);text-transform:uppercase;
+    margin:18px 4px 8px;
   }
-  .drawer-group[data-site="emc"] .drawer-group-header{border-left-color:#2481cc;}
-  .drawer-group[data-site="adilet"] .drawer-group-header{border-left-color:#c08a2e;}
-  .drawer-group[data-site="interstone"] .drawer-group-header{border-left-color:#7c8591;}
-  .drawer-group-title{font-weight:700;font-size:14px;}
-  .drawer-group-sub{font-weight:400;font-size:11.5px;color:var(--hint);margin-top:2px;}
-  .drawer-group-arrow{transition:transform .2s;color:var(--hint);font-size:12px;flex:0 0 auto;margin-left:8px;}
+
+  .drawer-group{margin-bottom:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
+  .drawer-group-header{
+    display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 12px;
+    cursor:pointer;transition:background-color .15s ease;
+  }
+  .drawer-group-badge{
+    width:34px;height:34px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;
+    justify-content:center;color:#fff;font-weight:700;font-size:13px;letter-spacing:.2px;
+  }
+  .drawer-group-text{flex:1;min-width:0;}
+  .drawer-group-title{font-weight:700;font-size:13.5px;}
+  .drawer-group-sub{font-weight:400;font-size:11.5px;color:var(--hint);margin-top:1px;}
+  .drawer-group-arrow{transition:transform .25s ease;color:var(--hint);font-size:12px;flex:0 0 auto;}
   .drawer-group.expanded .drawer-group-arrow{transform:rotate(90deg);}
-  .drawer-subitems{max-height:0;overflow:hidden;transition:max-height .25s ease;padding-left:8px;}
+  .drawer-subitems{max-height:0;overflow:hidden;transition:max-height .3s ease;}
   .drawer-group.expanded .drawer-subitems{max-height:700px;}
   .drawer-subitem{
-    display:flex;justify-content:space-between;gap:8px;padding:9px 10px;border-radius:8px;
-    font-size:13.5px;color:var(--text);cursor:pointer;
+    display:flex;justify-content:space-between;gap:8px;padding:9px 12px 9px 54px;
+    font-size:13px;color:var(--text);cursor:pointer;transition:background-color .12s ease;
   }
-  .drawer-subitem.active{background:var(--secbg);font-weight:600;}
-  .drawer-subitem .n{color:var(--hint);font-size:11.5px;flex:0 0 auto;}
+  .drawer-subitem:active{background:rgba(0,0,0,0.05);}
+  .drawer-subitem.active{color:var(--button);font-weight:700;}
+  .drawer-subitem .n{color:var(--hint);font-size:11px;flex:0 0 auto;}
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
@@ -146,12 +163,16 @@
     opacity:0;pointer-events:none;transition:opacity .2s ease;
   }
   .viewer.open{opacity:1;pointer-events:auto;}
-  .vswipe{width:100%;display:flex;align-items:center;justify-content:center;max-height:70vh;overflow:hidden;position:relative;}
-  .vswipe img{
-    max-width:100%;max-height:70vh;border-radius:8px;object-fit:contain;
-    transform:scale(.96);transition:transform .2s ease;user-select:none;-webkit-user-drag:none;
+  .vswipe{
+    width:100%;max-height:70vh;overflow:hidden;position:relative;border-radius:10px;
+    transform:scale(.96);transition:transform .2s ease;touch-action:pan-y;
   }
-  .viewer.open .vswipe img{transform:scale(1);}
+  .viewer.open .vswipe{transform:scale(1);}
+  .vtrack{display:flex;width:100%;height:100%;will-change:transform;}
+  .vtrack img{
+    flex:0 0 100%;width:100%;max-height:70vh;object-fit:contain;
+    user-select:none;-webkit-user-drag:none;pointer-events:none;
+  }
   .vdots{display:flex;gap:6px;justify-content:center;margin-top:10px;min-height:14px;}
   .vdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
   .vdot.active{background:#fff;transform:scale(1.2);}
@@ -205,7 +226,7 @@
 <div class="viewer" id="viewer">
   <div class="vclose" id="vclose">✕</div>
   <div class="vswipe" id="vswipe">
-    <img id="vimg" src="" alt="">
+    <div class="vtrack" id="vtrack"></div>
     <div class="vnav">
       <button class="vnavbtn hidden" id="vprev">‹</button>
       <button class="vnavbtn hidden" id="vnext">›</button>
@@ -238,7 +259,11 @@
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
     viewer: document.getElementById('viewer'),
-    vimg: document.getElementById('vimg'),
+    vswipe: document.getElementById('vswipe'),
+    vtrack: document.getElementById('vtrack'),
+    vdots: document.getElementById('vdots'),
+    vprev: document.getElementById('vprev'),
+    vnext: document.getElementById('vnext'),
     vname: document.getElementById('vname'),
     vcat: document.getElementById('vcat'),
     vcopy: document.getElementById('vcopy'),
@@ -376,31 +401,73 @@
     els.chips.appendChild(favChip);
   }
 
-  // ---- боковая шторка: плоский список категорий ----
+  // ---- боковая шторка: категории сгруппированы по сайтам-источникам ----
   function buildDrawer(){
-    var catCounts = {};
+    var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
     state.items.forEach(function(it){
-      catCounts[it.category] = (catCounts[it.category] || 0) + 1;
+      var g = siteGroupOf(it.category);
+      if (!groups[g]) groups[g] = { cats: {}, total: 0 };
+      groups[g].total++;
+      groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
     });
-    var catNames = Object.keys(catCounts).sort();
 
     els.drawerAll.className = 'drawer-item' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
     els.drawerFav.className = 'drawer-item' + (state.favOnly ? ' active' : '');
 
     els.drawerGroups.innerHTML = '';
-    catNames.forEach(function(catName){
-      var sub = document.createElement('div');
-      sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
-      sub.innerHTML = '<span>' + catName + '</span><span class="n">' + catCounts[catName] + '</span>';
-      sub.onclick = function(){
-        state.category = catName;
-        state.favOnly = false;
-        render();
-        buildChips();
+
+    var label = document.createElement('div');
+    label.className = 'drawer-section-label';
+    label.textContent = 'Источники';
+    els.drawerGroups.appendChild(label);
+
+    SITE_ORDER.forEach(function(key){
+      var g = groups[key];
+      if (!g) return;
+      var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
+      var catNames = Object.keys(g.cats).sort();
+
+      var isExpanded = !!state.expandedGroups[key] ||
+        (!state.favOnly && catNames.indexOf(state.category) !== -1);
+
+      var groupEl = document.createElement('div');
+      groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
+      groupEl.setAttribute('data-site', key);
+
+      var header = document.createElement('div');
+      header.className = 'drawer-group-header';
+      header.innerHTML =
+        '<div class="drawer-group-badge" style="background:' + meta.color + '">' + meta.title.charAt(0) + '</div>' +
+        '<div class="drawer-group-text">' +
+          '<div class="drawer-group-title">' + meta.title + '</div>' +
+          '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div>' +
+        '</div>' +
+        '<div class="drawer-group-arrow">▶</div>';
+      header.onclick = function(){
+        state.expandedGroups[key] = !isExpanded;
         buildDrawer();
-        closeDrawer();
       };
-      els.drawerGroups.appendChild(sub);
+      groupEl.appendChild(header);
+
+      var subitemsWrap = document.createElement('div');
+      subitemsWrap.className = 'drawer-subitems';
+      catNames.forEach(function(catName){
+        var sub = document.createElement('div');
+        sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
+        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
+        sub.onclick = function(){
+          state.category = catName;
+          state.favOnly = false;
+          render();
+          buildChips();
+          buildDrawer();
+          closeDrawer();
+        };
+        subitemsWrap.appendChild(sub);
+      });
+      groupEl.appendChild(subitemsWrap);
+
+      els.drawerGroups.appendChild(groupEl);
     });
   }
 
@@ -412,6 +479,38 @@
     els.drawer.classList.remove('open');
     els.drawerOverlay.classList.remove('open');
   }
+
+  // ---- свайп для закрытия шторки: панель следует за пальцем, на отпускании
+  // либо плавно захлопывается обратно, либо доезжает и закрывается ----
+  (function initDrawerSwipe(){
+    var drag = null;
+    var W = 320;
+    els.drawer.addEventListener('touchstart', function(e){
+      if (!els.drawer.classList.contains('open')) return;
+      W = els.drawer.offsetWidth;
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+      els.drawer.classList.add('dragging');
+    }, {passive:true});
+    els.drawer.addEventListener('touchmove', function(e){
+      if (!drag) return;
+      var t = e.touches[0];
+      var dx = t.clientX - drag.startX;
+      var dy = t.clientY - drag.startY;
+      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (drag.locked !== 'x' || dx > 0) return;
+      drag.dx = dx;
+      els.drawer.style.transform = 'translateX(' + dx + 'px)';
+      els.drawerOverlay.style.opacity = Math.max(0, 1 + dx / W) * 1;
+    }, {passive:true});
+    els.drawer.addEventListener('touchend', function(){
+      if (!drag) return;
+      els.drawer.classList.remove('dragging');
+      els.drawer.style.transform = '';
+      els.drawerOverlay.style.opacity = '';
+      if (drag.dx < -W * 0.28) closeDrawer();
+      drag = null;
+    });
+  })();
 
   els.menuBtn.onclick = openDrawer;
   els.drawerClose.onclick = closeDrawer;
@@ -540,64 +639,90 @@
     }
   }
 
+  // ---- просмотрщик фото: живая drag-карусель вместо мгновенной смены src ----
+  // Все фото товара рендерятся в один горизонтальный "трек"; во время свайпа
+  // трек следует за пальцем без задержки, на отпускании — плавно доезжает
+  // до соседнего кадра или пружинисто возвращается назад (rubber-band на краях).
   var viewerState = { images: [], idx: 0 };
 
-  function showViewerImage(){
-    var imgs = viewerState.images;
-    var idx = viewerState.idx;
-    els.vimg.src = imgs[idx] || '';
-    var dotsEl = document.getElementById('vdots');
-    dotsEl.innerHTML = '';
+  function setTrackTransform(px, animate){
+    els.vtrack.style.transition = animate ? 'transform .32s cubic-bezier(.22,.61,.36,1)' : 'none';
+    els.vtrack.style.transform = 'translateX(calc(' + (-viewerState.idx * 100) + '% + ' + px + 'px))';
+  }
+
+  function updateViewerChrome(){
+    var imgs = viewerState.images, idx = viewerState.idx;
+    els.vdots.innerHTML = '';
     if (imgs.length > 1){
       imgs.forEach(function(_, i){
         var dot = document.createElement('div');
         dot.className = 'vdot' + (i === idx ? ' active' : '');
-        dotsEl.appendChild(dot);
+        els.vdots.appendChild(dot);
       });
     }
-    var prevBtn = document.getElementById('vprev');
-    var nextBtn = document.getElementById('vnext');
-    prevBtn.className = 'vnavbtn' + (idx === 0 ? ' hidden' : '');
-    nextBtn.className = 'vnavbtn' + (idx >= imgs.length - 1 ? ' hidden' : '');
+    els.vprev.className = 'vnavbtn' + (idx === 0 ? ' hidden' : '');
+    els.vnext.className = 'vnavbtn' + (idx >= imgs.length - 1 ? ' hidden' : '');
+  }
+
+  function goToImage(newIdx, animate){
+    viewerState.idx = Math.max(0, Math.min(newIdx, viewerState.images.length - 1));
+    setTrackTransform(0, animate !== false);
+    updateViewerChrome();
   }
 
   function openViewer(item){
-    var imgs = Array.isArray(item.images) ? item.images : (item.image ? [item.image] : []);
+    var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
     viewerState.images = imgs;
     viewerState.idx = 0;
+
+    els.vtrack.innerHTML = '';
+    imgs.forEach(function(src){
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = item.name;
+      img.draggable = false;
+      els.vtrack.appendChild(img);
+    });
+    setTrackTransform(0, false);
+    updateViewerChrome();
+
     els.vname.textContent = item.name;
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
-    showViewerImage();
     els.viewer.classList.add('open');
   }
 
-  document.getElementById('vprev').onclick = function(e){
-    e.stopPropagation();
-    if (viewerState.idx > 0){ viewerState.idx--; showViewerImage(); }
-  };
-  document.getElementById('vnext').onclick = function(e){
-    e.stopPropagation();
-    if (viewerState.idx < viewerState.images.length - 1){ viewerState.idx++; showViewerImage(); }
-  };
+  els.vprev.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx - 1); };
+  els.vnext.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx + 1); };
 
-  var swipeStartX = 0, swipeStartY = 0;
-  var vswipeEl = document.getElementById('vswipe');
-  vswipeEl.addEventListener('touchstart', function(e){
-    swipeStartX = e.touches[0].clientX;
-    swipeStartY = e.touches[0].clientY;
-  }, {passive:true});
-  vswipeEl.addEventListener('touchend', function(e){
-    var dx = e.changedTouches[0].clientX - swipeStartX;
-    var dy = e.changedTouches[0].clientY - swipeStartY;
-    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40){
-      if (dx < 0 && viewerState.idx < viewerState.images.length - 1){
-        viewerState.idx++; showViewerImage();
-      } else if (dx > 0 && viewerState.idx > 0){
-        viewerState.idx--; showViewerImage();
-      }
-    }
-  }, {passive:true});
+  (function initViewerSwipe(){
+    var drag = null;
+    els.vswipe.addEventListener('touchstart', function(e){
+      if (viewerState.images.length < 2) return;
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+    }, {passive:true});
+    els.vswipe.addEventListener('touchmove', function(e){
+      if (!drag) return;
+      var t = e.touches[0];
+      var dx = t.clientX - drag.startX;
+      var dy = t.clientY - drag.startY;
+      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (drag.locked !== 'x') return;
+      // пружинистое сопротивление на первом/последнем кадре
+      var atStart = viewerState.idx === 0 && dx > 0;
+      var atEnd = viewerState.idx === viewerState.images.length - 1 && dx < 0;
+      drag.dx = (atStart || atEnd) ? dx * 0.35 : dx;
+      setTrackTransform(drag.dx, false);
+    }, {passive:true});
+    els.vswipe.addEventListener('touchend', function(){
+      if (!drag) return;
+      var w = els.vswipe.clientWidth || 300;
+      if (drag.dx <= -w * 0.18) goToImage(viewerState.idx + 1);
+      else if (drag.dx >= w * 0.18) goToImage(viewerState.idx - 1);
+      else goToImage(viewerState.idx);
+      drag = null;
+    });
+  })();
 
   els.vclose.onclick = function(){ els.viewer.classList.remove('open'); };
   els.viewer.addEventListener('click', function(e){
