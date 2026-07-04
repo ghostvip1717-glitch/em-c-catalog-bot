@@ -169,10 +169,23 @@
   }
   .viewer.open .vswipe{transform:scale(1);}
   .vtrack{display:flex;width:100%;height:100%;will-change:transform;}
-  .vtrack img{
-    flex:0 0 100%;width:100%;max-height:70vh;object-fit:contain;
+  /* Квадратный каркас слайда фиксированного размера — картинка вписывается
+     внутрь через object-fit:contain. Так каркас не "прыгает", пока грузится
+     превью/полный размер (не зависим от натуральных пропорций фото). */
+  .vslide{
+    flex:0 0 100%;width:100%;max-height:70vh;aspect-ratio:1/1;position:relative;
+    overflow:hidden;background:#161616;
+  }
+  .vslide img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
     user-select:none;-webkit-user-drag:none;pointer-events:none;
   }
+  /* blur-up: пока грузится полноразмерное фото, сразу показываем уже
+     закэшированное маленькое превью растянутым и размытым — воспринимается
+     как мгновенное открытие, даже если полный размер ещё в пути */
+  .vslide .vthumb{filter:blur(16px);transform:scale(1.08);transition:opacity .3s ease;}
+  .vslide .vfull{opacity:0;transition:opacity .3s ease;}
+  .vslide .vfull.loaded{opacity:1;}
   .vdots{display:flex;gap:6px;justify-content:center;margin-top:10px;min-height:14px;}
   .vdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
   .vdot.active{background:#fff;transform:scale(1.2);}
@@ -549,6 +562,48 @@
     return true;
   }
 
+  // ---- фоновая предзагрузка полноразмерных фото ----
+  // Пока пользователь листает сетку карточек (там грузятся только лёгкие
+  // превью), в фоне тихо подгружаем полноразмерные фото карточек, которые
+  // попали в область видимости — с небольшим запасом (rootMargin), чтобы
+  // подгрузка начиналась чуть раньше, чем карточка реально попадёт на экран.
+  // К моменту, когда человек нажмёт на фото, оно уже в кэше браузера и
+  // просмотрщик открывает его мгновенно — независимо от скорости интернета
+  // именно в этот момент. Ограничиваем число одновременных закачек, чтобы
+  // не отбирать канал у самих превью в сетке.
+  var prefetchedIds = {};
+  var prefetchQueue = [];
+  var prefetchActive = 0;
+  var PREFETCH_CONCURRENCY = 3;
+
+  function pumpPrefetchQueue(){
+    while (prefetchActive < PREFETCH_CONCURRENCY && prefetchQueue.length){
+      var url = prefetchQueue.shift();
+      prefetchActive++;
+      var img = new Image();
+      var done = function(){ prefetchActive--; pumpPrefetchQueue(); };
+      img.onload = done;
+      img.onerror = done;
+      img.src = url;
+    }
+  }
+
+  function schedulePrefetch(urls){
+    urls.forEach(function(url){ if (url) prefetchQueue.push(url); });
+    pumpPrefetchQueue();
+  }
+
+  var prefetchObserver = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      prefetchObserver.unobserve(entry.target);
+      var id = entry.target.getAttribute('data-prefetch-id');
+      if (!id || prefetchedIds[id]) return;
+      prefetchedIds[id] = true;
+      schedulePrefetch(entry.target.__prefetchUrls || []);
+    });
+  }, { rootMargin: '400px 0px' }) : null;
+
   // Пока каталог не загружен, показываем "дышащие" плейсхолдеры карточек —
   // это выглядит опрятнее пустого экрана и снижает ощущение подвисания.
   function renderSkeleton(){
@@ -609,6 +664,18 @@
         noimg.textContent = item.name;
         thumbWrap.appendChild(noimg);
       }
+      // Ставим карточку под наблюдение для фоновой предзагрузки полного
+      // размера (первые 2 фото товара — этого достаточно для мгновенного
+      // открытия основного вида, остальные слайды подгрузятся по свайпу).
+      if (prefetchObserver) {
+        var fullUrls = Array.isArray(item.images) && item.images.length
+          ? item.images.slice(0, 2)
+          : (item.image ? [item.image] : []);
+        thumbWrap.setAttribute('data-prefetch-id', item.id);
+        thumbWrap.__prefetchUrls = fullUrls;
+        prefetchObserver.observe(thumbWrap);
+      }
+
       thumbWrap.onclick = function(){ openViewer(item); };
 
       var heart = document.createElement('div');
@@ -692,26 +759,45 @@
 
   function openViewer(item){
     var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
+    var thumbs = Array.isArray(item.thumbs) && item.thumbs.length ? item.thumbs : (item.thumb ? [item.thumb] : []);
     viewerState.images = imgs;
     viewerState.idx = 0;
     console.log('[catalog] открыт просмотрщик:', item.id, '— фото:', imgs.length);
 
     els.vtrack.innerHTML = '';
-    imgs.forEach(function(src){
-      var img = document.createElement('img');
-      img.alt = item.name;
-      img.draggable = false;
-      img.onerror = function(){
+    imgs.forEach(function(src, i){
+      var slide = document.createElement('div');
+      slide.className = 'vslide';
+
+      // blur-up: своё маленькое превью на этот слайд (обычно уже в кэше
+      // браузера — либо с сетки карточек, либо благодаря фоновой
+      // предзагрузке, см. schedulePrefetch) показываем сразу и размытым,
+      // пока рядом тихо грузится полный размер.
+      var thumbSrc = thumbs[i];
+      if (thumbSrc && thumbSrc !== src) {
+        var thumbImg = document.createElement('img');
+        thumbImg.className = 'vthumb';
+        thumbImg.alt = '';
+        thumbImg.draggable = false;
+        thumbImg.src = thumbSrc;
+        slide.appendChild(thumbImg);
+      }
+
+      var fullImg = document.createElement('img');
+      fullImg.className = 'vfull';
+      fullImg.alt = item.name;
+      fullImg.draggable = false;
+      fullImg.onload = function(){ fullImg.classList.add('loaded'); };
+      fullImg.onerror = function(){
         console.error('[catalog] не удалось загрузить фото во вьювере:', src, 'товар:', item.id);
-        var brokenEl = document.createElement('div');
-        brokenEl.style.cssText = 'flex:0 0 100%;width:100%;max-height:70vh;aspect-ratio:1/1;' +
-          'display:flex;align-items:center;justify-content:center;color:#bbb;font-size:13px;';
-        brokenEl.textContent = 'Фото недоступно';
-        els.vtrack.insertBefore(brokenEl, img);
-        img.remove();
+        slide.innerHTML =
+          '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;' +
+          'color:#bbb;font-size:13px;">Фото недоступно</div>';
       };
-      img.src = src;
-      els.vtrack.appendChild(img);
+      fullImg.src = src;
+      slide.appendChild(fullImg);
+
+      els.vtrack.appendChild(slide);
     });
     setTrackTransform(0, false);
     updateViewerChrome();
