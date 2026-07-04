@@ -580,7 +580,11 @@
 
       var thumbWrap = document.createElement('div');
       thumbWrap.className = 'thumb-wrap';
-      var thumbSrc = (Array.isArray(item.images) && item.images[0]) ? item.images[0] : item.image;
+      // Для карточки в сетке используем маленькое превью (item.thumb, ~400px),
+      // а не полноразмерное фото — так грузится в разы быстрее и легче.
+      // Фолбэки нужны для товаров, у которых materials.json ещё старого
+      // формата (без поля thumb) — тогда используем то, что есть.
+      var thumbSrc = item.thumb || (Array.isArray(item.images) && item.images[0]) || item.image;
       if (thumbSrc) {
         thumbWrap.classList.add('skeleton');
         var img = document.createElement('img');
