@@ -347,12 +347,14 @@
     fetch('data/materials.json', {cache:'no-store'})
       .then(function(r){ return r.json(); })
       .then(function(data){
+        console.log('[catalog] каталог загружен:', data.length, 'позиций');
         state.items = data;
         buildChips();
         buildDrawer();
         render();
       })
-      .catch(function(){
+      .catch(function(err){
+        console.error('[catalog] ошибка загрузки materials.json:', err);
         els.empty.style.display = 'block';
         els.empty.textContent = 'Не удалось загрузить каталог';
       });
@@ -427,8 +429,14 @@
       var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
       var catNames = Object.keys(g.cats).sort();
 
-      var isExpanded = !!state.expandedGroups[key] ||
-        (!state.favOnly && catNames.indexOf(state.category) !== -1);
+      // При первом попадании категории в эту группу разворачиваем её один раз
+      // (чтобы было видно активный фильтр), но дальше состояние развёрнутости
+      // подчиняется ТОЛЬКО ручному клику — иначе группа "залипала" открытой
+      // и не закрывалась по клику, пока в ней выбрана категория.
+      if (state.expandedGroups[key] === undefined && !state.favOnly && catNames.indexOf(state.category) !== -1) {
+        state.expandedGroups[key] = true;
+      }
+      var isExpanded = !!state.expandedGroups[key];
 
       var groupEl = document.createElement('div');
       groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
@@ -580,7 +588,15 @@
         img.decoding = 'async';
         img.alt = item.name;
         img.onload = function(){ img.classList.add('loaded'); thumbWrap.classList.remove('skeleton'); };
-        img.onerror = function(){ thumbWrap.classList.remove('skeleton'); };
+        img.onerror = function(){
+          console.error('[catalog] не удалось загрузить фото карточки:', thumbSrc, 'товар:', item.id);
+          thumbWrap.classList.remove('skeleton');
+          img.remove();
+          var brokenEl = document.createElement('div');
+          brokenEl.className = 'noimg';
+          brokenEl.textContent = 'Фото недоступно';
+          thumbWrap.insertBefore(brokenEl, thumbWrap.firstChild);
+        };
         img.src = thumbSrc;
         thumbWrap.appendChild(img);
       } else {
@@ -674,13 +690,23 @@
     var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
     viewerState.images = imgs;
     viewerState.idx = 0;
+    console.log('[catalog] открыт просмотрщик:', item.id, '— фото:', imgs.length);
 
     els.vtrack.innerHTML = '';
     imgs.forEach(function(src){
       var img = document.createElement('img');
-      img.src = src;
       img.alt = item.name;
       img.draggable = false;
+      img.onerror = function(){
+        console.error('[catalog] не удалось загрузить фото во вьювере:', src, 'товар:', item.id);
+        var brokenEl = document.createElement('div');
+        brokenEl.style.cssText = 'flex:0 0 100%;width:100%;max-height:70vh;aspect-ratio:1/1;' +
+          'display:flex;align-items:center;justify-content:center;color:#bbb;font-size:13px;';
+        brokenEl.textContent = 'Фото недоступно';
+        els.vtrack.insertBefore(brokenEl, img);
+        img.remove();
+      };
+      img.src = src;
       els.vtrack.appendChild(img);
     });
     setTrackTransform(0, false);
