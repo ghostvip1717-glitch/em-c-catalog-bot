@@ -209,9 +209,64 @@
     margin-top:16px;border:none;border-radius:10px;padding:10px 20px;font-size:14px;
     background:var(--button);color:var(--button-text);cursor:pointer;
   }
+
+  /* ---- стартовый экран (splash) ----
+     Показывается только при первом запуске. Палитра намеренно фиксированная
+     (не привязана к теме Telegram --tg-theme-*), как согласованный фирменный
+     стиль стартового экрана — цвета совпадают с утверждённым макетом. */
+  .splash{
+    position:fixed;inset:0;z-index:100;background:#14120f;
+    transition:opacity .35s ease;
+  }
+  .splash.fade-out{opacity:0;pointer-events:none;}
+  .splash-hero{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(to bottom, rgba(10,9,8,.15) 0%, rgba(10,9,8,.45) 55%, rgba(10,9,8,.97) 92%),
+      url('0000001.webp');
+    background-size:cover;background-position:center;
+  }
+  .splash-top-label{
+    position:absolute;top:22px;left:0;right:0;text-align:center;
+    font-size:11px;letter-spacing:2px;color:rgba(236,230,216,.6);text-transform:uppercase;
+  }
+  .splash-content{position:absolute;left:0;right:0;bottom:0;padding:0 24px 34px;}
+  .splash-eyebrow{font-size:12px;color:#c9a15a;font-weight:700;letter-spacing:.5px;margin-bottom:8px;}
+  .splash-title{font-size:26px;font-weight:800;line-height:1.15;color:#ece6d8;margin-bottom:8px;}
+  .splash-sub{font-size:13.5px;color:#9c9583;line-height:1.5;margin-bottom:22px;max-width:300px;}
+  .splash-cta{
+    width:100%;background:#c9a15a;color:#1a1408;font-weight:700;font-size:15px;
+    padding:15px;border:none;border-radius:14px;cursor:pointer;font-family:inherit;
+  }
+  .splash-cta:active{transform:scale(0.98);}
 </style>
 </head>
 <body>
+<div id="splash" class="splash">
+  <div class="splash-hero"></div>
+  <div class="splash-top-label">NeoModernKz</div>
+  <div class="splash-content">
+    <div class="splash-eyebrow" id="splashEyebrow">Материалы для мебели</div>
+    <div class="splash-title">Материалы для мебели<br>в одном каталоге</div>
+    <div class="splash-sub">Акриловый камень, плёнка ПВХ, листовые материалы — фото, коды, названия под рукой на объекте.</div>
+    <button class="splash-cta" id="splashCta">Каталог</button>
+  </div>
+</div>
+<script>
+  // Синхронная быстрая проверка ДО отрисовки остального — чтобы у тех, кто
+  // уже видел сплэш раньше, не было даже короткой "вспышки" тёмного экрана
+  // поверх каталога. localStorage тут просто быстрый локальный кэш флага;
+  // источник истины (CloudStorage, синхронизируется между устройствами)
+  // проверяется отдельно ниже, в основном скрипте приложения.
+  (function(){
+    try {
+      if (localStorage.getItem('splash_seen') === '1') {
+        var s = document.getElementById('splash');
+        if (s) s.style.display = 'none';
+      }
+    } catch (e) {}
+  })();
+</script>
 <div id="app">
   <div class="topbar">
     <div class="topbar-row">
@@ -365,6 +420,12 @@
         buildChips();
         buildDrawer();
         render();
+        // Реальное число материалов вместо статичной цифры на сплэше —
+        // актуально всегда, даже когда каталог пополняется скрапером.
+        var splashEyebrow = document.getElementById('splashEyebrow');
+        if (splashEyebrow) {
+          splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источника';
+        }
       })
       .catch(function(err){
         console.error('[catalog] ошибка загрузки materials.json:', err);
@@ -855,8 +916,54 @@
     }, 150);
   });
 
+  // ---- стартовый экран (splash) ----
+  // Показывается только при первом запуске приложения. localStorage уже
+  // проверен синхронно в самом начале body (чтобы не мигало), здесь —
+  // авторитетная проверка через CloudStorage (та же схема, что и у
+  // избранного) плюс сама логика закрытия по тапу на "Каталог".
+  function initSplash(){
+    var splashEl = document.getElementById('splash');
+    var ctaEl = document.getElementById('splashCta');
+    if (!splashEl) return;
+
+    function hideSplash(animate){
+      if (splashEl.style.display === 'none') return;
+      if (animate) {
+        splashEl.classList.add('fade-out');
+        setTimeout(function(){ splashEl.style.display = 'none'; }, 350);
+      } else {
+        splashEl.style.display = 'none';
+      }
+    }
+
+    function markSplashSeen(){
+      try { localStorage.setItem('splash_seen', '1'); } catch(e){}
+      if (cloudStorageAvailable()) {
+        try { tg.CloudStorage.setItem('splash_seen', '1', function(){}); } catch(e){}
+      }
+    }
+
+    // Если сплэш уже видели на другом устройстве (CloudStorage) — закрываем
+    // без анимации, даже если локально на этом устройстве флага ещё не было.
+    if (cloudStorageAvailable()) {
+      try {
+        tg.CloudStorage.getItem('splash_seen', function(err, value){
+          if (!err && value === '1') hideSplash(false);
+        });
+      } catch(e){}
+    }
+
+    if (ctaEl) {
+      ctaEl.onclick = function(){
+        markSplashSeen();
+        hideSplash(true);
+      };
+    }
+  }
+
   renderSkeleton();
   loadFavorites(loadCatalog);
+  initSplash();
 })();
 </script>
 </body>
