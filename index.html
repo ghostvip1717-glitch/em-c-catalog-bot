@@ -111,21 +111,24 @@
 
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
-    display:flex;flex-direction:column;border-top:3px solid transparent;
+    display:flex;flex-direction:column;
     transition:transform .12s ease;
   }
   .card:active{transform:scale(0.97);}
   .card.appear{animation:cardIn .3s ease both;}
   @keyframes cardIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 
-  /* сдержанные цветовые акценты по сайтам-источникам */
-  .card[data-site="emc"]{border-top-color:#2481cc;}
-  .card[data-site="adilet"]{border-top-color:#c08a2e;}
-  .card[data-site="interstone"]{border-top-color:#7c8591;}
+  /* Источник обозначен ОДНИМ сигналом — точкой у категории (см. .source-dot
+     ниже). Раньше это дублировалось ещё и цветной полоской сверху карточки —
+     убрали, чтобы не тратить внимание на повтор одной и той же информации. */
   .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
+  /* Материал/текстура — это и есть продукт, поэтому фото показываем целиком,
+     БЕЗ обрезки под квадрат (object-fit:contain, а не cover). Рамка квадрата
+     сохранена ради ровной сетки — при этом узкие/широкие фото просто
+     вписываются внутрь с полями цвета фона, а не теряют края. */
   .card .thumb-wrap{position:relative;width:100%;aspect-ratio:1/1;background:var(--secbg);cursor:pointer;overflow:hidden;}
-  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
+  .card img{width:100%;height:100%;object-fit:contain;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
   .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:6px;}
 
@@ -137,22 +140,25 @@
   }
   .skeleton-card{border-radius:14px;aspect-ratio:1;}
 
-  .heart{
-    position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;
+  /* Два маленьких действия поверх фото (сердечко + копировать) вместо
+     сердечка на фото И ещё полноширинной кнопки "Копировать" под каждой из
+     574 карточек — так текстуре снизу достаётся весь блок вместо повторной
+     UI-обвязки на каждой карточке. */
+  .heart, .copy-icon-btn{
+    position:absolute;right:6px;width:28px;height:28px;border-radius:50%;
     background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;
-    font-size:15px;cursor:pointer;transition:background-color .15s ease;
+    color:#fff;cursor:pointer;transition:background-color .15s ease,transform .1s ease;
   }
+  .heart{top:6px;font-size:15px;}
   .heart.active{background:#e0245e;animation:heartPop .25s ease;}
   @keyframes heartPop{0%{transform:scale(1);}45%{transform:scale(1.25);}100%{transform:scale(1);}}
+  .copy-icon-btn{top:40px;}
+  .copy-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
+  .copy-icon-btn svg{width:14px;height:14px;}
 
   .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
   .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
   .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
-  .copy-btn{
-    margin-top:auto;border:none;border-radius:8px;padding:7px 0;font-size:11.5px;font-weight:600;
-    background:var(--button);color:var(--button-text);cursor:pointer;transition:transform .1s ease,opacity .1s ease;
-  }
-  .copy-btn:active{transform:scale(0.96);opacity:.85;}
 
   .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
 
@@ -745,6 +751,19 @@
       heart.onclick = function(e){ e.stopPropagation(); toggleFavorite(item.id); };
       thumbWrap.appendChild(heart);
 
+      // Копирование названия — маленькая иконка поверх фото (под сердечком),
+      // а не отдельная полноширинная кнопка под каждой из 574 карточек.
+      var copyIconBtn = document.createElement('div');
+      copyIconBtn.className = 'copy-icon-btn';
+      copyIconBtn.title = 'Скопировать название';
+      copyIconBtn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+        '<rect x="9" y="9" width="12" height="12" rx="2"></rect>' +
+        '<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>' +
+        '</svg>';
+      copyIconBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
+      thumbWrap.appendChild(copyIconBtn);
+
       var info = document.createElement('div');
       info.className = 'info';
       var name = document.createElement('div');
@@ -757,14 +776,9 @@
       dot.style.background = siteColor;
       cat.appendChild(dot);
       cat.appendChild(document.createTextNode(item.category));
-      var copyBtn = document.createElement('button');
-      copyBtn.className = 'copy-btn';
-      copyBtn.textContent = 'Копировать';
-      copyBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
 
       info.appendChild(name);
       info.appendChild(cat);
-      info.appendChild(copyBtn);
 
       card.appendChild(thumbWrap);
       card.appendChild(info);
