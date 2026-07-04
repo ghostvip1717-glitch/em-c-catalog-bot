@@ -17,6 +17,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+import image_utils
 import scrape_adilet
 import scrape_interstone
 
@@ -136,6 +137,34 @@ def main() -> None:
     for item in all_items:
         seen[item["id"]] = item
     unique_items = list(seen.values())
+
+    # Скачиваем и сжимаем фото каждого товара локально (data/images/), вместо
+    # того чтобы хранить в materials.json прямые внешние ссылки на em-c.kz/
+    # adilet.net/interstone.kz. Инкрементально: уже скачанные фото не трогаем
+    # (см. docstring image_utils.py), поэтому при ежедневном запуске обрабатываются
+    # по сути только новые товары.
+    print("[scrape] скачивание и сжатие фото...", file=sys.stderr)
+    for item in unique_items:
+        if item["id"].startswith("adilet_"):
+            site = "adilet"
+        elif item["id"].startswith("interstone_"):
+            site = "interstone"
+        else:
+            site = "emc"
+        image_utils.process_item_images(item, site)
+
+    # Чистим фото товаров, которых больше нет в свежем каталоге (сняты с
+    # продажи у источника и т.п.) — иначе data/images/ будет бесконечно расти.
+    ids_by_site: dict[str, set] = {"emc": set(), "adilet": set(), "interstone": set()}
+    for item in unique_items:
+        if item["id"].startswith("adilet_"):
+            ids_by_site["adilet"].add(item["id"])
+        elif item["id"].startswith("interstone_"):
+            ids_by_site["interstone"].add(item["id"])
+        else:
+            ids_by_site["emc"].add(item["id"])
+    image_utils.cleanup_orphans(ids_by_site)
+
     unique_items.sort(key=lambda x: (x["category"], x["name"]))
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
