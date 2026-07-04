@@ -124,6 +124,7 @@ def process_item_images(item: dict, site: str) -> dict:
 
     if not raw_images:
         item["thumb"] = None
+        item["thumbs"] = []
         item["images"] = []
         item["image"] = None
         return item
@@ -133,12 +134,18 @@ def process_item_images(item: dict, site: str) -> dict:
     if not local_paths:
         # Скачивание не удалось ни для одного фото — фолбэк на внешние ссылки.
         item["images"] = raw_images
+        item["thumbs"] = raw_images
         item["thumb"] = raw_images[0]
         item["image"] = raw_images[0]
         return item
 
+    # "thumbs" — превью ПО КАЖДОМУ фото (не только по первому), нужно фронтенду
+    # для blur-up эффекта в полноэкранном просмотрщике: пока грузится полный
+    # размер конкретного слайда, сразу показываем его собственное маленькое
+    # (уже наверняка закэшированное) превью растянутым и размытым.
     item["images"] = local_paths
-    item["thumb"] = thumb_path_for(local_paths[0])
+    item["thumbs"] = [thumb_path_for(p) for p in local_paths]
+    item["thumb"] = item["thumbs"][0]
     item["image"] = local_paths[0]
     return item
 
