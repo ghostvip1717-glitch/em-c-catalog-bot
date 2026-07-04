@@ -109,8 +109,13 @@
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
+  /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
+     соседки в ряду, а сохраняют собственную натуральную высоту (см. .card
+     img ниже, без фикс. aspect-ratio) — почти-masonry-эффект без ухода от
+     CSS Grid (colum-based masonry ломает sticky-заголовки категорий). */
   .grid{
     display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:6px;
+    align-items:start;
   }
   @media(min-width:480px){.grid{grid-template-columns:repeat(3,1fr);}}
 
@@ -128,6 +133,7 @@
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;
     transition:transform .12s ease;
+    scroll-margin-top:var(--topbar-h, 0px);
   }
   .card:active{transform:scale(0.97);}
   .card.appear{animation:cardIn .3s ease both;}
@@ -138,14 +144,15 @@
      убрали, чтобы не тратить внимание на повтор одной и той же информации. */
   .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
-  /* Материал/текстура — это и есть продукт, поэтому фото показываем целиком,
-     БЕЗ обрезки под квадрат (object-fit:contain, а не cover). Рамка квадрата
-     сохранена ради ровной сетки — при этом узкие/широкие фото просто
-     вписываются внутрь с полями цвета фона, а не теряют края. */
-  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:1/1;background:var(--secbg);cursor:pointer;overflow:hidden;}
-  .card img{width:100%;height:100%;object-fit:contain;display:block;opacity:0;transition:opacity .25s ease;}
+  /* Материал/текстура — это и есть продукт: фото больше не втиснуто в
+     квадратный каркас, а сохраняет свои натуральные пропорции (высота auto).
+     В паре с align-items:start на .grid это даёт почти-masonry раскладку —
+     карточки разной высоты стоят в ряд, не растягиваясь друг под друга. */
+  .card .thumb-wrap{position:relative;width:100%;background:var(--secbg);cursor:pointer;overflow:hidden;}
+  .card .thumb-wrap.skeleton{min-height:110px;}
+  .card img{width:100%;height:auto;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
-  .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:6px;}
+  .card .noimg{display:flex;align-items:center;justify-content:center;min-height:110px;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
 
   /* skeleton-плейсхолдеры на время загрузки */
   @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
@@ -177,26 +184,22 @@
 
   .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
 
-  /* fullscreen viewer */
+  /* fullscreen viewer — фото во весь экран, без полей. Название/категория
+     и точки-пагинация лежат ПОВЕРХ фото (градиент снизу для читаемости),
+     а не отдельным блоком под ним — экран отдан целиком материалу. */
   .viewer{
-    position:fixed;inset:0;background:rgba(0,0,0,0.92);display:flex;
-    align-items:center;justify-content:center;flex-direction:column;z-index:50;padding:16px;
+    position:fixed;inset:0;background:#000;z-index:50;overflow:hidden;
     opacity:0;pointer-events:none;transition:opacity .2s ease;
   }
   .viewer.open{opacity:1;pointer-events:auto;}
-  .vswipe{
-    width:100%;max-height:70vh;overflow:hidden;position:relative;border-radius:10px;
-    transform:scale(.96);transition:transform .2s ease;touch-action:pan-y;
-  }
-  .viewer.open .vswipe{transform:scale(1);}
+  /* .vitem — двигается ВЕРТИКАЛЬНО между материалами (свайп вверх/вниз).
+     .vswipe/.vtrack внутри него двигаются ГОРИЗОНТАЛЬНО между фото ОДНОГО
+     материала (свайп влево/вправо) — два независимых жеста на разных осях,
+     см. initViewerGestures в скрипте. */
+  .vitem{position:absolute;inset:0;}
+  .vswipe{position:absolute;inset:0;overflow:hidden;touch-action:none;}
   .vtrack{display:flex;width:100%;height:100%;will-change:transform;}
-  /* Квадратный каркас слайда фиксированного размера — картинка вписывается
-     внутрь через object-fit:contain. Так каркас не "прыгает", пока грузится
-     превью/полный размер (не зависим от натуральных пропорций фото). */
-  .vslide{
-    flex:0 0 100%;width:100%;max-height:70vh;aspect-ratio:1/1;position:relative;
-    overflow:hidden;background:#161616;
-  }
+  .vslide{flex:0 0 100%;width:100%;height:100%;position:relative;overflow:hidden;background:#000;}
   .vslide img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
     user-select:none;-webkit-user-drag:none;pointer-events:none;
@@ -207,9 +210,16 @@
   .vslide .vthumb{filter:blur(16px);transform:scale(1.08);transition:opacity .3s ease;}
   .vslide .vfull{opacity:0;transition:opacity .3s ease;}
   .vslide .vfull.loaded{opacity:1;}
-  .vdots{display:flex;gap:6px;justify-content:center;margin-top:10px;min-height:14px;}
-  .vdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
+  .vgradient{
+    position:absolute;left:0;right:0;bottom:0;height:40%;pointer-events:none;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
+  }
+  .vcaption{position:absolute;left:0;right:0;bottom:0;padding:0 20px 24px;}
+  .vdots{display:flex;gap:6px;margin-bottom:12px;}
+  .vdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
   .vdot.active{background:#fff;transform:scale(1.2);}
+  .vcat{color:#c9a15a;font-size:12px;font-weight:500;margin-bottom:4px;}
+  .vname{color:#fff;font-size:17px;font-weight:500;}
   .vnav{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 6px;pointer-events:none;}
   .vnavbtn{
     background:rgba(0,0,0,0.45);border:none;color:#fff;font-size:28px;
@@ -219,17 +229,13 @@
   }
   .vnavbtn:active{background:rgba(0,0,0,0.75);}
   .vnavbtn.hidden{opacity:0;pointer-events:none;}
-  .viewer .vname{color:#fff;font-size:15px;margin-top:12px;text-align:center;}
-  .viewer .vcat{color:#bbb;font-size:12px;margin-top:4px;}
-  .viewer .vclose{
-    position:absolute;top:16px;right:16px;color:#fff;font-size:22px;
-    width:36px;height:36px;display:flex;align-items:center;justify-content:center;
-    background:rgba(255,255,255,0.15);border-radius:50%;cursor:pointer;z-index:1;
+  .vactions{position:absolute;top:16px;right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
+  .vclose, .vcopy{
+    width:36px;height:36px;border-radius:50%;color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.15);cursor:pointer;font-size:18px;
   }
-  .viewer .vcopy{
-    margin-top:16px;border:none;border-radius:10px;padding:10px 20px;font-size:14px;
-    background:var(--button);color:var(--button-text);cursor:pointer;
-  }
+  .vcopy svg{width:15px;height:15px;}
 
   /* ---- стартовый экран (splash) ----
      Показывается только при первом запуске. Палитра намеренно фиксированная
@@ -313,18 +319,30 @@
 </div>
 
 <div class="viewer" id="viewer">
-  <div class="vclose" id="vclose">✕</div>
-  <div class="vswipe" id="vswipe">
-    <div class="vtrack" id="vtrack"></div>
-    <div class="vnav">
-      <button class="vnavbtn hidden" id="vprev">‹</button>
-      <button class="vnavbtn hidden" id="vnext">›</button>
+  <div class="vitem" id="vitem">
+    <div class="vswipe" id="vswipe">
+      <div class="vtrack" id="vtrack"></div>
+      <div class="vnav">
+        <button class="vnavbtn hidden" id="vprev">‹</button>
+        <button class="vnavbtn hidden" id="vnext">›</button>
+      </div>
+    </div>
+    <div class="vgradient"></div>
+    <div class="vcaption">
+      <div class="vdots" id="vdots"></div>
+      <div class="vcat" id="vcat"></div>
+      <div class="vname" id="vname"></div>
     </div>
   </div>
-  <div class="vdots" id="vdots"></div>
-  <div class="vname" id="vname"></div>
-  <div class="vcat" id="vcat"></div>
-  <button class="vcopy" id="vcopy">Скопировать название/код</button>
+  <div class="vactions">
+    <div class="vclose" id="vclose">✕</div>
+    <div class="vcopy" id="vcopy" title="Скопировать название">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="12" height="12" rx="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -349,6 +367,7 @@
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
     viewer: document.getElementById('viewer'),
+    vitem: document.getElementById('vitem'),
     vswipe: document.getElementById('vswipe'),
     vtrack: document.getElementById('vtrack'),
     vdots: document.getElementById('vdots'),
@@ -499,6 +518,25 @@
       buildDrawer();
     };
     els.chips.appendChild(favChip);
+
+    // Быстрые "якоря" по источникам — вместо вкладок на все 12 категорий
+    // (это было бы слишком длинно и бессмысленно листать) прыгаем сразу к
+    // первой карточке нужного источника. Это НЕ фильтр — ничего не прячет,
+    // просто прокручивает уже отрендеренную ленту, ориентир внутри неё
+    // держат sticky-заголовки категорий.
+    SITE_ORDER.forEach(function(key){
+      var meta = SITE_META[key];
+      var jumpChip = document.createElement('div');
+      jumpChip.className = 'chip chip-jump';
+      jumpChip.innerHTML = '<span class="source-dot" style="background:' + meta.color + '"></span>' + meta.title;
+      jumpChip.onclick = function(){ jumpToSite(key); };
+      els.chips.appendChild(jumpChip);
+    });
+  }
+
+  function jumpToSite(site){
+    var target = els.grid.querySelector('.card[data-site="' + site + '"]');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   // ---- боковая шторка: категории сгруппированы по сайтам-источникам ----
@@ -789,7 +827,10 @@
         prefetchObserver.observe(thumbWrap);
       }
 
-      thumbWrap.onclick = function(){ openViewer(item); };
+      // Передаём весь отфильтрованный список и позицию в нём — просмотрщик
+      // использует это для вертикального свайпа между материалами, в том же
+      // порядке, в котором они сейчас идут в сетке.
+      thumbWrap.onclick = function(){ openViewer(filtered, idx); };
 
       var heart = document.createElement('div');
       heart.className = 'heart' + (state.favorites.indexOf(item.id) >= 0 ? ' active' : '');
@@ -851,7 +892,10 @@
   // Все фото товара рендерятся в один горизонтальный "трек"; во время свайпа
   // трек следует за пальцем без задержки, на отпускании — плавно доезжает
   // до соседнего кадра или пружинисто возвращается назад (rubber-band на краях).
-  var viewerState = { images: [], idx: 0 };
+  // viewerState.list/itemIdx — текущий отфильтрованный список материалов и
+  // позиция в нём (для вертикального свайпа между материалами, см. ниже).
+  // images/idx — фото ТЕКУЩЕГО материала и позиция в нём (горизонтальный свайп).
+  var viewerState = { list: [], itemIdx: 0, images: [], idx: 0 };
 
   function setTrackTransform(px, animate){
     els.vtrack.style.transition = animate ? 'transform .32s cubic-bezier(.22,.61,.36,1)' : 'none';
@@ -878,7 +922,10 @@
     updateViewerChrome();
   }
 
-  function openViewer(item){
+  // Строит слайды (фото + blur-up превью) для ОДНОГО материала — используется
+  // и при первом открытии просмотрщика, и при переходе на соседний материал
+  // вертикальным свайпом (тогда просто пересобираем содержимое на месте).
+  function renderViewerItem(item){
     var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
     var thumbs = Array.isArray(item.thumbs) && item.thumbs.length ? item.thumbs : (item.thumb ? [item.thumb] : []);
     viewerState.images = imgs;
@@ -926,45 +973,99 @@
     els.vname.textContent = item.name;
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
+  }
+
+  // list — та же отфильтрованная лента, что сейчас отрендерена в сетке (см.
+  // вызов openViewer(filtered, idx) в render()); idx — индекс материала,
+  // по фото которого тапнули. Так вертикальный свайп двигается ровно по
+  // тому же порядку, в котором человек листал сетку.
+  function openViewer(list, idx){
+    viewerState.list = list;
+    viewerState.itemIdx = idx;
+    els.vitem.style.transition = 'none';
+    els.vitem.style.transform = 'translateY(0)';
+    renderViewerItem(list[idx]);
     els.viewer.classList.add('open');
+  }
+
+  function snapItemBack(){
+    els.vitem.style.transition = 'transform .25s ease';
+    els.vitem.style.transform = 'translateY(0)';
+  }
+
+  // Переход к следующему/предыдущему материалу БЕЗ выхода из просмотрщика:
+  // текущее содержимое уезжает по вертикали за экран, затем на его место
+  // подставляется соседний материал — не нужно закрывать/открывать вьювер
+  // заново, чтобы посмотреть следующий.
+  function goToVerticalItem(direction){
+    var newIdx = viewerState.itemIdx + direction;
+    if (newIdx < 0 || newIdx >= viewerState.list.length) { snapItemBack(); return; }
+    var vitem = els.vitem;
+    vitem.style.transition = 'transform .25s ease';
+    vitem.style.transform = 'translateY(' + (direction > 0 ? '-100%' : '100%') + ')';
+    var onDone = function(){
+      vitem.removeEventListener('transitionend', onDone);
+      viewerState.itemIdx = newIdx;
+      renderViewerItem(viewerState.list[newIdx]);
+      vitem.style.transition = 'none';
+      vitem.style.transform = 'translateY(0)';
+    };
+    vitem.addEventListener('transitionend', onDone);
   }
 
   els.vprev.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx - 1); };
   els.vnext.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx + 1); };
 
-  (function initViewerSwipe(){
+  // Один обработчик на два независимых жеста: горизонтальный свайп листает
+  // фото текущего материала (как раньше), вертикальный — переключает сам
+  // материал на следующий/предыдущий в списке. Ось определяется один раз
+  // за жест по первому заметному движению и дальше не меняется.
+  (function initViewerGestures(){
     var drag = null;
-    els.vswipe.addEventListener('touchstart', function(e){
-      if (viewerState.images.length < 2) return;
-      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+    els.vitem.addEventListener('touchstart', function(e){
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, dy: 0, locked: null };
     }, {passive:true});
-    els.vswipe.addEventListener('touchmove', function(e){
+    els.vitem.addEventListener('touchmove', function(e){
       if (!drag) return;
       var t = e.touches[0];
       var dx = t.clientX - drag.startX;
       var dy = t.clientY - drag.startY;
-      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
-      if (drag.locked !== 'x') return;
-      // пружинистое сопротивление на первом/последнем кадре
-      var atStart = viewerState.idx === 0 && dx > 0;
-      var atEnd = viewerState.idx === viewerState.images.length - 1 && dx < 0;
-      drag.dx = (atStart || atEnd) ? dx * 0.35 : dx;
-      setTrackTransform(drag.dx, false);
+      if (drag.locked === null) {
+        if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+        drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      }
+      if (drag.locked === 'x') {
+        if (viewerState.images.length < 2) return;
+        var atStart = viewerState.idx === 0 && dx > 0;
+        var atEnd = viewerState.idx === viewerState.images.length - 1 && dx < 0;
+        drag.dx = (atStart || atEnd) ? dx * 0.35 : dx;
+        setTrackTransform(drag.dx, false);
+      } else {
+        var atFirst = viewerState.itemIdx === 0 && dy > 0;
+        var atLast = viewerState.itemIdx === viewerState.list.length - 1 && dy < 0;
+        drag.dy = (atFirst || atLast) ? dy * 0.35 : dy;
+        els.vitem.style.transition = 'none';
+        els.vitem.style.transform = 'translateY(' + drag.dy + 'px)';
+      }
     }, {passive:true});
-    els.vswipe.addEventListener('touchend', function(){
+    els.vitem.addEventListener('touchend', function(){
       if (!drag) return;
-      var w = els.vswipe.clientWidth || 300;
-      if (drag.dx <= -w * 0.18) goToImage(viewerState.idx + 1);
-      else if (drag.dx >= w * 0.18) goToImage(viewerState.idx - 1);
-      else goToImage(viewerState.idx);
+      if (drag.locked === 'x') {
+        var w = els.vswipe.clientWidth || 300;
+        if (drag.dx <= -w * 0.18) goToImage(viewerState.idx + 1);
+        else if (drag.dx >= w * 0.18) goToImage(viewerState.idx - 1);
+        else goToImage(viewerState.idx);
+      } else if (drag.locked === 'y') {
+        var h = els.vitem.clientHeight || 500;
+        if (drag.dy <= -h * 0.16) goToVerticalItem(1);
+        else if (drag.dy >= h * 0.16) goToVerticalItem(-1);
+        else snapItemBack();
+      }
       drag = null;
     });
   })();
 
   els.vclose.onclick = function(){ els.viewer.classList.remove('open'); };
-  els.viewer.addEventListener('click', function(e){
-    if (e.target === els.viewer) els.viewer.classList.remove('open');
-  });
 
   var searchTimer;
   els.search.addEventListener('input', function(){
