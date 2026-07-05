@@ -100,17 +100,21 @@
      схлопывается по высоте и исчезает — остальной топбар (шторка/избранное/
      поиск/категория) при этом просто "доезжает" и прижимается к верху
      экрана, но не исчезает (см. .topbar.docked выше и updateScrollChrome в
-     скрипте). max-height задаётся в JS (--quick-row-h — реальная высота
-     ряда), запасное значение ниже — просто больше реального контента, чтобы
-     не обрезать его до первого замера. */
+     скрипте). max-height — фиксированное число (с запасом над реальной
+     высотой ряда ~64px), а НЕ значение, посчитанное в JS через
+     ResizeObserver: та версия дёргалась/тормозила и не всегда докрывалась
+     до конца — ResizeObserver сам реагировал на анимацию высоты и переписывал
+     целевое значение прямо во время transition (петля обратной связи).
+     Фиксированное число полностью убирает эту петлю ценой небольшой паузы в
+     начале анимации — на глаз незаметно. */
   .quick-row{
     display:flex;overflow:hidden;margin-top:8px;border-radius:10px;
     /* Темнее и общего фона, и белых карточек — чтобы панель не сливалась
        с контентом и иконки на ней были хорошо видны. */
     background:#c6c6cc;
-    max-height:var(--quick-row-h, 120px);
+    max-height:92px;
     padding:8px 4px;
-    transition:max-height .25s ease, opacity .25s ease, margin-top .25s ease, padding .25s ease;
+    transition:max-height .22s ease, opacity .22s ease, margin-top .22s ease, padding .22s ease;
   }
   .quick-row.hidden{max-height:0;opacity:0;margin-top:0;padding-top:0;padding-bottom:0;}
   .quick-item{
@@ -926,24 +930,6 @@
       buildQuickRow();
     };
     els.quickRow.appendChild(favItem);
-
-    updateQuickRowHeight();
-  }
-
-  // Реальная высота ряда иконок — держим в --quick-row-h, чтобы схлопывание
-  // при скролле (.quick-row.hidden, max-height:0) плавно анимировалось от
-  // точного значения, а не от заглушки. Берём scrollHeight, а не
-  // offsetHeight: scrollHeight не зависит от текущего (возможно, ещё
-  // анимирующегося) max-height, поэтому не создаёт петлю обратной связи с
-  // самим CSS-переходом, который эту же переменную использует как цель.
-  function updateQuickRowHeight(){
-    if (!els.quickRow) return;
-    document.documentElement.style.setProperty('--quick-row-h', els.quickRow.scrollHeight + 'px');
-  }
-  if (els.quickRow && 'ResizeObserver' in window) {
-    new ResizeObserver(updateQuickRowHeight).observe(els.quickRow);
-  } else {
-    window.addEventListener('resize', updateQuickRowHeight);
   }
 
   // ---- боковая шторка: второй, альтернативный вход в выбор категорий ----
