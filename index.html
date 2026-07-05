@@ -90,6 +90,17 @@
   .suggest-chip .n{color:var(--hint);margin-left:5px;font-size:10.5px;}
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
+  .count-row{display:flex;align-items:center;justify-content:space-between;margin:8px 2px 4px;}
+  .count-row .count{margin:0;}
+  .sort-select{
+    background:var(--secbg);color:var(--text);border:1px solid var(--line);border-radius:8px;
+    padding:5px 8px;font-size:11.5px;font-family:inherit;
+  }
+  .load-more{
+    grid-column:1/-1;text-align:center;padding:13px;margin-top:6px;border-radius:12px;
+    background:var(--secbg);color:var(--button);font-size:13.5px;font-weight:600;cursor:pointer;
+  }
+  .load-more:active{opacity:.8;}
 
   /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
      соседки в ряду, а сохраняют собственную натуральную высоту (см. .card
@@ -295,7 +306,14 @@
     </div>
     <div class="breadcrumb" id="breadcrumb" style="display:none;"></div>
   </div>
-  <div class="count" id="count"></div>
+  <div class="count-row">
+    <div class="count" id="count"></div>
+    <select class="sort-select" id="sortSelect">
+      <option value="default">По умолчанию</option>
+      <option value="name-asc">Название А→Я</option>
+      <option value="name-desc">Название Я→А</option>
+    </select>
+  </div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
 </div>
@@ -340,7 +358,9 @@
     filterMode: 'all',     // 'all' | 'site' | 'category'
     favOnly: false,
     query: '',
-    favorites: []
+    favorites: [],
+    sort: 'default',       // 'default' | 'name-asc' | 'name-desc'
+    visibleCount: 40        // сколько карточек отрисовано (постраничная подгрузка)
   };
 
   var els = {
@@ -349,6 +369,7 @@
     favBtn: document.getElementById('favBtn'),
     search: document.getElementById('search'),
     count: document.getElementById('count'),
+    sortSelect: document.getElementById('sortSelect'),
     empty: document.getElementById('empty'),
     viewer: document.getElementById('viewer'),
     vitem: document.getElementById('vitem'),
@@ -476,6 +497,12 @@
     state.favOnly = !state.favOnly;
     render();
     updateFavBtn();
+  };
+
+  // ---- сортировка ----
+  els.sortSelect.onchange = function(){
+    state.sort = els.sortSelect.value;
+    render();
   };
 
   // ---- категории и подкатегории всегда на виду, двумя рядами под поиском ----
@@ -698,19 +725,38 @@
   }
   updateTopbarHeight();
 
-  function render(){
-    var filtered = state.items.filter(matches);
+  var PAGE_SIZE = 40;
+
+  function sortItems(items){
+    var arr = items.slice();
+    if (state.sort === 'name-asc') {
+      arr.sort(function(a, b){ return a.name.localeCompare(b.name, 'ru'); });
+    } else if (state.sort === 'name-desc') {
+      arr.sort(function(a, b){ return b.name.localeCompare(a.name, 'ru'); });
+    }
+    // 'default' — порядок как в materials.json, не трогаем
+    return arr;
+  }
+
+  function render(resetPage){
+    if (resetPage !== false) state.visibleCount = PAGE_SIZE;
+
+    var filtered = sortItems(state.items.filter(matches));
     els.count.textContent = filtered.length + ' материал(ов)';
     els.grid.innerHTML = '';
     els.empty.style.display = filtered.length ? 'none' : 'block';
 
+    var visible = filtered.slice(0, state.visibleCount);
+
     // Заголовки-разделители категорий имеют смысл только когда лента реально
     // смешанная (весь каталог или избранное) — если выбрана одна конкретная
     // категория, все карточки и так из неё одной, заголовок был бы лишним.
-    var showSectionHeaders = state.favOnly || state.filterMode !== 'category';
+    // При ручной сортировке по имени заголовки тоже отключаем — иначе один и
+    // тот же заголовок появлялся бы много раз вперемешку по алфавиту.
+    var showSectionHeaders = (state.favOnly || state.filterMode !== 'category') && state.sort === 'default';
     var lastCategory = null;
 
-    filtered.forEach(function(item, idx){
+    visible.forEach(function(item, idx){
       if (showSectionHeaders && item.category !== lastCategory) {
         lastCategory = item.category;
         var headerEl = document.createElement('div');
@@ -774,7 +820,7 @@
       // Передаём весь отфильтрованный список и позицию в нём — просмотрщик
       // использует это для вертикального свайпа между материалами, в том же
       // порядке, в котором они сейчас идут в сетке.
-      thumbWrap.onclick = function(){ openViewer(filtered, idx); };
+      thumbWrap.onclick = function(){ openViewer(visible, idx); };
 
       var heart = document.createElement('div');
       heart.className = 'heart' + (state.favorites.indexOf(item.id) >= 0 ? ' active' : '');
@@ -815,6 +861,17 @@
       card.appendChild(info);
       els.grid.appendChild(card);
     });
+
+    if (filtered.length > visible.length) {
+      var more = document.createElement('div');
+      more.className = 'load-more';
+      more.textContent = 'Показать ещё (' + (filtered.length - visible.length) + ')';
+      more.onclick = function(){
+        state.visibleCount += PAGE_SIZE;
+        render(false);
+      };
+      els.grid.appendChild(more);
+    }
   }
 
   function copyText(text){
