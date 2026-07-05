@@ -20,12 +20,34 @@
     --button-text: #ffffff;
     --secbg: #ffffff;
     --line: #dedee2;
+    /* В fullscreen-режиме Telegram рисует СВОИ элементы (кнопка "Закрыть"
+       слева, стрелка/меню справа) поверх верхней части экрана — это не часть
+       нашего DOM, а собственный оверлей клиента Telegram, поэтому его нельзя
+       просто "подвинуть" стилями. Вместо этого мы читаем зарезервированную
+       под него высоту через Telegram.WebApp.safeAreaInset/contentSafeAreaInset
+       (см. applySafeArea() в скрипте) и подставляем сюда — весь наш верхний
+       блок сдвигается ниже этой полосы, чтобы не соревноваться с ней за место.
+       По умолчанию (вне fullscreen/вне Telegram) оба значения — 0px. */
+    --safe-top: 0px;
+    --content-safe-top: 0px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
-  #app{padding:8px 10px 24px;}
+  #app{padding:8px 10px 24px;padding-top:calc(8px + var(--content-safe-top, 0px));}
 
-  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--line);}
+  /* Название приложения — в самой зарезервированной под контролы Telegram
+     полосе (между "Закрыть" слева и стрелкой/меню справа), а не пустует.
+     pointer-events:none и центрирование — чтобы никогда не мешать тапам по
+     самим кнопкам Telegram (они рисуются поверх, в отдельном слое клиента). */
+  .brand-label{
+    position:fixed;left:64px;right:64px;top:var(--safe-top, 0px);
+    height:calc(var(--content-safe-top, 0px) - var(--safe-top, 0px));
+    z-index:1;pointer-events:none;display:flex;align-items:center;justify-content:center;
+    font-size:12px;font-weight:700;letter-spacing:1px;color:var(--hint);
+    text-transform:uppercase;overflow:hidden;
+  }
+
+  .topbar{position:sticky;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--line);}
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -274,7 +296,10 @@
   }
   .vnavbtn:active{background:rgba(0,0,0,0.75);}
   .vnavbtn.hidden{opacity:0;pointer-events:none;}
-  .vactions{position:absolute;top:16px;right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
+  /* Отступ сверху учитывает ту же зарезервированную под контролы Telegram
+     полосу (--content-safe-top), что и основной топбар — иначе ✕/♡/⧉ во
+     вьювере оказались бы под "Закрыть"/стрелкой самого Telegram. */
+  .vactions{position:absolute;top:calc(16px + var(--content-safe-top, 0px));right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
   .vclose, .vcopy, .vheart{
     width:36px;height:36px;border-radius:50%;color:#fff;
     display:flex;align-items:center;justify-content:center;
@@ -348,6 +373,12 @@
     } catch (e) {}
   })();
 </script>
+<!-- Полоса, которую в fullscreen-режиме занимают собственные контролы
+     Telegram ("Закрыть" слева, стрелка/меню справа) — это не часть нашей
+     разметки, а оверлей клиента поверх страницы. Раньше в свободном между
+     ними пространстве было пусто; теперь там название приложения (высота и
+     положение считаются в applySafeArea(), см. основной скрипт). -->
+<div class="brand-label" id="brandLabel">NeoModernKz</div>
 <div id="app">
   <div class="topbar">
     <div class="topbar-row">
@@ -440,6 +471,31 @@
       } else {
         tg.expand();
       }
+    } catch(e){}
+  }
+
+  // ---- safe area: в fullscreen Telegram рисует СВОИ контролы (Закрыть слева,
+  // стрелка/меню справа) поверх верхней полосы экрана — это не элементы
+  // нашего DOM, подвинуть их нельзя, поэтому вместо этого подстраиваем СВОЙ
+  // топбар/вьювер под них через safeAreaInset/contentSafeAreaInset (Bot API
+  // 8.0+, те же поля, что уже проверяются перед requestFullscreen). --top
+  // безопасной зоны устройства (чёлка и т.п.), --content-safe-top — то же самое
+  // ПЛЮС высота полосы с контролами самого Telegram: именно на эту величину
+  // должен сдвинуться вниз наш топбар, чтобы не соревноваться за место.
+  function applySafeArea(){
+    var root = document.documentElement.style;
+    var safeTop = (tg && tg.safeAreaInset && tg.safeAreaInset.top) || 0;
+    var contentTop = (tg && tg.contentSafeAreaInset && tg.contentSafeAreaInset.top) || 0;
+    root.setProperty('--safe-top', safeTop + 'px');
+    root.setProperty('--content-safe-top', Math.max(safeTop, contentTop) + 'px');
+  }
+  if (tg && tg.isVersionAtLeast && tg.isVersionAtLeast('8.0')) {
+    applySafeArea();
+    // Меняется при повороте экрана, сворачивании/разворачивании и т.п. —
+    // держим переменные свежими, а не считаем один раз при загрузке.
+    try {
+      tg.onEvent('safeAreaChanged', applySafeArea);
+      tg.onEvent('contentSafeAreaChanged', applySafeArea);
     } catch(e){}
   }
 
