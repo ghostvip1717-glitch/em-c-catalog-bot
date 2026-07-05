@@ -41,6 +41,15 @@
   }
   .fav-btn.active{background:#e0245e;color:#fff;}
 
+  /* Кнопка-гамбургер — второй, альтернативный способ открыть категории (см.
+     .drawer ниже): боковая шторка вместо fullscreen-модалки. Оба входа ведут
+     к одному и тому же состоянию (state.category/state.favOnly). */
+  .menu-btn{
+    flex:0 0 auto;width:40px;height:40px;border-radius:10px;border:none;
+    background:var(--secbg);color:var(--text);font-size:18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+
   /* Плавающая кнопка категорий снизу — открывает fullscreen-модалку выбора
      (заменяет прежнюю боковую шторку). */
   .cat-float-btn{
@@ -117,6 +126,31 @@
   .drawer-subitem:active{background:rgba(0,0,0,0.05);}
   .drawer-subitem.active{color:var(--button);font-weight:700;}
   .drawer-subitem .n{color:var(--hint);font-size:11px;flex:0 0 auto;}
+
+  /* Боковая шторка — открывается кнопкой-гамбургером (.menu-btn), выбор
+     категории/источника применяется СРАЗУ по тапу (без черновика и кнопки
+     "Показать материалы", в отличие от fullscreen-модалки катFloatBtn). */
+  .drawer-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:60;
+    opacity:0;pointer-events:none;transition:opacity .28s ease;
+  }
+  .drawer-overlay.open{opacity:1;pointer-events:auto;}
+  .drawer{
+    position:fixed;top:0;left:0;bottom:0;width:86%;max-width:330px;background:var(--bg);
+    z-index:61;transform:translateX(-102%);transition:transform .32s cubic-bezier(.22,.61,.36,1);
+    overflow-y:auto;-webkit-overflow-scrolling:touch;padding:18px 14px 24px;
+    border-right:1px solid var(--line);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer.dragging{transition:none;}
+  .drawer-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+  .drawer-title{font-size:17px;font-weight:700;letter-spacing:.1px;}
+  .drawer-close{
+    width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
+    align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
+    transition:background-color .15s ease,transform .15s ease;
+  }
+  .drawer-close:active{transform:scale(0.9);}
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
@@ -317,6 +351,7 @@
 <div id="app">
   <div class="topbar">
     <div class="topbar-row">
+      <button class="menu-btn" id="menuBtn" aria-label="Категории">☰</button>
       <button class="fav-btn" id="favBtn">★ Избранное</button>
       <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
     </div>
@@ -326,10 +361,24 @@
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
 </div>
 
-<!-- Плавающая кнопка снизу — заменяет прежнюю боковую шторку. Показывает
-     текущий фильтр по категории и открывает полноэкранную модалку выбора
-     (см. #catModal ниже). Резервная копия версии с боковой шторкой лежит
-     рядом в index.backup-with-drawer.html — на случай отката. -->
+<!-- Боковая шторка — второй, альтернативный вход в выбор категорий (открывается
+     гамбургером выше). Выбор в ней применяется сразу, без черновика/кнопки
+     "Показать материалы" — в отличие от fullscreen-модалки catFloatBtn ниже.
+     Обе ведут к одному и тому же состоянию (state.category/state.favOnly). -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-title">Категории</div>
+    <div class="drawer-close" id="drawerClose">✕</div>
+  </div>
+  <div class="drawer-item" id="drawerAll">Все материалы</div>
+  <div class="drawer-item" id="drawerFav">★ Избранное</div>
+  <div id="drawerGroups"></div>
+</div>
+
+<!-- Плавающая кнопка снизу — второй вход в выбор категории, показывает
+     текущий фильтр и открывает полноэкранную модалку (см. #catModal ниже).
+     Живёт одновременно с боковой шторкой выше — оба ведут к одному состоянию. -->
 <button class="cat-float-btn" id="catFloatBtn">
   <span id="catFloatText">Категории</span>
   <span class="cat-float-dot" id="catFloatDot"></span>
@@ -407,6 +456,13 @@
     topbar: document.querySelector('.topbar'),
     grid: document.getElementById('grid'),
     favBtn: document.getElementById('favBtn'),
+    menuBtn: document.getElementById('menuBtn'),
+    drawerOverlay: document.getElementById('drawerOverlay'),
+    drawer: document.getElementById('drawer'),
+    drawerClose: document.getElementById('drawerClose'),
+    drawerAll: document.getElementById('drawerAll'),
+    drawerFav: document.getElementById('drawerFav'),
+    drawerGroups: document.getElementById('drawerGroups'),
     search: document.getElementById('search'),
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
@@ -515,6 +571,7 @@
         state.items = data;
         updateFavBtn();
         updateCatFloatBtn();
+        buildDrawer();
         render();
         // Реальное число материалов вместо статичной цифры на сплэше —
         // актуально всегда, даже когда каталог пополняется скрапером.
@@ -540,6 +597,7 @@
     render();
     updateFavBtn();
     updateCatFloatBtn();
+    buildDrawer();
   };
 
   // ---- плавающая кнопка категорий + полноэкранная модалка выбора ----
@@ -648,7 +706,151 @@
     render();
     updateFavBtn();
     updateCatFloatBtn();
+    buildDrawer(); // держим подсветку активного пункта в шторке в синхроне
     closeCatModal();
+  };
+
+  // ---- боковая шторка: второй, альтернативный вход в выбор категорий ----
+  // В отличие от fullscreen-модалки (черновик + кнопка "Показать материалы"),
+  // здесь выбор применяется СРАЗУ по тапу — как в исходной версии шторки
+  // (index.backup-with-drawer.html), просто теперь она сосуществует с
+  // модалкой, а не заменена ею.
+  function buildDrawer(){
+    var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
+    state.items.forEach(function(it){
+      var g = siteGroupOf(it.category);
+      if (!groups[g]) groups[g] = { cats: {}, total: 0 };
+      groups[g].total++;
+      groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
+    });
+
+    els.drawerAll.className = 'drawer-item' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
+    els.drawerFav.className = 'drawer-item' + (state.favOnly ? ' active' : '');
+
+    els.drawerGroups.innerHTML = '';
+
+    var label = document.createElement('div');
+    label.className = 'drawer-section-label';
+    label.textContent = 'Источники';
+    els.drawerGroups.appendChild(label);
+
+    SITE_ORDER.forEach(function(key){
+      var g = groups[key];
+      if (!g) return;
+      var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
+      var catNames = Object.keys(g.cats).sort();
+
+      // Состояние "развёрнуто/свёрнуто" общее с модалкой (state.expandedGroups) —
+      // оба входа показывают один и тот же список источников, логично, чтобы
+      // раскрытая группа не "схлопывалась" при переключении между ними.
+      if (state.expandedGroups[key] === undefined && !state.favOnly && catNames.indexOf(state.category) !== -1) {
+        state.expandedGroups[key] = true;
+      }
+      var isExpanded = !!state.expandedGroups[key];
+
+      var groupEl = document.createElement('div');
+      groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
+      groupEl.setAttribute('data-site', key);
+
+      var header = document.createElement('div');
+      header.className = 'drawer-group-header';
+      header.innerHTML =
+        '<div class="drawer-group-badge" style="background:' + meta.color + '">' + meta.title.charAt(0) + '</div>' +
+        '<div class="drawer-group-text">' +
+          '<div class="drawer-group-title">' + meta.title + '</div>' +
+          '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div>' +
+        '</div>' +
+        '<div class="drawer-group-arrow">▶</div>';
+      header.onclick = function(){
+        state.expandedGroups[key] = !isExpanded;
+        buildDrawer();
+      };
+      groupEl.appendChild(header);
+
+      var subitemsWrap = document.createElement('div');
+      subitemsWrap.className = 'drawer-subitems';
+      catNames.forEach(function(catName){
+        var sub = document.createElement('div');
+        sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
+        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
+        sub.onclick = function(){
+          state.category = catName;
+          state.favOnly = false;
+          render();
+          updateFavBtn();
+          updateCatFloatBtn();
+          buildDrawer();
+          closeDrawer();
+        };
+        subitemsWrap.appendChild(sub);
+      });
+      groupEl.appendChild(subitemsWrap);
+
+      els.drawerGroups.appendChild(groupEl);
+    });
+  }
+
+  function openDrawer(){
+    buildDrawer();
+    els.drawer.classList.add('open');
+    els.drawerOverlay.classList.add('open');
+  }
+  function closeDrawer(){
+    els.drawer.classList.remove('open');
+    els.drawerOverlay.classList.remove('open');
+  }
+
+  // ---- свайп для закрытия шторки: панель следует за пальцем, на отпускании
+  // либо плавно захлопывается обратно, либо доезжает и закрывается ----
+  (function initDrawerSwipe(){
+    var drag = null;
+    var W = 320;
+    els.drawer.addEventListener('touchstart', function(e){
+      if (!els.drawer.classList.contains('open')) return;
+      W = els.drawer.offsetWidth;
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+      els.drawer.classList.add('dragging');
+    }, {passive:true});
+    els.drawer.addEventListener('touchmove', function(e){
+      if (!drag) return;
+      var t = e.touches[0];
+      var dx = t.clientX - drag.startX;
+      var dy = t.clientY - drag.startY;
+      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (drag.locked !== 'x' || dx > 0) return;
+      drag.dx = dx;
+      els.drawer.style.transform = 'translateX(' + dx + 'px)';
+      els.drawerOverlay.style.opacity = Math.max(0, 1 + dx / W) * 1;
+    }, {passive:true});
+    els.drawer.addEventListener('touchend', function(){
+      if (!drag) return;
+      els.drawer.classList.remove('dragging');
+      els.drawer.style.transform = '';
+      els.drawerOverlay.style.opacity = '';
+      if (drag.dx < -W * 0.28) closeDrawer();
+      drag = null;
+    });
+  })();
+
+  els.menuBtn.onclick = openDrawer;
+  els.drawerClose.onclick = closeDrawer;
+  els.drawerOverlay.onclick = closeDrawer;
+  els.drawerAll.onclick = function(){
+    state.category = 'Все';
+    state.favOnly = false;
+    render();
+    updateFavBtn();
+    updateCatFloatBtn();
+    buildDrawer();
+    closeDrawer();
+  };
+  els.drawerFav.onclick = function(){
+    state.favOnly = !state.favOnly;
+    render();
+    updateFavBtn();
+    updateCatFloatBtn();
+    buildDrawer();
+    closeDrawer();
   };
 
   function matches(item){
