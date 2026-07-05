@@ -44,12 +44,15 @@
      (scroll и touchmove), НО в этот раз добавлен видимый на экране счётчик
      событий (#debugChrome, см. конец <body> и скрипт) — чтобы по записи
      экрана было видно, доходят ли scroll/touch-события до кода вообще, а не
-     гадать. #app пока НЕ анимирует padding-top (это отдельная задача про
-     "поднять контент" — сейчас цель просто понять, срабатывает ли показ).
-     Если и в этот раз не сработает — возвращаемся к надёжному sticky. */
+     гадать. Если и в этот раз не сработает — возвращаемся к надёжному sticky. */
   #app{
     padding:8px 10px 24px;
     padding-top:calc(8px + var(--content-safe-top, 0px) + var(--topbar-h, 180px));
+    transform:translateY(0);
+    transition:transform .25s ease;
+  }
+  html.chrome-hidden #app{
+    transform:translateY(calc(-1 * var(--topbar-h, 180px)));
   }
 
   .topbar{
@@ -229,16 +232,22 @@
 
   /* Ориентир в общем списке из 500+ позиций: заголовок категории "прилипает"
      под топбаром при прокрутке, пока в поле зрения карточки этой категории.
-     top задаётся в JS (высота топбара, --topbar-h) — она немного плавает от
-     контента. Оба блока — .topbar и .section-header — теперь одинаково
-     position:sticky, поэтому и ведут себя одинаково надёжно (см. комментарий
-     у #app выше про то, почему именно sticky, а не fixed+JS). */
+     top ПОСТОЯННЫЙ (не зависит от chrome-hidden) — двигать его ещё и через
+     top при скрытой шапке НЕЛЬЗЯ: он и так уже едет вместе с #app (см. #app
+     выше, transform при chrome-hidden) — если вдобавок менять ему top,
+     получается двойной сдвиг, и ярлык уезжает не туда (повисает где-то
+     посреди экрана, а не у самого верха). Поэтому при скрытой шапке просто
+     прячем его прозрачностью — position не трогаем вообще. */
   .section-header{
     grid-column:1/-1;position:sticky;
     top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
     z-index:3;background:var(--bg);
     padding:12px 2px 7px;font-size:13px;font-weight:700;color:var(--text);
     border-bottom:1px solid var(--line);
+    opacity:1;transition:opacity .2s ease;
+  }
+  html.chrome-hidden .section-header{
+    opacity:0;pointer-events:none;
   }
   .section-header:first-of-type{padding-top:2px;}
 
