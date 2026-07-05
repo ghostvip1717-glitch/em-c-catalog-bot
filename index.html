@@ -72,6 +72,20 @@
     background:var(--secbg);color:var(--text);font-size:13px;font-family:inherit;
   }
 
+  /* Третий, отдельный от select'а и шторки вход в тот же фильтр — ряд
+     иконок-ярлыков (по образцу похожих рядов быстрого доступа в других
+     каталог-приложениях, но со своими словами/иконками, без "поиска на
+     стороннем сайте" и без копирования чужих подписей). */
+  .quick-row{display:flex;margin-top:10px;}
+  .quick-item{
+    flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;
+    background:none;border:none;font-family:inherit;color:var(--text);
+    padding:4px 2px;cursor:pointer;
+  }
+  .quick-item svg{width:24px;height:24px;}
+  .quick-item span{font-size:11px;font-weight:500;}
+  .quick-item.active{color:var(--button);}
+
   .drawer-item{
     padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
     margin-bottom:4px;transition:background-color .15s ease,color .15s ease;
@@ -342,6 +356,10 @@
          к одному и тому же state.category/state.favOnly — держим временно
          вместе для сравнения удобства, later оставим только один вариант. -->
     <select class="top-cat-select" id="topCatSelect"></select>
+    <!-- Третий вход в тот же фильтр — быстрые иконки-ярлыки (по образцу
+         подобных рядов в других каталог-приложениях, но со своими словами и
+         иконками). Тоже временно, для сравнения удобства с select'ом и шторкой. -->
+    <div class="quick-row" id="quickRow"></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
@@ -440,6 +458,7 @@
   var state = {
     items: [],
     category: 'Все',
+    activeSite: null, // ключ источника (emc/adilet/interstone) — фильтр по ВСЕМ его категориям разом (см. quick-row), в отличие от category — фильтра по ОДНОЙ конкретной категории
     favOnly: false,
     query: '',
     favorites: [],
@@ -472,7 +491,8 @@
     vcopy: document.getElementById('vcopy'),
     vheart: document.getElementById('vheart'),
     vclose: document.getElementById('vclose'),
-    topCatSelect: document.getElementById('topCatSelect')
+    topCatSelect: document.getElementById('topCatSelect'),
+    quickRow: document.getElementById('quickRow')
   };
 
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
@@ -555,6 +575,7 @@
         updateFavBtn();
         buildTopCatSelect();
         buildDrawer();
+        buildQuickRow();
         render();
         // Реальное число материалов вместо статичной цифры на сплэше —
         // актуально всегда, даже когда каталог пополняется скрапером.
@@ -581,6 +602,7 @@
     updateFavBtn();
     updateTopCatSelectValue();
     buildDrawer();
+    buildQuickRow();
   };
 
   // ---- компактный выбор категории прямо в топбаре (третья строка) ----
@@ -614,10 +636,23 @@
     SITE_ORDER.forEach(function(key){
       var g = groups[key];
       if (!g) return;
-      var meta = SITE_META[key] || { title: key };
+      // Пользователю не важно, с какого сайта пришли данные — важно, что за
+      // материал внутри, поэтому в подписи группы используем subtitle
+      // ("Плёнка ПВХ" и т.п.), а не название сайта-источника (meta.title).
+      var meta = SITE_META[key] || { subtitle: key };
+      var catNames = Object.keys(g.cats).sort();
       var group = document.createElement('optgroup');
-      group.label = meta.title;
-      Object.keys(g.cats).sort().forEach(function(catName){
+      group.label = meta.subtitle;
+      // "Все" по конкретному источнику имеет смысл показывать отдельным
+      // пунктом только если внутри реально больше одной категории — иначе
+      // это дублировало бы единственную категорию ниже.
+      if (catNames.length > 1) {
+        var allSiteOpt = document.createElement('option');
+        allSiteOpt.value = 'site:' + key;
+        allSiteOpt.textContent = 'Всё (' + g.total + ')';
+        group.appendChild(allSiteOpt);
+      }
+      catNames.forEach(function(catName){
         var opt = document.createElement('option');
         opt.value = 'cat:' + catName;
         opt.textContent = catName + ' (' + g.cats[catName] + ')';
@@ -631,19 +666,69 @@
 
   function updateTopCatSelectValue(){
     if (state.favOnly) els.topCatSelect.value = 'fav';
+    else if (state.activeSite) els.topCatSelect.value = 'site:' + state.activeSite;
     else if (state.category === 'Все') els.topCatSelect.value = 'all';
     else els.topCatSelect.value = 'cat:' + state.category;
   }
 
   els.topCatSelect.onchange = function(){
     var val = els.topCatSelect.value;
-    if (val === 'all') { state.category = 'Все'; state.favOnly = false; }
+    if (val === 'all') { state.category = 'Все'; state.activeSite = null; state.favOnly = false; }
     else if (val === 'fav') { state.favOnly = true; }
-    else { state.category = val.slice(4); state.favOnly = false; }
+    else if (val.indexOf('site:') === 0) { state.activeSite = val.slice(5); state.category = 'Все'; state.favOnly = false; }
+    else { state.category = val.slice(4); state.activeSite = null; state.favOnly = false; }
     render();
     updateFavBtn();
     buildDrawer(); // держим подсветку активного пункта в шторке в синхроне
+    buildQuickRow();
   };
+
+  // ---- быстрые иконки-ярлыки — третий, ещё более компактный вход в тот же
+  // фильтр: один тап сразу переключает на весь источник целиком
+  // (state.activeSite), без выбора конкретной категории внутри. Иконки и
+  // подписи — свои, не скопированы из чужих приложений/сайтов. ----
+  var QUICK_ICONS = {
+    emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="6" rx="1.5"></rect><rect x="4" y="14" width="16" height="6" rx="1.5"></rect></svg>',
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>',
+    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L20 9V15L12 21L4 15V9L12 3Z"></path></svg>'
+  };
+  var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
+  var QUICK_FAV_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14.9 8.6L22 9.3L16.8 13.8L18.5 21L12 17.3L5.5 21L7.2 13.8L2 9.3L9.1 8.6Z"></path></svg>';
+
+  function buildQuickRow(){
+    els.quickRow.innerHTML = '';
+    SITE_ORDER.forEach(function(key){
+      var hasItems = state.items.some(function(it){ return siteGroupOf(it.category) === key; });
+      if (!hasItems) return;
+      var btn = document.createElement('button');
+      btn.className = 'quick-item' + (!state.favOnly && state.activeSite === key ? ' active' : '');
+      btn.innerHTML = QUICK_ICONS[key] + '<span>' + QUICK_LABELS[key] + '</span>';
+      btn.onclick = function(){
+        state.activeSite = key;
+        state.category = 'Все';
+        state.favOnly = false;
+        render();
+        updateFavBtn();
+        updateTopCatSelectValue();
+        buildDrawer();
+        buildQuickRow();
+      };
+      els.quickRow.appendChild(btn);
+    });
+
+    var favItem = document.createElement('button');
+    favItem.className = 'quick-item' + (state.favOnly ? ' active' : '');
+    favItem.innerHTML = QUICK_FAV_ICON + '<span>Избранное</span>';
+    favItem.onclick = function(){
+      state.favOnly = !state.favOnly;
+      render();
+      updateFavBtn();
+      updateTopCatSelectValue();
+      buildDrawer();
+      buildQuickRow();
+    };
+    els.quickRow.appendChild(favItem);
+  }
 
   // ---- боковая шторка: второй, альтернативный вход в выбор категорий ----
   // Выбор применяется СРАЗУ по тапу — как в исходной версии шторки
@@ -686,13 +771,16 @@
       groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
       groupEl.setAttribute('data-site', key);
 
+      // Пользователю показываем, ЧТО за материал внутри группы (meta.subtitle,
+      // например "Плёнка ПВХ"), а не название сайта-источника (meta.title) —
+      // это внутренняя техническая деталь скрапинга, ей тут не место.
       var header = document.createElement('div');
       header.className = 'drawer-group-header';
       header.innerHTML =
-        '<div class="drawer-group-badge" style="background:' + meta.color + '">' + meta.title.charAt(0) + '</div>' +
+        '<div class="drawer-group-badge" style="background:' + meta.color + '">' + meta.subtitle.charAt(0) + '</div>' +
         '<div class="drawer-group-text">' +
-          '<div class="drawer-group-title">' + meta.title + '</div>' +
-          '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div>' +
+          '<div class="drawer-group-title">' + meta.subtitle + '</div>' +
+          '<div class="drawer-group-sub">' + g.total + ' материал(ов)</div>' +
         '</div>' +
         '<div class="drawer-group-arrow">▶</div>';
       header.onclick = function(){
@@ -709,11 +797,13 @@
         sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
         sub.onclick = function(){
           state.category = catName;
+          state.activeSite = null;
           state.favOnly = false;
           render();
           updateFavBtn();
           updateTopCatSelectValue();
           buildDrawer();
+          buildQuickRow();
           closeDrawer();
         };
         subitemsWrap.appendChild(sub);
@@ -771,11 +861,13 @@
   els.drawerOverlay.onclick = closeDrawer;
   els.drawerAll.onclick = function(){
     state.category = 'Все';
+    state.activeSite = null;
     state.favOnly = false;
     render();
     updateFavBtn();
     updateTopCatSelectValue();
     buildDrawer();
+    buildQuickRow();
     closeDrawer();
   };
   els.drawerFav.onclick = function(){
@@ -784,12 +876,22 @@
     updateFavBtn();
     updateTopCatSelectValue();
     buildDrawer();
+    buildQuickRow();
     closeDrawer();
   };
 
   function matches(item){
     if (state.favOnly && state.favorites.indexOf(item.id) === -1) return false;
-    if (!state.favOnly && state.category !== 'Все' && item.category !== state.category) return false;
+    if (!state.favOnly) {
+      // activeSite — фильтр по ВСЕМ категориям одного источника разом (см.
+      // quick-row), отличается от category — фильтра по ОДНОЙ конкретной
+      // категории (drawer/select). Одновременно активен только один из них.
+      if (state.activeSite) {
+        if (siteGroupOf(item.category) !== state.activeSite) return false;
+      } else if (state.category !== 'Все' && item.category !== state.category) {
+        return false;
+      }
+    }
     if (state.query) {
       var q = state.query.toLowerCase();
       if (item.name.toLowerCase().indexOf(q) === -1 && item.id.toLowerCase().indexOf(q) === -1) return false;
