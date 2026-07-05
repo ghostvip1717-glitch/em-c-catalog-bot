@@ -137,15 +137,14 @@
      убрали, чтобы не тратить внимание на повтор одной и той же информации. */
   .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
-  /* Материал/текстура — это и есть продукт: фото больше не втиснуто в
-     квадратный каркас, а сохраняет свои натуральные пропорции (высота auto).
-     В паре с align-items:start на .grid это даёт почти-masonry раскладку —
-     карточки разной высоты стоят в ряд, не растягиваясь друг под друга. */
-  .card .thumb-wrap{position:relative;width:100%;background:var(--secbg);cursor:pointer;overflow:hidden;}
+  /* Фиксированное соотношение сторон 4:3 с object-fit:cover — иначе широкие
+     исходные фото (например ПВХ плёнка) давали визуально "маленькие",
+     приплюснутые по высоте карточки при натуральных пропорциях. */
+  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:4/3;background:var(--secbg);cursor:pointer;overflow:hidden;}
   .card .thumb-wrap.skeleton{min-height:110px;}
-  .card img{width:100%;height:auto;display:block;opacity:0;transition:opacity .25s ease;}
+  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
-  .card .noimg{display:flex;align-items:center;justify-content:center;min-height:110px;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
+  .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
 
   /* skeleton-плейсхолдеры на время загрузки */
   @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
