@@ -24,28 +24,17 @@
        слева, стрелка/меню справа) поверх верхней части экрана — это не часть
        нашего DOM, а собственный оверлей клиента Telegram, поэтому его нельзя
        просто "подвинуть" стилями. Вместо этого мы читаем зарезервированную
-       под него высоту через Telegram.WebApp.safeAreaInset/contentSafeAreaInset
-       (см. applySafeArea() в скрипте) и подставляем сюда — весь наш верхний
-       блок сдвигается ниже этой полосы, чтобы не соревноваться с ней за место.
-       По умолчанию (вне fullscreen/вне Telegram) оба значения — 0px. */
-    --safe-top: 0px;
+       под него высоту через Telegram.WebApp.contentSafeAreaInset (см.
+       applySafeArea() в скрипте, там же +буфер про запас) и подставляем
+       сюда — весь наш верхний блок сдвигается ниже этой полосы целиком.
+       Значение приходит от самого Telegram под конкретное устройство/версию
+       клиента — не захардкожено, поэтому корректно у любого пользователя.
+       По умолчанию (вне fullscreen/вне Telegram) — 0px, ничего не сдвигается. */
     --content-safe-top: 0px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
   #app{padding:8px 10px 24px;padding-top:calc(8px + var(--content-safe-top, 0px));}
-
-  /* Название приложения — в самой зарезервированной под контролы Telegram
-     полосе (между "Закрыть" слева и стрелкой/меню справа), а не пустует.
-     pointer-events:none и центрирование — чтобы никогда не мешать тапам по
-     самим кнопкам Telegram (они рисуются поверх, в отдельном слое клиента). */
-  .brand-label{
-    position:fixed;left:64px;right:64px;top:var(--safe-top, 0px);
-    height:calc(var(--content-safe-top, 0px) - var(--safe-top, 0px));
-    z-index:1;pointer-events:none;display:flex;align-items:center;justify-content:center;
-    font-size:12px;font-weight:700;letter-spacing:1px;color:var(--hint);
-    text-transform:uppercase;overflow:hidden;
-  }
 
   .topbar{position:sticky;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--line);}
   .search{
@@ -177,9 +166,9 @@
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
   /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
-     соседки в ряду, а сохраняют собственную натуральную высоту (см. .card
-     img ниже, без фикс. aspect-ratio) — почти-masonry-эффект без ухода от
-     CSS Grid (colum-based masonry ломает sticky-заголовки категорий). */
+     соседки в ряду. Фото теперь фиксированного 3:4 соотношения (см. .card
+     .thumb-wrap ниже), но подпись под ним может занимать разную высоту
+     (1 или 2 строки названия) — без start второй ряд карточек съезжал бы. */
   .grid{
     display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:6px;
     align-items:start;
@@ -211,15 +200,14 @@
      убрали, чтобы не тратить внимание на повтор одной и той же информации. */
   .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
-  /* Материал/текстура — это и есть продукт: фото больше не втиснуто в
-     квадратный каркас, а сохраняет свои натуральные пропорции (высота auto).
-     В паре с align-items:start на .grid это даёт почти-masonry раскладку —
-     карточки разной высоты стоят в ряд, не растягиваясь друг под друга. */
-  .card .thumb-wrap{position:relative;width:100%;background:var(--secbg);cursor:pointer;overflow:hidden;}
+  /* Фиксированное соотношение сторон 3:4 с object-fit:cover — иначе широкие
+     исходные фото (например ПВХ плёнка) давали визуально "маленькие",
+     приплюснутые по высоте карточки при натуральных пропорциях. */
+  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:3/4;background:var(--secbg);cursor:pointer;overflow:hidden;}
   .card .thumb-wrap.skeleton{min-height:110px;}
-  .card img{width:100%;height:auto;display:block;opacity:0;transition:opacity .25s ease;}
+  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
-  .card .noimg{display:flex;align-items:center;justify-content:center;min-height:110px;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
+  .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
 
   /* skeleton-плейсхолдеры на время загрузки */
   @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
@@ -373,12 +361,6 @@
     } catch (e) {}
   })();
 </script>
-<!-- Полоса, которую в fullscreen-режиме занимают собственные контролы
-     Telegram ("Закрыть" слева, стрелка/меню справа) — это не часть нашей
-     разметки, а оверлей клиента поверх страницы. Раньше в свободном между
-     ними пространстве было пусто; теперь там название приложения (высота и
-     положение считаются в applySafeArea(), см. основной скрипт). -->
-<div class="brand-label" id="brandLabel">NeoModernKz</div>
 <div id="app">
   <div class="topbar">
     <div class="topbar-row">
@@ -477,17 +459,20 @@
   // ---- safe area: в fullscreen Telegram рисует СВОИ контролы (Закрыть слева,
   // стрелка/меню справа) поверх верхней полосы экрана — это не элементы
   // нашего DOM, подвинуть их нельзя, поэтому вместо этого подстраиваем СВОЙ
-  // топбар/вьювер под них через safeAreaInset/contentSafeAreaInset (Bot API
-  // 8.0+, те же поля, что уже проверяются перед requestFullscreen). --top
-  // безопасной зоны устройства (чёлка и т.п.), --content-safe-top — то же самое
-  // ПЛЮС высота полосы с контролами самого Telegram: именно на эту величину
-  // должен сдвинуться вниз наш топбар, чтобы не соревноваться за место.
+  // топбар/вьювер под них через contentSafeAreaInset (Bot API 8.0+, то же
+  // поле, что уже проверяется перед requestFullscreen). Значение приходит от
+  // самого Telegram под конкретное устройство/версию клиента — не число,
+  // подобранное вручную под один телефон, поэтому одинаково корректно
+  // работает у любого пользователя. SAFE_AREA_BUFFER — небольшой запас
+  // сверху: на практике contentSafeAreaInset иногда чуть меньше того, что
+  // реально занимают контролы Telegram визуально, лучше отступить чуть больше.
+  var SAFE_AREA_BUFFER = 10;
   function applySafeArea(){
     var root = document.documentElement.style;
     var safeTop = (tg && tg.safeAreaInset && tg.safeAreaInset.top) || 0;
     var contentTop = (tg && tg.contentSafeAreaInset && tg.contentSafeAreaInset.top) || 0;
-    root.setProperty('--safe-top', safeTop + 'px');
-    root.setProperty('--content-safe-top', Math.max(safeTop, contentTop) + 'px');
+    var top = Math.max(safeTop, contentTop);
+    root.setProperty('--content-safe-top', (top ? top + SAFE_AREA_BUFFER : 0) + 'px');
   }
   if (tg && tg.isVersionAtLeast && tg.isVersionAtLeast('8.0')) {
     applySafeArea();
