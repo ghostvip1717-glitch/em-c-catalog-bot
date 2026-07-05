@@ -63,6 +63,23 @@
   .cat-subchip.active{background:rgba(201,161,90,.14);color:var(--button);border-color:var(--button);}
   .cat-subchip.active .n{color:var(--button);}
 
+  .breadcrumb{
+    display:flex;align-items:center;gap:6px;font-size:12px;color:var(--hint);
+    padding:8px 2px 0;
+  }
+  .breadcrumb b{color:var(--text);font-weight:600;}
+  .breadcrumb .bc-reset{margin-left:auto;color:var(--button);font-weight:600;cursor:pointer;}
+
+  .search-suggest{display:flex;gap:6px;overflow-x:auto;padding:0;scrollbar-width:none;}
+  .search-suggest::-webkit-scrollbar{display:none;}
+  .search-suggest.show{padding:8px 0 0;}
+  .suggest-chip{
+    flex:0 0 auto;padding:6px 12px;border-radius:999px;font-size:12px;
+    background:var(--secbg);color:var(--text);border:1px solid var(--line);cursor:pointer;
+    white-space:nowrap;
+  }
+  .suggest-chip .n{color:var(--hint);margin-left:5px;font-size:10.5px;}
+
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
   /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
@@ -258,8 +275,10 @@
       <button class="fav-btn" id="favBtn">★ Избранное</button>
       <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
     </div>
+    <div class="search-suggest" id="searchSuggest"></div>
     <div class="cat-tabs" id="catTabs"></div>
     <div class="cat-subchips" id="catSubchips"></div>
+    <div class="breadcrumb" id="breadcrumb" style="display:none;"></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
@@ -329,7 +348,9 @@
     vheart: document.getElementById('vheart'),
     vclose: document.getElementById('vclose'),
     catTabs: document.getElementById('catTabs'),
-    catSubchips: document.getElementById('catSubchips')
+    catSubchips: document.getElementById('catSubchips'),
+    breadcrumb: document.getElementById('breadcrumb'),
+    searchSuggest: document.getElementById('searchSuggest')
   };
 
   // ---- группировка категорий по сайтам-источникам (для рядов вкладок) ----
@@ -412,6 +433,7 @@
         updateFavBtn();
         buildCatTabs();
         buildCatSubchips();
+        buildBreadcrumb();
         render();
         // Реальное число материалов вместо статичной цифры на сплэше —
         // актуально всегда, даже когда каталог пополняется скрапером.
@@ -494,7 +516,7 @@
       return;
     }
     var g = (state._siteGroups || {})[state.activeSite];
-    var catNames = g ? Object.keys(g.cats).sort() : [];
+    var catNames = g ? Object.keys(g.cats).sort(function(a, b){ return g.cats[b] - g.cats[a]; }) : [];
     // Если у источника всего одна категория — отдельный ряд подкатегорий
     // избыточен, сама вкладка источника уже полностью его описывает.
     if (catNames.length <= 1) {
@@ -526,6 +548,29 @@
     });
   }
 
+  // ---- хлебная крошка: видно точный путь, не нужно смотреть на вкладки,
+  // чтобы понять, где находишься (важно при большом числе категорий) ----
+  function buildBreadcrumb(){
+    if (state.favOnly || state.filterMode === 'all') {
+      els.breadcrumb.style.display = 'none';
+      return;
+    }
+    var meta = SITE_META[state.activeSite] || { title: state.activeSite };
+    var html = '<b>' + meta.title + '</b>';
+    if (state.filterMode === 'category') {
+      html += ' › <b>' + state.category + '</b>';
+    }
+    html += '<span class="bc-reset" id="bcReset">Сбросить ✕</span>';
+    els.breadcrumb.innerHTML = html;
+    els.breadcrumb.style.display = 'flex';
+    document.getElementById('bcReset').onclick = function(){
+      state.filterMode = 'all';
+      state.activeSite = null;
+      state.category = 'Все';
+      applyFilterChange();
+    };
+  }
+
   // Общая точка после любого изменения фильтра — вкладки/чипы тоже
   // перерисовываются, чтобы подсветка активного пункта была всегда верной.
   function applyFilterChange(){
@@ -533,6 +578,7 @@
     updateFavBtn();
     buildCatTabs();
     buildCatSubchips();
+    buildBreadcrumb();
   }
 
   function matches(item){
@@ -1081,8 +1127,50 @@
     searchTimer = setTimeout(function(){
       state.query = val;
       render();
+      buildSearchSuggestions(val);
     }, 150);
   });
+
+  // ---- подсказки-категории по мере ввода — при 500+ позициях быстрее
+  // найти нужный раздел по названию категории, чем листать вкладки ----
+  function buildSearchSuggestions(query){
+    var q = query.trim().toLowerCase();
+    if (!q) {
+      els.searchSuggest.className = 'search-suggest';
+      els.searchSuggest.innerHTML = '';
+      return;
+    }
+    var counts = {}; // название категории -> количество
+    state.items.forEach(function(it){
+      if (it.category.toLowerCase().indexOf(q) !== -1) {
+        counts[it.category] = (counts[it.category] || 0) + 1;
+      }
+    });
+    var names = Object.keys(counts).sort(function(a, b){ return counts[b] - counts[a]; }).slice(0, 8);
+    if (!names.length) {
+      els.searchSuggest.className = 'search-suggest';
+      els.searchSuggest.innerHTML = '';
+      return;
+    }
+    els.searchSuggest.className = 'search-suggest show';
+    els.searchSuggest.innerHTML = '';
+    names.forEach(function(name){
+      var chip = document.createElement('div');
+      chip.className = 'suggest-chip';
+      chip.innerHTML = '<span>' + name + '</span><span class="n">' + counts[name] + '</span>';
+      chip.onclick = function(){
+        state.filterMode = 'category';
+        state.activeSite = siteGroupOf(name);
+        state.category = name;
+        state.query = '';
+        els.search.value = '';
+        els.searchSuggest.className = 'search-suggest';
+        els.searchSuggest.innerHTML = '';
+        applyFilterChange();
+      };
+      els.searchSuggest.appendChild(chip);
+    });
+  }
 
   // ---- стартовый экран (splash) ----
   // Показывается только при первом запуске приложения. localStorage уже
