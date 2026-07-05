@@ -1239,7 +1239,6 @@
   // 1px — с первого же обратного свайпа, независимо от текущей позиции скролла.
   (function initScrollChrome(){
     var lastY = window.scrollY || 0;
-    var ticking = false;
     var THRESHOLD_HIDE = 6;
     var root = document.documentElement;
 
@@ -1252,7 +1251,6 @@
     }
 
     function update(){
-      ticking = false;
       var y = window.scrollY || 0;
       var diff = y - lastY;
       if (y <= 10) {
@@ -1267,11 +1265,15 @@
       lastY = y;
     }
 
-    window.addEventListener('scroll', function(){
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(update);
-    }, {passive:true});
+    // Раньше вызов update() был обёрнут в requestAnimationFrame с флагом
+    // ticking (батчинг на случай частых scroll-событий). Убрали эту
+    // прослойку: сам update() дешёвый (одно сравнение чисел + classList
+    // toggle), а в некоторых WebView (в т.ч. внутри Telegram) rAF во время
+    // чистого скролла может откладываться/приостанавливаться — из-за этого
+    // показ шапки после разворота скролла срабатывал с большой задержкой
+    // или не срабатывал вовсе. Прямой вызов на каждое scroll-событие
+    // надёжнее и всё ещё достаточно дёшево.
+    window.addEventListener('scroll', update, {passive:true});
   })();
 
   function render(){
