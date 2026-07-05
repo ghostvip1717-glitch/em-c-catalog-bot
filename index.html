@@ -34,31 +34,41 @@
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  /* Topbar теперь position:fixed (а не sticky) — при скрытии/появлении
+     двигается через transform, а не через max-height. max-height/height
+     анимации требуют пересчёта layout каждый кадр (у топбара внутри поиск,
+     несколько кнопок, ряд иконок — тяжёлое поддерево), отсюда были
+     подтормаживания. transform — чисто композитная анимация (как и сам
+     скролл ленты), поэтому двигается так же плавно, как каталог. Раз топбар
+     больше не в потоке документа — место под него резервирует #app через
+     padding-top (--topbar-h, измеряется в скрипте), и just эта величина
+     плавно анимируется до content-safe-top при скрытии — см.
+     html.chrome-hidden ниже. */
   #app{
     padding:8px 10px 24px;
+    padding-top:calc(8px + var(--content-safe-top, 0px) + var(--topbar-h, 180px));
+    transition:padding-top .25s ease;
+  }
+  html.chrome-hidden #app{
     padding-top:calc(8px + var(--content-safe-top, 0px));
   }
 
   .topbar{
-    position:sticky;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;
+    position:fixed;left:0;right:0;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;
     z-index:5;border-bottom:1px solid var(--line);
-    overflow:hidden;max-height:280px;
-    transition:max-height .25s ease, opacity .22s ease, padding .25s ease, border-bottom-width .25s ease;
+    transform:translateY(0);
+    transition:transform .25s ease;
   }
-  /* ВАЖНО: топбар при скролле НЕ "доезжает" до top:0 и НЕ двигается вообще —
-     он всегда остаётся на var(--content-safe-top). Раньше была попытка
+  /* ВАЖНО: топбар при скролле НЕ "доезжает" до top:0 сам по себе — его top
+     всегда остаётся на var(--content-safe-top). Раньше была попытка
      схлопывать этот буфер (.topbar.docked{top:0}), но по записи экрана
      выяснилось, что это столкновение с кнопками Telegram (Закрыть/шеврон),
      которое буфер и был призван предотвратить — топбар уезжал ПОД системные
-     кнопки. Вместо движения — весь топбар целиком (шторка/избранное/поиск/
-     категория/иконки) схлопывается по высоте ПРЯМО НА МЕСТЕ (max-height,
-     позиция sticky не меняется) при скролле вниз и разворачивается обратно
-     при скролле вверх — см. .topbar.chrome-hidden и updateScrollChrome в
-     скрипте. max-height:280px у обычного состояния — фиксированное число с
-     запасом (не измеряется в JS через ResizeObserver: то давало петлю
-     обратной связи и дёргало анимацию, см. историю с панелью иконок). */
-  .topbar.chrome-hidden{
-    max-height:0;opacity:0;padding-top:0;padding-bottom:0;border-bottom-width:0;
+     кнопки. Скрытие/появление всего топбара (шторка/избранное/поиск/
+     категория/иконки) — только через translateY, top не трогаем — см.
+     html.chrome-hidden и updateScrollChrome в скрипте. */
+  html.chrome-hidden .topbar{
+    transform:translateY(-130%);
   }
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
@@ -110,7 +120,7 @@
      словами/иконками, без "поиска на стороннем сайте" и без копирования
      чужих подписей). Раньше схлопывалась отдельно от остального топбара при
      скролле — теперь схлопывается вместе со ВСЕМ топбаром как единое целое
-     (см. .topbar.chrome-hidden выше), поэтому здесь уже не нужна собственная
+     (см. html.chrome-hidden .topbar выше), поэтому здесь уже не нужна собственная
      max-height-анимация — просто статичный ряд внутри топбара. */
   .quick-row{
     display:flex;margin-top:8px;border-radius:10px;
@@ -220,19 +230,27 @@
 
   /* Ориентир в общем списке из 500+ позиций: заголовок категории "прилипает"
      под топбаром при прокрутке, пока в поле зрения карточки этой категории.
-     top задаётся в JS (высота топбара) — она немного плавает от контента. */
+     top задаётся в JS (высота топбара) — она немного плавает от контента.
+     Топбар теперь position:fixed (см. .topbar выше), поэтому смещение
+     заголовка считаем от верха экрана целиком: content-safe-top + topbar-h.
+     Когда топбар скрыт (html.chrome-hidden) — топбара на экране нет, поэтому
+     заголовок прилипает сразу под безопасной зоной Telegram, без topbar-h. */
   .section-header{
-    grid-column:1/-1;position:sticky;top:var(--topbar-h, 0px);z-index:3;background:var(--bg);
+    grid-column:1/-1;position:sticky;
+    top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
+    transition:top .25s ease;
+    z-index:3;background:var(--bg);
     padding:12px 2px 7px;font-size:13px;font-weight:700;color:var(--text);
     border-bottom:1px solid var(--line);
   }
+  html.chrome-hidden .section-header{ top:var(--content-safe-top, 0px); }
   .section-header:first-of-type{padding-top:2px;}
 
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;
     transition:transform .12s ease;
-    scroll-margin-top:var(--topbar-h, 0px);
+    scroll-margin-top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
   }
   .card:active{transform:scale(0.97);}
   .card.appear{animation:cardIn .3s ease both;}
@@ -1188,10 +1206,15 @@
   // категория/панель иконок ЛДСП-Плёнка-Камень-Избранное) при скролле
   // контента (не свайп телеграма — тот уже отключён через
   // disableVerticalSwipes, а именно прокрутка ленты карточек внутри
-  // приложения). Свайп вниз (скролл вниз) — топбар полностью схлопывается и
-  // исчезает ПРЯМО НА СВОЁМ МЕСТЕ (без движения/докинга к top:0 — именно
-  // так уже ловили баг со столкновением с кнопками Telegram, см. комментарий
-  // у .topbar в <style>). Свайп вверх — возвращается. У самого верха ленты
+  // приложения). Свайп вниз (скролл вниз) — топбар уезжает вверх за экран.
+  // Свайп вверх — возвращается. Класс вешаем на <html> (не на сам топбар) —
+  // от него зависят сразу несколько мест (transform топбара, padding-top
+  // #app, top у .section-header), см. CSS. Двигаем топбар ТОЛЬКО через
+  // transform (переменная top не меняется — так уже ловили баг со
+  // столкновением с кнопками Telegram, см. комментарий у .topbar в <style>).
+  // transform — композитная анимация без пересчёта layout, поэтому не
+  // тормозит (раньше схлопывали через max-height — это гоняло reflow
+  // тяжёлого поддерева топбара каждый кадр). У самого верха ленты
   // (scrollY ~ 0) всегда показываем топбар, чтобы не было рывка при
   // доскролливании до начала. Если в момент скрытия был открыт один из
   // popover'ов (категория или иконка с подкатегориями) — закрываем его,
@@ -1200,9 +1223,10 @@
     var lastY = window.scrollY || 0;
     var ticking = false;
     var THRESHOLD = 6;
+    var root = document.documentElement;
 
     function apply(down){
-      if (els.topbar) els.topbar.classList.toggle('chrome-hidden', down);
+      root.classList.toggle('chrome-hidden', down);
       if (down) {
         closeTopCatPopover();
         closeQuickPopover();
