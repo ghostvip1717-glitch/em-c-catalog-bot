@@ -12,9 +12,15 @@
      тёмный текст; тёплый золотой акцент — как и раньше — для кнопок и
      выделений (единственная сохранённая деталь прежней тёмной палитры). */
   :root{
-    --bg: #d2d2d8;
+    --bg: #8e8e93;
     --text: #1c1c1e;
     --hint: #8a8a8e;
+    /* --hint (#8a8a8e) читается только на белых поверхностях (--secbg) — на
+       новом тёмно-сером фоне (--bg) он почти сливается (контраст ~1:1).
+       Отдельная более тёмная версия — специально для мест, где
+       второстепенный текст лежит ПРЯМО на --bg (счётчик, ярлык раздела в
+       шторке, пустое состояние, сплэш-экран). */
+    --hint-strong: #3d3d40;
     --link: #b8863f;
     --button: #b8863f;
     --button-text: #ffffff;
@@ -38,19 +44,27 @@
      двигается через transform, а не через max-height. max-height/height
      анимации требуют пересчёта layout каждый кадр (у топбара внутри поиск,
      несколько кнопок, ряд иконок — тяжёлое поддерево), отсюда были
-     подтормаживания. transform — чисто композитная анимация (как и сам
-     скролл ленты), поэтому двигается так же плавно, как каталог. Раз топбар
-     больше не в потоке документа — место под него резервирует #app через
-     padding-top (--topbar-h, измеряется в скрипте), и just эта величина
-     плавно анимируется до content-safe-top при скрытии — см.
-     html.chrome-hidden ниже. */
+     подтормаживания.
+     ВАЖНО: по той же причине padding-top у #app и top у .section-header
+     раньше ТОЖЕ анимировались (transition) — а это тоже layout-свойства,
+     и их анимация заставляла пересчитывать layout всей сетки карточек
+     (500+ штук) каждый кадр, отсюда лагала уже сама лента при
+     скрытии/появлении шторки. Теперь padding-top у #app — ПОСТОЯННЫЙ
+     (всегда резервирует место под развёрнутый топбар, без transition), а
+     "закрытие" визуально имитируется одним-единственным transform:translateY
+     на #app целиком (вся секция сдвигается вверх как единый композитный
+     слой — как и сам скролл, без пересчёта layout детей). Section-header
+     и .card НЕ имеют больше отдельных chrome-hidden-правил — они просто
+     едут вместе с #app как часть одного и того же сдвинутого блока. */
   #app{
-    padding:8px 10px 24px;
+    padding:8px 10px calc(24px + var(--topbar-h, 180px));
     padding-top:calc(8px + var(--content-safe-top, 0px) + var(--topbar-h, 180px));
-    transition:padding-top .25s ease;
+    transform:translateY(0);
+    transition:transform .25s ease;
+    will-change:transform;
   }
   html.chrome-hidden #app{
-    padding-top:calc(8px + var(--content-safe-top, 0px));
+    transform:translateY(calc(-1 * var(--topbar-h, 180px)));
   }
 
   .topbar{
@@ -124,8 +138,11 @@
      max-height-анимация — просто статичный ряд внутри топбара. */
   .quick-row{
     display:flex;margin-top:8px;border-radius:10px;
-    /* Темнее и общего фона, и белых карточек — чтобы панель не сливалась
-       с контентом и иконки на ней были хорошо видны. */
+    /* Оставили светлее нового тёмно-серого фона (--bg) — иначе тёмный текст
+       иконок на такой же тёмной панели терял бы контраст (проверено: тёмный
+       текст на #b8b8c0 контрастнее в разы, чем на подобранных более тёмных
+       вариантах панели). Выглядит как светлая "таблетка"-панель поверх
+       тёмного топбара — от общего фона всё равно отличается и не сливается. */
     background:#b8b8c0;
     padding:8px 4px;
   }
@@ -163,7 +180,7 @@
   .drawer-item.active{background:var(--button);color:var(--button-text);}
 
   .drawer-section-label{
-    font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--hint);text-transform:uppercase;
+    font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--hint-strong);text-transform:uppercase;
     margin:18px 4px 8px;
   }
 
@@ -216,7 +233,7 @@
   }
   .drawer-close:active{transform:scale(0.9);}
 
-  .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
+  .count{color:var(--hint-strong);font-size:12px;margin:8px 2px 4px;}
 
   /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
      соседки в ряду. Фото теперь фиксированного 3:4 соотношения (см. .card
@@ -233,17 +250,17 @@
      top задаётся в JS (высота топбара) — она немного плавает от контента.
      Топбар теперь position:fixed (см. .topbar выше), поэтому смещение
      заголовка считаем от верха экрана целиком: content-safe-top + topbar-h.
-     Когда топбар скрыт (html.chrome-hidden) — топбара на экране нет, поэтому
-     заголовок прилипает сразу под безопасной зоной Telegram, без topbar-h. */
+     top здесь ПОСТОЯННЫЙ (не анимируется и не меняется по chrome-hidden) —
+     заголовок едет вместе со всем #app одним transform-сдвигом (см. #app
+     выше), поэтому отдельное правило на скрытие ему не нужно и лишний
+     пересчёт layout из-за transition:top тоже больше не грозит. */
   .section-header{
     grid-column:1/-1;position:sticky;
     top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
-    transition:top .25s ease;
     z-index:3;background:var(--bg);
     padding:12px 2px 7px;font-size:13px;font-weight:700;color:var(--text);
     border-bottom:1px solid var(--line);
   }
-  html.chrome-hidden .section-header{ top:var(--content-safe-top, 0px); }
   .section-header:first-of-type{padding-top:2px;}
 
   .card{
@@ -298,7 +315,7 @@
   .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
   .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
 
-  .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
+  .empty{text-align:center;color:var(--hint-strong);padding:40px 10px;font-size:14px;}
 
   /* fullscreen viewer — фото во весь экран, без полей. Название/категория
      и точки-пагинация лежат ПОВЕРХ фото (градиент снизу для читаемости),
@@ -829,13 +846,16 @@
   // источнику целиком) — иначе непонятно, что именно за материал скрыт за
   // одной иконкой. Иконки и подписи — свои, не скопированы из чужих
   // приложений/сайтов. ----
+  // Иконки переработаны так, чтобы форма читалась как материал, а не абстрактная
+  // геометрия: ЛДСП — стопка слоёв (плита из спрессованных слоёв), Плёнка —
+  // лист с загнутым уголком (плёнка/наклейка, которую отклеивают за уголок),
+  // Камень — обкатанный, "каменный" контур вместо острого геометрического ромба.
   var QUICK_ICONS = {
-    emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="6" rx="1.5"></rect><rect x="4" y="14" width="16" height="6" rx="1.5"></rect></svg>',
-    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>',
-    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L20 9V15L12 21L4 15V9L12 3Z"></path></svg>'
+    emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3H15L19 7V21H5V3Z"></path><path d="M15 3V7H19"></path></svg>',
+    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14C4 10.5 6.5 6 12 6C17 6 20 9.5 19.5 13.5C19 17.5 15 19 11.5 19C8 19 5 17 4.5 14Z"></path></svg>'
   };
   var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
-  var QUICK_FAV_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14.9 8.6L22 9.3L16.8 13.8L18.5 21L12 17.3L5.5 21L7.2 13.8L2 9.3L9.1 8.6Z"></path></svg>';
 
   var quickPopoverOpenSite = null;
 
@@ -936,20 +956,9 @@
       };
       els.quickRow.appendChild(btn);
     });
-
-    var favItem = document.createElement('button');
-    favItem.className = 'quick-item' + (state.favOnly ? ' active' : '');
-    favItem.innerHTML = QUICK_FAV_ICON + '<span>Избранное</span>';
-    favItem.onclick = function(){
-      closeQuickPopover();
-      state.favOnly = !state.favOnly;
-      render();
-      updateFavBtn();
-      updateTopCatSelectValue();
-      buildDrawer();
-      buildQuickRow();
-    };
-    els.quickRow.appendChild(favItem);
+    // Иконку "Избранное" здесь убрали — она дублировала отдельную кнопку
+    // ★ Избранное в топбаре (см. #favBtn), а держать один и тот же переключатель
+    // в двух местах панели избыточно.
   }
 
   // ---- боковая шторка: второй, альтернативный вход в выбор категорий ----
