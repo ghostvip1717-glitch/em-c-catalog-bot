@@ -1092,6 +1092,24 @@
     return true;
   }
 
+  // ---- память прокрутки: у каждого фильтра — своё место, где остановились ----
+  // Ключ — РЕЗУЛЬТАТ фильтрации (favOnly/activeSite/category), а не то, каким
+  // именно UI его выбрали — поэтому неважно, переключились ли через иконку
+  // снизу, шторку или кнопку сверху: список либо продолжается с прежнего
+  // места (если этот фильтр уже открывали в этой сессии), либо начинается
+  // сначала (если фильтр новый). Поиск (state.query) в ключ намеренно НЕ
+  // входит — при вводе/очистке поиска список всегда пролистывается наверх
+  // отдельно, в обработчике поля поиска (см. ниже).
+  var scrollPositions = {};
+  var lastFilterKey = null;
+
+  function filterStateKey(){
+    if (state.favOnly) return 'fav';
+    if (state.activeSite) return 'site:' + state.activeSite;
+    if (state.category === 'Все') return 'all';
+    return 'cat:' + state.category;
+  }
+
   // ---- фоновая предзагрузка полноразмерных фото ----
   // Пока пользователь листает сетку карточек (там грузятся только лёгкие
   // превью), в фоне тихо подгружаем полноразмерные фото карточек, которые
@@ -1162,6 +1180,18 @@
   updateTopbarHeight();
 
   function render(){
+    // Смена фильтра (см. filterStateKey) — запоминаем, докуда долистали
+    // ПРЕЖНИЙ фильтр (пока страница ещё не перестроена), а после отрисовки
+    // новой ленты — восстанавливаем сохранённую позицию нового фильтра (0,
+    // если этот фильтр открывают впервые в этой сессии). Если фильтр не
+    // менялся (например render() вызван из-за тапа по сердечку или ввода в
+    // поиск) — прокрутку не трогаем вовсе, оставляем как есть.
+    var newFilterKey = filterStateKey();
+    var filterChanged = lastFilterKey !== null && newFilterKey !== lastFilterKey;
+    if (filterChanged) {
+      scrollPositions[lastFilterKey] = window.scrollY;
+    }
+
     var filtered = state.items.filter(matches);
     els.count.textContent = filtered.length + ' материал(ов)';
     els.grid.innerHTML = '';
@@ -1278,6 +1308,13 @@
       card.appendChild(info);
       els.grid.appendChild(card);
     });
+
+    if (filterChanged) {
+      // Лента уже перестроена — теперь можно безопасно прокрутить к
+      // сохранённой позиции (или к 0, если этот фильтр открыт впервые).
+      window.scrollTo(0, scrollPositions[newFilterKey] || 0);
+    }
+    lastFilterKey = newFilterKey;
   }
 
   function copyText(text){
@@ -1625,6 +1662,10 @@
     searchTimer = setTimeout(function(){
       state.query = val;
       render();
+      // Поиск не участвует в памяти прокрутки фильтров (filterStateKey
+      // намеренно её игнорирует) — при вводе/очистке текста результаты
+      // всегда показываются с самого начала списка.
+      window.scrollTo(0, 0);
     }, 150);
   });
 
