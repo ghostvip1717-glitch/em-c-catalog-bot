@@ -850,10 +850,16 @@
   // геометрия: ЛДСП — стопка слоёв (плита из спрессованных слоёв), Плёнка —
   // лист с загнутым уголком (плёнка/наклейка, которую отклеивают за уголок),
   // Камень — обкатанный, "каменный" контур вместо острого геометрического ромба.
+  // Плёнка и Камень — по референсным картинкам, которые прислал пользователь
+  // (рулон плёнки разворачивается в лист; каменная арка-трилит вроде
+  // Стоунхенджа). Перерисованы в том же монохромном line-стиле (stroke =
+  // currentColor), что и остальные иконки ряда — так активное состояние
+  // (.quick-item.active{color:var(--button)}) продолжает перекрашивать
+  // иконку целиком, без отдельного набора цветов только для одной иконки.
   var QUICK_ICONS = {
     emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
-    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3H15L19 7V21H5V3Z"></path><path d="M15 3V7H19"></path></svg>',
-    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14C4 10.5 6.5 6 12 6C17 6 20 9.5 19.5 13.5C19 17.5 15 19 11.5 19C8 19 5 17 4.5 14Z"></path></svg>'
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7.2" cy="9" rx="4.2" ry="2.3"></ellipse><ellipse cx="7.2" cy="9" rx="1.5" ry="0.8"></ellipse><path d="M3 9V15.7C3 17 4.9 18 7.2 18C9.5 18 11.4 17 11.4 15.7V9"></path><path d="M11.4 11H20V17H11.4"></path></svg>',
+    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>'
   };
   var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
 
@@ -1250,8 +1256,12 @@
       }
     }
 
+    function currentY(){
+      return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    }
+
     function update(){
-      var y = window.scrollY || 0;
+      var y = currentY();
       var diff = y - lastY;
       if (y <= 10) {
         apply(false);
@@ -1274,6 +1284,27 @@
     // или не срабатывал вовсе. Прямой вызов на каждое scroll-событие
     // надёжнее и всё ещё достаточно дёшево.
     window.addEventListener('scroll', update, {passive:true});
+    document.addEventListener('scroll', update, {passive:true});
+
+    // ВАЖНО (по записи экрана от пользователя): даже с показом "по любому
+    // движению вверх" шапка на реальном устройстве (Telegram/Android) не
+    // возвращалась вообще, сколько ни скролль вверх — похоже, scroll-событие
+    // в этом WebView иногда не долетает до страницы вовремя/совсем.
+    // Добавляем независимый, более низкоуровневый источник сигнала —
+    // touchmove: палец пошёл ВНИЗ по экрану (это и есть жест "долистать
+    // назад/вверх по ленте") — показываем шапку сразу же, не дожидаясь
+    // scroll-события браузера. Это не замена, а страховка поверх него.
+    var touchY = null;
+    window.addEventListener('touchstart', function(e){
+      touchY = (e.touches && e.touches[0]) ? e.touches[0].clientY : null;
+    }, {passive:true});
+    window.addEventListener('touchmove', function(e){
+      if (touchY == null || !e.touches || !e.touches[0]) return;
+      var y = e.touches[0].clientY;
+      if (y - touchY > 4) apply(false); // палец идёт вниз по экрану — показать
+      touchY = y;
+    }, {passive:true});
+    window.addEventListener('touchend', function(){ touchY = null; }, {passive:true});
   })();
 
   function render(){
