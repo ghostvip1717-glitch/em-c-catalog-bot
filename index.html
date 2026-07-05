@@ -61,47 +61,16 @@
     display:flex;align-items:center;justify-content:center;
   }
 
-  /* Плавающая кнопка категорий снизу — открывает fullscreen-модалку выбора
-     (заменяет прежнюю боковую шторку). */
-  .cat-float-btn{
-    position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:20;
-    max-width:82vw;display:flex;align-items:center;gap:8px;
-    background:var(--secbg);color:var(--text);border:1px solid var(--line);
-    border-radius:999px;padding:12px 20px;font-size:14px;font-weight:600;
-    cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    font-family:inherit;
+  /* Компактный выбор категории прямо в топбаре — второй, отдельный от
+     боковой шторки способ выбрать категорию (третьей строкой под поиском).
+     Оба ведут к одному и тому же state.category/state.favOnly — временно
+     держим оба варианта одновременно, чтобы сравнить удобство, и позже
+     оставить только один. Нативный <select> — самый компактный вариант,
+     не требует своей модалки/панели. */
+  .top-cat-select{
+    width:100%;margin-top:8px;padding:9px 10px;border-radius:10px;border:1px solid var(--line);
+    background:var(--secbg);color:var(--text);font-size:13px;font-family:inherit;
   }
-  .cat-float-btn:active{transform:translateX(-50%) scale(0.97);}
-  .cat-float-dot{width:7px;height:7px;border-radius:50%;background:var(--button);flex:0 0 auto;display:none;}
-  .cat-float-dot.show{display:inline-block;}
-
-  /* Fullscreen-модалка выбора категории. Выбор внутри — черновой (просто
-     подсвечивает пункт), реально применяется только по кнопке "Показать
-     материалы" внизу — чтобы не мигал список карточек на каждый тап. */
-  .cat-modal{
-    position:fixed;inset:0;background:var(--bg);z-index:70;display:flex;flex-direction:column;
-    transform:translateY(100%);transition:transform .3s ease;
-  }
-  .cat-modal.open{transform:translateY(0);}
-  .cat-modal-header{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:18px 16px;border-bottom:1px solid var(--line);flex:0 0 auto;
-  }
-  .cat-modal-title{font-size:17px;font-weight:700;letter-spacing:.1px;}
-  .cat-modal-close{
-    width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
-    align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
-  }
-  .cat-modal-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px;}
-  .cat-modal-footer{
-    padding:14px 16px calc(14px + env(safe-area-inset-bottom, 0px));
-    border-top:1px solid var(--line);flex:0 0 auto;
-  }
-  .cat-modal-apply{
-    width:100%;border:none;border-radius:14px;padding:15px;font-size:15px;font-weight:700;
-    background:var(--button);color:var(--button-text);cursor:pointer;font-family:inherit;
-  }
-  .cat-modal-apply:active{opacity:.85;}
 
   .drawer-item{
     padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
@@ -368,16 +337,19 @@
       <button class="fav-btn" id="favBtn">★ Избранное</button>
       <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
     </div>
+    <!-- Второй, отдельный от боковой шторки способ выбрать категорию — прямо
+         в топбаре, компактным нативным select'ом (третья строка). Оба ведут
+         к одному и тому же state.category/state.favOnly — держим временно
+         вместе для сравнения удобства, later оставим только один вариант. -->
+    <select class="top-cat-select" id="topCatSelect"></select>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
 </div>
 
-<!-- Боковая шторка — второй, альтернативный вход в выбор категорий (открывается
-     гамбургером выше). Выбор в ней применяется сразу, без черновика/кнопки
-     "Показать материалы" — в отличие от fullscreen-модалки catFloatBtn ниже.
-     Обе ведут к одному и тому же состоянию (state.category/state.favOnly). -->
+<!-- Боковая шторка — выбор в ней применяется сразу, без черновика/кнопки
+     "применить". Ведёт к тому же состоянию, что и select выше. -->
 <div class="drawer-overlay" id="drawerOverlay"></div>
 <div class="drawer" id="drawer">
   <div class="drawer-header">
@@ -387,25 +359,6 @@
   <div class="drawer-item" id="drawerAll">Все материалы</div>
   <div class="drawer-item" id="drawerFav">★ Избранное</div>
   <div id="drawerGroups"></div>
-</div>
-
-<!-- Плавающая кнопка снизу — второй вход в выбор категории, показывает
-     текущий фильтр и открывает полноэкранную модалку (см. #catModal ниже).
-     Живёт одновременно с боковой шторкой выше — оба ведут к одному состоянию. -->
-<button class="cat-float-btn" id="catFloatBtn">
-  <span id="catFloatText">Категории</span>
-  <span class="cat-float-dot" id="catFloatDot"></span>
-</button>
-
-<div class="cat-modal" id="catModal">
-  <div class="cat-modal-header">
-    <div class="cat-modal-title">Категории</div>
-    <div class="cat-modal-close" id="catModalClose">✕</div>
-  </div>
-  <div class="cat-modal-body" id="catModalBody"></div>
-  <div class="cat-modal-footer">
-    <button class="cat-modal-apply" id="catModalApply">Показать материалы</button>
-  </div>
 </div>
 
 <div class="viewer" id="viewer">
@@ -466,7 +419,7 @@
   // работает у любого пользователя. SAFE_AREA_BUFFER — небольшой запас
   // сверху: на практике contentSafeAreaInset иногда чуть меньше того, что
   // реально занимают контролы Telegram визуально, лучше отступить чуть больше.
-  var SAFE_AREA_BUFFER = 10;
+  var SAFE_AREA_BUFFER = 24;
   function applySafeArea(){
     var root = document.documentElement.style;
     var safeTop = (tg && tg.safeAreaInset && tg.safeAreaInset.top) || 0;
@@ -519,19 +472,8 @@
     vcopy: document.getElementById('vcopy'),
     vheart: document.getElementById('vheart'),
     vclose: document.getElementById('vclose'),
-    catFloatBtn: document.getElementById('catFloatBtn'),
-    catFloatText: document.getElementById('catFloatText'),
-    catFloatDot: document.getElementById('catFloatDot'),
-    catModal: document.getElementById('catModal'),
-    catModalClose: document.getElementById('catModalClose'),
-    catModalBody: document.getElementById('catModalBody'),
-    catModalApply: document.getElementById('catModalApply')
+    topCatSelect: document.getElementById('topCatSelect')
   };
-
-  // Черновой (ещё не применённый) выбор внутри полноэкранной модалки категорий.
-  // Реально применяется в state.category только по кнопке "Показать материалы" —
-  // чтобы сетка карточек не перерисовывалась на каждый тап внутри модалки.
-  var catDraft = { category: 'Все', favOnly: false };
 
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
   // Категории неймспейсятся по префиксу названия — это позволяет добавлять
@@ -611,7 +553,7 @@
         console.log('[catalog] каталог загружен:', data.length, 'позиций');
         state.items = data;
         updateFavBtn();
-        updateCatFloatBtn();
+        buildTopCatSelect();
         buildDrawer();
         render();
         // Реальное число материалов вместо статичной цифры на сплэше —
@@ -637,24 +579,18 @@
     state.favOnly = !state.favOnly;
     render();
     updateFavBtn();
-    updateCatFloatBtn();
+    updateTopCatSelectValue();
     buildDrawer();
   };
 
-  // ---- плавающая кнопка категорий + полноэкранная модалка выбора ----
-  // Текст кнопки = "Категории" пока фильтр не выбран, иначе — имя категории.
-  // Точка рядом = "фильтр активен" (НЕ индикатор наличия на складе — эта тема
-  // отдельная и пока не решена по данным).
-  function updateCatFloatBtn(){
-    var active = state.category !== 'Все' && !state.favOnly;
-    els.catFloatText.textContent = active ? state.category : 'Категории';
-    els.catFloatDot.className = 'cat-float-dot' + (active ? ' show' : '');
-  }
-
-  // ---- содержимое модалки: категории сгруппированы по сайтам-источникам ----
-  // Выбор внутри модалки черновой (catDraft) — применяется в state только по
-  // кнопке "Показать материалы" (catModalApply), см. ТЗ.
-  function buildCatModal(){
+  // ---- компактный выбор категории прямо в топбаре (третья строка) ----
+  // Второй, отдельный от боковой шторки вход в тот же фильтр — временно оба
+  // варианта держим рядом для сравнения удобства (см. обсуждение), список
+  // элементов select полностью пересобирается только когда меняется сам
+  // каталог (buildTopCatSelect, вызывается из loadCatalog), а на любое другое
+  // изменение фильтра (из шторки/кнопки избранного) достаточно обновить
+  // выбранное значение (updateTopCatSelectValue) — сам список не меняется.
+  function buildTopCatSelect(){
     var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
     state.items.forEach(function(it){
       var g = siteGroupOf(it.category);
@@ -663,99 +599,56 @@
       groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
     });
 
-    els.catModalBody.innerHTML = '';
+    els.topCatSelect.innerHTML = '';
 
-    var allItem = document.createElement('div');
-    allItem.className = 'drawer-item' + (catDraft.category === 'Все' ? ' active' : '');
-    allItem.textContent = 'Все материалы';
-    allItem.onclick = function(){
-      catDraft.category = 'Все';
-      buildCatModal();
-    };
-    els.catModalBody.appendChild(allItem);
+    var allOpt = document.createElement('option');
+    allOpt.value = 'all';
+    allOpt.textContent = 'Все материалы';
+    els.topCatSelect.appendChild(allOpt);
 
-    var label = document.createElement('div');
-    label.className = 'drawer-section-label';
-    label.textContent = 'Источники';
-    els.catModalBody.appendChild(label);
+    var favOpt = document.createElement('option');
+    favOpt.value = 'fav';
+    favOpt.textContent = '★ Избранное';
+    els.topCatSelect.appendChild(favOpt);
 
     SITE_ORDER.forEach(function(key){
       var g = groups[key];
       if (!g) return;
-      var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
-      var catNames = Object.keys(g.cats).sort();
-
-      // При первом попадании выбранной категории в эту группу разворачиваем
-      // её один раз (чтобы был виден активный черновой выбор), дальше —
-      // только по ручному клику.
-      if (state.expandedGroups[key] === undefined && catNames.indexOf(catDraft.category) !== -1) {
-        state.expandedGroups[key] = true;
-      }
-      var isExpanded = !!state.expandedGroups[key];
-
-      var groupEl = document.createElement('div');
-      groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
-      groupEl.setAttribute('data-site', key);
-
-      var header = document.createElement('div');
-      header.className = 'drawer-group-header';
-      header.innerHTML =
-        '<div class="drawer-group-badge" style="background:' + meta.color + '">' + meta.title.charAt(0) + '</div>' +
-        '<div class="drawer-group-text">' +
-          '<div class="drawer-group-title">' + meta.title + '</div>' +
-          '<div class="drawer-group-sub">' + meta.subtitle + ' · ' + g.total + '</div>' +
-        '</div>' +
-        '<div class="drawer-group-arrow">▶</div>';
-      header.onclick = function(){
-        state.expandedGroups[key] = !isExpanded;
-        buildCatModal();
-      };
-      groupEl.appendChild(header);
-
-      var subitemsWrap = document.createElement('div');
-      subitemsWrap.className = 'drawer-subitems';
-      catNames.forEach(function(catName){
-        var sub = document.createElement('div');
-        sub.className = 'drawer-subitem' + (catDraft.category === catName ? ' active' : '');
-        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
-        sub.onclick = function(){
-          catDraft.category = catName;
-          buildCatModal();
-        };
-        subitemsWrap.appendChild(sub);
+      var meta = SITE_META[key] || { title: key };
+      var group = document.createElement('optgroup');
+      group.label = meta.title;
+      Object.keys(g.cats).sort().forEach(function(catName){
+        var opt = document.createElement('option');
+        opt.value = 'cat:' + catName;
+        opt.textContent = catName + ' (' + g.cats[catName] + ')';
+        group.appendChild(opt);
       });
-      groupEl.appendChild(subitemsWrap);
-
-      els.catModalBody.appendChild(groupEl);
+      els.topCatSelect.appendChild(group);
     });
+
+    updateTopCatSelectValue();
   }
 
-  function openCatModal(){
-    catDraft.category = state.category;
-    buildCatModal();
-    els.catModal.classList.add('open');
-  }
-  function closeCatModal(){
-    els.catModal.classList.remove('open');
+  function updateTopCatSelectValue(){
+    if (state.favOnly) els.topCatSelect.value = 'fav';
+    else if (state.category === 'Все') els.topCatSelect.value = 'all';
+    else els.topCatSelect.value = 'cat:' + state.category;
   }
 
-  els.catFloatBtn.onclick = openCatModal;
-  els.catModalClose.onclick = closeCatModal;
-  els.catModalApply.onclick = function(){
-    state.category = catDraft.category;
-    state.favOnly = false;
+  els.topCatSelect.onchange = function(){
+    var val = els.topCatSelect.value;
+    if (val === 'all') { state.category = 'Все'; state.favOnly = false; }
+    else if (val === 'fav') { state.favOnly = true; }
+    else { state.category = val.slice(4); state.favOnly = false; }
     render();
     updateFavBtn();
-    updateCatFloatBtn();
     buildDrawer(); // держим подсветку активного пункта в шторке в синхроне
-    closeCatModal();
   };
 
   // ---- боковая шторка: второй, альтернативный вход в выбор категорий ----
-  // В отличие от fullscreen-модалки (черновик + кнопка "Показать материалы"),
-  // здесь выбор применяется СРАЗУ по тапу — как в исходной версии шторки
+  // Выбор применяется СРАЗУ по тапу — как в исходной версии шторки
   // (index.backup-with-drawer.html), просто теперь она сосуществует с
-  // модалкой, а не заменена ею.
+  // select'ом в топбаре выше, а не заменена им.
   function buildDrawer(){
     var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
     state.items.forEach(function(it){
@@ -819,7 +712,7 @@
           state.favOnly = false;
           render();
           updateFavBtn();
-          updateCatFloatBtn();
+          updateTopCatSelectValue();
           buildDrawer();
           closeDrawer();
         };
@@ -881,7 +774,7 @@
     state.favOnly = false;
     render();
     updateFavBtn();
-    updateCatFloatBtn();
+    updateTopCatSelectValue();
     buildDrawer();
     closeDrawer();
   };
@@ -889,7 +782,7 @@
     state.favOnly = !state.favOnly;
     render();
     updateFavBtn();
-    updateCatFloatBtn();
+    updateTopCatSelectValue();
     buildDrawer();
     closeDrawer();
   };
