@@ -12,7 +12,7 @@
      тёмный текст; тёплый золотой акцент — как и раньше — для кнопок и
      выделений (единственная сохранённая деталь прежней тёмной палитры). */
   :root{
-    --bg: #e6e6ea;
+    --bg: #dcdce1;
     --text: #1c1c1e;
     --hint: #8a8a8e;
     --link: #b8863f;
@@ -43,7 +43,15 @@
     padding-bottom:calc(24px + var(--quick-row-h, 70px));
   }
 
-  .topbar{position:sticky;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--line);}
+  .topbar{
+    position:sticky;top:var(--content-safe-top, 0px);background:var(--bg);padding:6px 0 8px;
+    z-index:5;border-bottom:1px solid var(--line);transition:top .25s ease;
+  }
+  /* При свайпе вниз топбар "доезжает" до самого верха экрана (буфер под
+     кнопки Telegram схлопывается) — но не исчезает целиком, просто
+     прижимается к краю. При свайпе вверх возвращается на буферизованное
+     место (см. updateScrollChrome в скрипте). */
+  .topbar.docked{top:0 !important;}
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -96,9 +104,13 @@
     position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;
     /* Темнее и общего фона, и белых карточек — чтобы панель не сливалась
        с контентом и иконки на ней были хорошо видны. */
-    background:#d4d4d9;border-top:1px solid var(--line);
+    background:#c6c6cc;border-top:1px solid var(--line);
     padding:8px 4px calc(8px + env(safe-area-inset-bottom, 0px));
+    transition:transform .25s ease;
   }
+  /* При свайпе вниз панель иконок полностью уезжает за нижний край экрана,
+     при свайпе вверх — возвращается (см. updateScrollChrome в скрипте). */
+  .quick-row.hidden{transform:translateY(100%);}
   .quick-item{
     flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;
     background:none;border:none;font-family:inherit;color:var(--text);
@@ -1178,6 +1190,47 @@
     window.addEventListener('resize', updateTopbarHeight);
   }
   updateTopbarHeight();
+
+  // Скрытие/появление "хрома" при скролле контента (не свайп телеграма —
+  // тот уже отключён через disableVerticalSwipes, а именно прокрутка ленты
+  // карточек внутри приложения). Свайп вниз (скролл вниз) — топбар доезжает
+  // до самого верха экрана (буфер под кнопки Telegram схлопывается, но
+  // топбар остаётся виден), а нижняя панель иконок полностью прячется.
+  // Свайп вверх — оба возвращаются на место одновременно. У самого верха
+  // ленты (scrollY ~ 0) всегда показываем оба в обычном (не состыкованном)
+  // виде, чтобы не было рывка при доскролливании до начала.
+  (function initScrollChrome(){
+    var lastY = window.scrollY || 0;
+    var ticking = false;
+    var THRESHOLD = 6;
+
+    function apply(down){
+      if (els.topbar) els.topbar.classList.toggle('docked', down);
+      if (els.quickRow) els.quickRow.classList.toggle('hidden', down);
+    }
+
+    function update(){
+      ticking = false;
+      var y = window.scrollY || 0;
+      var diff = y - lastY;
+      if (y <= 10) {
+        apply(false);
+      } else if (diff > THRESHOLD) {
+        apply(true);
+      } else if (diff < -THRESHOLD) {
+        apply(false);
+      } else {
+        return; // слишком маленькое движение — ничего не трогаем, lastY не обновляем
+      }
+      lastY = y;
+    }
+
+    window.addEventListener('scroll', function(){
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    }, {passive:true});
+  })();
 
   function render(){
     // Смена фильтра (см. filterStateKey) — запоминаем, докуда долистали
