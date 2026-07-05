@@ -6,25 +6,20 @@
 <title>Каталог материалов</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-  /* Фиксированная фирменная палитра (та же, что на стартовом экране) — по
-     согласованию каталог больше не подстраивается под тему Telegram
-     (--tg-theme-*), чтобы не было разрыва между тёмным сплэшем и светлым
-     каталогом. */
   :root{
-    --bg: #14120f;
-    --text: #ece6d8;
-    --hint: #9c9583;
-    --link: #c9a15a;
-    --button: #c9a15a;
-    --button-text: #1a1408;
-    --secbg: #1d1a16;
-    --line: #34301f;
+    --bg: var(--tg-theme-bg-color, #ffffff);
+    --text: var(--tg-theme-text-color, #111111);
+    --hint: var(--tg-theme-hint-color, #999999);
+    --link: var(--tg-theme-link-color, #2481cc);
+    --button: var(--tg-theme-button-color, #2481cc);
+    --button-text: var(--tg-theme-button-text-color, #ffffff);
+    --secbg: var(--tg-theme-secondary-bg-color, #f4f4f5);
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
   #app{padding:8px 10px 24px;}
 
-  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--line);}
+  .topbar{position:sticky;top:0;background:var(--bg);padding:6px 0 8px;z-index:5;border-bottom:1px solid var(--secbg);}
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -33,54 +28,44 @@
 
   .topbar-row{display:flex;gap:8px;align-items:center;}
   .search{flex:1;}
-  .fav-btn{
-    flex:0 0 auto;height:40px;padding:0 14px;border-radius:10px;border:none;
-    background:var(--secbg);color:var(--text);font-size:13.5px;font-weight:600;cursor:pointer;
-    transition:background-color .15s ease,color .15s ease;
+  .menu-btn{
+    flex:0 0 auto;width:40px;height:40px;border-radius:10px;border:none;
+    background:var(--secbg);color:var(--text);font-size:18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
   }
-  .fav-btn.active{background:#e0245e;color:#fff;}
 
-  /* Плавающая кнопка категорий снизу — открывает fullscreen-модалку выбора
-     (заменяет прежнюю боковую шторку). */
-  .cat-float-btn{
-    position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:20;
-    max-width:82vw;display:flex;align-items:center;gap:8px;
-    background:var(--secbg);color:var(--text);border:1px solid var(--line);
-    border-radius:999px;padding:12px 20px;font-size:14px;font-weight:600;
-    cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    font-family:inherit;
+  .chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none;}
+  .chips::-webkit-scrollbar{display:none;}
+  .chip{
+    flex:0 0 auto;padding:7px 14px;border-radius:16px;background:var(--secbg);
+    color:var(--text);font-size:13px;white-space:nowrap;cursor:pointer;user-select:none;
+    border:1px solid transparent;transition:background-color .15s ease,color .15s ease;
   }
-  .cat-float-btn:active{transform:translateX(-50%) scale(0.97);}
-  .cat-float-dot{width:7px;height:7px;border-radius:50%;background:var(--button);flex:0 0 auto;display:none;}
-  .cat-float-dot.show{display:inline-block;}
+  .chip.active{background:var(--button);color:var(--button-text);}
+  .chip.fav.active{background:#e0245e;color:#fff;}
 
-  /* Fullscreen-модалка выбора категории. Выбор внутри — черновой (просто
-     подсвечивает пункт), реально применяется только по кнопке "Показать
-     материалы" внизу — чтобы не мигал список карточек на каждый тап. */
-  .cat-modal{
-    position:fixed;inset:0;background:var(--bg);z-index:70;display:flex;flex-direction:column;
-    transform:translateY(100%);transition:transform .3s ease;
+  /* боковая шторка с категориями по сайтам-источникам */
+  .drawer-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:60;
+    opacity:0;pointer-events:none;transition:opacity .28s ease;
   }
-  .cat-modal.open{transform:translateY(0);}
-  .cat-modal-header{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:18px 16px;border-bottom:1px solid var(--line);flex:0 0 auto;
+  .drawer-overlay.open{opacity:1;pointer-events:auto;}
+  .drawer{
+    position:fixed;top:0;left:0;bottom:0;width:86%;max-width:330px;background:var(--bg);
+    z-index:61;transform:translateX(-102%);transition:transform .32s cubic-bezier(.22,.61,.36,1);
+    overflow-y:auto;-webkit-overflow-scrolling:touch;padding:18px 14px 24px;
+    border-right:1px solid var(--secbg);
   }
-  .cat-modal-title{font-size:17px;font-weight:700;letter-spacing:.1px;}
-  .cat-modal-close{
+  .drawer.open{transform:translateX(0);}
+  .drawer.dragging{transition:none;}
+  .drawer-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+  .drawer-title{font-size:17px;font-weight:700;letter-spacing:.1px;}
+  .drawer-close{
     width:32px;height:32px;border-radius:50%;background:var(--secbg);display:flex;
     align-items:center;justify-content:center;cursor:pointer;font-size:15px;flex:0 0 auto;
+    transition:background-color .15s ease,transform .15s ease;
   }
-  .cat-modal-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px;}
-  .cat-modal-footer{
-    padding:14px 16px calc(14px + env(safe-area-inset-bottom, 0px));
-    border-top:1px solid var(--line);flex:0 0 auto;
-  }
-  .cat-modal-apply{
-    width:100%;border:none;border-radius:14px;padding:15px;font-size:15px;font-weight:700;
-    background:var(--button);color:var(--button-text);cursor:pointer;font-family:inherit;
-  }
-  .cat-modal-apply:active{opacity:.85;}
+  .drawer-close:active{transform:scale(0.9);}
 
   .drawer-item{
     padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
@@ -113,56 +98,36 @@
     display:flex;justify-content:space-between;gap:8px;padding:9px 12px 9px 54px;
     font-size:13px;color:var(--text);cursor:pointer;transition:background-color .12s ease;
   }
-  .drawer-subitem:active{background:rgba(255,255,255,0.06);}
+  .drawer-subitem:active{background:rgba(0,0,0,0.05);}
   .drawer-subitem.active{color:var(--button);font-weight:700;}
   .drawer-subitem .n{color:var(--hint);font-size:11px;flex:0 0 auto;}
 
   .count{color:var(--hint);font-size:12px;margin:8px 2px 4px;}
 
-  /* align-items:start — карточки НЕ растягиваются под высоту самой высокой
-     соседки в ряду, а сохраняют собственную натуральную высоту (см. .card
-     img ниже, без фикс. aspect-ratio) — почти-masonry-эффект без ухода от
-     CSS Grid (colum-based masonry ломает sticky-заголовки категорий). */
   .grid{
     display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:6px;
-    align-items:start;
   }
   @media(min-width:480px){.grid{grid-template-columns:repeat(3,1fr);}}
 
-  /* Ориентир в общем списке из 500+ позиций: заголовок категории "прилипает"
-     под топбаром при прокрутке, пока в поле зрения карточки этой категории.
-     top задаётся в JS (высота топбара) — она немного плавает от контента. */
-  .section-header{
-    grid-column:1/-1;position:sticky;top:var(--topbar-h, 0px);z-index:3;background:var(--bg);
-    padding:12px 2px 7px;font-size:13px;font-weight:700;color:var(--text);
-    border-bottom:1px solid var(--line);
-  }
-  .section-header:first-of-type{padding-top:2px;}
-
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
-    display:flex;flex-direction:column;
+    display:flex;flex-direction:column;border-top:3px solid transparent;
     transition:transform .12s ease;
-    scroll-margin-top:var(--topbar-h, 0px);
   }
   .card:active{transform:scale(0.97);}
   .card.appear{animation:cardIn .3s ease both;}
   @keyframes cardIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 
-  /* Источник обозначен ОДНИМ сигналом — точкой у категории (см. .source-dot
-     ниже). Раньше это дублировалось ещё и цветной полоской сверху карточки —
-     убрали, чтобы не тратить внимание на повтор одной и той же информации. */
+  /* сдержанные цветовые акценты по сайтам-источникам */
+  .card[data-site="emc"]{border-top-color:#2481cc;}
+  .card[data-site="adilet"]{border-top-color:#c08a2e;}
+  .card[data-site="interstone"]{border-top-color:#7c8591;}
   .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
-  /* Материал/текстура — это и есть продукт: фото больше не втиснуто в
-     квадратный каркас, а сохраняет свои натуральные пропорции (высота auto).
-     В паре с align-items:start на .grid это даёт почти-masonry раскладку —
-     карточки разной высоты стоят в ряд, не растягиваясь друг под друга. */
-  .card .thumb-wrap{position:relative;width:100%;background:var(--secbg);cursor:pointer;overflow:hidden;}
-  .card .thumb-wrap.skeleton{min-height:110px;}
-  .card img{width:100%;height:auto;display:block;opacity:0;transition:opacity .25s ease;}
+  .card .thumb-wrap{position:relative;width:100%;aspect-ratio:1/1;background:var(--secbg);cursor:pointer;overflow:hidden;}
+  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
-  .card .noimg{display:flex;align-items:center;justify-content:center;min-height:110px;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
+  .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:6px;}
 
   /* skeleton-плейсхолдеры на время загрузки */
   @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
@@ -172,64 +137,45 @@
   }
   .skeleton-card{border-radius:14px;aspect-ratio:1;}
 
-  /* Два маленьких действия поверх фото (сердечко + копировать) вместо
-     сердечка на фото И ещё полноширинной кнопки "Копировать" под каждой из
-     574 карточек — так текстуре снизу достаётся весь блок вместо повторной
-     UI-обвязки на каждой карточке. */
-  .heart, .copy-icon-btn{
-    position:absolute;right:6px;width:28px;height:28px;border-radius:50%;
+  .heart{
+    position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;
     background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;
-    color:#fff;cursor:pointer;transition:background-color .15s ease,transform .1s ease;
+    font-size:15px;cursor:pointer;transition:background-color .15s ease;
   }
-  .heart{top:6px;font-size:15px;}
   .heart.active{background:#e0245e;animation:heartPop .25s ease;}
   @keyframes heartPop{0%{transform:scale(1);}45%{transform:scale(1.25);}100%{transform:scale(1);}}
-  .copy-icon-btn{top:40px;}
-  .copy-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
-  .copy-icon-btn svg{width:14px;height:14px;}
 
   .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
   .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
   .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
+  .copy-btn{
+    margin-top:auto;border:none;border-radius:8px;padding:7px 0;font-size:11.5px;font-weight:600;
+    background:var(--button);color:var(--button-text);cursor:pointer;transition:transform .1s ease,opacity .1s ease;
+  }
+  .copy-btn:active{transform:scale(0.96);opacity:.85;}
 
   .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
 
-  /* fullscreen viewer — фото во весь экран, без полей. Название/категория
-     и точки-пагинация лежат ПОВЕРХ фото (градиент снизу для читаемости),
-     а не отдельным блоком под ним — экран отдан целиком материалу. */
+  /* fullscreen viewer */
   .viewer{
-    position:fixed;inset:0;background:#000;z-index:50;overflow:hidden;
+    position:fixed;inset:0;background:rgba(0,0,0,0.92);display:flex;
+    align-items:center;justify-content:center;flex-direction:column;z-index:50;padding:16px;
     opacity:0;pointer-events:none;transition:opacity .2s ease;
   }
   .viewer.open{opacity:1;pointer-events:auto;}
-  /* .vitem — двигается ВЕРТИКАЛЬНО между материалами (свайп вверх/вниз).
-     .vswipe/.vtrack внутри него двигаются ГОРИЗОНТАЛЬНО между фото ОДНОГО
-     материала (свайп влево/вправо) — два независимых жеста на разных осях,
-     см. initViewerGestures в скрипте. */
-  .vitem{position:absolute;inset:0;}
-  .vswipe{position:absolute;inset:0;overflow:hidden;touch-action:none;}
+  .vswipe{
+    width:100%;max-height:70vh;overflow:hidden;position:relative;border-radius:10px;
+    transform:scale(.96);transition:transform .2s ease;touch-action:pan-y;
+  }
+  .viewer.open .vswipe{transform:scale(1);}
   .vtrack{display:flex;width:100%;height:100%;will-change:transform;}
-  .vslide{flex:0 0 100%;width:100%;height:100%;position:relative;overflow:hidden;background:#000;}
-  .vslide img{
-    position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+  .vtrack img{
+    flex:0 0 100%;width:100%;max-height:70vh;object-fit:contain;
     user-select:none;-webkit-user-drag:none;pointer-events:none;
   }
-  /* blur-up: пока грузится полноразмерное фото, сразу показываем уже
-     закэшированное маленькое превью растянутым и размытым — воспринимается
-     как мгновенное открытие, даже если полный размер ещё в пути */
-  .vslide .vthumb{filter:blur(16px);transform:scale(1.08);transition:opacity .3s ease;}
-  .vslide .vfull{opacity:0;transition:opacity .3s ease;}
-  .vslide .vfull.loaded{opacity:1;}
-  .vgradient{
-    position:absolute;left:0;right:0;bottom:0;height:40%;pointer-events:none;
-    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
-  }
-  .vcaption{position:absolute;left:0;right:0;bottom:0;padding:0 20px 24px;}
-  .vdots{display:flex;gap:6px;margin-bottom:12px;}
-  .vdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
+  .vdots{display:flex;gap:6px;justify-content:center;margin-top:10px;min-height:14px;}
+  .vdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.3);transition:background .2s,transform .2s;}
   .vdot.active{background:#fff;transform:scale(1.2);}
-  .vcat{color:#c9a15a;font-size:12px;font-weight:500;margin-bottom:4px;}
-  .vname{color:#fff;font-size:17px;font-weight:500;}
   .vnav{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 6px;pointer-events:none;}
   .vnavbtn{
     background:rgba(0,0,0,0.45);border:none;color:#fff;font-size:28px;
@@ -239,131 +185,57 @@
   }
   .vnavbtn:active{background:rgba(0,0,0,0.75);}
   .vnavbtn.hidden{opacity:0;pointer-events:none;}
-  .vactions{position:absolute;top:16px;right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
-  .vclose, .vcopy, .vheart{
-    width:36px;height:36px;border-radius:50%;color:#fff;
-    display:flex;align-items:center;justify-content:center;
-    background:rgba(255,255,255,0.15);cursor:pointer;font-size:18px;
-    transition:background-color .15s ease,transform .1s ease;
+  .viewer .vname{color:#fff;font-size:15px;margin-top:12px;text-align:center;}
+  .viewer .vcat{color:#bbb;font-size:12px;margin-top:4px;}
+  .viewer .vclose{
+    position:absolute;top:16px;right:16px;color:#fff;font-size:22px;
+    width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.15);border-radius:50%;cursor:pointer;z-index:1;
   }
-  .vcopy svg{width:15px;height:15px;}
-  .vheart.active{background:#e0245e;animation:heartPop .25s ease;}
-
-  /* ---- стартовый экран (splash) ----
-     Показывается только при первом запуске. Палитра намеренно фиксированная
-     (не привязана к теме Telegram --tg-theme-*), как согласованный фирменный
-     стиль стартового экрана — цвета совпадают с утверждённым макетом. */
-  .splash{
-    position:fixed;inset:0;z-index:100;background:#14120f;
-    transition:opacity .35s ease;
+  .viewer .vcopy{
+    margin-top:16px;border:none;border-radius:10px;padding:10px 20px;font-size:14px;
+    background:var(--button);color:var(--button-text);cursor:pointer;
   }
-  .splash.fade-out{opacity:0;pointer-events:none;}
-  .splash-hero{
-    position:absolute;inset:0;
-    background-image:
-      linear-gradient(to bottom, rgba(10,9,8,.15) 0%, rgba(10,9,8,.45) 55%, rgba(10,9,8,.97) 92%),
-      url('0000001.webp');
-    background-size:cover;background-position:center;
-  }
-  .splash-top-label{
-    position:absolute;top:22px;left:0;right:0;text-align:center;
-    font-size:11px;letter-spacing:2px;color:rgba(236,230,216,.6);text-transform:uppercase;
-  }
-  .splash-content{position:absolute;left:0;right:0;bottom:0;padding:0 24px 34px;}
-  .splash-eyebrow{font-size:12px;color:#c9a15a;font-weight:700;letter-spacing:.5px;margin-bottom:8px;}
-  .splash-title{font-size:26px;font-weight:800;line-height:1.15;color:#ece6d8;margin-bottom:8px;}
-  .splash-sub{font-size:13.5px;color:#9c9583;line-height:1.5;margin-bottom:22px;max-width:300px;}
-  .splash-cta{
-    width:100%;background:#c9a15a;color:#1a1408;font-weight:700;font-size:15px;
-    padding:15px;border:none;border-radius:14px;cursor:pointer;font-family:inherit;
-  }
-  .splash-cta:active{transform:scale(0.98);}
 </style>
 </head>
 <body>
-<div id="splash" class="splash">
-  <div class="splash-hero"></div>
-  <div class="splash-top-label">NeoModernKz</div>
-  <div class="splash-content">
-    <div class="splash-eyebrow" id="splashEyebrow">Материалы для мебели</div>
-    <div class="splash-title">Материалы для мебели<br>в одном каталоге</div>
-    <div class="splash-sub">Акриловый камень, плёнка ПВХ, листовые материалы — фото, коды, названия под рукой на объекте.</div>
-    <button class="splash-cta" id="splashCta">Каталог</button>
-  </div>
-</div>
-<script>
-  // Синхронная быстрая проверка ДО отрисовки остального — чтобы у тех, кто
-  // уже видел сплэш раньше, не было даже короткой "вспышки" тёмного экрана
-  // поверх каталога. localStorage тут просто быстрый локальный кэш флага;
-  // источник истины (CloudStorage, синхронизируется между устройствами)
-  // проверяется отдельно ниже, в основном скрипте приложения.
-  (function(){
-    try {
-      if (localStorage.getItem('splash_seen') === '1') {
-        var s = document.getElementById('splash');
-        if (s) s.style.display = 'none';
-      }
-    } catch (e) {}
-  })();
-</script>
 <div id="app">
   <div class="topbar">
     <div class="topbar-row">
-      <button class="fav-btn" id="favBtn">★ Избранное</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Категории">☰</button>
       <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
     </div>
+    <div class="chips" id="chips"></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
 </div>
 
-<!-- Плавающая кнопка снизу — заменяет прежнюю боковую шторку. Показывает
-     текущий фильтр по категории и открывает полноэкранную модалку выбора
-     (см. #catModal ниже). Резервная копия версии с боковой шторкой лежит
-     рядом в index.backup-with-drawer.html — на случай отката. -->
-<button class="cat-float-btn" id="catFloatBtn">
-  <span id="catFloatText">Категории</span>
-  <span class="cat-float-dot" id="catFloatDot"></span>
-</button>
-
-<div class="cat-modal" id="catModal">
-  <div class="cat-modal-header">
-    <div class="cat-modal-title">Категории</div>
-    <div class="cat-modal-close" id="catModalClose">✕</div>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-title">Категории</div>
+    <div class="drawer-close" id="drawerClose">✕</div>
   </div>
-  <div class="cat-modal-body" id="catModalBody"></div>
-  <div class="cat-modal-footer">
-    <button class="cat-modal-apply" id="catModalApply">Показать материалы</button>
-  </div>
+  <div class="drawer-item" id="drawerAll">Все материалы</div>
+  <div class="drawer-item" id="drawerFav">★ Избранное</div>
+  <div id="drawerGroups"></div>
 </div>
 
 <div class="viewer" id="viewer">
-  <div class="vitem" id="vitem">
-    <div class="vswipe" id="vswipe">
-      <div class="vtrack" id="vtrack"></div>
-      <div class="vnav">
-        <button class="vnavbtn hidden" id="vprev">‹</button>
-        <button class="vnavbtn hidden" id="vnext">›</button>
-      </div>
-    </div>
-    <div class="vgradient"></div>
-    <div class="vcaption">
-      <div class="vdots" id="vdots"></div>
-      <div class="vcat" id="vcat"></div>
-      <div class="vname" id="vname"></div>
+  <div class="vclose" id="vclose">✕</div>
+  <div class="vswipe" id="vswipe">
+    <div class="vtrack" id="vtrack"></div>
+    <div class="vnav">
+      <button class="vnavbtn hidden" id="vprev">‹</button>
+      <button class="vnavbtn hidden" id="vnext">›</button>
     </div>
   </div>
-  <div class="vactions">
-    <div class="vclose" id="vclose">✕</div>
-    <div class="vheart" id="vheart" title="В избранное">♡</div>
-    <div class="vcopy" id="vcopy" title="Скопировать название">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="9" y="9" width="12" height="12" rx="2"></rect>
-        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-      </svg>
-    </div>
-  </div>
+  <div class="vdots" id="vdots"></div>
+  <div class="vname" id="vname"></div>
+  <div class="vcat" id="vcat"></div>
+  <button class="vcopy" id="vcopy">Скопировать название/код</button>
 </div>
 
 <script>
@@ -381,14 +253,12 @@
   };
 
   var els = {
-    topbar: document.querySelector('.topbar'),
     grid: document.getElementById('grid'),
-    favBtn: document.getElementById('favBtn'),
+    chips: document.getElementById('chips'),
     search: document.getElementById('search'),
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
     viewer: document.getElementById('viewer'),
-    vitem: document.getElementById('vitem'),
     vswipe: document.getElementById('vswipe'),
     vtrack: document.getElementById('vtrack'),
     vdots: document.getElementById('vdots'),
@@ -397,21 +267,15 @@
     vname: document.getElementById('vname'),
     vcat: document.getElementById('vcat'),
     vcopy: document.getElementById('vcopy'),
-    vheart: document.getElementById('vheart'),
     vclose: document.getElementById('vclose'),
-    catFloatBtn: document.getElementById('catFloatBtn'),
-    catFloatText: document.getElementById('catFloatText'),
-    catFloatDot: document.getElementById('catFloatDot'),
-    catModal: document.getElementById('catModal'),
-    catModalClose: document.getElementById('catModalClose'),
-    catModalBody: document.getElementById('catModalBody'),
-    catModalApply: document.getElementById('catModalApply')
+    menuBtn: document.getElementById('menuBtn'),
+    drawer: document.getElementById('drawer'),
+    drawerOverlay: document.getElementById('drawerOverlay'),
+    drawerClose: document.getElementById('drawerClose'),
+    drawerAll: document.getElementById('drawerAll'),
+    drawerFav: document.getElementById('drawerFav'),
+    drawerGroups: document.getElementById('drawerGroups')
   };
-
-  // Черновой (ещё не применённый) выбор внутри полноэкранной модалки категорий.
-  // Реально применяется в state.category только по кнопке "Показать материалы" —
-  // чтобы сетка карточек не перерисовывалась на каждый тап внутри модалки.
-  var catDraft = { category: 'Все', favOnly: false };
 
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
   // Категории неймспейсятся по префиксу названия — это позволяет добавлять
@@ -422,12 +286,10 @@
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
     return 'emc';
   }
-  // Цвета точек-источников чуть скорректированы под тёплую тёмную палитру
-  // (чтобы не сливались с золотым акцентом --button и читались на #14120f).
   var SITE_META = {
-    emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#6fa3d8' },
-    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
-    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень', color: '#93a0ac' }
+    emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#2481cc' },
+    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ', color: '#c08a2e' },
+    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень', color: '#7c8591' }
   };
   var SITE_ORDER = ['emc', 'adilet', 'interstone'];
 
@@ -478,9 +340,6 @@
     else state.favorites.push(id);
     saveFavorites();
     render();
-    // Вьювер — отдельный оверлей поверх сетки, render() его не трогает,
-    // поэтому сердечко в нём синхронизируем отдельно (если вьювер открыт).
-    updateViewerHeart();
   }
 
   // ---- загрузка каталога ----
@@ -488,51 +347,62 @@
     fetch('data/materials.json', {cache:'no-store'})
       .then(function(r){ return r.json(); })
       .then(function(data){
-        console.log('[catalog] каталог загружен:', data.length, 'позиций');
         state.items = data;
-        updateFavBtn();
-        updateCatFloatBtn();
+        buildChips();
+        buildDrawer();
         render();
-        // Реальное число материалов вместо статичной цифры на сплэше —
-        // актуально всегда, даже когда каталог пополняется скрапером.
-        var splashEyebrow = document.getElementById('splashEyebrow');
-        if (splashEyebrow) {
-          splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источника';
-        }
       })
-      .catch(function(err){
-        console.error('[catalog] ошибка загрузки materials.json:', err);
+      .catch(function(){
         els.empty.style.display = 'block';
         els.empty.textContent = 'Не удалось загрузить каталог';
       });
   }
 
-  // ---- кнопка "Избранное" в топбаре — просто вкл/выкл фильтр по избранному ----
-  function updateFavBtn(){
-    els.favBtn.className = 'fav-btn' + (state.favOnly ? ' active' : '');
-    els.favBtn.textContent = state.favOnly ? '★ Избранное' : '☆ Избранное';
-  }
-  els.favBtn.onclick = function(){
-    state.favOnly = !state.favOnly;
-    render();
-    updateFavBtn();
-    updateCatFloatBtn();
-  };
+  // Полный список категорий теперь живёт в боковой шторке (сгруппирован по
+  // сайтам-источникам, см. buildDrawer). Здесь — только быстрый доступ:
+  // "Все", активный фильтр (если выбран через шторку) и "Избранное".
+  function buildChips(){
+    els.chips.innerHTML = '';
 
-  // ---- плавающая кнопка категорий + полноэкранная модалка выбора ----
-  // Текст кнопки = "Категории" пока фильтр не выбран, иначе — имя категории.
-  // Точка рядом = "фильтр активен" (НЕ индикатор наличия на складе — эта тема
-  // отдельная и пока не решена по данным).
-  function updateCatFloatBtn(){
-    var active = state.category !== 'Все' && !state.favOnly;
-    els.catFloatText.textContent = active ? state.category : 'Категории';
-    els.catFloatDot.className = 'cat-float-dot' + (active ? ' show' : '');
+    var allChip = document.createElement('div');
+    allChip.className = 'chip' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
+    allChip.textContent = 'Все';
+    allChip.onclick = function(){
+      state.category = 'Все';
+      state.favOnly = false;
+      render();
+      buildChips();
+      buildDrawer();
+    };
+    els.chips.appendChild(allChip);
+
+    if (state.category !== 'Все' && !state.favOnly) {
+      var curChip = document.createElement('div');
+      curChip.className = 'chip active';
+      curChip.textContent = state.category + '  ✕';
+      curChip.onclick = function(){
+        state.category = 'Все';
+        render();
+        buildChips();
+        buildDrawer();
+      };
+      els.chips.appendChild(curChip);
+    }
+
+    var favChip = document.createElement('div');
+    favChip.className = 'chip fav' + (state.favOnly ? ' active' : '');
+    favChip.textContent = '★ Избранное';
+    favChip.onclick = function(){
+      state.favOnly = !state.favOnly;
+      render();
+      buildChips();
+      buildDrawer();
+    };
+    els.chips.appendChild(favChip);
   }
 
-  // ---- содержимое модалки: категории сгруппированы по сайтам-источникам ----
-  // Выбор внутри модалки черновой (catDraft) — применяется в state только по
-  // кнопке "Показать материалы" (catModalApply), см. ТЗ.
-  function buildCatModal(){
+  // ---- боковая шторка: категории сгруппированы по сайтам-источникам ----
+  function buildDrawer(){
     var groups = {}; // ключ сайта -> { cats: {название: количество}, total: n }
     state.items.forEach(function(it){
       var g = siteGroupOf(it.category);
@@ -541,21 +411,15 @@
       groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
     });
 
-    els.catModalBody.innerHTML = '';
+    els.drawerAll.className = 'drawer-item' + (state.category === 'Все' && !state.favOnly ? ' active' : '');
+    els.drawerFav.className = 'drawer-item' + (state.favOnly ? ' active' : '');
 
-    var allItem = document.createElement('div');
-    allItem.className = 'drawer-item' + (catDraft.category === 'Все' ? ' active' : '');
-    allItem.textContent = 'Все материалы';
-    allItem.onclick = function(){
-      catDraft.category = 'Все';
-      buildCatModal();
-    };
-    els.catModalBody.appendChild(allItem);
+    els.drawerGroups.innerHTML = '';
 
     var label = document.createElement('div');
     label.className = 'drawer-section-label';
     label.textContent = 'Источники';
-    els.catModalBody.appendChild(label);
+    els.drawerGroups.appendChild(label);
 
     SITE_ORDER.forEach(function(key){
       var g = groups[key];
@@ -563,13 +427,8 @@
       var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
       var catNames = Object.keys(g.cats).sort();
 
-      // При первом попадании выбранной категории в эту группу разворачиваем
-      // её один раз (чтобы был виден активный черновой выбор), дальше —
-      // только по ручному клику.
-      if (state.expandedGroups[key] === undefined && catNames.indexOf(catDraft.category) !== -1) {
-        state.expandedGroups[key] = true;
-      }
-      var isExpanded = !!state.expandedGroups[key];
+      var isExpanded = !!state.expandedGroups[key] ||
+        (!state.favOnly && catNames.indexOf(state.category) !== -1);
 
       var groupEl = document.createElement('div');
       groupEl.className = 'drawer-group' + (isExpanded ? ' expanded' : '');
@@ -586,7 +445,7 @@
         '<div class="drawer-group-arrow">▶</div>';
       header.onclick = function(){
         state.expandedGroups[key] = !isExpanded;
-        buildCatModal();
+        buildDrawer();
       };
       groupEl.appendChild(header);
 
@@ -594,38 +453,82 @@
       subitemsWrap.className = 'drawer-subitems';
       catNames.forEach(function(catName){
         var sub = document.createElement('div');
-        sub.className = 'drawer-subitem' + (catDraft.category === catName ? ' active' : '');
+        sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
         sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
         sub.onclick = function(){
-          catDraft.category = catName;
-          buildCatModal();
+          state.category = catName;
+          state.favOnly = false;
+          render();
+          buildChips();
+          buildDrawer();
+          closeDrawer();
         };
         subitemsWrap.appendChild(sub);
       });
       groupEl.appendChild(subitemsWrap);
 
-      els.catModalBody.appendChild(groupEl);
+      els.drawerGroups.appendChild(groupEl);
     });
   }
 
-  function openCatModal(){
-    catDraft.category = state.category;
-    buildCatModal();
-    els.catModal.classList.add('open');
+  function openDrawer(){
+    els.drawer.classList.add('open');
+    els.drawerOverlay.classList.add('open');
   }
-  function closeCatModal(){
-    els.catModal.classList.remove('open');
+  function closeDrawer(){
+    els.drawer.classList.remove('open');
+    els.drawerOverlay.classList.remove('open');
   }
 
-  els.catFloatBtn.onclick = openCatModal;
-  els.catModalClose.onclick = closeCatModal;
-  els.catModalApply.onclick = function(){
-    state.category = catDraft.category;
+  // ---- свайп для закрытия шторки: панель следует за пальцем, на отпускании
+  // либо плавно захлопывается обратно, либо доезжает и закрывается ----
+  (function initDrawerSwipe(){
+    var drag = null;
+    var W = 320;
+    els.drawer.addEventListener('touchstart', function(e){
+      if (!els.drawer.classList.contains('open')) return;
+      W = els.drawer.offsetWidth;
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+      els.drawer.classList.add('dragging');
+    }, {passive:true});
+    els.drawer.addEventListener('touchmove', function(e){
+      if (!drag) return;
+      var t = e.touches[0];
+      var dx = t.clientX - drag.startX;
+      var dy = t.clientY - drag.startY;
+      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (drag.locked !== 'x' || dx > 0) return;
+      drag.dx = dx;
+      els.drawer.style.transform = 'translateX(' + dx + 'px)';
+      els.drawerOverlay.style.opacity = Math.max(0, 1 + dx / W) * 1;
+    }, {passive:true});
+    els.drawer.addEventListener('touchend', function(){
+      if (!drag) return;
+      els.drawer.classList.remove('dragging');
+      els.drawer.style.transform = '';
+      els.drawerOverlay.style.opacity = '';
+      if (drag.dx < -W * 0.28) closeDrawer();
+      drag = null;
+    });
+  })();
+
+  els.menuBtn.onclick = openDrawer;
+  els.drawerClose.onclick = closeDrawer;
+  els.drawerOverlay.onclick = closeDrawer;
+  els.drawerAll.onclick = function(){
+    state.category = 'Все';
     state.favOnly = false;
     render();
-    updateFavBtn();
-    updateCatFloatBtn();
-    closeCatModal();
+    buildChips();
+    buildDrawer();
+    closeDrawer();
+  };
+  els.drawerFav.onclick = function(){
+    state.favOnly = !state.favOnly;
+    render();
+    buildChips();
+    buildDrawer();
+    closeDrawer();
   };
 
   function matches(item){
@@ -637,48 +540,6 @@
     }
     return true;
   }
-
-  // ---- фоновая предзагрузка полноразмерных фото ----
-  // Пока пользователь листает сетку карточек (там грузятся только лёгкие
-  // превью), в фоне тихо подгружаем полноразмерные фото карточек, которые
-  // попали в область видимости — с небольшим запасом (rootMargin), чтобы
-  // подгрузка начиналась чуть раньше, чем карточка реально попадёт на экран.
-  // К моменту, когда человек нажмёт на фото, оно уже в кэше браузера и
-  // просмотрщик открывает его мгновенно — независимо от скорости интернета
-  // именно в этот момент. Ограничиваем число одновременных закачек, чтобы
-  // не отбирать канал у самих превью в сетке.
-  var prefetchedIds = {};
-  var prefetchQueue = [];
-  var prefetchActive = 0;
-  var PREFETCH_CONCURRENCY = 3;
-
-  function pumpPrefetchQueue(){
-    while (prefetchActive < PREFETCH_CONCURRENCY && prefetchQueue.length){
-      var url = prefetchQueue.shift();
-      prefetchActive++;
-      var img = new Image();
-      var done = function(){ prefetchActive--; pumpPrefetchQueue(); };
-      img.onload = done;
-      img.onerror = done;
-      img.src = url;
-    }
-  }
-
-  function schedulePrefetch(urls){
-    urls.forEach(function(url){ if (url) prefetchQueue.push(url); });
-    pumpPrefetchQueue();
-  }
-
-  var prefetchObserver = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if (!entry.isIntersecting) return;
-      prefetchObserver.unobserve(entry.target);
-      var id = entry.target.getAttribute('data-prefetch-id');
-      if (!id || prefetchedIds[id]) return;
-      prefetchedIds[id] = true;
-      schedulePrefetch(entry.target.__prefetchUrls || []);
-    });
-  }, { rootMargin: '400px 0px' }) : null;
 
   // Пока каталог не загружен, показываем "дышащие" плейсхолдеры карточек —
   // это выглядит опрятнее пустого экрана и снижает ощущение подвисания.
@@ -693,41 +554,13 @@
     }
   }
 
-  // Высота топбара может немного плавать (перенос строки поиска, длинное
-  // название активной категории в чипсах) — поэтому меряем реально, а не
-  // подставляем число руками, и держим это значение свежим через ResizeObserver.
-  function updateTopbarHeight(){
-    if (!els.topbar) return;
-    document.documentElement.style.setProperty('--topbar-h', els.topbar.offsetHeight + 'px');
-  }
-  if (els.topbar && 'ResizeObserver' in window) {
-    new ResizeObserver(updateTopbarHeight).observe(els.topbar);
-  } else {
-    window.addEventListener('resize', updateTopbarHeight);
-  }
-  updateTopbarHeight();
-
   function render(){
     var filtered = state.items.filter(matches);
     els.count.textContent = filtered.length + ' материал(ов)';
     els.grid.innerHTML = '';
     els.empty.style.display = filtered.length ? 'none' : 'block';
 
-    // Заголовки-разделители категорий имеют смысл только когда лента реально
-    // смешанная (весь каталог или избранное) — если выбрана одна конкретная
-    // категория, все карточки и так из неё одной, заголовок был бы лишним.
-    var showSectionHeaders = state.favOnly || state.category === 'Все';
-    var lastCategory = null;
-
     filtered.forEach(function(item, idx){
-      if (showSectionHeaders && item.category !== lastCategory) {
-        lastCategory = item.category;
-        var headerEl = document.createElement('div');
-        headerEl.className = 'section-header';
-        headerEl.textContent = item.category;
-        els.grid.appendChild(headerEl);
-      }
-
       var site = siteGroupOf(item.category);
       var siteColor = (SITE_META[site] || {}).color || 'transparent';
 
@@ -739,11 +572,7 @@
 
       var thumbWrap = document.createElement('div');
       thumbWrap.className = 'thumb-wrap';
-      // Для карточки в сетке используем маленькое превью (item.thumb, ~400px),
-      // а не полноразмерное фото — так грузится в разы быстрее и легче.
-      // Фолбэки нужны для товаров, у которых materials.json ещё старого
-      // формата (без поля thumb) — тогда используем то, что есть.
-      var thumbSrc = item.thumb || (Array.isArray(item.images) && item.images[0]) || item.image;
+      var thumbSrc = (Array.isArray(item.images) && item.images[0]) ? item.images[0] : item.image;
       if (thumbSrc) {
         thumbWrap.classList.add('skeleton');
         var img = document.createElement('img');
@@ -751,15 +580,7 @@
         img.decoding = 'async';
         img.alt = item.name;
         img.onload = function(){ img.classList.add('loaded'); thumbWrap.classList.remove('skeleton'); };
-        img.onerror = function(){
-          console.error('[catalog] не удалось загрузить фото карточки:', thumbSrc, 'товар:', item.id);
-          thumbWrap.classList.remove('skeleton');
-          img.remove();
-          var brokenEl = document.createElement('div');
-          brokenEl.className = 'noimg';
-          brokenEl.textContent = 'Фото недоступно';
-          thumbWrap.insertBefore(brokenEl, thumbWrap.firstChild);
-        };
+        img.onerror = function(){ thumbWrap.classList.remove('skeleton'); };
         img.src = thumbSrc;
         thumbWrap.appendChild(img);
       } else {
@@ -768,41 +589,13 @@
         noimg.textContent = item.name;
         thumbWrap.appendChild(noimg);
       }
-      // Ставим карточку под наблюдение для фоновой предзагрузки полного
-      // размера (первые 2 фото товара — этого достаточно для мгновенного
-      // открытия основного вида, остальные слайды подгрузятся по свайпу).
-      if (prefetchObserver) {
-        var fullUrls = Array.isArray(item.images) && item.images.length
-          ? item.images.slice(0, 2)
-          : (item.image ? [item.image] : []);
-        thumbWrap.setAttribute('data-prefetch-id', item.id);
-        thumbWrap.__prefetchUrls = fullUrls;
-        prefetchObserver.observe(thumbWrap);
-      }
-
-      // Передаём весь отфильтрованный список и позицию в нём — просмотрщик
-      // использует это для вертикального свайпа между материалами, в том же
-      // порядке, в котором они сейчас идут в сетке.
-      thumbWrap.onclick = function(){ openViewer(filtered, idx); };
+      thumbWrap.onclick = function(){ openViewer(item); };
 
       var heart = document.createElement('div');
       heart.className = 'heart' + (state.favorites.indexOf(item.id) >= 0 ? ' active' : '');
       heart.textContent = state.favorites.indexOf(item.id) >= 0 ? '♥' : '♡';
       heart.onclick = function(e){ e.stopPropagation(); toggleFavorite(item.id); };
       thumbWrap.appendChild(heart);
-
-      // Копирование названия — маленькая иконка поверх фото (под сердечком),
-      // а не отдельная полноширинная кнопка под каждой из 574 карточек.
-      var copyIconBtn = document.createElement('div');
-      copyIconBtn.className = 'copy-icon-btn';
-      copyIconBtn.title = 'Скопировать название';
-      copyIconBtn.innerHTML =
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-        '<rect x="9" y="9" width="12" height="12" rx="2"></rect>' +
-        '<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>' +
-        '</svg>';
-      copyIconBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
-      thumbWrap.appendChild(copyIconBtn);
 
       var info = document.createElement('div');
       info.className = 'info';
@@ -816,9 +609,14 @@
       dot.style.background = siteColor;
       cat.appendChild(dot);
       cat.appendChild(document.createTextNode(item.category));
+      var copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-btn';
+      copyBtn.textContent = 'Копировать';
+      copyBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
 
       info.appendChild(name);
       info.appendChild(cat);
+      info.appendChild(copyBtn);
 
       card.appendChild(thumbWrap);
       card.appendChild(info);
@@ -845,56 +643,7 @@
   // Все фото товара рендерятся в один горизонтальный "трек"; во время свайпа
   // трек следует за пальцем без задержки, на отпускании — плавно доезжает
   // до соседнего кадра или пружинисто возвращается назад (rubber-band на краях).
-  // viewerState.list/itemIdx — текущий отфильтрованный список материалов и
-  // позиция в нём (для вертикального свайпа между материалами, см. ниже).
-  // images/idx — фото ТЕКУЩЕГО материала и позиция в нём (горизонтальный свайп).
-  var viewerState = { list: [], itemIdx: 0, images: [], idx: 0, currentItem: null };
-
-  // Иконка ♡ во вьювере — та же логика избранного, что и на карточке
-  // (state.favorites), просто отрисованная поверх полноэкранного фото.
-  function updateViewerHeart(){
-    var item = viewerState.currentItem;
-    if (!item || !els.vheart) return;
-    var isFav = state.favorites.indexOf(item.id) >= 0;
-    els.vheart.className = 'vheart' + (isFav ? ' active' : '');
-    els.vheart.textContent = isFav ? '♥' : '♡';
-  }
-
-  // ---- зум текущего фото во вьювере: пинч двумя пальцами + дабл-тап ----
-  // Зум применяется трансформом прямо на .vfull текущего слайда, независимо
-  // от translateX трека (тот двигает слайды между собой, этот — масштабирует
-  // и панорамирует содержимое одного слайда). Сбрасывается при смене фото
-  // (goToImage) и при открытии нового материала (renderViewerItem).
-  var ZOOM_MIN = 1, ZOOM_MAX = 4, DOUBLE_TAP_SCALE = 2.5;
-  var zoom = { scale: 1, x: 0, y: 0 };
-
-  function getCurrentSlideImg(){
-    var slide = els.vtrack.children[viewerState.idx];
-    return slide ? slide.querySelector('.vfull') : null;
-  }
-
-  function clampPan(){
-    var rect = els.vswipe.getBoundingClientRect();
-    var maxX = (rect.width * (zoom.scale - 1)) / 2;
-    var maxY = (rect.height * (zoom.scale - 1)) / 2;
-    zoom.x = Math.max(-maxX, Math.min(maxX, zoom.x));
-    zoom.y = Math.max(-maxY, Math.min(maxY, zoom.y));
-  }
-
-  function applyZoom(animate){
-    var img = getCurrentSlideImg();
-    if (!img) return;
-    img.style.transition = animate ? 'transform .2s ease' : 'none';
-    img.style.transform = 'translate(' + zoom.x + 'px,' + zoom.y + 'px) scale(' + zoom.scale + ')';
-    // Пока фото увеличено — одиночный палец панорамирует картинку вместо
-    // обычного свайпа между фото/материалами (см. initViewerGestures).
-    els.vitem.classList.toggle('zoomed', zoom.scale > 1);
-  }
-
-  function resetZoom(animate){
-    zoom.scale = 1; zoom.x = 0; zoom.y = 0;
-    applyZoom(animate);
-  }
+  var viewerState = { images: [], idx: 0 };
 
   function setTrackTransform(px, animate){
     els.vtrack.style.transition = animate ? 'transform .32s cubic-bezier(.22,.61,.36,1)' : 'none';
@@ -919,250 +668,66 @@
     viewerState.idx = Math.max(0, Math.min(newIdx, viewerState.images.length - 1));
     setTrackTransform(0, animate !== false);
     updateViewerChrome();
-    resetZoom(false); // новое фото всегда открывается без зума с прошлого
   }
 
-  // Строит слайды (фото + blur-up превью) для ОДНОГО материала — используется
-  // и при первом открытии просмотрщика, и при переходе на соседний материал
-  // вертикальным свайпом (тогда просто пересобираем содержимое на месте).
-  function renderViewerItem(item){
+  function openViewer(item){
     var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
-    var thumbs = Array.isArray(item.thumbs) && item.thumbs.length ? item.thumbs : (item.thumb ? [item.thumb] : []);
     viewerState.images = imgs;
     viewerState.idx = 0;
-    viewerState.currentItem = item;
-    console.log('[catalog] открыт просмотрщик:', item.id, '— фото:', imgs.length);
 
     els.vtrack.innerHTML = '';
-    imgs.forEach(function(src, i){
-      var slide = document.createElement('div');
-      slide.className = 'vslide';
-
-      // blur-up: своё маленькое превью на этот слайд (обычно уже в кэше
-      // браузера — либо с сетки карточек, либо благодаря фоновой
-      // предзагрузке, см. schedulePrefetch) показываем сразу и размытым,
-      // пока рядом тихо грузится полный размер.
-      var thumbSrc = thumbs[i];
-      if (thumbSrc && thumbSrc !== src) {
-        var thumbImg = document.createElement('img');
-        thumbImg.className = 'vthumb';
-        thumbImg.alt = '';
-        thumbImg.draggable = false;
-        thumbImg.src = thumbSrc;
-        slide.appendChild(thumbImg);
-      }
-
-      var fullImg = document.createElement('img');
-      fullImg.className = 'vfull';
-      fullImg.alt = item.name;
-      fullImg.draggable = false;
-      fullImg.onload = function(){ fullImg.classList.add('loaded'); };
-      fullImg.onerror = function(){
-        console.error('[catalog] не удалось загрузить фото во вьювере:', src, 'товар:', item.id);
-        slide.innerHTML =
-          '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;' +
-          'color:#bbb;font-size:13px;">Фото недоступно</div>';
-      };
-      fullImg.src = src;
-      slide.appendChild(fullImg);
-
-      els.vtrack.appendChild(slide);
+    imgs.forEach(function(src){
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = item.name;
+      img.draggable = false;
+      els.vtrack.appendChild(img);
     });
     setTrackTransform(0, false);
     updateViewerChrome();
-    zoom.scale = 1; zoom.x = 0; zoom.y = 0; // без applyZoom — слайды только что пересозданы
 
     els.vname.textContent = item.name;
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
-    updateViewerHeart();
-    els.vheart.onclick = function(){ toggleFavorite(item.id); };
-  }
-
-  // list — та же отфильтрованная лента, что сейчас отрендерена в сетке (см.
-  // вызов openViewer(filtered, idx) в render()); idx — индекс материала,
-  // по фото которого тапнули. Так вертикальный свайп двигается ровно по
-  // тому же порядку, в котором человек листал сетку.
-  function openViewer(list, idx){
-    viewerState.list = list;
-    viewerState.itemIdx = idx;
-    els.vitem.style.transition = 'none';
-    els.vitem.style.transform = 'translateY(0)';
-    renderViewerItem(list[idx]);
     els.viewer.classList.add('open');
-  }
-
-  function snapItemBack(){
-    els.vitem.style.transition = 'transform .25s ease';
-    els.vitem.style.transform = 'translateY(0)';
-  }
-
-  // Переход к следующему/предыдущему материалу БЕЗ выхода из просмотрщика:
-  // текущее содержимое уезжает по вертикали за экран, затем на его место
-  // подставляется соседний материал — не нужно закрывать/открывать вьювер
-  // заново, чтобы посмотреть следующий.
-  function goToVerticalItem(direction){
-    var newIdx = viewerState.itemIdx + direction;
-    if (newIdx < 0 || newIdx >= viewerState.list.length) { snapItemBack(); return; }
-    var vitem = els.vitem;
-    vitem.style.transition = 'transform .25s ease';
-    vitem.style.transform = 'translateY(' + (direction > 0 ? '-100%' : '100%') + ')';
-    var onDone = function(){
-      vitem.removeEventListener('transitionend', onDone);
-      viewerState.itemIdx = newIdx;
-      renderViewerItem(viewerState.list[newIdx]);
-      vitem.style.transition = 'none';
-      vitem.style.transform = 'translateY(0)';
-    };
-    vitem.addEventListener('transitionend', onDone);
   }
 
   els.vprev.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx - 1); };
   els.vnext.onclick = function(e){ e.stopPropagation(); goToImage(viewerState.idx + 1); };
 
-  // Один обработчик на несколько независимых жестов:
-  // - одним пальцем при zoom.scale===1: горизонтальный свайп листает фото
-  //   текущего материала, вертикальный — переключает сам материал (как раньше);
-  // - одним пальцем при zoom.scale>1: панорамирование увеличенного фото
-  //   (свайп/переключение материала в этот момент отключены);
-  // - двумя пальцами: пинч-зум;
-  // - двойной тап: приблизить до DOUBLE_TAP_SCALE / вернуть к 1x.
-  // Ось обычного свайпа определяется один раз за жест по первому заметному
-  // движению и дальше не меняется — эта часть логики не тронута.
-  (function initViewerGestures(){
+  (function initViewerSwipe(){
     var drag = null;
-    var pinch = null;
-    var pan = null;
-    var lastTap = { time: 0, x: 0, y: 0 };
-
-    function touchDist(t0, t1){
-      var dx = t1.clientX - t0.clientX, dy = t1.clientY - t0.clientY;
-      return Math.sqrt(dx * dx + dy * dy);
-    }
-
-    function zoomAtPoint(clientX, clientY, targetScale){
-      var rect = els.vswipe.getBoundingClientRect();
-      var offsetX = clientX - rect.left - rect.width / 2;
-      var offsetY = clientY - rect.top - rect.height / 2;
-      // Пересчитываем панорамирование так, чтобы точка под пальцем/тапом
-      // осталась на месте при изменении масштаба.
-      var factor = targetScale / zoom.scale;
-      zoom.x = (zoom.x - offsetX) * factor + offsetX;
-      zoom.y = (zoom.y - offsetY) * factor + offsetY;
-      zoom.scale = targetScale;
-      clampPan();
-    }
-
-    els.vitem.addEventListener('touchstart', function(e){
-      if (e.touches.length === 2) {
-        drag = null; pan = null;
-        pinch = {
-          startDist: touchDist(e.touches[0], e.touches[1]) || 1,
-          startScale: zoom.scale
-        };
-        return;
-      }
-      pinch = null;
+    els.vswipe.addEventListener('touchstart', function(e){
+      if (viewerState.images.length < 2) return;
+      drag = { startX: e.touches[0].clientX, startY: e.touches[0].clientY, dx: 0, locked: null };
+    }, {passive:true});
+    els.vswipe.addEventListener('touchmove', function(e){
+      if (!drag) return;
       var t = e.touches[0];
-      if (zoom.scale > 1) {
-        pan = { startX: t.clientX, startY: t.clientY, origX: zoom.x, origY: zoom.y };
-        drag = null;
-      } else {
-        pan = null;
-        drag = { startX: t.clientX, startY: t.clientY, dx: 0, dy: 0, locked: null };
-      }
+      var dx = t.clientX - drag.startX;
+      var dy = t.clientY - drag.startY;
+      if (drag.locked === null) drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (drag.locked !== 'x') return;
+      // пружинистое сопротивление на первом/последнем кадре
+      var atStart = viewerState.idx === 0 && dx > 0;
+      var atEnd = viewerState.idx === viewerState.images.length - 1 && dx < 0;
+      drag.dx = (atStart || atEnd) ? dx * 0.35 : dx;
+      setTrackTransform(drag.dx, false);
     }, {passive:true});
-
-    els.vitem.addEventListener('touchmove', function(e){
-      if (pinch && e.touches.length === 2) {
-        var dist = touchDist(e.touches[0], e.touches[1]) || 1;
-        var midX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-        var midY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-        var targetScale = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, pinch.startScale * (dist / pinch.startDist)));
-        zoomAtPoint(midX, midY, targetScale);
-        applyZoom(false);
-        return;
-      }
-      if (pan) {
-        var t = e.touches[0];
-        zoom.x = pan.origX + (t.clientX - pan.startX);
-        zoom.y = pan.origY + (t.clientY - pan.startY);
-        clampPan();
-        applyZoom(false);
-        return;
-      }
+    els.vswipe.addEventListener('touchend', function(){
       if (!drag) return;
-      var t2 = e.touches[0];
-      var dx = t2.clientX - drag.startX;
-      var dy = t2.clientY - drag.startY;
-      if (drag.locked === null) {
-        if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
-        drag.locked = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
-      }
-      if (drag.locked === 'x') {
-        if (viewerState.images.length < 2) return;
-        var atStart = viewerState.idx === 0 && dx > 0;
-        var atEnd = viewerState.idx === viewerState.images.length - 1 && dx < 0;
-        drag.dx = (atStart || atEnd) ? dx * 0.35 : dx;
-        setTrackTransform(drag.dx, false);
-      } else {
-        var atFirst = viewerState.itemIdx === 0 && dy > 0;
-        var atLast = viewerState.itemIdx === viewerState.list.length - 1 && dy < 0;
-        drag.dy = (atFirst || atLast) ? dy * 0.35 : dy;
-        els.vitem.style.transition = 'none';
-        els.vitem.style.transform = 'translateY(' + drag.dy + 'px)';
-      }
-    }, {passive:true});
-
-    els.vitem.addEventListener('touchend', function(e){
-      if (pinch) {
-        // Обе точки контакта подняты (или осталась одна) — фиксируем зум как есть.
-        if (e.touches.length < 2) pinch = null;
-        return;
-      }
-      if (pan) {
-        pan = null;
-        return;
-      }
-      if (!drag) return;
-
-      // Тап без заметного движения — кандидат на двойной тап (зум).
-      if (drag.locked === null) {
-        var now = Date.now();
-        var tapX = drag.startX, tapY = drag.startY;
-        var isDouble = (now - lastTap.time) < 300 &&
-          Math.abs(tapX - lastTap.x) < 30 && Math.abs(tapY - lastTap.y) < 30;
-        if (isDouble) {
-          if (zoom.scale > 1) {
-            resetZoom(true);
-          } else {
-            zoomAtPoint(tapX, tapY, DOUBLE_TAP_SCALE);
-            applyZoom(true);
-          }
-          lastTap.time = 0;
-        } else {
-          lastTap = { time: now, x: tapX, y: tapY };
-        }
-        drag = null;
-        return;
-      }
-
-      if (drag.locked === 'x') {
-        var w = els.vswipe.clientWidth || 300;
-        if (drag.dx <= -w * 0.18) goToImage(viewerState.idx + 1);
-        else if (drag.dx >= w * 0.18) goToImage(viewerState.idx - 1);
-        else goToImage(viewerState.idx);
-      } else if (drag.locked === 'y') {
-        var h = els.vitem.clientHeight || 500;
-        if (drag.dy <= -h * 0.16) goToVerticalItem(1);
-        else if (drag.dy >= h * 0.16) goToVerticalItem(-1);
-        else snapItemBack();
-      }
+      var w = els.vswipe.clientWidth || 300;
+      if (drag.dx <= -w * 0.18) goToImage(viewerState.idx + 1);
+      else if (drag.dx >= w * 0.18) goToImage(viewerState.idx - 1);
+      else goToImage(viewerState.idx);
       drag = null;
     });
   })();
 
   els.vclose.onclick = function(){ els.viewer.classList.remove('open'); };
+  els.viewer.addEventListener('click', function(e){
+    if (e.target === els.viewer) els.viewer.classList.remove('open');
+  });
 
   var searchTimer;
   els.search.addEventListener('input', function(){
@@ -1174,54 +739,8 @@
     }, 150);
   });
 
-  // ---- стартовый экран (splash) ----
-  // Показывается только при первом запуске приложения. localStorage уже
-  // проверен синхронно в самом начале body (чтобы не мигало), здесь —
-  // авторитетная проверка через CloudStorage (та же схема, что и у
-  // избранного) плюс сама логика закрытия по тапу на "Каталог".
-  function initSplash(){
-    var splashEl = document.getElementById('splash');
-    var ctaEl = document.getElementById('splashCta');
-    if (!splashEl) return;
-
-    function hideSplash(animate){
-      if (splashEl.style.display === 'none') return;
-      if (animate) {
-        splashEl.classList.add('fade-out');
-        setTimeout(function(){ splashEl.style.display = 'none'; }, 350);
-      } else {
-        splashEl.style.display = 'none';
-      }
-    }
-
-    function markSplashSeen(){
-      try { localStorage.setItem('splash_seen', '1'); } catch(e){}
-      if (cloudStorageAvailable()) {
-        try { tg.CloudStorage.setItem('splash_seen', '1', function(){}); } catch(e){}
-      }
-    }
-
-    // Если сплэш уже видели на другом устройстве (CloudStorage) — закрываем
-    // без анимации, даже если локально на этом устройстве флага ещё не было.
-    if (cloudStorageAvailable()) {
-      try {
-        tg.CloudStorage.getItem('splash_seen', function(err, value){
-          if (!err && value === '1') hideSplash(false);
-        });
-      } catch(e){}
-    }
-
-    if (ctaEl) {
-      ctaEl.onclick = function(){
-        markSplashSeen();
-        hideSplash(true);
-      };
-    }
-  }
-
   renderSkeleton();
   loadFavorites(loadCatalog);
-  initSplash();
 })();
 </script>
 </body>
