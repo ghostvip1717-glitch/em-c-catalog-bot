@@ -43,25 +43,34 @@
   /* Категории и подкатегории — всегда на виду, двумя рядами под поиском.
      Обе строки — часть sticky-топбара (тот же .topbar с position:sticky),
      поэтому едут вместе при скролле, ничего не нужно открывать отдельно. */
-  .cat-tabs, .cat-subchips{
-    display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none;
-  }
-  .cat-subchips{padding-top:8px;}
-  .cat-tabs::-webkit-scrollbar, .cat-subchips::-webkit-scrollbar{display:none;}
+  .cat-tabs{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none;}
+  .cat-tabs::-webkit-scrollbar{display:none;}
   .cat-tab{
     flex:0 0 auto;padding:8px 15px;border-radius:999px;font-size:13.5px;font-weight:600;
     background:var(--secbg);color:var(--text);cursor:pointer;white-space:nowrap;
     border:1px solid var(--line);transition:background-color .15s ease,color .15s ease;
   }
   .cat-tab.active{background:var(--button);color:var(--button-text);border-color:transparent;}
-  .cat-subchip{
-    flex:0 0 auto;padding:6px 13px;border-radius:999px;font-size:12.5px;font-weight:500;
-    background:transparent;color:var(--hint);cursor:pointer;white-space:nowrap;
-    border:1px solid var(--line);transition:background-color .15s ease,color .15s ease,border-color .15s ease;
+
+  /* Подкатегории — аккордеон-панель вертикальным списком вместо горизонтальной
+     ленты чипов: масштабируется на 10-20+ пунктов без "скролла вбок",
+     сворачивается обратно после выбора, чтобы не занимать место постоянно. */
+  .cat-subpanel{margin-top:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
+  .cat-subpanel-header{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    padding:11px 14px;cursor:pointer;font-size:13.5px;font-weight:600;
   }
-  .cat-subchip .n{color:var(--hint);margin-left:5px;font-size:11px;}
-  .cat-subchip.active{background:rgba(201,161,90,.14);color:var(--button);border-color:var(--button);}
-  .cat-subchip.active .n{color:var(--button);}
+  .cat-subpanel-header .arrow{color:var(--hint);font-size:11px;transition:transform .2s ease;}
+  .cat-subpanel.expanded .cat-subpanel-header .arrow{transform:rotate(180deg);}
+  .cat-subpanel-list{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .cat-subpanel.expanded .cat-subpanel-list{max-height:600px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .cat-subitem{
+    display:flex;justify-content:space-between;gap:8px;padding:10px 14px;
+    font-size:13px;color:var(--text);cursor:pointer;border-top:1px solid var(--line);
+  }
+  .cat-subitem:active{background:rgba(255,255,255,0.05);}
+  .cat-subitem.active{color:var(--button);font-weight:700;}
+  .cat-subitem .n{color:var(--hint);font-size:11.5px;flex:0 0 auto;}
 
   .breadcrumb{
     display:flex;align-items:center;gap:6px;font-size:12px;color:var(--hint);
@@ -277,7 +286,13 @@
     </div>
     <div class="search-suggest" id="searchSuggest"></div>
     <div class="cat-tabs" id="catTabs"></div>
-    <div class="cat-subchips" id="catSubchips"></div>
+    <div class="cat-subpanel" id="catSubpanel" style="display:none;">
+      <div class="cat-subpanel-header" id="catSubpanelHeader">
+        <span id="catSubpanelLabel"></span>
+        <span class="arrow">▾</span>
+      </div>
+      <div class="cat-subpanel-list" id="catSubpanelList"></div>
+    </div>
     <div class="breadcrumb" id="breadcrumb" style="display:none;"></div>
   </div>
   <div class="count" id="count"></div>
@@ -348,7 +363,10 @@
     vheart: document.getElementById('vheart'),
     vclose: document.getElementById('vclose'),
     catTabs: document.getElementById('catTabs'),
-    catSubchips: document.getElementById('catSubchips'),
+    catSubpanel: document.getElementById('catSubpanel'),
+    catSubpanelHeader: document.getElementById('catSubpanelHeader'),
+    catSubpanelLabel: document.getElementById('catSubpanelLabel'),
+    catSubpanelList: document.getElementById('catSubpanelList'),
     breadcrumb: document.getElementById('breadcrumb'),
     searchSuggest: document.getElementById('searchSuggest')
   };
@@ -432,7 +450,7 @@
         state.items = data;
         updateFavBtn();
         buildCatTabs();
-        buildCatSubchips();
+        buildCatSubpanel();
         buildBreadcrumb();
         render();
         // Реальное число материалов вместо статичной цифры на сплэше —
@@ -464,8 +482,8 @@
   // Ряд 1 (cat-tabs): "Все" + вкладка на каждый сайт-источник — тап сразу
   // применяет фильтр (никакого черновика/кнопки "показать", в отличие от
   // прежней модалки, — выбор применяется мгновенно, как обычные табы).
-  // Ряд 2 (cat-subchips): конкретные категории ВНУТРИ выбранного источника —
-  // показывается только если у источника больше одной категории (иначе
+  // Подкатегории внутри выбранного источника — аккордеон-панель вертикальным
+  // списком (buildCatSubpanel), не отдельная лента чипов — показывается только если у источника больше одной категории (иначе
   // сам факт выбора вкладки уже говорит "показать всё из этого источника").
   function buildCatTabs(){
     var groups = {};
@@ -475,7 +493,7 @@
       groups[g].total++;
       groups[g].cats[it.category] = (groups[g].cats[it.category] || 0) + 1;
     });
-    state._siteGroups = groups; // переиспользуется в buildCatSubchips
+    state._siteGroups = groups; // переиспользуется в buildCatSubpanel
 
     els.catTabs.innerHTML = '';
 
@@ -503,50 +521,67 @@
         state.activeSite = key;
         state.category = 'Все'; // фильтруем по всему источнику, пока не выбрана конкретная подкатегория
         state.favOnly = false;
+        state._subpanelExpanded = true; // сразу видно список подкатегорий после выбора вкладки
         applyFilterChange();
       };
       els.catTabs.appendChild(tab);
     });
   }
 
-  function buildCatSubchips(){
-    els.catSubchips.innerHTML = '';
+  // ---- подкатегории: аккордеон-панель вертикальным списком ----
+  // Свёрнутый заголовок показывает текущий выбор ("Все" или конкретную
+  // категорию) + стрелку; тап по заголовку раскрывает/сворачивает список.
+  // После выбора пункта список автоматически сворачивается обратно.
+  function buildCatSubpanel(){
     if (state.filterMode === 'all' || !state.activeSite) {
-      els.catSubchips.style.display = 'none';
+      els.catSubpanel.style.display = 'none';
       return;
     }
     var g = (state._siteGroups || {})[state.activeSite];
     var catNames = g ? Object.keys(g.cats).sort(function(a, b){ return g.cats[b] - g.cats[a]; }) : [];
-    // Если у источника всего одна категория — отдельный ряд подкатегорий
-    // избыточен, сама вкладка источника уже полностью его описывает.
+    // Если у источника всего одна категория — отдельная панель избыточна,
+    // сама вкладка источника уже полностью его описывает.
     if (catNames.length <= 1) {
-      els.catSubchips.style.display = 'none';
+      els.catSubpanel.style.display = 'none';
       return;
     }
-    els.catSubchips.style.display = 'flex';
+    els.catSubpanel.style.display = 'block';
 
-    var allChip = document.createElement('div');
-    allChip.className = 'cat-subchip' + (state.filterMode === 'site' ? ' active' : '');
-    allChip.textContent = 'Все';
-    allChip.onclick = function(){
+    var isExpanded = !!state._subpanelExpanded;
+    els.catSubpanel.className = 'cat-subpanel' + (isExpanded ? ' expanded' : '');
+    els.catSubpanelLabel.textContent = state.filterMode === 'category' ? state.category : 'Все категории';
+
+    els.catSubpanelList.innerHTML = '';
+
+    var allItem = document.createElement('div');
+    allItem.className = 'cat-subitem' + (state.filterMode === 'site' ? ' active' : '');
+    allItem.innerHTML = '<span>Все категории</span><span class="n">' + g.total + '</span>';
+    allItem.onclick = function(){
       state.filterMode = 'site';
       state.category = 'Все';
+      state._subpanelExpanded = false;
       applyFilterChange();
     };
-    els.catSubchips.appendChild(allChip);
+    els.catSubpanelList.appendChild(allItem);
 
     catNames.forEach(function(catName){
-      var chip = document.createElement('div');
-      chip.className = 'cat-subchip' + (state.filterMode === 'category' && state.category === catName ? ' active' : '');
-      chip.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
-      chip.onclick = function(){
+      var item = document.createElement('div');
+      item.className = 'cat-subitem' + (state.filterMode === 'category' && state.category === catName ? ' active' : '');
+      item.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
+      item.onclick = function(){
         state.filterMode = 'category';
         state.category = catName;
+        state._subpanelExpanded = false;
         applyFilterChange();
       };
-      els.catSubchips.appendChild(chip);
+      els.catSubpanelList.appendChild(item);
     });
   }
+
+  els.catSubpanelHeader.onclick = function(){
+    state._subpanelExpanded = !state._subpanelExpanded;
+    buildCatSubpanel();
+  };
 
   // ---- хлебная крошка: видно точный путь, не нужно смотреть на вкладки,
   // чтобы понять, где находишься (важно при большом числе категорий) ----
@@ -577,7 +612,7 @@
     render();
     updateFavBtn();
     buildCatTabs();
-    buildCatSubchips();
+    buildCatSubpanel();
     buildBreadcrumb();
   }
 
