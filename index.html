@@ -171,9 +171,21 @@
   .copy-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
   .copy-icon-btn svg{width:14px;height:14px;}
 
-  .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
-  .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
-  .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
+  /* Подпись (название + категория) лежит поверх нижней части фото, а не в
+     отдельном блоке под ним — фото занимает всю карточку целиком. */
+  .card-caption{
+    position:absolute;left:0;right:0;bottom:0;padding:22px 9px 9px;
+    background:linear-gradient(to top, rgba(0,0,0,.82) 0%, rgba(0,0,0,.5) 55%, transparent 100%);
+    pointer-events:none;
+  }
+  .card-caption-name{
+    font-size:12.5px;line-height:1.3;font-weight:600;color:#fff;letter-spacing:.1px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .card-caption-cat{
+    font-size:10.5px;color:rgba(255,255,255,.75);display:flex;align-items:center;margin-top:3px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
 
   .empty{text-align:center;color:var(--hint);padding:40px 10px;font-size:14px;}
 
@@ -841,24 +853,26 @@
       copyIconBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
       thumbWrap.appendChild(copyIconBtn);
 
-      var info = document.createElement('div');
-      info.className = 'info';
+      // Название и категория теперь лежат поверх фото (градиент снизу), а не в
+      // отдельном текстовом блоке под ним — фото занимает всю карточку целиком,
+      // текст не "откусывает" половину высоты у невысоких превью.
+      var caption = document.createElement('div');
+      caption.className = 'card-caption';
       var name = document.createElement('div');
-      name.className = 'name';
+      name.className = 'card-caption-name';
       name.textContent = item.name;
       var cat = document.createElement('div');
-      cat.className = 'cat';
+      cat.className = 'card-caption-cat';
       var dot = document.createElement('span');
       dot.className = 'source-dot';
       dot.style.background = siteColor;
       cat.appendChild(dot);
       cat.appendChild(document.createTextNode(item.category));
-
-      info.appendChild(name);
-      info.appendChild(cat);
+      caption.appendChild(name);
+      caption.appendChild(cat);
+      thumbWrap.appendChild(caption);
 
       card.appendChild(thumbWrap);
-      card.appendChild(info);
       els.grid.appendChild(card);
     });
 
