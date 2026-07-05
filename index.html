@@ -37,10 +37,6 @@
   #app{
     padding:8px 10px 24px;
     padding-top:calc(8px + var(--content-safe-top, 0px));
-    /* Снизу — место под плавающую панель иконок-ярлыков (.quick-row,
-       фактическая высота меряется в скрипте и кладётся в --quick-row-h),
-       иначе последний ряд карточек прятался бы под ней. */
-    padding-bottom:calc(24px + var(--quick-row-h, 70px));
   }
 
   .topbar{
@@ -96,21 +92,27 @@
     -webkit-overflow-scrolling:touch;
   }
 
-  /* Третий, отдельный от select'а и шторки вход в тот же фильтр — плавающая
-     панель иконок-ярлыков СНИЗУ экрана (по образцу похожих рядов быстрого
-     доступа в других каталог-приложениях, но со своими словами/иконками, без
-     "поиска на стороннем сайте" и без копирования чужих подписей). */
+  /* Третий, отдельный от select'а и шторки вход в тот же фильтр — панель
+     иконок-ярлыков ПРЯМО В ТОПБАРЕ, под кнопкой категории (по образцу похожих
+     рядов быстрого доступа в других каталог-приложениях, но со своими
+     словами/иконками, без "поиска на стороннем сайте" и без копирования
+     чужих подписей). При свайпе вниз (скролл вниз по ленте) она полностью
+     схлопывается по высоте и исчезает — остальной топбар (шторка/избранное/
+     поиск/категория) при этом просто "доезжает" и прижимается к верху
+     экрана, но не исчезает (см. .topbar.docked выше и updateScrollChrome в
+     скрипте). max-height задаётся в JS (--quick-row-h — реальная высота
+     ряда), запасное значение ниже — просто больше реального контента, чтобы
+     не обрезать его до первого замера. */
   .quick-row{
-    position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;
+    display:flex;overflow:hidden;margin-top:8px;border-radius:10px;
     /* Темнее и общего фона, и белых карточек — чтобы панель не сливалась
        с контентом и иконки на ней были хорошо видны. */
-    background:#c6c6cc;border-top:1px solid var(--line);
-    padding:8px 4px calc(8px + env(safe-area-inset-bottom, 0px));
-    transition:transform .25s ease;
+    background:#c6c6cc;
+    max-height:var(--quick-row-h, 120px);
+    padding:8px 4px;
+    transition:max-height .25s ease, opacity .25s ease, margin-top .25s ease, padding .25s ease;
   }
-  /* При свайпе вниз панель иконок полностью уезжает за нижний край экрана,
-     при свайпе вверх — возвращается (см. updateScrollChrome в скрипте). */
-  .quick-row.hidden{transform:translateY(100%);}
+  .quick-row.hidden{max-height:0;opacity:0;margin-top:0;padding-top:0;padding-bottom:0;}
   .quick-item{
     flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;
     background:none;border:none;font-family:inherit;color:var(--text);
@@ -413,19 +415,19 @@
       <span id="topCatBtnLabel">Все материалы</span>
       <span class="top-cat-btn-arrow">▾</span>
     </button>
+    <!-- Третий вход в тот же фильтр — панель иконок-ярлыков ПОД кнопкой
+         категории, внутри топбара (по образцу подобных рядов в других
+         каталог-приложениях, но со своими словами/иконками). У иконок с
+         несколькими категориями внутри тап открывает всплывающее мини-меню
+         выбора (см. openQuickPopover в скрипте), у остальных — применяется
+         сразу. Временно, для сравнения удобства с select'ом в топбаре и
+         боковой шторкой. -->
+    <div class="quick-row" id="quickRow"></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none;">Ничего не найдено</div>
 </div>
-
-<!-- Третий вход в тот же фильтр — плавающая панель иконок-ярлыков снизу
-     экрана (по образцу подобных рядов в других каталог-приложениях, но со
-     своими словами/иконками). У иконок с несколькими категориями внутри тап
-     открывает всплывающее мини-меню выбора (см. openQuickPopover в скрипте),
-     у остальных — применяется сразу. Временно, для сравнения удобства с
-     select'ом в топбаре и боковой шторкой. -->
-<div class="quick-row" id="quickRow"></div>
 
 <!-- Боковая шторка — выбор в ней применяется сразу, без черновика/кнопки
      "применить". Ведёт к тому же состоянию, что и select выше. -->
@@ -866,14 +868,14 @@
     document.body.appendChild(pop);
     els.quickPopover = pop;
 
-    // Позиционируем НАД нажатой иконкой, по центру, с защитой от выхода
-    // за левый/правый край экрана.
+    // Позиционируем ПОД нажатой иконкой (панель теперь в топбаре, наверху
+    // экрана), по центру, с защитой от выхода за левый/правый край экрана.
     var rect = anchorBtn.getBoundingClientRect();
     var popRect = pop.getBoundingClientRect();
     var left = rect.left + rect.width / 2 - popRect.width / 2;
     left = Math.max(8, Math.min(left, window.innerWidth - popRect.width - 8));
     pop.style.left = left + 'px';
-    pop.style.bottom = (window.innerHeight - rect.top + 8) + 'px';
+    pop.style.top = (rect.bottom + 8) + 'px';
   }
 
   function buildQuickRow(){
@@ -928,12 +930,15 @@
     updateQuickRowHeight();
   }
 
-  // Реальная высота панели (зависит от env(safe-area-inset-bottom) на
-  // разных устройствах) — держим #app.padding-bottom в синхроне, чтобы
-  // последний ряд карточек не прятался под панелью.
+  // Реальная высота ряда иконок — держим в --quick-row-h, чтобы схлопывание
+  // при скролле (.quick-row.hidden, max-height:0) плавно анимировалось от
+  // точного значения, а не от заглушки. Берём scrollHeight, а не
+  // offsetHeight: scrollHeight не зависит от текущего (возможно, ещё
+  // анимирующегося) max-height, поэтому не создаёт петлю обратной связи с
+  // самим CSS-переходом, который эту же переменную использует как цель.
   function updateQuickRowHeight(){
     if (!els.quickRow) return;
-    document.documentElement.style.setProperty('--quick-row-h', els.quickRow.offsetHeight + 'px');
+    document.documentElement.style.setProperty('--quick-row-h', els.quickRow.scrollHeight + 'px');
   }
   if (els.quickRow && 'ResizeObserver' in window) {
     new ResizeObserver(updateQuickRowHeight).observe(els.quickRow);
