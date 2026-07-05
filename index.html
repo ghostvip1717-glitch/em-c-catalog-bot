@@ -12,7 +12,7 @@
      тёмный текст; тёплый золотой акцент — как и раньше — для кнопок и
      выделений (единственная сохранённая деталь прежней тёмной палитры). */
   :root{
-    --bg: #f0f0f2;
+    --bg: #e6e6ea;
     --text: #1c1c1e;
     --hint: #8a8a8e;
     --link: #b8863f;
@@ -94,7 +94,9 @@
      "поиска на стороннем сайте" и без копирования чужих подписей). */
   .quick-row{
     position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;
-    background:var(--secbg);border-top:1px solid var(--line);
+    /* Темнее и общего фона, и белых карточек — чтобы панель не сливалась
+       с контентом и иконки на ней были хорошо видны. */
+    background:#d4d4d9;border-top:1px solid var(--line);
     padding:8px 4px calc(8px + env(safe-area-inset-bottom, 0px));
   }
   .quick-item{
@@ -470,6 +472,16 @@
         tg.requestFullscreen();
       } else {
         tg.expand();
+      }
+    } catch(e){}
+    // По умолчанию Telegram трактует свайп вниз (в том числе просто скролл
+    // ленты карточек к началу списка) как жест "потянуть мини-апп вниз,
+    // свернуть" — это и была причина того, что верхние элементы "утягивало"
+    // при свайпе вниз. Отключаем этот системный жест (Bot API 7.7+), чтобы
+    // вертикальный скролл всегда оставался просто скроллом.
+    try {
+      if (tg.isVersionAtLeast && tg.isVersionAtLeast('7.7') && tg.disableVerticalSwipes) {
+        tg.disableVerticalSwipes();
       }
     } catch(e){}
   }
