@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 """
-Скрапер акрилового камня GRANDEX с interstone.kz
-(https://interstone.kz/stones/akrilovyy-kamen/grandex/colors).
+Скрапер акрилового и кварцевого камня с interstone.kz:
+- Акриловый камень GRANDEX (https://interstone.kz/stones/akrilovyy-kamen/grandex/colors)
+- Кварцевый камень: Caesarstone, Avant Quartz, GRANDEX Quartz
+  (https://interstone.kz/stones/kvarcevyy-kamen/<brand>/colors)
 
 Особенность этого сайта: страница палитры цветов подгружает карточки по кнопке
 "Показать ещё" через JavaScript (без отдельного XHR с JSON — данные уже лежат
 в DOM, кнопка просто показывает следующую порцию), поэтому полный список
-slug'ов собран один раз вручную через браузер (см. SLUGS ниже) и захардкожен.
-Страницы отдельных цветов (https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/<slug>),
+slug'ов не вытащить простым GET-запросом на страницу палитры. Для акрила GRANDEX
+он в своё время был собран вручную через браузер (см. SLUGS ниже). Для кварца
+(3 бренда, 100+ декоров суммарно) удалось выгрузить полный и куда более
+надёжный список прямо из https://interstone.kz/sitemap.xml (там просто лежат
+ссылки на все страницы цветов) — см. QUARTZ_SLUGS_BY_BRAND ниже.
+Страницы отдельных цветов (https://interstone.kz/stones/.../colors/<slug>),
 наоборот, обычный статический HTML — их можно спокойно обходить requests'ом,
 поэтому имя и фото каждого цвета всегда актуальны на момент запуска скрипта.
 
-Если у GRANDEX появятся новые цвета, их slug нужно будет добавить в список
-вручную (или переснять список через браузер).
+Если появятся новые декоры, их slug нужно будет добавить в список вручную
+(для кварца — проще всего перепроверить https://interstone.kz/sitemap.xml).
 """
 
 import json
@@ -25,6 +31,63 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://interstone.kz"
 CATEGORY_NAME = "Акриловый камень GRANDEX"
+
+# Кварцевые бренды: slug раздела в URL -> человекочитаемое название категории
+# в приложении. Префикс "Кварцевый камень" в названии категории используется
+# фронтендом (index.html, siteGroupOf) для группировки под общий источник
+# INTERSTONE.KZ вместе с акриловым камнем GRANDEX — см. комментарий там.
+QUARTZ_CATEGORIES: dict[str, str] = {
+    "caesarstone": "Кварцевый камень Caesarstone",
+    "avant-quartz": "Кварцевый камень Avant Quartz",
+    "grandex-quartz": "Кварцевый камень GRANDEX Quartz",
+}
+
+QUARTZ_SLUGS_BY_BRAND: dict[str, list[str]] = {
+    "caesarstone": [
+        "sleek-concrete", "vanilla-noir", "pure-white", "jet-black",
+        "cloudburst-concrete", "topus-concrete", "rugged-concrete",
+        "airy-concrete", "excava", "london-grey", "piatra-grey",
+        "alpine-mist", "symphony-grey", "frosty-carrina", "taj-royale",
+        "dreamy-marfil", "coastal-grey", "moorland-fog", "bianco-drift",
+        "woodlands", "black-tempal", "5143-white-attica",
+    ],
+    "avant-quartz": [
+        "burbonne", "limuzen", "provans", "korsika", "savoyya",
+        "kalakatta-eno", "statuario-lill", "akvitaniya-blanka",
+        "kalakatta-ayachcho", "kalakatta-dofine", "gris-fonse",
+        "kalakatta-le-nor", "kalakatta-arras", "q740-calacatta-venato",
+        "q765-nero-marquina", "kallakata-bern", "calacatta-marsel",
+        "calacatta-shenonso", "calacatta-bomenil", "calacatta-mon-sen-mishel",
+        "calacatta-versal", "calacatta-pierfon", "8100mulen",
+        "calacatta-benak", "q101-gold-sand", "q102-white-sand",
+        "q112-white-mirror", "q714-black-marble", "7888-calacatta-dinan",
+        "8811-reze", "9212-saint-tropez", "q703-calacatta-borghini",
+        "q131-black-sand", "q744-calacatta-bianco", "q757-calacatta-aurum",
+        "q810-grey-glow", "q811-beton-white", "q880-beton-grey",
+        "q718-carrara-moon", "9172-blave", "q930-royal-beige",
+        "q931-hazel", "7810-calacatta-modane", "7970-calacatta-troyes",
+        "7985-nicca-noir", "q797-calacatta-true-light", "q801-beton-marquina",
+        "8580-tarn",
+    ],
+    "grandex-quartz": [
+        "gq-403-modern-aspect", "gq-403m-modern-aspect",
+        "gq-503-minimalist-perfection", "gq-510-gothic-black",
+        "gq-511-japanese-harmony", "gq-511m-japanese-harmony",
+        "gq-515-scandinavian-elegance", "gq-522-bohemian-luxury",
+        "gq-531-vintage-pattern", "gq-538-art-deco", "gq-541-zen-serenity",
+        "gq-543-fusion-inspiration", "gq-543m-fusion-inspiration",
+        "gq-677-industrial-space", "gq-104-traditional-design",
+        "gq-112-high-tech-style", "gq-122-eclectic-diversity",
+        "gq-444m-timeless-classic", "gq-444-timeless-classic",
+        "gq-500-colonial-style", "gq-510m-gothic-black",
+        "gq-520-organic-modern", "gq-555-urban-loft",
+        "gq-558-charming-provence", "gq-520m-organic-modern",
+        "gq-575-nordic-light", "gq-560m-rustic-charm", "gq-590-baroque-glow",
+        "gq-711-retro-spirit", "gq-716-futuristic-edge",
+        "gq-723-italian-grace", "gq-727-bauhaus-vision",
+        "gq-760-mexican-flair", "gq-777-eco-living", "gq-797-tropical-vibe",
+    ],
+}
 
 SLUGS: list[str] = [
     "c-808-rossano", "c-809-angiari", "m-605-notte-bianca", "m-610-amiata-bianca",
@@ -67,7 +130,7 @@ def fetch(url: str) -> str:
     return resp.text
 
 
-def parse_product_page(html: str, slug: str) -> dict | None:
+def parse_product_page(html: str, slug: str, category_name: str, url_path: str) -> dict | None:
     soup = BeautifulSoup(html, "html.parser")
 
     title_el = soup.select_one("h1.main-title") or soup.select_one("h1")
@@ -116,8 +179,8 @@ def parse_product_page(html: str, slug: str) -> dict | None:
     return {
         "id": "interstone_" + slug,
         "name": name,
-        "category": CATEGORY_NAME,
-        "url": f"{BASE_URL}/stones/akrilovyy-kamen/grandex/colors/{slug}",
+        "category": category_name,
+        "url": f"{BASE_URL}{url_path}/{slug}",
         "image": images[0] if images else None,
         "images": images,
     }
@@ -125,17 +188,35 @@ def parse_product_page(html: str, slug: str) -> dict | None:
 
 def scrape_all() -> list[dict]:
     results: list[dict] = []
+
     print(f"[scrape_interstone] {CATEGORY_NAME}: {len(SLUGS)} товаров...", file=sys.stderr)
+    acrylic_path = "/stones/akrilovyy-kamen/grandex/colors"
     for slug in SLUGS:
-        url = f"{BASE_URL}/stones/akrilovyy-kamen/grandex/colors/{slug}"
+        url = f"{BASE_URL}{acrylic_path}/{slug}"
         try:
             html = fetch(url)
-            item = parse_product_page(html, slug)
+            item = parse_product_page(html, slug, CATEGORY_NAME, acrylic_path)
             if item:
                 results.append(item)
         except requests.RequestException as exc:
             print(f"[scrape_interstone] ошибка на {slug}: {exc}", file=sys.stderr)
         time.sleep(0.3)  # вежливая пауза между запросами
+
+    for brand_slug, slugs in QUARTZ_SLUGS_BY_BRAND.items():
+        category_name = QUARTZ_CATEGORIES[brand_slug]
+        brand_path = f"/stones/kvarcevyy-kamen/{brand_slug}/colors"
+        print(f"[scrape_interstone] {category_name}: {len(slugs)} товаров...", file=sys.stderr)
+        for slug in slugs:
+            url = f"{BASE_URL}{brand_path}/{slug}"
+            try:
+                html = fetch(url)
+                item = parse_product_page(html, slug, category_name, brand_path)
+                if item:
+                    results.append(item)
+            except requests.RequestException as exc:
+                print(f"[scrape_interstone] ошибка на {slug}: {exc}", file=sys.stderr)
+            time.sleep(0.3)  # вежливая пауза между запросами
+
     return results
 
 
