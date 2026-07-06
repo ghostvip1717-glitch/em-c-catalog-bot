@@ -31,6 +31,14 @@
     --button-text: #ffffff;
     --secbg: #FFFFFF;
     --line: #DED4C4;
+    /* Ниже — переменные, которые раньше были захардкожены прямо в правилах
+       (панель быстрых иконок, матовая полоска над шапкой, подложка сплэш-
+       экрана). Вынесены в :root, чтобы тему можно было целиком переключать
+       через applyTheme() в скрипте, не трогая CSS-правила. RGB-варианты
+       (без единиц) — специально для составления rgba(var(...), альфа). */
+    --quickrow-bg: #DDD5C8;
+    --safetop-tint-rgb: 237,232,224;
+    --splash-tint-rgb: 255,255,255;
     /* В fullscreen-режиме Telegram рисует СВОИ элементы (кнопка "Закрыть"
        слева, стрелка/меню справа) поверх верхней части экрана — это не часть
        нашего DOM, а собственный оверлей клиента Telegram, поэтому его нельзя
@@ -82,7 +90,7 @@
   .safe-top-blur{
     position:fixed;top:0;left:0;right:0;height:var(--content-safe-top, 0px);
     z-index:6;pointer-events:none;
-    background:rgba(237,232,224,.55);
+    background:rgba(var(--safetop-tint-rgb, 237,232,224),.55);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
     transform:translateY(0);
@@ -145,9 +153,10 @@
      max-height-анимация — просто статичный ряд внутри топбара. */
   .quick-row{
     display:flex;margin-top:8px;border-radius:10px;
-    /* Темнее фона (--bg) — в светлой теме наоборот, панель должна быть чуть
-       глубже общего фона, а не светлее, иначе потеряется на нём. */
-    background:#DDD5C8;
+    /* Значение зависит от темы (--quickrow-bg, см. applyTheme в скрипте) —
+       в тёмных темах панель светлее фона, в светлых — темнее, иначе
+       потеряется на нём. */
+    background:var(--quickrow-bg, #DDD5C8);
     padding:8px 4px;
   }
   .quick-item{
@@ -187,6 +196,25 @@
     font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--hint-strong);text-transform:uppercase;
     margin:18px 4px 8px;
   }
+
+  /* Карточка темы в переключателе — квадратик-превью (фон + акцент одним
+     кружком поверх) плюс название, тем же паттерном, что и drawer-group. */
+  .theme-item{
+    display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;
+    background:var(--secbg);margin-bottom:8px;cursor:pointer;
+    border:2px solid transparent;
+  }
+  .theme-item.active{border-color:var(--button);}
+  .theme-swatch{
+    width:36px;height:36px;border-radius:10px;flex:0 0 auto;position:relative;
+    border:1px solid rgba(0,0,0,.08);overflow:hidden;
+  }
+  .theme-swatch .tsw-accent{
+    position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;
+    border:1.5px solid rgba(255,255,255,.85);
+  }
+  .theme-name{font-weight:600;font-size:13.5px;color:var(--text);}
+  .theme-check{margin-left:auto;color:var(--button);font-weight:700;font-size:15px;flex:0 0 auto;}
 
   .drawer-group{margin-bottom:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
   .drawer-group-header{
@@ -395,9 +423,10 @@
   .splash.fade-out{opacity:0;pointer-events:none;}
   .splash-hero{
     position:absolute;inset:0;
-    /* Чистый белый — тот же тон, что и --secbg в палитре "Cloud Dancer". */
+    /* --splash-tint-rgb зависит от темы (см. applyTheme в скрипте) — тот же
+       тон, что и --secbg активной темы. */
     background-image:
-      linear-gradient(to bottom, rgba(255,255,255,.1) 0%, rgba(255,255,255,.6) 55%, rgba(255,255,255,.97) 92%),
+      linear-gradient(to bottom, rgba(var(--splash-tint-rgb, 255,255,255),.1) 0%, rgba(var(--splash-tint-rgb, 255,255,255),.6) 55%, rgba(var(--splash-tint-rgb, 255,255,255),.97) 92%),
       url('0000001.webp');
     background-size:cover;background-position:center;
   }
@@ -498,6 +527,13 @@
   <div class="drawer-item" id="drawerAll">Все материалы</div>
   <div class="drawer-item" id="drawerFav">★ Избранное</div>
   <div id="drawerGroups"></div>
+
+  <!-- Временный переключатель тем — чтобы выбрать одну из нескольких палитр
+       на глаз, вживую в приложении, а не по превью-картинке. Потом либо
+       уберём и оставим одну тему, либо оставим как обычную настройку —
+       см. THEMES/applyTheme в скрипте. -->
+  <div class="drawer-section-label">Тема (на выбор, временно)</div>
+  <div id="themeSwitcher"></div>
 </div>
 
 <div class="viewer" id="viewer">
@@ -593,7 +629,8 @@
     favOnly: false,
     query: '',
     favorites: [],
-    expandedGroups: {}
+    expandedGroups: {},
+    theme: null // выставляется в initTheme()/applyTheme() ниже
   };
 
   var els = {
@@ -624,8 +661,88 @@
     vclose: document.getElementById('vclose'),
     topCatBtn: document.getElementById('topCatBtn'),
     topCatBtnLabel: document.getElementById('topCatBtnLabel'),
-    quickRow: document.getElementById('quickRow')
+    quickRow: document.getElementById('quickRow'),
+    themeSwitcher: document.getElementById('themeSwitcher')
   };
+
+  // ---- переключатель тем (временный, см. комментарий у #themeSwitcher в
+  // разметке) — каждая тема просто набор CSS-переменных, которые целиком
+  // подставляются в :root через applyTheme(). Ничего, кроме custom
+  // properties, не трогаем — все селекторы уже и так используют var(...). */
+  var THEMES = {
+    clouddancer: {
+      name: 'Cloud Dancer (светлый премиум)',
+      vars: {
+        '--bg': '#EDE8E0', '--text': '#2B2620', '--hint': '#7D7263', '--hint-strong': '#55493C',
+        '--link': '#A84E1A', '--button': '#A84E1A', '--button-text': '#ffffff',
+        '--secbg': '#FFFFFF', '--line': '#DED4C4', '--quickrow-bg': '#DDD5C8',
+        '--safetop-tint-rgb': '255,255,255', '--splash-tint-rgb': '255,255,255'
+      }
+    },
+    warmstone: {
+      name: 'Тёплый камень',
+      vars: {
+        '--bg': '#948A7E', '--text': '#241F1A', '--hint': '#7D7367', '--hint-strong': '#332C25',
+        '--link': '#9B5215', '--button': '#9B5215', '--button-text': '#ffffff',
+        '--secbg': '#FBF8F4', '--line': '#DDD5C8', '--quickrow-bg': '#C7BDAF',
+        '--safetop-tint-rgb': '251,248,244', '--splash-tint-rgb': '251,248,244'
+      }
+    },
+    darkpremium: {
+      name: 'Тёмный премиум',
+      vars: {
+        '--bg': '#211E1C', '--text': '#EDE7DF', '--hint': '#A69C8E', '--hint-strong': '#C7BFB3',
+        '--link': '#D97B4F', '--button': '#D97B4F', '--button-text': '#211E1C',
+        '--secbg': '#2C2825', '--line': '#4A433C', '--quickrow-bg': '#33302B',
+        '--safetop-tint-rgb': '44,40,37', '--splash-tint-rgb': '44,40,37'
+      }
+    },
+    latte: {
+      name: 'Кофе с молоком',
+      vars: {
+        '--bg': '#E8DFD3', '--text': '#3B2E24', '--hint': '#7C6C59', '--hint-strong': '#4C3E30',
+        '--link': '#7A4E24', '--button': '#7A4E24', '--button-text': '#ffffff',
+        '--secbg': '#FFFDF9', '--line': '#D3C6B2', '--quickrow-bg': '#D8CBB8',
+        '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249'
+      }
+    }
+  };
+  var THEME_ORDER = ['clouddancer', 'warmstone', 'darkpremium', 'latte'];
+  var THEME_STORAGE_KEY = 'catalog_theme';
+
+  function applyTheme(key){
+    var theme = THEMES[key];
+    if (!theme) return;
+    var root = document.documentElement.style;
+    Object.keys(theme.vars).forEach(function(k){ root.setProperty(k, theme.vars[k]); });
+    state.theme = key;
+    try { localStorage.setItem(THEME_STORAGE_KEY, key); } catch(e){}
+    buildThemeSwitcher();
+  }
+
+  function buildThemeSwitcher(){
+    if (!els.themeSwitcher) return;
+    els.themeSwitcher.innerHTML = '';
+    THEME_ORDER.forEach(function(key){
+      var theme = THEMES[key];
+      var item = document.createElement('div');
+      item.className = 'theme-item' + (state.theme === key ? ' active' : '');
+      item.innerHTML =
+        '<div class="theme-swatch" style="background:' + theme.vars['--bg'] + '">' +
+          '<div class="tsw-accent" style="background:' + theme.vars['--button'] + '"></div>' +
+        '</div>' +
+        '<div class="theme-name">' + theme.name + '</div>' +
+        (state.theme === key ? '<div class="theme-check">✓</div>' : '');
+      item.onclick = function(){ applyTheme(key); };
+      els.themeSwitcher.appendChild(item);
+    });
+  }
+
+  (function initTheme(){
+    var saved = null;
+    try { saved = localStorage.getItem(THEME_STORAGE_KEY); } catch(e){}
+    applyTheme((saved && THEMES[saved]) ? saved : 'clouddancer');
+  })();
 
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
   // Категории неймспейсятся по префиксу названия — это позволяет добавлять
