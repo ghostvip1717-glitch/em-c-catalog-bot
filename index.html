@@ -634,38 +634,6 @@
     } catch(e){}
   }
 
-  // ---- гостевая книга: при каждом реальном открытии каталога, смене
-  // категории/раздела и просмотре товара тихо отправляем "записку" в
-  // Google-таблицу через Apps Script Web App — см. doPost там. Открытие
-  // страницы логируем, а не "/start" боту, потому что открытие мини-аппа
-  // по кнопке меню НЕ отправляет "/start" повторно — это единственное
-  // событие, которое реально происходит при каждом заходе, вне зависимости
-  // от того, писал ли человек боту вообще. Отправляем через fetch БЕЗ
-  // явного Content-Type: application/json — тело всё равно строка JSON, но
-  // браузер по умолчанию шлёт её как text/plain, а значит без CORS
-  // preflight-запроса (Apps Script Web App его не поддерживает, а обычная
-  // json-отправка с preflight у него не проходит). doPost сам делает
-  // JSON.parse(...), так что на сервере разницы нет. Ошибки сети/
-  // блокировщиков гасим молча — сбой аналитики не должен ломать каталог.
-  var GUESTBOOK_URL = 'https://script.google.com/macros/s/AKfycbx1uRPwHl18b11ir55cTSYmpaoJDF5ejyNWVI1mtA9C4lzyoKmdtaG1Ljb6gSHjKHWn/exec';
-  function logGuestbook(categoryOrItem){
-    try {
-      var tgUser = (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) || null;
-      var guestName = tgUser ? [tgUser.first_name, tgUser.last_name].filter(Boolean).join(' ') : '';
-      fetch(GUESTBOOK_URL, {
-        method: 'POST',
-        body: JSON.stringify({
-          name: guestName,
-          username: (tgUser && tgUser.username) ? '@' + tgUser.username : '',
-          telegram_id: tgUser ? tgUser.id : '',
-          category: categoryOrItem || '',
-          platform: (tg && tg.platform) || ''
-        })
-      }).catch(function(){});
-    } catch(e){}
-  }
-  logGuestbook('');
-
   // ---- safe area: в fullscreen Telegram рисует СВОИ контролы (Закрыть слева,
   // стрелка/меню справа) поверх верхней полосы экрана — это не элементы
   // нашего DOM, подвинуть их нельзя, поэтому вместо этого подстраиваем СВОЙ
@@ -841,12 +809,11 @@
   // материалами em-c.kz. Кварцевый камень (Caesarstone/Avant Quartz/GRANDEX
   // Quartz) — тот же источник INTERSTONE.KZ, что и акрил, поэтому оба префикса
   // ведут в одну группу 'interstone' и показываются под одной иконкой "Камень".
-  // Плёнка ПВХ теперь идёт с ДВУХ разных сайтов (adilet.net и kira-group.kz) —
-  // категории у обоих начинаются с "ПВХ плёнка", поэтому тоже сводятся в одну
-  // группу 'adilet' под общей иконкой "Плёнка" (см. также SITE_META.adilet
-  // ниже, где title теперь перечисляет оба источника).
   function siteGroupOf(cat){
     if (cat.indexOf('ПВХ плёнка') === 0) return 'adilet';
+    // Мебельные ткани — тоже с adilet.net (тот же источник, что и плёнка),
+    // поэтому попадают под ту же иконку "Плёнка" в быстром ряду.
+    if (cat.indexOf('Ткани:') === 0) return 'adilet';
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
     if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
     return 'emc';
@@ -855,7 +822,7 @@
   // акцентом --button и хорошо читались на светло-серой/белой поверхности.
   var SITE_META = {
     emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#6fa3d8' },
-    adilet: { title: 'ADILET.NET · KIRA-GROUP.KZ', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
+    adilet: { title: 'ADILET.NET', subtitle: 'Плёнка и ткани', color: '#d98f4e' },
     interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' }
   };
   var SITE_ORDER = ['emc', 'adilet', 'interstone'];
@@ -1092,11 +1059,11 @@
   // только для одной иконки.
   var QUICK_ICONS = {
     emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
-    // Плёнка — рулон (вертикальный цилиндр с эллипсом-ободком сверху) плюс
-    // плоский несмотанный лист сбоку, как на референсе пользователя;
-    // повёрнуто на 90° через <g transform>, чтобы рулон лёг горизонтально
-    // в ряду быстрых иконок.
-    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-90 12 12)"><rect x="9" y="5" width="12" height="13"></rect><rect x="3" y="8" width="6.5" height="14" rx="3.25"></rect><ellipse cx="6.25" cy="8" rx="3.25" ry="1.3"></ellipse></g></svg>',
+    // Плёнка — вытянутый горизонтальный рулон (тело рулона + эллипс-крышка
+    // с торца, видно, что рулон полый). Возврат к этой версии иконки —
+    // экспериментальный вариант "рулон + плоский несмотанный лист, повёрнуто
+    // на -90°" не прижился, откатили обратно.
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7.5" width="18.5" height="9" rx="4.5"></rect><ellipse cx="6.3" cy="12" rx="2.4" ry="4.3"></ellipse><ellipse cx="6.3" cy="12" rx="0.9" ry="1.7"></ellipse></svg>',
     interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>'
   };
   var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
@@ -1386,19 +1353,6 @@
     return 'cat:' + state.category;
   }
 
-  // Человекочитаемая подпись для гостевой книги — превращает технический
-  // ключ filterStateKey() в то, что реально хочется увидеть в таблице.
-  function categoryLogLabel(key){
-    if (key === 'fav') return '★ Избранное';
-    if (key === 'all') return 'Все материалы';
-    if (key.indexOf('site:') === 0) {
-      var meta = SITE_META[key.slice(5)];
-      return meta ? meta.subtitle : key;
-    }
-    if (key.indexOf('cat:') === 0) return key.slice(4);
-    return key;
-  }
-
   // ---- фоновая предзагрузка полноразмерных фото ----
   // Пока пользователь листает сетку карточек (там грузятся только лёгкие
   // превью), в фоне тихо подгружаем полноразмерные фото карточек, которые
@@ -1534,12 +1488,6 @@
     var filterChanged = lastFilterKey !== null && newFilterKey !== lastFilterKey;
     if (filterChanged) {
       scrollPositions[lastFilterKey] = window.scrollY;
-      // Гостевая книга: логируем реальную смену категории/раздела (не сам
-      // первый рендер при открытии — тот уже залогирован отдельно выше по
-      // файлу) и не логируем повторно на каждый ввод в поиск — filterStateKey
-      // от поискового запроса не зависит, так что filterChanged тут true
-      // только при настоящей смене категории/сайта/избранного.
-      logGuestbook(categoryLogLabel(newFilterKey));
     }
 
     var filtered = state.items.filter(matches);
@@ -1769,11 +1717,6 @@
     viewerState.idx = 0;
     viewerState.currentItem = item;
     console.log('[catalog] открыт просмотрщик:', item.id, '— фото:', imgs.length);
-    // Гостевая книга: одна запись на товар. renderViewerItem вызывается и при
-    // первом открытии (openViewer), и при вертикальном свайпе между товарами
-    // (goToVerticalItem) — оба пути логируются здесь один раз, а не на каждое
-    // пролистанное фото внутри собственной галереи товара (см. vtrack ниже).
-    logGuestbook(item.category + ' — ' + item.name);
 
     els.vtrack.innerHTML = '';
     imgs.forEach(function(src, i){
@@ -1975,6 +1918,7 @@
         if (e.touches.length < 2) pinch = null;
         return;
       }
+
       // Тап без заметного смещения — кандидат на двойной тап (зум). Раньше
       // это проверялось только внутри "if (drag)", а при zoom.scale>1 жест
       // всегда шёл через "pan" (не "drag") и та ветка завершалась ВЫШЕ, сразу
