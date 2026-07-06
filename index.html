@@ -497,7 +497,7 @@
   <div class="splash-content">
     <div class="splash-eyebrow" id="splashEyebrow">Материалы для мебели</div>
     <div class="splash-title">Материалы для мебели<br>в одном каталоге</div>
-    <div class="splash-sub">Акриловый камень, плёнка ПВХ, листовые материалы — фото, коды, названия под рукой на объекте.</div>
+    <div class="splash-sub">Акрил и кварц, плёнка ПВХ, листовые материалы — фото, коды, названия под рукой на объекте.</div>
     <button class="splash-cta" id="splashCta">Каталог</button>
   </div>
 </div>
@@ -805,10 +805,14 @@
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
   // Категории неймспейсятся по префиксу названия — это позволяет добавлять
   // новые сайты/категории в скрапере без правок фронтенда: всё, что не
-  // "ПВХ плёнка: ..." и не "Акриловый камень ...", считается материалами em-c.kz.
+  // "ПВХ плёнка: ..." и не "Акриловый/Кварцевый камень ...", считается
+  // материалами em-c.kz. Кварцевый камень (Caesarstone/Avant Quartz/GRANDEX
+  // Quartz) — тот же источник INTERSTONE.KZ, что и акрил, поэтому оба префикса
+  // ведут в одну группу 'interstone' и показываются под одной иконкой "Камень".
   function siteGroupOf(cat){
     if (cat.indexOf('ПВХ плёнка') === 0) return 'adilet';
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
+    if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
     return 'emc';
   }
   // Цвета точек-источников подобраны так, чтобы не сливались с золотым
@@ -816,7 +820,7 @@
   var SITE_META = {
     emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#6fa3d8' },
     adilet: { title: 'ADILET.NET', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
-    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акриловый камень', color: '#6b7580' }
+    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' }
   };
   var SITE_ORDER = ['emc', 'adilet', 'interstone'];
 
