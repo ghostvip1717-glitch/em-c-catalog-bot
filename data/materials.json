@@ -1654,6 +1654,2352 @@
     "thumb": "data/images/interstone/interstone_m-724-cloud-concrete/1_thumb.webp"
   },
   {
+    "id": "interstone_kalakatta-eno",
+    "name": "7000 Calacatta Eno",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kalakatta-eno",
+    "image": "data/images/interstone/interstone_kalakatta-eno/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kalakatta-eno/1.webp",
+      "data/images/interstone/interstone_kalakatta-eno/2.webp",
+      "data/images/interstone/interstone_kalakatta-eno/3.webp",
+      "data/images/interstone/interstone_kalakatta-eno/4.webp",
+      "data/images/interstone/interstone_kalakatta-eno/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kalakatta-eno/1_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-eno/2_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-eno/3_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-eno/4_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-eno/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kalakatta-eno/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-shenonso",
+    "name": "7030 Calacatta Chenonceaux",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-shenonso",
+    "image": "data/images/interstone/interstone_calacatta-shenonso/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-shenonso/1.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/2.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/3.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/4.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-shenonso/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-shenonso/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-shenonso/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-bomenil",
+    "name": "7040 Calacatta Beaumesnil",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-bomenil",
+    "image": "data/images/interstone/interstone_calacatta-bomenil/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-bomenil/1.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/2.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/3.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/4.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-bomenil/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-bomenil/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-bomenil/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-benak",
+    "name": "7050 Calacatta Beynac",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-benak",
+    "image": "data/images/interstone/interstone_calacatta-benak/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-benak/1.webp",
+      "data/images/interstone/interstone_calacatta-benak/2.webp",
+      "data/images/interstone/interstone_calacatta-benak/3.webp",
+      "data/images/interstone/interstone_calacatta-benak/4.webp",
+      "data/images/interstone/interstone_calacatta-benak/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-benak/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-benak/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-benak/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-benak/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-benak/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-benak/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-mon-sen-mishel",
+    "name": "7060 Calacatta Mont Saint-Michel",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-mon-sen-mishel",
+    "image": "data/images/interstone/interstone_calacatta-mon-sen-mishel/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/1.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/2.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/3.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/4.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-mon-sen-mishel/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-mon-sen-mishel/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-versal",
+    "name": "7070 Calacatta Versailles",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-versal",
+    "image": "data/images/interstone/interstone_calacatta-versal/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-versal/1.webp",
+      "data/images/interstone/interstone_calacatta-versal/2.webp",
+      "data/images/interstone/interstone_calacatta-versal/3.webp",
+      "data/images/interstone/interstone_calacatta-versal/4.webp",
+      "data/images/interstone/interstone_calacatta-versal/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-versal/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-versal/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-versal/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-versal/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-versal/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-versal/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-pierfon",
+    "name": "7080 Calacatta Pierrefonds",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-pierfon",
+    "image": "data/images/interstone/interstone_calacatta-pierfon/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-pierfon/1.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/2.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/3.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/4.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-pierfon/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-pierfon/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-pierfon/1_thumb.webp"
+  },
+  {
+    "id": "interstone_statuario-lill",
+    "name": "7100 Statuario Lille",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/statuario-lill",
+    "image": "data/images/interstone/interstone_statuario-lill/1.webp",
+    "images": [
+      "data/images/interstone/interstone_statuario-lill/1.webp",
+      "data/images/interstone/interstone_statuario-lill/2.webp",
+      "data/images/interstone/interstone_statuario-lill/3.webp",
+      "data/images/interstone/interstone_statuario-lill/4.webp",
+      "data/images/interstone/interstone_statuario-lill/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_statuario-lill/1_thumb.webp",
+      "data/images/interstone/interstone_statuario-lill/2_thumb.webp",
+      "data/images/interstone/interstone_statuario-lill/3_thumb.webp",
+      "data/images/interstone/interstone_statuario-lill/4_thumb.webp",
+      "data/images/interstone/interstone_statuario-lill/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_statuario-lill/1_thumb.webp"
+  },
+  {
+    "id": "interstone_akvitaniya-blanka",
+    "name": "7200 Aquitaine Blanca",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/akvitaniya-blanka",
+    "image": "data/images/interstone/interstone_akvitaniya-blanka/1.webp",
+    "images": [
+      "data/images/interstone/interstone_akvitaniya-blanka/1.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/2.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/3.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/4.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_akvitaniya-blanka/1_thumb.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/2_thumb.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/3_thumb.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/4_thumb.webp",
+      "data/images/interstone/interstone_akvitaniya-blanka/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_akvitaniya-blanka/1_thumb.webp"
+  },
+  {
+    "id": "interstone_kalakatta-ayachcho",
+    "name": "7300 Calacatta Ajaccio",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kalakatta-ayachcho",
+    "image": "data/images/interstone/interstone_kalakatta-ayachcho/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kalakatta-ayachcho/1.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/2.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/3.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/4.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kalakatta-ayachcho/1_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/2_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/3_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/4_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-ayachcho/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kalakatta-ayachcho/1_thumb.webp"
+  },
+  {
+    "id": "interstone_kalakatta-dofine",
+    "name": "7400 Calacatta Dauphine",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kalakatta-dofine",
+    "image": "data/images/interstone/interstone_kalakatta-dofine/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kalakatta-dofine/1.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/2.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/3.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/4.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kalakatta-dofine/1_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/2_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/3_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/4_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-dofine/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kalakatta-dofine/1_thumb.webp"
+  },
+  {
+    "id": "interstone_kallakata-bern",
+    "name": "7470 Calacatta Bearn",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kallakata-bern",
+    "image": "data/images/interstone/interstone_kallakata-bern/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kallakata-bern/1.webp",
+      "data/images/interstone/interstone_kallakata-bern/2.webp",
+      "data/images/interstone/interstone_kallakata-bern/3.webp",
+      "data/images/interstone/interstone_kallakata-bern/4.webp",
+      "data/images/interstone/interstone_kallakata-bern/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kallakata-bern/1_thumb.webp",
+      "data/images/interstone/interstone_kallakata-bern/2_thumb.webp",
+      "data/images/interstone/interstone_kallakata-bern/3_thumb.webp",
+      "data/images/interstone/interstone_kallakata-bern/4_thumb.webp",
+      "data/images/interstone/interstone_kallakata-bern/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kallakata-bern/1_thumb.webp"
+  },
+  {
+    "id": "interstone_kalakatta-arras",
+    "name": "7500 Calacatta Arras",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kalakatta-arras",
+    "image": "data/images/interstone/interstone_kalakatta-arras/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kalakatta-arras/1.webp",
+      "data/images/interstone/interstone_kalakatta-arras/2.webp",
+      "data/images/interstone/interstone_kalakatta-arras/3.webp",
+      "data/images/interstone/interstone_kalakatta-arras/4.webp",
+      "data/images/interstone/interstone_kalakatta-arras/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kalakatta-arras/1_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-arras/2_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-arras/3_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-arras/4_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-arras/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kalakatta-arras/1_thumb.webp"
+  },
+  {
+    "id": "interstone_kalakatta-le-nor",
+    "name": "7600 Calacatta Le-Nord",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/kalakatta-le-nor",
+    "image": "data/images/interstone/interstone_kalakatta-le-nor/1.webp",
+    "images": [
+      "data/images/interstone/interstone_kalakatta-le-nor/1.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/2.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/3.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/4.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_kalakatta-le-nor/1_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/2_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/3_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/4_thumb.webp",
+      "data/images/interstone/interstone_kalakatta-le-nor/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_kalakatta-le-nor/1_thumb.webp"
+  },
+  {
+    "id": "interstone_calacatta-marsel",
+    "name": "7700 Calacatta Marseille",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/calacatta-marsel",
+    "image": "data/images/interstone/interstone_calacatta-marsel/1.webp",
+    "images": [
+      "data/images/interstone/interstone_calacatta-marsel/1.webp",
+      "data/images/interstone/interstone_calacatta-marsel/2.webp",
+      "data/images/interstone/interstone_calacatta-marsel/3.webp",
+      "data/images/interstone/interstone_calacatta-marsel/4.webp",
+      "data/images/interstone/interstone_calacatta-marsel/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_calacatta-marsel/1_thumb.webp",
+      "data/images/interstone/interstone_calacatta-marsel/2_thumb.webp",
+      "data/images/interstone/interstone_calacatta-marsel/3_thumb.webp",
+      "data/images/interstone/interstone_calacatta-marsel/4_thumb.webp",
+      "data/images/interstone/interstone_calacatta-marsel/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_calacatta-marsel/1_thumb.webp"
+  },
+  {
+    "id": "interstone_7810-calacatta-modane",
+    "name": "7810 Calacatta Modane",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/7810-calacatta-modane",
+    "image": "data/images/interstone/interstone_7810-calacatta-modane/1.webp",
+    "images": [
+      "data/images/interstone/interstone_7810-calacatta-modane/1.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/2.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/3.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/4.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_7810-calacatta-modane/1_thumb.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/2_thumb.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/3_thumb.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/4_thumb.webp",
+      "data/images/interstone/interstone_7810-calacatta-modane/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_7810-calacatta-modane/1_thumb.webp"
+  },
+  {
+    "id": "interstone_7888-calacatta-dinan",
+    "name": "7888 Calacatta Dinan",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/7888-calacatta-dinan",
+    "image": "data/images/interstone/interstone_7888-calacatta-dinan/1.webp",
+    "images": [
+      "data/images/interstone/interstone_7888-calacatta-dinan/1.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/2.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/3.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/4.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_7888-calacatta-dinan/1_thumb.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/2_thumb.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/3_thumb.webp",
+      "data/images/interstone/interstone_7888-calacatta-dinan/4_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_7888-calacatta-dinan/1_thumb.webp"
+  },
+  {
+    "id": "interstone_7970-calacatta-troyes",
+    "name": "7970 Calacatta Troyes",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/7970-calacatta-troyes",
+    "image": "data/images/interstone/interstone_7970-calacatta-troyes/1.webp",
+    "images": [
+      "data/images/interstone/interstone_7970-calacatta-troyes/1.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/2.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/3.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/4.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_7970-calacatta-troyes/1_thumb.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/2_thumb.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/3_thumb.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/4_thumb.webp",
+      "data/images/interstone/interstone_7970-calacatta-troyes/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_7970-calacatta-troyes/1_thumb.webp"
+  },
+  {
+    "id": "interstone_7985-nicca-noir",
+    "name": "7985 Nicca Noir",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/7985-nicca-noir",
+    "image": "data/images/interstone/interstone_7985-nicca-noir/1.webp",
+    "images": [
+      "data/images/interstone/interstone_7985-nicca-noir/1.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/2.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/3.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/4.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_7985-nicca-noir/1_thumb.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/2_thumb.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/3_thumb.webp",
+      "data/images/interstone/interstone_7985-nicca-noir/4_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_7985-nicca-noir/1_thumb.webp"
+  },
+  {
+    "id": "interstone_8100mulen",
+    "name": "8100 Mulen",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/8100mulen",
+    "image": "data/images/interstone/interstone_8100mulen/1.webp",
+    "images": [
+      "data/images/interstone/interstone_8100mulen/1.webp",
+      "data/images/interstone/interstone_8100mulen/2.webp",
+      "data/images/interstone/interstone_8100mulen/3.webp",
+      "data/images/interstone/interstone_8100mulen/4.webp",
+      "data/images/interstone/interstone_8100mulen/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_8100mulen/1_thumb.webp",
+      "data/images/interstone/interstone_8100mulen/2_thumb.webp",
+      "data/images/interstone/interstone_8100mulen/3_thumb.webp",
+      "data/images/interstone/interstone_8100mulen/4_thumb.webp",
+      "data/images/interstone/interstone_8100mulen/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_8100mulen/1_thumb.webp"
+  },
+  {
+    "id": "interstone_8580-tarn",
+    "name": "8580 Tarn",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/8580-tarn",
+    "image": "data/images/interstone/interstone_8580-tarn/1.webp",
+    "images": [
+      "data/images/interstone/interstone_8580-tarn/1.webp",
+      "data/images/interstone/interstone_8580-tarn/2.webp",
+      "data/images/interstone/interstone_8580-tarn/3.webp",
+      "data/images/interstone/interstone_8580-tarn/4.webp",
+      "data/images/interstone/interstone_8580-tarn/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_8580-tarn/1_thumb.webp",
+      "data/images/interstone/interstone_8580-tarn/2_thumb.webp",
+      "data/images/interstone/interstone_8580-tarn/3_thumb.webp",
+      "data/images/interstone/interstone_8580-tarn/4_thumb.webp",
+      "data/images/interstone/interstone_8580-tarn/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_8580-tarn/1_thumb.webp"
+  },
+  {
+    "id": "interstone_8811-reze",
+    "name": "8811 Reze",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/8811-reze",
+    "image": "data/images/interstone/interstone_8811-reze/1.webp",
+    "images": [
+      "data/images/interstone/interstone_8811-reze/1.webp",
+      "data/images/interstone/interstone_8811-reze/2.webp",
+      "data/images/interstone/interstone_8811-reze/3.webp",
+      "data/images/interstone/interstone_8811-reze/4.webp",
+      "data/images/interstone/interstone_8811-reze/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_8811-reze/1_thumb.webp",
+      "data/images/interstone/interstone_8811-reze/2_thumb.webp",
+      "data/images/interstone/interstone_8811-reze/3_thumb.webp",
+      "data/images/interstone/interstone_8811-reze/4_thumb.webp",
+      "data/images/interstone/interstone_8811-reze/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_8811-reze/1_thumb.webp"
+  },
+  {
+    "id": "interstone_burbonne",
+    "name": "9005 Bourbonnais",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/burbonne",
+    "image": "data/images/interstone/interstone_burbonne/1.webp",
+    "images": [
+      "data/images/interstone/interstone_burbonne/1.webp",
+      "data/images/interstone/interstone_burbonne/2.webp",
+      "data/images/interstone/interstone_burbonne/3.webp",
+      "data/images/interstone/interstone_burbonne/4.webp",
+      "data/images/interstone/interstone_burbonne/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_burbonne/1_thumb.webp",
+      "data/images/interstone/interstone_burbonne/2_thumb.webp",
+      "data/images/interstone/interstone_burbonne/3_thumb.webp",
+      "data/images/interstone/interstone_burbonne/4_thumb.webp",
+      "data/images/interstone/interstone_burbonne/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_burbonne/1_thumb.webp"
+  },
+  {
+    "id": "interstone_limuzen",
+    "name": "9006 Limousin",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/limuzen",
+    "image": "data/images/interstone/interstone_limuzen/1.webp",
+    "images": [
+      "data/images/interstone/interstone_limuzen/1.webp",
+      "data/images/interstone/interstone_limuzen/2.webp",
+      "data/images/interstone/interstone_limuzen/3.webp",
+      "data/images/interstone/interstone_limuzen/4.webp",
+      "data/images/interstone/interstone_limuzen/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_limuzen/1_thumb.webp",
+      "data/images/interstone/interstone_limuzen/2_thumb.webp",
+      "data/images/interstone/interstone_limuzen/3_thumb.webp",
+      "data/images/interstone/interstone_limuzen/4_thumb.webp",
+      "data/images/interstone/interstone_limuzen/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_limuzen/1_thumb.webp"
+  },
+  {
+    "id": "interstone_provans",
+    "name": "9009 Provence",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/provans",
+    "image": "data/images/interstone/interstone_provans/1.webp",
+    "images": [
+      "data/images/interstone/interstone_provans/1.webp",
+      "data/images/interstone/interstone_provans/2.webp",
+      "data/images/interstone/interstone_provans/3.webp",
+      "data/images/interstone/interstone_provans/4.webp",
+      "data/images/interstone/interstone_provans/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_provans/1_thumb.webp",
+      "data/images/interstone/interstone_provans/2_thumb.webp",
+      "data/images/interstone/interstone_provans/3_thumb.webp",
+      "data/images/interstone/interstone_provans/4_thumb.webp",
+      "data/images/interstone/interstone_provans/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_provans/1_thumb.webp"
+  },
+  {
+    "id": "interstone_korsika",
+    "name": "9010 Corsica",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/korsika",
+    "image": "data/images/interstone/interstone_korsika/1.webp",
+    "images": [
+      "data/images/interstone/interstone_korsika/1.webp",
+      "data/images/interstone/interstone_korsika/2.webp",
+      "data/images/interstone/interstone_korsika/3.webp",
+      "data/images/interstone/interstone_korsika/4.webp",
+      "data/images/interstone/interstone_korsika/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_korsika/1_thumb.webp",
+      "data/images/interstone/interstone_korsika/2_thumb.webp",
+      "data/images/interstone/interstone_korsika/3_thumb.webp",
+      "data/images/interstone/interstone_korsika/4_thumb.webp",
+      "data/images/interstone/interstone_korsika/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_korsika/1_thumb.webp"
+  },
+  {
+    "id": "interstone_savoyya",
+    "name": "9014 Savoie",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/savoyya",
+    "image": "data/images/interstone/interstone_savoyya/1.webp",
+    "images": [
+      "data/images/interstone/interstone_savoyya/1.webp",
+      "data/images/interstone/interstone_savoyya/2.webp",
+      "data/images/interstone/interstone_savoyya/3.webp",
+      "data/images/interstone/interstone_savoyya/4.webp",
+      "data/images/interstone/interstone_savoyya/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_savoyya/1_thumb.webp",
+      "data/images/interstone/interstone_savoyya/2_thumb.webp",
+      "data/images/interstone/interstone_savoyya/3_thumb.webp",
+      "data/images/interstone/interstone_savoyya/4_thumb.webp",
+      "data/images/interstone/interstone_savoyya/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_savoyya/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gris-fonse",
+    "name": "9050 Gris Fonce",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/gris-fonse",
+    "image": "data/images/interstone/interstone_gris-fonse/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gris-fonse/1.webp",
+      "data/images/interstone/interstone_gris-fonse/2.webp",
+      "data/images/interstone/interstone_gris-fonse/3.webp",
+      "data/images/interstone/interstone_gris-fonse/4.webp",
+      "data/images/interstone/interstone_gris-fonse/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gris-fonse/1_thumb.webp",
+      "data/images/interstone/interstone_gris-fonse/2_thumb.webp",
+      "data/images/interstone/interstone_gris-fonse/3_thumb.webp",
+      "data/images/interstone/interstone_gris-fonse/4_thumb.webp",
+      "data/images/interstone/interstone_gris-fonse/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gris-fonse/1_thumb.webp"
+  },
+  {
+    "id": "interstone_9172-blave",
+    "name": "9172 Blave",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/9172-blave",
+    "image": "data/images/interstone/interstone_9172-blave/1.webp",
+    "images": [
+      "data/images/interstone/interstone_9172-blave/1.webp",
+      "data/images/interstone/interstone_9172-blave/2.webp",
+      "data/images/interstone/interstone_9172-blave/3.webp",
+      "data/images/interstone/interstone_9172-blave/4.webp",
+      "data/images/interstone/interstone_9172-blave/5.webp",
+      "data/images/interstone/interstone_9172-blave/6.webp",
+      "data/images/interstone/interstone_9172-blave/7.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_9172-blave/1_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/2_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/3_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/4_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/5_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/6_thumb.webp",
+      "data/images/interstone/interstone_9172-blave/7_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_9172-blave/1_thumb.webp"
+  },
+  {
+    "id": "interstone_9212-saint-tropez",
+    "name": "9212 Saint-Tropez",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/9212-saint-tropez",
+    "image": "data/images/interstone/interstone_9212-saint-tropez/1.webp",
+    "images": [
+      "data/images/interstone/interstone_9212-saint-tropez/1.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/2.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/3.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/4.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_9212-saint-tropez/1_thumb.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/2_thumb.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/3_thumb.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/4_thumb.webp",
+      "data/images/interstone/interstone_9212-saint-tropez/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_9212-saint-tropez/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q101-gold-sand",
+    "name": "Q101 Gold Sand",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q101-gold-sand",
+    "image": "data/images/interstone/interstone_q101-gold-sand/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q101-gold-sand/1.webp",
+      "data/images/interstone/interstone_q101-gold-sand/2.webp",
+      "data/images/interstone/interstone_q101-gold-sand/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q101-gold-sand/1_thumb.webp",
+      "data/images/interstone/interstone_q101-gold-sand/2_thumb.webp",
+      "data/images/interstone/interstone_q101-gold-sand/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q101-gold-sand/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q102-white-sand",
+    "name": "Q102 White Sand",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q102-white-sand",
+    "image": "data/images/interstone/interstone_q102-white-sand/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q102-white-sand/1.webp",
+      "data/images/interstone/interstone_q102-white-sand/2.webp",
+      "data/images/interstone/interstone_q102-white-sand/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q102-white-sand/1_thumb.webp",
+      "data/images/interstone/interstone_q102-white-sand/2_thumb.webp",
+      "data/images/interstone/interstone_q102-white-sand/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q102-white-sand/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q112-white-mirror",
+    "name": "Q112 White Mirror",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q112-white-mirror",
+    "image": "data/images/interstone/interstone_q112-white-mirror/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q112-white-mirror/1.webp",
+      "data/images/interstone/interstone_q112-white-mirror/2.webp",
+      "data/images/interstone/interstone_q112-white-mirror/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q112-white-mirror/1_thumb.webp",
+      "data/images/interstone/interstone_q112-white-mirror/2_thumb.webp",
+      "data/images/interstone/interstone_q112-white-mirror/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q112-white-mirror/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q131-black-sand",
+    "name": "Q131 Black sand",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q131-black-sand",
+    "image": "data/images/interstone/interstone_q131-black-sand/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q131-black-sand/1.webp",
+      "data/images/interstone/interstone_q131-black-sand/2.webp",
+      "data/images/interstone/interstone_q131-black-sand/3.webp",
+      "data/images/interstone/interstone_q131-black-sand/4.webp",
+      "data/images/interstone/interstone_q131-black-sand/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q131-black-sand/1_thumb.webp",
+      "data/images/interstone/interstone_q131-black-sand/2_thumb.webp",
+      "data/images/interstone/interstone_q131-black-sand/3_thumb.webp",
+      "data/images/interstone/interstone_q131-black-sand/4_thumb.webp",
+      "data/images/interstone/interstone_q131-black-sand/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q131-black-sand/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q703-calacatta-borghini",
+    "name": "Q703 Calacatta Borghini",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q703-calacatta-borghini",
+    "image": "data/images/interstone/interstone_q703-calacatta-borghini/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q703-calacatta-borghini/1.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/2.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/3.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/4.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q703-calacatta-borghini/1_thumb.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/2_thumb.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/3_thumb.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/4_thumb.webp",
+      "data/images/interstone/interstone_q703-calacatta-borghini/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q703-calacatta-borghini/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q714-black-marble",
+    "name": "Q714 Black Marble",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q714-black-marble",
+    "image": "data/images/interstone/interstone_q714-black-marble/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q714-black-marble/1.webp",
+      "data/images/interstone/interstone_q714-black-marble/2.webp",
+      "data/images/interstone/interstone_q714-black-marble/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q714-black-marble/1_thumb.webp",
+      "data/images/interstone/interstone_q714-black-marble/2_thumb.webp",
+      "data/images/interstone/interstone_q714-black-marble/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q714-black-marble/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q718-carrara-moon",
+    "name": "Q718 Carrara Moon",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q718-carrara-moon",
+    "image": "data/images/interstone/interstone_q718-carrara-moon/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q718-carrara-moon/1.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/2.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/3.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/4.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q718-carrara-moon/1_thumb.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/2_thumb.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/3_thumb.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/4_thumb.webp",
+      "data/images/interstone/interstone_q718-carrara-moon/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q718-carrara-moon/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q740-calacatta-venato",
+    "name": "Q740 Calacatta Venato",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q740-calacatta-venato",
+    "image": "data/images/interstone/interstone_q740-calacatta-venato/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q740-calacatta-venato/1.webp",
+      "data/images/interstone/interstone_q740-calacatta-venato/2.webp",
+      "data/images/interstone/interstone_q740-calacatta-venato/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q740-calacatta-venato/1_thumb.webp",
+      "data/images/interstone/interstone_q740-calacatta-venato/2_thumb.webp",
+      "data/images/interstone/interstone_q740-calacatta-venato/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q740-calacatta-venato/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q744-calacatta-bianco",
+    "name": "Q744 Calacatta Bianco",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q744-calacatta-bianco",
+    "image": "data/images/interstone/interstone_q744-calacatta-bianco/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q744-calacatta-bianco/1.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/2.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/3.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/4.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q744-calacatta-bianco/1_thumb.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/2_thumb.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/3_thumb.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/4_thumb.webp",
+      "data/images/interstone/interstone_q744-calacatta-bianco/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q744-calacatta-bianco/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q757-calacatta-aurum",
+    "name": "Q757 Calacatta Aurum",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q757-calacatta-aurum",
+    "image": "data/images/interstone/interstone_q757-calacatta-aurum/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q757-calacatta-aurum/1.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/2.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/3.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/4.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q757-calacatta-aurum/1_thumb.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/2_thumb.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/3_thumb.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/4_thumb.webp",
+      "data/images/interstone/interstone_q757-calacatta-aurum/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q757-calacatta-aurum/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q765-nero-marquina",
+    "name": "Q765 Nero Marquina",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q765-nero-marquina",
+    "image": "data/images/interstone/interstone_q765-nero-marquina/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q765-nero-marquina/1.webp",
+      "data/images/interstone/interstone_q765-nero-marquina/2.webp",
+      "data/images/interstone/interstone_q765-nero-marquina/3.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q765-nero-marquina/1_thumb.webp",
+      "data/images/interstone/interstone_q765-nero-marquina/2_thumb.webp",
+      "data/images/interstone/interstone_q765-nero-marquina/3_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q765-nero-marquina/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q797-calacatta-true-light",
+    "name": "Q797 Calacatta True Light",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q797-calacatta-true-light",
+    "image": "data/images/interstone/interstone_q797-calacatta-true-light/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q797-calacatta-true-light/1.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/2.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/3.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/4.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q797-calacatta-true-light/1_thumb.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/2_thumb.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/3_thumb.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/4_thumb.webp",
+      "data/images/interstone/interstone_q797-calacatta-true-light/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q797-calacatta-true-light/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q801-beton-marquina",
+    "name": "Q801 Beton Marquina",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q801-beton-marquina",
+    "image": "data/images/interstone/interstone_q801-beton-marquina/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q801-beton-marquina/1.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/2.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/3.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/4.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q801-beton-marquina/1_thumb.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/2_thumb.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/3_thumb.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/4_thumb.webp",
+      "data/images/interstone/interstone_q801-beton-marquina/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q801-beton-marquina/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q810-grey-glow",
+    "name": "Q810 Grey Glow",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q810-grey-glow",
+    "image": "data/images/interstone/interstone_q810-grey-glow/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q810-grey-glow/1.webp",
+      "data/images/interstone/interstone_q810-grey-glow/2.webp",
+      "data/images/interstone/interstone_q810-grey-glow/3.webp",
+      "data/images/interstone/interstone_q810-grey-glow/4.webp",
+      "data/images/interstone/interstone_q810-grey-glow/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q810-grey-glow/1_thumb.webp",
+      "data/images/interstone/interstone_q810-grey-glow/2_thumb.webp",
+      "data/images/interstone/interstone_q810-grey-glow/3_thumb.webp",
+      "data/images/interstone/interstone_q810-grey-glow/4_thumb.webp",
+      "data/images/interstone/interstone_q810-grey-glow/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q810-grey-glow/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q811-beton-white",
+    "name": "Q811 Beton White",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q811-beton-white",
+    "image": "data/images/interstone/interstone_q811-beton-white/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q811-beton-white/1.webp",
+      "data/images/interstone/interstone_q811-beton-white/2.webp",
+      "data/images/interstone/interstone_q811-beton-white/3.webp",
+      "data/images/interstone/interstone_q811-beton-white/4.webp",
+      "data/images/interstone/interstone_q811-beton-white/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q811-beton-white/1_thumb.webp",
+      "data/images/interstone/interstone_q811-beton-white/2_thumb.webp",
+      "data/images/interstone/interstone_q811-beton-white/3_thumb.webp",
+      "data/images/interstone/interstone_q811-beton-white/4_thumb.webp",
+      "data/images/interstone/interstone_q811-beton-white/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q811-beton-white/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q880-beton-grey",
+    "name": "Q880 Beton Grey",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q880-beton-grey",
+    "image": "data/images/interstone/interstone_q880-beton-grey/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q880-beton-grey/1.webp",
+      "data/images/interstone/interstone_q880-beton-grey/2.webp",
+      "data/images/interstone/interstone_q880-beton-grey/3.webp",
+      "data/images/interstone/interstone_q880-beton-grey/4.webp",
+      "data/images/interstone/interstone_q880-beton-grey/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q880-beton-grey/1_thumb.webp",
+      "data/images/interstone/interstone_q880-beton-grey/2_thumb.webp",
+      "data/images/interstone/interstone_q880-beton-grey/3_thumb.webp",
+      "data/images/interstone/interstone_q880-beton-grey/4_thumb.webp",
+      "data/images/interstone/interstone_q880-beton-grey/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q880-beton-grey/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q930-royal-beige",
+    "name": "Q930 Royal Beige",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q930-royal-beige",
+    "image": "data/images/interstone/interstone_q930-royal-beige/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q930-royal-beige/1.webp",
+      "data/images/interstone/interstone_q930-royal-beige/2.webp",
+      "data/images/interstone/interstone_q930-royal-beige/3.webp",
+      "data/images/interstone/interstone_q930-royal-beige/4.webp",
+      "data/images/interstone/interstone_q930-royal-beige/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q930-royal-beige/1_thumb.webp",
+      "data/images/interstone/interstone_q930-royal-beige/2_thumb.webp",
+      "data/images/interstone/interstone_q930-royal-beige/3_thumb.webp",
+      "data/images/interstone/interstone_q930-royal-beige/4_thumb.webp",
+      "data/images/interstone/interstone_q930-royal-beige/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q930-royal-beige/1_thumb.webp"
+  },
+  {
+    "id": "interstone_q931-hazel",
+    "name": "Q931 Hazel",
+    "category": "Кварцевый камень Avant Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q931-hazel",
+    "image": "data/images/interstone/interstone_q931-hazel/1.webp",
+    "images": [
+      "data/images/interstone/interstone_q931-hazel/1.webp",
+      "data/images/interstone/interstone_q931-hazel/2.webp",
+      "data/images/interstone/interstone_q931-hazel/3.webp",
+      "data/images/interstone/interstone_q931-hazel/4.webp",
+      "data/images/interstone/interstone_q931-hazel/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_q931-hazel/1_thumb.webp",
+      "data/images/interstone/interstone_q931-hazel/2_thumb.webp",
+      "data/images/interstone/interstone_q931-hazel/3_thumb.webp",
+      "data/images/interstone/interstone_q931-hazel/4_thumb.webp",
+      "data/images/interstone/interstone_q931-hazel/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_q931-hazel/1_thumb.webp"
+  },
+  {
+    "id": "interstone_pure-white",
+    "name": "1141 Pure White",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/pure-white",
+    "image": "data/images/interstone/interstone_pure-white/1.webp",
+    "images": [
+      "data/images/interstone/interstone_pure-white/1.webp",
+      "data/images/interstone/interstone_pure-white/2.webp",
+      "data/images/interstone/interstone_pure-white/3.webp",
+      "data/images/interstone/interstone_pure-white/4.webp",
+      "data/images/interstone/interstone_pure-white/5.webp",
+      "data/images/interstone/interstone_pure-white/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_pure-white/1_thumb.webp",
+      "data/images/interstone/interstone_pure-white/2_thumb.webp",
+      "data/images/interstone/interstone_pure-white/3_thumb.webp",
+      "data/images/interstone/interstone_pure-white/4_thumb.webp",
+      "data/images/interstone/interstone_pure-white/5_thumb.webp",
+      "data/images/interstone/interstone_pure-white/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_pure-white/1_thumb.webp"
+  },
+  {
+    "id": "interstone_jet-black",
+    "name": "3100 Jet Black",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/jet-black",
+    "image": "data/images/interstone/interstone_jet-black/1.webp",
+    "images": [
+      "data/images/interstone/interstone_jet-black/1.webp",
+      "data/images/interstone/interstone_jet-black/2.webp",
+      "data/images/interstone/interstone_jet-black/3.webp",
+      "data/images/interstone/interstone_jet-black/4.webp",
+      "data/images/interstone/interstone_jet-black/5.webp",
+      "data/images/interstone/interstone_jet-black/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_jet-black/1_thumb.webp",
+      "data/images/interstone/interstone_jet-black/2_thumb.webp",
+      "data/images/interstone/interstone_jet-black/3_thumb.webp",
+      "data/images/interstone/interstone_jet-black/4_thumb.webp",
+      "data/images/interstone/interstone_jet-black/5_thumb.webp",
+      "data/images/interstone/interstone_jet-black/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_jet-black/1_thumb.webp"
+  },
+  {
+    "id": "interstone_sleek-concrete",
+    "name": "4003 Sleek Concrete",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/sleek-concrete",
+    "image": "data/images/interstone/interstone_sleek-concrete/1.webp",
+    "images": [
+      "data/images/interstone/interstone_sleek-concrete/1.webp",
+      "data/images/interstone/interstone_sleek-concrete/2.webp",
+      "data/images/interstone/interstone_sleek-concrete/3.webp",
+      "data/images/interstone/interstone_sleek-concrete/4.webp",
+      "data/images/interstone/interstone_sleek-concrete/5.webp",
+      "data/images/interstone/interstone_sleek-concrete/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_sleek-concrete/1_thumb.webp",
+      "data/images/interstone/interstone_sleek-concrete/2_thumb.webp",
+      "data/images/interstone/interstone_sleek-concrete/3_thumb.webp",
+      "data/images/interstone/interstone_sleek-concrete/4_thumb.webp",
+      "data/images/interstone/interstone_sleek-concrete/5_thumb.webp",
+      "data/images/interstone/interstone_sleek-concrete/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_sleek-concrete/1_thumb.webp"
+  },
+  {
+    "id": "interstone_cloudburst-concrete",
+    "name": "4011 Cloudburst Concrete",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/cloudburst-concrete",
+    "image": "data/images/interstone/interstone_cloudburst-concrete/1.webp",
+    "images": [
+      "data/images/interstone/interstone_cloudburst-concrete/1.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/2.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/3.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/4.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/5.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_cloudburst-concrete/1_thumb.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/2_thumb.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/3_thumb.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/4_thumb.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/5_thumb.webp",
+      "data/images/interstone/interstone_cloudburst-concrete/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_cloudburst-concrete/1_thumb.webp"
+  },
+  {
+    "id": "interstone_topus-concrete",
+    "name": "4023 Topus Concrete",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/topus-concrete",
+    "image": "data/images/interstone/interstone_topus-concrete/1.webp",
+    "images": [
+      "data/images/interstone/interstone_topus-concrete/1.webp",
+      "data/images/interstone/interstone_topus-concrete/2.webp",
+      "data/images/interstone/interstone_topus-concrete/3.webp",
+      "data/images/interstone/interstone_topus-concrete/4.webp",
+      "data/images/interstone/interstone_topus-concrete/5.webp",
+      "data/images/interstone/interstone_topus-concrete/6.webp",
+      "data/images/interstone/interstone_topus-concrete/7.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_topus-concrete/1_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/2_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/3_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/4_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/5_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/6_thumb.webp",
+      "data/images/interstone/interstone_topus-concrete/7_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_topus-concrete/1_thumb.webp"
+  },
+  {
+    "id": "interstone_rugged-concrete",
+    "name": "4033 Rugged Concrete",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/rugged-concrete",
+    "image": "data/images/interstone/interstone_rugged-concrete/1.webp",
+    "images": [
+      "data/images/interstone/interstone_rugged-concrete/1.webp",
+      "data/images/interstone/interstone_rugged-concrete/2.webp",
+      "data/images/interstone/interstone_rugged-concrete/3.webp",
+      "data/images/interstone/interstone_rugged-concrete/4.webp",
+      "data/images/interstone/interstone_rugged-concrete/5.webp",
+      "data/images/interstone/interstone_rugged-concrete/6.webp",
+      "data/images/interstone/interstone_rugged-concrete/7.webp",
+      "data/images/interstone/interstone_rugged-concrete/8.webp",
+      "data/images/interstone/interstone_rugged-concrete/9.webp",
+      "data/images/interstone/interstone_rugged-concrete/10.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_rugged-concrete/1_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/2_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/3_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/4_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/5_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/6_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/7_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/8_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/9_thumb.webp",
+      "data/images/interstone/interstone_rugged-concrete/10_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_rugged-concrete/1_thumb.webp"
+  },
+  {
+    "id": "interstone_airy-concrete",
+    "name": "4044 Airy Concrete",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/airy-concrete",
+    "image": "data/images/interstone/interstone_airy-concrete/1.webp",
+    "images": [
+      "data/images/interstone/interstone_airy-concrete/1.webp",
+      "data/images/interstone/interstone_airy-concrete/2.webp",
+      "data/images/interstone/interstone_airy-concrete/3.webp",
+      "data/images/interstone/interstone_airy-concrete/4.webp",
+      "data/images/interstone/interstone_airy-concrete/5.webp",
+      "data/images/interstone/interstone_airy-concrete/6.webp",
+      "data/images/interstone/interstone_airy-concrete/7.webp",
+      "data/images/interstone/interstone_airy-concrete/8.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_airy-concrete/1_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/2_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/3_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/4_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/5_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/6_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/7_thumb.webp",
+      "data/images/interstone/interstone_airy-concrete/8_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_airy-concrete/1_thumb.webp"
+  },
+  {
+    "id": "interstone_excava",
+    "name": "4046 Excava",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/excava",
+    "image": "data/images/interstone/interstone_excava/1.webp",
+    "images": [
+      "data/images/interstone/interstone_excava/1.webp",
+      "data/images/interstone/interstone_excava/2.webp",
+      "data/images/interstone/interstone_excava/3.webp",
+      "data/images/interstone/interstone_excava/4.webp",
+      "data/images/interstone/interstone_excava/5.webp",
+      "data/images/interstone/interstone_excava/6.webp",
+      "data/images/interstone/interstone_excava/7.webp",
+      "data/images/interstone/interstone_excava/8.webp",
+      "data/images/interstone/interstone_excava/9.webp",
+      "data/images/interstone/interstone_excava/10.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_excava/1_thumb.webp",
+      "data/images/interstone/interstone_excava/2_thumb.webp",
+      "data/images/interstone/interstone_excava/3_thumb.webp",
+      "data/images/interstone/interstone_excava/4_thumb.webp",
+      "data/images/interstone/interstone_excava/5_thumb.webp",
+      "data/images/interstone/interstone_excava/6_thumb.webp",
+      "data/images/interstone/interstone_excava/7_thumb.webp",
+      "data/images/interstone/interstone_excava/8_thumb.webp",
+      "data/images/interstone/interstone_excava/9_thumb.webp",
+      "data/images/interstone/interstone_excava/10_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_excava/1_thumb.webp"
+  },
+  {
+    "id": "interstone_london-grey",
+    "name": "5000 London Grey",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/london-grey",
+    "image": "data/images/interstone/interstone_london-grey/1.webp",
+    "images": [
+      "data/images/interstone/interstone_london-grey/1.webp",
+      "data/images/interstone/interstone_london-grey/2.webp",
+      "data/images/interstone/interstone_london-grey/3.webp",
+      "data/images/interstone/interstone_london-grey/4.webp",
+      "data/images/interstone/interstone_london-grey/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_london-grey/1_thumb.webp",
+      "data/images/interstone/interstone_london-grey/2_thumb.webp",
+      "data/images/interstone/interstone_london-grey/3_thumb.webp",
+      "data/images/interstone/interstone_london-grey/4_thumb.webp",
+      "data/images/interstone/interstone_london-grey/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_london-grey/1_thumb.webp"
+  },
+  {
+    "id": "interstone_piatra-grey",
+    "name": "5003 Piatra Grey",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/piatra-grey",
+    "image": "data/images/interstone/interstone_piatra-grey/1.webp",
+    "images": [
+      "data/images/interstone/interstone_piatra-grey/1.webp",
+      "data/images/interstone/interstone_piatra-grey/2.webp",
+      "data/images/interstone/interstone_piatra-grey/3.webp",
+      "data/images/interstone/interstone_piatra-grey/4.webp",
+      "data/images/interstone/interstone_piatra-grey/5.webp",
+      "data/images/interstone/interstone_piatra-grey/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_piatra-grey/1_thumb.webp",
+      "data/images/interstone/interstone_piatra-grey/2_thumb.webp",
+      "data/images/interstone/interstone_piatra-grey/3_thumb.webp",
+      "data/images/interstone/interstone_piatra-grey/4_thumb.webp",
+      "data/images/interstone/interstone_piatra-grey/5_thumb.webp",
+      "data/images/interstone/interstone_piatra-grey/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_piatra-grey/1_thumb.webp"
+  },
+  {
+    "id": "interstone_vanilla-noir",
+    "name": "5100 Vanilla Noir",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/vanilla-noir",
+    "image": "data/images/interstone/interstone_vanilla-noir/1.webp",
+    "images": [
+      "data/images/interstone/interstone_vanilla-noir/1.webp",
+      "data/images/interstone/interstone_vanilla-noir/2.webp",
+      "data/images/interstone/interstone_vanilla-noir/3.webp",
+      "data/images/interstone/interstone_vanilla-noir/4.webp",
+      "data/images/interstone/interstone_vanilla-noir/5.webp",
+      "data/images/interstone/interstone_vanilla-noir/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_vanilla-noir/1_thumb.webp",
+      "data/images/interstone/interstone_vanilla-noir/2_thumb.webp",
+      "data/images/interstone/interstone_vanilla-noir/3_thumb.webp",
+      "data/images/interstone/interstone_vanilla-noir/4_thumb.webp",
+      "data/images/interstone/interstone_vanilla-noir/5_thumb.webp",
+      "data/images/interstone/interstone_vanilla-noir/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_vanilla-noir/1_thumb.webp"
+  },
+  {
+    "id": "interstone_alpine-mist",
+    "name": "5110 Alpine Mist",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/alpine-mist",
+    "image": "data/images/interstone/interstone_alpine-mist/1.webp",
+    "images": [
+      "data/images/interstone/interstone_alpine-mist/1.webp",
+      "data/images/interstone/interstone_alpine-mist/2.webp",
+      "data/images/interstone/interstone_alpine-mist/3.webp",
+      "data/images/interstone/interstone_alpine-mist/4.webp",
+      "data/images/interstone/interstone_alpine-mist/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_alpine-mist/1_thumb.webp",
+      "data/images/interstone/interstone_alpine-mist/2_thumb.webp",
+      "data/images/interstone/interstone_alpine-mist/3_thumb.webp",
+      "data/images/interstone/interstone_alpine-mist/4_thumb.webp",
+      "data/images/interstone/interstone_alpine-mist/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_alpine-mist/1_thumb.webp"
+  },
+  {
+    "id": "interstone_symphony-grey",
+    "name": "5133 Symphony Grey",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/symphony-grey",
+    "image": "data/images/interstone/interstone_symphony-grey/1.webp",
+    "images": [
+      "data/images/interstone/interstone_symphony-grey/1.webp",
+      "data/images/interstone/interstone_symphony-grey/2.webp",
+      "data/images/interstone/interstone_symphony-grey/3.webp",
+      "data/images/interstone/interstone_symphony-grey/4.webp",
+      "data/images/interstone/interstone_symphony-grey/5.webp",
+      "data/images/interstone/interstone_symphony-grey/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_symphony-grey/1_thumb.webp",
+      "data/images/interstone/interstone_symphony-grey/2_thumb.webp",
+      "data/images/interstone/interstone_symphony-grey/3_thumb.webp",
+      "data/images/interstone/interstone_symphony-grey/4_thumb.webp",
+      "data/images/interstone/interstone_symphony-grey/5_thumb.webp",
+      "data/images/interstone/interstone_symphony-grey/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_symphony-grey/1_thumb.webp"
+  },
+  {
+    "id": "interstone_frosty-carrina",
+    "name": "5141 Frosty Carrina",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/frosty-carrina",
+    "image": "data/images/interstone/interstone_frosty-carrina/1.webp",
+    "images": [
+      "data/images/interstone/interstone_frosty-carrina/1.webp",
+      "data/images/interstone/interstone_frosty-carrina/2.webp",
+      "data/images/interstone/interstone_frosty-carrina/3.webp",
+      "data/images/interstone/interstone_frosty-carrina/4.webp",
+      "data/images/interstone/interstone_frosty-carrina/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_frosty-carrina/1_thumb.webp",
+      "data/images/interstone/interstone_frosty-carrina/2_thumb.webp",
+      "data/images/interstone/interstone_frosty-carrina/3_thumb.webp",
+      "data/images/interstone/interstone_frosty-carrina/4_thumb.webp",
+      "data/images/interstone/interstone_frosty-carrina/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_frosty-carrina/1_thumb.webp"
+  },
+  {
+    "id": "interstone_5143-white-attica",
+    "name": "5143 White Attica",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/5143-white-attica",
+    "image": "data/images/interstone/interstone_5143-white-attica/1.webp",
+    "images": [
+      "data/images/interstone/interstone_5143-white-attica/1.webp",
+      "data/images/interstone/interstone_5143-white-attica/2.webp",
+      "data/images/interstone/interstone_5143-white-attica/3.webp",
+      "data/images/interstone/interstone_5143-white-attica/4.webp",
+      "data/images/interstone/interstone_5143-white-attica/5.webp",
+      "data/images/interstone/interstone_5143-white-attica/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_5143-white-attica/1_thumb.webp",
+      "data/images/interstone/interstone_5143-white-attica/2_thumb.webp",
+      "data/images/interstone/interstone_5143-white-attica/3_thumb.webp",
+      "data/images/interstone/interstone_5143-white-attica/4_thumb.webp",
+      "data/images/interstone/interstone_5143-white-attica/5_thumb.webp",
+      "data/images/interstone/interstone_5143-white-attica/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_5143-white-attica/1_thumb.webp"
+  },
+  {
+    "id": "interstone_taj-royale",
+    "name": "5212 Taj Royale",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/taj-royale",
+    "image": "data/images/interstone/interstone_taj-royale/1.webp",
+    "images": [
+      "data/images/interstone/interstone_taj-royale/1.webp",
+      "data/images/interstone/interstone_taj-royale/2.webp",
+      "data/images/interstone/interstone_taj-royale/3.webp",
+      "data/images/interstone/interstone_taj-royale/4.webp",
+      "data/images/interstone/interstone_taj-royale/5.webp",
+      "data/images/interstone/interstone_taj-royale/6.webp",
+      "data/images/interstone/interstone_taj-royale/7.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_taj-royale/1_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/2_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/3_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/4_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/5_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/6_thumb.webp",
+      "data/images/interstone/interstone_taj-royale/7_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_taj-royale/1_thumb.webp"
+  },
+  {
+    "id": "interstone_dreamy-marfil",
+    "name": "5220 Dreamy Marfil",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/dreamy-marfil",
+    "image": "data/images/interstone/interstone_dreamy-marfil/1.webp",
+    "images": [
+      "data/images/interstone/interstone_dreamy-marfil/1.webp",
+      "data/images/interstone/interstone_dreamy-marfil/2.webp",
+      "data/images/interstone/interstone_dreamy-marfil/3.webp",
+      "data/images/interstone/interstone_dreamy-marfil/4.webp",
+      "data/images/interstone/interstone_dreamy-marfil/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_dreamy-marfil/1_thumb.webp",
+      "data/images/interstone/interstone_dreamy-marfil/2_thumb.webp",
+      "data/images/interstone/interstone_dreamy-marfil/3_thumb.webp",
+      "data/images/interstone/interstone_dreamy-marfil/4_thumb.webp",
+      "data/images/interstone/interstone_dreamy-marfil/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_dreamy-marfil/1_thumb.webp"
+  },
+  {
+    "id": "interstone_black-tempal",
+    "name": "5810 Black Tempal",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/black-tempal",
+    "image": "data/images/interstone/interstone_black-tempal/1.webp",
+    "images": [
+      "data/images/interstone/interstone_black-tempal/1.webp",
+      "data/images/interstone/interstone_black-tempal/2.webp",
+      "data/images/interstone/interstone_black-tempal/3.webp",
+      "data/images/interstone/interstone_black-tempal/4.webp",
+      "data/images/interstone/interstone_black-tempal/5.webp",
+      "data/images/interstone/interstone_black-tempal/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_black-tempal/1_thumb.webp",
+      "data/images/interstone/interstone_black-tempal/2_thumb.webp",
+      "data/images/interstone/interstone_black-tempal/3_thumb.webp",
+      "data/images/interstone/interstone_black-tempal/4_thumb.webp",
+      "data/images/interstone/interstone_black-tempal/5_thumb.webp",
+      "data/images/interstone/interstone_black-tempal/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_black-tempal/1_thumb.webp"
+  },
+  {
+    "id": "interstone_coastal-grey",
+    "name": "6003 Coastal Grey",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/coastal-grey",
+    "image": "data/images/interstone/interstone_coastal-grey/1.webp",
+    "images": [
+      "data/images/interstone/interstone_coastal-grey/1.webp",
+      "data/images/interstone/interstone_coastal-grey/2.webp",
+      "data/images/interstone/interstone_coastal-grey/3.webp",
+      "data/images/interstone/interstone_coastal-grey/4.webp",
+      "data/images/interstone/interstone_coastal-grey/5.webp",
+      "data/images/interstone/interstone_coastal-grey/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_coastal-grey/1_thumb.webp",
+      "data/images/interstone/interstone_coastal-grey/2_thumb.webp",
+      "data/images/interstone/interstone_coastal-grey/3_thumb.webp",
+      "data/images/interstone/interstone_coastal-grey/4_thumb.webp",
+      "data/images/interstone/interstone_coastal-grey/5_thumb.webp",
+      "data/images/interstone/interstone_coastal-grey/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_coastal-grey/1_thumb.webp"
+  },
+  {
+    "id": "interstone_moorland-fog",
+    "name": "6046 Moorland Fog",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/moorland-fog",
+    "image": "data/images/interstone/interstone_moorland-fog/1.webp",
+    "images": [
+      "data/images/interstone/interstone_moorland-fog/1.webp",
+      "data/images/interstone/interstone_moorland-fog/2.webp",
+      "data/images/interstone/interstone_moorland-fog/3.webp",
+      "data/images/interstone/interstone_moorland-fog/4.webp",
+      "data/images/interstone/interstone_moorland-fog/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_moorland-fog/1_thumb.webp",
+      "data/images/interstone/interstone_moorland-fog/2_thumb.webp",
+      "data/images/interstone/interstone_moorland-fog/3_thumb.webp",
+      "data/images/interstone/interstone_moorland-fog/4_thumb.webp",
+      "data/images/interstone/interstone_moorland-fog/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_moorland-fog/1_thumb.webp"
+  },
+  {
+    "id": "interstone_bianco-drift",
+    "name": "6131 Bianco Drift",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/bianco-drift",
+    "image": "data/images/interstone/interstone_bianco-drift/1.webp",
+    "images": [
+      "data/images/interstone/interstone_bianco-drift/1.webp",
+      "data/images/interstone/interstone_bianco-drift/2.webp",
+      "data/images/interstone/interstone_bianco-drift/3.webp",
+      "data/images/interstone/interstone_bianco-drift/4.webp",
+      "data/images/interstone/interstone_bianco-drift/5.webp",
+      "data/images/interstone/interstone_bianco-drift/6.webp",
+      "data/images/interstone/interstone_bianco-drift/7.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_bianco-drift/1_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/2_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/3_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/4_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/5_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/6_thumb.webp",
+      "data/images/interstone/interstone_bianco-drift/7_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_bianco-drift/1_thumb.webp"
+  },
+  {
+    "id": "interstone_woodlands",
+    "name": "6338 Woodlands",
+    "category": "Кварцевый камень Caesarstone",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/caesarstone/colors/woodlands",
+    "image": "data/images/interstone/interstone_woodlands/1.webp",
+    "images": [
+      "data/images/interstone/interstone_woodlands/1.webp",
+      "data/images/interstone/interstone_woodlands/2.webp",
+      "data/images/interstone/interstone_woodlands/3.webp",
+      "data/images/interstone/interstone_woodlands/4.webp",
+      "data/images/interstone/interstone_woodlands/5.webp",
+      "data/images/interstone/interstone_woodlands/6.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_woodlands/1_thumb.webp",
+      "data/images/interstone/interstone_woodlands/2_thumb.webp",
+      "data/images/interstone/interstone_woodlands/3_thumb.webp",
+      "data/images/interstone/interstone_woodlands/4_thumb.webp",
+      "data/images/interstone/interstone_woodlands/5_thumb.webp",
+      "data/images/interstone/interstone_woodlands/6_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_woodlands/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-104-traditional-design",
+    "name": "GQ 104 Traditional Design",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-104-traditional-design",
+    "image": "data/images/interstone/interstone_gq-104-traditional-design/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-104-traditional-design/1.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/2.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/3.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/4.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-104-traditional-design/1_thumb.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/2_thumb.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/3_thumb.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/4_thumb.webp",
+      "data/images/interstone/interstone_gq-104-traditional-design/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-104-traditional-design/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-112-high-tech-style",
+    "name": "GQ 112 High-Tech Style",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-112-high-tech-style",
+    "image": "data/images/interstone/interstone_gq-112-high-tech-style/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-112-high-tech-style/1.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/2.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/3.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/4.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-112-high-tech-style/1_thumb.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/2_thumb.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/3_thumb.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/4_thumb.webp",
+      "data/images/interstone/interstone_gq-112-high-tech-style/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-112-high-tech-style/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-122-eclectic-diversity",
+    "name": "GQ 122 Eclectic Diversity",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-122-eclectic-diversity",
+    "image": "data/images/interstone/interstone_gq-122-eclectic-diversity/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/1.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/2.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/3.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/4.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/1_thumb.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/2_thumb.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/3_thumb.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/4_thumb.webp",
+      "data/images/interstone/interstone_gq-122-eclectic-diversity/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-122-eclectic-diversity/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-403-modern-aspect",
+    "name": "GQ 403 Modern Aspect",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-403-modern-aspect",
+    "image": "data/images/interstone/interstone_gq-403-modern-aspect/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-403-modern-aspect/1.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/2.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/3.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/4.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-403-modern-aspect/1_thumb.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/2_thumb.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/3_thumb.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/4_thumb.webp",
+      "data/images/interstone/interstone_gq-403-modern-aspect/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-403-modern-aspect/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-403m-modern-aspect",
+    "name": "GQ 403M Modern Aspect",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-403m-modern-aspect",
+    "image": "data/images/interstone/interstone_gq-403m-modern-aspect/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-403m-modern-aspect/1.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/2.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/3.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/4.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-403m-modern-aspect/1_thumb.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/2_thumb.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/3_thumb.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/4_thumb.webp",
+      "data/images/interstone/interstone_gq-403m-modern-aspect/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-403m-modern-aspect/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-444-timeless-classic",
+    "name": "GQ 444 Timeless Classic",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-444-timeless-classic",
+    "image": "data/images/interstone/interstone_gq-444-timeless-classic/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-444-timeless-classic/1.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/2.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/3.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/4.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-444-timeless-classic/1_thumb.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/2_thumb.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/3_thumb.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/4_thumb.webp",
+      "data/images/interstone/interstone_gq-444-timeless-classic/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-444-timeless-classic/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-444m-timeless-classic",
+    "name": "GQ 444M Timeless Ð¡lassic",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-444m-timeless-classic",
+    "image": "data/images/interstone/interstone_gq-444m-timeless-classic/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-444m-timeless-classic/1.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/2.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/3.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/4.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-444m-timeless-classic/1_thumb.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/2_thumb.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/3_thumb.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/4_thumb.webp",
+      "data/images/interstone/interstone_gq-444m-timeless-classic/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-444m-timeless-classic/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-500-colonial-style",
+    "name": "GQ 500 Colonial Style",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-500-colonial-style",
+    "image": "data/images/interstone/interstone_gq-500-colonial-style/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-500-colonial-style/1.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/2.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/3.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/4.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-500-colonial-style/1_thumb.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/2_thumb.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/3_thumb.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/4_thumb.webp",
+      "data/images/interstone/interstone_gq-500-colonial-style/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-500-colonial-style/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-503-minimalist-perfection",
+    "name": "GQ 503 Minimalist Perfection",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-503-minimalist-perfection",
+    "image": "data/images/interstone/interstone_gq-503-minimalist-perfection/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/1.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/2.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/3.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/4.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/1_thumb.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/2_thumb.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/3_thumb.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/4_thumb.webp",
+      "data/images/interstone/interstone_gq-503-minimalist-perfection/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-503-minimalist-perfection/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-510-gothic-black",
+    "name": "GQ 510 Gothic Black",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-510-gothic-black",
+    "image": "data/images/interstone/interstone_gq-510-gothic-black/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-510-gothic-black/1.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/2.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/3.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/4.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-510-gothic-black/1_thumb.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/2_thumb.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/3_thumb.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/4_thumb.webp",
+      "data/images/interstone/interstone_gq-510-gothic-black/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-510-gothic-black/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-510m-gothic-black",
+    "name": "GQ 510M Gothic Black",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-510m-gothic-black",
+    "image": "data/images/interstone/interstone_gq-510m-gothic-black/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-510m-gothic-black/1.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/2.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/3.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/4.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-510m-gothic-black/1_thumb.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/2_thumb.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/3_thumb.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/4_thumb.webp",
+      "data/images/interstone/interstone_gq-510m-gothic-black/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-510m-gothic-black/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-511-japanese-harmony",
+    "name": "GQ 511 Japanese Harmony",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-511-japanese-harmony",
+    "image": "data/images/interstone/interstone_gq-511-japanese-harmony/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-511-japanese-harmony/1.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/2.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/3.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/4.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-511-japanese-harmony/1_thumb.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/2_thumb.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/3_thumb.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/4_thumb.webp",
+      "data/images/interstone/interstone_gq-511-japanese-harmony/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-511-japanese-harmony/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-511m-japanese-harmony",
+    "name": "GQ 511M Japanese Harmony",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-511m-japanese-harmony",
+    "image": "data/images/interstone/interstone_gq-511m-japanese-harmony/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/1.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/2.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/3.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/4.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/1_thumb.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/2_thumb.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/3_thumb.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/4_thumb.webp",
+      "data/images/interstone/interstone_gq-511m-japanese-harmony/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-511m-japanese-harmony/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-515-scandinavian-elegance",
+    "name": "GQ 515 Scandinavian Elegance",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-515-scandinavian-elegance",
+    "image": "data/images/interstone/interstone_gq-515-scandinavian-elegance/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/1.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/2.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/3.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/4.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/1_thumb.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/2_thumb.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/3_thumb.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/4_thumb.webp",
+      "data/images/interstone/interstone_gq-515-scandinavian-elegance/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-515-scandinavian-elegance/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-520-organic-modern",
+    "name": "GQ 520 Organic Modern",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-520-organic-modern",
+    "image": "data/images/interstone/interstone_gq-520-organic-modern/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-520-organic-modern/1.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/2.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/3.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/4.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-520-organic-modern/1_thumb.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/2_thumb.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/3_thumb.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/4_thumb.webp",
+      "data/images/interstone/interstone_gq-520-organic-modern/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-520-organic-modern/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-520m-organic-modern",
+    "name": "GQ 520M Organic Modern",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-520m-organic-modern",
+    "image": "data/images/interstone/interstone_gq-520m-organic-modern/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-520m-organic-modern/1.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/2.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/3.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/4.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-520m-organic-modern/1_thumb.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/2_thumb.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/3_thumb.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/4_thumb.webp",
+      "data/images/interstone/interstone_gq-520m-organic-modern/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-520m-organic-modern/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-522-bohemian-luxury",
+    "name": "GQ 522 Bohemian Luxury",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-522-bohemian-luxury",
+    "image": "data/images/interstone/interstone_gq-522-bohemian-luxury/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/1.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/2.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/3.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/4.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/1_thumb.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/2_thumb.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/3_thumb.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/4_thumb.webp",
+      "data/images/interstone/interstone_gq-522-bohemian-luxury/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-522-bohemian-luxury/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-531-vintage-pattern",
+    "name": "GQ 531 Vintage Pattern",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-531-vintage-pattern",
+    "image": "data/images/interstone/interstone_gq-531-vintage-pattern/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-531-vintage-pattern/1.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/2.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/3.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/4.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-531-vintage-pattern/1_thumb.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/2_thumb.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/3_thumb.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/4_thumb.webp",
+      "data/images/interstone/interstone_gq-531-vintage-pattern/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-531-vintage-pattern/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-538-art-deco",
+    "name": "GQ 538 Art Deco",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-538-art-deco",
+    "image": "data/images/interstone/interstone_gq-538-art-deco/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-538-art-deco/1.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/2.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/3.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/4.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-538-art-deco/1_thumb.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/2_thumb.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/3_thumb.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/4_thumb.webp",
+      "data/images/interstone/interstone_gq-538-art-deco/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-538-art-deco/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-541-zen-serenity",
+    "name": "GQ 541 Zen Serenity",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-541-zen-serenity",
+    "image": "data/images/interstone/interstone_gq-541-zen-serenity/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-541-zen-serenity/1.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/2.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/3.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/4.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-541-zen-serenity/1_thumb.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/2_thumb.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/3_thumb.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/4_thumb.webp",
+      "data/images/interstone/interstone_gq-541-zen-serenity/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-541-zen-serenity/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-543-fusion-inspiration",
+    "name": "GQ 543 Fusion Inspiration",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-543-fusion-inspiration",
+    "image": "data/images/interstone/interstone_gq-543-fusion-inspiration/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/1.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/2.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/3.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/4.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/1_thumb.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/2_thumb.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/3_thumb.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/4_thumb.webp",
+      "data/images/interstone/interstone_gq-543-fusion-inspiration/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-543-fusion-inspiration/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-543m-fusion-inspiration",
+    "name": "GQ 543M Fusion Inspiration",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-543m-fusion-inspiration",
+    "image": "data/images/interstone/interstone_gq-543m-fusion-inspiration/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/1.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/2.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/3.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/4.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/1_thumb.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/2_thumb.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/3_thumb.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/4_thumb.webp",
+      "data/images/interstone/interstone_gq-543m-fusion-inspiration/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-543m-fusion-inspiration/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-555-urban-loft",
+    "name": "GQ 555 Urban Loft",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-555-urban-loft",
+    "image": "data/images/interstone/interstone_gq-555-urban-loft/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-555-urban-loft/1.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/2.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/3.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/4.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-555-urban-loft/1_thumb.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/2_thumb.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/3_thumb.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/4_thumb.webp",
+      "data/images/interstone/interstone_gq-555-urban-loft/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-555-urban-loft/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-558-charming-provence",
+    "name": "GQ 558 Charming Provence",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-558-charming-provence",
+    "image": "data/images/interstone/interstone_gq-558-charming-provence/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-558-charming-provence/1.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/2.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/3.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/4.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-558-charming-provence/1_thumb.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/2_thumb.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/3_thumb.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/4_thumb.webp",
+      "data/images/interstone/interstone_gq-558-charming-provence/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-558-charming-provence/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-560m-rustic-charm",
+    "name": "GQ 560M Rustic Charm",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-560m-rustic-charm",
+    "image": "data/images/interstone/interstone_gq-560m-rustic-charm/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-560m-rustic-charm/1.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/2.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/3.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/4.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-560m-rustic-charm/1_thumb.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/2_thumb.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/3_thumb.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/4_thumb.webp",
+      "data/images/interstone/interstone_gq-560m-rustic-charm/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-560m-rustic-charm/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-575-nordic-light",
+    "name": "GQ 575 Nordic Light",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-575-nordic-light",
+    "image": "data/images/interstone/interstone_gq-575-nordic-light/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-575-nordic-light/1.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/2.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/3.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/4.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-575-nordic-light/1_thumb.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/2_thumb.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/3_thumb.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/4_thumb.webp",
+      "data/images/interstone/interstone_gq-575-nordic-light/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-575-nordic-light/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-590-baroque-glow",
+    "name": "GQ 590 Baroque Glow",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-590-baroque-glow",
+    "image": "data/images/interstone/interstone_gq-590-baroque-glow/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-590-baroque-glow/1.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/2.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/3.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/4.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-590-baroque-glow/1_thumb.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/2_thumb.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/3_thumb.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/4_thumb.webp",
+      "data/images/interstone/interstone_gq-590-baroque-glow/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-590-baroque-glow/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-677-industrial-space",
+    "name": "GQ 677 Industrial Space",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-677-industrial-space",
+    "image": "data/images/interstone/interstone_gq-677-industrial-space/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-677-industrial-space/1.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/2.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/3.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/4.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-677-industrial-space/1_thumb.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/2_thumb.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/3_thumb.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/4_thumb.webp",
+      "data/images/interstone/interstone_gq-677-industrial-space/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-677-industrial-space/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-711-retro-spirit",
+    "name": "GQ 711 Retro Spirit",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-711-retro-spirit",
+    "image": "data/images/interstone/interstone_gq-711-retro-spirit/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-711-retro-spirit/1.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/2.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/3.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/4.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-711-retro-spirit/1_thumb.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/2_thumb.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/3_thumb.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/4_thumb.webp",
+      "data/images/interstone/interstone_gq-711-retro-spirit/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-711-retro-spirit/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-716-futuristic-edge",
+    "name": "GQ 716 Futuristic Edge",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-716-futuristic-edge",
+    "image": "data/images/interstone/interstone_gq-716-futuristic-edge/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-716-futuristic-edge/1.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/2.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/3.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/4.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-716-futuristic-edge/1_thumb.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/2_thumb.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/3_thumb.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/4_thumb.webp",
+      "data/images/interstone/interstone_gq-716-futuristic-edge/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-716-futuristic-edge/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-723-italian-grace",
+    "name": "GQ 723 Italian Grace",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-723-italian-grace",
+    "image": "data/images/interstone/interstone_gq-723-italian-grace/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-723-italian-grace/1.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/2.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/3.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/4.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-723-italian-grace/1_thumb.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/2_thumb.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/3_thumb.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/4_thumb.webp",
+      "data/images/interstone/interstone_gq-723-italian-grace/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-723-italian-grace/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-727-bauhaus-vision",
+    "name": "GQ 727 Bauhaus Vision",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-727-bauhaus-vision",
+    "image": "data/images/interstone/interstone_gq-727-bauhaus-vision/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/1.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/2.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/3.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/4.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/1_thumb.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/2_thumb.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/3_thumb.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/4_thumb.webp",
+      "data/images/interstone/interstone_gq-727-bauhaus-vision/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-727-bauhaus-vision/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-760-mexican-flair",
+    "name": "GQ 760 Mexican Flair",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-760-mexican-flair",
+    "image": "data/images/interstone/interstone_gq-760-mexican-flair/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-760-mexican-flair/1.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/2.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/3.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/4.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-760-mexican-flair/1_thumb.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/2_thumb.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/3_thumb.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/4_thumb.webp",
+      "data/images/interstone/interstone_gq-760-mexican-flair/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-760-mexican-flair/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-777-eco-living",
+    "name": "GQ 777 Eco Living",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-777-eco-living",
+    "image": "data/images/interstone/interstone_gq-777-eco-living/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-777-eco-living/1.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/2.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/3.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/4.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-777-eco-living/1_thumb.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/2_thumb.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/3_thumb.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/4_thumb.webp",
+      "data/images/interstone/interstone_gq-777-eco-living/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-777-eco-living/1_thumb.webp"
+  },
+  {
+    "id": "interstone_gq-797-tropical-vibe",
+    "name": "GQ 797 Tropical Vibe",
+    "category": "Кварцевый камень GRANDEX Quartz",
+    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-797-tropical-vibe",
+    "image": "data/images/interstone/interstone_gq-797-tropical-vibe/1.webp",
+    "images": [
+      "data/images/interstone/interstone_gq-797-tropical-vibe/1.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/2.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/3.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/4.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/5.webp"
+    ],
+    "thumbs": [
+      "data/images/interstone/interstone_gq-797-tropical-vibe/1_thumb.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/2_thumb.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/3_thumb.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/4_thumb.webp",
+      "data/images/interstone/interstone_gq-797-tropical-vibe/5_thumb.webp"
+    ],
+    "thumb": "data/images/interstone/interstone_gq-797-tropical-vibe/1_thumb.webp"
+  },
+  {
     "id": "ldsp_blue_sky_goluboe_nebo_ems",
     "name": "ЛДСП BLUE SKY (Голубое небо) (ЕМС)",
     "category": "ЛДСП",
