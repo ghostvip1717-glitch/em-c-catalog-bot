@@ -20,6 +20,7 @@ from bs4 import BeautifulSoup
 import image_utils
 import scrape_adilet
 import scrape_interstone
+import scrape_kira
 
 BASE_URL = "https://www.em-c.kz"
 
@@ -119,6 +120,14 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
         print(f"[scrape] ошибка при скрапинге adilet.net: {exc}", file=sys.stderr)
 
+    print("[scrape] kira-group.kz (плёнка ПВХ)...", file=sys.stderr)
+    try:
+        kira_items = scrape_kira.scrape_all()
+        print(f"[scrape]   найдено {len(kira_items)} позиций", file=sys.stderr)
+        all_items.extend(kira_items)
+    except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
+        print(f"[scrape] ошибка при скрапинге kira-group.kz: {exc}", file=sys.stderr)
+
     print("[scrape] interstone.kz (акриловый камень GRANDEX)...", file=sys.stderr)
     try:
         interstone_items = scrape_interstone.scrape_all()
@@ -135,27 +144,31 @@ def main() -> None:
 
     # Скачиваем и сжимаем фото каждого товара локально (data/images/), вместо
     # того чтобы хранить в materials.json прямые внешние ссылки на em-c.kz/
-    # adilet.net/interstone.kz. Инкрементально: уже скачанные фото не трогаем
-    # (см. docstring image_utils.py), поэтому при ежедневном запуске обрабатываются
-    # по сути только новые товары.
+    # adilet.net/interstone.kz/kira-group.kz. Инкрементально: уже скачанные
+    # фото не трогаем (см. docstring image_utils.py), поэтому при ежедневном
+    # запуске обрабатываются по сути только новые товары.
     print("[scrape] скачивание и сжатие фото...", file=sys.stderr)
     for item in unique_items:
         if item["id"].startswith("adilet_"):
             site = "adilet"
         elif item["id"].startswith("interstone_"):
             site = "interstone"
+        elif item["id"].startswith("kira_"):
+            site = "kira"
         else:
             site = "emc"
         image_utils.process_item_images(item, site)
 
     # Чистим фото товаров, которых больше нет в свежем каталоге (сняты с
     # продажи у источника и т.п.) — иначе data/images/ будет бесконечно расти.
-    ids_by_site: dict[str, set] = {"emc": set(), "adilet": set(), "interstone": set()}
+    ids_by_site: dict[str, set] = {"emc": set(), "adilet": set(), "interstone": set(), "kira": set()}
     for item in unique_items:
         if item["id"].startswith("adilet_"):
             ids_by_site["adilet"].add(item["id"])
         elif item["id"].startswith("interstone_"):
             ids_by_site["interstone"].add(item["id"])
+        elif item["id"].startswith("kira_"):
+            ids_by_site["kira"].add(item["id"])
         else:
             ids_by_site["emc"].add(item["id"])
     image_utils.cleanup_orphans(ids_by_site)
