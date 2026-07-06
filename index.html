@@ -45,6 +45,11 @@
     --quickrow-bg: #DDD5C8;
     --safetop-tint-rgb: 237,232,224;
     --splash-tint-rgb: 255,255,255;
+    /* Рамка карточек/превью тем — "0,0,0" для светлых тем (тёмная рамка на
+       светлом), "255,255,255" для тёмных (светлая рамка на тёмном). Нельзя
+       использовать один и тот же цвет всегда — на тёмном фоне тёмная рамка
+       попросту не видна. */
+    --card-border-rgb: 0,0,0;
     /* В fullscreen-режиме Telegram рисует СВОИ элементы (кнопка "Закрыть"
        слева, стрелка/меню справа) поверх верхней части экрана — это не часть
        нашего DOM, а собственный оверлей клиента Telegram, поэтому его нельзя
@@ -204,23 +209,31 @@
   }
 
   /* Карточка темы в переключателе — квадратик-превью (фон + акцент одним
-     кружком поверх) плюс название, тем же паттерном, что и drawer-group. */
+     кружком поверх) плюс название, тем же паттерном, что и drawer-group.
+     ВАЖНО про индикатор активной темы: раньше рамка активного пункта была
+     var(--button) — то есть цветом АКТИВНОЙ СЕЙЧАС темы. Из-за этого, если
+     совпадали похожие тёплые тона (например коричневая рамка на бежевом
+     превью "Кофе с молоком"), рамка почти не была видна. Теперь кольцо
+     вокруг превью — ФИКСИРОВАННЫЙ синий цвет (#2F80ED), который не входит
+     ни в одну из 6 палитр, плюс белый/секбг зазор между превью и кольцом —
+     так видно гарантированно на любом фоне, а не только на части тем. */
   .theme-item{
     display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;
     background:var(--secbg);margin-bottom:8px;cursor:pointer;
-    border:2px solid transparent;
   }
-  .theme-item.active{border-color:var(--button);}
   .theme-swatch{
     width:36px;height:36px;border-radius:10px;flex:0 0 auto;position:relative;
-    border:1px solid rgba(0,0,0,.08);overflow:hidden;
+    border:1px solid rgba(var(--card-border-rgb, 0,0,0), .12);overflow:hidden;
+  }
+  .theme-item.active .theme-swatch{
+    box-shadow:0 0 0 2px var(--secbg), 0 0 0 4px #2F80ED;
   }
   .theme-swatch .tsw-accent{
     position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;
     border:1.5px solid rgba(255,255,255,.85);
   }
   .theme-name{font-weight:600;font-size:13.5px;color:var(--text);}
-  .theme-check{margin-left:auto;color:var(--button);font-weight:700;font-size:15px;flex:0 0 auto;}
+  .theme-check{margin-left:auto;color:#2F80ED;font-weight:700;font-size:15px;flex:0 0 auto;}
 
   .drawer-group{margin-bottom:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
   .drawer-group-header{
@@ -310,15 +323,20 @@
   }
   .section-header:first-of-type{padding-top:2px;}
 
-  /* Тонкая граница + едва заметная тень — раньше карточка (--secbg) на
-     некоторых темах почти не отличалась по тону от общего фона (--bg) и
-     сливалась с ним; теперь у неё всегда свой видимый контур независимо от
-     темы. */
+  /* Рамка + тень — раньше карточка (--secbg) на некоторых темах почти не
+     отличалась по тону от общего фона (--bg) и сливалась с ним. Рамка теперь
+     НЕ на var(--line) (тот сам по себе бывает светлее фона в тёмных темах,
+     видно слабо), а на прозрачном чёрном/белом относительно ТЕКСТА темы —
+     --card-border-rgb хранит "0,0,0" для светлых тем и "255,255,255" для
+     тёмных (см. THEMES в скрипте), так что рамка гарантированно видна в
+     любой теме. Тень — универсальная (чёрная полупрозрачная работает как
+     мягкая тень-контактная линия даже на тёмном фоне, просто менее заметно,
+     чем на светлом/бежевом — там основную работу делает рамка). */
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;
-    border:1px solid var(--line);
-    box-shadow:0 1px 3px rgba(0,0,0,.06);
+    border:1px solid rgba(var(--card-border-rgb, 0,0,0), .12);
+    box-shadow:0 1px 3px rgba(0,0,0,.15);
     transition:transform .12s ease;
     scroll-margin-top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
   }
@@ -359,7 +377,11 @@
   .copy-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
   .copy-icon-btn svg{width:14px;height:14px;}
 
-  .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
+  /* border-top — тонкая линия-разделитель между фото и плашкой с названием,
+     вместо резкого стыка "текстура/плоский белый блок" (тот же var(--line),
+     что и у остальных разделителей в приложении — единый язык, не новый
+     цвет). */
+  .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--line);}
   /* На тон светлее заголовка категории (--text-2 против --text у
      .section-header) — разница в цвете плюс в размере/весе сразу читается
      глазом, какой уровень важнее. Подпись категории под названием убрана
@@ -694,7 +716,7 @@
         '--bg': '#EDE8E0', '--text': '#2B2620', '--text-2': '#4A4139', '--hint': '#7D7263', '--hint-strong': '#55493C',
         '--link': '#A84E1A', '--button': '#A84E1A', '--button-text': '#ffffff',
         '--secbg': '#FFFFFF', '--line': '#DED4C4', '--quickrow-bg': '#DDD5C8',
-        '--safetop-tint-rgb': '255,255,255', '--splash-tint-rgb': '255,255,255'
+        '--safetop-tint-rgb': '255,255,255', '--splash-tint-rgb': '255,255,255', '--card-border-rgb': '0,0,0'
       }
     },
     warmstone: {
@@ -703,7 +725,7 @@
         '--bg': '#948A7E', '--text': '#241F1A', '--text-2': '#453C33', '--hint': '#7D7367', '--hint-strong': '#332C25',
         '--link': '#9B5215', '--button': '#9B5215', '--button-text': '#ffffff',
         '--secbg': '#FBF8F4', '--line': '#DDD5C8', '--quickrow-bg': '#C7BDAF',
-        '--safetop-tint-rgb': '251,248,244', '--splash-tint-rgb': '251,248,244'
+        '--safetop-tint-rgb': '251,248,244', '--splash-tint-rgb': '251,248,244', '--card-border-rgb': '0,0,0'
       }
     },
     darkpremium: {
@@ -712,7 +734,7 @@
         '--bg': '#211E1C', '--text': '#EDE7DF', '--text-2': '#C9C1B4', '--hint': '#A69C8E', '--hint-strong': '#C7BFB3',
         '--link': '#D97B4F', '--button': '#D97B4F', '--button-text': '#211E1C',
         '--secbg': '#2C2825', '--line': '#4A433C', '--quickrow-bg': '#33302B',
-        '--safetop-tint-rgb': '44,40,37', '--splash-tint-rgb': '44,40,37'
+        '--safetop-tint-rgb': '44,40,37', '--splash-tint-rgb': '44,40,37', '--card-border-rgb': '255,255,255'
       }
     },
     latte: {
@@ -721,7 +743,7 @@
         '--bg': '#E8DFD3', '--text': '#3B2E24', '--text-2': '#5C4B3B', '--hint': '#7C6C59', '--hint-strong': '#4C3E30',
         '--link': '#7A4E24', '--button': '#7A4E24', '--button-text': '#ffffff',
         '--secbg': '#FFFDF9', '--line': '#D3C6B2', '--quickrow-bg': '#D8CBB8',
-        '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249'
+        '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249', '--card-border-rgb': '0,0,0'
       }
     },
     emerald: {
@@ -730,7 +752,7 @@
         '--bg': '#F3EFE6', '--text': '#1E2A22', '--text-2': '#3E4C43', '--hint': '#5E6A60', '--hint-strong': '#2E3D33',
         '--link': '#116B45', '--button': '#116B45', '--button-text': '#ffffff',
         '--secbg': '#FDFCFA', '--line': '#D2CAB5', '--quickrow-bg': '#D4C9B0',
-        '--safetop-tint-rgb': '253,252,250', '--splash-tint-rgb': '253,252,250'
+        '--safetop-tint-rgb': '253,252,250', '--splash-tint-rgb': '253,252,250', '--card-border-rgb': '0,0,0'
       }
     },
     indigo: {
@@ -739,7 +761,7 @@
         '--bg': '#1B1A2E', '--text': '#EDEAF5', '--text-2': '#C6C1DA', '--hint': '#A19BC0', '--hint-strong': '#B5B0CC',
         '--link': '#BE8749', '--button': '#BE8749', '--button-text': '#1B1A2E',
         '--secbg': '#2E2C4D', '--line': '#454268', '--quickrow-bg': '#3A3768',
-        '--safetop-tint-rgb': '46,44,77', '--splash-tint-rgb': '46,44,77'
+        '--safetop-tint-rgb': '46,44,77', '--splash-tint-rgb': '46,44,77', '--card-border-rgb': '255,255,255'
       }
     }
   };
