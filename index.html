@@ -634,33 +634,37 @@
     } catch(e){}
   }
 
-  // ---- гостевая книга: при каждом реальном открытии каталога тихо
-  // отправляем "записку" (кто и когда зашёл) в Google-таблицу через
-  // Apps Script Web App — см. doPost там. Логируем именно факт открытия
-  // страницы (а не "/start" боту), потому что открытие мини-аппа по кнопке
-  // меню НЕ отправляет "/start" повторно — это единственное событие,
-  // которое реально происходит при каждом заходе, вне зависимости от того,
-  // писал ли человек боту вообще. Отправляем через fetch БЕЗ явного
-  // Content-Type: application/json — тело всё равно строка JSON, но браузер
-  // по умолчанию шлёт её как text/plain, а значит без CORS preflight-запроса
-  // (Apps Script Web App его не поддерживает и обычная json-отправка
-  // с preflight у него не проходит). doPost сам делает JSON.parse(...),
-  // так что на сервере разницы нет. Ошибки сети/блокировщиков гасим молча —
-  // сбой аналитики не должен ломать сам каталог.
+  // ---- гостевая книга: при каждом реальном открытии каталога, смене
+  // категории/раздела и просмотре товара тихо отправляем "записку" в
+  // Google-таблицу через Apps Script Web App — см. doPost там. Открытие
+  // страницы логируем, а не "/start" боту, потому что открытие мини-аппа
+  // по кнопке меню НЕ отправляет "/start" повторно — это единственное
+  // событие, которое реально происходит при каждом заходе, вне зависимости
+  // от того, писал ли человек боту вообще. Отправляем через fetch БЕЗ
+  // явного Content-Type: application/json — тело всё равно строка JSON, но
+  // браузер по умолчанию шлёт её как text/plain, а значит без CORS
+  // preflight-запроса (Apps Script Web App его не поддерживает, а обычная
+  // json-отправка с preflight у него не проходит). doPost сам делает
+  // JSON.parse(...), так что на сервере разницы нет. Ошибки сети/
+  // блокировщиков гасим молча — сбой аналитики не должен ломать каталог.
   var GUESTBOOK_URL = 'https://script.google.com/macros/s/AKfycbx1uRPwHl18b11ir55cTSYmpaoJDF5ejyNWVI1mtA9C4lzyoKmdtaG1Ljb6gSHjKHWn/exec';
-  try {
-    var tgUser = (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) || null;
-    var guestName = tgUser ? [tgUser.first_name, tgUser.last_name].filter(Boolean).join(' ') : '';
-    fetch(GUESTBOOK_URL, {
-      method: 'POST',
-      body: JSON.stringify({
-        name: guestName,
-        username: (tgUser && tgUser.username) ? '@' + tgUser.username : '',
-        telegram_id: tgUser ? tgUser.id : '',
-        category: ''
-      })
-    }).catch(function(){});
-  } catch(e){}
+  function logGuestbook(categoryOrItem){
+    try {
+      var tgUser = (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) || null;
+      var guestName = tgUser ? [tgUser.first_name, tgUser.last_name].filter(Boolean).join(' ') : '';
+      fetch(GUESTBOOK_URL, {
+        method: 'POST',
+        body: JSON.stringify({
+          name: guestName,
+          username: (tgUser && tgUser.username) ? '@' + tgUser.username : '',
+          telegram_id: tgUser ? tgUser.id : '',
+          category: categoryOrItem || '',
+          platform: (tg && tg.platform) || ''
+        })
+      }).catch(function(){});
+    } catch(e){}
+  }
+  logGuestbook('');
 
   // ---- safe area: в fullscreen Telegram рисует СВОИ контролы (Закрыть слева,
   // стрелка/меню справа) поверх верхней полосы экрана — это не элементы
@@ -1378,6 +1382,19 @@
     return 'cat:' + state.category;
   }
 
+  // Человекочитаемая подпись для гостевой книги — превращает технический
+  // ключ filterStateKey() в то, что реально хочется увидеть в таблице.
+  function categoryLogLabel(key){
+    if (key === 'fav') return '★ Избранное';
+    if (key === 'all') return 'Все материалы';
+    if (key.indexOf('site:') === 0) {
+      var meta = SITE_META[key.slice(5)];
+      return meta ? meta.subtitle : key;
+    }
+    if (key.indexOf('cat:') === 0) return key.slice(4);
+    return key;
+  }
+
   // ---- фоновая предзагрузка полноразмерных фото ----
   // Пока пользователь листает сетку карточек (там грузятся только лёгкие
   // превью), в фоне тихо подгружаем полноразмерные фото карточек, которые
@@ -1513,6 +1530,12 @@
     var filterChanged = lastFilterKey !== null && newFilterKey !== lastFilterKey;
     if (filterChanged) {
       scrollPositions[lastFilterKey] = window.scrollY;
+      // Гостевая книга: логируем реальную смену категории/раздела (не сам
+      // первый рендер при открытии — тот уже залогирован отдельно выше по
+      // файлу) и не логируем повторно на каждый ввод в поиск — filterStateKey
+      // от поискового запроса не зависит, так что filterChanged тут true
+      // только при настоящей смене категории/сайта/избранного.
+      logGuestbook(categoryLogLabel(newFilterKey));
     }
 
     var filtered = state.items.filter(matches);
@@ -1742,6 +1765,11 @@
     viewerState.idx = 0;
     viewerState.currentItem = item;
     console.log('[catalog] открыт просмотрщик:', item.id, '— фото:', imgs.length);
+    // Гостевая книга: одна запись на товар. renderViewerItem вызывается и при
+    // первом открытии (openViewer), и при вертикальном свайпе между товарами
+    // (goToVerticalItem) — оба пути логируются здесь один раз, а не на каждое
+    // пролистанное фото внутри собственной галереи товара (см. vtrack ниже).
+    logGuestbook(item.category + ' — ' + item.name);
 
     els.vtrack.innerHTML = '';
     imgs.forEach(function(src, i){
