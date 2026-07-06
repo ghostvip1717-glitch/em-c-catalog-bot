@@ -196,6 +196,16 @@
   .quick-popover-item:active{background:rgba(0,0,0,0.05);}
   .quick-popover-item.active{color:var(--button);font-weight:700;}
   .quick-popover-item .n{color:var(--hint);font-size:11px;flex:0 0 auto;}
+  /* Подзаголовок смысловой подгруппы внутри popover (напр. "Плёнка"/"Ткани",
+     "Акрил"/"Кварц") — тонкая линия сверху отделяет от предыдущей группы,
+     сам текст мельче и приглушённее обычного пункта, чтобы не путался с ним. */
+  .quick-popover-subheader{
+    padding:10px 12px 4px;font-size:11px;font-weight:700;letter-spacing:.03em;
+    text-transform:uppercase;color:var(--hint);
+  }
+  .quick-popover-subheader:not(:first-child){
+    margin-top:4px;border-top:1px solid var(--line);
+  }
 
   .drawer-item{
     padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
@@ -827,6 +837,20 @@
   };
   var SITE_ORDER = ['emc', 'adilet', 'interstone'];
 
+  // Внутри одной иконки-источника категории дополнительно делятся на
+  // смысловые подгруппы (Плёнка/Ткани, Акрил/Кварц), чтобы popover не
+  // выглядел одним плоским списком вперемешку. Тоже по префиксу названия —
+  // новые категории скрапера подхватятся без правок этой функции, если
+  // следуют тем же префиксам, что и siteGroupOf выше.
+  function popoverSubGroupOf(catName){
+    if (catName.indexOf('ПВХ плёнка') === 0) return 'Плёнка';
+    if (catName.indexOf('Ткани:') === 0) return 'Ткани';
+    if (catName.indexOf('Акриловый камень') === 0) return 'Акрил';
+    if (catName.indexOf('Кварцевый камень') === 0) return 'Кварц';
+    return null;
+  }
+  var POPOVER_SUBGROUP_ORDER = ['Плёнка', 'Ткани', 'Акрил', 'Кварц'];
+
   // Общая для шторки/select'а/иконок-ярлыков группировка: сколько категорий
   // и товаров у каждого источника. Считаем один раз и переиспользуем вместо
   // трёх одинаковых циклов по state.items в разных builder-функциях.
@@ -1105,7 +1129,7 @@
     };
     pop.appendChild(allItem);
 
-    catNames.forEach(function(catName){
+    function appendCatItem(catName){
       var item = document.createElement('div');
       var isActive = !state.favOnly && !state.activeSite && state.category === catName;
       item.className = 'quick-popover-item' + (isActive ? ' active' : '');
@@ -1118,7 +1142,40 @@
         closeQuickPopover();
       };
       pop.appendChild(item);
+    }
+
+    // Раскладываем catNames по смысловым подгруппам (см. popoverSubGroupOf) —
+    // группы с подзаголовком идут в фиксированном порядке, категории без
+    // подгруппы (сейчас такого нет, но на будущее) — простым списком в конце.
+    var subGroups = {};
+    var ungrouped = [];
+    catNames.forEach(function(catName){
+      var sg = popoverSubGroupOf(catName);
+      if (sg) {
+        if (!subGroups[sg]) subGroups[sg] = [];
+        subGroups[sg].push(catName);
+      } else {
+        ungrouped.push(catName);
+      }
     });
+    var subGroupKeys = Object.keys(subGroups).sort(function(a, b){
+      return POPOVER_SUBGROUP_ORDER.indexOf(a) - POPOVER_SUBGROUP_ORDER.indexOf(b);
+    });
+
+    if (subGroupKeys.length > 1) {
+      // Есть смысл показывать подзаголовки, только если подгрупп больше одной —
+      // иначе это просто дублирование заголовка самого popover.
+      subGroupKeys.forEach(function(sgKey){
+        var header = document.createElement('div');
+        header.className = 'quick-popover-subheader';
+        header.textContent = sgKey;
+        pop.appendChild(header);
+        subGroups[sgKey].forEach(appendCatItem);
+      });
+      ungrouped.forEach(appendCatItem);
+    } else {
+      catNames.forEach(appendCatItem);
+    }
 
     document.body.appendChild(pop);
     els.quickPopover = pop;
