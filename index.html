@@ -68,6 +68,22 @@
     transform:translateY(-130%);
   }
 
+  /* Полоска НАД топбаром высотой ровно в --content-safe-top — там, где
+     Telegram в fullscreen рисует свои кнопки (Закрыть/шеврон) поверх нашего
+     контента. Раньше там просто просвечивала лента карточек как есть
+     (резко, без обработки) — теперь матовое стекло: контент под ней виден,
+     но размыт, как в системных полупрозрачных панелях iOS/Android. Если
+     content-safe-top равен 0 (не fullscreen/не Telegram) — высота 0,
+     полоски не видно, ничего лишнего не рисуется. pointer-events:none —
+     чтобы не мешать тапам по кнопкам Telegram над ней. */
+  .safe-top-blur{
+    position:fixed;top:0;left:0;right:0;height:var(--content-safe-top, 0px);
+    z-index:6;pointer-events:none;
+    background:rgba(237,232,224,.55);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+  }
+
   .search{
     width:100%;padding:10px 12px;border-radius:10px;border:none;
     background:var(--secbg);color:var(--text);font-size:15px;outline:none;
@@ -423,6 +439,7 @@
     } catch (e) {}
   })();
 </script>
+<div class="safe-top-blur"></div>
 <!-- ВАЖНО: .topbar лежит СНАРУЖИ #app (сиблинг, не потомок) — это принципиально.
      #app анимирует свой transform (см. <style>), а любой transform на предке
      превращает его в "точку отсчёта" для position:fixed внутри — то есть
