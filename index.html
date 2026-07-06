@@ -20,6 +20,12 @@
        запасом контраста. Все пары пересчитаны на реальный контраст (WCAG). */
     --bg: #EDE8E0;
     --text: #2B2620;
+    /* --text-2 — вторичный текст, на тон светлее основного (--text): нужен,
+       чтобы название товара визуально не спорило по весу с заголовком
+       категории (тот всегда --text, самый тёмный/светлый в теме — см.
+       .section-header и .name в <style>). Подобран так, чтобы разница
+       читалась, но контраст на карточках (--secbg) оставался высоким. */
+    --text-2: #4A4139;
     --hint: #7D7263;
     --hint-strong: #55493C;
     /* Терракота потемнее, чем в макете-превью (#C1622D), ради контраста: на
@@ -285,11 +291,17 @@
      получается двойной сдвиг, и ярлык уезжает не туда (повисает где-то
      посреди экрана, а не у самого верха). Поэтому при скрытой шапке просто
      прячем его прозрачностью — position не трогаем вообще. */
+  /* Заголовок категории — самый крупный/жирный текстовый уровень на экране
+     (20-22px/700), с заметным отступом сверху (28px) от предыдущего блока —
+     раньше был почти неотличим по весу от названия товара (13px/700 против
+     12.5px/600), из-за чего категория и товары визуально "слипались" в один
+     уровень. Внизу — граница-разделитель (border-bottom) ПЛЮС увеличенный
+     padding-bottom (16px) до сетки карточек, а не просто линия впритык. */
   .section-header{
     grid-column:1/-1;position:sticky;
     top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
     z-index:3;background:var(--bg);
-    padding:12px 2px 7px;font-size:13px;font-weight:700;color:var(--text);
+    padding:28px 2px 16px;font-size:21px;font-weight:700;color:var(--text);
     border-bottom:1px solid var(--line);
     opacity:1;transition:opacity .2s ease;
   }
@@ -298,20 +310,21 @@
   }
   .section-header:first-of-type{padding-top:2px;}
 
+  /* Тонкая граница + едва заметная тень — раньше карточка (--secbg) на
+     некоторых темах почти не отличалась по тону от общего фона (--bg) и
+     сливалась с ним; теперь у неё всегда свой видимый контур независимо от
+     темы. */
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;
+    border:1px solid var(--line);
+    box-shadow:0 1px 3px rgba(0,0,0,.06);
     transition:transform .12s ease;
     scroll-margin-top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px));
   }
   .card:active{transform:scale(0.97);}
   .card.appear{animation:cardIn .3s ease both;}
   @keyframes cardIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
-
-  /* Источник обозначен ОДНИМ сигналом — точкой у категории (см. .source-dot
-     ниже). Раньше это дублировалось ещё и цветной полоской сверху карточки —
-     убрали, чтобы не тратить внимание на повтор одной и той же информации. */
-  .source-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle;}
 
   /* Фиксированное соотношение сторон 3:4 с object-fit:cover — иначе широкие
      исходные фото (например ПВХ плёнка) давали визуально "маленькие",
@@ -347,8 +360,13 @@
   .copy-icon-btn svg{width:14px;height:14px;}
 
   .info{padding:10px 10px 12px;flex:1;display:flex;flex-direction:column;gap:5px;}
-  .name{font-size:12.5px;line-height:1.35;font-weight:600;min-height:31px;letter-spacing:.1px;}
-  .cat{font-size:10.5px;color:var(--hint);display:flex;align-items:center;}
+  /* На тон светлее заголовка категории (--text-2 против --text у
+     .section-header) — разница в цвете плюс в размере/весе сразу читается
+     глазом, какой уровень важнее. Подпись категории под названием убрана
+     совсем (см. .cat раньше) — она всегда дублировала либо заголовок
+     раздела, либо сам активный фильтр категории, и только создавала лишний
+     шум под каждой из 500+ карточек. */
+  .name{font-size:16px;line-height:1.3;font-weight:600;color:var(--text-2);min-height:42px;letter-spacing:.1px;}
 
   .empty{text-align:center;color:var(--hint-strong);padding:40px 10px;font-size:14px;}
 
@@ -673,7 +691,7 @@
     clouddancer: {
       name: 'Cloud Dancer (светлый премиум)',
       vars: {
-        '--bg': '#EDE8E0', '--text': '#2B2620', '--hint': '#7D7263', '--hint-strong': '#55493C',
+        '--bg': '#EDE8E0', '--text': '#2B2620', '--text-2': '#4A4139', '--hint': '#7D7263', '--hint-strong': '#55493C',
         '--link': '#A84E1A', '--button': '#A84E1A', '--button-text': '#ffffff',
         '--secbg': '#FFFFFF', '--line': '#DED4C4', '--quickrow-bg': '#DDD5C8',
         '--safetop-tint-rgb': '255,255,255', '--splash-tint-rgb': '255,255,255'
@@ -682,7 +700,7 @@
     warmstone: {
       name: 'Тёплый камень',
       vars: {
-        '--bg': '#948A7E', '--text': '#241F1A', '--hint': '#7D7367', '--hint-strong': '#332C25',
+        '--bg': '#948A7E', '--text': '#241F1A', '--text-2': '#453C33', '--hint': '#7D7367', '--hint-strong': '#332C25',
         '--link': '#9B5215', '--button': '#9B5215', '--button-text': '#ffffff',
         '--secbg': '#FBF8F4', '--line': '#DDD5C8', '--quickrow-bg': '#C7BDAF',
         '--safetop-tint-rgb': '251,248,244', '--splash-tint-rgb': '251,248,244'
@@ -691,7 +709,7 @@
     darkpremium: {
       name: 'Тёмный премиум',
       vars: {
-        '--bg': '#211E1C', '--text': '#EDE7DF', '--hint': '#A69C8E', '--hint-strong': '#C7BFB3',
+        '--bg': '#211E1C', '--text': '#EDE7DF', '--text-2': '#C9C1B4', '--hint': '#A69C8E', '--hint-strong': '#C7BFB3',
         '--link': '#D97B4F', '--button': '#D97B4F', '--button-text': '#211E1C',
         '--secbg': '#2C2825', '--line': '#4A433C', '--quickrow-bg': '#33302B',
         '--safetop-tint-rgb': '44,40,37', '--splash-tint-rgb': '44,40,37'
@@ -700,7 +718,7 @@
     latte: {
       name: 'Кофе с молоком',
       vars: {
-        '--bg': '#E8DFD3', '--text': '#3B2E24', '--hint': '#7C6C59', '--hint-strong': '#4C3E30',
+        '--bg': '#E8DFD3', '--text': '#3B2E24', '--text-2': '#5C4B3B', '--hint': '#7C6C59', '--hint-strong': '#4C3E30',
         '--link': '#7A4E24', '--button': '#7A4E24', '--button-text': '#ffffff',
         '--secbg': '#FFFDF9', '--line': '#D3C6B2', '--quickrow-bg': '#D8CBB8',
         '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249'
@@ -709,7 +727,7 @@
     emerald: {
       name: 'Изумрудная роскошь',
       vars: {
-        '--bg': '#F3EFE6', '--text': '#1E2A22', '--hint': '#5E6A60', '--hint-strong': '#2E3D33',
+        '--bg': '#F3EFE6', '--text': '#1E2A22', '--text-2': '#3E4C43', '--hint': '#5E6A60', '--hint-strong': '#2E3D33',
         '--link': '#116B45', '--button': '#116B45', '--button-text': '#ffffff',
         '--secbg': '#FDFCFA', '--line': '#D2CAB5', '--quickrow-bg': '#D4C9B0',
         '--safetop-tint-rgb': '253,252,250', '--splash-tint-rgb': '253,252,250'
@@ -718,7 +736,7 @@
     indigo: {
       name: 'Полночный индиго',
       vars: {
-        '--bg': '#1B1A2E', '--text': '#EDEAF5', '--hint': '#A19BC0', '--hint-strong': '#B5B0CC',
+        '--bg': '#1B1A2E', '--text': '#EDEAF5', '--text-2': '#C6C1DA', '--hint': '#A19BC0', '--hint-strong': '#B5B0CC',
         '--link': '#BE8749', '--button': '#BE8749', '--button-text': '#1B1A2E',
         '--secbg': '#2E2C4D', '--line': '#454268', '--quickrow-bg': '#3A3768',
         '--safetop-tint-rgb': '46,44,77', '--splash-tint-rgb': '46,44,77'
@@ -1460,7 +1478,6 @@
       }
 
       var site = siteGroupOf(item.category);
-      var siteColor = (SITE_META[site] || {}).color || 'transparent';
 
       var card = document.createElement('div');
       card.className = 'card appear';
@@ -1535,21 +1552,18 @@
       copyIconBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
       thumbWrap.appendChild(copyIconBtn);
 
+      // Подпись категории под названием ("Акриловый камень GRANDEX" мелким
+      // текстом с точкой-источником) убрана — она всегда дублировала либо
+      // заголовок раздела над карточками, либо текущий выбранный фильтр
+      // категории (в топбаре/шторке), и только создавала шум под каждой
+      // карточкой.
       var info = document.createElement('div');
       info.className = 'info';
       var name = document.createElement('div');
       name.className = 'name';
       name.textContent = item.name;
-      var cat = document.createElement('div');
-      cat.className = 'cat';
-      var dot = document.createElement('span');
-      dot.className = 'source-dot';
-      dot.style.background = siteColor;
-      cat.appendChild(dot);
-      cat.appendChild(document.createTextNode(item.category));
 
       info.appendChild(name);
-      info.appendChild(cat);
 
       card.appendChild(thumbWrap);
       card.appendChild(info);
