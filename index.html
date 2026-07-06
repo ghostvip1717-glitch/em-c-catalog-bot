@@ -160,7 +160,7 @@
     padding:8px 4px;
   }
   .quick-item{
-    flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;
+    flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;
     background:none;border:none;font-family:inherit;color:var(--text);
     padding:4px 2px;cursor:pointer;
   }
@@ -705,9 +705,27 @@
         '--secbg': '#FFFDF9', '--line': '#D3C6B2', '--quickrow-bg': '#D8CBB8',
         '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249'
       }
+    },
+    emerald: {
+      name: 'Изумрудная роскошь',
+      vars: {
+        '--bg': '#F3EFE6', '--text': '#1E2A22', '--hint': '#5E6A60', '--hint-strong': '#2E3D33',
+        '--link': '#116B45', '--button': '#116B45', '--button-text': '#ffffff',
+        '--secbg': '#FDFCFA', '--line': '#D2CAB5', '--quickrow-bg': '#D4C9B0',
+        '--safetop-tint-rgb': '253,252,250', '--splash-tint-rgb': '253,252,250'
+      }
+    },
+    indigo: {
+      name: 'Полночный индиго',
+      vars: {
+        '--bg': '#1B1A2E', '--text': '#EDEAF5', '--hint': '#A19BC0', '--hint-strong': '#B5B0CC',
+        '--link': '#BE8749', '--button': '#BE8749', '--button-text': '#1B1A2E',
+        '--secbg': '#2E2C4D', '--line': '#454268', '--quickrow-bg': '#3A3768',
+        '--safetop-tint-rgb': '46,44,77', '--splash-tint-rgb': '46,44,77'
+      }
     }
   };
-  var THEME_ORDER = ['clouddancer', 'warmstone', 'darkpremium', 'latte'];
+  var THEME_ORDER = ['clouddancer', 'warmstone', 'darkpremium', 'latte', 'emerald', 'indigo'];
   var THEME_STORAGE_KEY = 'catalog_theme';
 
   function applyTheme(key){
@@ -985,14 +1003,16 @@
   // лист с загнутым уголком (плёнка/наклейка, которую отклеивают за уголок),
   // Камень — обкатанный, "каменный" контур вместо острого геометрического ромба.
   // Плёнка и Камень — по референсным картинкам, которые прислал пользователь
-  // (рулон плёнки разворачивается в лист; каменная арка-трилит вроде
-  // Стоунхенджа). Перерисованы в том же монохромном line-стиле (stroke =
-  // currentColor), что и остальные иконки ряда — так активное состояние
-  // (.quick-item.active{color:var(--button)}) продолжает перекрашивать
-  // иконку целиком, без отдельного набора цветов только для одной иконки.
+  // (рулон плёнки — вытянутый по горизонтали, как рулон обоев/ткани, а не
+  // короткая вертикальная трубка (та читалась как туалетная бумага);
+  // каменная арка-трилит вроде Стоунхенджа). Перерисованы в том же
+  // монохромном line-стиле (stroke = currentColor), что и остальные иконки
+  // ряда — так активное состояние (.quick-item.active{color:var(--button)})
+  // продолжает перекрашивать иконку целиком, без отдельного набора цветов
+  // только для одной иконки.
   var QUICK_ICONS = {
     emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
-    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7.2" cy="9" rx="4.2" ry="2.3"></ellipse><ellipse cx="7.2" cy="9" rx="1.5" ry="0.8"></ellipse><path d="M3 9V15.7C3 17 4.9 18 7.2 18C9.5 18 11.4 17 11.4 15.7V9"></path><path d="M11.4 11H20V17H11.4"></path></svg>',
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7.5" width="18.5" height="9" rx="4.5"></rect><ellipse cx="6.3" cy="12" rx="2.4" ry="4.3"></ellipse><ellipse cx="6.3" cy="12" rx="0.9" ry="1.7"></ellipse></svg>',
     interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>'
   };
   var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
