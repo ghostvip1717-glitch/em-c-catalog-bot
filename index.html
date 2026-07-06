@@ -37,13 +37,11 @@
     --button-text: #ffffff;
     --secbg: #FFFFFF;
     --line: #DED4C4;
-    /* Ниже — переменные, которые раньше были захардкожены прямо в правилах
-       (панель быстрых иконок, матовая полоска над шапкой, подложка сплэш-
-       экрана). Вынесены в :root, чтобы тему можно было целиком переключать
-       через applyTheme() в скрипте, не трогая CSS-правила. RGB-варианты
-       (без единиц) — специально для составления rgba(var(...), альфа). */
+    /* Ниже — переменные для панели быстрых иконок, матовой полоски над
+       шапкой и подложки сплэш-экрана. RGB-варианты (без единиц) — специально
+       для составления rgba(var(...), альфа). */
     --quickrow-bg: #DDD5C8;
-    --safetop-tint-rgb: 237,232,224;
+    --safetop-tint-rgb: 255,255,255;
     --splash-tint-rgb: 255,255,255;
     /* Рамка карточек/превью тем — "0,0,0" для светлых тем (тёмная рамка на
        светлом), "255,255,255" для тёмных (светлая рамка на тёмном). Нельзя
@@ -164,9 +162,6 @@
      max-height-анимация — просто статичный ряд внутри топбара. */
   .quick-row{
     display:flex;margin-top:8px;border-radius:10px;
-    /* Значение зависит от темы (--quickrow-bg, см. applyTheme в скрипте) —
-       в тёмных темах панель светлее фона, в светлых — темнее, иначе
-       потеряется на нём. */
     background:var(--quickrow-bg, #DDD5C8);
     padding:8px 4px;
   }
@@ -207,33 +202,6 @@
     font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--hint-strong);text-transform:uppercase;
     margin:18px 4px 8px;
   }
-
-  /* Карточка темы в переключателе — квадратик-превью (фон + акцент одним
-     кружком поверх) плюс название, тем же паттерном, что и drawer-group.
-     ВАЖНО про индикатор активной темы: раньше рамка активного пункта была
-     var(--button) — то есть цветом АКТИВНОЙ СЕЙЧАС темы. Из-за этого, если
-     совпадали похожие тёплые тона (например коричневая рамка на бежевом
-     превью "Кофе с молоком"), рамка почти не была видна. Теперь кольцо
-     вокруг превью — ФИКСИРОВАННЫЙ синий цвет (#2F80ED), который не входит
-     ни в одну из 6 палитр, плюс белый/секбг зазор между превью и кольцом —
-     так видно гарантированно на любом фоне, а не только на части тем. */
-  .theme-item{
-    display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;
-    background:var(--secbg);margin-bottom:8px;cursor:pointer;
-  }
-  .theme-swatch{
-    width:36px;height:36px;border-radius:10px;flex:0 0 auto;position:relative;
-    border:1px solid rgba(var(--card-border-rgb, 0,0,0), .12);overflow:hidden;
-  }
-  .theme-item.active .theme-swatch{
-    box-shadow:0 0 0 2px var(--secbg), 0 0 0 4px #2F80ED;
-  }
-  .theme-swatch .tsw-accent{
-    position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;
-    border:1.5px solid rgba(255,255,255,.85);
-  }
-  .theme-name{font-weight:600;font-size:13.5px;color:var(--text);}
-  .theme-check{margin-left:auto;color:#2F80ED;font-weight:700;font-size:15px;flex:0 0 auto;}
 
   .drawer-group{margin-bottom:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
   .drawer-group-header{
@@ -323,15 +291,10 @@
   }
   .section-header:first-of-type{padding-top:2px;}
 
-  /* Рамка + тень — раньше карточка (--secbg) на некоторых темах почти не
-     отличалась по тону от общего фона (--bg) и сливалась с ним. Рамка теперь
-     НЕ на var(--line) (тот сам по себе бывает светлее фона в тёмных темах,
-     видно слабо), а на прозрачном чёрном/белом относительно ТЕКСТА темы —
-     --card-border-rgb хранит "0,0,0" для светлых тем и "255,255,255" для
-     тёмных (см. THEMES в скрипте), так что рамка гарантированно видна в
-     любой теме. Тень — универсальная (чёрная полупрозрачная работает как
-     мягкая тень-контактная линия даже на тёмном фоне, просто менее заметно,
-     чем на светлом/бежевом — там основную работу делает рамка). */
+  /* Рамка + тень — раньше карточка (--secbg) почти не отличалась по тону от
+     общего фона (--bg) и сливалась с ним. Рамка — не на var(--line) (тот сам
+     по себе светлее фона, видно слабо), а на прозрачном чёрном относительно
+     ТЕКСТА темы (--card-border-rgb). Тень — мягкая тень-контактная линия. */
   .card{
     background:var(--secbg);border-radius:14px;overflow:hidden;position:relative;
     display:flex;flex-direction:column;
@@ -463,8 +426,7 @@
   .splash.fade-out{opacity:0;pointer-events:none;}
   .splash-hero{
     position:absolute;inset:0;
-    /* --splash-tint-rgb зависит от темы (см. applyTheme в скрипте) — тот же
-       тон, что и --secbg активной темы. */
+    /* --splash-tint-rgb — тот же тон, что и --secbg. */
     background-image:
       linear-gradient(to bottom, rgba(var(--splash-tint-rgb, 255,255,255),.1) 0%, rgba(var(--splash-tint-rgb, 255,255,255),.6) 55%, rgba(var(--splash-tint-rgb, 255,255,255),.97) 92%),
       url('0000001.webp');
@@ -567,13 +529,6 @@
   <div class="drawer-item" id="drawerAll">Все материалы</div>
   <div class="drawer-item" id="drawerFav">★ Избранное</div>
   <div id="drawerGroups"></div>
-
-  <!-- Временный переключатель тем — чтобы выбрать одну из нескольких палитр
-       на глаз, вживую в приложении, а не по превью-картинке. Потом либо
-       уберём и оставим одну тему, либо оставим как обычную настройку —
-       см. THEMES/applyTheme в скрипте. -->
-  <div class="drawer-section-label">Тема (на выбор, временно)</div>
-  <div id="themeSwitcher"></div>
 </div>
 
 <div class="viewer" id="viewer">
@@ -669,8 +624,7 @@
     favOnly: false,
     query: '',
     favorites: [],
-    expandedGroups: {},
-    theme: null // выставляется в initTheme()/applyTheme() ниже
+    expandedGroups: {}
   };
 
   var els = {
@@ -701,106 +655,8 @@
     vclose: document.getElementById('vclose'),
     topCatBtn: document.getElementById('topCatBtn'),
     topCatBtnLabel: document.getElementById('topCatBtnLabel'),
-    quickRow: document.getElementById('quickRow'),
-    themeSwitcher: document.getElementById('themeSwitcher')
+    quickRow: document.getElementById('quickRow')
   };
-
-  // ---- переключатель тем (временный, см. комментарий у #themeSwitcher в
-  // разметке) — каждая тема просто набор CSS-переменных, которые целиком
-  // подставляются в :root через applyTheme(). Ничего, кроме custom
-  // properties, не трогаем — все селекторы уже и так используют var(...). */
-  var THEMES = {
-    clouddancer: {
-      name: 'Cloud Dancer (светлый премиум)',
-      vars: {
-        '--bg': '#EDE8E0', '--text': '#2B2620', '--text-2': '#4A4139', '--hint': '#7D7263', '--hint-strong': '#55493C',
-        '--link': '#A84E1A', '--button': '#A84E1A', '--button-text': '#ffffff',
-        '--secbg': '#FFFFFF', '--line': '#DED4C4', '--quickrow-bg': '#DDD5C8',
-        '--safetop-tint-rgb': '255,255,255', '--splash-tint-rgb': '255,255,255', '--card-border-rgb': '0,0,0'
-      }
-    },
-    warmstone: {
-      name: 'Тёплый камень',
-      vars: {
-        '--bg': '#948A7E', '--text': '#241F1A', '--text-2': '#453C33', '--hint': '#7D7367', '--hint-strong': '#332C25',
-        '--link': '#9B5215', '--button': '#9B5215', '--button-text': '#ffffff',
-        '--secbg': '#FBF8F4', '--line': '#DDD5C8', '--quickrow-bg': '#C7BDAF',
-        '--safetop-tint-rgb': '251,248,244', '--splash-tint-rgb': '251,248,244', '--card-border-rgb': '0,0,0'
-      }
-    },
-    darkpremium: {
-      name: 'Тёмный премиум',
-      vars: {
-        '--bg': '#211E1C', '--text': '#EDE7DF', '--text-2': '#C9C1B4', '--hint': '#A69C8E', '--hint-strong': '#C7BFB3',
-        '--link': '#D97B4F', '--button': '#D97B4F', '--button-text': '#211E1C',
-        '--secbg': '#2C2825', '--line': '#4A433C', '--quickrow-bg': '#33302B',
-        '--safetop-tint-rgb': '44,40,37', '--splash-tint-rgb': '44,40,37', '--card-border-rgb': '255,255,255'
-      }
-    },
-    latte: {
-      name: 'Кофе с молоком',
-      vars: {
-        '--bg': '#E8DFD3', '--text': '#3B2E24', '--text-2': '#5C4B3B', '--hint': '#7C6C59', '--hint-strong': '#4C3E30',
-        '--link': '#7A4E24', '--button': '#7A4E24', '--button-text': '#ffffff',
-        '--secbg': '#FFFDF9', '--line': '#D3C6B2', '--quickrow-bg': '#D8CBB8',
-        '--safetop-tint-rgb': '255,253,249', '--splash-tint-rgb': '255,253,249', '--card-border-rgb': '0,0,0'
-      }
-    },
-    emerald: {
-      name: 'Изумрудная роскошь',
-      vars: {
-        '--bg': '#F3EFE6', '--text': '#1E2A22', '--text-2': '#3E4C43', '--hint': '#5E6A60', '--hint-strong': '#2E3D33',
-        '--link': '#116B45', '--button': '#116B45', '--button-text': '#ffffff',
-        '--secbg': '#FDFCFA', '--line': '#D2CAB5', '--quickrow-bg': '#D4C9B0',
-        '--safetop-tint-rgb': '253,252,250', '--splash-tint-rgb': '253,252,250', '--card-border-rgb': '0,0,0'
-      }
-    },
-    indigo: {
-      name: 'Полночный индиго',
-      vars: {
-        '--bg': '#1B1A2E', '--text': '#EDEAF5', '--text-2': '#C6C1DA', '--hint': '#A19BC0', '--hint-strong': '#B5B0CC',
-        '--link': '#BE8749', '--button': '#BE8749', '--button-text': '#1B1A2E',
-        '--secbg': '#2E2C4D', '--line': '#454268', '--quickrow-bg': '#3A3768',
-        '--safetop-tint-rgb': '46,44,77', '--splash-tint-rgb': '46,44,77', '--card-border-rgb': '255,255,255'
-      }
-    }
-  };
-  var THEME_ORDER = ['clouddancer', 'warmstone', 'darkpremium', 'latte', 'emerald', 'indigo'];
-  var THEME_STORAGE_KEY = 'catalog_theme';
-
-  function applyTheme(key){
-    var theme = THEMES[key];
-    if (!theme) return;
-    var root = document.documentElement.style;
-    Object.keys(theme.vars).forEach(function(k){ root.setProperty(k, theme.vars[k]); });
-    state.theme = key;
-    try { localStorage.setItem(THEME_STORAGE_KEY, key); } catch(e){}
-    buildThemeSwitcher();
-  }
-
-  function buildThemeSwitcher(){
-    if (!els.themeSwitcher) return;
-    els.themeSwitcher.innerHTML = '';
-    THEME_ORDER.forEach(function(key){
-      var theme = THEMES[key];
-      var item = document.createElement('div');
-      item.className = 'theme-item' + (state.theme === key ? ' active' : '');
-      item.innerHTML =
-        '<div class="theme-swatch" style="background:' + theme.vars['--bg'] + '">' +
-          '<div class="tsw-accent" style="background:' + theme.vars['--button'] + '"></div>' +
-        '</div>' +
-        '<div class="theme-name">' + theme.name + '</div>' +
-        (state.theme === key ? '<div class="theme-check">✓</div>' : '');
-      item.onclick = function(){ applyTheme(key); };
-      els.themeSwitcher.appendChild(item);
-    });
-  }
-
-  (function initTheme(){
-    var saved = null;
-    try { saved = localStorage.getItem(THEME_STORAGE_KEY); } catch(e){}
-    applyTheme((saved && THEMES[saved]) ? saved : 'clouddancer');
-  })();
 
   // ---- группировка категорий по сайтам-источникам (для боковой шторки) ----
   // Категории неймспейсятся по префиксу названия — это позволяет добавлять
@@ -1056,13 +912,7 @@
   // только для одной иконки.
   var QUICK_ICONS = {
     emc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
-    // Плёнка — рулон (скруглённое "тело" рулона + плоская крышка-эллипс сверху,
-    // видно, что рулон полый) с плоским несмотанным листом сбоку, БЕЗ пересечения
-    // линий рулона и листа (лист начинается точно там, где заканчивается рулон, —
-    // иначе обводки лезут друг на друга и вся форма перестаёт читаться как рулон).
-    // Отрисовано в вертикальной ориентации (как на референсе пользователя) и
-    // повёрнуто на -90° через <g transform>, чтобы рулон лёг горизонтально.
-    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-90 12 12)"><rect x="9" y="4" width="12" height="13"></rect><rect x="3" y="7" width="6" height="14" rx="3"></rect><ellipse cx="6" cy="7" rx="3" ry="1.3"></ellipse></g></svg>',
+    adilet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7.5" width="18.5" height="9" rx="4.5"></rect><ellipse cx="6.3" cy="12" rx="2.4" ry="4.3"></ellipse><ellipse cx="6.3" cy="12" rx="0.9" ry="1.7"></ellipse></svg>',
     interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>'
   };
   var QUICK_LABELS = { emc: 'ЛДСП', adilet: 'Плёнка', interstone: 'Камень' };
