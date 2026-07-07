@@ -2128,5 +2128,60 @@
   initSplash();
 })();
 </script>
+
+<script>
+(function(){
+  var TRACK_URL = 'https://script.google.com/macros/s/AKfycby3Oz6Op9lSFHLypNvNzckxQB6RP9EsvdPDb8n1Y7UQKQJEiUiQiIIylw5_7OLCIbBi/exec';
+
+  function logVisit(label){
+    try {
+      var tg = window.Telegram && window.Telegram.WebApp;
+      var u = (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) || {};
+      var name = [u.first_name, u.last_name].filter(Boolean).join(' ');
+      fetch(TRACK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'text/plain;charset=utf-8'},
+        body: JSON.stringify({
+          name: name,
+          username: u.username ? ('@' + u.username) : '',
+          telegram_id: u.id || '',
+          category: label || '',
+          platform: (tg && tg.platform) || ''
+        })
+      });
+    } catch(e){}
+  }
+
+  logVisit(''); // факт открытия приложения
+
+  // смена категории/фильтра — читаем текст кнопки в топбаре
+  var labelEl = document.getElementById('topCatBtnLabel');
+  if (labelEl) {
+    var lastLabel = labelEl.textContent;
+    new MutationObserver(function(){
+      var cur = labelEl.textContent;
+      if (cur !== lastLabel) { lastLabel = cur; logVisit(cur); }
+    }).observe(labelEl, {childList:true, characterData:true, subtree:true});
+  }
+
+  // открытие карточки товара — по появлению класса 'open' у просмотрщика
+  var viewerEl = document.getElementById('viewer');
+  var vname = document.getElementById('vname');
+  var vcat = document.getElementById('vcat');
+  if (viewerEl) {
+    var wasOpen = viewerEl.classList.contains('open');
+    new MutationObserver(function(){
+      var isOpen = viewerEl.classList.contains('open');
+      if (isOpen && !wasOpen) {
+        var cat = vcat ? vcat.textContent.trim() : '';
+        var name = vname ? vname.textContent.trim() : '';
+        logVisit(cat && name ? (cat + ' — ' + name) : (name || cat));
+      }
+      wasOpen = isOpen;
+    }).observe(viewerEl, {attributes:true, attributeFilter:['class']});
+  }
+})();
+</script>
 </body>
 </html>
