@@ -3363,7 +3363,7 @@
   },
   {
     "id": "interstone_gq-444m-timeless-classic",
-    "name": "GQ 444M Timeless Сlassic",
+    "name": "GQ 444M Timeless Ð¡lassic",
     "category": "Кварцевый камень GRANDEX Quartz",
     "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-444m-timeless-classic",
     "image": "data/images/interstone/interstone_gq-444m-timeless-classic/1.webp",
@@ -5372,20 +5372,6 @@
     "thumb": "data/images/emc/ldsp_dub_delano_naturalnyy_chfmk_tisnenie_wood_line/1_thumb.webp"
   },
   {
-    "id": "ldsp_dub_zolotistyy_u_1148_pr_",
-    "name": "ЛДСП Дуб Золотистый U 1148 PR",
-    "category": "ЛДСП",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_zolotistyy_u_1148_pr_.html",
-    "image": "data/images/emc/ldsp_dub_zolotistyy_u_1148_pr_/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_zolotistyy_u_1148_pr_/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_zolotistyy_u_1148_pr_/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_zolotistyy_u_1148_pr_/1_thumb.webp"
-  },
-  {
     "id": "ldsp_dub_irlandskiy_u_31156_pr",
     "name": "ЛДСП Дуб Ирландский U 31156 PR",
     "category": "ЛДСП",
@@ -5524,20 +5510,6 @@
       "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm",
-    "name": "ЛДСП Дуб Крафт Серый К 002 РW 2,50х1,83 16мм",
-    "category": "ЛДСП",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kraft_seryy_k_002_rw_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_kraft_tabachnyy_k_004_rw_2_50kh1_83_16mm",
@@ -6464,20 +6436,6 @@
     "thumb": "data/images/emc/ldsp_kapuchino_r_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_kashemir_chfmk",
-    "name": "ЛДСП Кашемир (ЧФМК)",
-    "category": "ЛДСП",
-    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_chfmk.html",
-    "image": "data/images/emc/ldsp_kashemir_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_kashemir_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_kashemir_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_kashemir_chfmk/1_thumb.webp"
-  },
-  {
     "id": "ldsp_kashemir_5981_pe_2_50kh1_83_16mm",
     "name": "ЛДСП Кашемир 5981 PЕ 2,50х1,83 16мм",
     "category": "ЛДСП",
@@ -6674,6 +6632,20 @@
     "thumb": "data/images/emc/ldsp_listvennitsa_sibirskaya_525_swn_2_8_2_07_16mm/1_thumb.webp"
   },
   {
+    "id": "ldsp_luno_k_lmt",
+    "name": "ЛДСП Луно К (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_luno_k_lmt.html",
+    "image": "data/images/emc/ldsp_luno_k_lmt/1.webp",
+    "images": [
+      "data/images/emc/ldsp_luno_k_lmt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_luno_k_lmt/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_luno_k_lmt/1_thumb.webp"
+  },
+  {
     "id": "ldsp_lyen_tverskoy_molochnyy_f_324_t01_2800kh2070kh16mm_std",
     "name": "ЛДСП Лён Тверской молочный F.324.T01 2800х2070х16мм STD",
     "category": "ЛДСП",
@@ -6772,18 +6744,18 @@
     "thumb": "data/images/emc/ldsp_mramor_karrara_hd_851_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
-    "id": "ldsp_muza_k_lmt",
-    "name": "ЛДСП Муза К (ЛМТ)",
+    "id": "ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Мрамор Неро Маркина 854 РО 2,8*2,07*16мм",
     "category": "ЛДСП",
-    "url": "https://www.em-c.kz/catalog/ldsp_muza_k_lmt.html",
-    "image": "data/images/emc/ldsp_muza_k_lmt/1.webp",
+    "url": "https://www.em-c.kz/catalog/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm.html",
+    "image": "data/images/emc/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm/1.webp",
     "images": [
-      "data/images/emc/ldsp_muza_k_lmt/1.webp"
+      "data/images/emc/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm/1.webp"
     ],
     "thumbs": [
-      "data/images/emc/ldsp_muza_k_lmt/1_thumb.webp"
+      "data/images/emc/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm/1_thumb.webp"
     ],
-    "thumb": "data/images/emc/ldsp_muza_k_lmt/1_thumb.webp"
+    "thumb": "data/images/emc/ldsp_mramor_nero_markina_854_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_munlayt_u_3700_re",
@@ -7500,6 +7472,20 @@
     "thumb": "data/images/emc/ldsp_siniy_skalistyy_m_201_s01_2800kh2070kh16mm_std/1_thumb.webp"
   },
   {
+    "id": "ldsp_skandi_r_lmt",
+    "name": "ЛДСП Сканди R (ЛМТ)",
+    "category": "ЛДСП",
+    "url": "https://www.em-c.kz/catalog/ldsp_skandi_r_lmt.html",
+    "image": "data/images/emc/ldsp_skandi_r_lmt/1.webp",
+    "images": [
+      "data/images/emc/ldsp_skandi_r_lmt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_skandi_r_lmt/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_skandi_r_lmt/1_thumb.webp"
+  },
+  {
     "id": "ldsp_slanets_altayskiy_smolyanoy_f_417_f02_2800kh2070kh16mm_std",
     "name": "ЛДСП Сланец Алтайский смоляной F.417.F02 2800х2070х16мм STD",
     "category": "ЛДСП",
@@ -7750,20 +7736,6 @@
       "data/images/emc/ldsp_soft_k_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_soft_k_lmt/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_tayga_k_lmt",
-    "name": "ЛДСП Тайга К (ЛМТ)",
-    "category": "ЛДСП",
-    "url": "https://www.em-c.kz/catalog/ldsp_tayga_k_lmt.html",
-    "image": "data/images/emc/ldsp_tayga_k_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_tayga_k_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_tayga_k_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_tayga_k_lmt/1_thumb.webp"
   },
   {
     "id": "ldsp_tegola_s_315_pw_2800_2070_16mm",
@@ -8441,7 +8413,7 @@
     "id": "kira_394271792162",
     "name": "DM1010 белый глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/394271792162-dm1010-belii-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/394271792162-dm1010-belii-glyants",
     "image": "data/images/kira/kira_394271792162/1.webp",
     "images": [
       "data/images/kira/kira_394271792162/1.webp",
@@ -8457,7 +8429,7 @@
     "id": "kira_304618341382",
     "name": "DM1011 графит глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/304618341382-dm1011-grafit-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/304618341382-dm1011-grafit-glyants",
     "image": "data/images/kira/kira_304618341382/1.webp",
     "images": [
       "data/images/kira/kira_304618341382/1.webp",
@@ -8473,7 +8445,7 @@
     "id": "kira_819195164682",
     "name": "DM1200 белый глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/819195164682-dm1200-belii-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/819195164682-dm1200-belii-glyants",
     "image": "data/images/kira/kira_819195164682/1.webp",
     "images": [
       "data/images/kira/kira_819195164682/1.webp",
@@ -8489,7 +8461,7 @@
     "id": "kira_179353693922",
     "name": "HG White глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/179353693922-hg-white-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/179353693922-hg-white-glyants",
     "image": "data/images/kira/kira_179353693922/1.webp",
     "images": [
       "data/images/kira/kira_179353693922/1.webp",
@@ -8505,7 +8477,7 @@
     "id": "kira_990296818812",
     "name": "Белый металлик",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/990296818812-belii-metallik",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/990296818812-belii-metallik",
     "image": "data/images/kira/kira_990296818812/1.webp",
     "images": [
       "data/images/kira/kira_990296818812/1.webp"
@@ -8519,7 +8491,7 @@
     "id": "kira_388907626832",
     "name": "Ваниль металлик",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/388907626832-vanil-metallik",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/388907626832-vanil-metallik",
     "image": "data/images/kira/kira_388907626832/1.webp",
     "images": [
       "data/images/kira/kira_388907626832/1.webp"
@@ -8533,7 +8505,7 @@
     "id": "kira_437008547672",
     "name": "Какао перламутр глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/437008547672-kakao-perlamutr-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/437008547672-kakao-perlamutr-glyants",
     "image": "data/images/kira/kira_437008547672/1.webp",
     "images": [
       "data/images/kira/kira_437008547672/1.webp"
@@ -8547,7 +8519,7 @@
     "id": "kira_343923620762",
     "name": "Кофе с молоком глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/343923620762-kofe-s-molokom-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/343923620762-kofe-s-molokom-glyants",
     "image": "data/images/kira/kira_343923620762/1.webp",
     "images": [
       "data/images/kira/kira_343923620762/1.webp"
@@ -8561,7 +8533,7 @@
     "id": "kira_277166501642",
     "name": "Макиотти глянец.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/277166501642-makiotti-glyanets",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/277166501642-makiotti-glyanets",
     "image": "data/images/kira/kira_277166501642/1.webp",
     "images": [
       "data/images/kira/kira_277166501642/1.webp",
@@ -8577,7 +8549,7 @@
     "id": "kira_302495986782",
     "name": "Оранж глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/302495986782-oranzh-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/302495986782-oranzh-glyants",
     "image": "data/images/kira/kira_302495986782/1.webp",
     "images": [
       "data/images/kira/kira_302495986782/1.webp"
@@ -8591,7 +8563,7 @@
     "id": "kira_872951110572",
     "name": "Серый VM555-6T глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/872951110572-serii-vm555-6t-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/872951110572-serii-vm555-6t-glyants",
     "image": "data/images/kira/kira_872951110572/1.webp",
     "images": [
       "data/images/kira/kira_872951110572/1.webp"
@@ -8605,7 +8577,7 @@
     "id": "kira_797608975672",
     "name": "Серый металлик",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/797608975672-serii-metallik",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/797608975672-serii-metallik",
     "image": "data/images/kira/kira_797608975672/1.webp",
     "images": [
       "data/images/kira/kira_797608975672/1.webp"
@@ -8619,7 +8591,7 @@
     "id": "kira_941131421352",
     "name": "Сирень металлик",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/941131421352-siren-metallik",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/941131421352-siren-metallik",
     "image": "data/images/kira/kira_941131421352/1.webp",
     "images": [
       "data/images/kira/kira_941131421352/1.webp"
@@ -8633,7 +8605,7 @@
     "id": "kira_464368629472",
     "name": "Сталь",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/464368629472-stal",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/464368629472-stal",
     "image": "data/images/kira/kira_464368629472/1.webp",
     "images": [
       "data/images/kira/kira_464368629472/1.webp"
@@ -8647,7 +8619,7 @@
     "id": "kira_241836481532",
     "name": "Трава глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/241836481532-trava-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/241836481532-trava-glyants",
     "image": "data/images/kira/kira_241836481532/1.webp",
     "images": [
       "data/images/kira/kira_241836481532/1.webp"
@@ -8661,7 +8633,7 @@
     "id": "kira_585705172622",
     "name": "Фарандола глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/585705172622-farandola-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/585705172622-farandola-glyants",
     "image": "data/images/kira/kira_585705172622/1.webp",
     "images": [
       "data/images/kira/kira_585705172622/1.webp",
@@ -8677,7 +8649,7 @@
     "id": "kira_597106707222",
     "name": "Черный глянц.",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/597106707222-chernii-glyants",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/597106707222-chernii-glyants",
     "image": "data/images/kira/kira_597106707222/1.webp",
     "images": [
       "data/images/kira/kira_597106707222/1.webp"
@@ -8691,7 +8663,7 @@
     "id": "kira_995844660772",
     "name": "Шампань металлик",
     "category": "ПВХ плёнка: KIRA Глянец",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/995844660772-shampan-metallik",
+    "url": "https://kira-group.kz/pvc-glyanc/tproduct/995844660772-shampan-metallik",
     "image": "data/images/kira/kira_995844660772/1.webp",
     "images": [
       "data/images/kira/kira_995844660772/1.webp"
@@ -8719,7 +8691,7 @@
     "id": "kira_355055680882",
     "name": "Айрон SF 025 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/355055680882-airon-sf-025-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/355055680882-airon-sf-025-mat",
     "image": "data/images/kira/kira_355055680882/1.webp",
     "images": [
       "data/images/kira/kira_355055680882/1.webp"
@@ -8733,7 +8705,7 @@
     "id": "kira_250520737902",
     "name": "Аквамарин SF 013 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/250520737902-akvamarin-sf-013-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/250520737902-akvamarin-sf-013-mat",
     "image": "data/images/kira/kira_250520737902/1.webp",
     "images": [
       "data/images/kira/kira_250520737902/1.webp"
@@ -8747,7 +8719,7 @@
     "id": "kira_198205137452",
     "name": "Аконит SF 028 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/198205137452-akonit-sf-028-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/198205137452-akonit-sf-028-mat",
     "image": "data/images/kira/kira_198205137452/1.webp",
     "images": [
       "data/images/kira/kira_198205137452/1.webp"
@@ -8761,7 +8733,7 @@
     "id": "kira_457091594202",
     "name": "Алатау KZ03 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/457091594202-alatau-kz03-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/457091594202-alatau-kz03-mat",
     "image": "data/images/kira/kira_457091594202/1.webp",
     "images": [
       "data/images/kira/kira_457091594202/1.webp"
@@ -8775,7 +8747,7 @@
     "id": "kira_517611618542",
     "name": "Алпамыс мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/517611618542-alpamis-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/517611618542-alpamis-mat",
     "image": "data/images/kira/kira_517611618542/1.webp",
     "images": [
       "data/images/kira/kira_517611618542/1.webp"
@@ -8789,7 +8761,7 @@
     "id": "kira_292296405152",
     "name": "Альтаир мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/292296405152-altair-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/292296405152-altair-mat",
     "image": "data/images/kira/kira_292296405152/1.webp",
     "images": [
       "data/images/kira/kira_292296405152/1.webp"
@@ -8803,7 +8775,7 @@
     "id": "kira_993959448472",
     "name": "Аманат мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/993959448472-amanat-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/993959448472-amanat-mat",
     "image": "data/images/kira/kira_993959448472/1.webp",
     "images": [
       "data/images/kira/kira_993959448472/1.webp"
@@ -8817,7 +8789,7 @@
     "id": "kira_407195861672",
     "name": "Арал KZ04 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/407195861672-aral-kz04-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/407195861672-aral-kz04-mat",
     "image": "data/images/kira/kira_407195861672/1.webp",
     "images": [
       "data/images/kira/kira_407195861672/1.webp"
@@ -8831,7 +8803,7 @@
     "id": "kira_395912573502",
     "name": "Байконур KZ11 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/395912573502-baikonur-kz11-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/395912573502-baikonur-kz11-mat",
     "image": "data/images/kira/kira_395912573502/1.webp",
     "images": [
       "data/images/kira/kira_395912573502/1.webp"
@@ -8845,7 +8817,7 @@
     "id": "kira_330209371572",
     "name": "Балхаш KZ10 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/330209371572-balhash-kz10-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/330209371572-balhash-kz10-mat",
     "image": "data/images/kira/kira_330209371572/1.webp",
     "images": [
       "data/images/kira/kira_330209371572/1.webp"
@@ -8859,7 +8831,7 @@
     "id": "kira_381661290262",
     "name": "Батыс KZ18 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/381661290262-batis-kz18-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/381661290262-batis-kz18-mat",
     "image": "data/images/kira/kira_381661290262/1.webp",
     "images": [
       "data/images/kira/kira_381661290262/1.webp"
@@ -8873,7 +8845,7 @@
     "id": "kira_296838798552",
     "name": "Баянаул KZ06 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/296838798552-bayanaul-kz06-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/296838798552-bayanaul-kz06-mat",
     "image": "data/images/kira/kira_296838798552/1.webp",
     "images": [
       "data/images/kira/kira_296838798552/1.webp"
@@ -8887,7 +8859,7 @@
     "id": "kira_386472219722",
     "name": "Белая JS9029-28 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/386472219722-belaya-js9029-28-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/386472219722-belaya-js9029-28-mat",
     "image": "data/images/kira/kira_386472219722/1.webp",
     "images": [
       "data/images/kira/kira_386472219722/1.webp"
@@ -8901,7 +8873,7 @@
     "id": "kira_845750290682",
     "name": "Бетон светлый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/845750290682-beton-svetlii-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/845750290682-beton-svetlii-mat",
     "image": "data/images/kira/kira_845750290682/1.webp",
     "images": [
       "data/images/kira/kira_845750290682/1.webp"
@@ -8915,7 +8887,7 @@
     "id": "kira_492241458002",
     "name": "Бетон темный мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/492241458002-beton-temnii-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/492241458002-beton-temnii-mat",
     "image": "data/images/kira/kira_492241458002/1.webp",
     "images": [
       "data/images/kira/kira_492241458002/1.webp"
@@ -8929,7 +8901,7 @@
     "id": "kira_193416922682",
     "name": "Ваниль BS мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/193416922682-vanil-bs-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/193416922682-vanil-bs-mat",
     "image": "data/images/kira/kira_193416922682/1.webp",
     "images": [
       "data/images/kira/kira_193416922682/1.webp"
@@ -8943,7 +8915,7 @@
     "id": "kira_673443498732",
     "name": "Ваниль JS9054 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/673443498732-vanil-js9054-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/673443498732-vanil-js9054-mat",
     "image": "data/images/kira/kira_673443498732/1.webp",
     "images": [
       "data/images/kira/kira_673443498732/1.webp"
@@ -8957,7 +8929,7 @@
     "id": "kira_240265884282",
     "name": "Венге DH5901-48 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/240265884282-venge-dh5901-48-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/240265884282-venge-dh5901-48-mat",
     "image": "data/images/kira/kira_240265884282/1.webp",
     "images": [
       "data/images/kira/kira_240265884282/1.webp"
@@ -8999,7 +8971,7 @@
     "id": "kira_100757134082",
     "name": "Графит JS9059 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/100757134082-grafit-js9059-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/100757134082-grafit-js9059-mat",
     "image": "data/images/kira/kira_100757134082/1.webp",
     "images": [
       "data/images/kira/kira_100757134082/1.webp"
@@ -9013,7 +8985,7 @@
     "id": "kira_888882564762",
     "name": "Графит SF-019 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/888882564762-grafit-sf-019-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/888882564762-grafit-sf-019-mat",
     "image": "data/images/kira/kira_888882564762/1.webp",
     "images": [
       "data/images/kira/kira_888882564762/1.webp"
@@ -9027,7 +8999,7 @@
     "id": "kira_246446747452",
     "name": "ДЮНА Мистраль мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/246446747452-dyuna-mistral-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/246446747452-dyuna-mistral-mat",
     "image": "data/images/kira/kira_246446747452/1.webp",
     "images": [
       "data/images/kira/kira_246446747452/1.webp"
@@ -9041,7 +9013,7 @@
     "id": "kira_362727720382",
     "name": "ДЮНА Норд мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/362727720382-dyuna-nord-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/362727720382-dyuna-nord-mat",
     "image": "data/images/kira/kira_362727720382/1.webp",
     "images": [
       "data/images/kira/kira_362727720382/1.webp"
@@ -9055,7 +9027,7 @@
     "id": "kira_989769910432",
     "name": "Дуб Сонома тисненый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/989769910432-dub-sonoma-tisnenii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/989769910432-dub-sonoma-tisnenii-mat",
     "image": "data/images/kira/kira_989769910432/1.webp",
     "images": [
       "data/images/kira/kira_989769910432/1.webp"
@@ -9069,7 +9041,7 @@
     "id": "kira_639986537882",
     "name": "Дуб крафт табачный мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/639986537882-dub-kraft-tabachnii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/639986537882-dub-kraft-tabachnii-mat",
     "image": "data/images/kira/kira_639986537882/1.webp",
     "images": [
       "data/images/kira/kira_639986537882/1.webp"
@@ -9083,7 +9055,7 @@
     "id": "kira_333115895942",
     "name": "Дуб натуральный MBP 1421-28 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/333115895942-dub-naturalnii-mbp-1421-28-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/333115895942-dub-naturalnii-mbp-1421-28-mat",
     "image": "data/images/kira/kira_333115895942/1.webp",
     "images": [
       "data/images/kira/kira_333115895942/1.webp"
@@ -9097,7 +9069,7 @@
     "id": "kira_680360094262",
     "name": "Дымный древесный мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/680360094262-dimnii-drevesnii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/680360094262-dimnii-drevesnii-mat",
     "image": "data/images/kira/kira_680360094262/1.webp",
     "images": [
       "data/images/kira/kira_680360094262/1.webp"
@@ -9111,7 +9083,7 @@
     "id": "kira_595640532092",
     "name": "Жаркент KZ17 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/595640532092-zharkent-kz17-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/595640532092-zharkent-kz17-mat",
     "image": "data/images/kira/kira_595640532092/1.webp",
     "images": [
       "data/images/kira/kira_595640532092/1.webp"
@@ -9125,7 +9097,7 @@
     "id": "kira_790452622882",
     "name": "Зайсан KZ05 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/790452622882-zaisan-kz05-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/790452622882-zaisan-kz05-mat",
     "image": "data/images/kira/kira_790452622882/1.webp",
     "images": [
       "data/images/kira/kira_790452622882/1.webp"
@@ -9139,7 +9111,7 @@
     "id": "kira_824230086352",
     "name": "Изумрудное дерево мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/824230086352-izumrudnoe-derevo-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/824230086352-izumrudnoe-derevo-mat",
     "image": "data/images/kira/kira_824230086352/1.webp",
     "images": [
       "data/images/kira/kira_824230086352/1.webp"
@@ -9153,7 +9125,7 @@
     "id": "kira_187477690362",
     "name": "Капучино JS9056 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/187477690362-kapuchino-js9056-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/187477690362-kapuchino-js9056-mat",
     "image": "data/images/kira/kira_187477690362/1.webp",
     "images": [
       "data/images/kira/kira_187477690362/1.webp"
@@ -9167,7 +9139,7 @@
     "id": "kira_906984585402",
     "name": "Каспий KZ07 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/906984585402-kaspii-kz07-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/906984585402-kaspii-kz07-mat",
     "image": "data/images/kira/kira_906984585402/1.webp",
     "images": [
       "data/images/kira/kira_906984585402/1.webp"
@@ -9181,7 +9153,7 @@
     "id": "kira_888204368702",
     "name": "Кварц JS9055 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/888204368702-kvarts-js9055-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/888204368702-kvarts-js9055-mat",
     "image": "data/images/kira/kira_888204368702/1.webp",
     "images": [
       "data/images/kira/kira_888204368702/1.webp"
@@ -9209,7 +9181,7 @@
     "id": "kira_633496269602",
     "name": "Крем-брюле JS9052-28 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/633496269602-krem-bryule-js9052-28-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/633496269602-krem-bryule-js9052-28-mat",
     "image": "data/images/kira/kira_633496269602/1.webp",
     "images": [
       "data/images/kira/kira_633496269602/1.webp"
@@ -9223,7 +9195,7 @@
     "id": "kira_582050133722",
     "name": "Крымское дерево мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/582050133722-krimskoe-derevo-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/582050133722-krimskoe-derevo-mat",
     "image": "data/images/kira/kira_582050133722/1.webp",
     "images": [
       "data/images/kira/kira_582050133722/1.webp"
@@ -9237,7 +9209,7 @@
     "id": "kira_617650016042",
     "name": "Лазурное дерево мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/617650016042-lazurnoe-derevo-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/617650016042-lazurnoe-derevo-mat",
     "image": "data/images/kira/kira_617650016042/1.webp",
     "images": [
       "data/images/kira/kira_617650016042/1.webp"
@@ -9251,7 +9223,7 @@
     "id": "kira_301039130802",
     "name": "Лотос SF 027 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/301039130802-lotos-sf-027-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/301039130802-lotos-sf-027-mat",
     "image": "data/images/kira/kira_301039130802/1.webp",
     "images": [
       "data/images/kira/kira_301039130802/1.webp"
@@ -9265,7 +9237,7 @@
     "id": "kira_155299119282",
     "name": "Махагон мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/155299119282-mahagon-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/155299119282-mahagon-mat",
     "image": "data/images/kira/kira_155299119282/1.webp",
     "images": [
       "data/images/kira/kira_155299119282/1.webp"
@@ -9279,7 +9251,7 @@
     "id": "kira_914483768092",
     "name": "Медеу KZ09 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/914483768092-medeu-kz09-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/914483768092-medeu-kz09-mat",
     "image": "data/images/kira/kira_914483768092/1.webp",
     "images": [
       "data/images/kira/kira_914483768092/1.webp"
@@ -9293,7 +9265,7 @@
     "id": "kira_410934607322",
     "name": "Милк SF 01 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/410934607322-milk-sf-01-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/410934607322-milk-sf-01-mat",
     "image": "data/images/kira/kira_410934607322/1.webp",
     "images": [
       "data/images/kira/kira_410934607322/1.webp"
@@ -9307,7 +9279,7 @@
     "id": "kira_542318358032",
     "name": "Мокко SF 04 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/542318358032-mokko-sf-04-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/542318358032-mokko-sf-04-mat",
     "image": "data/images/kira/kira_542318358032/1.webp",
     "images": [
       "data/images/kira/kira_542318358032/1.webp"
@@ -9321,7 +9293,7 @@
     "id": "kira_896024659442",
     "name": "Молоко JS9053 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/896024659442-moloko-js9053-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/896024659442-moloko-js9053-mat",
     "image": "data/images/kira/kira_896024659442/1.webp",
     "images": [
       "data/images/kira/kira_896024659442/1.webp"
@@ -9335,7 +9307,7 @@
     "id": "kira_796511117242",
     "name": "Ниагара SF 015 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/796511117242-niagara-sf-015-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/796511117242-niagara-sf-015-mat",
     "image": "data/images/kira/kira_796511117242/1.webp",
     "images": [
       "data/images/kira/kira_796511117242/1.webp"
@@ -9363,7 +9335,7 @@
     "id": "kira_328012623292",
     "name": "Окжетпес KZ19 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/328012623292-okzhetpes-kz19-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/328012623292-okzhetpes-kz19-mat",
     "image": "data/images/kira/kira_328012623292/1.webp",
     "images": [
       "data/images/kira/kira_328012623292/1.webp"
@@ -9377,7 +9349,7 @@
     "id": "kira_932586498872",
     "name": "Олива JS9060 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/932586498872-oliva-js9060-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/932586498872-oliva-js9060-mat",
     "image": "data/images/kira/kira_932586498872/1.webp",
     "images": [
       "data/images/kira/kira_932586498872/1.webp"
@@ -9391,7 +9363,7 @@
     "id": "kira_451054488152",
     "name": "Оливковое дерево мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/451054488152-olivkovoe-derevo-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/451054488152-olivkovoe-derevo-mat",
     "image": "data/images/kira/kira_451054488152/1.webp",
     "images": [
       "data/images/kira/kira_451054488152/1.webp"
@@ -9405,7 +9377,7 @@
     "id": "kira_553906585452",
     "name": "Орех гварнери мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/553906585452-oreh-gvarneri-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/553906585452-oreh-gvarneri-mat",
     "image": "data/images/kira/kira_553906585452/1.webp",
     "images": [
       "data/images/kira/kira_553906585452/1.webp"
@@ -9419,7 +9391,7 @@
     "id": "kira_595006318242",
     "name": "Отрар KZ12 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/595006318242-otrar-kz12-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/595006318242-otrar-kz12-mat",
     "image": "data/images/kira/kira_595006318242/1.webp",
     "images": [
       "data/images/kira/kira_595006318242/1.webp"
@@ -9433,7 +9405,7 @@
     "id": "kira_580664811382",
     "name": "Палома SF 023 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/580664811382-paloma-sf-023-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/580664811382-paloma-sf-023-mat",
     "image": "data/images/kira/kira_580664811382/1.webp",
     "images": [
       "data/images/kira/kira_580664811382/1.webp"
@@ -9447,7 +9419,7 @@
     "id": "kira_983030132962",
     "name": "Пепельный мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/983030132962-pepelnii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/983030132962-pepelnii-mat",
     "image": "data/images/kira/kira_983030132962/1.webp",
     "images": [
       "data/images/kira/kira_983030132962/1.webp"
@@ -9461,7 +9433,7 @@
     "id": "kira_877274373232",
     "name": "Пудра мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/877274373232-pudra-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/877274373232-pudra-mat",
     "image": "data/images/kira/kira_877274373232/1.webp",
     "images": [
       "data/images/kira/kira_877274373232/1.webp"
@@ -9475,7 +9447,7 @@
     "id": "kira_889629102452",
     "name": "Рахат KZ16 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/889629102452-rahat-kz16-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/889629102452-rahat-kz16-mat",
     "image": "data/images/kira/kira_889629102452/1.webp",
     "images": [
       "data/images/kira/kira_889629102452/1.webp"
@@ -9503,7 +9475,7 @@
     "id": "kira_955922833442",
     "name": "Санторини Белый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/955922833442-santorini-belii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/955922833442-santorini-belii-mat",
     "image": "data/images/kira/kira_955922833442/1.webp",
     "images": [
       "data/images/kira/kira_955922833442/1.webp"
@@ -9517,7 +9489,7 @@
     "id": "kira_387163120372",
     "name": "Сантьяго SF 022 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/387163120372-santyago-sf-022-mat",
+    "url": "https://kira-group.kz/pvc-softsf/tproduct/387163120372-santyago-sf-022-mat",
     "image": "data/images/kira/kira_387163120372/1.webp",
     "images": [
       "data/images/kira/kira_387163120372/1.webp"
@@ -9531,7 +9503,7 @@
     "id": "kira_247655017842",
     "name": "Сарыарка KZ02 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/247655017842-sariarka-kz02-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/247655017842-sariarka-kz02-mat",
     "image": "data/images/kira/kira_247655017842/1.webp",
     "images": [
       "data/images/kira/kira_247655017842/1.webp"
@@ -9545,7 +9517,7 @@
     "id": "kira_108760943062",
     "name": "Серый JS9058 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/108760943062-serii-js9058-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/108760943062-serii-js9058-mat",
     "image": "data/images/kira/kira_108760943062/1.webp",
     "images": [
       "data/images/kira/kira_108760943062/1.webp"
@@ -9559,7 +9531,7 @@
     "id": "kira_415422748292",
     "name": "Скандинавский Дуб Коричневый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/415422748292-skandinavskii-dub-korichnevii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/415422748292-skandinavskii-dub-korichnevii-mat",
     "image": "data/images/kira/kira_415422748292/1.webp",
     "images": [
       "data/images/kira/kira_415422748292/1.webp"
@@ -9573,7 +9545,7 @@
     "id": "kira_908571846292",
     "name": "Скандинавский дуб бежевый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/908571846292-skandinavskii-dub-bezhevii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/908571846292-skandinavskii-dub-bezhevii-mat",
     "image": "data/images/kira/kira_908571846292/1.webp",
     "images": [
       "data/images/kira/kira_908571846292/1.webp"
@@ -9587,7 +9559,7 @@
     "id": "kira_437430327112",
     "name": "Скандинавский дуб золотой мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/437430327112-skandinavskii-dub-zolotoi-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/437430327112-skandinavskii-dub-zolotoi-mat",
     "image": "data/images/kira/kira_437430327112/1.webp",
     "images": [
       "data/images/kira/kira_437430327112/1.webp"
@@ -9601,7 +9573,7 @@
     "id": "kira_151687895292",
     "name": "Снежное дерево 1227-FGP мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/151687895292-snezhnoe-derevo-1227-fgp-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/151687895292-snezhnoe-derevo-1227-fgp-mat",
     "image": "data/images/kira/kira_151687895292/1.webp",
     "images": [
       "data/images/kira/kira_151687895292/1.webp"
@@ -9615,7 +9587,7 @@
     "id": "kira_875306808812",
     "name": "Сталь JS9057 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/875306808812-stal-js9057-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/875306808812-stal-js9057-mat",
     "image": "data/images/kira/kira_875306808812/1.webp",
     "images": [
       "data/images/kira/kira_875306808812/1.webp"
@@ -9629,7 +9601,7 @@
     "id": "kira_113677124252",
     "name": "Томирис мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/113677124252-tomiris-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/113677124252-tomiris-mat",
     "image": "data/images/kira/kira_113677124252/1.webp",
     "images": [
       "data/images/kira/kira_113677124252/1.webp"
@@ -9643,7 +9615,7 @@
     "id": "kira_914666666872",
     "name": "Туран мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/914666666872-turan-mat",
+    "url": "https://kira-group.kz/pvc-beton/tproduct/914666666872-turan-mat",
     "image": "data/images/kira/kira_914666666872/1.webp",
     "images": [
       "data/images/kira/kira_914666666872/1.webp"
@@ -9657,7 +9629,7 @@
     "id": "kira_896379499292",
     "name": "Тянь-Шань KZ08 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/896379499292-tyan-shan-kz08-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/896379499292-tyan-shan-kz08-mat",
     "image": "data/images/kira/kira_896379499292/1.webp",
     "images": [
       "data/images/kira/kira_896379499292/1.webp"
@@ -9671,7 +9643,7 @@
     "id": "kira_143017296162",
     "name": "Устюрт KZ13 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/143017296162-ustyurt-kz13-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/143017296162-ustyurt-kz13-mat",
     "image": "data/images/kira/kira_143017296162/1.webp",
     "images": [
       "data/images/kira/kira_143017296162/1.webp"
@@ -9685,7 +9657,7 @@
     "id": "kira_533171262382",
     "name": "Хан-Тенгри KZ15 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/533171262382-han-tengri-kz15-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/533171262382-han-tengri-kz15-mat",
     "image": "data/images/kira/kira_533171262382/1.webp",
     "images": [
       "data/images/kira/kira_533171262382/1.webp"
@@ -9699,7 +9671,7 @@
     "id": "kira_731321151332",
     "name": "Хан-Шатыр KZ14 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/731321151332-han-shatir-kz14-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/731321151332-han-shatir-kz14-mat",
     "image": "data/images/kira/kira_731321151332/1.webp",
     "images": [
       "data/images/kira/kira_731321151332/1.webp"
@@ -9713,7 +9685,7 @@
     "id": "kira_678580133552",
     "name": "Черная JS9013-28 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/678580133552-chernaya-js9013-28-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/678580133552-chernaya-js9013-28-mat",
     "image": "data/images/kira/kira_678580133552/1.webp",
     "images": [
       "data/images/kira/kira_678580133552/1.webp"
@@ -9741,7 +9713,7 @@
     "id": "kira_224608125962",
     "name": "Шагрень Авокадо мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/224608125962-shagren-avokado-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/224608125962-shagren-avokado-mat",
     "image": "data/images/kira/kira_224608125962/1.webp",
     "images": [
       "data/images/kira/kira_224608125962/1.webp"
@@ -9755,7 +9727,7 @@
     "id": "kira_803001386022",
     "name": "Шагрень Латте мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/803001386022-shagren-latte-mat",
+    "url": "https://kira-group.kz/pvc-js/tproduct/803001386022-shagren-latte-mat",
     "image": "data/images/kira/kira_803001386022/1.webp",
     "images": [
       "data/images/kira/kira_803001386022/1.webp"
@@ -9769,7 +9741,7 @@
     "id": "kira_787084261102",
     "name": "Шымбулак KZ01 мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/787084261102-shimbulak-kz01-mat",
+    "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/787084261102-shimbulak-kz01-mat",
     "image": "data/images/kira/kira_787084261102/1.webp",
     "images": [
       "data/images/kira/kira_787084261102/1.webp"
@@ -9783,7 +9755,7 @@
     "id": "kira_355968953262",
     "name": "Ясень белый мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/355968953262-yasen-belii-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/355968953262-yasen-belii-mat",
     "image": "data/images/kira/kira_355968953262/1.webp",
     "images": [
       "data/images/kira/kira_355968953262/1.webp"
@@ -9797,7 +9769,7 @@
     "id": "kira_904401314852",
     "name": "Ясень жемчуг мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/904401314852-yasen-zhemchug-mat",
+    "url": "https://kira-group.kz/pvc-derevo/tproduct/904401314852-yasen-zhemchug-mat",
     "image": "data/images/kira/kira_904401314852/1.webp",
     "images": [
       "data/images/kira/kira_904401314852/1.webp"
