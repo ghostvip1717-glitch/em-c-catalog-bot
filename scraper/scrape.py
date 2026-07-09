@@ -21,14 +21,18 @@ import image_utils
 import scrape_adilet
 import scrape_interstone
 import scrape_kira
+import scrape_profikz
 
 BASE_URL = "https://www.em-c.kz"
 
-# slug раздела -> человекочитаемое название категории.
-# С em-c.kz теперь берём только ЛДСП — остальные разделы (ДВП, ДСП, МДФ,
-# МДФ UV, ламинированный гипсокартон, фанера, ХДФ) больше не нужны в каталоге.
+# slug раздела em-c.kz -> человекочитаемое название категории.
+# Берём российские ЛДСП и столешницы. Суффикс ": Россия" в названии нужен,
+# чтобы фронтенд мог отделить их от австрийских (Egger) аналогов с profikz.kz
+# (см. scrape_profikz.py и siteGroupOf в index.html). Остальные разделы em-c
+# (ДВП, ДСП, МДФ, фанера, ХДФ и т.п.) в каталоге не нужны.
 CATEGORIES = {
-    "ldsp": "ЛДСП",
+    "ldsp": "ЛДСП: Россия",
+    "stoleshnitsy": "Столешницы: Россия",
 }
 
 HEADERS = {
@@ -47,6 +51,19 @@ def fetch(url: str) -> str:
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     return resp.text
+
+
+def site_of(item_id: str) -> str:
+    """Источник товара по префиксу его id — определяет папку в data/images/."""
+    for prefix, site in (
+        ("adilet_", "adilet"),
+        ("interstone_", "interstone"),
+        ("kira_", "kira"),
+        ("profikz_", "profikz"),
+    ):
+        if item_id.startswith(prefix):
+            return site
+    return "emc"
 
 
 def parse_category_page(html: str, category_name: str) -> list[dict]:
@@ -136,6 +153,14 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
         print(f"[scrape] ошибка при скрапинге interstone.kz: {exc}", file=sys.stderr)
 
+    print("[scrape] profikz.kz (ЛДСП и столешницы EGGER, Австрия)...", file=sys.stderr)
+    try:
+        profikz_items = scrape_profikz.scrape_all()
+        print(f"[scrape]   найдено {len(profikz_items)} позиций", file=sys.stderr)
+        all_items.extend(profikz_items)
+    except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
+        print(f"[scrape] ошибка при скрапинге profikz.kz: {exc}", file=sys.stderr)
+
     # убираем дубликаты по id, если товар встретился в нескольких категориях
     seen = {}
     for item in all_items:
@@ -149,28 +174,15 @@ def main() -> None:
     # запуске обрабатываются по сути только новые товары.
     print("[scrape] скачивание и сжатие фото...", file=sys.stderr)
     for item in unique_items:
-        if item["id"].startswith("adilet_"):
-            site = "adilet"
-        elif item["id"].startswith("interstone_"):
-            site = "interstone"
-        elif item["id"].startswith("kira_"):
-            site = "kira"
-        else:
-            site = "emc"
-        image_utils.process_item_images(item, site)
+        image_utils.process_item_images(item, site_of(item["id"]))
 
     # Чистим фото товаров, которых больше нет в свежем каталоге (сняты с
     # продажи у источника и т.п.) — иначе data/images/ будет бесконечно расти.
-    ids_by_site: dict[str, set] = {"emc": set(), "adilet": set(), "interstone": set(), "kira": set()}
+    ids_by_site: dict[str, set] = {
+        "emc": set(), "adilet": set(), "interstone": set(), "kira": set(), "profikz": set()
+    }
     for item in unique_items:
-        if item["id"].startswith("adilet_"):
-            ids_by_site["adilet"].add(item["id"])
-        elif item["id"].startswith("interstone_"):
-            ids_by_site["interstone"].add(item["id"])
-        elif item["id"].startswith("kira_"):
-            ids_by_site["kira"].add(item["id"])
-        else:
-            ids_by_site["emc"].add(item["id"])
+        ids_by_site[site_of(item["id"])].add(item["id"])
     image_utils.cleanup_orphans(ids_by_site)
 
     unique_items.sort(key=lambda x: (x["category"], x["name"]))
