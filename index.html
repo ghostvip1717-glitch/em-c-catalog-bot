@@ -218,16 +218,6 @@
     margin:18px 4px 8px;
   }
 
-
-  /* Временный сегментный переключатель схемы группировки в шторке. */
-  .org-switch{display:flex;gap:6px;margin:0 0 14px;}
-  .org-switch-btn{
-    flex:1;padding:9px 8px;border-radius:10px;border:1px solid var(--line);
-    background:var(--secbg);color:var(--text-2);font-size:12.5px;font-weight:600;
-    cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease;
-  }
-  .org-switch-btn.active{background:var(--button);color:var(--button-text);border-color:var(--button);}
-
   .drawer-group{margin-bottom:8px;border-radius:12px;background:var(--secbg);overflow:hidden;}
   .drawer-group-header{
     display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 12px;
@@ -710,16 +700,8 @@
   // ---- группировка категорий по «источникам» (иконки/шторка/верхний селектор) ----
   // Категории неймспейсятся по префиксу названия. ЛДСП и столешницы бывают
   // двух видов — российские (em-c.kz, "...: Россия") и австрийские Egger
-  // (profikz.kz, "...: Австрия (Egger)"). Как именно раскладывать их по
-  // иконкам — вопрос вкуса, поэтому поддерживаем ДВЕ схемы группировки с
-  // временным переключателем в боковой шторке (см. setCatOrg / #catOrgSwitch):
-  //   • 'type'   — по типу: иконки «ЛДСП» и «Столешницы», внутри — Россия и
-  //                Австрия (Egger).
-  //   • 'origin' — по происхождению: иконки «Россия» (EM-C) и «Egger»
-  //                (Австрия), внутри — ЛДСП и Столешницы.
-  // Важно: сами категории (материалы) в обеих схемах ОДНИ И ТЕ ЖЕ — меняется
-  // только раскладка по иконкам, поэтому выбранный фильтр по конкретной
-  // категории при переключении схемы не теряется.
+  // (profikz.kz, "...: Австрия (Egger)"). Группируем их ПО ТИПУ материала:
+  // иконки «ЛДСП» и «Столешницы», внутри каждой — и Россия, и Австрия.
   //
   // Иконки — свои, монохромный line-стиль (stroke=currentColor), чтобы активное
   // состояние перекрашивало иконку целиком (см. .quick-item.active).
@@ -728,95 +710,41 @@
     sheet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
     // Столешница — горизонтальная плита-столешница на двух торцах-опорах.
     counter: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="4" rx="1"></rect><line x1="6" y1="11" x2="6" y2="18"></line><line x1="18" y1="11" x2="18" y2="18"></line></svg>',
-    // Egger — плита с древесной текстурой (вертикальные волокна).
-    egger: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"></rect><path d="M9 3.5 C 10 9, 8 15, 9 20.5"></path><path d="M13 3.5 C 14 9, 12 15, 13 20.5"></path><path d="M17 3.5 C 18 9, 16 15, 17 20.5"></path></svg>',
     plenka: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(90 12 12)"><rect x="9" y="4" width="12" height="13"></rect><rect x="3" y="7" width="6" height="14" rx="3"></rect><ellipse cx="6" cy="7" rx="3" ry="1.3"></ellipse></g></svg>',
     tkani: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="1.5"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="10" y1="5" x2="10" y2="19"></line><line x1="14" y1="5" x2="14" y2="19"></line></svg>',
     stone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>',
     ral: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="5" height="16" rx="1"></rect><rect x="9.5" y="4" width="5" height="16" rx="1"></rect><rect x="16" y="4" width="5" height="16" rx="1"></rect></svg>'
   };
 
-  // Метаданные плёнки/тканей/камня/RAL одинаковы в обеих схемах — выносим,
-  // чтобы не дублировать. Цвета точек подобраны так, чтобы не сливались с
-  // золотым акцентом --button и читались на светлой поверхности.
-  var COMMON_META = {
+  function siteGroupOf(cat){
+    if (cat.indexOf('ПВХ плёнка') === 0) return 'plenka';
+    if (cat.indexOf('Ткани:') === 0) return 'tkani';
+    if (cat.indexOf('Краски RAL') === 0) return 'ral';
+    if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
+    if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
+    if (cat.indexOf('Столешницы') === 0) return 'stoleshnitsy';
+    if (cat.indexOf('ЛДСП') === 0) return 'ldsp';
+    return 'ldsp';
+  }
+
+  var SITE_META = {
+    ldsp: { title: 'ЛДСП', subtitle: 'ЛДСП', color: '#6fa3d8' },
+    stoleshnitsy: { title: 'Столешницы', subtitle: 'Столешницы', color: '#5aa88b' },
     plenka: { title: 'ADILET.NET / KIRA', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
     tkani: { title: 'ADILET.NET', subtitle: 'Ткани', color: '#b87898' },
     interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' },
     ral: { title: 'RAL CLASSIC', subtitle: 'Краски RAL', color: '#c0654e' }
   };
-  var COMMON_LABELS = { plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
-  var COMMON_ICONS = { plenka: ICONS.plenka, tkani: ICONS.tkani, interstone: ICONS.stone, ral: ICONS.ral };
-
-  function assign(){
-    var out = {};
-    for (var i = 0; i < arguments.length; i++) {
-      var src = arguments[i];
-      for (var k in src) { if (Object.prototype.hasOwnProperty.call(src, k)) out[k] = src[k]; }
-    }
-    return out;
-  }
-
-  var CAT_ORGS = {
-    type: {
-      label: 'По типу',
-      order: ['ldsp', 'stoleshnitsy', 'plenka', 'tkani', 'interstone', 'ral'],
-      group: function(cat){
-        if (cat.indexOf('ПВХ плёнка') === 0) return 'plenka';
-        if (cat.indexOf('Ткани:') === 0) return 'tkani';
-        if (cat.indexOf('Краски RAL') === 0) return 'ral';
-        if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
-        if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
-        if (cat.indexOf('Столешницы') === 0) return 'stoleshnitsy';
-        if (cat.indexOf('ЛДСП') === 0) return 'ldsp';
-        return 'ldsp';
-      },
-      meta: assign({
-        ldsp: { title: 'ЛДСП', subtitle: 'ЛДСП', color: '#6fa3d8' },
-        stoleshnitsy: { title: 'Столешницы', subtitle: 'Столешницы', color: '#5aa88b' }
-      }, COMMON_META),
-      labels: assign({ ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы' }, COMMON_LABELS),
-      icons: assign({ ldsp: ICONS.sheet, stoleshnitsy: ICONS.counter }, COMMON_ICONS)
-    },
-    origin: {
-      label: 'По происхождению',
-      order: ['emc', 'egger', 'plenka', 'tkani', 'interstone', 'ral'],
-      group: function(cat){
-        if (cat.indexOf('ПВХ плёнка') === 0) return 'plenka';
-        if (cat.indexOf('Ткани:') === 0) return 'tkani';
-        if (cat.indexOf('Краски RAL') === 0) return 'ral';
-        if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
-        if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
-        if (cat.indexOf('Egger') !== -1) return 'egger';
-        return 'emc';
-      },
-      meta: assign({
-        emc: { title: 'EM-C.KZ', subtitle: 'Россия (EM-C)', color: '#6fa3d8' },
-        egger: { title: 'PROFIKZ', subtitle: 'Австрия (Egger)', color: '#b8894e' }
-      }, COMMON_META),
-      labels: assign({ emc: 'Россия', egger: 'Egger' }, COMMON_LABELS),
-      icons: assign({ emc: ICONS.sheet, egger: ICONS.egger }, COMMON_ICONS)
-    }
+  var SITE_ORDER = ['ldsp', 'stoleshnitsy', 'plenka', 'tkani', 'interstone', 'ral'];
+  var QUICK_LABELS = { ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
+  var QUICK_ICONS = {
+    ldsp: ICONS.sheet,
+    stoleshnitsy: ICONS.counter,
+    plenka: ICONS.plenka,
+    tkani: ICONS.tkani,
+    interstone: ICONS.stone,
+    ral: ICONS.ral
   };
-  var CAT_ORG_ORDER = ['type', 'origin'];
-  var catOrgMode = 'type';
-  try { var _savedOrg = localStorage.getItem('catOrg'); if (_savedOrg && CAT_ORGS[_savedOrg]) catOrgMode = _savedOrg; } catch(e){}
-
-  function currentOrg(){ return CAT_ORGS[catOrgMode] || CAT_ORGS.type; }
-  function siteGroupOf(cat){ return currentOrg().group(cat); }
-
-  // Переключение схемы группировки (временный тумблер в шторке). Ключи
-  // «источников» в схемах разные (ldsp/stoleshnitsy vs emc/egger), поэтому
-  // сбрасываем фильтр по источнику и раскрытые группы; фильтр по конкретной
-  // КАТЕГОРИИ оставляем — категории в обеих схемах одинаковы.
-  function setCatOrg(mode){
-    if (!CAT_ORGS[mode]) return;
-    catOrgMode = mode;
-    try { localStorage.setItem('catOrg', mode); } catch(e){}
-    state.activeSite = null;
-    state.expandedGroups = {};
-    render(); updateFavBtn(); updateTopCatSelectValue(); buildDrawer(); buildQuickRow();
-  }
 
   // Внутри одной иконки-источника категории дополнительно делятся на
   // смысловые подгруппы (Плёнка/Ткани, Акрил/Кварц), чтобы popover не
@@ -948,7 +876,7 @@
         // актуально всегда, даже когда каталог пополняется скрапером.
         var splashEyebrow = document.getElementById('splashEyebrow');
         if (splashEyebrow) {
-          splashEyebrow.textContent = data.length + ' материалов · ' + currentOrg().order.length + ' источников';
+          splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источников';
         }
       })
       .catch(function(err){
@@ -1026,12 +954,12 @@
     });
 
     var groups = computeSourceGroups();
-    currentOrg().order.forEach(function(key){
+    SITE_ORDER.forEach(function(key){
       var g = groups[key];
       if (!g) return;
       // Пользователю не важно, с какого сайта пришли данные — важно, что за
       // материал внутри (см. аналогичное решение в шторке/иконках).
-      var meta = currentOrg().meta[key] || { subtitle: key };
+      var meta = SITE_META[key] || { subtitle: key };
       var catNames = Object.keys(g.cats).sort();
 
       var label = document.createElement('div');
@@ -1071,7 +999,7 @@
   // select'а (имя функции оставлено прежним — вызывается из многих мест).
   function updateTopCatSelectValue(){
     if (state.favOnly) els.topCatBtnLabel.textContent = '★ Избранное';
-    else if (state.activeSite) els.topCatBtnLabel.textContent = currentOrg().labels[state.activeSite] || state.activeSite;
+    else if (state.activeSite) els.topCatBtnLabel.textContent = QUICK_LABELS[state.activeSite] || state.activeSite;
     else if (state.category === 'Все') els.topCatBtnLabel.textContent = 'Все материалы';
     else els.topCatBtnLabel.textContent = state.category;
   }
@@ -1096,9 +1024,7 @@
   // ряда — так активное состояние (.quick-item.active{color:var(--button)})
   // продолжает перекрашивать иконку целиком, без отдельного набора цветов
   // только для одной иконки.
-  // Иконки и подписи иконок-ярлыков теперь живут в CAT_ORGS (см. выше, ICONS/
-  // COMMON_ICONS/labels) и зависят от выбранной схемы группировки — берём их
-  // через currentOrg().icons / currentOrg().labels.
+  // Иконки и подписи иконок-ярлыков (см. выше, ICONS/labels).
 
   var quickPopoverOpenSite = null;
 
@@ -1127,7 +1053,7 @@
     var allItem = document.createElement('div');
     var allActive = !state.favOnly && (state.activeSite === key || (!state.activeSite && state.category === 'Все'));
     allItem.className = 'quick-popover-item' + (allActive ? ' active' : '');
-    allItem.innerHTML = '<span>Всё (' + currentOrg().labels[key] + ')</span><span class="n">' + g.total + '</span>';
+    allItem.innerHTML = '<span>Всё (' + QUICK_LABELS[key] + ')</span><span class="n">' + g.total + '</span>';
     allItem.onclick = function(){
       state.activeSite = key;
       state.category = 'Все';
@@ -1206,7 +1132,7 @@
     els.quickRow.innerHTML = '';
     var groups = computeSourceGroups();
 
-    currentOrg().order.forEach(function(key){
+    SITE_ORDER.forEach(function(key){
       var g = groups[key];
       if (!g) return;
       var catNames = Object.keys(g.cats).sort();
@@ -1218,7 +1144,7 @@
 
       var btn = document.createElement('button');
       btn.className = 'quick-item' + (isActive ? ' active' : '');
-      btn.innerHTML = currentOrg().icons[key] + '<span>' + currentOrg().labels[key] + '</span>';
+      btn.innerHTML = QUICK_ICONS[key] + '<span>' + QUICK_LABELS[key] + '</span>';
       btn.onclick = function(){
         if (hasSubcategories) {
           if (quickPopoverOpenSite === key) { closeQuickPopover(); return; } // повторный тап — закрыть
@@ -1253,35 +1179,15 @@
 
     els.drawerGroups.innerHTML = '';
 
-    // Временный переключатель схемы группировки (по типу / по происхождению) —
-    // как когда-то переключатель тем: чтобы выбрать удобную раскладку вживую.
-    var orgLabel = document.createElement('div');
-    orgLabel.className = 'drawer-section-label';
-    orgLabel.textContent = 'Группировка (временно)';
-    els.drawerGroups.appendChild(orgLabel);
-
-    var orgSwitch = document.createElement('div');
-    orgSwitch.className = 'org-switch';
-    orgSwitch.id = 'catOrgSwitch';
-    CAT_ORG_ORDER.forEach(function(mode){
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'org-switch-btn' + (catOrgMode === mode ? ' active' : '');
-      b.textContent = CAT_ORGS[mode].label;
-      b.onclick = function(){ setCatOrg(mode); };
-      orgSwitch.appendChild(b);
-    });
-    els.drawerGroups.appendChild(orgSwitch);
-
     var label = document.createElement('div');
     label.className = 'drawer-section-label';
     label.textContent = 'Источники';
     els.drawerGroups.appendChild(label);
 
-    currentOrg().order.forEach(function(key){
+    SITE_ORDER.forEach(function(key){
       var g = groups[key];
       if (!g) return;
-      var meta = currentOrg().meta[key] || { title: key, subtitle: '', color: '#888' };
+      var meta = SITE_META[key] || { title: key, subtitle: '', color: '#888' };
       var catNames = Object.keys(g.cats).sort();
 
       // Состояние "развёрнуто/свёрнуто" общее с модалкой (state.expandedGroups) —
