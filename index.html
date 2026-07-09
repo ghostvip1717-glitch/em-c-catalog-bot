@@ -336,6 +336,10 @@
   .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease;}
   .card img.loaded{opacity:1;}
   .card .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--hint);font-size:12px;text-align:center;padding:10px;}
+  /* Плашка цвета RAL вместо фото. Внутренняя тень-рамка (inset box-shadow)
+     очерчивает край, чтобы очень светлые цвета (белые RAL) не растворялись
+     на белой карточке. */
+  .card .color-swatch{width:100%;height:100%;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);}
 
   /* skeleton-плейсхолдеры на время загрузки */
   @keyframes shimmer{0%{background-position:-400px 0;}100%{background-position:400px 0;}}
@@ -402,6 +406,8 @@
   .vslide .vthumb{filter:blur(16px);transform:scale(1.08);transition:opacity .3s ease;}
   .vslide .vfull{opacity:0;transition:opacity .3s ease;}
   .vslide .vfull.loaded{opacity:1;}
+  /* Полноэкранная плашка цвета RAL в просмотрщике */
+  .vslide .vcolor{position:absolute;inset:0;width:100%;height:100%;}
   .vgradient{
     position:absolute;left:0;right:0;bottom:0;height:40%;pointer-events:none;
     background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
@@ -481,7 +487,7 @@
   <div class="splash-content">
     <div class="splash-eyebrow" id="splashEyebrow">Материалы для мебели</div>
     <div class="splash-title">Материалы для мебели<br>в одном каталоге</div>
-    <div class="splash-sub">Акрил и кварц, плёнка ПВХ, ткани, листовые материалы — фото, коды, названия под рукой на объекте.</div>
+    <div class="splash-sub">Акрил и кварц, плёнка ПВХ, ткани, листовые материалы, краски RAL — фото, коды, названия под рукой на объекте.</div>
     <button class="splash-cta" id="splashCta">Каталог</button>
   </div>
 </div>
@@ -702,6 +708,7 @@
   function siteGroupOf(cat){
     if (cat.indexOf('ПВХ плёнка') === 0) return 'plenka';
     if (cat.indexOf('Ткани:') === 0) return 'tkani';
+    if (cat.indexOf('Краски RAL') === 0) return 'ral';
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
     if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
     return 'emc';
@@ -712,9 +719,10 @@
     emc: { title: 'EM-C.KZ', subtitle: 'Листовые материалы', color: '#6fa3d8' },
     plenka: { title: 'ADILET.NET / KIRA', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
     tkani: { title: 'ADILET.NET', subtitle: 'Ткани', color: '#b87898' },
-    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' }
+    interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' },
+    ral: { title: 'RAL CLASSIC', subtitle: 'Краски RAL', color: '#c0654e' }
   };
-  var SITE_ORDER = ['emc', 'plenka', 'tkani', 'interstone'];
+  var SITE_ORDER = ['emc', 'plenka', 'tkani', 'interstone', 'ral'];
 
   // Внутри одной иконки-источника категории дополнительно делятся на
   // смысловые подгруппы (Плёнка/Ткани, Акрил/Кварц), чтобы popover не
@@ -823,11 +831,19 @@
   }
 
   // ---- загрузка каталога ----
+  // Каталог материалов и палитра RAL лежат в РАЗНЫХ файлах: materials.json
+  // ежедневно перезаписывается скрапером, а ral.json — статичный справочник
+  // (216 цветов, не меняется). Держим их раздельно, чтобы автообновление
+  // каталога не затирало RAL, и просто склеиваем оба списка при загрузке.
+  // Если ral.json почему-то не загрузился — каталог всё равно покажется.
   function loadCatalog(){
-    fetch('data/materials.json', {cache:'no-store'})
-      .then(function(r){ return r.json(); })
-      .then(function(data){
-        console.log('[catalog] каталог загружен:', data.length, 'позиций');
+    Promise.all([
+      fetch('data/materials.json', {cache:'no-store'}).then(function(r){ return r.json(); }),
+      fetch('data/ral.json', {cache:'no-store'}).then(function(r){ return r.json(); }).catch(function(){ return []; })
+    ])
+      .then(function(results){
+        var data = results[0].concat(results[1] || []);
+        console.log('[catalog] каталог загружен:', data.length, 'позиций (в т.ч. RAL:', (results[1] || []).length + ')');
         state.items = data;
         updateFavBtn();
         updateTopCatSelectValue();
@@ -838,11 +854,11 @@
         // актуально всегда, даже когда каталог пополняется скрапером.
         var splashEyebrow = document.getElementById('splashEyebrow');
         if (splashEyebrow) {
-          splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источника';
+          splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источников';
         }
       })
       .catch(function(err){
-        console.error('[catalog] ошибка загрузки materials.json:', err);
+        console.error('[catalog] ошибка загрузки каталога:', err);
         els.empty.style.display = 'block';
         els.empty.textContent = 'Не удалось загрузить каталог';
       });
@@ -993,9 +1009,12 @@
     // пользователя (стоящий рулон + лист), развёрнутой на бок.
     plenka: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(90 12 12)"><rect x="9" y="4" width="12" height="13"></rect><rect x="3" y="7" width="6" height="14" rx="3"></rect><ellipse cx="6" cy="7" rx="3" ry="1.3"></ellipse></g></svg>',
     tkani: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="1.5"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="10" y1="5" x2="10" y2="19"></line><line x1="14" y1="5" x2="14" y2="19"></line></svg>',
-    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>'
+    interstone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>',
+    // RAL — палитра красок: веер образцов (стопка прямоугольников-выкрасов
+    // под углом, как в физическом каталоге RAL K7).
+    ral: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="5" height="16" rx="1"></rect><rect x="9.5" y="4" width="5" height="16" rx="1"></rect><rect x="16" y="4" width="5" height="16" rx="1"></rect></svg>'
   };
-  var QUICK_LABELS = { emc: 'ЛДСП', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень' };
+  var QUICK_LABELS = { emc: 'ЛДСП', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
 
   var quickPopoverOpenSite = null;
 
@@ -1491,7 +1510,15 @@
       // Фолбэки нужны для товаров, у которых materials.json ещё старого
       // формата (без поля thumb) — тогда используем то, что есть.
       var thumbSrc = item.thumb || (Array.isArray(item.images) && item.images[0]) || item.image;
-      if (thumbSrc) {
+      if (item.color) {
+        // Краски RAL: у цвета нет фото — рисуем сплошную плашку прямо из HEX,
+        // ничего не скачивая (см. data/ral.json). Тонкая рамка нужна, чтобы
+        // очень светлые цвета (белые RAL) не сливались с белой карточкой.
+        var swatch = document.createElement('div');
+        swatch.className = 'color-swatch';
+        swatch.style.background = item.color;
+        thumbWrap.appendChild(swatch);
+      } else if (thumbSrc) {
         thumbWrap.classList.add('skeleton');
         var img = document.createElement('img');
         img.loading = 'lazy';
@@ -1518,7 +1545,7 @@
       // Ставим карточку под наблюдение для фоновой предзагрузки полного
       // размера (первые 2 фото товара — этого достаточно для мгновенного
       // открытия основного вида, остальные слайды подгрузятся по свайпу).
-      if (prefetchObserver) {
+      if (prefetchObserver && !item.color) {
         var fullUrls = Array.isArray(item.images) && item.images.length
           ? item.images.slice(0, 2)
           : (item.image ? [item.image] : []);
@@ -1679,6 +1706,33 @@
   function renderViewerItem(item){
     var imgs = Array.isArray(item.images) && item.images.length ? item.images : (item.image ? [item.image] : []);
     var thumbs = Array.isArray(item.thumbs) && item.thumbs.length ? item.thumbs : (item.thumb ? [item.thumb] : []);
+
+    // Краски RAL: фото нет — показываем один "слайд" со сплошным цветом во
+    // весь экран (тот же HEX, что и в карточке). Дальше обычная логика с
+    // точками/навигацией не нужна — слайд один.
+    if (item.color) {
+      viewerState.images = [item.color];
+      viewerState.idx = 0;
+      viewerState.currentItem = item;
+      els.vtrack.innerHTML = '';
+      var cslide = document.createElement('div');
+      cslide.className = 'vslide';
+      var cfill = document.createElement('div');
+      cfill.className = 'vcolor';
+      cfill.style.background = item.color;
+      cslide.appendChild(cfill);
+      els.vtrack.appendChild(cslide);
+      setTrackTransform(0, false);
+      updateViewerChrome();
+      zoom.scale = 1; zoom.x = 0; zoom.y = 0;
+      els.vname.textContent = item.name;
+      els.vcat.textContent = item.category;
+      els.vcopy.onclick = function(){ copyText(item.name); };
+      updateViewerHeart();
+      els.vheart.onclick = function(){ toggleFavorite(item.id); };
+      return;
+    }
+
     viewerState.images = imgs;
     viewerState.idx = 0;
     viewerState.currentItem = item;
