@@ -372,11 +372,9 @@
   }
   .skeleton-card{border-radius:14px;aspect-ratio:1;}
 
-  /* Два маленьких действия поверх фото (сердечко + копировать) вместо
-     сердечка на фото И ещё полноширинной кнопки "Копировать" под каждой из
-     574 карточек — так текстуре снизу достаётся весь блок вместо повторной
-     UI-обвязки на каждой карточке. */
-  .heart, .copy-icon-btn{
+  /* Два маленьких действия поверх фото (сердечко + отправить) вместо
+     сердечка на фото И ещё полноширинной кнопки под каждой из 574 карточек. */
+  .heart, .send-icon-btn{
     position:absolute;right:6px;width:28px;height:28px;border-radius:50%;
     background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;
     color:#fff;cursor:pointer;transition:background-color .15s ease,transform .1s ease;
@@ -384,9 +382,10 @@
   .heart{top:6px;font-size:15px;}
   .heart.active{background:#e0245e;animation:heartPop .25s ease;}
   @keyframes heartPop{0%{transform:scale(1);}45%{transform:scale(1.25);}100%{transform:scale(1);}}
-  .copy-icon-btn{top:40px;}
-  .copy-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
-  .copy-icon-btn svg{width:14px;height:14px;}
+  .send-icon-btn{top:40px;}
+  .send-icon-btn:active{background:rgba(0,0,0,0.6);transform:scale(0.92);}
+  .send-icon-btn svg{width:14px;height:14px;}
+  .send-icon-btn.busy{opacity:.45;pointer-events:none;}
 
   /* border-top — тонкая линия-разделитель между фото и плашкой с названием,
      вместо резкого стыка "текстура/плоский белый блок" (тот же var(--line),
@@ -683,6 +682,9 @@
   var NOTIFY_URL = 'https://tight-firefly-8060.ghostvip1717.workers.dev';
   var NOTIFY_SECRET = 'neo_7fK2mQx9pL4wR8';
   var notifyBusy = false;
+  var SEND_ICON_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>';
   var pendingDeepLinkId = null;
   try {
     pendingDeepLinkId = new URLSearchParams(location.search).get('m');
@@ -938,27 +940,50 @@
     }
   }
 
+  function findItemById(id){
+    for (var i = 0; i < state.items.length; i++) {
+      if (state.items[i].id === id) return state.items[i];
+    }
+    return null;
+  }
+
   function toggleFavorite(id){
     var idx = state.favorites.indexOf(id);
     var adding = idx < 0;
     if (idx >= 0) state.favorites.splice(idx, 1);
     else state.favorites.push(id);
     saveFavorites();
-    render();
-    // Вьювер — отдельный оверлей поверх сетки, render() его не трогает,
-    // поэтому сердечко в нём синхронизируем отдельно (если вьювер открыт).
+    try { if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light'); } catch(e){}
+
+    // Полный render() на каждый тап по ♡ пересобирает 500+ карточек — отсюда лаг.
+    // Достаточно обновить иконку на месте; render только если в режиме избранного
+    // убрали позицию — карточка должна исчезнуть из ленты.
+    if (state.favOnly && !adding) {
+      render();
+    } else {
+      updateFavoriteHeartUI(id);
+      updateSendFavBtn();
+    }
+
     updateViewerHeart();
     if (adding) {
-      var item = null;
-      for (var i = 0; i < state.items.length; i++) {
-        if (state.items[i].id === id) { item = state.items[i]; break; }
-      }
+      var item = findItemById(id);
       if (item) {
         window.dispatchEvent(new CustomEvent('catalog:favorite-add', {
           detail: { label: '★ В избранное: ' + item.category + ' — ' + item.name }
         }));
       }
     }
+  }
+
+  function updateFavoriteHeartUI(id){
+    var isFav = state.favorites.indexOf(id) >= 0;
+    var card = els.grid.querySelector('.card[data-id="' + id + '"]');
+    if (!card) return;
+    var heart = card.querySelector('.heart');
+    if (!heart) return;
+    heart.className = 'heart' + (isFav ? ' active' : '');
+    heart.textContent = isFav ? '♥' : '♡';
   }
 
   // ---- загрузка каталога ----
@@ -1054,18 +1079,23 @@
     notifyBusy = busy;
     if (els.vsend) els.vsend.classList.toggle('busy', busy);
     if (els.sendFavBtn) els.sendFavBtn.disabled = busy;
+    document.querySelectorAll('.send-icon-btn').forEach(function(btn){
+      btn.classList.toggle('busy', busy);
+    });
   }
 
-  function sendCurrentMaterial(e){
+  function sendMaterial(item, e){
     if (e) { e.preventDefault(); e.stopPropagation(); }
-    if (notifyBusy) return;
-    var item = viewerState.currentItem;
-    if (!item) return;
+    if (notifyBusy || !item) return;
     setNotifyBusy(true);
     postNotify({ type: 'single', material: materialPayload(item) }).then(function(res){
       if (res && res.ok) notifyToast('Отправлено Владимиру');
       else notifyToast('Не удалось отправить');
     }).finally(function(){ setNotifyBusy(false); });
+  }
+
+  function sendCurrentMaterial(e){
+    sendMaterial(viewerState.currentItem, e);
   }
 
   function sendFavoritesBundle(e){
@@ -1758,6 +1788,7 @@
       var card = document.createElement('div');
       card.className = 'card appear';
       card.setAttribute('data-site', site);
+      card.setAttribute('data-id', item.id);
       // лёгкий "каскадный" эффект появления, без задержки для длинных списков
       card.style.animationDelay = Math.min(idx * 12, 240) + 'ms';
 
@@ -1823,18 +1854,13 @@
       heart.onclick = function(e){ e.stopPropagation(); toggleFavorite(item.id); };
       thumbWrap.appendChild(heart);
 
-      // Копирование названия — маленькая иконка поверх фото (под сердечком),
-      // а не отдельная полноширинная кнопка под каждой из 574 карточек.
-      var copyIconBtn = document.createElement('div');
-      copyIconBtn.className = 'copy-icon-btn';
-      copyIconBtn.title = 'Скопировать название';
-      copyIconBtn.innerHTML =
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-        '<rect x="9" y="9" width="12" height="12" rx="2"></rect>' +
-        '<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>' +
-        '</svg>';
-      copyIconBtn.onclick = function(e){ e.stopPropagation(); copyText(item.name); };
-      thumbWrap.appendChild(copyIconBtn);
+      // Отправить материал — иконка поверх фото (под сердечком).
+      var sendIconBtn = document.createElement('div');
+      sendIconBtn.className = 'send-icon-btn';
+      sendIconBtn.title = 'Отправить Владимиру';
+      sendIconBtn.innerHTML = SEND_ICON_SVG;
+      sendIconBtn.onclick = function(e){ sendMaterial(item, e); };
+      thumbWrap.appendChild(sendIconBtn);
 
       // Подпись категории под названием ("Акриловый камень GRANDEX" мелким
       // текстом с точкой-источником) убрана — она всегда дублировала либо
