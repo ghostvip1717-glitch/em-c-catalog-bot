@@ -519,16 +519,19 @@
     opacity:0;pointer-events:none;transition:opacity .25s ease;
   }
   .tutorial.open{opacity:1;pointer-events:auto;}
-  .tutorial-shade{position:absolute;inset:0;z-index:0;}
+  .tutorial-shade{position:absolute;inset:0;z-index:0;pointer-events:none;}
   .tutorial-mask{
-    position:fixed;z-index:1;background:rgba(0,0,0,.54);pointer-events:none;
+    position:fixed;z-index:1;background:rgba(0,0,0,.54);pointer-events:auto;cursor:pointer;
   }
   .tutorial-hole{
     position:fixed;z-index:1;pointer-events:none;
     box-shadow:0 0 0 2px rgba(255,255,255,.85);
   }
+  .tutorial-target-hit{
+    position:fixed;z-index:2;pointer-events:auto;cursor:pointer;background:transparent;
+  }
   .tutorial-bubble{
-    position:fixed;z-index:2;width:min(300px,calc(100vw - 24px));
+    position:fixed;z-index:3;width:min(300px,calc(100vw - 24px));
     background:var(--bg);border:1px solid var(--line);border-radius:16px;
     padding:14px 14px 12px;box-shadow:0 10px 36px rgba(0,0,0,.2);
   }
@@ -685,6 +688,7 @@
   <div class="tutorial-mask tutorial-mask-right" id="tutorialMaskRight"></div>
   <div class="tutorial-mask tutorial-mask-bottom" id="tutorialMaskBottom"></div>
   <div class="tutorial-hole" id="tutorialHole"></div>
+  <div class="tutorial-target-hit" id="tutorialTargetHit" aria-hidden="true"></div>
   <div class="tutorial-bubble arrow-top" id="tutorialBubble">
     <div class="tutorial-arrow" id="tutorialArrow"></div>
     <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
@@ -873,6 +877,7 @@
     tutorialMaskRight: document.getElementById('tutorialMaskRight'),
     tutorialMaskBottom: document.getElementById('tutorialMaskBottom'),
     tutorialHole: document.getElementById('tutorialHole'),
+    tutorialTargetHit: document.getElementById('tutorialTargetHit'),
     tutorialBubble: document.getElementById('tutorialBubble'),
     tutorialArrow: document.getElementById('tutorialArrow'),
     tutorialStep: document.getElementById('tutorialStep'),
@@ -1136,6 +1141,11 @@
     }
   }
 
+  function advanceTutorial(){
+    if (tutorialIdx >= TUTORIAL_STEPS.length - 1) finishTutorial();
+    else { tutorialIdx++; renderTutorialStep(); }
+  }
+
   function positionTutorialBubble(targetRect){
     if (!els.tutorialBubble || !els.tutorialArrow) return;
     var pad = 12;
@@ -1190,6 +1200,14 @@
       els.tutorialHole.style.height = Math.max(0, b - t) + 'px';
       els.tutorialHole.style.borderRadius = radius + 'px';
     }
+    if (els.tutorialTargetHit) {
+      els.tutorialTargetHit.style.left = l + 'px';
+      els.tutorialTargetHit.style.top = t + 'px';
+      els.tutorialTargetHit.style.width = Math.max(0, ri - l) + 'px';
+      els.tutorialTargetHit.style.height = Math.max(0, b - t) + 'px';
+      els.tutorialTargetHit.style.borderRadius = radius + 'px';
+      els.tutorialTargetHit.setAttribute('aria-hidden', 'false');
+    }
     positionTutorialBubble(r);
   }
 
@@ -1197,6 +1215,11 @@
     [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom, els.tutorialHole].forEach(function(el){
       if (el) { el.style.width = ''; el.style.height = ''; }
     });
+    if (els.tutorialTargetHit) {
+      els.tutorialTargetHit.style.width = '';
+      els.tutorialTargetHit.style.height = '';
+      els.tutorialTargetHit.setAttribute('aria-hidden', 'true');
+    }
   }
 
   function positionTutorialSpotlight(el, step){
@@ -1922,13 +1945,18 @@
     };
   }
   if (els.tutorialNext) {
-    els.tutorialNext.onclick = function(){
-      if (tutorialIdx >= TUTORIAL_STEPS.length - 1) finishTutorial();
-      else { tutorialIdx++; renderTutorialStep(); }
-    };
+    els.tutorialNext.onclick = function(){ advanceTutorial(); };
   }
   if (els.tutorialSkip) els.tutorialSkip.onclick = closeTutorial;
-  if (els.tutorialShade) els.tutorialShade.onclick = closeTutorial;
+  [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom].forEach(function(mask){
+    if (mask) mask.onclick = closeTutorial;
+  });
+  if (els.tutorialTargetHit) {
+    els.tutorialTargetHit.onclick = function(e){
+      e.stopPropagation();
+      advanceTutorial();
+    };
+  }
   var tutorialResizeTimer;
   window.addEventListener('resize', function(){
     clearTimeout(tutorialResizeTimer);
