@@ -1,5 +1,1853 @@
 [
   {
+    "id": "dtail_aladdin",
+    "name": "АЛАДДИН",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_aladdin/1.webp",
+    "images": [
+      "data/images/dtail/dtail_aladdin/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_aladdin/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_aladdin/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alambra",
+    "name": "АЛАМБРА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alambra/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alambra/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alambra/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alambra/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alambra_temnaya",
+    "name": "АЛАМБРА ТЕМНАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alambra_temnaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alambra_temnaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alyuminievaya_polosa",
+    "name": "АЛЮМИНИЕВАЯ ПОЛОСА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alyuminievaya_polosa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alyuminievaya_polosa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_belaya",
+    "name": "АНДРОМЕДА БЕЛАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_belaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_belaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_superbelaya",
+    "name": "АНДРОМЕДА СУПЕРБЕЛАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_superbelaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_superbelaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_chernaya",
+    "name": "АНДРОМЕДА ЧЕРНАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_chernaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_chernaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_antares",
+    "name": "АНТАРЕС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_antares/1.webp",
+    "images": [
+      "data/images/dtail/dtail_antares/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_antares/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_antares/1_thumb.webp"
+  },
+  {
+    "id": "dtail_arvika",
+    "name": "АРВИКА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_arvika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_arvika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_arvika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_arvika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bazalt",
+    "name": "БАЗАЛЬТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bazalt/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bazalt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bazalt/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bazalt/1_thumb.webp"
+  },
+  {
+    "id": "dtail_belyy",
+    "name": "БЕЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_belyy_kristall",
+    "name": "БЕЛЫЙ КРИСТАЛЛ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_belyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_belyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_betao",
+    "name": "БЕТАО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_betao/1.webp",
+    "images": [
+      "data/images/dtail/dtail_betao/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_betao/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_betao/1_thumb.webp"
+  },
+  {
+    "id": "dtail_biser_svetlyy",
+    "name": "БИСЕР СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_biser_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_biser_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bordo",
+    "name": "БОРДО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bordo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bordo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bordo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bordo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_budda",
+    "name": "БУДДА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_budda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_budda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_budda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_budda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_buk",
+    "name": "БУК",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_buk/1.webp",
+    "images": [
+      "data/images/dtail/dtail_buk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_buk/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_buk/1_thumb.webp"
+  },
+  {
+    "id": "dtail_buk_reynland",
+    "name": "БУК РЕЙНЛАНД",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_buk_reynland/1.webp",
+    "images": [
+      "data/images/dtail/dtail_buk_reynland/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bulat",
+    "name": "БУЛАТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bulat/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bulat/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bulat/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bulat/1_thumb.webp"
+  },
+  {
+    "id": "dtail_vanil",
+    "name": "ВАНИЛЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_vanil/1.webp",
+    "images": [
+      "data/images/dtail/dtail_vanil/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_vanil/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_vanil/1_thumb.webp"
+  },
+  {
+    "id": "dtail_venge",
+    "name": "ВЕНГЕ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_venge/1.webp",
+    "images": [
+      "data/images/dtail/dtail_venge/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_venge/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_venge/1_thumb.webp"
+  },
+  {
+    "id": "dtail_venge_tsavo",
+    "name": "ВЕНГЕ ЦАВО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_venge_tsavo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_venge_tsavo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_galaktika",
+    "name": "ГАЛАКТИКА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_galaktika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_galaktika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_galaktika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_galaktika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_gaudi",
+    "name": "ГАУДИ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_gaudi/1.webp",
+    "images": [
+      "data/images/dtail/dtail_gaudi/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_gaudi/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_gaudi/1_thumb.webp"
+  },
+  {
+    "id": "dtail_glyanets",
+    "name": "ГЛЯНЕЦ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_glyanets/1.webp",
+    "images": [
+      "data/images/dtail/dtail_glyanets/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_glyanets/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_glyanets/1_thumb.webp"
+  },
+  {
+    "id": "dtail_goluboy",
+    "name": "ГОЛУБОЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_goluboy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_goluboy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_goluboy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_goluboy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_granilyatto",
+    "name": "ГРАНИЛЬЯТТО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_granilyatto/1.webp",
+    "images": [
+      "data/images/dtail/dtail_granilyatto/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_granilyatto/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_granilyatto/1_thumb.webp"
+  },
+  {
+    "id": "dtail_granit_sardinskiy_svetlyy",
+    "name": "ГРАНИТ САРДИНСКИЙ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_grafit",
+    "name": "ГРАФИТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_grafit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_grafit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_grafit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_grafit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_grenobl",
+    "name": "ГРЕНОБЛЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_grenobl/1.webp",
+    "images": [
+      "data/images/dtail/dtail_grenobl/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_grenobl/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_grenobl/1_thumb.webp"
+  },
+  {
+    "id": "dtail_drevesnyy_brus",
+    "name": "ДРЕВЕСНЫЙ БРУС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_drevesnyy_brus/1.webp",
+    "images": [
+      "data/images/dtail/dtail_drevesnyy_brus/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_votan",
+    "name": "ДУБ ВОТАН",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_votan/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_votan/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_votan/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_votan/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_vybelennyy",
+    "name": "ДУБ ВЫБЕЛЕННЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_vybelennyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_vybelennyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_delano",
+    "name": "ДУБ ДЕЛАНО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_delano/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_delano/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_delano/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_delano/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_kera",
+    "name": "ДУБ КЕРА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_kera/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_kera/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_kera/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_kera/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_uoterford",
+    "name": "ДУБ УОТЕРФОРД",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_uoterford/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_uoterford/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_yukon",
+    "name": "ДУБ ЮКОН",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_yukon/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_yukon/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
+  },
+  {
+    "id": "dtail_zheltyy",
+    "name": "ЖЕЛТЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_zheltyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_zheltyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_zheltyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_zheltyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_imperador",
+    "name": "ИМПЕРАДОР",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_imperador/1.webp",
+    "images": [
+      "data/images/dtail/dtail_imperador/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_imperador/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_imperador/1_thumb.webp"
+  },
+  {
+    "id": "dtail_indiyskiy_shisham",
+    "name": "ИНДИЙСКИЙ ШИШАМ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_indiyskiy_shisham/1.webp",
+    "images": [
+      "data/images/dtail/dtail_indiyskiy_shisham/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
+  },
+  {
+    "id": "dtail_ipanema",
+    "name": "ИПАНЕМА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_ipanema/1.webp",
+    "images": [
+      "data/images/dtail/dtail_ipanema/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_ipanema/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_ipanema/1_thumb.webp"
+  },
+  {
+    "id": "dtail_italyanskaya_mozaika",
+    "name": "ИТАЛЬЯНСКАЯ МОЗАИКА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_italyanskaya_mozaika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_italyanskaya_mozaika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kalakatta",
+    "name": "КАЛАКАТТА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kalakatta/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kalakatta/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kalakatta/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kalakatta/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kameshki",
+    "name": "КАМЕШКИ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kameshki/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kameshki/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kameshki/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kameshki/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kantashe",
+    "name": "КАНТАШЕ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kantashe/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kantashe/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kantashe/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kantashe/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kantri",
+    "name": "КАНТРИ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kantri/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kantri/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kantri/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kantri/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kastillo",
+    "name": "КАСТИЛЛО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kastillo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kastillo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kastillo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kastillo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kastillo_temnyy",
+    "name": "КАСТИЛЛО ТЕМНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kastillo_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kastillo_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_klimt_svetlyy",
+    "name": "КЛИМТ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_klimt_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_klimt_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_koren_vyaza",
+    "name": "КОРЕНЬ ВЯЗА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_koren_vyaza/1.webp",
+    "images": [
+      "data/images/dtail/dtail_koren_vyaza/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
+  },
+  {
+    "id": "dtail_korodona",
+    "name": "КОРОДОНА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_korodona/1.webp",
+    "images": [
+      "data/images/dtail/dtail_korodona/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_korodona/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_korodona/1_thumb.webp"
+  },
+  {
+    "id": "dtail_krasnyy",
+    "name": "КРАСНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_krasnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_krasnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_krasnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_krasnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kristall",
+    "name": "КРИСТАЛЛ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lavanda",
+    "name": "ЛАВАНДА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lavanda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lavanda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lavanda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lavanda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lavant",
+    "name": "ЛАВАНТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lavant/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lavant/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lavant/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lavant/1_thumb.webp"
+  },
+  {
+    "id": "dtail_laym",
+    "name": "ЛАЙМ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_laym/1.webp",
+    "images": [
+      "data/images/dtail/dtail_laym/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_laym/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_laym/1_thumb.webp"
+  },
+  {
+    "id": "dtail_len_svetlyy",
+    "name": "ЛЕН СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_len_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_len_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_listvennitsa",
+    "name": "ЛИСТВЕННИЦА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_listvennitsa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_listvennitsa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_loza_serebryanaya",
+    "name": "ЛОЗА СЕРЕБРЯНАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_loza_serebryanaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_loza_serebryanaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lukka",
+    "name": "ЛУККА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lukka/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lukka/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lukka/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lukka/1_thumb.webp"
+  },
+  {
+    "id": "dtail_luksor",
+    "name": "ЛУКСОР",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_luksor/1.webp",
+    "images": [
+      "data/images/dtail/dtail_luksor/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_luksor/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_luksor/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lunnyy_metall",
+    "name": "ЛУННЫЙ МЕТАЛЛ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lunnyy_metall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lunnyy_metall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_malahit",
+    "name": "МАЛАХИТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_malahit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_malahit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_malahit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_malahit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mango",
+    "name": "МАНГО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mango/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mango/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mango/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mango/1_thumb.webp"
+  },
+  {
+    "id": "dtail_marokkanskiy_kamen",
+    "name": "МАРОККАНСКИЙ КАМЕНЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_marokkanskiy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_marokkanskiy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
+  },
+  {
+    "id": "dtail_meysen_vanil",
+    "name": "МЕЙСЕН ВАНИЛЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_meysen_vanil/1.webp",
+    "images": [
+      "data/images/dtail/dtail_meysen_vanil/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
+  },
+  {
+    "id": "dtail_metallik",
+    "name": "МЕТАЛЛИК",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_metallik/1.webp",
+    "images": [
+      "data/images/dtail/dtail_metallik/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_metallik/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_metallik/1_thumb.webp"
+  },
+  {
+    "id": "dtail_metropolitan",
+    "name": "МЕТРОПОЛИТАН",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_metropolitan/1.webp",
+    "images": [
+      "data/images/dtail/dtail_metropolitan/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_metropolitan/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_metropolitan/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mikado",
+    "name": "МИКАДО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mikado/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mikado/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mikado/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mikado/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mikado_svetlyy",
+    "name": "МИКАДО СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mikado_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mikado_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_modena",
+    "name": "МОДЕНА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_modena/1.webp",
+    "images": [
+      "data/images/dtail/dtail_modena/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_modena/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_modena/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mokko",
+    "name": "МОККО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mokko/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mokko/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mokko/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mokko/1_thumb.webp"
+  },
+  {
+    "id": "dtail_morskoy_trostnik",
+    "name": "МОРСКОЙ ТРОСТНИК",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_morskoy_trostnik/1.webp",
+    "images": [
+      "data/images/dtail/dtail_morskoy_trostnik/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bezhevyy",
+    "name": "МРАМОР БЕЖЕВЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bezhevyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bezhevyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bezhevyy_svetlyy",
+    "name": "МРАМОР БЕЖЕВЫЙ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_belyy",
+    "name": "МРАМОР БЕЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bottichino",
+    "name": "МРАМОР БОТТИЧИНО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bottichino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bottichino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_de_mazi_svetlyy",
+    "name": "МРАМОР ДЕ МАЗИ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_de_mazi_temnyy",
+    "name": "МРАМОР ДЕ МАЗИ ТЕМНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_zolotoy",
+    "name": "МРАМОР ЗОЛОТОЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_zolotoy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_zolotoy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_karrara",
+    "name": "МРАМОР КАРРАРА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_karrara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_karrara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_korolevskiy",
+    "name": "МРАМОР КОРОЛЕВСКИЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_korolevskiy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_korolevskiy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_markvina_belyy",
+    "name": "МРАМОР МАРКВИНА БЕЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_markvina_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_markvina_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_markvina_siniy",
+    "name": "МРАМОР МАРКВИНА СИНИЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_markvina_siniy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_markvina_siniy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_seryy",
+    "name": "МРАМОР СЕРЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_chernyy",
+    "name": "МРАМОР ЧЕРНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_chernyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_chernyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_neapolis",
+    "name": "НЕАПОЛИС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_neapolis/1.webp",
+    "images": [
+      "data/images/dtail/dtail_neapolis/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_neapolis/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_neapolis/1_thumb.webp"
+  },
+  {
+    "id": "dtail_neapolitano",
+    "name": "НЕАПОЛИТАНО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_neapolitano/1.webp",
+    "images": [
+      "data/images/dtail/dtail_neapolitano/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_neapolitano/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_neapolitano/1_thumb.webp"
+  },
+  {
+    "id": "dtail_niagara",
+    "name": "НИАГАРА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_niagara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_niagara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_niagara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_niagara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_noche_rubino",
+    "name": "НОЧЕ РУБИНО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_noche_rubino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_noche_rubino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_olha",
+    "name": "ОЛЬХА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_olha/1.webp",
+    "images": [
+      "data/images/dtail/dtail_olha/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_olha/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_olha/1_thumb.webp"
+  },
+  {
+    "id": "dtail_oniks_bezhevyy",
+    "name": "ОНИКС БЕЖЕВЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_oniks_bezhevyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_oniks_bezhevyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_oniks_seryy",
+    "name": "ОНИКС СЕРЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_oniks_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_oniks_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_opal_svetlyy",
+    "name": "ОПАЛ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_opal_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_opal_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_opal_temnyy",
+    "name": "ОПАЛ ТЕМНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_opal_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_opal_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_parket_svetlyy",
+    "name": "ПАРКЕТ СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_parket_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_parket_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlamutr",
+    "name": "ПЕРЛАМУТР",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlamutr/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlamutr/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlamutr/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlamutr/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlamutr_andromeda",
+    "name": "ПЕРЛАМУТР АНДРОМЕДА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlamutr_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlamutr_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlino",
+    "name": "ПЕРЛИНО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_peskara",
+    "name": "ПЕСКАРА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_peskara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_peskara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_peskara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_peskara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_pesok",
+    "name": "ПЕСОК",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_pesok/1.webp",
+    "images": [
+      "data/images/dtail/dtail_pesok/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_pesok/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_pesok/1_thumb.webp"
+  },
+  {
+    "id": "dtail_pesok_andromeda",
+    "name": "ПЕСОК АНДРОМЕДА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_pesok_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_pesok_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_platina",
+    "name": "ПЛАТИНА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_platina/1.webp",
+    "images": [
+      "data/images/dtail/dtail_platina/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_platina/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_platina/1_thumb.webp"
+  },
+  {
+    "id": "dtail_porfir",
+    "name": "ПОРФИР",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_porfir/1.webp",
+    "images": [
+      "data/images/dtail/dtail_porfir/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_porfir/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_porfir/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rakushki",
+    "name": "РАКУШКИ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rakushki/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rakushki/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rakushki/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rakushki/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rambla",
+    "name": "РАМБЛА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rambla/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rambla/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rambla/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rambla/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rezonans",
+    "name": "РЕЗОНАНС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rezonans/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rezonans/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rezonans/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rezonans/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rigoletto_svetlyy",
+    "name": "РИГОЛЕТТО СВЕТЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rigoletto_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rigoletto_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rigoletto_temnyy",
+    "name": "РИГОЛЕТТО ТЕМНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rigoletto_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rigoletto_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_safaga",
+    "name": "САФАГА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_safaga/1.webp",
+    "images": [
+      "data/images/dtail/dtail_safaga/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_safaga/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_safaga/1_thumb.webp"
+  },
+  {
+    "id": "dtail_semolina_bezhevaya",
+    "name": "СЕМОЛИНА БЕЖЕВАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_semolina_bezhevaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_semolina_bezhevaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_semolina_seraya",
+    "name": "СЕМОЛИНА СЕРАЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_semolina_seraya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_semolina_seraya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_seryy",
+    "name": "СЕРЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_seryy_kamen",
+    "name": "СЕРЫЙ КАМЕНЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_seryy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_seryy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
+  },
+  {
+    "id": "dtail_sosna_panderosa",
+    "name": "СОСНА ПАНДЕРОСА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_sosna_panderosa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_sosna_panderosa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_super_belyy",
+    "name": "СУПЕР БЕЛЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_super_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_super_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_super_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_super_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_superbelyy_kristall",
+    "name": "СУПЕРБЕЛЫЙ КРИСТАЛЛ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_superbelyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_superbelyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_taksus",
+    "name": "ТАКСУС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_taksus/1.webp",
+    "images": [
+      "data/images/dtail/dtail_taksus/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_taksus/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_taksus/1_thumb.webp"
+  },
+  {
+    "id": "dtail_taurus_andromeda",
+    "name": "ТАУРУС АНДРОМЕДА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_taurus_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_taurus_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_terezina",
+    "name": "ТЕРЕЗИНА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_terezina/1.webp",
+    "images": [
+      "data/images/dtail/dtail_terezina/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_terezina/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_terezina/1_thumb.webp"
+  },
+  {
+    "id": "dtail_travertin_rimskiy",
+    "name": "ТРАВЕРТИН РИМСКИЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_travertin_rimskiy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_travertin_rimskiy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_transilvaniya",
+    "name": "ТРАНСИЛЬВАНИЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_transilvaniya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_transilvaniya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_umbriya",
+    "name": "УМБРИЯ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_umbriya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_umbriya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_umbriya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_umbriya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_forni",
+    "name": "ФОРНИ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_forni/1.webp",
+    "images": [
+      "data/images/dtail/dtail_forni/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_forni/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_forni/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernaya_bronza",
+    "name": "ЧЕРНАЯ БРОНЗА",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernaya_bronza/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernaya_bronza/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernoe_serebro",
+    "name": "ЧЕРНОЕ СЕРЕБРО",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernoe_serebro/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernoe_serebro/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy",
+    "name": "ЧЕРНЫЙ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_granit",
+    "name": "ЧЕРНЫЙ ГРАНИТ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_granit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_granit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_kristall",
+    "name": "ЧЕРНЫЙ КРИСТАЛЛ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_tunis",
+    "name": "ЧЕРНЫЙ ТУНИС",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_tunis/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_tunis/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
+  },
+  {
+    "id": "dtail_shokolad",
+    "name": "ШОКОЛАД",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_shokolad/1.webp",
+    "images": [
+      "data/images/dtail/dtail_shokolad/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_shokolad/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_shokolad/1_thumb.webp"
+  },
+  {
+    "id": "dtail_yurskiy_kamen",
+    "name": "ЮРСКИЙ КАМЕНЬ",
+    "category": "HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_yurskiy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_yurskiy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
+  },
+  {
     "id": "interstone_cloudy-mount",
     "name": "A-401 Cloudy Mount",
     "category": "Акриловый камень GRANDEX",
@@ -15454,1854 +17302,6 @@
       "data/images/adilet/adilet_venge-1998-b/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_venge-1998-b/1_thumb.webp"
-  },
-  {
-    "id": "dtail_aladdin",
-    "name": "АЛАДДИН",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_aladdin/1.webp",
-    "images": [
-      "data/images/dtail/dtail_aladdin/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_aladdin/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_aladdin/1_thumb.webp"
-  },
-  {
-    "id": "dtail_alambra",
-    "name": "АЛАМБРА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_alambra/1.webp",
-    "images": [
-      "data/images/dtail/dtail_alambra/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_alambra/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_alambra/1_thumb.webp"
-  },
-  {
-    "id": "dtail_alambra_temnaya",
-    "name": "АЛАМБРА ТЕМНАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_alambra_temnaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_alambra_temnaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_alyuminievaya_polosa",
-    "name": "АЛЮМИНИЕВАЯ ПОЛОСА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_alyuminievaya_polosa/1.webp",
-    "images": [
-      "data/images/dtail/dtail_alyuminievaya_polosa/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
-  },
-  {
-    "id": "dtail_andromeda_belaya",
-    "name": "АНДРОМЕДА БЕЛАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_andromeda_belaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_andromeda_belaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_andromeda_superbelaya",
-    "name": "АНДРОМЕДА СУПЕРБЕЛАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_andromeda_superbelaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_andromeda_superbelaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_andromeda_chernaya",
-    "name": "АНДРОМЕДА ЧЕРНАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_andromeda_chernaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_andromeda_chernaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_antares",
-    "name": "АНТАРЕС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_antares/1.webp",
-    "images": [
-      "data/images/dtail/dtail_antares/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_antares/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_antares/1_thumb.webp"
-  },
-  {
-    "id": "dtail_arvika",
-    "name": "АРВИКА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_arvika/1.webp",
-    "images": [
-      "data/images/dtail/dtail_arvika/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_arvika/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_arvika/1_thumb.webp"
-  },
-  {
-    "id": "dtail_bazalt",
-    "name": "БАЗАЛЬТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_bazalt/1.webp",
-    "images": [
-      "data/images/dtail/dtail_bazalt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_bazalt/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_bazalt/1_thumb.webp"
-  },
-  {
-    "id": "dtail_belyy",
-    "name": "БЕЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_belyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_belyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_belyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_belyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_belyy_kristall",
-    "name": "БЕЛЫЙ КРИСТАЛЛ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_belyy_kristall/1.webp",
-    "images": [
-      "data/images/dtail/dtail_belyy_kristall/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
-  },
-  {
-    "id": "dtail_betao",
-    "name": "БЕТАО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_betao/1.webp",
-    "images": [
-      "data/images/dtail/dtail_betao/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_betao/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_betao/1_thumb.webp"
-  },
-  {
-    "id": "dtail_biser_svetlyy",
-    "name": "БИСЕР СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_biser_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_biser_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_bordo",
-    "name": "БОРДО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_bordo/1.webp",
-    "images": [
-      "data/images/dtail/dtail_bordo/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_bordo/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_bordo/1_thumb.webp"
-  },
-  {
-    "id": "dtail_budda",
-    "name": "БУДДА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_budda/1.webp",
-    "images": [
-      "data/images/dtail/dtail_budda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_budda/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_budda/1_thumb.webp"
-  },
-  {
-    "id": "dtail_buk",
-    "name": "БУК",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_buk/1.webp",
-    "images": [
-      "data/images/dtail/dtail_buk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_buk/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_buk/1_thumb.webp"
-  },
-  {
-    "id": "dtail_buk_reynland",
-    "name": "БУК РЕЙНЛАНД",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_buk_reynland/1.webp",
-    "images": [
-      "data/images/dtail/dtail_buk_reynland/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
-  },
-  {
-    "id": "dtail_bulat",
-    "name": "БУЛАТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_bulat/1.webp",
-    "images": [
-      "data/images/dtail/dtail_bulat/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_bulat/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_bulat/1_thumb.webp"
-  },
-  {
-    "id": "dtail_vanil",
-    "name": "ВАНИЛЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_vanil/1.webp",
-    "images": [
-      "data/images/dtail/dtail_vanil/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_vanil/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_vanil/1_thumb.webp"
-  },
-  {
-    "id": "dtail_venge",
-    "name": "ВЕНГЕ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_venge/1.webp",
-    "images": [
-      "data/images/dtail/dtail_venge/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_venge/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_venge/1_thumb.webp"
-  },
-  {
-    "id": "dtail_venge_tsavo",
-    "name": "ВЕНГЕ ЦАВО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_venge_tsavo/1.webp",
-    "images": [
-      "data/images/dtail/dtail_venge_tsavo/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
-  },
-  {
-    "id": "dtail_galaktika",
-    "name": "ГАЛАКТИКА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_galaktika/1.webp",
-    "images": [
-      "data/images/dtail/dtail_galaktika/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_galaktika/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_galaktika/1_thumb.webp"
-  },
-  {
-    "id": "dtail_gaudi",
-    "name": "ГАУДИ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_gaudi/1.webp",
-    "images": [
-      "data/images/dtail/dtail_gaudi/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_gaudi/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_gaudi/1_thumb.webp"
-  },
-  {
-    "id": "dtail_glyanets",
-    "name": "ГЛЯНЕЦ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_glyanets/1.webp",
-    "images": [
-      "data/images/dtail/dtail_glyanets/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_glyanets/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_glyanets/1_thumb.webp"
-  },
-  {
-    "id": "dtail_goluboy",
-    "name": "ГОЛУБОЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_goluboy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_goluboy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_goluboy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_goluboy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_granilyatto",
-    "name": "ГРАНИЛЬЯТТО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_granilyatto/1.webp",
-    "images": [
-      "data/images/dtail/dtail_granilyatto/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_granilyatto/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_granilyatto/1_thumb.webp"
-  },
-  {
-    "id": "dtail_granit_sardinskiy_svetlyy",
-    "name": "ГРАНИТ САРДИНСКИЙ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_grafit",
-    "name": "ГРАФИТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_grafit/1.webp",
-    "images": [
-      "data/images/dtail/dtail_grafit/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_grafit/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_grafit/1_thumb.webp"
-  },
-  {
-    "id": "dtail_grenobl",
-    "name": "ГРЕНОБЛЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_grenobl/1.webp",
-    "images": [
-      "data/images/dtail/dtail_grenobl/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_grenobl/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_grenobl/1_thumb.webp"
-  },
-  {
-    "id": "dtail_drevesnyy_brus",
-    "name": "ДРЕВЕСНЫЙ БРУС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_drevesnyy_brus/1.webp",
-    "images": [
-      "data/images/dtail/dtail_drevesnyy_brus/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_votan",
-    "name": "ДУБ ВОТАН",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_votan/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_votan/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_votan/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_votan/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_vybelennyy",
-    "name": "ДУБ ВЫБЕЛЕННЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_vybelennyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_vybelennyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_delano",
-    "name": "ДУБ ДЕЛАНО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_delano/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_delano/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_delano/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_delano/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_kera",
-    "name": "ДУБ КЕРА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_kera/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_kera/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_kera/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_kera/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_uoterford",
-    "name": "ДУБ УОТЕРФОРД",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_uoterford/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_uoterford/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
-  },
-  {
-    "id": "dtail_dub_yukon",
-    "name": "ДУБ ЮКОН",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_dub_yukon/1.webp",
-    "images": [
-      "data/images/dtail/dtail_dub_yukon/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
-  },
-  {
-    "id": "dtail_zheltyy",
-    "name": "ЖЕЛТЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_zheltyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_zheltyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_zheltyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_zheltyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_imperador",
-    "name": "ИМПЕРАДОР",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_imperador/1.webp",
-    "images": [
-      "data/images/dtail/dtail_imperador/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_imperador/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_imperador/1_thumb.webp"
-  },
-  {
-    "id": "dtail_indiyskiy_shisham",
-    "name": "ИНДИЙСКИЙ ШИШАМ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_indiyskiy_shisham/1.webp",
-    "images": [
-      "data/images/dtail/dtail_indiyskiy_shisham/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
-  },
-  {
-    "id": "dtail_ipanema",
-    "name": "ИПАНЕМА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_ipanema/1.webp",
-    "images": [
-      "data/images/dtail/dtail_ipanema/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_ipanema/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_ipanema/1_thumb.webp"
-  },
-  {
-    "id": "dtail_italyanskaya_mozaika",
-    "name": "ИТАЛЬЯНСКАЯ МОЗАИКА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_italyanskaya_mozaika/1.webp",
-    "images": [
-      "data/images/dtail/dtail_italyanskaya_mozaika/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kalakatta",
-    "name": "КАЛАКАТТА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kalakatta/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kalakatta/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kalakatta/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kalakatta/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kameshki",
-    "name": "КАМЕШКИ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kameshki/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kameshki/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kameshki/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kameshki/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kantashe",
-    "name": "КАНТАШЕ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kantashe/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kantashe/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kantashe/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kantashe/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kantri",
-    "name": "КАНТРИ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kantri/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kantri/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kantri/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kantri/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kastillo",
-    "name": "КАСТИЛЛО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kastillo/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kastillo/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kastillo/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kastillo/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kastillo_temnyy",
-    "name": "КАСТИЛЛО ТЕМНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kastillo_temnyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kastillo_temnyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_klimt_svetlyy",
-    "name": "КЛИМТ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_klimt_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_klimt_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_koren_vyaza",
-    "name": "КОРЕНЬ ВЯЗА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_koren_vyaza/1.webp",
-    "images": [
-      "data/images/dtail/dtail_koren_vyaza/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
-  },
-  {
-    "id": "dtail_korodona",
-    "name": "КОРОДОНА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_korodona/1.webp",
-    "images": [
-      "data/images/dtail/dtail_korodona/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_korodona/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_korodona/1_thumb.webp"
-  },
-  {
-    "id": "dtail_krasnyy",
-    "name": "КРАСНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_krasnyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_krasnyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_krasnyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_krasnyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_kristall",
-    "name": "КРИСТАЛЛ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_kristall/1.webp",
-    "images": [
-      "data/images/dtail/dtail_kristall/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_kristall/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_kristall/1_thumb.webp"
-  },
-  {
-    "id": "dtail_lavanda",
-    "name": "ЛАВАНДА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_lavanda/1.webp",
-    "images": [
-      "data/images/dtail/dtail_lavanda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_lavanda/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_lavanda/1_thumb.webp"
-  },
-  {
-    "id": "dtail_lavant",
-    "name": "ЛАВАНТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_lavant/1.webp",
-    "images": [
-      "data/images/dtail/dtail_lavant/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_lavant/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_lavant/1_thumb.webp"
-  },
-  {
-    "id": "dtail_laym",
-    "name": "ЛАЙМ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_laym/1.webp",
-    "images": [
-      "data/images/dtail/dtail_laym/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_laym/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_laym/1_thumb.webp"
-  },
-  {
-    "id": "dtail_len_svetlyy",
-    "name": "ЛЕН СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_len_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_len_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_listvennitsa",
-    "name": "ЛИСТВЕННИЦА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_listvennitsa/1.webp",
-    "images": [
-      "data/images/dtail/dtail_listvennitsa/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
-  },
-  {
-    "id": "dtail_loza_serebryanaya",
-    "name": "ЛОЗА СЕРЕБРЯНАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_loza_serebryanaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_loza_serebryanaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_lukka",
-    "name": "ЛУККА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_lukka/1.webp",
-    "images": [
-      "data/images/dtail/dtail_lukka/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_lukka/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_lukka/1_thumb.webp"
-  },
-  {
-    "id": "dtail_luksor",
-    "name": "ЛУКСОР",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_luksor/1.webp",
-    "images": [
-      "data/images/dtail/dtail_luksor/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_luksor/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_luksor/1_thumb.webp"
-  },
-  {
-    "id": "dtail_lunnyy_metall",
-    "name": "ЛУННЫЙ МЕТАЛЛ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_lunnyy_metall/1.webp",
-    "images": [
-      "data/images/dtail/dtail_lunnyy_metall/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
-  },
-  {
-    "id": "dtail_malahit",
-    "name": "МАЛАХИТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_malahit/1.webp",
-    "images": [
-      "data/images/dtail/dtail_malahit/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_malahit/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_malahit/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mango",
-    "name": "МАНГО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mango/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mango/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mango/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mango/1_thumb.webp"
-  },
-  {
-    "id": "dtail_marokkanskiy_kamen",
-    "name": "МАРОККАНСКИЙ КАМЕНЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_marokkanskiy_kamen/1.webp",
-    "images": [
-      "data/images/dtail/dtail_marokkanskiy_kamen/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
-  },
-  {
-    "id": "dtail_meysen_vanil",
-    "name": "МЕЙСЕН ВАНИЛЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_meysen_vanil/1.webp",
-    "images": [
-      "data/images/dtail/dtail_meysen_vanil/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
-  },
-  {
-    "id": "dtail_metallik",
-    "name": "МЕТАЛЛИК",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_metallik/1.webp",
-    "images": [
-      "data/images/dtail/dtail_metallik/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_metallik/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_metallik/1_thumb.webp"
-  },
-  {
-    "id": "dtail_metropolitan",
-    "name": "МЕТРОПОЛИТАН",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_metropolitan/1.webp",
-    "images": [
-      "data/images/dtail/dtail_metropolitan/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_metropolitan/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_metropolitan/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mikado",
-    "name": "МИКАДО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mikado/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mikado/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mikado/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mikado/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mikado_svetlyy",
-    "name": "МИКАДО СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mikado_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mikado_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_modena",
-    "name": "МОДЕНА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_modena/1.webp",
-    "images": [
-      "data/images/dtail/dtail_modena/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_modena/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_modena/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mokko",
-    "name": "МОККО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mokko/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mokko/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mokko/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mokko/1_thumb.webp"
-  },
-  {
-    "id": "dtail_morskoy_trostnik",
-    "name": "МОРСКОЙ ТРОСТНИК",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_morskoy_trostnik/1.webp",
-    "images": [
-      "data/images/dtail/dtail_morskoy_trostnik/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_bezhevyy",
-    "name": "МРАМОР БЕЖЕВЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_bezhevyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_bezhevyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_bezhevyy_svetlyy",
-    "name": "МРАМОР БЕЖЕВЫЙ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_belyy",
-    "name": "МРАМОР БЕЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_belyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_belyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_bottichino",
-    "name": "МРАМОР БОТТИЧИНО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_bottichino/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_bottichino/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_de_mazi_svetlyy",
-    "name": "МРАМОР ДЕ МАЗИ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_de_mazi_temnyy",
-    "name": "МРАМОР ДЕ МАЗИ ТЕМНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_zolotoy",
-    "name": "МРАМОР ЗОЛОТОЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_zolotoy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_zolotoy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_karrara",
-    "name": "МРАМОР КАРРАРА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_karrara/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_karrara/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_korolevskiy",
-    "name": "МРАМОР КОРОЛЕВСКИЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_korolevskiy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_korolevskiy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_markvina_belyy",
-    "name": "МРАМОР МАРКВИНА БЕЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_markvina_belyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_markvina_belyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_markvina_siniy",
-    "name": "МРАМОР МАРКВИНА СИНИЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_markvina_siniy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_markvina_siniy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_seryy",
-    "name": "МРАМОР СЕРЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_seryy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_seryy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_mramor_chernyy",
-    "name": "МРАМОР ЧЕРНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_mramor_chernyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_mramor_chernyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_neapolis",
-    "name": "НЕАПОЛИС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_neapolis/1.webp",
-    "images": [
-      "data/images/dtail/dtail_neapolis/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_neapolis/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_neapolis/1_thumb.webp"
-  },
-  {
-    "id": "dtail_neapolitano",
-    "name": "НЕАПОЛИТАНО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_neapolitano/1.webp",
-    "images": [
-      "data/images/dtail/dtail_neapolitano/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_neapolitano/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_neapolitano/1_thumb.webp"
-  },
-  {
-    "id": "dtail_niagara",
-    "name": "НИАГАРА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_niagara/1.webp",
-    "images": [
-      "data/images/dtail/dtail_niagara/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_niagara/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_niagara/1_thumb.webp"
-  },
-  {
-    "id": "dtail_noche_rubino",
-    "name": "НОЧЕ РУБИНО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_noche_rubino/1.webp",
-    "images": [
-      "data/images/dtail/dtail_noche_rubino/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
-  },
-  {
-    "id": "dtail_olha",
-    "name": "ОЛЬХА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_olha/1.webp",
-    "images": [
-      "data/images/dtail/dtail_olha/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_olha/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_olha/1_thumb.webp"
-  },
-  {
-    "id": "dtail_oniks_bezhevyy",
-    "name": "ОНИКС БЕЖЕВЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_oniks_bezhevyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_oniks_bezhevyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_oniks_seryy",
-    "name": "ОНИКС СЕРЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_oniks_seryy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_oniks_seryy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_opal_svetlyy",
-    "name": "ОПАЛ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_opal_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_opal_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_opal_temnyy",
-    "name": "ОПАЛ ТЕМНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_opal_temnyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_opal_temnyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_parket_svetlyy",
-    "name": "ПАРКЕТ СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_parket_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_parket_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_perlamutr",
-    "name": "ПЕРЛАМУТР",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_perlamutr/1.webp",
-    "images": [
-      "data/images/dtail/dtail_perlamutr/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_perlamutr/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_perlamutr/1_thumb.webp"
-  },
-  {
-    "id": "dtail_perlamutr_andromeda",
-    "name": "ПЕРЛАМУТР АНДРОМЕДА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_perlamutr_andromeda/1.webp",
-    "images": [
-      "data/images/dtail/dtail_perlamutr_andromeda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
-  },
-  {
-    "id": "dtail_perlino",
-    "name": "ПЕРЛИНО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_perlino/1.webp",
-    "images": [
-      "data/images/dtail/dtail_perlino/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_perlino/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_perlino/1_thumb.webp"
-  },
-  {
-    "id": "dtail_peskara",
-    "name": "ПЕСКАРА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_peskara/1.webp",
-    "images": [
-      "data/images/dtail/dtail_peskara/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_peskara/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_peskara/1_thumb.webp"
-  },
-  {
-    "id": "dtail_pesok",
-    "name": "ПЕСОК",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_pesok/1.webp",
-    "images": [
-      "data/images/dtail/dtail_pesok/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_pesok/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_pesok/1_thumb.webp"
-  },
-  {
-    "id": "dtail_pesok_andromeda",
-    "name": "ПЕСОК АНДРОМЕДА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_pesok_andromeda/1.webp",
-    "images": [
-      "data/images/dtail/dtail_pesok_andromeda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
-  },
-  {
-    "id": "dtail_platina",
-    "name": "ПЛАТИНА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_platina/1.webp",
-    "images": [
-      "data/images/dtail/dtail_platina/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_platina/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_platina/1_thumb.webp"
-  },
-  {
-    "id": "dtail_porfir",
-    "name": "ПОРФИР",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_porfir/1.webp",
-    "images": [
-      "data/images/dtail/dtail_porfir/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_porfir/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_porfir/1_thumb.webp"
-  },
-  {
-    "id": "dtail_rakushki",
-    "name": "РАКУШКИ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_rakushki/1.webp",
-    "images": [
-      "data/images/dtail/dtail_rakushki/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_rakushki/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_rakushki/1_thumb.webp"
-  },
-  {
-    "id": "dtail_rambla",
-    "name": "РАМБЛА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_rambla/1.webp",
-    "images": [
-      "data/images/dtail/dtail_rambla/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_rambla/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_rambla/1_thumb.webp"
-  },
-  {
-    "id": "dtail_rezonans",
-    "name": "РЕЗОНАНС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_rezonans/1.webp",
-    "images": [
-      "data/images/dtail/dtail_rezonans/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_rezonans/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_rezonans/1_thumb.webp"
-  },
-  {
-    "id": "dtail_rigoletto_svetlyy",
-    "name": "РИГОЛЕТТО СВЕТЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_rigoletto_svetlyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_rigoletto_svetlyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_rigoletto_temnyy",
-    "name": "РИГОЛЕТТО ТЕМНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_rigoletto_temnyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_rigoletto_temnyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_safaga",
-    "name": "САФАГА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_safaga/1.webp",
-    "images": [
-      "data/images/dtail/dtail_safaga/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_safaga/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_safaga/1_thumb.webp"
-  },
-  {
-    "id": "dtail_semolina_bezhevaya",
-    "name": "СЕМОЛИНА БЕЖЕВАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_semolina_bezhevaya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_semolina_bezhevaya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_semolina_seraya",
-    "name": "СЕМОЛИНА СЕРАЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_semolina_seraya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_semolina_seraya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_seryy",
-    "name": "СЕРЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_seryy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_seryy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_seryy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_seryy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_seryy_kamen",
-    "name": "СЕРЫЙ КАМЕНЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_seryy_kamen/1.webp",
-    "images": [
-      "data/images/dtail/dtail_seryy_kamen/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
-  },
-  {
-    "id": "dtail_sosna_panderosa",
-    "name": "СОСНА ПАНДЕРОСА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_sosna_panderosa/1.webp",
-    "images": [
-      "data/images/dtail/dtail_sosna_panderosa/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
-  },
-  {
-    "id": "dtail_super_belyy",
-    "name": "СУПЕР БЕЛЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_super_belyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_super_belyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_super_belyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_super_belyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_superbelyy_kristall",
-    "name": "СУПЕРБЕЛЫЙ КРИСТАЛЛ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_superbelyy_kristall/1.webp",
-    "images": [
-      "data/images/dtail/dtail_superbelyy_kristall/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
-  },
-  {
-    "id": "dtail_taksus",
-    "name": "ТАКСУС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_taksus/1.webp",
-    "images": [
-      "data/images/dtail/dtail_taksus/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_taksus/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_taksus/1_thumb.webp"
-  },
-  {
-    "id": "dtail_taurus_andromeda",
-    "name": "ТАУРУС АНДРОМЕДА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_taurus_andromeda/1.webp",
-    "images": [
-      "data/images/dtail/dtail_taurus_andromeda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
-  },
-  {
-    "id": "dtail_terezina",
-    "name": "ТЕРЕЗИНА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_terezina/1.webp",
-    "images": [
-      "data/images/dtail/dtail_terezina/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_terezina/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_terezina/1_thumb.webp"
-  },
-  {
-    "id": "dtail_travertin_rimskiy",
-    "name": "ТРАВЕРТИН РИМСКИЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_travertin_rimskiy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_travertin_rimskiy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_transilvaniya",
-    "name": "ТРАНСИЛЬВАНИЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_transilvaniya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_transilvaniya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_umbriya",
-    "name": "УМБРИЯ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_umbriya/1.webp",
-    "images": [
-      "data/images/dtail/dtail_umbriya/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_umbriya/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_umbriya/1_thumb.webp"
-  },
-  {
-    "id": "dtail_forni",
-    "name": "ФОРНИ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_forni/1.webp",
-    "images": [
-      "data/images/dtail/dtail_forni/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_forni/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_forni/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernaya_bronza",
-    "name": "ЧЕРНАЯ БРОНЗА",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernaya_bronza/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernaya_bronza/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernoe_serebro",
-    "name": "ЧЕРНОЕ СЕРЕБРО",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernoe_serebro/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernoe_serebro/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernyy",
-    "name": "ЧЕРНЫЙ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernyy/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernyy/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernyy/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernyy/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernyy_granit",
-    "name": "ЧЕРНЫЙ ГРАНИТ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernyy_granit/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernyy_granit/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernyy_kristall",
-    "name": "ЧЕРНЫЙ КРИСТАЛЛ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernyy_kristall/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernyy_kristall/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
-  },
-  {
-    "id": "dtail_chernyy_tunis",
-    "name": "ЧЕРНЫЙ ТУНИС",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_chernyy_tunis/1.webp",
-    "images": [
-      "data/images/dtail/dtail_chernyy_tunis/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
-  },
-  {
-    "id": "dtail_shokolad",
-    "name": "ШОКОЛАД",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_shokolad/1.webp",
-    "images": [
-      "data/images/dtail/dtail_shokolad/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_shokolad/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_shokolad/1_thumb.webp"
-  },
-  {
-    "id": "dtail_yurskiy_kamen",
-    "name": "ЮРСКИЙ КАМЕНЬ",
-    "category": "Панели: HPL (Dtail)",
-    "url": "https://dtail.kz/HPL-2",
-    "image": "data/images/dtail/dtail_yurskiy_kamen/1.webp",
-    "images": [
-      "data/images/dtail/dtail_yurskiy_kamen/1.webp"
-    ],
-    "thumbs": [
-      "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
-    ],
-    "thumb": "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
   },
   {
     "id": "profikz_62374",
