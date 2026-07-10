@@ -196,16 +196,16 @@
   .quick-popover-item:active{background:rgba(0,0,0,0.05);}
   .quick-popover-item.active{color:var(--button);font-weight:700;}
   .quick-popover-item .n{color:var(--hint);font-size:11px;flex:0 0 auto;}
-  /* Подзаголовок смысловой подгруппы внутри popover (напр. "Плёнка"/"Ткани",
-     "Акрил"/"Кварц") — залитый акцентным цветом "чип" на всю ширину, а не
-     просто приглушённая мелкая надпись, чтобы явно читался как разделитель
-     групп, а не как ещё один пункт списка. */
-  .quick-popover-subheader{
+  /* Подзаголовок смысловой подгруппы внутри popover и шторки. */
+  .quick-popover-subheader,
+  .drawer-subsection-label{
     margin:2px 0 4px;padding:6px 12px;font-size:11px;font-weight:800;
     letter-spacing:.04em;text-transform:uppercase;color:var(--button);
     background:rgba(var(--card-border-rgb),0.08);border-radius:6px;
   }
-  .quick-popover-subheader:not(:first-child){margin-top:10px;}
+  .quick-popover-subheader:not(:first-child),
+  .drawer-subsection-label:not(:first-child){margin-top:10px;}
+  .drawer-subsection-label{margin-left:12px;margin-right:12px;}
 
   .drawer-item{
     padding:12px 12px;border-radius:10px;cursor:pointer;font-size:14.5px;font-weight:600;
@@ -698,9 +698,8 @@
   })();
 
   // ---- группировка категорий по «источникам» (иконки/шторка/верхний селектор) ----
-  // Категории неймспейсятся по префиксу названия. ЛДСП и столешницы бывают
-  // двух видов — российские (em-c.kz) и австрийские Egger (profikz.kz).
-  // HPL от dtail.kz — это панели, не столешницы (отдельная иконка «Панели»).
+  // ЛДСП и столешницы — Россия / Австрия (Egger). HPL dtail.kz — под иконкой
+  // «Столешницы», подсекция «HPL (Dtail)» (без слова «Панели» в интерфейсе).
   //
   // Иконки — свои, монохромный line-стиль (stroke=currentColor), чтобы активное
   // состояние перекрашивало иконку целиком (см. .quick-item.active).
@@ -709,8 +708,6 @@
     sheet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
     // Столешница — горизонтальная плита-столешница на двух торцах-опорах.
     counter: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="4" rx="1"></rect><line x1="6" y1="11" x2="6" y2="18"></line><line x1="18" y1="11" x2="18" y2="18"></line></svg>',
-    // Вертикальная HPL-панель (фасад / интерьер).
-    panel: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="1"></rect><line x1="7" y1="9" x2="17" y2="9"></line><line x1="7" y1="15" x2="17" y2="15"></line></svg>',
     plenka: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(90 12 12)"><rect x="9" y="4" width="12" height="13"></rect><rect x="3" y="7" width="6" height="14" rx="3"></rect><ellipse cx="6" cy="7" rx="3" ry="1.3"></ellipse></g></svg>',
     tkani: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="1.5"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="10" y1="5" x2="10" y2="19"></line><line x1="14" y1="5" x2="14" y2="19"></line></svg>',
     stone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>',
@@ -723,7 +720,7 @@
     if (cat.indexOf('Краски RAL') === 0) return 'ral';
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
     if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
-    if (cat.indexOf('Панели') === 0) return 'paneli';
+    if (cat.indexOf('HPL (Dtail)') !== -1) return 'stoleshnitsy';
     if (cat.indexOf('Столешницы') === 0) return 'stoleshnitsy';
     if (cat.indexOf('ЛДСП') === 0) return 'ldsp';
     return 'ldsp';
@@ -731,19 +728,17 @@
 
   var SITE_META = {
     ldsp: { title: 'ЛДСП', subtitle: 'ЛДСП', color: '#6fa3d8' },
-    stoleshnitsy: { title: 'Столешницы', subtitle: 'Столешницы', color: '#5aa88b' },
-    paneli: { title: 'DTAIL.KZ', subtitle: 'HPL панели', color: '#7a8fa6' },
+    stoleshnitsy: { title: 'Столешницы', subtitle: 'Столешницы и HPL', color: '#5aa88b' },
     plenka: { title: 'ADILET.NET / KIRA', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
     tkani: { title: 'ADILET.NET', subtitle: 'Ткани', color: '#b87898' },
     interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' },
     ral: { title: 'RAL CLASSIC', subtitle: 'Краски RAL', color: '#c0654e' }
   };
-  var SITE_ORDER = ['ldsp', 'stoleshnitsy', 'paneli', 'plenka', 'tkani', 'interstone', 'ral'];
-  var QUICK_LABELS = { ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы', paneli: 'Панели', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
+  var SITE_ORDER = ['ldsp', 'stoleshnitsy', 'plenka', 'tkani', 'interstone', 'ral'];
+  var QUICK_LABELS = { ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
   var QUICK_ICONS = {
     ldsp: ICONS.sheet,
     stoleshnitsy: ICONS.counter,
-    paneli: ICONS.panel,
     plenka: ICONS.plenka,
     tkani: ICONS.tkani,
     interstone: ICONS.stone,
@@ -766,28 +761,62 @@
     { prefix: 'Акриловый камень', label: 'Акрил' },
     { prefix: 'Кварцевый камень', label: 'Кварц' }
   ];
-  var POPOVER_SUBGROUP_ORDER = POPOVER_SUBGROUPS.map(function(r){ return r.label; });
+  // Подсекции внутри конкретной иконки-источника (приоритетнее POPOVER_SUBGROUPS).
+  var SITE_POPOVER_SUBGROUPS = {
+    stoleshnitsy: [
+      { prefix: 'Столешницы', label: 'Столешницы' },
+      { prefix: 'Панели: HPL (Dtail)', label: 'HPL (Dtail)' },
+      { prefix: 'HPL (Dtail)', label: 'HPL (Dtail)' }
+    ],
+    ldsp: [
+      { prefix: 'ЛДСП: Россия', label: 'Россия' },
+      { prefix: 'ЛДСП: Австрия', label: 'Австрия (Egger)' }
+    ]
+  };
 
-  function popoverSubGroupRule(catName){
-    for (var i = 0; i < POPOVER_SUBGROUPS.length; i++){
-      if (catName.indexOf(POPOVER_SUBGROUPS[i].prefix) === 0) return POPOVER_SUBGROUPS[i];
+  function subgroupRulesForSite(siteKey){
+    var siteRules = SITE_POPOVER_SUBGROUPS[siteKey];
+    return (siteRules && siteRules.length) ? siteRules : POPOVER_SUBGROUPS;
+  }
+
+  function popoverSubGroupRule(catName, siteKey){
+    var rules = subgroupRulesForSite(siteKey);
+    for (var i = 0; i < rules.length; i++){
+      if (catName.indexOf(rules[i].prefix) === 0) return rules[i];
     }
     return null;
   }
 
-  function popoverSubGroupOf(catName){
-    var rule = popoverSubGroupRule(catName);
+  function popoverSubGroupOf(catName, siteKey){
+    var rule = popoverSubGroupRule(catName, siteKey);
     return rule ? rule.label : null;
   }
 
-  // Заголовок подгруппы уже называет источник/тип ("ПЛЁНКА", "АКРИЛ" и т.д.),
-  // поэтому в самих пунктах списка обрезаем этот же префикс, чтобы не
-  // дублировать слово дважды подряд.
-  function popoverDisplayName(catName){
-    var rule = popoverSubGroupRule(catName);
+  function popoverDisplayName(catName, siteKey){
+    var rule = popoverSubGroupRule(catName, siteKey);
     if (!rule) return catName;
     var rest = catName.slice(rule.prefix.length).replace(/^[:\s]+/, '').trim();
-    return rest || catName;
+    return rest || rule.label || catName;
+  }
+
+  function partitionCategories(siteKey, catNames){
+    var order = subgroupRulesForSite(siteKey).map(function(r){ return r.label; });
+    var subGroups = {};
+    var ungrouped = [];
+    catNames.forEach(function(catName){
+      var sg = popoverSubGroupOf(catName, siteKey);
+      if (sg) {
+        if (!subGroups[sg]) subGroups[sg] = [];
+        subGroups[sg].push(catName);
+      } else {
+        ungrouped.push(catName);
+      }
+    });
+    var subGroupKeys = Object.keys(subGroups).filter(function(k){ return subGroups[k].length; });
+    subGroupKeys.sort(function(a, b){
+      return order.indexOf(a) - order.indexOf(b);
+    });
+    return { subGroups: subGroups, subGroupKeys: subGroupKeys, ungrouped: ungrouped };
   }
 
   // Общая для шторки/select'а/иконок-ярлыков группировка: сколько категорий
@@ -847,6 +876,7 @@
 
   function toggleFavorite(id){
     var idx = state.favorites.indexOf(id);
+    var adding = idx < 0;
     if (idx >= 0) state.favorites.splice(idx, 1);
     else state.favorites.push(id);
     saveFavorites();
@@ -854,6 +884,17 @@
     // Вьювер — отдельный оверлей поверх сетки, render() его не трогает,
     // поэтому сердечко в нём синхронизируем отдельно (если вьювер открыт).
     updateViewerHeart();
+    if (adding) {
+      var item = null;
+      for (var i = 0; i < state.items.length; i++) {
+        if (state.items[i].id === id) { item = state.items[i]; break; }
+      }
+      if (item) {
+        window.dispatchEvent(new CustomEvent('catalog:favorite-add', {
+          detail: { label: '★ В избранное: ' + item.category + ' — ' + item.name }
+        }));
+      }
+    }
   }
 
   // ---- загрузка каталога ----
@@ -978,13 +1019,29 @@
           closeTopCatPopover();
         });
       }
-      catNames.forEach(function(catName){
-        addRow(catName, g.cats[catName], !state.favOnly && !state.activeSite && state.category === catName, function(){
+
+      function appendTopCatRow(catName, useShortLabel){
+        var label = useShortLabel ? popoverDisplayName(catName, key) : catName;
+        addRow(label, g.cats[catName], !state.favOnly && !state.activeSite && state.category === catName, function(){
           state.category = catName; state.activeSite = null; state.favOnly = false;
           render(); updateFavBtn(); updateTopCatSelectValue(); buildDrawer(); buildQuickRow();
           closeTopCatPopover();
         });
-      });
+      }
+
+      var parts = partitionCategories(key, catNames);
+      if (parts.subGroupKeys.length > 1) {
+        parts.subGroupKeys.forEach(function(sgKey){
+          var header = document.createElement('div');
+          header.className = 'quick-popover-subheader';
+          header.textContent = sgKey;
+          pop.appendChild(header);
+          parts.subGroups[sgKey].forEach(function(catName){ appendTopCatRow(catName, true); });
+        });
+        parts.ungrouped.forEach(function(catName){ appendTopCatRow(catName, false); });
+      } else {
+        catNames.forEach(function(catName){ appendTopCatRow(catName, false); });
+      }
     });
 
     document.body.appendChild(pop);
@@ -1074,7 +1131,7 @@
       var item = document.createElement('div');
       var isActive = !state.favOnly && !state.activeSite && state.category === catName;
       item.className = 'quick-popover-item' + (isActive ? ' active' : '');
-      var label = useShortLabel ? popoverDisplayName(catName) : catName;
+      var label = useShortLabel ? popoverDisplayName(catName, key) : catName;
       item.innerHTML = '<span>' + label + '</span><span class="n">' + g.cats[catName] + '</span>';
       item.onclick = function(){
         state.category = catName;
@@ -1086,35 +1143,16 @@
       pop.appendChild(item);
     }
 
-    // Раскладываем catNames по смысловым подгруппам (см. popoverSubGroupOf) —
-    // группы с подзаголовком идут в фиксированном порядке, категории без
-    // подгруппы (сейчас такого нет, но на будущее) — простым списком в конце.
-    var subGroups = {};
-    var ungrouped = [];
-    catNames.forEach(function(catName){
-      var sg = popoverSubGroupOf(catName);
-      if (sg) {
-        if (!subGroups[sg]) subGroups[sg] = [];
-        subGroups[sg].push(catName);
-      } else {
-        ungrouped.push(catName);
-      }
-    });
-    var subGroupKeys = Object.keys(subGroups).sort(function(a, b){
-      return POPOVER_SUBGROUP_ORDER.indexOf(a) - POPOVER_SUBGROUP_ORDER.indexOf(b);
-    });
-
-    if (subGroupKeys.length > 1) {
-      // Есть смысл показывать подзаголовки, только если подгрупп больше одной —
-      // иначе это просто дублирование заголовка самого popover.
-      subGroupKeys.forEach(function(sgKey){
+    var parts = partitionCategories(key, catNames);
+    if (parts.subGroupKeys.length > 1) {
+      parts.subGroupKeys.forEach(function(sgKey){
         var header = document.createElement('div');
         header.className = 'quick-popover-subheader';
         header.textContent = sgKey;
         pop.appendChild(header);
-        subGroups[sgKey].forEach(function(catName){ appendCatItem(catName, true); });
+        parts.subGroups[sgKey].forEach(function(catName){ appendCatItem(catName, true); });
       });
-      ungrouped.forEach(function(catName){ appendCatItem(catName, false); });
+      parts.ungrouped.forEach(function(catName){ appendCatItem(catName, false); });
     } else {
       catNames.forEach(function(catName){ appendCatItem(catName, false); });
     }
@@ -1226,10 +1264,12 @@
 
       var subitemsWrap = document.createElement('div');
       subitemsWrap.className = 'drawer-subitems';
-      catNames.forEach(function(catName){
+
+      function appendDrawerSubitem(catName, useShortLabel){
         var sub = document.createElement('div');
         sub.className = 'drawer-subitem' + (state.category === catName && !state.favOnly ? ' active' : '');
-        sub.innerHTML = '<span>' + catName + '</span><span class="n">' + g.cats[catName] + '</span>';
+        var label = useShortLabel ? popoverDisplayName(catName, key) : catName;
+        sub.innerHTML = '<span>' + label + '</span><span class="n">' + g.cats[catName] + '</span>';
         sub.onclick = function(){
           state.category = catName;
           state.activeSite = null;
@@ -1242,7 +1282,22 @@
           closeDrawer();
         };
         subitemsWrap.appendChild(sub);
-      });
+      }
+
+      var parts = partitionCategories(key, catNames);
+      if (parts.subGroupKeys.length > 1) {
+        parts.subGroupKeys.forEach(function(sgKey){
+          var subheader = document.createElement('div');
+          subheader.className = 'drawer-subsection-label';
+          subheader.textContent = sgKey;
+          subitemsWrap.appendChild(subheader);
+          parts.subGroups[sgKey].forEach(function(catName){ appendDrawerSubitem(catName, true); });
+        });
+        parts.ungrouped.forEach(function(catName){ appendDrawerSubitem(catName, false); });
+      } else {
+        catNames.forEach(function(catName){ appendDrawerSubitem(catName, false); });
+      }
+
       groupEl.appendChild(subitemsWrap);
 
       els.drawerGroups.appendChild(groupEl);
@@ -2102,6 +2157,10 @@
   }
 
   logVisit(''); // факт открытия приложения
+
+  window.addEventListener('catalog:favorite-add', function(e) {
+    if (e && e.detail && e.detail.label) logVisit(e.detail.label);
+  });
 
   // смена категории/фильтра — читаем текст кнопки в топбаре
   var labelEl = document.getElementById('topCatBtnLabel');
