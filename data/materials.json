@@ -15456,6 +15456,1854 @@
     "thumb": "data/images/adilet/adilet_venge-1998-b/1_thumb.webp"
   },
   {
+    "id": "dtail_aladdin",
+    "name": "АЛАДДИН",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_aladdin/1.webp",
+    "images": [
+      "data/images/dtail/dtail_aladdin/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_aladdin/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_aladdin/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alambra",
+    "name": "АЛАМБРА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alambra/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alambra/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alambra/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alambra/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alambra_temnaya",
+    "name": "АЛАМБРА ТЕМНАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alambra_temnaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alambra_temnaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alambra_temnaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_alyuminievaya_polosa",
+    "name": "АЛЮМИНИЕВАЯ ПОЛОСА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_alyuminievaya_polosa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_alyuminievaya_polosa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_alyuminievaya_polosa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_belaya",
+    "name": "АНДРОМЕДА БЕЛАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_belaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_belaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_belaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_superbelaya",
+    "name": "АНДРОМЕДА СУПЕРБЕЛАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_superbelaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_superbelaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_superbelaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_andromeda_chernaya",
+    "name": "АНДРОМЕДА ЧЕРНАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_andromeda_chernaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_andromeda_chernaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_andromeda_chernaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_antares",
+    "name": "АНТАРЕС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_antares/1.webp",
+    "images": [
+      "data/images/dtail/dtail_antares/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_antares/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_antares/1_thumb.webp"
+  },
+  {
+    "id": "dtail_arvika",
+    "name": "АРВИКА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_arvika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_arvika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_arvika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_arvika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bazalt",
+    "name": "БАЗАЛЬТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bazalt/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bazalt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bazalt/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bazalt/1_thumb.webp"
+  },
+  {
+    "id": "dtail_belyy",
+    "name": "БЕЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_belyy_kristall",
+    "name": "БЕЛЫЙ КРИСТАЛЛ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_belyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_belyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_belyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_betao",
+    "name": "БЕТАО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_betao/1.webp",
+    "images": [
+      "data/images/dtail/dtail_betao/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_betao/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_betao/1_thumb.webp"
+  },
+  {
+    "id": "dtail_biser_svetlyy",
+    "name": "БИСЕР СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_biser_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_biser_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_biser_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bordo",
+    "name": "БОРДО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bordo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bordo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bordo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bordo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_budda",
+    "name": "БУДДА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_budda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_budda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_budda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_budda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_buk",
+    "name": "БУК",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_buk/1.webp",
+    "images": [
+      "data/images/dtail/dtail_buk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_buk/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_buk/1_thumb.webp"
+  },
+  {
+    "id": "dtail_buk_reynland",
+    "name": "БУК РЕЙНЛАНД",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_buk_reynland/1.webp",
+    "images": [
+      "data/images/dtail/dtail_buk_reynland/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_buk_reynland/1_thumb.webp"
+  },
+  {
+    "id": "dtail_bulat",
+    "name": "БУЛАТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_bulat/1.webp",
+    "images": [
+      "data/images/dtail/dtail_bulat/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_bulat/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_bulat/1_thumb.webp"
+  },
+  {
+    "id": "dtail_vanil",
+    "name": "ВАНИЛЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_vanil/1.webp",
+    "images": [
+      "data/images/dtail/dtail_vanil/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_vanil/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_vanil/1_thumb.webp"
+  },
+  {
+    "id": "dtail_venge",
+    "name": "ВЕНГЕ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_venge/1.webp",
+    "images": [
+      "data/images/dtail/dtail_venge/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_venge/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_venge/1_thumb.webp"
+  },
+  {
+    "id": "dtail_venge_tsavo",
+    "name": "ВЕНГЕ ЦАВО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_venge_tsavo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_venge_tsavo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_venge_tsavo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_galaktika",
+    "name": "ГАЛАКТИКА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_galaktika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_galaktika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_galaktika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_galaktika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_gaudi",
+    "name": "ГАУДИ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_gaudi/1.webp",
+    "images": [
+      "data/images/dtail/dtail_gaudi/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_gaudi/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_gaudi/1_thumb.webp"
+  },
+  {
+    "id": "dtail_glyanets",
+    "name": "ГЛЯНЕЦ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_glyanets/1.webp",
+    "images": [
+      "data/images/dtail/dtail_glyanets/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_glyanets/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_glyanets/1_thumb.webp"
+  },
+  {
+    "id": "dtail_goluboy",
+    "name": "ГОЛУБОЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_goluboy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_goluboy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_goluboy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_goluboy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_granilyatto",
+    "name": "ГРАНИЛЬЯТТО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_granilyatto/1.webp",
+    "images": [
+      "data/images/dtail/dtail_granilyatto/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_granilyatto/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_granilyatto/1_thumb.webp"
+  },
+  {
+    "id": "dtail_granit_sardinskiy_svetlyy",
+    "name": "ГРАНИТ САРДИНСКИЙ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_granit_sardinskiy_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_grafit",
+    "name": "ГРАФИТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_grafit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_grafit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_grafit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_grafit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_grenobl",
+    "name": "ГРЕНОБЛЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_grenobl/1.webp",
+    "images": [
+      "data/images/dtail/dtail_grenobl/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_grenobl/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_grenobl/1_thumb.webp"
+  },
+  {
+    "id": "dtail_drevesnyy_brus",
+    "name": "ДРЕВЕСНЫЙ БРУС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_drevesnyy_brus/1.webp",
+    "images": [
+      "data/images/dtail/dtail_drevesnyy_brus/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_drevesnyy_brus/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_votan",
+    "name": "ДУБ ВОТАН",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_votan/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_votan/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_votan/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_votan/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_vybelennyy",
+    "name": "ДУБ ВЫБЕЛЕННЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_vybelennyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_vybelennyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_vybelennyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_delano",
+    "name": "ДУБ ДЕЛАНО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_delano/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_delano/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_delano/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_delano/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_kera",
+    "name": "ДУБ КЕРА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_kera/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_kera/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_kera/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_kera/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_uoterford",
+    "name": "ДУБ УОТЕРФОРД",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_uoterford/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_uoterford/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_uoterford/1_thumb.webp"
+  },
+  {
+    "id": "dtail_dub_yukon",
+    "name": "ДУБ ЮКОН",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_dub_yukon/1.webp",
+    "images": [
+      "data/images/dtail/dtail_dub_yukon/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_dub_yukon/1_thumb.webp"
+  },
+  {
+    "id": "dtail_zheltyy",
+    "name": "ЖЕЛТЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_zheltyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_zheltyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_zheltyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_zheltyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_imperador",
+    "name": "ИМПЕРАДОР",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_imperador/1.webp",
+    "images": [
+      "data/images/dtail/dtail_imperador/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_imperador/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_imperador/1_thumb.webp"
+  },
+  {
+    "id": "dtail_indiyskiy_shisham",
+    "name": "ИНДИЙСКИЙ ШИШАМ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_indiyskiy_shisham/1.webp",
+    "images": [
+      "data/images/dtail/dtail_indiyskiy_shisham/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_indiyskiy_shisham/1_thumb.webp"
+  },
+  {
+    "id": "dtail_ipanema",
+    "name": "ИПАНЕМА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_ipanema/1.webp",
+    "images": [
+      "data/images/dtail/dtail_ipanema/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_ipanema/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_ipanema/1_thumb.webp"
+  },
+  {
+    "id": "dtail_italyanskaya_mozaika",
+    "name": "ИТАЛЬЯНСКАЯ МОЗАИКА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_italyanskaya_mozaika/1.webp",
+    "images": [
+      "data/images/dtail/dtail_italyanskaya_mozaika/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_italyanskaya_mozaika/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kalakatta",
+    "name": "КАЛАКАТТА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kalakatta/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kalakatta/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kalakatta/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kalakatta/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kameshki",
+    "name": "КАМЕШКИ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kameshki/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kameshki/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kameshki/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kameshki/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kantashe",
+    "name": "КАНТАШЕ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kantashe/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kantashe/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kantashe/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kantashe/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kantri",
+    "name": "КАНТРИ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kantri/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kantri/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kantri/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kantri/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kastillo",
+    "name": "КАСТИЛЛО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kastillo/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kastillo/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kastillo/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kastillo/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kastillo_temnyy",
+    "name": "КАСТИЛЛО ТЕМНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kastillo_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kastillo_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kastillo_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_klimt_svetlyy",
+    "name": "КЛИМТ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_klimt_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_klimt_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_klimt_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_koren_vyaza",
+    "name": "КОРЕНЬ ВЯЗА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_koren_vyaza/1.webp",
+    "images": [
+      "data/images/dtail/dtail_koren_vyaza/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_koren_vyaza/1_thumb.webp"
+  },
+  {
+    "id": "dtail_korodona",
+    "name": "КОРОДОНА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_korodona/1.webp",
+    "images": [
+      "data/images/dtail/dtail_korodona/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_korodona/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_korodona/1_thumb.webp"
+  },
+  {
+    "id": "dtail_krasnyy",
+    "name": "КРАСНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_krasnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_krasnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_krasnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_krasnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_kristall",
+    "name": "КРИСТАЛЛ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lavanda",
+    "name": "ЛАВАНДА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lavanda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lavanda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lavanda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lavanda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lavant",
+    "name": "ЛАВАНТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lavant/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lavant/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lavant/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lavant/1_thumb.webp"
+  },
+  {
+    "id": "dtail_laym",
+    "name": "ЛАЙМ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_laym/1.webp",
+    "images": [
+      "data/images/dtail/dtail_laym/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_laym/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_laym/1_thumb.webp"
+  },
+  {
+    "id": "dtail_len_svetlyy",
+    "name": "ЛЕН СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_len_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_len_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_len_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_listvennitsa",
+    "name": "ЛИСТВЕННИЦА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_listvennitsa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_listvennitsa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_listvennitsa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_loza_serebryanaya",
+    "name": "ЛОЗА СЕРЕБРЯНАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_loza_serebryanaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_loza_serebryanaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_loza_serebryanaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lukka",
+    "name": "ЛУККА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lukka/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lukka/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lukka/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lukka/1_thumb.webp"
+  },
+  {
+    "id": "dtail_luksor",
+    "name": "ЛУКСОР",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_luksor/1.webp",
+    "images": [
+      "data/images/dtail/dtail_luksor/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_luksor/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_luksor/1_thumb.webp"
+  },
+  {
+    "id": "dtail_lunnyy_metall",
+    "name": "ЛУННЫЙ МЕТАЛЛ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_lunnyy_metall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_lunnyy_metall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_lunnyy_metall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_malahit",
+    "name": "МАЛАХИТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_malahit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_malahit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_malahit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_malahit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mango",
+    "name": "МАНГО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mango/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mango/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mango/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mango/1_thumb.webp"
+  },
+  {
+    "id": "dtail_marokkanskiy_kamen",
+    "name": "МАРОККАНСКИЙ КАМЕНЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_marokkanskiy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_marokkanskiy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_marokkanskiy_kamen/1_thumb.webp"
+  },
+  {
+    "id": "dtail_meysen_vanil",
+    "name": "МЕЙСЕН ВАНИЛЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_meysen_vanil/1.webp",
+    "images": [
+      "data/images/dtail/dtail_meysen_vanil/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_meysen_vanil/1_thumb.webp"
+  },
+  {
+    "id": "dtail_metallik",
+    "name": "МЕТАЛЛИК",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_metallik/1.webp",
+    "images": [
+      "data/images/dtail/dtail_metallik/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_metallik/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_metallik/1_thumb.webp"
+  },
+  {
+    "id": "dtail_metropolitan",
+    "name": "МЕТРОПОЛИТАН",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_metropolitan/1.webp",
+    "images": [
+      "data/images/dtail/dtail_metropolitan/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_metropolitan/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_metropolitan/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mikado",
+    "name": "МИКАДО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mikado/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mikado/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mikado/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mikado/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mikado_svetlyy",
+    "name": "МИКАДО СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mikado_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mikado_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mikado_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_modena",
+    "name": "МОДЕНА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_modena/1.webp",
+    "images": [
+      "data/images/dtail/dtail_modena/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_modena/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_modena/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mokko",
+    "name": "МОККО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mokko/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mokko/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mokko/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mokko/1_thumb.webp"
+  },
+  {
+    "id": "dtail_morskoy_trostnik",
+    "name": "МОРСКОЙ ТРОСТНИК",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_morskoy_trostnik/1.webp",
+    "images": [
+      "data/images/dtail/dtail_morskoy_trostnik/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_morskoy_trostnik/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bezhevyy",
+    "name": "МРАМОР БЕЖЕВЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bezhevyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bezhevyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bezhevyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bezhevyy_svetlyy",
+    "name": "МРАМОР БЕЖЕВЫЙ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bezhevyy_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_belyy",
+    "name": "МРАМОР БЕЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_bottichino",
+    "name": "МРАМОР БОТТИЧИНО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_bottichino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_bottichino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_bottichino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_de_mazi_svetlyy",
+    "name": "МРАМОР ДЕ МАЗИ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_de_mazi_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_de_mazi_temnyy",
+    "name": "МРАМОР ДЕ МАЗИ ТЕМНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_de_mazi_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_zolotoy",
+    "name": "МРАМОР ЗОЛОТОЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_zolotoy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_zolotoy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_zolotoy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_karrara",
+    "name": "МРАМОР КАРРАРА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_karrara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_karrara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_karrara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_korolevskiy",
+    "name": "МРАМОР КОРОЛЕВСКИЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_korolevskiy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_korolevskiy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_korolevskiy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_markvina_belyy",
+    "name": "МРАМОР МАРКВИНА БЕЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_markvina_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_markvina_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_markvina_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_markvina_siniy",
+    "name": "МРАМОР МАРКВИНА СИНИЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_markvina_siniy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_markvina_siniy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_markvina_siniy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_seryy",
+    "name": "МРАМОР СЕРЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_mramor_chernyy",
+    "name": "МРАМОР ЧЕРНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_mramor_chernyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_mramor_chernyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_mramor_chernyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_neapolis",
+    "name": "НЕАПОЛИС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_neapolis/1.webp",
+    "images": [
+      "data/images/dtail/dtail_neapolis/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_neapolis/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_neapolis/1_thumb.webp"
+  },
+  {
+    "id": "dtail_neapolitano",
+    "name": "НЕАПОЛИТАНО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_neapolitano/1.webp",
+    "images": [
+      "data/images/dtail/dtail_neapolitano/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_neapolitano/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_neapolitano/1_thumb.webp"
+  },
+  {
+    "id": "dtail_niagara",
+    "name": "НИАГАРА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_niagara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_niagara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_niagara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_niagara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_noche_rubino",
+    "name": "НОЧЕ РУБИНО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_noche_rubino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_noche_rubino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_noche_rubino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_olha",
+    "name": "ОЛЬХА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_olha/1.webp",
+    "images": [
+      "data/images/dtail/dtail_olha/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_olha/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_olha/1_thumb.webp"
+  },
+  {
+    "id": "dtail_oniks_bezhevyy",
+    "name": "ОНИКС БЕЖЕВЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_oniks_bezhevyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_oniks_bezhevyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_oniks_bezhevyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_oniks_seryy",
+    "name": "ОНИКС СЕРЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_oniks_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_oniks_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_oniks_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_opal_svetlyy",
+    "name": "ОПАЛ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_opal_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_opal_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_opal_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_opal_temnyy",
+    "name": "ОПАЛ ТЕМНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_opal_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_opal_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_opal_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_parket_svetlyy",
+    "name": "ПАРКЕТ СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_parket_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_parket_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_parket_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlamutr",
+    "name": "ПЕРЛАМУТР",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlamutr/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlamutr/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlamutr/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlamutr/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlamutr_andromeda",
+    "name": "ПЕРЛАМУТР АНДРОМЕДА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlamutr_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlamutr_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlamutr_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_perlino",
+    "name": "ПЕРЛИНО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_perlino/1.webp",
+    "images": [
+      "data/images/dtail/dtail_perlino/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_perlino/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_perlino/1_thumb.webp"
+  },
+  {
+    "id": "dtail_peskara",
+    "name": "ПЕСКАРА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_peskara/1.webp",
+    "images": [
+      "data/images/dtail/dtail_peskara/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_peskara/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_peskara/1_thumb.webp"
+  },
+  {
+    "id": "dtail_pesok",
+    "name": "ПЕСОК",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_pesok/1.webp",
+    "images": [
+      "data/images/dtail/dtail_pesok/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_pesok/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_pesok/1_thumb.webp"
+  },
+  {
+    "id": "dtail_pesok_andromeda",
+    "name": "ПЕСОК АНДРОМЕДА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_pesok_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_pesok_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_pesok_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_platina",
+    "name": "ПЛАТИНА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_platina/1.webp",
+    "images": [
+      "data/images/dtail/dtail_platina/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_platina/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_platina/1_thumb.webp"
+  },
+  {
+    "id": "dtail_porfir",
+    "name": "ПОРФИР",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_porfir/1.webp",
+    "images": [
+      "data/images/dtail/dtail_porfir/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_porfir/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_porfir/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rakushki",
+    "name": "РАКУШКИ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rakushki/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rakushki/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rakushki/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rakushki/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rambla",
+    "name": "РАМБЛА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rambla/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rambla/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rambla/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rambla/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rezonans",
+    "name": "РЕЗОНАНС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rezonans/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rezonans/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rezonans/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rezonans/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rigoletto_svetlyy",
+    "name": "РИГОЛЕТТО СВЕТЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rigoletto_svetlyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rigoletto_svetlyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rigoletto_svetlyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_rigoletto_temnyy",
+    "name": "РИГОЛЕТТО ТЕМНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_rigoletto_temnyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_rigoletto_temnyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_rigoletto_temnyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_safaga",
+    "name": "САФАГА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_safaga/1.webp",
+    "images": [
+      "data/images/dtail/dtail_safaga/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_safaga/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_safaga/1_thumb.webp"
+  },
+  {
+    "id": "dtail_semolina_bezhevaya",
+    "name": "СЕМОЛИНА БЕЖЕВАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_semolina_bezhevaya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_semolina_bezhevaya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_semolina_bezhevaya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_semolina_seraya",
+    "name": "СЕМОЛИНА СЕРАЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_semolina_seraya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_semolina_seraya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_semolina_seraya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_seryy",
+    "name": "СЕРЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_seryy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_seryy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_seryy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_seryy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_seryy_kamen",
+    "name": "СЕРЫЙ КАМЕНЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_seryy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_seryy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_seryy_kamen/1_thumb.webp"
+  },
+  {
+    "id": "dtail_sosna_panderosa",
+    "name": "СОСНА ПАНДЕРОСА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_sosna_panderosa/1.webp",
+    "images": [
+      "data/images/dtail/dtail_sosna_panderosa/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_sosna_panderosa/1_thumb.webp"
+  },
+  {
+    "id": "dtail_super_belyy",
+    "name": "СУПЕР БЕЛЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_super_belyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_super_belyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_super_belyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_super_belyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_superbelyy_kristall",
+    "name": "СУПЕРБЕЛЫЙ КРИСТАЛЛ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_superbelyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_superbelyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_superbelyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_taksus",
+    "name": "ТАКСУС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_taksus/1.webp",
+    "images": [
+      "data/images/dtail/dtail_taksus/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_taksus/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_taksus/1_thumb.webp"
+  },
+  {
+    "id": "dtail_taurus_andromeda",
+    "name": "ТАУРУС АНДРОМЕДА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_taurus_andromeda/1.webp",
+    "images": [
+      "data/images/dtail/dtail_taurus_andromeda/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_taurus_andromeda/1_thumb.webp"
+  },
+  {
+    "id": "dtail_terezina",
+    "name": "ТЕРЕЗИНА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_terezina/1.webp",
+    "images": [
+      "data/images/dtail/dtail_terezina/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_terezina/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_terezina/1_thumb.webp"
+  },
+  {
+    "id": "dtail_travertin_rimskiy",
+    "name": "ТРАВЕРТИН РИМСКИЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_travertin_rimskiy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_travertin_rimskiy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_travertin_rimskiy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_transilvaniya",
+    "name": "ТРАНСИЛЬВАНИЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_transilvaniya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_transilvaniya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_transilvaniya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_umbriya",
+    "name": "УМБРИЯ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_umbriya/1.webp",
+    "images": [
+      "data/images/dtail/dtail_umbriya/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_umbriya/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_umbriya/1_thumb.webp"
+  },
+  {
+    "id": "dtail_forni",
+    "name": "ФОРНИ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_forni/1.webp",
+    "images": [
+      "data/images/dtail/dtail_forni/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_forni/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_forni/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernaya_bronza",
+    "name": "ЧЕРНАЯ БРОНЗА",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernaya_bronza/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernaya_bronza/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernaya_bronza/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernoe_serebro",
+    "name": "ЧЕРНОЕ СЕРЕБРО",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernoe_serebro/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernoe_serebro/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernoe_serebro/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy",
+    "name": "ЧЕРНЫЙ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_granit",
+    "name": "ЧЕРНЫЙ ГРАНИТ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_granit/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_granit/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_granit/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_kristall",
+    "name": "ЧЕРНЫЙ КРИСТАЛЛ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_kristall/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_kristall/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_kristall/1_thumb.webp"
+  },
+  {
+    "id": "dtail_chernyy_tunis",
+    "name": "ЧЕРНЫЙ ТУНИС",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_chernyy_tunis/1.webp",
+    "images": [
+      "data/images/dtail/dtail_chernyy_tunis/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_chernyy_tunis/1_thumb.webp"
+  },
+  {
+    "id": "dtail_shokolad",
+    "name": "ШОКОЛАД",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_shokolad/1.webp",
+    "images": [
+      "data/images/dtail/dtail_shokolad/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_shokolad/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_shokolad/1_thumb.webp"
+  },
+  {
+    "id": "dtail_yurskiy_kamen",
+    "name": "ЮРСКИЙ КАМЕНЬ",
+    "category": "Столешницы: HPL (Dtail)",
+    "url": "https://dtail.kz/HPL-2",
+    "image": "data/images/dtail/dtail_yurskiy_kamen/1.webp",
+    "images": [
+      "data/images/dtail/dtail_yurskiy_kamen/1.webp"
+    ],
+    "thumbs": [
+      "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
+    ],
+    "thumb": "data/images/dtail/dtail_yurskiy_kamen/1_thumb.webp"
+  },
+  {
     "id": "profikz_62374",
     "name": "Компакт-плита 4100*920*12 Камень пьетра гриджиа черный",
     "category": "Столешницы: Австрия (Egger)",
