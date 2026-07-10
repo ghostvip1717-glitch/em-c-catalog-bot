@@ -328,6 +328,21 @@
   html.chrome-hidden .section-header{
     opacity:0;pointer-events:none;
   }
+  /* Во время подсказок шапка не прячется — иначе transform #app сдвигает
+     карточки относительно fixed-маски подсветки. */
+  html.tutorial-active #app,
+  html.tutorial-active .topbar,
+  html.tutorial-active .safe-top-blur{
+    transform:none !important;
+    transition:none !important;
+  }
+  html.tutorial-active.chrome-hidden .section-header{
+    opacity:1;pointer-events:none;
+  }
+  html.tutorial-active .card{
+    scroll-margin-top:calc(var(--content-safe-top, 0px) + var(--topbar-h, 0px) + 10px);
+    scroll-margin-bottom:min(320px, 46vh);
+  }
   .section-header:first-of-type{padding-top:2px;}
 
   /* Рамка + тень — раньше карточка (--secbg) на некоторых темах почти не
@@ -528,9 +543,16 @@
     box-shadow:0 0 0 2px rgba(255,255,255,.85);
   }
   .tutorial-bubble{
-    position:fixed;z-index:2;width:min(300px,calc(100vw - 24px));
+    position:fixed;z-index:3;width:min(300px,calc(100vw - 24px));
     background:var(--bg);border:1px solid var(--line);border-radius:16px;
     padding:14px 14px 12px;box-shadow:0 10px 36px rgba(0,0,0,.2);
+  }
+  .tutorial-bubble--dock{
+    width:auto;max-height:min(48vh,360px);overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  .tutorial-pointer{
+    font-size:12px;font-weight:600;color:var(--link);margin:-4px 0 10px;
   }
   .tutorial-arrow{
     position:absolute;width:0;height:0;
@@ -690,6 +712,7 @@
     <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
     <div class="tutorial-step" id="tutorialStep">1 / 6</div>
     <div class="tutorial-title" id="tutorialTitle"></div>
+    <div class="tutorial-pointer" id="tutorialPointer" style="display:none"></div>
     <div class="tutorial-text" id="tutorialText"></div>
     <div class="tutorial-dots" id="tutorialDots"></div>
     <label class="tutorial-opt" id="tutorialOptWrap" style="display:none">
@@ -817,10 +840,7 @@
       text: 'Здесь собирается ваша подборка. Нажмите «☆ Избранное», чтобы показать только отмеченные материалы.'
     },
     {
-      target: function(){
-        var card = document.querySelector('.card .thumb-wrap');
-        return card || document.querySelector('.card');
-      },
+      target: function(){ return document.querySelector('.card'); },
       pad: 6, radius: 14,
       title: 'Карточка материала',
       text: '♡ — добавить в избранное. ✈ — отправить этот материал менеджеру. Тап по фото — крупный просмотр.',
@@ -887,6 +907,7 @@
     tutorialArrow: document.getElementById('tutorialArrow'),
     tutorialStep: document.getElementById('tutorialStep'),
     tutorialTitle: document.getElementById('tutorialTitle'),
+    tutorialPointer: document.getElementById('tutorialPointer'),
     tutorialText: document.getElementById('tutorialText'),
     tutorialDots: document.getElementById('tutorialDots'),
     tutorialOptWrap: document.getElementById('tutorialOptWrap'),
@@ -1146,6 +1167,80 @@
     }
   }
 
+  function positionTutorialBubbleDocked(targetRect){
+    if (!els.tutorialBubble) return;
+    var dockPad = 12;
+    els.tutorialBubble.className = 'tutorial-bubble tutorial-bubble--dock';
+    els.tutorialBubble.style.left = dockPad + 'px';
+    els.tutorialBubble.style.right = dockPad + 'px';
+    els.tutorialBubble.style.width = 'auto';
+    els.tutorialBubble.style.top = 'auto';
+    els.tutorialBubble.style.bottom = 'calc(' + dockPad + 'px + env(safe-area-inset-bottom, 0px))';
+    if (els.tutorialArrow) els.tutorialArrow.style.display = 'none';
+    if (els.tutorialPointer) {
+      if (targetRect && targetRect.bottom < window.innerHeight * 0.42) {
+        els.tutorialPointer.textContent = '↑ Смотрите выделенную кнопку выше';
+        els.tutorialPointer.style.display = 'block';
+      } else {
+        els.tutorialPointer.style.display = 'none';
+      }
+    }
+  }
+
+  function getTutorialScrollBands(){
+    var safeTop = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--content-safe-top')) || 0;
+    var topLimit = safeTop + (els.topbar ? els.topbar.offsetHeight : 72) + 10;
+    var bubbleH = els.tutorialBubble ? els.tutorialBubble.offsetHeight : 280;
+    var bottomReserve = bubbleH + 24;
+    return {
+      topLimit: topLimit,
+      bottomLimit: window.innerHeight - bottomReserve
+    };
+  }
+
+  function scrollTutorialTargetIntoView(target){
+    if (!target) return;
+    document.documentElement.classList.remove('chrome-hidden');
+    var bands = getTutorialScrollBands();
+    var r = target.getBoundingClientRect();
+    var scrollDelta = 0;
+    if (r.bottom > bands.bottomLimit) {
+      scrollDelta = r.bottom - bands.bottomLimit + 8;
+    } else if (r.top < bands.topLimit) {
+      scrollDelta = r.top - bands.topLimit;
+    } else {
+      var bandMid = bands.topLimit + (bands.bottomLimit - bands.topLimit) / 2;
+      var targetMid = r.top + r.height / 2;
+      var centerDelta = targetMid - bandMid;
+      if (Math.abs(centerDelta) > 24) scrollDelta = centerDelta;
+    }
+    if (Math.abs(scrollDelta) > 1) {
+      window.scrollTo(0, Math.max(0, window.scrollY + scrollDelta));
+    }
+  }
+
+  function syncTutorialSpotlight(){
+    if (!els.tutorial || !els.tutorial.classList.contains('open')) return;
+    var step = TUTORIAL_STEPS[tutorialIdx];
+    if (!step) return;
+    document.documentElement.classList.remove('chrome-hidden');
+    var target = step.target ? step.target() : null;
+    if (!target) {
+      hideTutorialMasks();
+      return;
+    }
+    if (step.scroll) {
+      try { scrollTutorialTargetIntoView(target); } catch(e){}
+    }
+    positionTutorialSpotlight(target, step);
+  }
+
+  var tutorialScrollRaf = 0;
+  function onTutorialScrollReposition(){
+    cancelAnimationFrame(tutorialScrollRaf);
+    tutorialScrollRaf = requestAnimationFrame(syncTutorialSpotlight);
+  }
+
   function positionTutorialMasks(r, step){
     var pad = step.pad != null ? step.pad : 8;
     var radius = step.radius != null ? step.radius : 12;
@@ -1153,6 +1248,9 @@
     var l = Math.max(0, r.left - pad);
     var ri = r.right + pad;
     var b = r.bottom + pad;
+    positionTutorialBubbleDocked(r);
+    var bubbleH = els.tutorialBubble ? els.tutorialBubble.offsetHeight : 240;
+    var maskBottomY = Math.max(b + 6, window.innerHeight - bubbleH - 14);
     if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;height:' + t + 'px';
     if (els.tutorialMaskLeft) {
       els.tutorialMaskLeft.style.cssText = 'left:0;top:' + t + 'px;width:' + l + 'px;height:' + Math.max(0, b - t) + 'px';
@@ -1161,7 +1259,7 @@
       els.tutorialMaskRight.style.cssText = 'left:' + ri + 'px;top:' + t + 'px;right:0;height:' + Math.max(0, b - t) + 'px';
     }
     if (els.tutorialMaskBottom) {
-      els.tutorialMaskBottom.style.cssText = 'left:0;top:' + b + 'px;right:0;bottom:0';
+      els.tutorialMaskBottom.style.cssText = 'left:0;top:' + maskBottomY + 'px;right:0;bottom:0';
     }
     if (els.tutorialHole) {
       els.tutorialHole.style.left = l + 'px';
@@ -1170,36 +1268,12 @@
       els.tutorialHole.style.height = Math.max(0, b - t) + 'px';
       els.tutorialHole.style.borderRadius = radius + 'px';
     }
-    positionTutorialBubble(r);
   }
 
   function hideTutorialMasks(){
     [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom, els.tutorialHole].forEach(function(el){
       if (el) { el.style.width = ''; el.style.height = ''; }
     });
-  }
-
-  function positionTutorialBubble(targetRect){
-    if (!els.tutorialBubble || !els.tutorialArrow) return;
-    var pad = 12;
-    var gap = 12;
-    var bw = els.tutorialBubble.offsetWidth;
-    var bh = els.tutorialBubble.offsetHeight;
-    var cx = targetRect.left + targetRect.width / 2;
-    var left = Math.max(pad, Math.min(cx - bw / 2, window.innerWidth - bw - pad));
-    var placeBelow = targetRect.bottom + gap + bh < window.innerHeight - pad;
-    var top;
-    if (placeBelow) {
-      top = targetRect.bottom + gap;
-      els.tutorialBubble.className = 'tutorial-bubble arrow-top';
-      els.tutorialArrow.style.left = Math.max(18, Math.min(bw - 18, cx - left)) + 'px';
-    } else {
-      top = Math.max(pad, targetRect.top - gap - bh);
-      els.tutorialBubble.className = 'tutorial-bubble arrow-bottom';
-      els.tutorialArrow.style.left = Math.max(18, Math.min(bw - 18, cx - left)) + 'px';
-    }
-    els.tutorialBubble.style.left = left + 'px';
-    els.tutorialBubble.style.top = top + 'px';
   }
 
   function positionTutorialSpotlight(el, step){
@@ -1232,28 +1306,21 @@
     if (els.tutorialNext) els.tutorialNext.textContent = last ? 'Готово' : 'Далее';
     els.tutorial.setAttribute('aria-hidden', 'false');
 
-    var target = step.target ? step.target() : null;
-    if (target && step.scroll) {
-      try { target.scrollIntoView({ block: 'center', behavior: 'auto' }); } catch(e){}
-    }
-
-    function place(){
-      target = step.target ? step.target() : null;
-      if (!target) {
-        hideTutorialMasks();
-        return;
-      }
-      positionTutorialSpotlight(target, step);
-    }
-
-    if (step.scroll) requestAnimationFrame(place);
-    else requestAnimationFrame(place);
+    requestAnimationFrame(function(){
+      syncTutorialSpotlight();
+      requestAnimationFrame(function(){
+        syncTutorialSpotlight();
+        if (step.scroll) setTimeout(syncTutorialSpotlight, 320);
+      });
+    });
   }
 
   function closeTutorial(){
     if (!els.tutorial) return;
     clearTutorialStepFx();
     updateSendFavBtn();
+    document.documentElement.classList.remove('tutorial-active');
+    window.removeEventListener('scroll', onTutorialScrollReposition);
     els.tutorial.classList.remove('open');
     els.tutorial.setAttribute('aria-hidden', 'true');
   }
@@ -1263,9 +1330,13 @@
     closeDrawer();
     closeViewer();
     try { window.scrollTo(0, 0); } catch(e){}
+    document.documentElement.classList.add('tutorial-active');
+    document.documentElement.classList.remove('chrome-hidden');
     tutorialIdx = 0;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
     els.tutorial.classList.add('open');
+    window.removeEventListener('scroll', onTutorialScrollReposition);
+    window.addEventListener('scroll', onTutorialScrollReposition, {passive:true});
     renderTutorialStep();
   }
 
@@ -1942,7 +2013,7 @@
   window.addEventListener('resize', function(){
     clearTimeout(tutorialResizeTimer);
     tutorialResizeTimer = setTimeout(function(){
-      if (els.tutorial && els.tutorial.classList.contains('open')) renderTutorialStep();
+      if (els.tutorial && els.tutorial.classList.contains('open')) syncTutorialSpotlight();
     }, 120);
   });
   els.drawerAll.onclick = function(){
@@ -2082,6 +2153,7 @@
     var root = document.documentElement;
 
     function apply(down){
+      if (root.classList.contains('tutorial-active')) down = false;
       root.classList.toggle('chrome-hidden', down);
       if (down) {
         closeTopCatPopover();
