@@ -513,44 +513,60 @@
   }
   .splash-cta:active{transform:scale(0.98);}
 
-  /* ---- интерактивные подсказки (туториал) ---- */
+  /* ---- интерактивные подсказки: подсветка элемента + стрелка ---- */
   .tutorial{
-    position:fixed;inset:0;z-index:90;display:flex;align-items:flex-end;justify-content:center;
-    padding:0 16px calc(24px + env(safe-area-inset-bottom, 0px));
+    position:fixed;inset:0;z-index:90;
     opacity:0;pointer-events:none;transition:opacity .25s ease;
   }
   .tutorial.open{opacity:1;pointer-events:auto;}
-  .tutorial-backdrop{
-    position:absolute;inset:0;background:rgba(0,0,0,.42);
+  .tutorial-shade{position:absolute;inset:0;z-index:0;}
+  .tutorial-spotlight{
+    position:fixed;z-index:1;border-radius:12px;pointer-events:none;
+    box-shadow:0 0 0 9999px rgba(0,0,0,.54);
+    transition:left .28s ease,top .28s ease,width .28s ease,height .28s ease,border-radius .28s ease;
   }
-  .tutorial-card{
-    position:relative;width:100%;max-width:380px;background:var(--bg);
-    border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;
-    box-shadow:0 12px 40px rgba(0,0,0,.18);
+  .tutorial-bubble{
+    position:fixed;z-index:2;width:min(300px,calc(100vw - 24px));
+    background:var(--bg);border:1px solid var(--line);border-radius:16px;
+    padding:14px 14px 12px;box-shadow:0 10px 36px rgba(0,0,0,.2);
+  }
+  .tutorial-arrow{
+    position:absolute;width:0;height:0;
+    border-left:9px solid transparent;border-right:9px solid transparent;
+  }
+  .tutorial-bubble.arrow-top .tutorial-arrow{
+    top:-9px;transform:translateX(-50%);
+    border-bottom:9px solid var(--bg);
+    filter:drop-shadow(0 -1px 0 var(--line));
+  }
+  .tutorial-bubble.arrow-bottom .tutorial-arrow{
+    bottom:-9px;transform:translateX(-50%);
+    border-top:9px solid var(--bg);
+    filter:drop-shadow(0 1px 0 var(--line));
   }
   .tutorial-skip{
-    position:absolute;top:14px;right:14px;font-size:12px;color:var(--hint);
+    position:absolute;top:10px;right:10px;font-size:12px;color:var(--hint);
     cursor:pointer;padding:4px 6px;
   }
-  .tutorial-icon{font-size:34px;line-height:1;margin-bottom:8px;}
-  .tutorial-step{font-size:11px;color:var(--link);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
-  .tutorial-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.25;}
-  .tutorial-text{font-size:13.5px;color:var(--hint-strong);line-height:1.55;margin-bottom:14px;}
-  .tutorial-dots{display:flex;gap:6px;margin-bottom:14px;}
+  .tutorial-step{font-size:11px;color:var(--link);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px;padding-right:56px;}
+  .tutorial-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.25;}
+  .tutorial-text{font-size:13px;color:var(--hint-strong);line-height:1.5;margin-bottom:12px;}
+  .tutorial-dots{display:flex;gap:6px;margin-bottom:12px;}
   .tutorial-dot{width:7px;height:7px;border-radius:50%;background:var(--line);transition:background .2s,transform .2s;}
   .tutorial-dot.active{background:var(--link);transform:scale(1.15);}
   .tutorial-opt{
-    display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:var(--text);
+    display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--text);
     line-height:1.45;margin-bottom:8px;cursor:pointer;
   }
   .tutorial-opt input{margin-top:2px;flex:0 0 auto;}
-  .tutorial-drawer-hint{font-size:11.5px;color:var(--hint);line-height:1.45;margin-bottom:12px;}
+  .tutorial-drawer-hint{font-size:11px;color:var(--hint);line-height:1.45;margin-bottom:10px;}
   .tutorial-btn{
-    width:100%;border:none;border-radius:12px;padding:13px 16px;
-    background:var(--button);color:var(--button-text);font-size:15px;font-weight:700;
+    width:100%;border:none;border-radius:11px;padding:12px 14px;
+    background:var(--button);color:var(--button-text);font-size:14px;font-weight:700;
     font-family:inherit;cursor:pointer;
   }
   .tutorial-btn:active{transform:scale(0.98);}
+  .send-fav-btn.tutorial-force-show{display:block !important;}
 
   .drawer-footer{
     margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
@@ -608,7 +624,6 @@
     <button class="menu-btn" id="menuBtn" aria-label="Категории">☰</button>
     <button class="fav-btn" id="favBtn">★ Избранное</button>
     <button class="send-fav-btn" id="sendFavBtn" type="button">Отправить подборку</button>
-    <button class="send-fav-btn" id="sendFavBtn" type="button">Отправить подборку</button>
     <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
   </div>
   <!-- Второй, отдельный от боковой шторки способ выбрать категорию — прямо
@@ -662,11 +677,12 @@
 </div>
 
 <div class="tutorial" id="tutorial" aria-hidden="true">
-  <div class="tutorial-backdrop" id="tutorialBackdrop"></div>
-  <div class="tutorial-card">
+  <div class="tutorial-shade" id="tutorialShade"></div>
+  <div class="tutorial-spotlight" id="tutorialSpotlight"></div>
+  <div class="tutorial-bubble arrow-top" id="tutorialBubble">
+    <div class="tutorial-arrow" id="tutorialArrow"></div>
     <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
-    <div class="tutorial-icon" id="tutorialIcon">🔍</div>
-    <div class="tutorial-step" id="tutorialStep">1 / 5</div>
+    <div class="tutorial-step" id="tutorialStep">1 / 6</div>
     <div class="tutorial-title" id="tutorialTitle"></div>
     <div class="tutorial-text" id="tutorialText"></div>
     <div class="tutorial-dots" id="tutorialDots"></div>
@@ -771,29 +787,44 @@
   var tutorialIdx = 0;
   var TUTORIAL_STEPS = [
     {
-      icon: '🔍',
-      title: 'Поиск и фильтры',
-      text: 'Строка поиска — по названию или коду. Иконки категорий под NeoModern — быстрый фильтр. Полный список разделов — в меню ☰.'
+      target: function(){ return els.menuBtn; },
+      pad: 8, radius: 12,
+      title: 'Меню категорий',
+      text: 'Кнопка ☰ — полный список разделов каталога: ЛДСП, столешницы, плёнка, ткани и другие материалы.'
     },
     {
-      icon: '★',
+      target: function(){ return els.search; },
+      pad: 6, radius: 10,
+      title: 'Поиск',
+      text: 'Введите название или код декора — каталог сразу отфильтрует материалы.'
+    },
+    {
+      target: function(){ return els.quickRow && els.quickRow.children.length ? els.quickRow : els.topCatBtn; },
+      pad: 8, radius: 12,
+      title: 'Типы материалов',
+      text: 'Иконки ниже — быстрый переход к нужной группе. Кнопка «Все материалы» — выбор конкретной категории.'
+    },
+    {
+      target: function(){ return els.favBtn; },
+      pad: 8, radius: 12,
       title: 'Избранное',
-      text: 'Кнопка «☆ Избранное» вверху сохраняет подборку. Сердечко ♡ на карточке или в просмотре фото — то же самое.'
+      text: 'Здесь собирается ваша подборка. Нажмите «☆ Избранное», чтобы показать только отмеченные материалы.'
     },
     {
-      icon: '✈',
-      title: 'Отправить материал',
-      text: 'Кнопка ✈ на карточке или в полноэкранном просмотре — отправить менеджеру в Telegram: фото, название и ссылка на материал.'
+      target: function(){
+        var card = document.querySelector('.card .thumb-wrap');
+        return card || document.querySelector('.card');
+      },
+      pad: 6, radius: 14,
+      title: 'Карточка материала',
+      text: '♡ — добавить в избранное. ✈ — отправить этот материал менеджеру. Тап по фото — крупный просмотр.',
+      scroll: true
     },
     {
-      icon: '🖼',
-      title: 'Просмотр фото',
-      text: 'Тап по карточке — крупный вид. Свайп влево/вправо — другие фото материала, вверх/вниз — соседние позиции в списке.'
-    },
-    {
-      icon: '📋',
-      title: 'Подборка из избранного',
-      text: 'Включите «★ Избранное» и нажмите «Отправить (N)» — вся подборка уйдёт одним сообщением в Telegram.'
+      target: function(){ return els.sendFavBtn; },
+      pad: 8, radius: 12, forceSendFav: true,
+      title: 'Отправить подборку',
+      text: 'Когда в избранном несколько позиций — эта кнопка отправит весь список менеджеру одним сообщением в Telegram.'
     }
   ];
   try {
@@ -841,7 +872,9 @@
     drawerHintsToggle: document.getElementById('drawerHintsToggle'),
     drawerReplayTutorial: document.getElementById('drawerReplayTutorial'),
     tutorial: document.getElementById('tutorial'),
-    tutorialIcon: document.getElementById('tutorialIcon'),
+    tutorialSpotlight: document.getElementById('tutorialSpotlight'),
+    tutorialBubble: document.getElementById('tutorialBubble'),
+    tutorialArrow: document.getElementById('tutorialArrow'),
     tutorialStep: document.getElementById('tutorialStep'),
     tutorialTitle: document.getElementById('tutorialTitle'),
     tutorialText: document.getElementById('tutorialText'),
@@ -851,7 +884,7 @@
     tutorialDrawerHint: document.getElementById('tutorialDrawerHint'),
     tutorialNext: document.getElementById('tutorialNext'),
     tutorialSkip: document.getElementById('tutorialSkip'),
-    tutorialBackdrop: document.getElementById('tutorialBackdrop'),
+    tutorialShade: document.getElementById('tutorialShade'),
     search: document.getElementById('search'),
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
@@ -1096,11 +1129,56 @@
     return !splashEl || splashEl.style.display === 'none';
   }
 
+  function clearTutorialStepFx(){
+    if (els.sendFavBtn) els.sendFavBtn.classList.remove('tutorial-force-show');
+  }
+
+  function positionTutorialBubble(targetRect){
+    if (!els.tutorialBubble || !els.tutorialArrow) return;
+    var pad = 12;
+    var gap = 12;
+    var bw = els.tutorialBubble.offsetWidth;
+    var bh = els.tutorialBubble.offsetHeight;
+    var cx = targetRect.left + targetRect.width / 2;
+    var left = Math.max(pad, Math.min(cx - bw / 2, window.innerWidth - bw - pad));
+    var placeBelow = targetRect.bottom + gap + bh < window.innerHeight - pad;
+    var top;
+    if (placeBelow) {
+      top = targetRect.bottom + gap;
+      els.tutorialBubble.className = 'tutorial-bubble arrow-top';
+      els.tutorialArrow.style.left = Math.max(18, Math.min(bw - 18, cx - left)) + 'px';
+    } else {
+      top = Math.max(pad, targetRect.top - gap - bh);
+      els.tutorialBubble.className = 'tutorial-bubble arrow-bottom';
+      els.tutorialArrow.style.left = Math.max(18, Math.min(bw - 18, cx - left)) + 'px';
+    }
+    els.tutorialBubble.style.left = left + 'px';
+    els.tutorialBubble.style.top = top + 'px';
+  }
+
+  function positionTutorialSpotlight(el, step){
+    if (!els.tutorialSpotlight || !el) return;
+    var pad = step.pad != null ? step.pad : 8;
+    var r = el.getBoundingClientRect();
+    els.tutorialSpotlight.style.left = (r.left - pad) + 'px';
+    els.tutorialSpotlight.style.top = (r.top - pad) + 'px';
+    els.tutorialSpotlight.style.width = (r.width + pad * 2) + 'px';
+    els.tutorialSpotlight.style.height = (r.height + pad * 2) + 'px';
+    els.tutorialSpotlight.style.borderRadius = (step.radius != null ? step.radius : 12) + 'px';
+    positionTutorialBubble(r);
+  }
+
   function renderTutorialStep(){
     var step = TUTORIAL_STEPS[tutorialIdx];
     var last = tutorialIdx >= TUTORIAL_STEPS.length - 1;
     if (!step || !els.tutorial) return;
-    els.tutorialIcon.textContent = step.icon;
+
+    clearTutorialStepFx();
+    if (step.forceSendFav && els.sendFavBtn) {
+      els.sendFavBtn.classList.add('tutorial-force-show');
+      els.sendFavBtn.textContent = 'Отправить (N)';
+    }
+
     els.tutorialStep.textContent = (tutorialIdx + 1) + ' / ' + TUTORIAL_STEPS.length;
     els.tutorialTitle.textContent = step.title;
     els.tutorialText.textContent = step.text;
@@ -1114,10 +1192,32 @@
     if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = last ? 'block' : 'none';
     if (els.tutorialNext) els.tutorialNext.textContent = last ? 'Готово' : 'Далее';
     els.tutorial.setAttribute('aria-hidden', 'false');
+
+    var target = step.target ? step.target() : null;
+    if (target && step.scroll) {
+      try { target.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch(e){}
+    }
+
+    function place(){
+      target = step.target ? step.target() : null;
+      if (!target) {
+        if (els.tutorialSpotlight) {
+          els.tutorialSpotlight.style.width = '0';
+          els.tutorialSpotlight.style.height = '0';
+        }
+        return;
+      }
+      positionTutorialSpotlight(target, step);
+    }
+
+    if (step.scroll) setTimeout(place, 320);
+    else requestAnimationFrame(function(){ requestAnimationFrame(place); });
   }
 
   function closeTutorial(){
     if (!els.tutorial) return;
+    clearTutorialStepFx();
+    updateSendFavBtn();
     els.tutorial.classList.remove('open');
     els.tutorial.setAttribute('aria-hidden', 'true');
   }
@@ -1126,10 +1226,11 @@
     if (!els.tutorial) return;
     closeDrawer();
     closeViewer();
+    try { window.scrollTo(0, 0); } catch(e){}
     tutorialIdx = 0;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
-    renderTutorialStep();
     els.tutorial.classList.add('open');
+    renderTutorialStep();
   }
 
   function finishTutorial(){
@@ -1800,7 +1901,10 @@
     };
   }
   if (els.tutorialSkip) els.tutorialSkip.onclick = closeTutorial;
-  if (els.tutorialBackdrop) els.tutorialBackdrop.onclick = closeTutorial;
+  if (els.tutorialShade) els.tutorialShade.onclick = closeTutorial;
+  window.addEventListener('resize', function(){
+    if (els.tutorial && els.tutorial.classList.contains('open')) renderTutorialStep();
+  });
   els.drawerAll.onclick = function(){
     state.category = 'Все';
     state.activeSite = null;
