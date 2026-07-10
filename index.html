@@ -520,10 +520,12 @@
   }
   .tutorial.open{opacity:1;pointer-events:auto;}
   .tutorial-shade{position:absolute;inset:0;z-index:0;}
-  .tutorial-spotlight{
-    position:fixed;z-index:1;border-radius:12px;pointer-events:none;
-    box-shadow:0 0 0 9999px rgba(0,0,0,.54);
-    transition:left .28s ease,top .28s ease,width .28s ease,height .28s ease,border-radius .28s ease;
+  .tutorial-mask{
+    position:fixed;z-index:1;background:rgba(0,0,0,.54);pointer-events:none;
+  }
+  .tutorial-hole{
+    position:fixed;z-index:1;pointer-events:none;
+    box-shadow:0 0 0 2px rgba(255,255,255,.85);
   }
   .tutorial-bubble{
     position:fixed;z-index:2;width:min(300px,calc(100vw - 24px));
@@ -678,7 +680,11 @@
 
 <div class="tutorial" id="tutorial" aria-hidden="true">
   <div class="tutorial-shade" id="tutorialShade"></div>
-  <div class="tutorial-spotlight" id="tutorialSpotlight"></div>
+  <div class="tutorial-mask tutorial-mask-top" id="tutorialMaskTop"></div>
+  <div class="tutorial-mask tutorial-mask-left" id="tutorialMaskLeft"></div>
+  <div class="tutorial-mask tutorial-mask-right" id="tutorialMaskRight"></div>
+  <div class="tutorial-mask tutorial-mask-bottom" id="tutorialMaskBottom"></div>
+  <div class="tutorial-hole" id="tutorialHole"></div>
   <div class="tutorial-bubble arrow-top" id="tutorialBubble">
     <div class="tutorial-arrow" id="tutorialArrow"></div>
     <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
@@ -872,7 +878,11 @@
     drawerHintsToggle: document.getElementById('drawerHintsToggle'),
     drawerReplayTutorial: document.getElementById('drawerReplayTutorial'),
     tutorial: document.getElementById('tutorial'),
-    tutorialSpotlight: document.getElementById('tutorialSpotlight'),
+    tutorialMaskTop: document.getElementById('tutorialMaskTop'),
+    tutorialMaskLeft: document.getElementById('tutorialMaskLeft'),
+    tutorialMaskRight: document.getElementById('tutorialMaskRight'),
+    tutorialMaskBottom: document.getElementById('tutorialMaskBottom'),
+    tutorialHole: document.getElementById('tutorialHole'),
     tutorialBubble: document.getElementById('tutorialBubble'),
     tutorialArrow: document.getElementById('tutorialArrow'),
     tutorialStep: document.getElementById('tutorialStep'),
@@ -1130,7 +1140,43 @@
   }
 
   function clearTutorialStepFx(){
-    if (els.sendFavBtn) els.sendFavBtn.classList.remove('tutorial-force-show');
+    if (els.sendFavBtn) {
+      els.sendFavBtn.classList.remove('tutorial-force-show');
+      updateSendFavBtn();
+    }
+  }
+
+  function positionTutorialMasks(r, step){
+    var pad = step.pad != null ? step.pad : 8;
+    var radius = step.radius != null ? step.radius : 12;
+    var t = Math.max(0, r.top - pad);
+    var l = Math.max(0, r.left - pad);
+    var ri = r.right + pad;
+    var b = r.bottom + pad;
+    if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;height:' + t + 'px';
+    if (els.tutorialMaskLeft) {
+      els.tutorialMaskLeft.style.cssText = 'left:0;top:' + t + 'px;width:' + l + 'px;height:' + Math.max(0, b - t) + 'px';
+    }
+    if (els.tutorialMaskRight) {
+      els.tutorialMaskRight.style.cssText = 'left:' + ri + 'px;top:' + t + 'px;right:0;height:' + Math.max(0, b - t) + 'px';
+    }
+    if (els.tutorialMaskBottom) {
+      els.tutorialMaskBottom.style.cssText = 'left:0;top:' + b + 'px;right:0;bottom:0';
+    }
+    if (els.tutorialHole) {
+      els.tutorialHole.style.left = l + 'px';
+      els.tutorialHole.style.top = t + 'px';
+      els.tutorialHole.style.width = Math.max(0, ri - l) + 'px';
+      els.tutorialHole.style.height = Math.max(0, b - t) + 'px';
+      els.tutorialHole.style.borderRadius = radius + 'px';
+    }
+    positionTutorialBubble(r);
+  }
+
+  function hideTutorialMasks(){
+    [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom, els.tutorialHole].forEach(function(el){
+      if (el) { el.style.width = ''; el.style.height = ''; }
+    });
   }
 
   function positionTutorialBubble(targetRect){
@@ -1157,15 +1203,8 @@
   }
 
   function positionTutorialSpotlight(el, step){
-    if (!els.tutorialSpotlight || !el) return;
-    var pad = step.pad != null ? step.pad : 8;
-    var r = el.getBoundingClientRect();
-    els.tutorialSpotlight.style.left = (r.left - pad) + 'px';
-    els.tutorialSpotlight.style.top = (r.top - pad) + 'px';
-    els.tutorialSpotlight.style.width = (r.width + pad * 2) + 'px';
-    els.tutorialSpotlight.style.height = (r.height + pad * 2) + 'px';
-    els.tutorialSpotlight.style.borderRadius = (step.radius != null ? step.radius : 12) + 'px';
-    positionTutorialBubble(r);
+    if (!el) return;
+    positionTutorialMasks(el.getBoundingClientRect(), step);
   }
 
   function renderTutorialStep(){
@@ -1195,23 +1234,20 @@
 
     var target = step.target ? step.target() : null;
     if (target && step.scroll) {
-      try { target.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch(e){}
+      try { target.scrollIntoView({ block: 'center', behavior: 'auto' }); } catch(e){}
     }
 
     function place(){
       target = step.target ? step.target() : null;
       if (!target) {
-        if (els.tutorialSpotlight) {
-          els.tutorialSpotlight.style.width = '0';
-          els.tutorialSpotlight.style.height = '0';
-        }
+        hideTutorialMasks();
         return;
       }
       positionTutorialSpotlight(target, step);
     }
 
-    if (step.scroll) setTimeout(place, 320);
-    else requestAnimationFrame(function(){ requestAnimationFrame(place); });
+    if (step.scroll) requestAnimationFrame(place);
+    else requestAnimationFrame(place);
   }
 
   function closeTutorial(){
@@ -1902,8 +1938,12 @@
   }
   if (els.tutorialSkip) els.tutorialSkip.onclick = closeTutorial;
   if (els.tutorialShade) els.tutorialShade.onclick = closeTutorial;
+  var tutorialResizeTimer;
   window.addEventListener('resize', function(){
-    if (els.tutorial && els.tutorial.classList.contains('open')) renderTutorialStep();
+    clearTimeout(tutorialResizeTimer);
+    tutorialResizeTimer = setTimeout(function(){
+      if (els.tutorial && els.tutorial.classList.contains('open')) renderTutorialStep();
+    }, 120);
   });
   els.drawerAll.onclick = function(){
     state.category = 'Все';
