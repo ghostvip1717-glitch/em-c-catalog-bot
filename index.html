@@ -692,13 +692,13 @@
   <div class="tutorial-bubble arrow-top" id="tutorialBubble">
     <div class="tutorial-arrow" id="tutorialArrow"></div>
     <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
-    <div class="tutorial-step" id="tutorialStep">1 / 5</div>
+    <div class="tutorial-step" id="tutorialStep">1 / 6</div>
     <div class="tutorial-title" id="tutorialTitle"></div>
     <div class="tutorial-text" id="tutorialText"></div>
     <div class="tutorial-dots" id="tutorialDots"></div>
     <label class="tutorial-opt" id="tutorialOptWrap" style="display:none">
       <input type="checkbox" id="tutorialOptOut">
-      <span>Больше не показывать подсказки при входе</span>
+      <span>Не показывать подсказки при входе</span>
     </label>
     <div class="tutorial-drawer-hint" id="tutorialDrawerHint" style="display:none">
       Отключить позже: меню ☰ → снимите «Показывать подсказки при входе»
@@ -825,6 +825,11 @@
       pad: 8, radius: 12, forceSendFav: true,
       title: 'Отправка подборки',
       text: 'Когда в избранном есть позиции — одним нажатием отправьте весь список менеджеру в Telegram.'
+    },
+    {
+      showOptOut: true,
+      title: 'Подсказки при входе',
+      text: 'Поставьте галочку, если больше не хотите получать подсказки при каждом входе в каталог.'
     }
   ];
   try {
@@ -1146,6 +1151,34 @@
     else { tutorialIdx++; renderTutorialStep(); }
   }
 
+  function positionTutorialBubbleFinal(){
+    if (!els.tutorialBubble) return;
+    var dockPad = 12;
+    els.tutorialBubble.className = 'tutorial-bubble';
+    if (els.tutorialArrow) els.tutorialArrow.style.display = 'none';
+    els.tutorialBubble.style.left = dockPad + 'px';
+    els.tutorialBubble.style.right = dockPad + 'px';
+    els.tutorialBubble.style.width = 'auto';
+    els.tutorialBubble.style.top = 'auto';
+    els.tutorialBubble.style.bottom = 'calc(' + dockPad + 'px + env(safe-area-inset-bottom, 0px))';
+  }
+
+  function showTutorialFullMask(){
+    if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;bottom:0';
+    if (els.tutorialMaskLeft) els.tutorialMaskLeft.style.cssText = '';
+    if (els.tutorialMaskRight) els.tutorialMaskRight.style.cssText = '';
+    if (els.tutorialMaskBottom) els.tutorialMaskBottom.style.cssText = '';
+    if (els.tutorialHole) {
+      els.tutorialHole.style.width = '0';
+      els.tutorialHole.style.height = '0';
+    }
+    if (els.tutorialTargetHit) {
+      els.tutorialTargetHit.style.width = '0';
+      els.tutorialTargetHit.style.height = '0';
+      els.tutorialTargetHit.setAttribute('aria-hidden', 'true');
+    }
+  }
+
   function positionTutorialBubble(targetRect){
     if (!els.tutorialBubble || !els.tutorialArrow) return;
     var pad = 12;
@@ -1247,15 +1280,16 @@
       dot.className = 'tutorial-dot' + (i === tutorialIdx ? ' active' : '');
       els.tutorialDots.appendChild(dot);
     });
-    if (els.tutorialOptWrap) els.tutorialOptWrap.style.display = last ? 'flex' : 'none';
-    if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = last ? 'block' : 'none';
+    if (els.tutorialOptWrap) els.tutorialOptWrap.style.display = step.showOptOut ? 'flex' : 'none';
+    if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = step.showOptOut ? 'block' : 'none';
     if (els.tutorialNext) els.tutorialNext.textContent = last ? 'Готово' : 'Далее';
     els.tutorial.setAttribute('aria-hidden', 'false');
 
     function place(){
       var target = step.target ? step.target() : null;
       if (!target) {
-        hideTutorialMasks();
+        showTutorialFullMask();
+        positionTutorialBubbleFinal();
         return;
       }
       positionTutorialSpotlight(target, step);
