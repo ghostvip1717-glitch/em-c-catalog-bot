@@ -163,7 +163,7 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
         print(f"[scrape] ошибка при скрапинге profikz.kz: {exc}", file=sys.stderr)
 
-    print("[scrape] dtail.kz (HPL столешницы)...", file=sys.stderr)
+    print("[scrape] dtail.kz (HPL панели)...", file=sys.stderr)
     try:
         dtail_items = scrape_dtail.scrape_all()
         print(f"[scrape]   найдено {len(dtail_items)} позиций", file=sys.stderr)

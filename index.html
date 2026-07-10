@@ -699,9 +699,8 @@
 
   // ---- группировка категорий по «источникам» (иконки/шторка/верхний селектор) ----
   // Категории неймспейсятся по префиксу названия. ЛДСП и столешницы бывают
-  // двух видов — российские (em-c.kz, "...: Россия") и австрийские Egger
-  // (profikz.kz, "...: Австрия (Egger)"). Группируем их ПО ТИПУ материала:
-  // иконки «ЛДСП» и «Столешницы», внутри каждой — и Россия, и Австрия.
+  // двух видов — российские (em-c.kz) и австрийские Egger (profikz.kz).
+  // HPL от dtail.kz — это панели, не столешницы (отдельная иконка «Панели»).
   //
   // Иконки — свои, монохромный line-стиль (stroke=currentColor), чтобы активное
   // состояние перекрашивало иконку целиком (см. .quick-item.active).
@@ -710,6 +709,8 @@
     sheet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"></polygon><polyline points="3 12 12 17 21 12"></polyline><polyline points="3 16 12 21 21 16"></polyline></svg>',
     // Столешница — горизонтальная плита-столешница на двух торцах-опорах.
     counter: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="4" rx="1"></rect><line x1="6" y1="11" x2="6" y2="18"></line><line x1="18" y1="11" x2="18" y2="18"></line></svg>',
+    // Вертикальная HPL-панель (фасад / интерьер).
+    panel: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="1"></rect><line x1="7" y1="9" x2="17" y2="9"></line><line x1="7" y1="15" x2="17" y2="15"></line></svg>',
     plenka: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(90 12 12)"><rect x="9" y="4" width="12" height="13"></rect><rect x="3" y="7" width="6" height="14" rx="3"></rect><ellipse cx="6" cy="7" rx="3" ry="1.3"></ellipse></g></svg>',
     tkani: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="1.5"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="5" y1="14" x2="19" y2="14"></line><line x1="10" y1="5" x2="10" y2="19"></line><line x1="14" y1="5" x2="14" y2="19"></line></svg>',
     stone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="16" y="9" width="3" height="8.5" rx="0.8"></rect><rect x="4.5" y="5.2" width="15" height="3.6" rx="1"></rect><line x1="3" y1="18.5" x2="21" y2="18.5"></line></svg>',
@@ -722,6 +723,7 @@
     if (cat.indexOf('Краски RAL') === 0) return 'ral';
     if (cat.indexOf('Акриловый камень') === 0) return 'interstone';
     if (cat.indexOf('Кварцевый камень') === 0) return 'interstone';
+    if (cat.indexOf('Панели') === 0) return 'paneli';
     if (cat.indexOf('Столешницы') === 0) return 'stoleshnitsy';
     if (cat.indexOf('ЛДСП') === 0) return 'ldsp';
     return 'ldsp';
@@ -730,16 +732,18 @@
   var SITE_META = {
     ldsp: { title: 'ЛДСП', subtitle: 'ЛДСП', color: '#6fa3d8' },
     stoleshnitsy: { title: 'Столешницы', subtitle: 'Столешницы', color: '#5aa88b' },
+    paneli: { title: 'DTAIL.KZ', subtitle: 'HPL панели', color: '#7a8fa6' },
     plenka: { title: 'ADILET.NET / KIRA', subtitle: 'Плёнка ПВХ', color: '#d98f4e' },
     tkani: { title: 'ADILET.NET', subtitle: 'Ткани', color: '#b87898' },
     interstone: { title: 'INTERSTONE.KZ', subtitle: 'Акрил и кварц', color: '#6b7580' },
     ral: { title: 'RAL CLASSIC', subtitle: 'Краски RAL', color: '#c0654e' }
   };
-  var SITE_ORDER = ['ldsp', 'stoleshnitsy', 'plenka', 'tkani', 'interstone', 'ral'];
-  var QUICK_LABELS = { ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
+  var SITE_ORDER = ['ldsp', 'stoleshnitsy', 'paneli', 'plenka', 'tkani', 'interstone', 'ral'];
+  var QUICK_LABELS = { ldsp: 'ЛДСП', stoleshnitsy: 'Столешницы', paneli: 'Панели', plenka: 'Плёнка', tkani: 'Ткани', interstone: 'Камень', ral: 'RAL' };
   var QUICK_ICONS = {
     ldsp: ICONS.sheet,
     stoleshnitsy: ICONS.counter,
+    paneli: ICONS.panel,
     plenka: ICONS.plenka,
     tkani: ICONS.tkani,
     interstone: ICONS.stone,

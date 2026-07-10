@@ -6,8 +6,8 @@
 (action=async): в ответе JS-объект cr._async.modals содержит HTML всех модалок,
 включая сетку «Каталог декоров» (кнопка «ОТКРЫТЬ» в блоке «ДЕКОРЫ»).
 
-Категория в каталоге: «Столешницы: HPL (Dtail)» — попадает в группу
-stoleshnitsy на фронтенде (siteGroupOf по префиксу «Столешницы»).
+Категория в каталоге: «Панели: HPL (Dtail)» — попадает в группу
+paneli на фронтенде (siteGroupOf по префиксу «Панели»).
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://dtail.kz/HPL-2"
-CATEGORY = "Столешницы: HPL (Dtail)"
+CATEGORY = "Панели: HPL (Dtail)"
 MODAL_DATA_ID = "cvet3"
 
 HEADERS = {
