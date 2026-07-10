@@ -143,8 +143,16 @@
      открытый список рисует ОС/браузер, а не наш CSS, поэтому выглядел
      тёмным и чужеродным на светлой теме; заменили на кнопку + свой popover
      (.top-cat-popover ниже), полностью в стиле приложения. */
+  .top-cat-row{
+    display:flex;align-items:center;gap:10px;margin-top:8px;
+  }
+  .top-brand{
+    flex:0 0 auto;font-size:10.5px;font-weight:800;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--hint);white-space:nowrap;
+    padding-left:2px;
+  }
   .top-cat-btn{
-    width:100%;margin-top:8px;padding:9px 10px;border-radius:10px;border:1px solid var(--line);
+    flex:1;min-width:0;padding:9px 10px;border-radius:10px;border:1px solid var(--line);
     background:var(--secbg);color:var(--text);font-size:13px;font-family:inherit;
     display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;
   }
@@ -482,7 +490,7 @@
 <body>
 <div id="splash" class="splash">
   <div class="splash-hero"></div>
-  <div class="splash-top-label"><span>NeoModernKz</span></div>
+  <div class="splash-top-label"><span>NeoModern</span></div>
   <div class="splash-content">
     <div class="splash-eyebrow" id="splashEyebrow">Материалы для мебели</div>
     <div class="splash-title">Материалы для мебели<br>в одном каталоге</div>
@@ -526,10 +534,13 @@
        он выглядел тёмным и чужеродным на светлой теме. Ведёт к тому же
        state.category/state.favOnly, держим временно вместе с шторкой и
        иконками для сравнения удобства. -->
-  <button class="top-cat-btn" id="topCatBtn">
-    <span id="topCatBtnLabel">Все материалы</span>
-    <span class="top-cat-btn-arrow">▾</span>
-  </button>
+  <div class="top-cat-row">
+    <div class="top-brand" aria-hidden="true">NeoModern</div>
+    <button class="top-cat-btn" id="topCatBtn">
+      <span id="topCatBtnLabel">Все материалы</span>
+      <span class="top-cat-btn-arrow">▾</span>
+    </button>
+  </div>
   <!-- Третий вход в тот же фильтр — панель иконок-ярлыков ПОД кнопкой
        категории, внутри топбара (по образцу подобных рядов в других
        каталог-приложениях, но со своими словами/иконками). У иконок с
