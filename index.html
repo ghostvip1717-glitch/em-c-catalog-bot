@@ -720,7 +720,7 @@
       <span>Больше не показывать подсказки при входе</span>
     </label>
     <div class="tutorial-drawer-hint" id="tutorialDrawerHint" style="display:none">
-      Отключить позже: ☰ → снимите галочку «Показывать подсказки при входе»
+      Отключить позже: меню ☰ → снимите «Показывать подсказки при входе»
     </div>
     <button type="button" class="tutorial-btn" id="tutorialNext">Далее</button>
   </div>
@@ -818,39 +818,40 @@
     {
       target: function(){ return els.menuBtn; },
       pad: 8, radius: 12,
-      title: 'Меню категорий',
-      text: 'Кнопка ☰ — полный список разделов каталога: ЛДСП, столешницы, плёнка, ткани и другие материалы.'
+      title: 'Категории',
+      text: 'Меню ☰ — полный список разделов: ЛДСП, столешницы, плёнка, ткани, камень, RAL и другие.'
     },
     {
       target: function(){ return els.search; },
       pad: 6, radius: 10,
       title: 'Поиск',
-      text: 'Введите название или код декора — каталог сразу отфильтрует материалы.'
+      text: 'Введите название или код декора — список сузится сразу, по мере ввода.'
     },
     {
-      target: function(){ return els.quickRow && els.quickRow.children.length ? els.quickRow : els.topCatBtn; },
+      target: function(){ return els.quickRow; },
       pad: 8, radius: 12,
-      title: 'Типы материалов',
-      text: 'Иконки ниже — быстрый переход к нужной группе. Кнопка «Все материалы» — выбор конкретной категории.'
+      title: 'Группы материалов',
+      text: 'Иконки переключают тип материала. У раздела с несколькими линейками откроется меню выбора подкатегории.'
     },
     {
       target: function(){ return els.favBtn; },
       pad: 8, radius: 12,
       title: 'Избранное',
-      text: 'Здесь собирается ваша подборка. Нажмите «☆ Избранное», чтобы показать только отмеченные материалы.'
+      text: 'Сохраняйте понравившиеся декоры. Кнопка «★ Избранное» покажет только вашу подборку.'
     },
     {
       target: function(){ return document.querySelector('.card'); },
       pad: 6, radius: 14,
-      title: 'Карточка материала',
-      text: '♡ — добавить в избранное. ✈ — отправить этот материал менеджеру. Тап по фото — крупный просмотр.',
+      title: 'Карточка декора',
+      text: '♡ — в избранное. ✈ — отправить менеджеру. Тап по фото — увеличить и листать снимки.',
       scroll: true
     },
     {
       target: function(){ return els.sendFavBtn; },
       pad: 8, radius: 12, forceSendFav: true,
-      title: 'Отправить подборку',
-      text: 'Когда в избранном несколько позиций — эта кнопка отправит весь список менеджеру одним сообщением в Telegram.'
+      title: 'Отправка подборки',
+      text: 'Когда в избранном есть позиции — одним нажатием отправьте весь список менеджеру в Telegram.',
+      pointerHint: '↑ Кнопка подсвечена в шапке'
     }
   ];
   try {
@@ -1167,7 +1168,7 @@
     }
   }
 
-  function positionTutorialBubbleDocked(targetRect){
+  function positionTutorialBubbleDocked(targetRect, step){
     if (!els.tutorialBubble) return;
     var dockPad = 12;
     els.tutorialBubble.className = 'tutorial-bubble tutorial-bubble--dock';
@@ -1178,8 +1179,8 @@
     els.tutorialBubble.style.bottom = 'calc(' + dockPad + 'px + env(safe-area-inset-bottom, 0px))';
     if (els.tutorialArrow) els.tutorialArrow.style.display = 'none';
     if (els.tutorialPointer) {
-      if (targetRect && targetRect.bottom < window.innerHeight * 0.42) {
-        els.tutorialPointer.textContent = '↑ Смотрите выделенную кнопку выше';
+      if (step && step.pointerHint) {
+        els.tutorialPointer.textContent = step.pointerHint;
         els.tutorialPointer.style.display = 'block';
       } else {
         els.tutorialPointer.style.display = 'none';
@@ -1248,7 +1249,7 @@
     var l = Math.max(0, r.left - pad);
     var ri = r.right + pad;
     var b = r.bottom + pad;
-    positionTutorialBubbleDocked(r);
+    positionTutorialBubbleDocked(r, step);
     var bubbleH = els.tutorialBubble ? els.tutorialBubble.offsetHeight : 240;
     var maskBottomY = Math.max(b + 6, window.innerHeight - bubbleH - 14);
     if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;height:' + t + 'px';
