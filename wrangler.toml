@@ -1,0 +1,9 @@
+name = "tight-firefly-8060"
+main = "notify-worker.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+CHAT_ID = "2026940090"
+API_SECRET = "neo_7fK2mQx9pL4wR8"
+CATALOG_URL = "https://ghostvip1717-glitch.github.io/em-c-catalog-bot/"
+APP_LINK = "https://t.me/NeoModern_Bot?startapp"

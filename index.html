@@ -125,6 +125,20 @@
     transition:background-color .15s ease,color .15s ease;
   }
   .fav-btn.active{background:#e0245e;color:#fff;}
+  .send-fav-btn{
+    flex:0 0 auto;padding:0 12px;height:40px;border-radius:10px;border:none;
+    background:var(--link);color:#fff;font-size:12px;font-weight:600;cursor:pointer;
+    white-space:nowrap;display:none;
+  }
+  .send-fav-btn.visible{display:block;}
+  .send-fav-btn:active{opacity:.85;}
+  .send-fav-btn{
+    flex:0 0 auto;padding:0 12px;height:40px;border-radius:10px;border:none;
+    background:var(--link);color:#fff;font-size:12px;font-weight:600;cursor:pointer;
+    white-space:nowrap;display:none;
+  }
+  .send-fav-btn.visible{display:block;}
+  .send-fav-btn:active{opacity:.85;}
 
   /* Кнопка-гамбургер — второй, альтернативный способ открыть категории (см.
      .drawer ниже): боковая шторка вместо fullscreen-модалки. Оба входа ведут
@@ -440,13 +454,13 @@
      полосу (--content-safe-top), что и основной топбар — иначе ✕/♡/⧉ во
      вьювере оказались бы под "Закрыть"/стрелкой самого Telegram. */
   .vactions{position:absolute;top:calc(16px + var(--content-safe-top, 0px));right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
-  .vclose, .vcopy, .vheart{
+  .vclose, .vcopy, .vheart, .vsend{
     width:36px;height:36px;border-radius:50%;color:#fff;
     display:flex;align-items:center;justify-content:center;
     background:rgba(255,255,255,0.15);cursor:pointer;font-size:18px;
     transition:background-color .15s ease,transform .1s ease;
   }
-  .vcopy svg{width:15px;height:15px;}
+  .vcopy svg, .vsend svg{width:15px;height:15px;}
   .vheart.active{background:#e0245e;animation:heartPop .25s ease;}
 
   /* ---- стартовый экран (splash) ----
@@ -528,6 +542,8 @@
   <div class="topbar-row">
     <button class="menu-btn" id="menuBtn" aria-label="Категории">☰</button>
     <button class="fav-btn" id="favBtn">★ Избранное</button>
+    <button class="send-fav-btn" id="sendFavBtn" type="button">Отправить подборку</button>
+    <button class="send-fav-btn" id="sendFavBtn" type="button">Отправить подборку</button>
     <input class="search" id="search" type="text" placeholder="Поиск по названию или коду...">
   </div>
   <!-- Второй, отдельный от боковой шторки способ выбрать категорию — прямо
@@ -598,6 +614,12 @@
         <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
       </svg>
     </div>
+    <div class="vsend" id="vsend" title="Отправить Владимиру">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 2L11 13"></path>
+        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+      </svg>
+    </div>
   </div>
 </div>
 
@@ -642,6 +664,15 @@
   // сверху: на практике contentSafeAreaInset иногда чуть меньше того, что
   // реально занимают контролы Telegram визуально, лучше отступить чуть больше.
   var SAFE_AREA_BUFFER = 24;
+
+  // ---- уведомления Владимиру через Cloudflare Worker (как Trening) ----
+  var NOTIFY_URL = 'https://tight-firefly-8060.ghostvip1717.workers.dev';
+  var NOTIFY_SECRET = 'neo_7fK2mQx9pL4wR8';
+  var pendingDeepLinkId = null;
+  try {
+    pendingDeepLinkId = new URLSearchParams(location.search).get('m');
+  } catch(e){}
+
   function applySafeArea(){
     var root = document.documentElement.style;
     var safeTop = (tg && tg.safeAreaInset && tg.safeAreaInset.top) || 0;
@@ -694,7 +725,9 @@
     vcat: document.getElementById('vcat'),
     vcopy: document.getElementById('vcopy'),
     vheart: document.getElementById('vheart'),
+    vsend: document.getElementById('vsend'),
     vclose: document.getElementById('vclose'),
+    sendFavBtn: document.getElementById('sendFavBtn'),
     topCatBtn: document.getElementById('topCatBtn'),
     topCatBtnLabel: document.getElementById('topCatBtnLabel'),
     quickRow: document.getElementById('quickRow')
@@ -938,6 +971,7 @@
         if (splashEyebrow) {
           splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источников';
         }
+        openDeepLinkMaterial();
       })
       .catch(function(err){
         console.error('[catalog] ошибка загрузки каталога:', err);
@@ -947,9 +981,103 @@
   }
 
   // ---- кнопка "Избранное" в топбаре — просто вкл/выкл фильтр по избранному ----
+  function getSender(){
+    var u = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
+    if (!u) return { name: 'Клиент' };
+    var name = [u.first_name, u.last_name].filter(Boolean).join(' ');
+    return { name: name || 'Клиент', username: u.username || '' };
+  }
+
+  function notifyToast(message){
+    try { if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('success'); } catch(e){}
+    try {
+      if (tg && tg.showPopup && tg.isVersionAtLeast && tg.isVersionAtLeast('6.2')) {
+        tg.showPopup({ message: message });
+      } else {
+        alert(message);
+      }
+    } catch(e){ alert(message); }
+  }
+
+  function materialPayload(item){
+    return {
+      id: item.id,
+      name: item.name,
+      category: item.category,
+      image: item.image || (item.images && item.images[0]) || '',
+      images: item.images || []
+    };
+  }
+
+  function postNotify(payload){
+    return fetch(NOTIFY_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.assign({
+        secret: NOTIFY_SECRET,
+        sender: getSender()
+      }, payload))
+    }).then(function(r){ return r.json(); }).catch(function(){ return { ok: false }; });
+  }
+
+  function sendCurrentMaterial(){
+    var item = viewerState.currentItem;
+    if (!item) return;
+    postNotify({ type: 'single', material: materialPayload(item) }).then(function(res){
+      if (res && res.ok) notifyToast('Отправлено Владимиру');
+      else notifyToast('Не удалось отправить. Попробуйте позже.');
+    });
+  }
+
+  function sendFavoritesBundle(){
+    var materials = [];
+    state.favorites.forEach(function(id){
+      for (var i = 0; i < state.items.length; i++) {
+        if (state.items[i].id === id) { materials.push(materialPayload(state.items[i])); break; }
+      }
+    });
+    if (!materials.length) { notifyToast('Избранное пусто'); return; }
+    postNotify({ type: 'favorites', materials: materials }).then(function(res){
+      if (res && res.ok) notifyToast('Подборка отправлена (' + materials.length + ')');
+      else notifyToast('Не удалось отправить. Попробуйте позже.');
+    });
+  }
+
+  function updateSendFavBtn(){
+    if (!els.sendFavBtn) return;
+    var n = state.favorites.length;
+    var show = state.favOnly && n > 0;
+    els.sendFavBtn.className = 'send-fav-btn' + (show ? ' visible' : '');
+    els.sendFavBtn.textContent = 'Отправить (' + n + ')';
+  }
+
+  if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
+  if (els.sendFavBtn) els.sendFavBtn.onclick = sendFavoritesBundle;
+
+  function openDeepLinkMaterial(){
+    if (!pendingDeepLinkId || !state.items.length) return;
+    var id = pendingDeepLinkId;
+    pendingDeepLinkId = null;
+    var item = null;
+    for (var i = 0; i < state.items.length; i++) {
+      if (state.items[i].id === id) { item = state.items[i]; break; }
+    }
+    if (!item) return;
+    state.favOnly = false;
+    state.category = 'Все';
+    state.activeSite = null;
+    updateFavBtn();
+    updateTopCatSelectValue();
+    buildDrawer();
+    buildQuickRow();
+    render();
+    openViewer([item], 0);
+  }
+
   function updateFavBtn(){
     els.favBtn.className = 'fav-btn' + (state.favOnly ? ' active' : '');
     els.favBtn.textContent = state.favOnly ? '★ Избранное' : '☆ Избранное';
+    updateSendFavBtn();
   }
   els.favBtn.onclick = function(){
     state.favOnly = !state.favOnly;
@@ -1561,6 +1689,7 @@
 
     var filtered = state.items.filter(matches);
     els.count.textContent = filtered.length + ' материал(ов)';
+    updateSendFavBtn();
     els.grid.innerHTML = '';
     els.empty.style.display = filtered.length ? 'none' : 'block';
 
@@ -1686,6 +1815,7 @@
       window.scrollTo(0, scrollPositions[newFilterKey] || 0);
     }
     lastFilterKey = newFilterKey;
+    updateSendFavBtn();
   }
 
   function copyText(text){
@@ -1813,6 +1943,7 @@
       els.vcat.textContent = item.category;
       els.vcopy.onclick = function(){ copyText(item.name); };
       updateViewerHeart();
+      if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
       els.vheart.onclick = function(){ toggleFavorite(item.id); };
       return;
     }
@@ -1865,6 +1996,7 @@
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
     updateViewerHeart();
+    if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
     els.vheart.onclick = function(){ toggleFavorite(item.id); };
   }
 
