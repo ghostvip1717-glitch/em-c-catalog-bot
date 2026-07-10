@@ -453,7 +453,7 @@
   /* Отступ сверху учитывает ту же зарезервированную под контролы Telegram
      полосу (--content-safe-top), что и основной топбар — иначе ✕/♡/⧉ во
      вьювере оказались бы под "Закрыть"/стрелкой самого Telegram. */
-  .vactions{position:absolute;top:calc(16px + var(--content-safe-top, 0px));right:16px;display:flex;flex-direction:column;gap:10px;z-index:2;}
+  .vactions{position:absolute;top:calc(16px + var(--content-safe-top, 0px));right:16px;display:flex;flex-direction:column;gap:10px;}
   .vclose, .vcopy, .vheart, .vsend{
     width:36px;height:36px;border-radius:50%;color:#fff;
     display:flex;align-items:center;justify-content:center;
@@ -462,6 +462,18 @@
   }
   .vcopy svg, .vsend svg{width:15px;height:15px;}
   .vheart.active{background:#e0245e;animation:heartPop .25s ease;}
+  .vsend.busy{opacity:.45;pointer-events:none;}
+  .vactions{z-index:10;pointer-events:none;}
+  .vactions > *{pointer-events:auto;}
+
+  .catalog-toast{
+    position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom, 0px));
+    transform:translateX(-50%) translateY(12px);opacity:0;pointer-events:none;
+    background:rgba(0,0,0,.82);color:#fff;font-size:13px;font-weight:500;
+    padding:10px 16px;border-radius:12px;z-index:120;white-space:nowrap;
+    transition:opacity .2s ease,transform .2s ease;
+  }
+  .catalog-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 
   /* ---- стартовый экран (splash) ----
      Показывается только при первом запуске. Использует ту же светло-серую
@@ -623,6 +635,8 @@
   </div>
 </div>
 
+<div class="catalog-toast" id="catalogToast" aria-live="polite"></div>
+
 <script>
 (function(){
   var tg = window.Telegram ? window.Telegram.WebApp : null;
@@ -668,6 +682,7 @@
   // ---- уведомления Владимиру через Cloudflare Worker (как Trening) ----
   var NOTIFY_URL = 'https://tight-firefly-8060.ghostvip1717.workers.dev';
   var NOTIFY_SECRET = 'neo_7fK2mQx9pL4wR8';
+  var notifyBusy = false;
   var pendingDeepLinkId = null;
   try {
     pendingDeepLinkId = new URLSearchParams(location.search).get('m');
@@ -728,6 +743,7 @@
     vsend: document.getElementById('vsend'),
     vclose: document.getElementById('vclose'),
     sendFavBtn: document.getElementById('sendFavBtn'),
+    catalogToast: document.getElementById('catalogToast'),
     topCatBtn: document.getElementById('topCatBtn'),
     topCatBtnLabel: document.getElementById('topCatBtnLabel'),
     quickRow: document.getElementById('quickRow')
@@ -990,12 +1006,18 @@
 
   function notifyToast(message){
     try { if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('success'); } catch(e){}
+    if (els.catalogToast) {
+      els.catalogToast.textContent = message;
+      els.catalogToast.classList.add('show');
+      clearTimeout(notifyToast._hideTimer);
+      notifyToast._hideTimer = setTimeout(function(){
+        els.catalogToast.classList.remove('show');
+      }, 2400);
+      return;
+    }
     try {
-      if (tg && tg.showPopup && tg.isVersionAtLeast && tg.isVersionAtLeast('6.2')) {
-        tg.showPopup({ message: message });
-      } else {
-        alert(message);
-      }
+      if (tg && tg.showAlert) tg.showAlert(message);
+      else alert(message);
     } catch(e){ alert(message); }
   }
 
@@ -1017,19 +1039,38 @@
         secret: NOTIFY_SECRET,
         sender: getSender()
       }, payload))
-    }).then(function(r){ return r.json(); }).catch(function(){ return { ok: false }; });
+    }).then(function(r){
+      return r.json().then(function(data){
+        if (!r.ok && data && !data.ok) return data;
+        if (!r.ok) return { ok: false };
+        return data;
+      }).catch(function(){
+        return { ok: false };
+      });
+    }).catch(function(){ return { ok: false }; });
   }
 
-  function sendCurrentMaterial(){
+  function setNotifyBusy(busy){
+    notifyBusy = busy;
+    if (els.vsend) els.vsend.classList.toggle('busy', busy);
+    if (els.sendFavBtn) els.sendFavBtn.disabled = busy;
+  }
+
+  function sendCurrentMaterial(e){
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    if (notifyBusy) return;
     var item = viewerState.currentItem;
     if (!item) return;
+    setNotifyBusy(true);
     postNotify({ type: 'single', material: materialPayload(item) }).then(function(res){
       if (res && res.ok) notifyToast('Отправлено Владимиру');
-      else notifyToast('Не удалось отправить. Попробуйте позже.');
-    });
+      else notifyToast('Не удалось отправить');
+    }).finally(function(){ setNotifyBusy(false); });
   }
 
-  function sendFavoritesBundle(){
+  function sendFavoritesBundle(e){
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    if (notifyBusy) return;
     var materials = [];
     state.favorites.forEach(function(id){
       for (var i = 0; i < state.items.length; i++) {
@@ -1037,10 +1078,11 @@
       }
     });
     if (!materials.length) { notifyToast('Избранное пусто'); return; }
+    setNotifyBusy(true);
     postNotify({ type: 'favorites', materials: materials }).then(function(res){
       if (res && res.ok) notifyToast('Подборка отправлена (' + materials.length + ')');
-      else notifyToast('Не удалось отправить. Попробуйте позже.');
-    });
+      else notifyToast('Не удалось отправить');
+    }).finally(function(){ setNotifyBusy(false); });
   }
 
   function updateSendFavBtn(){
@@ -1051,8 +1093,11 @@
     els.sendFavBtn.textContent = 'Отправить (' + n + ')';
   }
 
-  if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
-  if (els.sendFavBtn) els.sendFavBtn.onclick = sendFavoritesBundle;
+  if (els.vsend) {
+    els.vsend.addEventListener('click', sendCurrentMaterial);
+    els.vsend.addEventListener('touchend', function(e){ e.stopPropagation(); });
+  }
+  if (els.sendFavBtn) els.sendFavBtn.addEventListener('click', sendFavoritesBundle);
 
   function openDeepLinkMaterial(){
     if (!pendingDeepLinkId || !state.items.length) return;
@@ -1943,8 +1988,7 @@
       els.vcat.textContent = item.category;
       els.vcopy.onclick = function(){ copyText(item.name); };
       updateViewerHeart();
-      if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
-      els.vheart.onclick = function(){ toggleFavorite(item.id); };
+      els.vheart.onclick = function(e){ e.stopPropagation(); toggleFavorite(item.id); };
       return;
     }
 
@@ -1996,8 +2040,7 @@
     els.vcat.textContent = item.category;
     els.vcopy.onclick = function(){ copyText(item.name); };
     updateViewerHeart();
-    if (els.vsend) els.vsend.onclick = sendCurrentMaterial;
-    els.vheart.onclick = function(){ toggleFavorite(item.id); };
+    els.vheart.onclick = function(e){ e.stopPropagation(); toggleFavorite(item.id); };
   }
 
   // list — та же отфильтрованная лента, что сейчас отрендерена в сетке (см.
