@@ -19,6 +19,7 @@ from bs4 import BeautifulSoup
 
 import image_utils
 import scrape_adilet
+import scrape_dtail
 import scrape_interstone
 import scrape_kira
 import scrape_profikz
@@ -60,6 +61,7 @@ def site_of(item_id: str) -> str:
         ("interstone_", "interstone"),
         ("kira_", "kira"),
         ("profikz_", "profikz"),
+        ("dtail_", "dtail"),
     ):
         if item_id.startswith(prefix):
             return site
@@ -161,6 +163,14 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
         print(f"[scrape] ошибка при скрапинге profikz.kz: {exc}", file=sys.stderr)
 
+    print("[scrape] dtail.kz (HPL столешницы)...", file=sys.stderr)
+    try:
+        dtail_items = scrape_dtail.scrape_all()
+        print(f"[scrape]   найдено {len(dtail_items)} позиций", file=sys.stderr)
+        all_items.extend(dtail_items)
+    except Exception as exc:  # noqa: BLE001 - не хотим ронять весь скрапинг из-за одного источника
+        print(f"[scrape] ошибка при скрапинге dtail.kz: {exc}", file=sys.stderr)
+
     # убираем дубликаты по id, если товар встретился в нескольких категориях
     seen = {}
     for item in all_items:
@@ -179,7 +189,12 @@ def main() -> None:
     # Чистим фото товаров, которых больше нет в свежем каталоге (сняты с
     # продажи у источника и т.п.) — иначе data/images/ будет бесконечно расти.
     ids_by_site: dict[str, set] = {
-        "emc": set(), "adilet": set(), "interstone": set(), "kira": set(), "profikz": set()
+        "emc": set(),
+        "adilet": set(),
+        "interstone": set(),
+        "kira": set(),
+        "profikz": set(),
+        "dtail": set(),
     }
     for item in unique_items:
         ids_by_site[site_of(item["id"])].add(item["id"])
