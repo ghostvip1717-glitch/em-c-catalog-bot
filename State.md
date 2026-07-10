@@ -93,7 +93,7 @@ Telegram WebApp-каталог листовых материалов (ЛДСП, 
 ## Уведомления Владимиру (2026-07-10, в работе)
 
 - Worker: `https://tight-firefly-8060.ghostvip1717.workers.dev` — **работает** (2026-07-10). CHAT_ID тест: `2026940090`; Владимир: `/start` @NeoModern_Bot → свой id.
-- `index.html`: кнопка ✈ во вьювере + на карточках (вместо копировать); «Отправить (N)» в избранном; deep link `?m=id`; ♡ без полного render.
+- `index.html`: туториал 5 шагов, галочка отключения, ☰ → галочка + «Пройти снова»; CloudStorage `tutorial_autoshow`.
 - `CHAT_ID=2026940090`, `API_SECRET=neo_7fK2mQx9pL4wR8`, бот @NeoModern_Bot.
 - Wrangler: `wrangler.toml` + `notify-worker.js` (env); деплой нужен `CLOUDFLARE_API_TOKEN`.
 

@@ -512,6 +512,60 @@
     padding:15px;border:none;border-radius:14px;cursor:pointer;font-family:inherit;
   }
   .splash-cta:active{transform:scale(0.98);}
+
+  /* ---- интерактивные подсказки (туториал) ---- */
+  .tutorial{
+    position:fixed;inset:0;z-index:90;display:flex;align-items:flex-end;justify-content:center;
+    padding:0 16px calc(24px + env(safe-area-inset-bottom, 0px));
+    opacity:0;pointer-events:none;transition:opacity .25s ease;
+  }
+  .tutorial.open{opacity:1;pointer-events:auto;}
+  .tutorial-backdrop{
+    position:absolute;inset:0;background:rgba(0,0,0,.42);
+  }
+  .tutorial-card{
+    position:relative;width:100%;max-width:380px;background:var(--bg);
+    border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;
+    box-shadow:0 12px 40px rgba(0,0,0,.18);
+  }
+  .tutorial-skip{
+    position:absolute;top:14px;right:14px;font-size:12px;color:var(--hint);
+    cursor:pointer;padding:4px 6px;
+  }
+  .tutorial-icon{font-size:34px;line-height:1;margin-bottom:8px;}
+  .tutorial-step{font-size:11px;color:var(--link);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
+  .tutorial-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.25;}
+  .tutorial-text{font-size:13.5px;color:var(--hint-strong);line-height:1.55;margin-bottom:14px;}
+  .tutorial-dots{display:flex;gap:6px;margin-bottom:14px;}
+  .tutorial-dot{width:7px;height:7px;border-radius:50%;background:var(--line);transition:background .2s,transform .2s;}
+  .tutorial-dot.active{background:var(--link);transform:scale(1.15);}
+  .tutorial-opt{
+    display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:var(--text);
+    line-height:1.45;margin-bottom:8px;cursor:pointer;
+  }
+  .tutorial-opt input{margin-top:2px;flex:0 0 auto;}
+  .tutorial-drawer-hint{font-size:11.5px;color:var(--hint);line-height:1.45;margin-bottom:12px;}
+  .tutorial-btn{
+    width:100%;border:none;border-radius:12px;padding:13px 16px;
+    background:var(--button);color:var(--button-text);font-size:15px;font-weight:700;
+    font-family:inherit;cursor:pointer;
+  }
+  .tutorial-btn:active{transform:scale(0.98);}
+
+  .drawer-footer{
+    margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+  }
+  .drawer-hint-toggle{
+    display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text);
+    line-height:1.45;margin-bottom:10px;cursor:pointer;
+  }
+  .drawer-hint-toggle input{margin-top:2px;flex:0 0 auto;}
+  .drawer-replay{
+    width:100%;border:none;border-radius:10px;padding:10px 12px;
+    background:var(--secbg);color:var(--link);font-size:13px;font-weight:600;
+    font-family:inherit;cursor:pointer;text-align:center;
+  }
+  .drawer-replay:active{opacity:.85;}
 </style>
 </head>
 <body>
@@ -598,6 +652,33 @@
   <div class="drawer-item" id="drawerAll">Все материалы</div>
   <div class="drawer-item" id="drawerFav">★ Избранное</div>
   <div id="drawerGroups"></div>
+  <div class="drawer-footer">
+    <label class="drawer-hint-toggle">
+      <input type="checkbox" id="drawerHintsToggle" checked>
+      <span>Показывать подсказки при входе</span>
+    </label>
+    <button type="button" class="drawer-replay" id="drawerReplayTutorial">Пройти подсказки снова</button>
+  </div>
+</div>
+
+<div class="tutorial" id="tutorial" aria-hidden="true">
+  <div class="tutorial-backdrop" id="tutorialBackdrop"></div>
+  <div class="tutorial-card">
+    <div class="tutorial-skip" id="tutorialSkip">Пропустить</div>
+    <div class="tutorial-icon" id="tutorialIcon">🔍</div>
+    <div class="tutorial-step" id="tutorialStep">1 / 5</div>
+    <div class="tutorial-title" id="tutorialTitle"></div>
+    <div class="tutorial-text" id="tutorialText"></div>
+    <div class="tutorial-dots" id="tutorialDots"></div>
+    <label class="tutorial-opt" id="tutorialOptWrap" style="display:none">
+      <input type="checkbox" id="tutorialOptOut">
+      <span>Больше не показывать подсказки при входе</span>
+    </label>
+    <div class="tutorial-drawer-hint" id="tutorialDrawerHint" style="display:none">
+      Отключить позже: ☰ → снимите галочку «Показывать подсказки при входе»
+    </div>
+    <button type="button" class="tutorial-btn" id="tutorialNext">Далее</button>
+  </div>
 </div>
 
 <div class="viewer" id="viewer">
@@ -686,6 +767,35 @@
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>';
   var pendingDeepLinkId = null;
+  var tutorialAutoshow = true;
+  var tutorialIdx = 0;
+  var TUTORIAL_STEPS = [
+    {
+      icon: '🔍',
+      title: 'Поиск и фильтры',
+      text: 'Строка поиска — по названию или коду. Иконки категорий под NeoModern — быстрый фильтр. Полный список разделов — в меню ☰.'
+    },
+    {
+      icon: '★',
+      title: 'Избранное',
+      text: 'Кнопка «☆ Избранное» вверху сохраняет подборку. Сердечко ♡ на карточке или в просмотре фото — то же самое.'
+    },
+    {
+      icon: '✈',
+      title: 'Отправить материал',
+      text: 'Кнопка ✈ на карточке или в полноэкранном просмотре — отправить менеджеру в Telegram: фото, название и ссылка на материал.'
+    },
+    {
+      icon: '🖼',
+      title: 'Просмотр фото',
+      text: 'Тап по карточке — крупный вид. Свайп влево/вправо — другие фото материала, вверх/вниз — соседние позиции в списке.'
+    },
+    {
+      icon: '📋',
+      title: 'Подборка из избранного',
+      text: 'Включите «★ Избранное» и нажмите «Отправить (N)» — вся подборка уйдёт одним сообщением в Telegram.'
+    }
+  ];
   try {
     pendingDeepLinkId = new URLSearchParams(location.search).get('m');
   } catch(e){}
@@ -728,6 +838,20 @@
     drawerAll: document.getElementById('drawerAll'),
     drawerFav: document.getElementById('drawerFav'),
     drawerGroups: document.getElementById('drawerGroups'),
+    drawerHintsToggle: document.getElementById('drawerHintsToggle'),
+    drawerReplayTutorial: document.getElementById('drawerReplayTutorial'),
+    tutorial: document.getElementById('tutorial'),
+    tutorialIcon: document.getElementById('tutorialIcon'),
+    tutorialStep: document.getElementById('tutorialStep'),
+    tutorialTitle: document.getElementById('tutorialTitle'),
+    tutorialText: document.getElementById('tutorialText'),
+    tutorialDots: document.getElementById('tutorialDots'),
+    tutorialOptWrap: document.getElementById('tutorialOptWrap'),
+    tutorialOptOut: document.getElementById('tutorialOptOut'),
+    tutorialDrawerHint: document.getElementById('tutorialDrawerHint'),
+    tutorialNext: document.getElementById('tutorialNext'),
+    tutorialSkip: document.getElementById('tutorialSkip'),
+    tutorialBackdrop: document.getElementById('tutorialBackdrop'),
     search: document.getElementById('search'),
     count: document.getElementById('count'),
     empty: document.getElementById('empty'),
@@ -930,6 +1054,94 @@
     try { state.favorites = JSON.parse(localStorage.getItem('favorites') || '[]'); } catch(e){ state.favorites = []; }
   }
 
+  function syncDrawerHintsToggle(){
+    if (els.drawerHintsToggle) els.drawerHintsToggle.checked = tutorialAutoshow;
+  }
+
+  function saveTutorialAutoshow(on){
+    tutorialAutoshow = !!on;
+    var v = tutorialAutoshow ? '1' : '0';
+    try { localStorage.setItem('tutorial_autoshow', v); } catch(e){}
+    if (cloudStorageAvailable()) {
+      try { tg.CloudStorage.setItem('tutorial_autoshow', v, function(){}); } catch(e){}
+    }
+    syncDrawerHintsToggle();
+  }
+
+  function loadTutorialPrefs(cb){
+    function apply(value){
+      if (value != null) tutorialAutoshow = value !== '0';
+      syncDrawerHintsToggle();
+      if (cb) cb();
+    }
+    try {
+      var local = localStorage.getItem('tutorial_autoshow');
+      if (local != null) tutorialAutoshow = local !== '0';
+    } catch(e){}
+    syncDrawerHintsToggle();
+    if (cloudStorageAvailable()) {
+      try {
+        tg.CloudStorage.getItem('tutorial_autoshow', function(err, value){
+          if (!err && value != null) apply(value);
+          else if (cb) cb();
+        });
+        return;
+      } catch(e){}
+    }
+    if (cb) cb();
+  }
+
+  function isSplashHidden(){
+    var splashEl = document.getElementById('splash');
+    return !splashEl || splashEl.style.display === 'none';
+  }
+
+  function renderTutorialStep(){
+    var step = TUTORIAL_STEPS[tutorialIdx];
+    var last = tutorialIdx >= TUTORIAL_STEPS.length - 1;
+    if (!step || !els.tutorial) return;
+    els.tutorialIcon.textContent = step.icon;
+    els.tutorialStep.textContent = (tutorialIdx + 1) + ' / ' + TUTORIAL_STEPS.length;
+    els.tutorialTitle.textContent = step.title;
+    els.tutorialText.textContent = step.text;
+    els.tutorialDots.innerHTML = '';
+    TUTORIAL_STEPS.forEach(function(_, i){
+      var dot = document.createElement('div');
+      dot.className = 'tutorial-dot' + (i === tutorialIdx ? ' active' : '');
+      els.tutorialDots.appendChild(dot);
+    });
+    if (els.tutorialOptWrap) els.tutorialOptWrap.style.display = last ? 'flex' : 'none';
+    if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = last ? 'block' : 'none';
+    if (els.tutorialNext) els.tutorialNext.textContent = last ? 'Готово' : 'Далее';
+    els.tutorial.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeTutorial(){
+    if (!els.tutorial) return;
+    els.tutorial.classList.remove('open');
+    els.tutorial.setAttribute('aria-hidden', 'true');
+  }
+
+  function openTutorial(){
+    if (!els.tutorial) return;
+    closeDrawer();
+    closeViewer();
+    tutorialIdx = 0;
+    if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
+    renderTutorialStep();
+    els.tutorial.classList.add('open');
+  }
+
+  function finishTutorial(){
+    if (els.tutorialOptOut && els.tutorialOptOut.checked) saveTutorialAutoshow(false);
+    closeTutorial();
+  }
+
+  function scheduleTutorialIfNeeded(){
+    if (!tutorialAutoshow || !isSplashHidden()) return;
+    openTutorial();
+  }
+
   function saveFavorites(){
     var json = JSON.stringify(state.favorites);
     if (cloudStorageAvailable()) {
@@ -1012,7 +1224,9 @@
         if (splashEyebrow) {
           splashEyebrow.textContent = data.length + ' материалов · ' + SITE_ORDER.length + ' источников';
         }
+        var skipTutorial = !!pendingDeepLinkId;
         openDeepLinkMaterial();
+        if (!skipTutorial) scheduleTutorialIfNeeded();
       })
       .catch(function(err){
         console.error('[catalog] ошибка загрузки каталога:', err);
@@ -1567,6 +1781,26 @@
   els.menuBtn.onclick = openDrawer;
   els.drawerClose.onclick = closeDrawer;
   els.drawerOverlay.onclick = closeDrawer;
+
+  if (els.drawerHintsToggle) {
+    els.drawerHintsToggle.onchange = function(){
+      saveTutorialAutoshow(els.drawerHintsToggle.checked);
+    };
+  }
+  if (els.drawerReplayTutorial) {
+    els.drawerReplayTutorial.onclick = function(){
+      closeDrawer();
+      openTutorial();
+    };
+  }
+  if (els.tutorialNext) {
+    els.tutorialNext.onclick = function(){
+      if (tutorialIdx >= TUTORIAL_STEPS.length - 1) finishTutorial();
+      else { tutorialIdx++; renderTutorialStep(); }
+    };
+  }
+  if (els.tutorialSkip) els.tutorialSkip.onclick = closeTutorial;
+  if (els.tutorialBackdrop) els.tutorialBackdrop.onclick = closeTutorial;
   els.drawerAll.onclick = function(){
     state.category = 'Все';
     state.activeSite = null;
@@ -2338,12 +2572,15 @@
       ctaEl.onclick = function(){
         markSplashSeen();
         hideSplash(true);
+        setTimeout(scheduleTutorialIfNeeded, 380);
       };
     }
   }
 
   renderSkeleton();
-  loadFavorites(loadCatalog);
+  loadTutorialPrefs(function(){
+    loadFavorites(loadCatalog);
+  });
   initSplash();
 })();
 </script>
