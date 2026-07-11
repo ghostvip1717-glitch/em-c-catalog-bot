@@ -524,11 +524,15 @@
   /* ---- интерактивные подсказки: подсветка элемента + стрелка ---- */
   .tutorial{
     position:fixed;inset:0;z-index:90;
-    display:none;opacity:0;pointer-events:none;
+    display:none;opacity:0;pointer-events:none;visibility:hidden;
   }
   .tutorial.open{
-    display:block;opacity:1;pointer-events:auto;
+    display:block;opacity:1;pointer-events:auto;visibility:visible;
     transition:opacity .25s ease;
+  }
+  .tutorial:not(.open),
+  .tutorial:not(.open) *{
+    pointer-events:none !important;
   }
   .tutorial-shade{position:absolute;inset:0;z-index:0;pointer-events:none;}
   .tutorial-mask{
@@ -539,7 +543,7 @@
     box-shadow:0 0 0 2px rgba(255,255,255,.85);
   }
   .tutorial-target-hit{
-    position:fixed;z-index:2;pointer-events:auto;cursor:pointer;background:transparent;
+    display:none !important;pointer-events:none !important;
   }
   .tutorial-bubble{
     position:fixed;z-index:3;width:min(300px,calc(100vw - 24px));
@@ -806,6 +810,8 @@
   var pendingDeepLinkId = null;
   var tutorialAutoshow = true;
   var tutorialIdx = 0;
+  var tutorialHighlightRect = null;
+  var tutorialPointerInstalled = false;
   var TUTORIAL_STEPS = [
     {
       target: function(){ return els.menuBtn; },
@@ -1157,6 +1163,90 @@
     }
   }
 
+  function updateTutorialHighlightRect(step){
+    tutorialHighlightRect = null;
+    if (!step || step.showOptOut) return;
+    var el = step.target ? step.target() : null;
+    if (!el) return;
+    var r = el.getBoundingClientRect();
+    var pad = step.pad != null ? step.pad : 8;
+    tutorialHighlightRect = {
+      top: r.top - pad,
+      left: r.left - pad,
+      right: r.right + pad,
+      bottom: r.bottom + pad
+    };
+  }
+
+  function pointInTutorialHighlight(x, y){
+    if (!tutorialHighlightRect) return false;
+    return x >= tutorialHighlightRect.left && x <= tutorialHighlightRect.right &&
+      y >= tutorialHighlightRect.top && y <= tutorialHighlightRect.bottom;
+  }
+
+  function isTutorialUiTarget(el){
+    if (!el || !els.tutorialBubble) return false;
+    return els.tutorialBubble.contains(el) || el === els.tutorialSkip;
+  }
+
+  function onTutorialPointer(e){
+    if (!els.tutorial || !els.tutorial.classList.contains('open')) return;
+    if (isTutorialUiTarget(e.target)) return;
+
+    var x;
+    var y;
+    if (e.type === 'touchend') {
+      if (!e.changedTouches || !e.changedTouches[0]) return;
+      x = e.changedTouches[0].clientX;
+      y = e.changedTouches[0].clientY;
+    } else {
+      x = e.clientX;
+      y = e.clientY;
+    }
+
+    var step = TUTORIAL_STEPS[tutorialIdx];
+    if (!step) return;
+
+    if (step.showOptOut) {
+      var br = els.tutorialBubble.getBoundingClientRect();
+      var inBubble = x >= br.left && x <= br.right && y >= br.top && y <= br.bottom;
+      if (!inBubble) {
+        e.preventDefault();
+        e.stopPropagation();
+        closeTutorial();
+      }
+      return;
+    }
+
+    if (pointInTutorialHighlight(x, y)) {
+      e.preventDefault();
+      e.stopPropagation();
+      advanceTutorial();
+      return;
+    }
+
+    if (e.target && e.target.classList && e.target.classList.contains('tutorial-mask')) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeTutorial();
+    }
+  }
+
+  function installTutorialPointerRouter(){
+    if (tutorialPointerInstalled) return;
+    document.addEventListener('click', onTutorialPointer, true);
+    document.addEventListener('touchend', onTutorialPointer, true);
+    tutorialPointerInstalled = true;
+  }
+
+  function removeTutorialPointerRouter(){
+    if (!tutorialPointerInstalled) return;
+    document.removeEventListener('click', onTutorialPointer, true);
+    document.removeEventListener('touchend', onTutorialPointer, true);
+    tutorialPointerInstalled = false;
+    tutorialHighlightRect = null;
+  }
+
   function advanceTutorial(){
     if (tutorialIdx >= TUTORIAL_STEPS.length - 1) finishTutorial();
     else { tutorialIdx++; renderTutorialStep(); }
@@ -1186,7 +1276,6 @@
     if (els.tutorialTargetHit) {
       els.tutorialTargetHit.style.width = '0';
       els.tutorialTargetHit.style.height = '0';
-      els.tutorialTargetHit.setAttribute('aria-hidden', 'true');
     }
   }
 
@@ -1244,27 +1333,18 @@
       els.tutorialHole.style.height = Math.max(0, b - t) + 'px';
       els.tutorialHole.style.borderRadius = radius + 'px';
     }
-    if (els.tutorialTargetHit) {
-      els.tutorialTargetHit.style.left = l + 'px';
-      els.tutorialTargetHit.style.top = t + 'px';
-      els.tutorialTargetHit.style.width = Math.max(0, ri - l) + 'px';
-      els.tutorialTargetHit.style.height = Math.max(0, b - t) + 'px';
-      els.tutorialTargetHit.style.borderRadius = radius + 'px';
-      els.tutorialTargetHit.setAttribute('aria-hidden', 'false');
-    }
     positionTutorialBubble(r);
   }
 
   function hideTutorialMasks(){
     var layers = [
       els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight,
-      els.tutorialMaskBottom, els.tutorialHole, els.tutorialTargetHit, els.tutorialBubble
+      els.tutorialMaskBottom, els.tutorialHole, els.tutorialBubble
     ];
     layers.forEach(function(el){
       if (!el) return;
       el.removeAttribute('style');
     });
-    if (els.tutorialTargetHit) els.tutorialTargetHit.setAttribute('aria-hidden', 'true');
   }
 
   function resetTutorialOverlay(){
@@ -1310,9 +1390,11 @@
       if (!target) {
         showTutorialFullMask();
         positionTutorialBubbleFinal();
+        updateTutorialHighlightRect(step);
         return;
       }
       positionTutorialSpotlight(target, step);
+      updateTutorialHighlightRect(step);
     }
 
     requestAnimationFrame(place);
@@ -1322,20 +1404,28 @@
     if (!els.tutorial) return;
     clearTutorialStepFx();
     updateSendFavBtn();
+    removeTutorialPointerRouter();
+    if (typeof closeQuickPopover === 'function') closeQuickPopover();
+    if (typeof closeTopCatPopover === 'function') closeTopCatPopover();
     resetTutorialOverlay();
     els.tutorial.classList.remove('open');
     els.tutorial.setAttribute('aria-hidden', 'true');
+    els.tutorial.setAttribute('hidden', '');
   }
 
   function openTutorial(){
     if (!els.tutorial) return;
     closeDrawer();
     closeViewer();
+    if (typeof closeQuickPopover === 'function') closeQuickPopover();
+    if (typeof closeTopCatPopover === 'function') closeTopCatPopover();
     try { window.scrollTo(0, 0); } catch(e){}
     resetTutorialOverlay();
     tutorialIdx = 0;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
+    els.tutorial.removeAttribute('hidden');
     els.tutorial.classList.add('open');
+    installTutorialPointerRouter();
     renderTutorialStep();
   }
 
@@ -2004,15 +2094,6 @@
     els.tutorialNext.onclick = function(){ advanceTutorial(); };
   }
   if (els.tutorialSkip) els.tutorialSkip.onclick = closeTutorial;
-  [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom].forEach(function(mask){
-    if (mask) mask.onclick = closeTutorial;
-  });
-  if (els.tutorialTargetHit) {
-    els.tutorialTargetHit.onclick = function(e){
-      e.stopPropagation();
-      advanceTutorial();
-    };
-  }
   var tutorialResizeTimer;
   window.addEventListener('resize', function(){
     clearTimeout(tutorialResizeTimer);
