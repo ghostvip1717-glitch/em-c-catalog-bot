@@ -128,3 +128,6 @@ gh workflow run update-catalog.yml         # обновить JSON + фото н
 - `037f95b` HPL (Dtail) под столешницами + подсекции
 - `4fedf9d` / scrape_dtail — первый скрапер dtail
 - `b1a613e` Actions Node 24 (checkout@v5, setup-python@v6)
+
+## Merge (2026-07-11)
+- PR #1 смержен в main (`dcc9c63`). Pages build запущен.
