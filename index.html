@@ -63,6 +63,14 @@
     --content-safe-top: 0px;
   }
   *{box-sizing:border-box;}
+  /* Системная синяя «вспышка» при тапе (WebKit/Telegram) — не маска туториала.
+     Во время подсказок клик шёл в оверлей, после закрытия — в кнопку, и
+     подсветка стала заметна. Убираем; отклик остаётся через :active. */
+  html,button,input,textarea,a,.quick-item,.card,.drawer-item,.drawer-subitem{
+    -webkit-tap-highlight-color:transparent;
+  }
+  button:focus{outline:none;}
+  button:focus-visible{outline:2px solid var(--link);outline-offset:2px;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
   /* Топбар прячется/появляется при скролле через position:fixed + transform
      (JS слушает scroll и touchmove — см. initScrollChrome в скрипте).
@@ -1262,7 +1270,7 @@
   function resetTutorialOverlay(){
     hideTutorialMasks();
     if (els.tutorialBubble) els.tutorialBubble.className = 'tutorial-bubble arrow-top';
-    if (els.tutorialArrow) els.tutorialArrow.style.display = '';
+    if (els.tutorialArrow) els.tutorialArrow.removeAttribute('style');
     if (els.tutorialOptWrap) els.tutorialOptWrap.style.display = 'none';
     if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = 'none';
   }
