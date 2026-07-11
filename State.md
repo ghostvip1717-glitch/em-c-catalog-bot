@@ -104,7 +104,7 @@ Telegram WebApp-каталог листовых материалов (ЛДСП, 
 - `#vsend` (338,154,36×36) перекрывает RAL (325,145,61×55); `overlap:true` **без туториала**.
 - Корень CSS: `.viewer{pointer-events:none}` + `.vactions > *{pointer-events:auto}` — потомки снова кликабельны; viewer z:50 > topbar z:5.
 - То же риск у `.vnavbtn{pointer-events:auto}`.
-- Фикс: включать pe:auto у vactions/vnavbtn **только** при `.viewer.open`.
+- Фикс `cursor/fix-viewer-blocks-ral-4139`: pe:auto у vactions/vnavbtn **только** при `.viewer.open`.
 
 ---
 

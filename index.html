@@ -452,10 +452,11 @@
   .vnav{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 6px;pointer-events:none;}
   .vnavbtn{
     background:rgba(0,0,0,0.45);border:none;color:#fff;font-size:28px;
-    width:40px;height:40px;border-radius:50%;cursor:pointer;pointer-events:auto;
+    width:40px;height:40px;border-radius:50%;cursor:pointer;pointer-events:none;
     display:flex;align-items:center;justify-content:center;line-height:1;
     transition:background .15s,opacity .2s;flex:0 0 auto;
   }
+  .viewer.open .vnavbtn{pointer-events:auto;}
   .vnavbtn:active{background:rgba(0,0,0,0.75);}
   .vnavbtn.hidden{opacity:0;pointer-events:none;}
   /* Отступ сверху учитывает ту же зарезервированную под контролы Telegram
@@ -471,8 +472,12 @@
   .vcopy svg, .vsend svg{width:15px;height:15px;}
   .vheart.active{background:#e0245e;animation:heartPop .25s ease;}
   .vsend.busy{opacity:.45;pointer-events:none;}
+  /* Важно: без .viewer.open потомки с pointer-events:auto снова ловят клики
+     поверх топбара (viewer z-index:50 > topbar:5) — невидимый #vsend
+     перекрывал иконку RAL справа. */
   .vactions{z-index:10;pointer-events:none;}
-  .vactions > *{pointer-events:auto;}
+  .viewer.open .vactions > *{pointer-events:auto;}
+  .viewer.open .vsend.busy{pointer-events:none;}
 
   .catalog-toast{
     position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom, 0px));
