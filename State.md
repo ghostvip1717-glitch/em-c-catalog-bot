@@ -97,6 +97,18 @@ Telegram WebApp-каталог листовых материалов (ЛДСП, 
 - `CHAT_ID=2026940090`, `API_SECRET=neo_7fK2mQx9pL4wR8`, бот @NeoModern_Bot.
 - Wrangler: `wrangler.toml` + `notify-worker.js` (env); деплой нужен `CLOUDFLARE_API_TOKEN`.
 
+## Туториал / RAL после close (2026-07-11)
+
+- Анализ: блок RAL после туториала ← залипшая правая маска / ghost-backdrop / router.
+- Фикс `cursor/fix-tutorial-ral-block-4139`:
+  - `disarmTutorialHitLayers` — маски/hole → 0×0 + `pointer-events:none` при close
+  - CSS: `.tutorial:not(.open) .tutorial-mask|hole` принудительно 0×0
+  - ghost-click: `tutorialTouchHandled` глушит синтетический click после touchend
+  - close: сначала `tutorialOpen=false` + снять router/active, потом purge/reset
+  - opt-out сохраняется при любом close (Skip/маска/Готово)
+  - splash CloudStorage: `markSplashSeen` + schedule только если splash реально скрыли
+  - `updateSendFavBtn` не сбрасывает `tutorial-force-show`; убран текст `(N)`
+
 ---
 
 ## Типовые команды

@@ -535,6 +535,11 @@
   .tutorial:not(.open) *{
     pointer-events:none !important;
   }
+  .tutorial:not(.open) .tutorial-mask,
+  .tutorial:not(.open) .tutorial-hole,
+  .tutorial:not(.open) .tutorial-target-hit{
+    width:0 !important;height:0 !important;pointer-events:none !important;
+  }
   html:not(.tutorial-active) #tutorial{
     display:none !important;visibility:hidden !important;
     pointer-events:none !important;z-index:-1 !important;
@@ -821,6 +826,7 @@
   var tutorialHighlightRect = null;
   var tutorialPointerInstalled = false;
   var tutorialOpen = false;
+  var tutorialTouchHandled = false;
   var TUTORIAL_STEPS = [
     {
       target: function(){ return els.menuBtn; },
@@ -1202,6 +1208,16 @@
 
   function onTutorialPointer(e){
     if (!tutorialOpen || !els.tutorial || !els.tutorial.classList.contains('open')) return;
+
+    // После touchend WebView часто шлёт синтетический click — не обрабатываем
+    // его вторым разом (иначе skip шага / странное закрытие и залипшие слои).
+    if (e.type === 'click' && tutorialTouchHandled) {
+      tutorialTouchHandled = false;
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+
     if (isTutorialUiTarget(e.target)) return;
 
     var x;
@@ -1218,33 +1234,33 @@
     var step = TUTORIAL_STEPS[tutorialIdx];
     if (!step) return;
 
+    function consumeAnd(run){
+      if (e.type === 'touchend') tutorialTouchHandled = true;
+      e.preventDefault();
+      e.stopPropagation();
+      run();
+    }
+
     if (step.showOptOut) {
       var br = els.tutorialBubble.getBoundingClientRect();
       var inBubble = x >= br.left && x <= br.right && y >= br.top && y <= br.bottom;
-      if (!inBubble) {
-        e.preventDefault();
-        e.stopPropagation();
-        closeTutorial();
-      }
+      if (!inBubble) consumeAnd(closeTutorial);
       return;
     }
 
     if (pointInTutorialHighlight(x, y)) {
-      e.preventDefault();
-      e.stopPropagation();
-      advanceTutorial();
+      consumeAnd(advanceTutorial);
       return;
     }
 
     if (e.target && e.target.classList && e.target.classList.contains('tutorial-mask')) {
-      e.preventDefault();
-      e.stopPropagation();
-      closeTutorial();
+      consumeAnd(closeTutorial);
     }
   }
 
   function installTutorialPointerRouter(){
     if (tutorialPointerInstalled) return;
+    tutorialTouchHandled = false;
     document.addEventListener('click', onTutorialPointer, true);
     document.addEventListener('touchend', onTutorialPointer, true);
     tutorialPointerInstalled = true;
@@ -1256,6 +1272,7 @@
     document.removeEventListener('touchend', onTutorialPointer, true);
     tutorialPointerInstalled = false;
     tutorialHighlightRect = null;
+    tutorialTouchHandled = false;
   }
 
   function advanceTutorial(){
@@ -1277,16 +1294,20 @@
 
   function showTutorialFullMask(){
     if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;bottom:0';
-    if (els.tutorialMaskLeft) els.tutorialMaskLeft.style.cssText = '';
-    if (els.tutorialMaskRight) els.tutorialMaskRight.style.cssText = '';
-    if (els.tutorialMaskBottom) els.tutorialMaskBottom.style.cssText = '';
+    if (els.tutorialMaskLeft) {
+      els.tutorialMaskLeft.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
+    }
+    if (els.tutorialMaskRight) {
+      els.tutorialMaskRight.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
+    }
+    if (els.tutorialMaskBottom) {
+      els.tutorialMaskBottom.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
+    }
     if (els.tutorialHole) {
-      els.tutorialHole.style.width = '0';
-      els.tutorialHole.style.height = '0';
+      els.tutorialHole.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
     }
     if (els.tutorialTargetHit) {
-      els.tutorialTargetHit.style.width = '0';
-      els.tutorialTargetHit.style.height = '0';
+      els.tutorialTargetHit.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
     }
   }
 
@@ -1367,15 +1388,22 @@
     positionTutorialBubble(r);
   }
 
-  function hideTutorialMasks(){
+  function disarmTutorialHitLayers(){
+    // Явно обнуляем маски/hole: после removeAttribute в WebView иногда
+    // оставался hit-area справа (зона RAL) с pointer-events:auto из CSS.
     var layers = [
       els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight,
-      els.tutorialMaskBottom, els.tutorialHole, els.tutorialBubble
+      els.tutorialMaskBottom, els.tutorialHole, els.tutorialTargetHit
     ];
     layers.forEach(function(el){
       if (!el) return;
-      el.removeAttribute('style');
+      el.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;right:auto;bottom:auto;pointer-events:none;';
     });
+  }
+
+  function hideTutorialMasks(){
+    disarmTutorialHitLayers();
+    if (els.tutorialBubble) els.tutorialBubble.removeAttribute('style');
   }
 
   function resetTutorialOverlay(){
@@ -1399,7 +1427,7 @@
     clearTutorialStepFx();
     if (step.forceSendFav && els.sendFavBtn) {
       els.sendFavBtn.classList.add('tutorial-force-show');
-      els.sendFavBtn.textContent = 'Отправить (N)';
+      els.sendFavBtn.textContent = 'Отправить (' + state.favorites.length + ')';
     }
 
     els.tutorialStep.textContent = (tutorialIdx + 1) + ' / ' + TUTORIAL_STEPS.length;
@@ -1433,12 +1461,17 @@
 
   function closeTutorial(){
     if (!els.tutorial) return;
+    // Opt-out с последнего шага должен сохраняться и при «Пропустить»/тапе по маске.
+    if (els.tutorialOptOut && els.tutorialOptOut.checked) saveTutorialAutoshow(false);
+    // Сначала глушим перехват — иначе поздний click/touch ещё попадёт в router.
     tutorialOpen = false;
+    tutorialHighlightRect = null;
     document.documentElement.classList.remove('tutorial-active');
+    removeTutorialPointerRouter();
+    disarmTutorialHitLayers();
+    purgeTransientOverlays();
     clearTutorialStepFx();
     updateSendFavBtn();
-    removeTutorialPointerRouter();
-    purgeTransientOverlays();
     resetTutorialOverlay();
     els.tutorial.classList.remove('open');
     els.tutorial.setAttribute('aria-hidden', 'true');
@@ -1450,9 +1483,11 @@
     closeDrawer();
     closeViewer();
     purgeTransientOverlays();
+    document.documentElement.classList.remove('chrome-hidden');
     try { window.scrollTo(0, 0); } catch(e){}
     resetTutorialOverlay();
     tutorialIdx = 0;
+    tutorialTouchHandled = false;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
     els.tutorial.removeAttribute('hidden');
     document.documentElement.classList.add('tutorial-active');
@@ -1463,12 +1498,11 @@
   }
 
   function finishTutorial(){
-    if (els.tutorialOptOut && els.tutorialOptOut.checked) saveTutorialAutoshow(false);
     closeTutorial();
   }
 
   function scheduleTutorialIfNeeded(){
-    if (!tutorialAutoshow || !isSplashHidden()) return;
+    if (!tutorialAutoshow || !isSplashHidden() || tutorialOpen) return;
     openTutorial();
   }
 
@@ -1663,8 +1697,9 @@
     if (!els.sendFavBtn) return;
     var n = state.favorites.length;
     var show = state.favOnly && n > 0;
-    els.sendFavBtn.className = 'send-fav-btn' + (show ? ' visible' : '');
-    els.sendFavBtn.textContent = 'Отправить (' + n + ')';
+    var force = els.sendFavBtn.classList.contains('tutorial-force-show');
+    els.sendFavBtn.className = 'send-fav-btn' + (show ? ' visible' : '') + (force ? ' tutorial-force-show' : '');
+    if (!force) els.sendFavBtn.textContent = 'Отправить (' + n + ')';
   }
 
   if (els.vsend) {
@@ -2895,10 +2930,19 @@
 
     // Если сплэш уже видели на другом устройстве (CloudStorage) — закрываем
     // без анимации, даже если локально на этом устройстве флага ещё не было.
+    // После скрытия планируем туториал: loadCatalog мог отработать раньше,
+    // пока splash ещё был на экране, и scheduleTutorialIfNeeded тогда no-op.
     if (cloudStorageAvailable()) {
       try {
         tg.CloudStorage.getItem('splash_seen', function(err, value){
-          if (!err && value === '1') hideSplash(false);
+          if (!err && value === '1') {
+            var wasShowing = splashEl.style.display !== 'none';
+            markSplashSeen();
+            hideSplash(false);
+            // Только если splash реально убрали сейчас — иначе loadCatalog
+            // уже мог открыть туториал, и повторный open сбросит шаг.
+            if (wasShowing) scheduleTutorialIfNeeded();
+          }
         });
       } catch(e){}
     }
