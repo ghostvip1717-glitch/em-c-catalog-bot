@@ -516,14 +516,11 @@
   /* ---- интерактивные подсказки: подсветка элемента + стрелка ---- */
   .tutorial{
     position:fixed;inset:0;z-index:90;
-    opacity:0;pointer-events:none;transition:opacity .25s ease;
+    display:none;opacity:0;pointer-events:none;
   }
-  .tutorial.open{opacity:1;pointer-events:auto;}
-  .tutorial:not(.open) .tutorial-mask,
-  .tutorial:not(.open) .tutorial-target-hit,
-  .tutorial:not(.open) .tutorial-bubble{
-    pointer-events:none !important;
-    visibility:hidden;
+  .tutorial.open{
+    display:block;opacity:1;pointer-events:auto;
+    transition:opacity .25s ease;
   }
   .tutorial-shade{position:absolute;inset:0;z-index:0;pointer-events:none;}
   .tutorial-mask{
@@ -1251,19 +1248,23 @@
   }
 
   function hideTutorialMasks(){
-    [els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight, els.tutorialMaskBottom, els.tutorialHole, els.tutorialTargetHit].forEach(function(el){
-      if (el) el.style.cssText = '';
+    var layers = [
+      els.tutorialMaskTop, els.tutorialMaskLeft, els.tutorialMaskRight,
+      els.tutorialMaskBottom, els.tutorialHole, els.tutorialTargetHit, els.tutorialBubble
+    ];
+    layers.forEach(function(el){
+      if (!el) return;
+      el.removeAttribute('style');
     });
     if (els.tutorialTargetHit) els.tutorialTargetHit.setAttribute('aria-hidden', 'true');
   }
 
   function resetTutorialOverlay(){
     hideTutorialMasks();
-    if (els.tutorialBubble) {
-      els.tutorialBubble.style.cssText = '';
-      els.tutorialBubble.className = 'tutorial-bubble arrow-top';
-    }
+    if (els.tutorialBubble) els.tutorialBubble.className = 'tutorial-bubble arrow-top';
     if (els.tutorialArrow) els.tutorialArrow.style.display = '';
+    if (els.tutorialOptWrap) els.tutorialOptWrap.style.display = 'none';
+    if (els.tutorialDrawerHint) els.tutorialDrawerHint.style.display = 'none';
   }
 
   function positionTutorialSpotlight(el, step){
@@ -1323,6 +1324,7 @@
     closeDrawer();
     closeViewer();
     try { window.scrollTo(0, 0); } catch(e){}
+    resetTutorialOverlay();
     tutorialIdx = 0;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
     els.tutorial.classList.add('open');
