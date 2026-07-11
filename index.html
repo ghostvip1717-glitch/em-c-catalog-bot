@@ -205,7 +205,8 @@
   .quick-item{
     flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;
     background:none;border:none;font-family:inherit;color:var(--text);
-    padding:4px 2px;cursor:pointer;
+    padding:4px 2px;cursor:pointer;position:relative;z-index:1;
+    touch-action:manipulation;-webkit-user-select:none;user-select:none;
   }
   .quick-item svg{width:24px;height:24px;}
   .quick-item span{font-size:11px;font-weight:500;}
@@ -534,6 +535,13 @@
   .tutorial:not(.open) *{
     pointer-events:none !important;
   }
+  html:not(.tutorial-active) #tutorial{
+    display:none !important;visibility:hidden !important;
+    pointer-events:none !important;z-index:-1 !important;
+  }
+  html:not(.tutorial-active) #tutorial *{
+    pointer-events:none !important;
+  }
   .tutorial-shade{position:absolute;inset:0;z-index:0;pointer-events:none;}
   .tutorial-mask{
     position:fixed;z-index:1;background:rgba(0,0,0,.54);pointer-events:auto;cursor:pointer;
@@ -812,6 +820,7 @@
   var tutorialIdx = 0;
   var tutorialHighlightRect = null;
   var tutorialPointerInstalled = false;
+  var tutorialOpen = false;
   var TUTORIAL_STEPS = [
     {
       target: function(){ return els.menuBtn; },
@@ -827,7 +836,7 @@
     },
     {
       target: function(){ return els.quickRow; },
-      pad: 8, radius: 12,
+      pad: 8, radius: 12, fullBleedHole: true,
       title: 'Группы материалов',
       text: 'Иконки переключают тип материала. У раздела с несколькими линейками откроется меню выбора подкатегории.'
     },
@@ -1170,10 +1179,12 @@
     if (!el) return;
     var r = el.getBoundingClientRect();
     var pad = step.pad != null ? step.pad : 8;
+    var left = step.fullBleedHole ? 0 : r.left - pad;
+    var right = step.fullBleedHole ? window.innerWidth : r.right + pad;
     tutorialHighlightRect = {
       top: r.top - pad,
-      left: r.left - pad,
-      right: r.right + pad,
+      left: left,
+      right: right,
       bottom: r.bottom + pad
     };
   }
@@ -1190,7 +1201,7 @@
   }
 
   function onTutorialPointer(e){
-    if (!els.tutorial || !els.tutorial.classList.contains('open')) return;
+    if (!tutorialOpen || !els.tutorial || !els.tutorial.classList.contains('open')) return;
     if (isTutorialUiTarget(e.target)) return;
 
     var x;
@@ -1309,6 +1320,18 @@
     els.tutorialBubble.style.width = '';
   }
 
+  function purgeTransientOverlays(){
+    document.querySelectorAll('.quick-popover-backdrop, .quick-popover, .top-cat-popover').forEach(function(node){
+      node.remove();
+    });
+    if (els.quickPopover) els.quickPopover = null;
+    if (els.quickPopoverBackdrop) els.quickPopoverBackdrop = null;
+    if (els.topCatPopover) els.topCatPopover = null;
+    if (els.topCatPopoverBackdrop) els.topCatPopoverBackdrop = null;
+    quickPopoverOpenSite = null;
+    topCatPopoverOpen = false;
+  }
+
   function positionTutorialMasks(r, step){
     var pad = step.pad != null ? step.pad : 8;
     var radius = step.radius != null ? step.radius : 12;
@@ -1316,12 +1339,20 @@
     var l = Math.max(0, r.left - pad);
     var ri = r.right + pad;
     var b = r.bottom + pad;
+    if (step.fullBleedHole) {
+      l = 0;
+      ri = window.innerWidth;
+    }
     if (els.tutorialMaskTop) els.tutorialMaskTop.style.cssText = 'left:0;top:0;right:0;height:' + t + 'px';
     if (els.tutorialMaskLeft) {
       els.tutorialMaskLeft.style.cssText = 'left:0;top:' + t + 'px;width:' + l + 'px;height:' + Math.max(0, b - t) + 'px';
     }
     if (els.tutorialMaskRight) {
-      els.tutorialMaskRight.style.cssText = 'left:' + ri + 'px;top:' + t + 'px;right:0;height:' + Math.max(0, b - t) + 'px';
+      if (ri >= window.innerWidth - 1) {
+        els.tutorialMaskRight.style.cssText = 'left:0;top:0;width:0;height:0;pointer-events:none';
+      } else {
+        els.tutorialMaskRight.style.cssText = 'left:' + ri + 'px;top:' + t + 'px;right:0;height:' + Math.max(0, b - t) + 'px';
+      }
     }
     if (els.tutorialMaskBottom) {
       els.tutorialMaskBottom.style.cssText = 'left:0;top:' + b + 'px;right:0;bottom:0';
@@ -1402,11 +1433,12 @@
 
   function closeTutorial(){
     if (!els.tutorial) return;
+    tutorialOpen = false;
+    document.documentElement.classList.remove('tutorial-active');
     clearTutorialStepFx();
     updateSendFavBtn();
     removeTutorialPointerRouter();
-    if (typeof closeQuickPopover === 'function') closeQuickPopover();
-    if (typeof closeTopCatPopover === 'function') closeTopCatPopover();
+    purgeTransientOverlays();
     resetTutorialOverlay();
     els.tutorial.classList.remove('open');
     els.tutorial.setAttribute('aria-hidden', 'true');
@@ -1417,13 +1449,14 @@
     if (!els.tutorial) return;
     closeDrawer();
     closeViewer();
-    if (typeof closeQuickPopover === 'function') closeQuickPopover();
-    if (typeof closeTopCatPopover === 'function') closeTopCatPopover();
+    purgeTransientOverlays();
     try { window.scrollTo(0, 0); } catch(e){}
     resetTutorialOverlay();
     tutorialIdx = 0;
     if (els.tutorialOptOut) els.tutorialOptOut.checked = false;
     els.tutorial.removeAttribute('hidden');
+    document.documentElement.classList.add('tutorial-active');
+    tutorialOpen = true;
     els.tutorial.classList.add('open');
     installTutorialPointerRouter();
     renderTutorialStep();
@@ -1914,7 +1947,9 @@
       );
 
       var btn = document.createElement('button');
+      btn.type = 'button';
       btn.className = 'quick-item' + (isActive ? ' active' : '');
+      btn.setAttribute('data-site', key);
       btn.innerHTML = QUICK_ICONS[key] + '<span>' + QUICK_LABELS[key] + '</span>';
       btn.onclick = function(){
         if (hasSubcategories) {
