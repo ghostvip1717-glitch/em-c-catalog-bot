@@ -12902,20 +12902,6 @@
     "thumb": "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm",
-    "name": "ЛДСП Персидский жемчуг 810 РО 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_pikar_ems",
     "name": "ЛДСП Пикар (ЕМС)",
     "category": "ЛДСП: Россия",
@@ -13544,20 +13530,6 @@
       "data/images/emc/ldsp_soft_k_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_soft_k_lmt/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_tayga_k_lmt",
-    "name": "ЛДСП Тайга К (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_tayga_k_lmt.html",
-    "image": "data/images/emc/ldsp_tayga_k_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_tayga_k_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_tayga_k_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_tayga_k_lmt/1_thumb.webp"
   },
   {
     "id": "ldsp_tegola_s_315_pw_2800_2070_16mm",
@@ -14562,10 +14534,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/457091594202-alatau-kz03-mat",
     "image": "data/images/kira/kira_457091594202/1.webp",
     "images": [
-      "data/images/kira/kira_457091594202/1.webp"
+      "data/images/kira/kira_457091594202/1.webp",
+      "data/images/kira/kira_457091594202/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_457091594202/1_thumb.webp"
+      "data/images/kira/kira_457091594202/1_thumb.webp",
+      "data/images/kira/kira_457091594202/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_457091594202/1_thumb.webp"
   },
@@ -14624,10 +14598,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/407195861672-aral-kz04-mat",
     "image": "data/images/kira/kira_407195861672/1.webp",
     "images": [
-      "data/images/kira/kira_407195861672/1.webp"
+      "data/images/kira/kira_407195861672/1.webp",
+      "data/images/kira/kira_407195861672/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_407195861672/1_thumb.webp"
+      "data/images/kira/kira_407195861672/1_thumb.webp",
+      "data/images/kira/kira_407195861672/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_407195861672/1_thumb.webp"
   },
@@ -14638,10 +14614,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/395912573502-baikonur-kz11-mat",
     "image": "data/images/kira/kira_395912573502/1.webp",
     "images": [
-      "data/images/kira/kira_395912573502/1.webp"
+      "data/images/kira/kira_395912573502/1.webp",
+      "data/images/kira/kira_395912573502/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_395912573502/1_thumb.webp"
+      "data/images/kira/kira_395912573502/1_thumb.webp",
+      "data/images/kira/kira_395912573502/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_395912573502/1_thumb.webp"
   },
@@ -14652,10 +14630,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/330209371572-balhash-kz10-mat",
     "image": "data/images/kira/kira_330209371572/1.webp",
     "images": [
-      "data/images/kira/kira_330209371572/1.webp"
+      "data/images/kira/kira_330209371572/1.webp",
+      "data/images/kira/kira_330209371572/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_330209371572/1_thumb.webp"
+      "data/images/kira/kira_330209371572/1_thumb.webp",
+      "data/images/kira/kira_330209371572/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_330209371572/1_thumb.webp"
   },
@@ -14666,10 +14646,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/381661290262-batis-kz18-mat",
     "image": "data/images/kira/kira_381661290262/1.webp",
     "images": [
-      "data/images/kira/kira_381661290262/1.webp"
+      "data/images/kira/kira_381661290262/1.webp",
+      "data/images/kira/kira_381661290262/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_381661290262/1_thumb.webp"
+      "data/images/kira/kira_381661290262/1_thumb.webp",
+      "data/images/kira/kira_381661290262/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_381661290262/1_thumb.webp"
   },
@@ -14680,10 +14662,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/296838798552-bayanaul-kz06-mat",
     "image": "data/images/kira/kira_296838798552/1.webp",
     "images": [
-      "data/images/kira/kira_296838798552/1.webp"
+      "data/images/kira/kira_296838798552/1.webp",
+      "data/images/kira/kira_296838798552/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_296838798552/1_thumb.webp"
+      "data/images/kira/kira_296838798552/1_thumb.webp",
+      "data/images/kira/kira_296838798552/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_296838798552/1_thumb.webp"
   },
@@ -14966,10 +14950,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/595640532092-zharkent-kz17-mat",
     "image": "data/images/kira/kira_595640532092/1.webp",
     "images": [
-      "data/images/kira/kira_595640532092/1.webp"
+      "data/images/kira/kira_595640532092/1.webp",
+      "data/images/kira/kira_595640532092/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_595640532092/1_thumb.webp"
+      "data/images/kira/kira_595640532092/1_thumb.webp",
+      "data/images/kira/kira_595640532092/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_595640532092/1_thumb.webp"
   },
@@ -14980,10 +14966,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/790452622882-zaisan-kz05-mat",
     "image": "data/images/kira/kira_790452622882/1.webp",
     "images": [
-      "data/images/kira/kira_790452622882/1.webp"
+      "data/images/kira/kira_790452622882/1.webp",
+      "data/images/kira/kira_790452622882/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_790452622882/1_thumb.webp"
+      "data/images/kira/kira_790452622882/1_thumb.webp",
+      "data/images/kira/kira_790452622882/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_790452622882/1_thumb.webp"
   },
@@ -15026,10 +15014,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/906984585402-kaspii-kz07-mat",
     "image": "data/images/kira/kira_906984585402/1.webp",
     "images": [
-      "data/images/kira/kira_906984585402/1.webp"
+      "data/images/kira/kira_906984585402/1.webp",
+      "data/images/kira/kira_906984585402/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_906984585402/1_thumb.webp"
+      "data/images/kira/kira_906984585402/1_thumb.webp",
+      "data/images/kira/kira_906984585402/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_906984585402/1_thumb.webp"
   },
@@ -15152,10 +15142,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/914483768092-medeu-kz09-mat",
     "image": "data/images/kira/kira_914483768092/1.webp",
     "images": [
-      "data/images/kira/kira_914483768092/1.webp"
+      "data/images/kira/kira_914483768092/1.webp",
+      "data/images/kira/kira_914483768092/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_914483768092/1_thumb.webp"
+      "data/images/kira/kira_914483768092/1_thumb.webp",
+      "data/images/kira/kira_914483768092/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_914483768092/1_thumb.webp"
   },
@@ -15246,10 +15238,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/328012623292-okzhetpes-kz19-mat",
     "image": "data/images/kira/kira_328012623292/1.webp",
     "images": [
-      "data/images/kira/kira_328012623292/1.webp"
+      "data/images/kira/kira_328012623292/1.webp",
+      "data/images/kira/kira_328012623292/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_328012623292/1_thumb.webp"
+      "data/images/kira/kira_328012623292/1_thumb.webp",
+      "data/images/kira/kira_328012623292/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_328012623292/1_thumb.webp"
   },
@@ -15340,10 +15334,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/595006318242-otrar-kz12-mat",
     "image": "data/images/kira/kira_595006318242/1.webp",
     "images": [
-      "data/images/kira/kira_595006318242/1.webp"
+      "data/images/kira/kira_595006318242/1.webp",
+      "data/images/kira/kira_595006318242/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_595006318242/1_thumb.webp"
+      "data/images/kira/kira_595006318242/1_thumb.webp",
+      "data/images/kira/kira_595006318242/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_595006318242/1_thumb.webp"
   },
@@ -15418,10 +15414,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/889629102452-rahat-kz16-mat",
     "image": "data/images/kira/kira_889629102452/1.webp",
     "images": [
-      "data/images/kira/kira_889629102452/1.webp"
+      "data/images/kira/kira_889629102452/1.webp",
+      "data/images/kira/kira_889629102452/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_889629102452/1_thumb.webp"
+      "data/images/kira/kira_889629102452/1_thumb.webp",
+      "data/images/kira/kira_889629102452/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_889629102452/1_thumb.webp"
   },
@@ -15480,10 +15478,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/247655017842-sariarka-kz02-mat",
     "image": "data/images/kira/kira_247655017842/1.webp",
     "images": [
-      "data/images/kira/kira_247655017842/1.webp"
+      "data/images/kira/kira_247655017842/1.webp",
+      "data/images/kira/kira_247655017842/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_247655017842/1_thumb.webp"
+      "data/images/kira/kira_247655017842/1_thumb.webp",
+      "data/images/kira/kira_247655017842/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_247655017842/1_thumb.webp"
   },
@@ -15638,10 +15638,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/896379499292-tyan-shan-kz08-mat",
     "image": "data/images/kira/kira_896379499292/1.webp",
     "images": [
-      "data/images/kira/kira_896379499292/1.webp"
+      "data/images/kira/kira_896379499292/1.webp",
+      "data/images/kira/kira_896379499292/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_896379499292/1_thumb.webp"
+      "data/images/kira/kira_896379499292/1_thumb.webp",
+      "data/images/kira/kira_896379499292/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_896379499292/1_thumb.webp"
   },
@@ -15652,10 +15654,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/143017296162-ustyurt-kz13-mat",
     "image": "data/images/kira/kira_143017296162/1.webp",
     "images": [
-      "data/images/kira/kira_143017296162/1.webp"
+      "data/images/kira/kira_143017296162/1.webp",
+      "data/images/kira/kira_143017296162/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_143017296162/1_thumb.webp"
+      "data/images/kira/kira_143017296162/1_thumb.webp",
+      "data/images/kira/kira_143017296162/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_143017296162/1_thumb.webp"
   },
@@ -15666,10 +15670,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/533171262382-han-tengri-kz15-mat",
     "image": "data/images/kira/kira_533171262382/1.webp",
     "images": [
-      "data/images/kira/kira_533171262382/1.webp"
+      "data/images/kira/kira_533171262382/1.webp",
+      "data/images/kira/kira_533171262382/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_533171262382/1_thumb.webp"
+      "data/images/kira/kira_533171262382/1_thumb.webp",
+      "data/images/kira/kira_533171262382/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_533171262382/1_thumb.webp"
   },
@@ -15680,10 +15686,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/731321151332-han-shatir-kz14-mat",
     "image": "data/images/kira/kira_731321151332/1.webp",
     "images": [
-      "data/images/kira/kira_731321151332/1.webp"
+      "data/images/kira/kira_731321151332/1.webp",
+      "data/images/kira/kira_731321151332/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_731321151332/1_thumb.webp"
+      "data/images/kira/kira_731321151332/1_thumb.webp",
+      "data/images/kira/kira_731321151332/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_731321151332/1_thumb.webp"
   },
@@ -15758,10 +15766,12 @@
     "url": "https://kira-group.kz/pvc-antiscratchkz/tproduct/787084261102-shimbulak-kz01-mat",
     "image": "data/images/kira/kira_787084261102/1.webp",
     "images": [
-      "data/images/kira/kira_787084261102/1.webp"
+      "data/images/kira/kira_787084261102/1.webp",
+      "data/images/kira/kira_787084261102/2.webp"
     ],
     "thumbs": [
-      "data/images/kira/kira_787084261102/1_thumb.webp"
+      "data/images/kira/kira_787084261102/1_thumb.webp",
+      "data/images/kira/kira_787084261102/2_thumb.webp"
     ],
     "thumb": "data/images/kira/kira_787084261102/1_thumb.webp"
   },
@@ -18586,20 +18596,6 @@
     "thumb": "data/images/emc/belyy_kaspiy_76_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
-    "id": "belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk",
-    "name": "Белый каспий 76, мат 3000*600*28 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/belyy_kaspiy_76_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
     "id": "belyy_kaspiy_76_mat_3000_600_38_mm_stoleshnitsa_sk",
     "name": "Белый каспий 76, мат 3000*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -18934,20 +18930,6 @@
       "data/images/emc/granit_chernyy_26_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/granit_chernyy_26_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
-    "id": "granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk",
-    "name": "Гранит черный 26, мат 3000*600*28 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/granit_chernyy_26_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "darkstoun_3122_s_3050kh600kh38_mm_stoleshnitsa_kedr_1",
@@ -19608,20 +19590,6 @@
     "thumb": "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
   },
   {
-    "id": "korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u",
-    "name": "Королевский опал светлый 2705 CR 4200*600*38мм Столешница (У)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u.html",
-    "image": "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u/1.webp",
-    "images": [
-      "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
     "id": "korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2",
     "name": "Королевский опал светлый 3062/Q 3050*600*28 мм Столешница  (Кедр) /2",
     "category": "Столешницы: Россия",
@@ -19958,6 +19926,20 @@
     "thumb": "data/images/emc/mramor_markvina_belyy_3028_g_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
+    "id": "mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u",
+    "name": "Мрамор Марквина Черный  С508 CR 4200*600*38мм Столешница (У)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u.html",
+    "image": "data/images/emc/mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u/1.webp",
+    "images": [
+      "data/images/emc/mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/mramor_markvina_chernyy_s508_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
+  },
+  {
     "id": "mramor_markvina_chernyy_20_gl_3000_600_28_mm_stoleshnitsa_sk",
     "name": "Мрамор Марквина Черный 20, гл 3000*600*28 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -20096,20 +20078,6 @@
       "data/images/emc/mramor_belyy_2703_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
     ],
     "thumb": "data/images/emc/mramor_belyy_2703_cr_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
-    "id": "mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k",
-    "name": "Мрамор белый 3027 Г 3050*600*26 мм  Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/mramor_belyy_3027_g_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
     "id": "mramor_belyy_3027_g_4200_600_38mm_stoleshnitsa_d_",
@@ -20504,20 +20472,6 @@
     "thumb": "data/images/emc/paladina_svetlaya_3061_g_4200_600_38mm_stoleshnitsa_d_/1_thumb.webp"
   },
   {
-    "id": "paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_",
-    "name": "Паладина светлая 3061 М 4200*600*38мм Столешница (Д)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_.html",
-    "image": "data/images/emc/paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_/1.webp",
-    "images": [
-      "data/images/emc/paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/paladina_svetlaya_3061_m_4200_600_38mm_stoleshnitsa_d_/1_thumb.webp"
-  },
-  {
     "id": "polyarnaya_zvezda_296l_mat_3000_600_38_mm_stoleshnitsa_sk",
     "name": "Полярная звезда 296Л мат 3000*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -20894,20 +20848,6 @@
       "data/images/emc/transilvaniya_2062_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
     ],
     "thumb": "data/images/emc/transilvaniya_2062_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-  },
-  {
-    "id": "tsement_720_beton_4200_600_38mm_stoleshnitsa_d_",
-    "name": "Цемент 720 бетон 4200*600*38мм Столешница (Д)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/tsement_720_beton_4200_600_38mm_stoleshnitsa_d_.html",
-    "image": "data/images/emc/tsement_720_beton_4200_600_38mm_stoleshnitsa_d_/1.webp",
-    "images": [
-      "data/images/emc/tsement_720_beton_4200_600_38mm_stoleshnitsa_d_/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/tsement_720_beton_4200_600_38mm_stoleshnitsa_d_/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/tsement_720_beton_4200_600_38mm_stoleshnitsa_d_/1_thumb.webp"
   },
   {
     "id": "tsement_720_tsement_3050_600_38mm_stoleshnitsa_d_",
