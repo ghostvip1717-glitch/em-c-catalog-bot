@@ -9640,20 +9640,28 @@
     "name": "ЛМДФ 2800*2070*16 Дуб галифакс табак",
     "category": "ЛДСП: Австрия (Egger)",
     "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/62381/",
-    "image": null,
-    "images": [],
-    "thumb": null,
-    "thumbs": []
+    "image": "data/images/profikz/profikz_62381/1.webp",
+    "images": [
+      "data/images/profikz/profikz_62381/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_62381/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_62381/1_thumb.webp"
   },
   {
     "id": "profikz_45089",
     "name": "ЛМДФ 2800*2070*16 Дуб каселла коричневый",
     "category": "ЛДСП: Австрия (Egger)",
     "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/45089/",
-    "image": null,
-    "images": [],
-    "thumb": null,
-    "thumbs": []
+    "image": "data/images/profikz/profikz_45089/1.webp",
+    "images": [
+      "data/images/profikz/profikz_45089/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_45089/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_45089/1_thumb.webp"
   },
   {
     "id": "profikz_62895",
