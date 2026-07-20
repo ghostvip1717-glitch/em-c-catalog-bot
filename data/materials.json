@@ -7170,6 +7170,20 @@
     "thumb": "data/images/profikz/profikz_45113/1_thumb.webp"
   },
   {
+    "id": "profikz_63177",
+    "name": "ЛДСП 2800*2070*16 Дуб каселла каштановый",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63177/",
+    "image": "data/images/profikz/profikz_63177/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63177/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63177/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63177/1_thumb.webp"
+  },
+  {
     "id": "profikz_45003",
     "name": "ЛДСП 2800*2070*16 Дуб каселла коричневый",
     "category": "ЛДСП: Австрия (Egger)",
@@ -9636,6 +9650,20 @@
     "thumb": "data/images/profikz/profikz_49349/1_thumb.webp"
   },
   {
+    "id": "profikz_63179",
+    "name": "ЛМДФ 2800*2070*16 Дуб галифакс натуральный",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63179/",
+    "image": "data/images/profikz/profikz_63179/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63179/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63179/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63179/1_thumb.webp"
+  },
+  {
     "id": "profikz_62381",
     "name": "ЛМДФ 2800*2070*16 Дуб галифакс табак",
     "category": "ЛДСП: Австрия (Egger)",
@@ -9648,6 +9676,48 @@
       "data/images/profikz/profikz_62381/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_62381/1_thumb.webp"
+  },
+  {
+    "id": "profikz_63175",
+    "name": "ЛМДФ 2800*2070*16 Дуб гладстоун табак",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63175/",
+    "image": "data/images/profikz/profikz_63175/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63175/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63175/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63175/1_thumb.webp"
+  },
+  {
+    "id": "profikz_63178",
+    "name": "ЛМДФ 2800*2070*16 Дуб давенпорт натуральный светлый",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63178/",
+    "image": "data/images/profikz/profikz_63178/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63178/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63178/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63178/1_thumb.webp"
+  },
+  {
+    "id": "profikz_63176",
+    "name": "ЛМДФ 2800*2070*16 Дуб каселла каштановый",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63176/",
+    "image": "data/images/profikz/profikz_63176/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63176/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63176/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63176/1_thumb.webp"
   },
   {
     "id": "profikz_45089",
@@ -9728,6 +9798,20 @@
       "data/images/profikz/profikz_62349/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_62349/1_thumb.webp"
+  },
+  {
+    "id": "profikz_63174",
+    "name": "ЛМДФ 2800*2070*16 Дуб шерман коньяк коричневый",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63174/",
+    "image": "data/images/profikz/profikz_63174/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63174/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63174/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63174/1_thumb.webp"
   },
   {
     "id": "profikz_49348",
