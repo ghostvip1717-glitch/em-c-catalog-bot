@@ -13500,6 +13500,20 @@
     "thumb": "data/images/emc/ldsp_slanets_altayskiy_snezhnyy_f_416_f02_2800kh2070kh16mm_std_/1_thumb.webp"
   },
   {
+    "id": "ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm",
+    "name": "ЛДСП Слоновая кость С 341 PЕ 2,50х1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm.html",
+    "image": "data/images/emc/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_slonovaya_kost_s_341_pe_2_50kh1_83_16mm/1_thumb.webp"
+  },
+  {
     "id": "ldsp_sleyt_v_lmt",
     "name": "ЛДСП Слэйт V  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -18970,6 +18984,20 @@
     "thumb": "data/images/emc/biskayskaya_sosna_101_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
+    "id": "biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk",
+    "name": "Бискайская сосна 101, мат 4200*600*38 мм Столешница (ск)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk.html",
+    "image": "data/images/emc/biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp",
+    "images": [
+      "data/images/emc/biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/biskayskaya_sosna_101_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
     "id": "bosko_3118_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3",
     "name": "Боско 3118/1 Гл. 3050х600х38 мм  Столешница (Кедр) /3",
     "category": "Столешницы: Россия",
@@ -19052,6 +19080,20 @@
       "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
+    "id": "veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk",
+    "name": "Венето светлый 246SN, мат 4200*600*38 мм Столешница (ск)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk.html",
+    "image": "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp",
+    "images": [
+      "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "versal190_gl_4200_600_38_mm_stoleshnitsa_sk",
@@ -20312,20 +20354,6 @@
       "data/images/emc/mramor_markvina_chernyy_20_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/mramor_markvina_chernyy_20_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
-    "id": "mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k",
-    "name": "Мрамор Марквина черный 3029 М 4200*600*38мм Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/mramor_markvina_chernyy_3029_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
     "id": "mramor_pietra_grey_212kn_mat_3000_600_38_mm_stoleshnitsa_sk",
@@ -24246,6 +24274,20 @@
       "data/images/adilet/adilet_maserati-8/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_maserati-8/1_thumb.webp"
+  },
+  {
+    "id": "adilet_mikea-1",
+    "name": "MIKEA 1",
+    "category": "Ткани: Велюр",
+    "url": "https://adilet.net/all/mikea-1/",
+    "image": "data/images/adilet/adilet_mikea-1/1.webp",
+    "images": [
+      "data/images/adilet/adilet_mikea-1/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_mikea-1/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_mikea-1/1_thumb.webp"
   },
   {
     "id": "adilet_mikea-2",
