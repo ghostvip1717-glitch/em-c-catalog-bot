@@ -2871,7 +2871,7 @@
   },
   {
     "id": "interstone_m-701-hazel-flow",
-    "name": "M-701 Ð Hazel Flow",
+    "name": "M-701 А Hazel Flow",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-701-hazel-flow",
     "image": "data/images/interstone/interstone_m-701-hazel-flow/1.webp",
@@ -3153,7 +3153,7 @@
   },
   {
     "id": "interstone_m-718-neptun-trident",
-    "name": "M-718 Ð Neptun Trident",
+    "name": "M-718 А Neptun Trident",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-718-neptun-trident",
     "image": "data/images/interstone/interstone_m-718-neptun-trident/1.webp",
@@ -3481,7 +3481,7 @@
   },
   {
     "id": "interstone_m-724-cloud-concrete",
-    "name": "Ð-724 Cloud Concrete",
+    "name": "М-724 Cloud Concrete",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-724-cloud-concrete",
     "image": "data/images/interstone/interstone_m-724-cloud-concrete/1.webp",
@@ -5211,7 +5211,7 @@
   },
   {
     "id": "interstone_gq-444m-timeless-classic",
-    "name": "GQ 444M Timeless Ð¡lassic",
+    "name": "GQ 444M Timeless Сlassic",
     "category": "Кварцевый камень GRANDEX Quartz",
     "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-444m-timeless-classic",
     "image": "data/images/interstone/interstone_gq-444m-timeless-classic/1.webp",
@@ -13262,20 +13262,6 @@
     "thumb": "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm",
-    "name": "ЛДСП Персидский жемчуг 810 РО 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_pikar_ems",
     "name": "ЛДСП Пикар (ЕМС)",
     "category": "ЛДСП: Россия",
@@ -19584,20 +19570,6 @@
       "data/images/emc/dub_votan_2052_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
     ],
     "thumb": "data/images/emc/dub_votan_2052_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
-    "id": "dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_",
-    "name": "Дуб Вотан 2052 М 3050*700*38 мм 1U Столешница (Д)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_.html",
-    "image": "data/images/emc/dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_/1.webp",
-    "images": [
-      "data/images/emc/dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_votan_2052_m_3050_700_38_mm_1u_stoleshnitsa_d_/1_thumb.webp"
   },
   {
     "id": "dub_votan_2052_m_4200_600_38mm_stoleshnitsa_d_k",
