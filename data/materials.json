@@ -2871,7 +2871,7 @@
   },
   {
     "id": "interstone_m-701-hazel-flow",
-    "name": "M-701 А Hazel Flow",
+    "name": "M-701 Ð Hazel Flow",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-701-hazel-flow",
     "image": "data/images/interstone/interstone_m-701-hazel-flow/1.webp",
@@ -3153,7 +3153,7 @@
   },
   {
     "id": "interstone_m-718-neptun-trident",
-    "name": "M-718 А Neptun Trident",
+    "name": "M-718 Ð Neptun Trident",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-718-neptun-trident",
     "image": "data/images/interstone/interstone_m-718-neptun-trident/1.webp",
@@ -3481,7 +3481,7 @@
   },
   {
     "id": "interstone_m-724-cloud-concrete",
-    "name": "М-724 Cloud Concrete",
+    "name": "Ð-724 Cloud Concrete",
     "category": "Акриловый камень GRANDEX",
     "url": "https://interstone.kz/stones/akrilovyy-kamen/grandex/colors/m-724-cloud-concrete",
     "image": "data/images/interstone/interstone_m-724-cloud-concrete/1.webp",
@@ -5211,7 +5211,7 @@
   },
   {
     "id": "interstone_gq-444m-timeless-classic",
-    "name": "GQ 444M Timeless Сlassic",
+    "name": "GQ 444M Timeless Ð¡lassic",
     "category": "Кварцевый камень GRANDEX Quartz",
     "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-444m-timeless-classic",
     "image": "data/images/interstone/interstone_gq-444m-timeless-classic/1.webp",
@@ -10294,6 +10294,20 @@
     "thumb": "data/images/emc/ldsp_bezhevyy_0522_re_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
+    "id": "ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l",
+    "name": "ЛДСП Бежевый 0522 РЕ 2750*1830*16мм (шагрень) (Игоревский ф-л)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l.html",
+    "image": "data/images/emc/ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp",
+    "images": [
+      "data/images/emc/ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_bezhevyy_0522_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
+  },
+  {
     "id": "ldsp_bezhevyy_kremovyy_m_338_s01_2800kh2070kh16mm_std",
     "name": "ЛДСП Бежевый кремовый М.338.S01 2800х2070х16мм STD",
     "category": "ЛДСП: Россия",
@@ -11258,6 +11272,20 @@
       "data/images/emc/ldsp_dub_votan_chfmk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_votan_chfmk/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_votan_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Вотан (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_chfmk_tisnenie_wood_line.html",
+    "image": "data/images/emc/ldsp_dub_votan_chfmk_tisnenie_wood_line/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_votan_chfmk_tisnenie_wood_line/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_votan_chfmk_tisnenie_wood_line/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_votan_chfmk_tisnenie_wood_line/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_votan_376_wml_2_8_2_07_16mm",
@@ -12618,20 +12646,6 @@
     "thumb": "data/images/emc/ldsp_keyptaun_d_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_klen_0375_pr_2_50kh1_83_16mm",
-    "name": "ЛДСП Клен 0375 PR 2,50х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_klen_0375_pr_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_klen_0375_pr_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_klen_0375_pr_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_klen_0375_pr_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_klen_0375_pr_2_50kh1_83_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_klen_tanzau_chfmk",
     "name": "ЛДСП Клен танзау (ЧФМК)",
     "category": "ЛДСП: Россия",
@@ -13192,20 +13206,6 @@
     "thumb": "data/images/emc/ldsp_orekh_neapol_w_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm",
-    "name": "ЛДСП Орех экко  9459 PR 2,50х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_orinoko_r_lmt",
     "name": "ЛДСП Ориноко R  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -13260,6 +13260,20 @@
       "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm",
+    "name": "ЛДСП Персидский жемчуг 810 РО 2,8*2,07*16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm.html",
+    "image": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_pikar_ems",
@@ -14506,6 +14520,20 @@
       "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_75kh1_83_16mm/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_yasmund_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Ясмунд (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasmund_chfmk_tisnenie_wood_line.html",
+    "image": "data/images/emc/ldsp_yasmund_chfmk_tisnenie_wood_line/1.webp",
+    "images": [
+      "data/images/emc/ldsp_yasmund_chfmk_tisnenie_wood_line/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_yasmund_chfmk_tisnenie_wood_line/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_yasmund_chfmk_tisnenie_wood_line/1_thumb.webp"
   },
   {
     "id": "kira_394271792162",
@@ -19964,20 +19992,6 @@
     "thumb": "data/images/emc/kalakhari_4163_s_3050kh600kh38_mm_stoleshnitsa_kedr_2/1_thumb.webp"
   },
   {
-    "id": "kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k",
-    "name": "Кантри 2047 М 3050*600*26 мм  Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
     "id": "kaspian_chernoe_zoloto_s576_cr_3050_600_38mm_stoleshnitsa_u",
     "name": "Каспиан Черное Золото С576 CR 3050*600*38мм Столешница (У)",
     "category": "Столешницы: Россия",
@@ -20900,20 +20914,6 @@
       "data/images/emc/nova_kantu_8260_pt_3050kh600kh38_mm_stoleshnitsa_kedr_5/1_thumb.webp"
     ],
     "thumb": "data/images/emc/nova_kantu_8260_pt_3050kh600kh38_mm_stoleshnitsa_kedr_5/1_thumb.webp"
-  },
-  {
-    "id": "obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk",
-    "name": "Обожженный дуб 294, мат 4200*600*38 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/obozhzhennyy_dub_294_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "oliva_zhemchuzhnaya_120_gl_3000_600_28_mm_stoleshnitsa_sk",
