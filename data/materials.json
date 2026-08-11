@@ -12590,6 +12590,20 @@
     "thumb": "data/images/emc/ldsp_kapuchino_r_lmt/1_thumb.webp"
   },
   {
+    "id": "ldsp_kashemir_chfmk",
+    "name": "ЛДСП Кашемир (ЧФМК)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_chfmk.html",
+    "image": "data/images/emc/ldsp_kashemir_chfmk/1.webp",
+    "images": [
+      "data/images/emc/ldsp_kashemir_chfmk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_kashemir_chfmk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_kashemir_chfmk/1_thumb.webp"
+  },
+  {
     "id": "ldsp_kashemir_5981_vs_2_50kh1_83_16mm",
     "name": "ЛДСП Кашемир 5981 ВS  2,50х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -13080,20 +13094,6 @@
     "thumb": "data/images/emc/ldsp_oregano_k_2750kh1830kh18mm_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm",
-    "name": "ЛДСП Орех Американский 216 SWN 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_orekh_amerikanskiy_216_swn_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_orekh_bruno_d_lmt",
     "name": "ЛДСП Орех Бруно D (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -13260,20 +13260,6 @@
       "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_palmira_w_lmt/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm",
-    "name": "ЛДСП Персидский жемчуг 810 РО 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_persidskiy_zhemchug_810_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_pikar_ems",
@@ -13904,6 +13890,20 @@
       "data/images/emc/ldsp_temno_seryy_loft_u_2601_lf/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_temno_seryy_loft_u_2601_lf/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_terrakota_u_1606_re",
+    "name": "ЛДСП Терракота U 1606 РЕ",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_terrakota_u_1606_re.html",
+    "image": "data/images/emc/ldsp_terrakota_u_1606_re/1.webp",
+    "images": [
+      "data/images/emc/ldsp_terrakota_u_1606_re/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_terrakota_u_1606_re/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_terrakota_u_1606_re/1_thumb.webp"
   },
   {
     "id": "ldsp_titan_3894_pe_2_50kh1_83_16mm",
@@ -20144,20 +20144,6 @@
       "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
     ],
     "thumb": "data/images/emc/korolevskiy_opal_svetlyy_2705_cr_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
-    "id": "korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2",
-    "name": "Королевский опал светлый 3062/Q 3050*600*28 мм Столешница  (Кедр) /2",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2.html",
-    "image": "data/images/emc/korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2/1.webp",
-    "images": [
-      "data/images/emc/korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/korolevskiy_opal_svetlyy_3062_q_3050_600_28_mm_stoleshnitsa_kedr_2/1_thumb.webp"
   },
   {
     "id": "korolevskiy_opal_svetlyy_707_g_3050_600_26_mm_stoleshnitsa_d_k",
