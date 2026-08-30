@@ -4162,24 +4162,6 @@
     "thumb": "data/images/interstone/interstone_9212-saint-tropez/1_thumb.webp"
   },
   {
-    "id": "interstone_q101-gold-sand",
-    "name": "Q101 Gold Sand",
-    "category": "Кварцевый камень Avant Quartz",
-    "url": "https://interstone.kz/stones/kvarcevyy-kamen/avant-quartz/colors/q101-gold-sand",
-    "image": "data/images/interstone/interstone_q101-gold-sand/1.webp",
-    "images": [
-      "data/images/interstone/interstone_q101-gold-sand/1.webp",
-      "data/images/interstone/interstone_q101-gold-sand/2.webp",
-      "data/images/interstone/interstone_q101-gold-sand/3.webp"
-    ],
-    "thumbs": [
-      "data/images/interstone/interstone_q101-gold-sand/1_thumb.webp",
-      "data/images/interstone/interstone_q101-gold-sand/2_thumb.webp",
-      "data/images/interstone/interstone_q101-gold-sand/3_thumb.webp"
-    ],
-    "thumb": "data/images/interstone/interstone_q101-gold-sand/1_thumb.webp"
-  },
-  {
     "id": "interstone_q102-white-sand",
     "name": "Q102 White Sand",
     "category": "Кварцевый камень Avant Quartz",
@@ -5078,28 +5060,6 @@
     "thumb": "data/images/interstone/interstone_woodlands/1_thumb.webp"
   },
   {
-    "id": "interstone_gq-104-traditional-design",
-    "name": "GQ 104 Traditional Design",
-    "category": "Кварцевый камень GRANDEX Quartz",
-    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-104-traditional-design",
-    "image": "data/images/interstone/interstone_gq-104-traditional-design/1.webp",
-    "images": [
-      "data/images/interstone/interstone_gq-104-traditional-design/1.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/2.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/3.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/4.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/5.webp"
-    ],
-    "thumbs": [
-      "data/images/interstone/interstone_gq-104-traditional-design/1_thumb.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/2_thumb.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/3_thumb.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/4_thumb.webp",
-      "data/images/interstone/interstone_gq-104-traditional-design/5_thumb.webp"
-    ],
-    "thumb": "data/images/interstone/interstone_gq-104-traditional-design/1_thumb.webp"
-  },
-  {
     "id": "interstone_gq-112-high-tech-style",
     "name": "GQ 112 High-Tech Style",
     "category": "Кварцевый камень GRANDEX Quartz",
@@ -5452,28 +5412,6 @@
     "thumb": "data/images/interstone/interstone_gq-522-bohemian-luxury/1_thumb.webp"
   },
   {
-    "id": "interstone_gq-531-vintage-pattern",
-    "name": "GQ 531 Vintage Pattern",
-    "category": "Кварцевый камень GRANDEX Quartz",
-    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-531-vintage-pattern",
-    "image": "data/images/interstone/interstone_gq-531-vintage-pattern/1.webp",
-    "images": [
-      "data/images/interstone/interstone_gq-531-vintage-pattern/1.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/2.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/3.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/4.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/5.webp"
-    ],
-    "thumbs": [
-      "data/images/interstone/interstone_gq-531-vintage-pattern/1_thumb.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/2_thumb.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/3_thumb.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/4_thumb.webp",
-      "data/images/interstone/interstone_gq-531-vintage-pattern/5_thumb.webp"
-    ],
-    "thumb": "data/images/interstone/interstone_gq-531-vintage-pattern/1_thumb.webp"
-  },
-  {
     "id": "interstone_gq-538-art-deco",
     "name": "GQ 538 Art Deco",
     "category": "Кварцевый камень GRANDEX Quartz",
@@ -5538,28 +5476,6 @@
       "data/images/interstone/interstone_gq-543-fusion-inspiration/5_thumb.webp"
     ],
     "thumb": "data/images/interstone/interstone_gq-543-fusion-inspiration/1_thumb.webp"
-  },
-  {
-    "id": "interstone_gq-543m-fusion-inspiration",
-    "name": "GQ 543M Fusion Inspiration",
-    "category": "Кварцевый камень GRANDEX Quartz",
-    "url": "https://interstone.kz/stones/kvarcevyy-kamen/grandex-quartz/colors/gq-543m-fusion-inspiration",
-    "image": "data/images/interstone/interstone_gq-543m-fusion-inspiration/1.webp",
-    "images": [
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/1.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/2.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/3.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/4.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/5.webp"
-    ],
-    "thumbs": [
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/1_thumb.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/2_thumb.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/3_thumb.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/4_thumb.webp",
-      "data/images/interstone/interstone_gq-543m-fusion-inspiration/5_thumb.webp"
-    ],
-    "thumb": "data/images/interstone/interstone_gq-543m-fusion-inspiration/1_thumb.webp"
   },
   {
     "id": "interstone_gq-555-urban-loft",
