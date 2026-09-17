@@ -12660,20 +12660,6 @@
     "thumb": "data/images/emc/ldsp_kvarts_kolskiy_smolyanoy_f_407_f02_2800kh2070kh16mm_std_/1_thumb.webp"
   },
   {
-    "id": "ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std",
-    "name": "ЛДСП Кварц Петрозаводский дымчатый F.345.F02 2800х2070х16мм STD",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std.html",
-    "image": "data/images/emc/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std/1.webp",
-    "images": [
-      "data/images/emc/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_kvarts_petrozavodskiy_dymchatyy_f_345_f02_2800kh2070kh16mm_std/1_thumb.webp"
-  },
-  {
     "id": "ldsp_keyptaun_d_lmt",
     "name": "ЛДСП Кейптаун D (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -20088,6 +20074,20 @@
       "data/images/emc/luna_99o_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/luna_99o_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
+    "id": "madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_",
+    "name": "Мадрид 3083 Г 3050*600*26 мм  Столешница (Д)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_.html",
+    "image": "data/images/emc/madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_/1.webp",
+    "images": [
+      "data/images/emc/madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/madrid_3083_g_3050_600_26_mm_stoleshnitsa_d_/1_thumb.webp"
   },
   {
     "id": "madrid_3083_m_4200_600_38mm_stoleshnitsa_d_",
