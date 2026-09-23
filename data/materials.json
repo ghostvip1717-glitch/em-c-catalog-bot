@@ -10518,6 +10518,20 @@
     "thumb": "data/images/emc/ldsp_belyy_ekspo_u_1605_sm/1_thumb.webp"
   },
   {
+    "id": "ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm",
+    "name": "ЛДСП Белый бриллиант  8681 SM  2,8*2,07 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm.html",
+    "image": "data/images/emc/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_belyy_brilliant_8681_sm_2_8_2_07_16mm/1_thumb.webp"
+  },
+  {
     "id": "ldsp_belyy_brilliant_8681_sm_2_50kh1_83_16mm",
     "name": "ЛДСП Белый бриллиант 8681 SM  2,50х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -10980,20 +10994,6 @@
     "thumb": "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k/1_thumb.webp"
   },
   {
-    "id": "ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems",
-    "name": "ЛДСП Гикори Джексон темный 2,75*1,83*16мм (ЕМС)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems.html",
-    "image": "data/images/emc/ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems/1.webp",
-    "images": [
-      "data/images/emc/ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems/1_thumb.webp"
-  },
-  {
     "id": "ldsp_gikori_kingston_579_wml2_8_2_07_16mm",
     "name": "ЛДСП Гикори Кингстон 579 WML2,8*2,07*16мм",
     "category": "ЛДСП: Россия",
@@ -11174,6 +11174,20 @@
       "data/images/emc/ldsp_dub_alpiyskiy_u_1158_mp/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_alpiyskiy_u_1158_mp/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб Апрельский Шоколадный (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line.html",
+    "image": "data/images/emc/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_aprelskiy_shokoladnyy_chfmk_tisnenie_wood_line/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_aprelskiy_nordik_chfmk_tisnenie_wood_line",
@@ -11624,20 +11638,6 @@
     "thumb": "data/images/emc/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
-    "id": "ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm",
-    "name": "ЛДСП Дуб Крафт Золотой К 003 PW 2,75х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_dub_kraft_zolotoy_k_003_rw_2_50kh1_83_16mm",
     "name": "ЛДСП Дуб Крафт Золотой К 003 РW 2,50х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -11692,20 +11692,6 @@
       "data/images/emc/ldsp_dub_kraft_belyy_k_001_pw_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_kraft_belyy_k_001_pw_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm",
-    "name": "ЛДСП Дуб Крафт серый К 002 PW 2,75х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kraft_seryy_k_002_pw_2_75kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_monastyrskiy_ems",
@@ -12198,20 +12184,6 @@
     "thumb": "data/images/emc/ldsp_dub_zolotoy_ultra_chfmk/1_thumb.webp"
   },
   {
-    "id": "ldsp_dub_kalyari_t_lmt",
-    "name": "ЛДСП Дуб кальяри Т (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kalyari_t_lmt.html",
-    "image": "data/images/emc/ldsp_dub_kalyari_t_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kalyari_t_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kalyari_t_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kalyari_t_lmt/1_thumb.webp"
-  },
-  {
     "id": "ldsp_dub_marsala_t_lmt",
     "name": "ЛДСП Дуб марсала Т (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -12266,6 +12238,20 @@
       "data/images/emc/ldsp_dub_sakramento_temnyy_u_3194_pr/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_sakramento_temnyy_u_3194_pr/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_samdal_chfmk_tisnenie_wood_line",
+    "name": "ЛДСП Дуб самдал (ЧФМК) (тиснение  Wood line)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_samdal_chfmk_tisnenie_wood_line.html",
+    "image": "data/images/emc/ldsp_dub_samdal_chfmk_tisnenie_wood_line/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_samdal_chfmk_tisnenie_wood_line/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_samdal_chfmk_tisnenie_wood_line/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_samdal_chfmk_tisnenie_wood_line/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_seryy_u_2169_pr",
@@ -12616,6 +12602,20 @@
       "data/images/emc/ldsp_kanon_peschanyy_r_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_kanon_peschanyy_r_lmt/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_kapuchino_chfmk",
+    "name": "ЛДСП Капучино (ЧФМК)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_kapuchino_chfmk.html",
+    "image": "data/images/emc/ldsp_kapuchino_chfmk/1.webp",
+    "images": [
+      "data/images/emc/ldsp_kapuchino_chfmk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_kapuchino_chfmk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_kapuchino_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_kapuchino_806_ro_2_8_2_07_16mm",
@@ -19404,20 +19404,6 @@
     "thumb": "data/images/emc/bronzovyy_kaspiy_75_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
-    "id": "veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk",
-    "name": "Венето светлый 246SN, мат 4200*600*38 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/veneto_svetlyy_246sn_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
     "id": "versal190_gl_4200_600_38_mm_stoleshnitsa_sk",
     "name": "Версаль190, гл 4200*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -19796,20 +19782,6 @@
     "thumb": "data/images/emc/dub_kraft_belyy_1001_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
   },
   {
-    "id": "dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1",
-    "name": "Дуб Крафт серый 1002/КР 3050х600х38 мм  Столешница (Кедр) /1",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1.html",
-    "image": "data/images/emc/dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp",
-    "images": [
-      "data/images/emc/dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_kraft_seryy_1002_kr_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-  },
-  {
     "id": "dub_niagara_30p_mat_3000_600_38_mm_stoleshnitsa_sk",
     "name": "Дуб Ниагара 30П, мат 3000*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -20186,20 +20158,6 @@
       "data/images/emc/kastillo_temnyy_4046_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
     ],
     "thumb": "data/images/emc/kastillo_temnyy_4046_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
-    "id": "kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k",
-    "name": "Кастилло темный 4046 М 4200*600*38мм   Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/kastillo_temnyy_4046_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
     "id": "korolevskiy_opal_183_gl_3000_600_28_mm_stoleshnitsa_sk",
@@ -21852,20 +21810,6 @@
       "data/images/emc/chernyy_tunis_3074_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
     ],
     "thumb": "data/images/emc/chernyy_tunis_3074_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-  },
-  {
-    "id": "shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u",
-    "name": "Шелковый камень К349 BS 3050*600*38мм Столешница (У)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u.html",
-    "image": "data/images/emc/shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u/1.webp",
-    "images": [
-      "data/images/emc/shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/shelkovyy_kamen_k349_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
   },
   {
     "id": "eteriya_3086_m_3050_600_26_mm_stoleshnitsa_d_",
