@@ -7978,6 +7978,20 @@
     "thumbs": []
   },
   {
+    "id": "profikz_63823",
+    "name": "ЛДСП 2800*2070*16 Карри жёлтый",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63823/",
+    "image": "data/images/profikz/profikz_63823/1.webp",
+    "images": [
+      "data/images/profikz/profikz_63823/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_63823/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_63823/1_thumb.webp"
+  },
+  {
     "id": "profikz_45117",
     "name": "ЛДСП 2800*2070*16 Карри жёлтый",
     "category": "ЛДСП: Австрия (Egger)",
@@ -8164,6 +8178,16 @@
       "data/images/profikz/profikz_45034/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_45034/1_thumb.webp"
+  },
+  {
+    "id": "profikz_63824",
+    "name": "ЛДСП 2800*2070*16 Красный китайский",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/63824/",
+    "image": null,
+    "images": [],
+    "thumb": null,
+    "thumbs": []
   },
   {
     "id": "profikz_45385",
@@ -10476,20 +10500,6 @@
     "thumb": "data/images/emc/ldsp_belyy_o_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_belyy_o_2_75kh1_83_10mm_lmt",
-    "name": "ЛДСП Белый О  2,75х1,83 10мм  (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_belyy_o_2_75kh1_83_10mm_lmt.html",
-    "image": "data/images/emc/ldsp_belyy_o_2_75kh1_83_10mm_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_belyy_o_2_75kh1_83_10mm_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_belyy_o_2_75kh1_83_10mm_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_belyy_o_2_75kh1_83_10mm_lmt/1_thumb.webp"
-  },
-  {
     "id": "ldsp_belyy_r_lmt",
     "name": "ЛДСП Белый Р  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -11414,20 +11424,6 @@
     "thumb": "data/images/emc/ldsp_dub_votan_u_2167_pr/1_thumb.webp"
   },
   {
-    "id": "ldsp_dub_garden_k_ems",
-    "name": "ЛДСП Дуб Гарден  к (ЕМС)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_garden_k_ems.html",
-    "image": "data/images/emc/ldsp_dub_garden_k_ems/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_garden_k_ems/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_garden_k_ems/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_garden_k_ems/1_thumb.webp"
-  },
-  {
     "id": "ldsp_dub_garden_svetlyy_chfmk_tisnenie_wood_line",
     "name": "ЛДСП Дуб Гарден светлый (ЧФМК) (тиснение  Wood line)",
     "category": "ЛДСП: Россия",
@@ -11594,20 +11590,6 @@
       "data/images/emc/ldsp_dub_kanon_u_2157_pr/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_kanon_u_2157_pr/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm",
-    "name": "ЛДСП Дуб Кастелло Медовый К 358 PW 2,8*2,07 *16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kastello_medovyy_k_358_pw_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_kastello_seryy_k_357_pw_2_8_2_07_16mm",
@@ -13568,20 +13550,6 @@
       "data/images/emc/ldsp_santyago_chernyy_2750_1830_16mm_ems/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_santyago_chernyy_2750_1830_16mm_ems/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_satin_7045_re_2_8_2_07_16mm",
-    "name": "ЛДСП Сатин  7045 РЕ  2,8*2,07 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_satin_7045_re_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_satin_7045_re_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_satin_7045_re_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_satin_7045_re_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_satin_7045_re_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_svetlo_seryy_chfmk",
@@ -18732,20 +18700,6 @@
     "thumb": "data/images/emc/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3/1_thumb.webp"
   },
   {
-    "id": "agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_",
-    "name": "Агат белый  937 М 3050*600*38мм Столешница (Д)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_.html",
-    "image": "data/images/emc/agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_/1.webp",
-    "images": [
-      "data/images/emc/agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/agat_belyy_937_m_3050_600_38mm_stoleshnitsa_d_/1_thumb.webp"
-  },
-  {
     "id": "agat_belyy_937_matte_3050_600_26_mm_stoleshnitsa_d_",
     "name": "Агат белый 937 матте 3050*600*26 мм Столешница (Д)",
     "category": "Столешницы: Россия",
@@ -20172,20 +20126,6 @@
       "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
     ],
     "thumb": "data/images/emc/kantri_2047_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
-    "id": "kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k",
-    "name": "Кантри 2047 М 3050*600*38мм Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/kantri_2047_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
     "id": "kaspian_chernoe_zoloto_s576_cr_3050_600_38mm_stoleshnitsa_u",
