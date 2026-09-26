@@ -28472,20 +28472,6 @@
     "thumb": "data/images/adilet/adilet_only-white-01/1_thumb.webp"
   },
   {
-    "id": "adilet_rich-1",
-    "name": "RICH 1",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/rich-1/",
-    "image": "data/images/adilet/adilet_rich-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_rich-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_rich-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_rich-1/1_thumb.webp"
-  },
-  {
     "id": "adilet_rich-11",
     "name": "RICH 11",
     "category": "Ткани: Искусственная кожа",
