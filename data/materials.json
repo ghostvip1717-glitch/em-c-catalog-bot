@@ -25518,6 +25518,20 @@
     "thumb": "data/images/adilet/adilet_polo-8/1_thumb.webp"
   },
   {
+    "id": "adilet_romeo-1",
+    "name": "ROMEO 1",
+    "category": "Ткани: Велюр",
+    "url": "https://adilet.net/all/romeo-1/",
+    "image": "data/images/adilet/adilet_romeo-1/1.webp",
+    "images": [
+      "data/images/adilet/adilet_romeo-1/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_romeo-1/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_romeo-1/1_thumb.webp"
+  },
+  {
     "id": "adilet_romeo2",
     "name": "ROMEO 2",
     "category": "Ткани: Велюр",
