@@ -11034,20 +11034,6 @@
     "thumb": "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2_75_1_83_16mm_ems/1_thumb.webp"
   },
   {
-    "id": "ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k",
-    "name": "ЛДСП Гикори Джексон светлый 2750*1830*16мм (ЕМС) к",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k.html",
-    "image": "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k/1.webp",
-    "images": [
-      "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_gikori_dzhekson_svetlyy_2750_1830_16mm_ems_k/1_thumb.webp"
-  },
-  {
     "id": "ldsp_gikori_dzhekson_temnyy_2_75_1_83_16mm_ems",
     "name": "ЛДСП Гикори Джексон темный 2,75*1,83*16мм (ЕМС)",
     "category": "ЛДСП: Россия",
@@ -14296,20 +14282,6 @@
     "thumb": "data/images/emc/ldsp_feniks_d_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std",
-    "name": "ЛДСП Фиолетовый небесный М.202.S01 2800х2070х16мм STD",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std.html",
-    "image": "data/images/emc/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std/1.webp",
-    "images": [
-      "data/images/emc/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_fioletovyy_nebesnyy_m_202_s01_2800kh2070kh16mm_std/1_thumb.webp"
-  },
-  {
     "id": "ldsp_frost_k_lmt",
     "name": "ЛДСП Фрост К  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -14742,20 +14714,6 @@
       "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_yasen_shimo_temnyy_chfmk",
-    "name": "ЛДСП Ясень шимо темный (ЧФМК)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_chfmk.html",
-    "image": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm",
@@ -19148,20 +19106,6 @@
       "data/images/emc/belyy_10_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/belyy_10_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
-    "id": "belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk",
-    "name": "Белый 10, мат 4200*600*38 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/belyy_10_mat_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "belyy_1011_m_3050_600_26_mm_stoleshnitsa_d_k",
