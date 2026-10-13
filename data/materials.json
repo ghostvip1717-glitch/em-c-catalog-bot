@@ -12378,6 +12378,20 @@
     "thumb": "data/images/emc/ldsp_dub_sonoma_003_chfmk/1_thumb.webp"
   },
   {
+    "id": "ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Дуб сонома 3025 PR 2,50х1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm.html",
+    "image": "data/images/emc/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm/1_thumb.webp"
+  },
+  {
     "id": "ldsp_dub_sonoma_3025_pr_2_75kh1_83_16mm",
     "name": "ЛДСП Дуб сонома 3025 PR 2,75х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -14714,20 +14728,6 @@
       "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm",
-    "name": "ЛДСП Ясень шимо темный 3357 PR 2,50х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_yasmund_chfmk_tisnenie_wood_line",
@@ -19122,20 +19122,6 @@
     "thumb": "data/images/emc/belyy_1011_m_3050_600_26_mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
-    "id": "belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k",
-    "name": "Белый 1011 М 4200*600*38мм Столешница (Д ) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/belyy_1011_m_4200_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
     "id": "belyy_2706_cr_3050_600_38mm_stoleshnitsa_u",
     "name": "Белый 2706 CR 3050*600*38мм Столешница (У)",
     "category": "Столешницы: Россия",
@@ -19274,20 +19260,6 @@
       "data/images/emc/berill_bezhevyy_156_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/berill_bezhevyy_156_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
-  },
-  {
-    "id": "berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk",
-    "name": "Берилл бежевый 156, мат 3000*600*28 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/berill_bezhevyy_156_mat_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "berill_bezhevyy_156_mat_3000_600_38_mm_stoleshnitsa_sk",
@@ -19598,20 +19570,6 @@
     "thumb": "data/images/emc/dub_bunratti_2091_m_3050_600_26_mm_stoleshnitsa_d_/1_thumb.webp"
   },
   {
-    "id": "dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u",
-    "name": "Дуб Бунратти 2708 BS 4200*600*38мм Столешница (У)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u.html",
-    "image": "data/images/emc/dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u/1.webp",
-    "images": [
-      "data/images/emc/dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_bunratti_2708_bs_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
     "id": "dub_vodan_u604_bs_3050_600_38mm_stoleshnitsa_u",
     "name": "Дуб Водан U604 BS 3050*600*38мм Столешница (У)",
     "category": "Столешницы: Россия",
@@ -19820,20 +19778,6 @@
       "data/images/emc/dub_samdal_s511_bs_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
     ],
     "thumb": "data/images/emc/dub_samdal_s511_bs_4200_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
-    "id": "dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1",
-    "name": "Дуб Северный Шервуд 2111/ТЛ 3050х600х38 мм Столешница (Кедр)/1",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1.html",
-    "image": "data/images/emc/dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp",
-    "images": [
-      "data/images/emc/dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_severnyy_shervud_2111_tl_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
   },
   {
     "id": "dub_sonoma_svetlyy_3025_bs_4200_600_38mm_stoleshnitsa_u",
