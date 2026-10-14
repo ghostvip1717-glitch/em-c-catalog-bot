@@ -6330,20 +6330,6 @@
     "thumb": "data/images/profikz/profikz_45108/1_thumb.webp"
   },
   {
-    "id": "profikz_45012",
-    "name": "ЛДСП 2800*2070*16 Белый премиум",
-    "category": "ЛДСП: Австрия (Egger)",
-    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/45012/",
-    "image": "data/images/profikz/profikz_45012/1.webp",
-    "images": [
-      "data/images/profikz/profikz_45012/1.webp"
-    ],
-    "thumbs": [
-      "data/images/profikz/profikz_45012/1_thumb.webp"
-    ],
-    "thumb": "data/images/profikz/profikz_45012/1_thumb.webp"
-  },
-  {
     "id": "profikz_45022",
     "name": "ЛДСП 2800*2070*16 Белый премиум",
     "category": "ЛДСП: Австрия (Egger)",
@@ -6356,6 +6342,20 @@
       "data/images/profikz/profikz_45022/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_45022/1_thumb.webp"
+  },
+  {
+    "id": "profikz_45012",
+    "name": "ЛДСП 2800*2070*16 Белый премиум",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/45012/",
+    "image": "data/images/profikz/profikz_45012/1.webp",
+    "images": [
+      "data/images/profikz/profikz_45012/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_45012/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_45012/1_thumb.webp"
   },
   {
     "id": "profikz_61963",
@@ -12084,6 +12084,20 @@
     "thumb": "data/images/emc/ldsp_dub_shavinigan_u_31199_pr/1_thumb.webp"
   },
   {
+    "id": "ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm",
+    "name": "ЛДСП Дуб Экспресив Бронзовый К 090 PW 2,5*1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm.html",
+    "image": "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1_thumb.webp"
+  },
+  {
     "id": "ldsp_dub_elison_svetlyy_395_wml_2_8_2_07_16mm",
     "name": "ЛДСП Дуб Элисон светлый 395 WML 2,8*2,07*16мм",
     "category": "ЛДСП: Россия",
@@ -12362,20 +12376,6 @@
       "data/images/emc/ldsp_dub_solsberi_r_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_solsberi_r_lmt/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_sonoma_003_chfmk",
-    "name": "ЛДСП Дуб сонома 003 (ЧФМК)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_sonoma_003_chfmk.html",
-    "image": "data/images/emc/ldsp_dub_sonoma_003_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_sonoma_003_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_sonoma_003_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_sonoma_003_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_sonoma_3025_pr_2_50kh1_83_16mm",
@@ -13078,20 +13078,6 @@
     "thumb": "data/images/emc/ldsp_munlayt_u_3700_re/1_thumb.webp"
   },
   {
-    "id": "ldsp_navi_u_1600_c_re",
-    "name": "ЛДСП Нави U 1600/C РЕ",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_navi_u_1600_c_re.html",
-    "image": "data/images/emc/ldsp_navi_u_1600_c_re/1.webp",
-    "images": [
-      "data/images/emc/ldsp_navi_u_1600_c_re/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_navi_u_1600_c_re/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_navi_u_1600_c_re/1_thumb.webp"
-  },
-  {
     "id": "ldsp_neyro_k_lmt",
     "name": "ЛДСП Нейро К  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -13398,20 +13384,6 @@
       "data/images/emc/ldsp_orekh_mariya_luiza_9490_pr_2_75kh1_83_16mm_igorevskiy_f_l/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_orekh_mariya_luiza_9490_pr_2_75kh1_83_16mm_igorevskiy_f_l/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_orekh_neapol_w_lmt",
-    "name": "ЛДСП Орех неаполь W (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_orekh_neapol_w_lmt.html",
-    "image": "data/images/emc/ldsp_orekh_neapol_w_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_orekh_neapol_w_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_orekh_neapol_w_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_orekh_neapol_w_lmt/1_thumb.webp"
   },
   {
     "id": "ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm",
@@ -14156,20 +14128,6 @@
     "thumb": "data/images/emc/ldsp_temno_seryy_loft_u_2601_lf/1_thumb.webp"
   },
   {
-    "id": "ldsp_terrakota_u_1606_re",
-    "name": "ЛДСП Терракота U 1606 РЕ",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_terrakota_u_1606_re.html",
-    "image": "data/images/emc/ldsp_terrakota_u_1606_re/1.webp",
-    "images": [
-      "data/images/emc/ldsp_terrakota_u_1606_re/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_terrakota_u_1606_re/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_terrakota_u_1606_re/1_thumb.webp"
-  },
-  {
     "id": "ldsp_titan_3894_pe_2_50kh1_83_16mm",
     "name": "ЛДСП Титан  3894 PЕ 2,50х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -14728,6 +14686,34 @@
       "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_yasen_shimo_temnyy_chfmk",
+    "name": "ЛДСП Ясень шимо темный (ЧФМК)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_chfmk.html",
+    "image": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp",
+    "images": [
+      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Ясень шимо темный 3357 PR 2,50х1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm.html",
+    "image": "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_yasmund_chfmk_tisnenie_wood_line",
@@ -21724,20 +21710,6 @@
       "data/images/emc/eteriya_3086_m_4200_600_38_mm_stoleshnitsa_d/1_thumb.webp"
     ],
     "thumb": "data/images/emc/eteriya_3086_m_4200_600_38_mm_stoleshnitsa_d/1_thumb.webp"
-  },
-  {
-    "id": "etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk",
-    "name": "Этория 293Л мат 3000*600*38 мм Столешница (ск)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk/1.webp",
-    "images": [
-      "data/images/emc/etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/etoriya_293l_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "etoriya_293l_mat_4200_600_38_mm_stoleshnitsa_sk",
