@@ -10964,6 +10964,20 @@
     "thumb": "data/images/emc/ldsp_vatervud_u_31170_pr/1_thumb.webp"
   },
   {
+    "id": "ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm",
+    "name": "ЛДСП Венге цаво 3354 PR 2,50х1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm.html",
+    "image": "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1_thumb.webp"
+  },
+  {
     "id": "ldsp_vinterberg_chfmk_tisnenie_wood_line",
     "name": "ЛДСП Винтерберг (ЧФМК) (тиснение Wood line)",
     "category": "ЛДСП: Россия",
@@ -12222,6 +12236,20 @@
       "data/images/emc/ldsp_dub_belfort_3885_pr_2_50kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_belfort_3885_pr_2_50kh1_83_16mm/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_belyy_ultra_chfmk",
+    "name": "ЛДСП Дуб белый ультра (ЧФМК)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_belyy_ultra_chfmk.html",
+    "image": "data/images/emc/ldsp_dub_belyy_ultra_chfmk/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_belyy_ultra_chfmk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_belyy_ultra_chfmk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_belyy_ultra_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_galiano_t_lmt",
@@ -13916,20 +13944,6 @@
       "data/images/emc/ldsp_solnechnyy_l_lmt/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_solnechnyy_l_lmt/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_solnechnyy_r_lmt",
-    "name": "ЛДСП Солнечный Р  (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_solnechnyy_r_lmt.html",
-    "image": "data/images/emc/ldsp_solnechnyy_r_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_solnechnyy_r_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_solnechnyy_r_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_solnechnyy_r_lmt/1_thumb.webp"
   },
   {
     "id": "ldsp_sonata_l_lmt",
@@ -18576,6 +18590,26 @@
     "thumbs": []
   },
   {
+    "id": "profikz_63910",
+    "name": "Столешница  4100*650*38 Дуб каселла коричневый",
+    "category": "Столешницы: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/stoleshnitsy_i_mebelnye_shchity_1/stoleshnitsy_egger/63910/",
+    "image": null,
+    "images": [],
+    "thumb": null,
+    "thumbs": []
+  },
+  {
+    "id": "profikz_63912",
+    "name": "Столешница  4100*650*38 Дуб каселла натуральный",
+    "category": "Столешницы: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/stoleshnitsy_i_mebelnye_shchity_1/stoleshnitsy_egger/63912/",
+    "image": null,
+    "images": [],
+    "thumb": null,
+    "thumbs": []
+  },
+  {
     "id": "profikz_48230",
     "name": "Столешница  4100*920*38 Белый премиум",
     "category": "Столешницы: Австрия (Egger)",
@@ -19008,6 +19042,20 @@
       "data/images/emc/aurum_115_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/aurum_115_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
+    "id": "bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2",
+    "name": "Бавария 2149/М 3000х600х38 мм  Столешница Проф-Стандарт /2",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2.html",
+    "image": "data/images/emc/bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2/1.webp",
+    "images": [
+      "data/images/emc/bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/bavariya_2149_m_3000kh600kh38_mm_stoleshnitsa_prof_standart_2/1_thumb.webp"
   },
   {
     "id": "bavariya_2149_m_3050kh600kh38_mm_stoleshnitsa_kedr_2",
