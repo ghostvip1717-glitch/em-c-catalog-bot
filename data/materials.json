@@ -10544,6 +10544,20 @@
     "thumb": "data/images/emc/ldsp_belyy_o_2_75kh1_83_10mm_lmt/1_thumb.webp"
   },
   {
+    "id": "ldsp_belyy_o_22mm_lmt",
+    "name": "ЛДСП Белый О 22мм (ЛМТ)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_belyy_o_22mm_lmt.html",
+    "image": "data/images/emc/ldsp_belyy_o_22mm_lmt/1.webp",
+    "images": [
+      "data/images/emc/ldsp_belyy_o_22mm_lmt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_belyy_o_22mm_lmt/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_belyy_o_22mm_lmt/1_thumb.webp"
+  },
+  {
     "id": "ldsp_belyy_r_lmt",
     "name": "ЛДСП Белый Р  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -10782,6 +10796,20 @@
     "thumb": "data/images/emc/ldsp_beton_norilskiy_snezhnyy_f_411_f01_2800kh2070kh16mm_std/1_thumb.webp"
   },
   {
+    "id": "ldsp_beton_payn_svetlyy_u_31148_pr",
+    "name": "ЛДСП Бетон Пайн Светлый U 31148 PR",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_beton_payn_svetlyy_u_31148_pr.html",
+    "image": "data/images/emc/ldsp_beton_payn_svetlyy_u_31148_pr/1.webp",
+    "images": [
+      "data/images/emc/ldsp_beton_payn_svetlyy_u_31148_pr/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_beton_payn_svetlyy_u_31148_pr/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_beton_payn_svetlyy_u_31148_pr/1_thumb.webp"
+  },
+  {
     "id": "ldsp_beton_portlend_819_ro_2_8_2_07_16mm",
     "name": "ЛДСП Бетон Портленд 819 РО 2,8*2,07*16мм",
     "category": "ЛДСП: Россия",
@@ -10962,20 +10990,6 @@
       "data/images/emc/ldsp_vatervud_u_31170_pr/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_vatervud_u_31170_pr/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm",
-    "name": "ЛДСП Венге цаво 3354 PR 2,50х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_venge_tsavo_3354_pr_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_vinterberg_chfmk_tisnenie_wood_line",
@@ -11440,6 +11454,20 @@
     "thumb": "data/images/emc/ldsp_dub_votan_376_wml_2_8_2_07_16mm/1_thumb.webp"
   },
   {
+    "id": "ldsp_dub_votan_r_2_75kh1_83_10mm_lmt",
+    "name": "ЛДСП Дуб Вотан R  2,75х1,83 10мм  (ЛМТ)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt.html",
+    "image": "data/images/emc/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_votan_r_2_75kh1_83_10mm_lmt/1_thumb.webp"
+  },
+  {
     "id": "ldsp_dub_votan_r_lmt",
     "name": "ЛДСП Дуб Вотан R (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -11676,20 +11704,6 @@
       "data/images/emc/ldsp_dub_kolomenskiy_pryanyy_d_342_s01_2800kh2070kh16mm_std_/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_kolomenskiy_pryanyy_d_342_s01_2800kh2070kh16mm_std_/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm",
-    "name": "ЛДСП Дуб Крафт Белый К 001 РW 2,50х1,83 16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm.html",
-    "image": "data/images/emc/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_kraft_belyy_k_001_rw_2_50kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_kraft_zolotoy_k_003_pw_2_75kh1_83_16mm",
@@ -12194,20 +12208,6 @@
       "data/images/emc/ldsp_dub_atlanta_chfmk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_atlanta_chfmk/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_barrik_svetlyy_chfmk",
-    "name": "ЛДСП Дуб баррик светлый (ЧФМК)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_barrik_svetlyy_chfmk.html",
-    "image": "data/images/emc/ldsp_dub_barrik_svetlyy_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_barrik_svetlyy_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_barrik_svetlyy_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_barrik_svetlyy_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_barrik_temnyy_chfmk",
@@ -13036,6 +13036,20 @@
     "thumb": "data/images/emc/ldsp_metropolitan_grey_u_9705_re/1_thumb.webp"
   },
   {
+    "id": "ldsp_mokko_u_2502_pe",
+    "name": "ЛДСП Мокко  U 2502 PE",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_mokko_u_2502_pe.html",
+    "image": "data/images/emc/ldsp_mokko_u_2502_pe/1.webp",
+    "images": [
+      "data/images/emc/ldsp_mokko_u_2502_pe/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_mokko_u_2502_pe/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_mokko_u_2502_pe/1_thumb.webp"
+  },
+  {
     "id": "ldsp_molokay_u_9111_pr",
     "name": "ЛДСП Молокай U 9111 PR",
     "category": "ЛДСП: Россия",
@@ -13412,6 +13426,20 @@
       "data/images/emc/ldsp_orekh_mariya_luiza_9490_pr_2_75kh1_83_16mm_igorevskiy_f_l/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_orekh_mariya_luiza_9490_pr_2_75kh1_83_16mm_igorevskiy_f_l/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_orekh_neapol_w_lmt",
+    "name": "ЛДСП Орех неаполь W (ЛМТ)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_orekh_neapol_w_lmt.html",
+    "image": "data/images/emc/ldsp_orekh_neapol_w_lmt/1.webp",
+    "images": [
+      "data/images/emc/ldsp_orekh_neapol_w_lmt/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_orekh_neapol_w_lmt/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_orekh_neapol_w_lmt/1_thumb.webp"
   },
   {
     "id": "ldsp_orekh_ekko_9459_pr_2_50kh1_83_16mm",
@@ -13918,6 +13946,20 @@
     "thumb": "data/images/emc/ldsp_slanets_altayskiy_snezhnyy_f_416_f02_2800kh2070kh16mm_std_/1_thumb.webp"
   },
   {
+    "id": "ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l",
+    "name": "ЛДСП Слоновая кость С 341 РЕ 2750*1830*16мм (шагрень) (Игоревский ф-л)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l.html",
+    "image": "data/images/emc/ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp",
+    "images": [
+      "data/images/emc/ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_slonovaya_kost_s_341_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
+  },
+  {
     "id": "ldsp_sleyt_v_lmt",
     "name": "ЛДСП Слэйт V  (ЛМТ)",
     "category": "ЛДСП: Россия",
@@ -14296,20 +14338,6 @@
     "thumb": "data/images/emc/ldsp_khronos_d_lmt/1_thumb.webp"
   },
   {
-    "id": "ldsp_khyugge_k_lmt",
-    "name": "ЛДСП Хюгге К  (ЛМТ)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_khyugge_k_lmt.html",
-    "image": "data/images/emc/ldsp_khyugge_k_lmt/1.webp",
-    "images": [
-      "data/images/emc/ldsp_khyugge_k_lmt/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_khyugge_k_lmt/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_khyugge_k_lmt/1_thumb.webp"
-  },
-  {
     "id": "ldsp_tsement_vyatskiy_tumannyy_f_434_f01_2800kh2070kh16mm_std",
     "name": "ЛДСП Цемент Вятский туманный F.434.F01 2800х2070х16мм STD",
     "category": "ЛДСП: Россия",
@@ -14660,20 +14688,6 @@
     "thumb": "data/images/emc/ldsp_yasen_ankor_temnyy_chfmk/1_thumb.webp"
   },
   {
-    "id": "ldsp_yasen_shimo_svetlyy_chfmk",
-    "name": "ЛДСП Ясень шимо светлый (ЧФМК)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_svetlyy_chfmk.html",
-    "image": "data/images/emc/ldsp_yasen_shimo_svetlyy_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_yasen_shimo_svetlyy_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_yasen_shimo_svetlyy_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_yasen_shimo_svetlyy_chfmk/1_thumb.webp"
-  },
-  {
     "id": "ldsp_yasen_shimo_svetlyy_3356_pr_2_50kh1_83_16mm",
     "name": "ЛДСП Ясень шимо светлый 3356 PR 2,50х1,83 16мм",
     "category": "ЛДСП: Россия",
@@ -14700,20 +14714,6 @@
       "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_yasen_shimo_svetlyy_3356_pr_2_75kh1_83_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_yasen_shimo_temnyy_chfmk",
-    "name": "ЛДСП Ясень шимо темный (ЧФМК)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_yasen_shimo_temnyy_chfmk.html",
-    "image": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp",
-    "images": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_yasen_shimo_temnyy_chfmk/1_thumb.webp"
   },
   {
     "id": "ldsp_yasen_shimo_temnyy_3357_pr_2_50kh1_83_16mm",
@@ -18764,20 +18764,6 @@
     "thumb": "data/images/emc/stromboly_grey_7351_s_4100kh600kh38_mm_kedr_1/1_thumb.webp"
   },
   {
-    "id": "agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3",
-    "name": "Агат бежевый 938/1 Гл. 3050х600х38 мм Столешница (Кедр)/3",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3.html",
-    "image": "data/images/emc/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3/1.webp",
-    "images": [
-      "data/images/emc/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/agat_bezhevyy_938_1_gl_3050kh600kh38_mm_stoleshnitsa_kedr_3/1_thumb.webp"
-  },
-  {
     "id": "agat_belyy_937_matte_3050_600_26_mm_stoleshnitsa_d_",
     "name": "Агат белый 937 матте 3050*600*26 мм Столешница (Д)",
     "category": "Столешницы: Россия",
@@ -18818,20 +18804,6 @@
       "data/images/emc/azul_oniks_s509_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
     ],
     "thumb": "data/images/emc/azul_oniks_s509_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
-    "id": "alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k",
-    "name": "Аламбра 4026 М 3050*600*38мм Столешница (Д) к",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k.html",
-    "image": "data/images/emc/alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k/1.webp",
-    "images": [
-      "data/images/emc/alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/alambra_4026_m_3050_600_38mm_stoleshnitsa_d_k/1_thumb.webp"
   },
   {
     "id": "alambra_temnaya_4035_m_3050_600_26_mm_stoleshnitsa_d_k",
@@ -19910,20 +19882,6 @@
       "data/images/emc/dub_kera_2075_m_4200_600_38_mm_stoleshnitsa_d_k/1_thumb.webp"
     ],
     "thumb": "data/images/emc/dub_kera_2075_m_4200_600_38_mm_stoleshnitsa_d_k/1_thumb.webp"
-  },
-  {
-    "id": "dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1",
-    "name": "Дуб классический 5270/S  3050х600х38 мм Столешница (Кедр)/1",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1.html",
-    "image": "data/images/emc/dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp",
-    "images": [
-      "data/images/emc/dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_klassicheskiy_5270_s_3050kh600kh38_mm_stoleshnitsa_kedr_1/1_thumb.webp"
   },
   {
     "id": "dub_korsika_svetlaya_232p_mat_3000_600_38_mm_stoleshnitsa_sk",
@@ -21242,20 +21200,6 @@
     "thumb": "data/images/emc/rambla_134_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
-    "id": "satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u",
-    "name": "Сатин 7045 BS НD 3050*600*38мм Столешница (У)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u.html",
-    "image": "data/images/emc/satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u/1.webp",
-    "images": [
-      "data/images/emc/satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/satin_7045_bs_nd_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-  },
-  {
     "id": "sakhara_belaya_130_mat_3000_600_28_mm_stoleshnitsa_sk",
     "name": "Сахара белая 130, мат 3000*600*28 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -21646,6 +21590,20 @@
       "data/images/emc/chernaya_bronza_22_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
     "thumb": "data/images/emc/chernaya_bronza_22_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
+    "id": "chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk",
+    "name": "Черное серебро 21, гл 3000*600*28 мм Столешница (ск)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk.html",
+    "image": "data/images/emc/chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk/1.webp",
+    "images": [
+      "data/images/emc/chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/chernoe_serebro_21_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "chernoe_serebro_21_gl_4200_600_38_mm_stoleshnitsa_sk",
