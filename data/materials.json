@@ -27518,10 +27518,14 @@
     "name": "ENZO 6",
     "category": "Ткани: Искусственная замша",
     "url": "https://adilet.net/all/enzo-6/",
-    "image": null,
-    "thumb": null,
-    "thumbs": [],
-    "images": []
+    "image": "data/images/adilet/adilet_enzo-6/1.webp",
+    "images": [
+      "data/images/adilet/adilet_enzo-6/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_enzo-6/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_enzo-6/1_thumb.webp"
   },
   {
     "id": "adilet_enzo-7",
