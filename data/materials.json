@@ -6878,6 +6878,20 @@
     "thumb": "data/images/profikz/profikz_45053/1_thumb.webp"
   },
   {
+    "id": "profikz_64155",
+    "name": "ЛДСП 2800*2070*16 Дуб бельмонт коричневый 1/2",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_egger_1_2/64155/",
+    "image": "data/images/profikz/profikz_64155/1.webp",
+    "images": [
+      "data/images/profikz/profikz_64155/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_64155/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_64155/1_thumb.webp"
+  },
+  {
     "id": "profikz_45020",
     "name": "ЛДСП 2800*2070*16 Дуб виченца",
     "category": "ЛДСП: Австрия (Egger)",
