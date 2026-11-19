@@ -7776,20 +7776,6 @@
     "thumb": "data/images/profikz/profikz_45377/1_thumb.webp"
   },
   {
-    "id": "profikz_45120",
-    "name": "ЛДСП 2800*2070*16 Зелёный шалфей",
-    "category": "ЛДСП: Австрия (Egger)",
-    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/45120/",
-    "image": "data/images/profikz/profikz_45120/1.webp",
-    "images": [
-      "data/images/profikz/profikz_45120/1.webp"
-    ],
-    "thumbs": [
-      "data/images/profikz/profikz_45120/1_thumb.webp"
-    ],
-    "thumb": "data/images/profikz/profikz_45120/1_thumb.webp"
-  },
-  {
     "id": "profikz_45064",
     "name": "ЛДСП 2800*2070*16 Зелёный шалфей",
     "category": "ЛДСП: Австрия (Egger)",
@@ -7802,6 +7788,20 @@
       "data/images/profikz/profikz_45064/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_45064/1_thumb.webp"
+  },
+  {
+    "id": "profikz_45120",
+    "name": "ЛДСП 2800*2070*16 Зелёный шалфей",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/45120/",
+    "image": "data/images/profikz/profikz_45120/1.webp",
+    "images": [
+      "data/images/profikz/profikz_45120/1.webp"
+    ],
+    "thumbs": [
+      "data/images/profikz/profikz_45120/1_thumb.webp"
+    ],
+    "thumb": "data/images/profikz/profikz_45120/1_thumb.webp"
   },
   {
     "id": "profikz_45024",
@@ -10020,6 +10020,16 @@
       "data/images/profikz/profikz_63174/1_thumb.webp"
     ],
     "thumb": "data/images/profikz/profikz_63174/1_thumb.webp"
+  },
+  {
+    "id": "profikz_64193",
+    "name": "ЛМДФ 2800*2070*16 Лес черный",
+    "category": "ЛДСП: Австрия (Egger)",
+    "url": "https://profikz.kz/catalog/egger/listovye_materialy/ldsp_lmdf_egger/64193/",
+    "image": null,
+    "images": [],
+    "thumb": null,
+    "thumbs": []
   },
   {
     "id": "profikz_49348",
@@ -23684,20 +23694,6 @@
       "data/images/adilet/adilet_crush-2/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_crush-2/1_thumb.webp"
-  },
-  {
-    "id": "adilet_crush-3",
-    "name": "CRUSH 3",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/crush-3/",
-    "image": "data/images/adilet/adilet_crush-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_crush-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_crush-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_crush-3/1_thumb.webp"
   },
   {
     "id": "adilet_crush-4",
