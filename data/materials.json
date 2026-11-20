@@ -23696,6 +23696,20 @@
     "thumb": "data/images/adilet/adilet_crush-2/1_thumb.webp"
   },
   {
+    "id": "adilet_crush-3",
+    "name": "CRUSH 3",
+    "category": "Ткани: Велюр",
+    "url": "https://adilet.net/all/crush-3/",
+    "image": "data/images/adilet/adilet_crush-3/1.webp",
+    "images": [
+      "data/images/adilet/adilet_crush-3/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_crush-3/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_crush-3/1_thumb.webp"
+  },
+  {
     "id": "adilet_crush-4",
     "name": "CRUSH 4",
     "category": "Ткани: Велюр",
