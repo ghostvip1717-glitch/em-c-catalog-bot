@@ -17016,20 +17016,6 @@
     "thumb": "data/images/adilet/adilet_ion-in-07-shedar/1_thumb.webp"
   },
   {
-    "id": "adilet_ion-in-11-shaula",
-    "name": "ION IN-11 Шаула",
-    "category": "ПВХ плёнка: Texture",
-    "url": "https://adilet.net/all/ion-in-11-shaula/",
-    "image": "data/images/adilet/adilet_ion-in-11-shaula/1.webp",
-    "images": [
-      "data/images/adilet/adilet_ion-in-11-shaula/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_ion-in-11-shaula/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_ion-in-11-shaula/1_thumb.webp"
-  },
-  {
     "id": "adilet_kombat-mk-01",
     "name": "KOMBAT MK-01 Барака",
     "category": "ПВХ плёнка: Texture",
@@ -17632,20 +17618,6 @@
     "thumb": "data/images/adilet/adilet_be-01-ancio/1_thumb.webp"
   },
   {
-    "id": "adilet_be-04-kapri",
-    "name": "BELLA BE-04 Капри",
-    "category": "ПВХ плёнка: Wood",
-    "url": "https://adilet.net/all/be-04-kapri/",
-    "image": "data/images/adilet/adilet_be-04-kapri/1.webp",
-    "images": [
-      "data/images/adilet/adilet_be-04-kapri/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_be-04-kapri/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_be-04-kapri/1_thumb.webp"
-  },
-  {
     "id": "adilet_be-05-paviya",
     "name": "BELLA BE-05 Павия",
     "category": "ПВХ плёнка: Wood",
@@ -17658,34 +17630,6 @@
       "data/images/adilet/adilet_be-05-paviya/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_be-05-paviya/1_thumb.webp"
-  },
-  {
-    "id": "adilet_be-07-ustika",
-    "name": "BELLA BE-07 Устика",
-    "category": "ПВХ плёнка: Wood",
-    "url": "https://adilet.net/all/be-07-ustika/",
-    "image": "data/images/adilet/adilet_be-07-ustika/1.webp",
-    "images": [
-      "data/images/adilet/adilet_be-07-ustika/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_be-07-ustika/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_be-07-ustika/1_thumb.webp"
-  },
-  {
-    "id": "adilet_be-08-fodzha",
-    "name": "BELLA BE-08 Фоджа",
-    "category": "ПВХ плёнка: Wood",
-    "url": "https://adilet.net/all/be-08-fodzha/",
-    "image": "data/images/adilet/adilet_be-08-fodzha/1.webp",
-    "images": [
-      "data/images/adilet/adilet_be-08-fodzha/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_be-08-fodzha/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_be-08-fodzha/1_thumb.webp"
   },
   {
     "id": "adilet_deep-wood-dw-001-amarant",
@@ -17714,20 +17658,6 @@
       "data/images/adilet/adilet_deep-wood-dw-002-lipa/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_deep-wood-dw-002-lipa/1_thumb.webp"
-  },
-  {
-    "id": "adilet_deep-wood-dw-004-topol",
-    "name": "DEEP WOOD DW-004 Тополь",
-    "category": "ПВХ плёнка: Wood",
-    "url": "https://adilet.net/all/deep-wood-dw-004-topol/",
-    "image": "data/images/adilet/adilet_deep-wood-dw-004-topol/1.webp",
-    "images": [
-      "data/images/adilet/adilet_deep-wood-dw-004-topol/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_deep-wood-dw-004-topol/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_deep-wood-dw-004-topol/1_thumb.webp"
   },
   {
     "id": "adilet_deep-wood-dw-010-tis",
@@ -17952,20 +17882,6 @@
       "data/images/adilet/adilet_rift-rf-02-afar/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_rift-rf-02-afar/1_thumb.webp"
-  },
-  {
-    "id": "adilet_rift-rf-03-garda",
-    "name": "RIFT RF-03 Гарда",
-    "category": "ПВХ плёнка: Wood",
-    "url": "https://adilet.net/all/rift-rf-03-garda/",
-    "image": "data/images/adilet/adilet_rift-rf-03-garda/1.webp",
-    "images": [
-      "data/images/adilet/adilet_rift-rf-03-garda/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_rift-rf-03-garda/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_rift-rf-03-garda/1_thumb.webp"
   },
   {
     "id": "adilet_rift-rf-04-ghor",
