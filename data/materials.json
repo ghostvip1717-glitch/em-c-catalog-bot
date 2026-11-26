@@ -15585,7 +15585,7 @@
     "id": "kira_338886520474",
     "name": "Дуб Крафт Золотой мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog1/tproduct/338886520474-dub-kraft-zolotoi-mat",
+    "url": "https://kira-group.kz/pvccatalog/tproduct/338886520474-dub-kraft-zolotoi-mat",
     "image": "data/images/kira/kira_338886520474/1.webp",
     "images": [
       "data/images/kira/kira_338886520474/1.webp",
@@ -16001,7 +16001,7 @@
     "id": "kira_544575929844",
     "name": "Орех Пекан медовый стронг мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog1/tproduct/544575929844-oreh-pekan-medovii-strong-mat",
+    "url": "https://kira-group.kz/pvccatalog/tproduct/544575929844-oreh-pekan-medovii-strong-mat",
     "image": "data/images/kira/kira_544575929844/1.webp",
     "images": [
       "data/images/kira/kira_544575929844/1.webp",
@@ -16017,7 +16017,7 @@
     "id": "kira_939668167164",
     "name": "Орех Пекан шоколад стронг мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog1/tproduct/939668167164-oreh-pekan-shokolad-strong-mat",
+    "url": "https://kira-group.kz/pvccatalog/tproduct/939668167164-oreh-pekan-shokolad-strong-mat",
     "image": "data/images/kira/kira_939668167164/1.webp",
     "images": [
       "data/images/kira/kira_939668167164/1.webp",
@@ -16097,7 +16097,7 @@
     "id": "kira_268964555724",
     "name": "Пит мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog1/tproduct/268964555724-pit-mat",
+    "url": "https://kira-group.kz/pvccatalog/tproduct/268964555724-pit-mat",
     "image": "data/images/kira/kira_268964555724/1.webp",
     "images": [
       "data/images/kira/kira_268964555724/1.webp",
@@ -16289,7 +16289,7 @@
     "id": "kira_635978444984",
     "name": "Сноу мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog1/tproduct/635978444984-snou-mat",
+    "url": "https://kira-group.kz/pvccatalog/tproduct/635978444984-snou-mat",
     "image": "data/images/kira/kira_635978444984/1.webp",
     "images": [
       "data/images/kira/kira_635978444984/1.webp",
@@ -16720,20 +16720,6 @@
       "data/images/adilet/adilet_a-007-aleksandrit/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_a-007-aleksandrit/1_thumb.webp"
-  },
-  {
-    "id": "adilet_a-008-sapfir",
-    "name": "AURA A-008 Сапфир",
-    "category": "ПВХ плёнка: Texture",
-    "url": "https://adilet.net/all/a-008-sapfir/",
-    "image": "data/images/adilet/adilet_a-008-sapfir/1.webp",
-    "images": [
-      "data/images/adilet/adilet_a-008-sapfir/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_a-008-sapfir/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_a-008-sapfir/1_thumb.webp"
   },
   {
     "id": "adilet_carbon-cbr-1-egret",
@@ -22758,20 +22744,6 @@
     "thumb": "data/images/adilet/adilet_aura-3/1_thumb.webp"
   },
   {
-    "id": "adilet_aura-4",
-    "name": "AURA 4",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/aura-4/",
-    "image": "data/images/adilet/adilet_aura-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_aura-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_aura-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_aura-4/1_thumb.webp"
-  },
-  {
     "id": "adilet_aura-5",
     "name": "AURA 5",
     "category": "Ткани: Велюр",
@@ -27882,20 +27854,6 @@
     "thumb": "data/images/adilet/adilet_gamma-1/1_thumb.webp"
   },
   {
-    "id": "adilet_gamma-2",
-    "name": "GAMMA 2",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/gamma-2/",
-    "image": "data/images/adilet/adilet_gamma-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_gamma-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_gamma-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_gamma-2/1_thumb.webp"
-  },
-  {
     "id": "adilet_gamma-3",
     "name": "GAMMA 3",
     "category": "Ткани: Искусственная замша",
@@ -27964,20 +27922,6 @@
       "data/images/adilet/adilet_gamma-7/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_gamma-7/1_thumb.webp"
-  },
-  {
-    "id": "adilet_gamma-8",
-    "name": "GAMMA 8",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/gamma-8/",
-    "image": "data/images/adilet/adilet_gamma-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_gamma-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_gamma-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_gamma-8/1_thumb.webp"
   },
   {
     "id": "adilet_gaudi-01",
@@ -28050,20 +27994,6 @@
     "thumb": "data/images/adilet/adilet_gaudi-05/1_thumb.webp"
   },
   {
-    "id": "adilet_loft-01",
-    "name": "LOFT 1",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/loft-01/",
-    "image": "data/images/adilet/adilet_loft-01/1.webp",
-    "images": [
-      "data/images/adilet/adilet_loft-01/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_loft-01/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_loft-01/1_thumb.webp"
-  },
-  {
     "id": "adilet_loft-02",
     "name": "LOFT 2",
     "category": "Ткани: Искусственная замша",
@@ -28132,20 +28062,6 @@
       "data/images/adilet/adilet_loft-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_loft-06/1_thumb.webp"
-  },
-  {
-    "id": "adilet_loft-07",
-    "name": "LOFT 7",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/loft-07/",
-    "image": "data/images/adilet/adilet_loft-07/1.webp",
-    "images": [
-      "data/images/adilet/adilet_loft-07/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_loft-07/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_loft-07/1_thumb.webp"
   },
   {
     "id": "adilet_avenir-plus-1",
@@ -29464,20 +29380,6 @@
     "thumb": "data/images/adilet/adilet_victoria-cream/1_thumb.webp"
   },
   {
-    "id": "adilet_victoria-orange",
-    "name": "VICTORIA ORANGE",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/victoria-orange/",
-    "image": "data/images/adilet/adilet_victoria-orange/1.webp",
-    "images": [
-      "data/images/adilet/adilet_victoria-orange/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_victoria-orange/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_victoria-orange/1_thumb.webp"
-  },
-  {
     "id": "adilet_victoria-white",
     "name": "VICTORIA WHITE",
     "category": "Ткани: Искусственная кожа",
@@ -29674,20 +29576,6 @@
     "thumb": "data/images/adilet/adilet_beta-5/1_thumb.webp"
   },
   {
-    "id": "adilet_beta-6",
-    "name": "BETA 6",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/beta-6/",
-    "image": "data/images/adilet/adilet_beta-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_beta-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_beta-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_beta-6/1_thumb.webp"
-  },
-  {
     "id": "adilet_beta-7",
     "name": "BETA 7",
     "category": "Ткани: Рогожка",
@@ -29756,20 +29644,6 @@
       "data/images/adilet/adilet_blik-3/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_blik-3/1_thumb.webp"
-  },
-  {
-    "id": "adilet_blik-4",
-    "name": "BLIK 4",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/blik-4/",
-    "image": "data/images/adilet/adilet_blik-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_blik-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_blik-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_blik-4/1_thumb.webp"
   },
   {
     "id": "adilet_blik-5",
@@ -29854,20 +29728,6 @@
       "data/images/adilet/adilet_chester-5/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_chester-5/1_thumb.webp"
-  },
-  {
-    "id": "adilet_chester-6",
-    "name": "CHESTER 6",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/chester-6/",
-    "image": "data/images/adilet/adilet_chester-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_chester-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_chester-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_chester-6/1_thumb.webp"
   },
   {
     "id": "adilet_chester-7",
@@ -29968,20 +29828,6 @@
     "thumb": "data/images/adilet/adilet_cuba-6/1_thumb.webp"
   },
   {
-    "id": "adilet_etro-01",
-    "name": "ETRO 01",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/etro-01/",
-    "image": "data/images/adilet/adilet_etro-01/1.webp",
-    "images": [
-      "data/images/adilet/adilet_etro-01/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_etro-01/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_etro-01/1_thumb.webp"
-  },
-  {
     "id": "adilet_etro-02",
     "name": "ETRO 02",
     "category": "Ткани: Рогожка",
@@ -30050,20 +29896,6 @@
       "data/images/adilet/adilet_etro-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_etro-06/1_thumb.webp"
-  },
-  {
-    "id": "adilet_etro-07",
-    "name": "ETRO 07",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/etro-07/",
-    "image": "data/images/adilet/adilet_etro-07/1.webp",
-    "images": [
-      "data/images/adilet/adilet_etro-07/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_etro-07/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_etro-07/1_thumb.webp"
   },
   {
     "id": "adilet_etro-08",
