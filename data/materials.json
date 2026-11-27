@@ -10540,20 +10540,6 @@
     "thumb": "data/images/emc/ldsp_belyy_0110_sm_2750_1830_16mm_gladkiy_igorevskiy_f_l/1_thumb.webp"
   },
   {
-    "id": "ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l",
-    "name": "ЛДСП Белый 0110 РЕ 2750*1830*16мм (шагрень) (Игоревский ф-л)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l.html",
-    "image": "data/images/emc/ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp",
-    "images": [
-      "data/images/emc/ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_belyy_0110_re_2750_1830_16mm_shagren_igorevskiy_f_l/1_thumb.webp"
-  },
-  {
     "id": "ldsp_belyy_loft_u_15_651070_110_lf",
     "name": "ЛДСП Белый Loft U 15-651070-110 LF",
     "category": "ЛДСП: Россия",
@@ -10846,20 +10832,6 @@
       "data/images/emc/ldsp_beton_816_ro_2_8_2_07_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_beton_816_ro_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_beton_layt_818_ro_2_8_2_07_16mm",
-    "name": "ЛДСП Бетон Лайт 818 РО 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_beton_layt_818_ro_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_beton_layt_818_ro_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_beton_layt_818_ro_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_beton_layt_818_ro_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_beton_layt_818_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_beton_norilskiy_snezhnyy_f_411_f01_2800kh2070kh16mm_std",
@@ -11238,20 +11210,6 @@
       "data/images/emc/ldsp_glinyanyy_seryy_s_096_re_2_8_2_07_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_glinyanyy_seryy_s_096_re_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_grafit_665_ro_2_8_2_07_16mm",
-    "name": "ЛДСП Графит 665 РО 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_grafit_665_ro_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_grafit_665_ro_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_grafit_665_ro_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_grafit_665_ro_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_grafit_665_ro_2_8_2_07_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_grafit_k_lmt",
@@ -12010,20 +11968,6 @@
     "thumb": "data/images/emc/ldsp_dub_novgorodskiy_pesochnyy_d_319_w04_2800kh2070kh16mm_std/1_thumb.webp"
   },
   {
-    "id": "ldsp_dub_provans_390_swn_2_8_2_07_16mm",
-    "name": "ЛДСП Дуб Прованс 390 SWN 2,8*2,07*16мм",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_provans_390_swn_2_8_2_07_16mm.html",
-    "image": "data/images/emc/ldsp_dub_provans_390_swn_2_8_2_07_16mm/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_provans_390_swn_2_8_2_07_16mm/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_provans_390_swn_2_8_2_07_16mm/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_provans_390_swn_2_8_2_07_16mm/1_thumb.webp"
-  },
-  {
     "id": "ldsp_dub_santana_5521_pw_2800_2070_16mm_ultradizayn",
     "name": "ЛДСП Дуб Сантана 5521 PW 2800*2070*16мм (Ультрадизайн)",
     "category": "ЛДСП: Россия",
@@ -12106,20 +12050,6 @@
       "data/images/emc/ldsp_dub_tango_g_705_sn_2800kh2070kh16mm_ultradizayn/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_tango_g_705_sn_2800kh2070kh16mm_ultradizayn/1_thumb.webp"
-  },
-  {
-    "id": "ldsp_dub_turin_svetlyy_ems",
-    "name": "ЛДСП Дуб Турин светлый (ЕМС)",
-    "category": "ЛДСП: Россия",
-    "url": "https://www.em-c.kz/catalog/ldsp_dub_turin_svetlyy_ems.html",
-    "image": "data/images/emc/ldsp_dub_turin_svetlyy_ems/1.webp",
-    "images": [
-      "data/images/emc/ldsp_dub_turin_svetlyy_ems/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/ldsp_dub_turin_svetlyy_ems/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/ldsp_dub_turin_svetlyy_ems/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_fokstrot_g_706_sn_2_8_2_07_16mm",
@@ -12218,6 +12148,34 @@
       "data/images/emc/ldsp_dub_shavinigan_u_31199_pr/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_dub_shavinigan_u_31199_pr/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm",
+    "name": "ЛДСП Дуб Экспресив Бронзовый К 090 PW 2,5*1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm.html",
+    "image": "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_ekspresiv_bronzovyy_k_090_pw_2_5_1_83_16mm/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn",
+    "name": "ЛДСП Дуб Экспрессив бронзовый К 090 PW 2500х1830х16мм (Ультрадизайн)",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn.html",
+    "image": "data/images/emc/ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn/1.webp",
+    "images": [
+      "data/images/emc/ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_dub_ekspressiv_bronzovyy_k_090_pw_2500kh1830kh16mm_ultradizayn/1_thumb.webp"
   },
   {
     "id": "ldsp_dub_elison_svetlyy_395_wml_2_8_2_07_16mm",
@@ -12918,6 +12876,20 @@
       "data/images/emc/ldsp_kashemir_5981_vs_2_50kh1_83_16mm/1_thumb.webp"
     ],
     "thumb": "data/images/emc/ldsp_kashemir_5981_vs_2_50kh1_83_16mm/1_thumb.webp"
+  },
+  {
+    "id": "ldsp_kashemir_5981_re_2_75kh1_83_16mm",
+    "name": "ЛДСП Кашемир 5981 РЕ 2,75х1,83 16мм",
+    "category": "ЛДСП: Россия",
+    "url": "https://www.em-c.kz/catalog/ldsp_kashemir_5981_re_2_75kh1_83_16mm.html",
+    "image": "data/images/emc/ldsp_kashemir_5981_re_2_75kh1_83_16mm/1.webp",
+    "images": [
+      "data/images/emc/ldsp_kashemir_5981_re_2_75kh1_83_16mm/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/ldsp_kashemir_5981_re_2_75kh1_83_16mm/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/ldsp_kashemir_5981_re_2_75kh1_83_16mm/1_thumb.webp"
   },
   {
     "id": "ldsp_kvarts_kolskiy_smolyanoy_f_407_f02_2800kh2070kh16mm_std_",
@@ -15585,7 +15557,7 @@
     "id": "kira_338886520474",
     "name": "Дуб Крафт Золотой мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/338886520474-dub-kraft-zolotoi-mat",
+    "url": "https://kira-group.kz/pvccatalog1/tproduct/338886520474-dub-kraft-zolotoi-mat",
     "image": "data/images/kira/kira_338886520474/1.webp",
     "images": [
       "data/images/kira/kira_338886520474/1.webp",
@@ -16001,7 +15973,7 @@
     "id": "kira_544575929844",
     "name": "Орех Пекан медовый стронг мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/544575929844-oreh-pekan-medovii-strong-mat",
+    "url": "https://kira-group.kz/pvccatalog1/tproduct/544575929844-oreh-pekan-medovii-strong-mat",
     "image": "data/images/kira/kira_544575929844/1.webp",
     "images": [
       "data/images/kira/kira_544575929844/1.webp",
@@ -16017,7 +15989,7 @@
     "id": "kira_939668167164",
     "name": "Орех Пекан шоколад стронг мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/939668167164-oreh-pekan-shokolad-strong-mat",
+    "url": "https://kira-group.kz/pvccatalog1/tproduct/939668167164-oreh-pekan-shokolad-strong-mat",
     "image": "data/images/kira/kira_939668167164/1.webp",
     "images": [
       "data/images/kira/kira_939668167164/1.webp",
@@ -16097,7 +16069,7 @@
     "id": "kira_268964555724",
     "name": "Пит мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/268964555724-pit-mat",
+    "url": "https://kira-group.kz/pvccatalog1/tproduct/268964555724-pit-mat",
     "image": "data/images/kira/kira_268964555724/1.webp",
     "images": [
       "data/images/kira/kira_268964555724/1.webp",
@@ -16289,7 +16261,7 @@
     "id": "kira_635978444984",
     "name": "Сноу мат.",
     "category": "ПВХ плёнка: KIRA Матовое",
-    "url": "https://kira-group.kz/pvccatalog/tproduct/635978444984-snou-mat",
+    "url": "https://kira-group.kz/pvccatalog1/tproduct/635978444984-snou-mat",
     "image": "data/images/kira/kira_635978444984/1.webp",
     "images": [
       "data/images/kira/kira_635978444984/1.webp",
@@ -19664,18 +19636,18 @@
     "thumb": "data/images/emc/veneto_svetlyy_246_gl_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
-    "id": "veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk",
-    "name": "Венето светлый 246SN, мат 3000*600*38 мм Столешница (ск)",
+    "id": "versal190_gl_4200_600_38_mm_stoleshnitsa_sk",
+    "name": "Версаль190, гл 4200*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk.html",
-    "image": "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1.webp",
+    "url": "https://www.em-c.kz/catalog/versal190_gl_4200_600_38_mm_stoleshnitsa_sk.html",
+    "image": "data/images/emc/versal190_gl_4200_600_38_mm_stoleshnitsa_sk/1.webp",
     "images": [
-      "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1.webp"
+      "data/images/emc/versal190_gl_4200_600_38_mm_stoleshnitsa_sk/1.webp"
     ],
     "thumbs": [
-      "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+      "data/images/emc/versal190_gl_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
     ],
-    "thumb": "data/images/emc/veneto_svetlyy_246sn_mat_3000_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
+    "thumb": "data/images/emc/versal190_gl_4200_600_38_mm_stoleshnitsa_sk/1_thumb.webp"
   },
   {
     "id": "vulkanicheskiy_pesok_216t_mat_3000_600_38_mm_stoleshnitsa_sk",
@@ -20040,20 +20012,6 @@
       "data/images/emc/dub_korsika_3852_pd_3050kh600kh38_mm_stoleshnitsa_kedr_3/1_thumb.webp"
     ],
     "thumb": "data/images/emc/dub_korsika_3852_pd_3050kh600kh38_mm_stoleshnitsa_kedr_3/1_thumb.webp"
-  },
-  {
-    "id": "dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u",
-    "name": "Дуб Крафт Табачный К004 BS 3050*600*38мм Столешница (У)",
-    "category": "Столешницы: Россия",
-    "url": "https://www.em-c.kz/catalog/dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u.html",
-    "image": "data/images/emc/dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u/1.webp",
-    "images": [
-      "data/images/emc/dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u/1.webp"
-    ],
-    "thumbs": [
-      "data/images/emc/dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
-    ],
-    "thumb": "data/images/emc/dub_kraft_tabachnyy_k004_bs_3050_600_38mm_stoleshnitsa_u/1_thumb.webp"
   },
   {
     "id": "dub_kraft_belyy_1001_s_3050kh600kh38_mm_stoleshnitsa_kedr_1",
@@ -22310,6 +22268,20 @@
     "thumb": "data/images/emc/chernyy_1113_g_3050_600_38mm_stoleshnitsa_dana_/1_thumb.webp"
   },
   {
+    "id": "chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk",
+    "name": "Черный тунис 295, гл 3000*600*28 мм Столешница (ск)",
+    "category": "Столешницы: Россия",
+    "url": "https://www.em-c.kz/catalog/chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk.html",
+    "image": "data/images/emc/chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk/1.webp",
+    "images": [
+      "data/images/emc/chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk/1.webp"
+    ],
+    "thumbs": [
+      "data/images/emc/chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
+    ],
+    "thumb": "data/images/emc/chernyy_tunis_295_gl_3000_600_28_mm_stoleshnitsa_sk/1_thumb.webp"
+  },
+  {
     "id": "chernyy_tunis_295_gl_4200_600_38_mm_stoleshnitsa_sk",
     "name": "Черный тунис 295, гл 4200*600*38 мм Столешница (ск)",
     "category": "Столешницы: Россия",
@@ -22742,6 +22714,20 @@
       "data/images/adilet/adilet_aura-3/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_aura-3/1_thumb.webp"
+  },
+  {
+    "id": "adilet_aura-4",
+    "name": "AURA 4",
+    "category": "Ткани: Велюр",
+    "url": "https://adilet.net/all/aura-4/",
+    "image": "data/images/adilet/adilet_aura-4/1.webp",
+    "images": [
+      "data/images/adilet/adilet_aura-4/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_aura-4/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_aura-4/1_thumb.webp"
   },
   {
     "id": "adilet_aura-5",
@@ -27854,6 +27840,20 @@
     "thumb": "data/images/adilet/adilet_gamma-1/1_thumb.webp"
   },
   {
+    "id": "adilet_gamma-2",
+    "name": "GAMMA 2",
+    "category": "Ткани: Искусственная замша",
+    "url": "https://adilet.net/all/gamma-2/",
+    "image": "data/images/adilet/adilet_gamma-2/1.webp",
+    "images": [
+      "data/images/adilet/adilet_gamma-2/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_gamma-2/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_gamma-2/1_thumb.webp"
+  },
+  {
     "id": "adilet_gamma-3",
     "name": "GAMMA 3",
     "category": "Ткани: Искусственная замша",
@@ -27922,6 +27922,20 @@
       "data/images/adilet/adilet_gamma-7/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_gamma-7/1_thumb.webp"
+  },
+  {
+    "id": "adilet_gamma-8",
+    "name": "GAMMA 8",
+    "category": "Ткани: Искусственная замша",
+    "url": "https://adilet.net/all/gamma-8/",
+    "image": "data/images/adilet/adilet_gamma-8/1.webp",
+    "images": [
+      "data/images/adilet/adilet_gamma-8/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_gamma-8/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_gamma-8/1_thumb.webp"
   },
   {
     "id": "adilet_gaudi-01",
@@ -27994,6 +28008,20 @@
     "thumb": "data/images/adilet/adilet_gaudi-05/1_thumb.webp"
   },
   {
+    "id": "adilet_loft-01",
+    "name": "LOFT 1",
+    "category": "Ткани: Искусственная замша",
+    "url": "https://adilet.net/all/loft-01/",
+    "image": "data/images/adilet/adilet_loft-01/1.webp",
+    "images": [
+      "data/images/adilet/adilet_loft-01/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_loft-01/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_loft-01/1_thumb.webp"
+  },
+  {
     "id": "adilet_loft-02",
     "name": "LOFT 2",
     "category": "Ткани: Искусственная замша",
@@ -28062,6 +28090,20 @@
       "data/images/adilet/adilet_loft-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_loft-06/1_thumb.webp"
+  },
+  {
+    "id": "adilet_loft-07",
+    "name": "LOFT 7",
+    "category": "Ткани: Искусственная замша",
+    "url": "https://adilet.net/all/loft-07/",
+    "image": "data/images/adilet/adilet_loft-07/1.webp",
+    "images": [
+      "data/images/adilet/adilet_loft-07/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_loft-07/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_loft-07/1_thumb.webp"
   },
   {
     "id": "adilet_avenir-plus-1",
@@ -29380,6 +29422,20 @@
     "thumb": "data/images/adilet/adilet_victoria-cream/1_thumb.webp"
   },
   {
+    "id": "adilet_victoria-orange",
+    "name": "VICTORIA ORANGE",
+    "category": "Ткани: Искусственная кожа",
+    "url": "https://adilet.net/all/victoria-orange/",
+    "image": "data/images/adilet/adilet_victoria-orange/1.webp",
+    "images": [
+      "data/images/adilet/adilet_victoria-orange/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_victoria-orange/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_victoria-orange/1_thumb.webp"
+  },
+  {
     "id": "adilet_victoria-white",
     "name": "VICTORIA WHITE",
     "category": "Ткани: Искусственная кожа",
@@ -29576,6 +29632,20 @@
     "thumb": "data/images/adilet/adilet_beta-5/1_thumb.webp"
   },
   {
+    "id": "adilet_beta-6",
+    "name": "BETA 6",
+    "category": "Ткани: Рогожка",
+    "url": "https://adilet.net/all/beta-6/",
+    "image": "data/images/adilet/adilet_beta-6/1.webp",
+    "images": [
+      "data/images/adilet/adilet_beta-6/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_beta-6/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_beta-6/1_thumb.webp"
+  },
+  {
     "id": "adilet_beta-7",
     "name": "BETA 7",
     "category": "Ткани: Рогожка",
@@ -29644,6 +29714,20 @@
       "data/images/adilet/adilet_blik-3/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_blik-3/1_thumb.webp"
+  },
+  {
+    "id": "adilet_blik-4",
+    "name": "BLIK 4",
+    "category": "Ткани: Рогожка",
+    "url": "https://adilet.net/all/blik-4/",
+    "image": "data/images/adilet/adilet_blik-4/1.webp",
+    "images": [
+      "data/images/adilet/adilet_blik-4/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_blik-4/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_blik-4/1_thumb.webp"
   },
   {
     "id": "adilet_blik-5",
@@ -29728,6 +29812,20 @@
       "data/images/adilet/adilet_chester-5/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_chester-5/1_thumb.webp"
+  },
+  {
+    "id": "adilet_chester-6",
+    "name": "CHESTER 6",
+    "category": "Ткани: Рогожка",
+    "url": "https://adilet.net/all/chester-6/",
+    "image": "data/images/adilet/adilet_chester-6/1.webp",
+    "images": [
+      "data/images/adilet/adilet_chester-6/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_chester-6/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_chester-6/1_thumb.webp"
   },
   {
     "id": "adilet_chester-7",
@@ -29828,6 +29926,20 @@
     "thumb": "data/images/adilet/adilet_cuba-6/1_thumb.webp"
   },
   {
+    "id": "adilet_etro-01",
+    "name": "ETRO 01",
+    "category": "Ткани: Рогожка",
+    "url": "https://adilet.net/all/etro-01/",
+    "image": "data/images/adilet/adilet_etro-01/1.webp",
+    "images": [
+      "data/images/adilet/adilet_etro-01/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_etro-01/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_etro-01/1_thumb.webp"
+  },
+  {
     "id": "adilet_etro-02",
     "name": "ETRO 02",
     "category": "Ткани: Рогожка",
@@ -29896,6 +30008,20 @@
       "data/images/adilet/adilet_etro-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_etro-06/1_thumb.webp"
+  },
+  {
+    "id": "adilet_etro-07",
+    "name": "ETRO 07",
+    "category": "Ткани: Рогожка",
+    "url": "https://adilet.net/all/etro-07/",
+    "image": "data/images/adilet/adilet_etro-07/1.webp",
+    "images": [
+      "data/images/adilet/adilet_etro-07/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_etro-07/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_etro-07/1_thumb.webp"
   },
   {
     "id": "adilet_etro-08",
