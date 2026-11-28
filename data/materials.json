@@ -16694,6 +16694,20 @@
     "thumb": "data/images/adilet/adilet_a-007-aleksandrit/1_thumb.webp"
   },
   {
+    "id": "adilet_a-008-sapfir",
+    "name": "AURA A-008 Сапфир",
+    "category": "ПВХ плёнка: Texture",
+    "url": "https://adilet.net/all/a-008-sapfir/",
+    "image": "data/images/adilet/adilet_a-008-sapfir/1.webp",
+    "images": [
+      "data/images/adilet/adilet_a-008-sapfir/1.webp"
+    ],
+    "thumbs": [
+      "data/images/adilet/adilet_a-008-sapfir/1_thumb.webp"
+    ],
+    "thumb": "data/images/adilet/adilet_a-008-sapfir/1_thumb.webp"
+  },
+  {
     "id": "adilet_carbon-cbr-1-egret",
     "name": "CARBON CBR-1 Эгрет",
     "category": "ПВХ плёнка: Texture",
@@ -25334,20 +25348,6 @@
     "thumb": "data/images/adilet/adilet_moon-1/1_thumb.webp"
   },
   {
-    "id": "adilet_moon-2",
-    "name": "MOON 2",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/moon-2/",
-    "image": "data/images/adilet/adilet_moon-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_moon-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_moon-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_moon-2/1_thumb.webp"
-  },
-  {
     "id": "adilet_moon-3",
     "name": "MOON 3",
     "category": "Ткани: Велюр",
@@ -25402,20 +25402,6 @@
       "data/images/adilet/adilet_moon-6/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_moon-6/1_thumb.webp"
-  },
-  {
-    "id": "adilet_moon-7",
-    "name": "MOON 7",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/moon-7/",
-    "image": "data/images/adilet/adilet_moon-7/1.webp",
-    "images": [
-      "data/images/adilet/adilet_moon-7/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_moon-7/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_moon-7/1_thumb.webp"
   },
   {
     "id": "adilet_moon-8",
@@ -25474,20 +25460,6 @@
     "thumb": "data/images/adilet/adilet_nord-3/1_thumb.webp"
   },
   {
-    "id": "adilet_nord-4",
-    "name": "NORD 4",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/nord-4/",
-    "image": "data/images/adilet/adilet_nord-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_nord-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_nord-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_nord-4/1_thumb.webp"
-  },
-  {
     "id": "adilet_nord-5",
     "name": "NORD 5",
     "category": "Ткани: Велюр",
@@ -25542,20 +25514,6 @@
       "data/images/adilet/adilet_nord-8/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_nord-8/1_thumb.webp"
-  },
-  {
-    "id": "adilet_olivia-1",
-    "name": "OLIVIA 1",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/olivia-1/",
-    "image": "data/images/adilet/adilet_olivia-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_olivia-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_olivia-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_olivia-1/1_thumb.webp"
   },
   {
     "id": "adilet_olivia-2",
@@ -25614,20 +25572,6 @@
     "thumb": "data/images/adilet/adilet_olivia-5/1_thumb.webp"
   },
   {
-    "id": "adilet_olivia-6",
-    "name": "OLIVIA 6",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/olivia-6/",
-    "image": "data/images/adilet/adilet_olivia-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_olivia-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_olivia-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_olivia-6/1_thumb.webp"
-  },
-  {
     "id": "adilet_olivia-7",
     "name": "OLIVIA 7",
     "category": "Ткани: Велюр",
@@ -25682,20 +25626,6 @@
       "data/images/adilet/adilet_olivia-com-3/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_olivia-com-3/1_thumb.webp"
-  },
-  {
-    "id": "adilet_olivia-com-4",
-    "name": "OLIVIA COM 4",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/olivia-com-4/",
-    "image": "data/images/adilet/adilet_olivia-com-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_olivia-com-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_olivia-com-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_olivia-com-4/1_thumb.webp"
   },
   {
     "id": "adilet_olivia-com-5",
@@ -25754,20 +25684,6 @@
     "thumb": "data/images/adilet/adilet_omega-01/1_thumb.webp"
   },
   {
-    "id": "adilet_omega-02",
-    "name": "OMEGA 02",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/omega-02/",
-    "image": "data/images/adilet/adilet_omega-02/1.webp",
-    "images": [
-      "data/images/adilet/adilet_omega-02/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_omega-02/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_omega-02/1_thumb.webp"
-  },
-  {
     "id": "adilet_omega-03",
     "name": "OMEGA 03",
     "category": "Ткани: Велюр",
@@ -25822,20 +25738,6 @@
       "data/images/adilet/adilet_omega-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_omega-06/1_thumb.webp"
-  },
-  {
-    "id": "adilet_omega-07",
-    "name": "OMEGA 07",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/omega-07/",
-    "image": "data/images/adilet/adilet_omega-07/1.webp",
-    "images": [
-      "data/images/adilet/adilet_omega-07/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_omega-07/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_omega-07/1_thumb.webp"
   },
   {
     "id": "adilet_onyx-01",
@@ -25894,20 +25796,6 @@
     "thumb": "data/images/adilet/adilet_onyx-04/1_thumb.webp"
   },
   {
-    "id": "adilet_onyx-05",
-    "name": "ONYX 05",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/onyx-05/",
-    "image": "data/images/adilet/adilet_onyx-05/1.webp",
-    "images": [
-      "data/images/adilet/adilet_onyx-05/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_onyx-05/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_onyx-05/1_thumb.webp"
-  },
-  {
     "id": "adilet_onyx-06",
     "name": "ONYX 06",
     "category": "Ткани: Велюр",
@@ -25950,20 +25838,6 @@
     "thumb": "data/images/adilet/adilet_onyx-08/1_thumb.webp"
   },
   {
-    "id": "adilet_polo-1",
-    "name": "POLO 1",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/polo-1/",
-    "image": "data/images/adilet/adilet_polo-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_polo-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_polo-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_polo-1/1_thumb.webp"
-  },
-  {
     "id": "adilet_polo-2",
     "name": "POLO 2",
     "category": "Ткани: Велюр",
@@ -26004,20 +25878,6 @@
       "data/images/adilet/adilet_polo-4/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_polo-4/1_thumb.webp"
-  },
-  {
-    "id": "adilet_polo-5",
-    "name": "POLO 5",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/polo-5/",
-    "image": "data/images/adilet/adilet_polo-5/1.webp",
-    "images": [
-      "data/images/adilet/adilet_polo-5/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_polo-5/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_polo-5/1_thumb.webp"
   },
   {
     "id": "adilet_polo-6",
@@ -26090,20 +25950,6 @@
     "thumb": "data/images/adilet/adilet_romeo2/1_thumb.webp"
   },
   {
-    "id": "adilet_romeo-3",
-    "name": "ROMEO 3",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/romeo-3/",
-    "image": "data/images/adilet/adilet_romeo-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_romeo-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_romeo-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_romeo-3/1_thumb.webp"
-  },
-  {
     "id": "adilet_romeo-4",
     "name": "ROMEO 4",
     "category": "Ткани: Велюр",
@@ -26160,20 +26006,6 @@
     "thumb": "data/images/adilet/adilet_romeo-7/1_thumb.webp"
   },
   {
-    "id": "adilet_romeo-8",
-    "name": "ROMEO 8",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/romeo-8/",
-    "image": "data/images/adilet/adilet_romeo-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_romeo-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_romeo-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_romeo-8/1_thumb.webp"
-  },
-  {
     "id": "adilet_shelby-01",
     "name": "SHELBY 01",
     "category": "Ткани: Велюр",
@@ -26200,20 +26032,6 @@
       "data/images/adilet/adilet_shelby-02/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_shelby-02/1_thumb.webp"
-  },
-  {
-    "id": "adilet_shelby-03",
-    "name": "SHELBY 03",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/shelby-03/",
-    "image": "data/images/adilet/adilet_shelby-03/1.webp",
-    "images": [
-      "data/images/adilet/adilet_shelby-03/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_shelby-03/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_shelby-03/1_thumb.webp"
   },
   {
     "id": "adilet_shelby-04",
@@ -26286,20 +26104,6 @@
     "thumb": "data/images/adilet/adilet_shelby-08/1_thumb.webp"
   },
   {
-    "id": "adilet_sofitel-3d-1",
-    "name": "SOFITEL 3D 1",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/sofitel-3d-1/",
-    "image": "data/images/adilet/adilet_sofitel-3d-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_sofitel-3d-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_sofitel-3d-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_sofitel-3d-1/1_thumb.webp"
-  },
-  {
     "id": "adilet_sofitel-3d-10",
     "name": "SOFITEL 3D 10",
     "category": "Ткани: Велюр",
@@ -26354,20 +26158,6 @@
       "data/images/adilet/adilet_sofitel-3d-8/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_sofitel-3d-8/1_thumb.webp"
-  },
-  {
-    "id": "adilet_sofitel-3d-9",
-    "name": "SOFITEL 3D 9",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/sofitel-3d-9/",
-    "image": "data/images/adilet/adilet_sofitel-3d-9/1.webp",
-    "images": [
-      "data/images/adilet/adilet_sofitel-3d-9/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_sofitel-3d-9/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_sofitel-3d-9/1_thumb.webp"
   },
   {
     "id": "adilet_sofitel-com-10",
@@ -26426,20 +26216,6 @@
     "thumb": "data/images/adilet/adilet_stream-29/1_thumb.webp"
   },
   {
-    "id": "adilet_stream-30",
-    "name": "STREAM 30",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/stream-30/",
-    "image": "data/images/adilet/adilet_stream-30/1.webp",
-    "images": [
-      "data/images/adilet/adilet_stream-30/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_stream-30/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_stream-30/1_thumb.webp"
-  },
-  {
     "id": "adilet_stream-31",
     "name": "STREAM 31",
     "category": "Ткани: Велюр",
@@ -26496,20 +26272,6 @@
     "thumb": "data/images/adilet/adilet_stream-38/1_thumb.webp"
   },
   {
-    "id": "adilet_stream-40",
-    "name": "STREAM 40",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/stream-40/",
-    "image": "data/images/adilet/adilet_stream-40/1.webp",
-    "images": [
-      "data/images/adilet/adilet_stream-40/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_stream-40/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_stream-40/1_thumb.webp"
-  },
-  {
     "id": "adilet_tayson-1",
     "name": "TAYSON 1",
     "category": "Ткани: Велюр",
@@ -26564,20 +26326,6 @@
       "data/images/adilet/adilet_tayson-3/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_tayson-3/1_thumb.webp"
-  },
-  {
-    "id": "adilet_tayson-4",
-    "name": "TAYSON 4",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/tayson-4/",
-    "image": "data/images/adilet/adilet_tayson-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_tayson-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_tayson-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_tayson-4/1_thumb.webp"
   },
   {
     "id": "adilet_tayson-5",
@@ -26650,20 +26398,6 @@
     "thumb": "data/images/adilet/adilet_teddy-pro-2/1_thumb.webp"
   },
   {
-    "id": "adilet_teddy-pro-3",
-    "name": "TEDDY PRO 3",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/teddy-pro-3/",
-    "image": "data/images/adilet/adilet_teddy-pro-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_teddy-pro-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_teddy-pro-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_teddy-pro-3/1_thumb.webp"
-  },
-  {
     "id": "adilet_teddy-pro-4",
     "name": "TEDDY PRO 4",
     "category": "Ткани: Велюр",
@@ -26718,20 +26452,6 @@
       "data/images/adilet/adilet_teddy-pro-7/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_teddy-pro-7/1_thumb.webp"
-  },
-  {
-    "id": "adilet_teddy-pro-9",
-    "name": "TEDDY PRO 9",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/teddy-pro-9/",
-    "image": "data/images/adilet/adilet_teddy-pro-9/1.webp",
-    "images": [
-      "data/images/adilet/adilet_teddy-pro-9/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_teddy-pro-9/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_teddy-pro-9/1_thumb.webp"
   },
   {
     "id": "adilet_tiza-1",
@@ -26860,20 +26580,6 @@
     "thumb": "data/images/adilet/adilet_ultra-05/1_thumb.webp"
   },
   {
-    "id": "adilet_ultra-06",
-    "name": "ULTRA 06",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/ultra-06/",
-    "image": "data/images/adilet/adilet_ultra-06/1.webp",
-    "images": [
-      "data/images/adilet/adilet_ultra-06/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_ultra-06/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_ultra-06/1_thumb.webp"
-  },
-  {
     "id": "adilet_ultra-07",
     "name": "ULTRA 07",
     "category": "Ткани: Велюр",
@@ -26928,20 +26634,6 @@
       "data/images/adilet/adilet_ultraloft-2/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_ultraloft-2/1_thumb.webp"
-  },
-  {
-    "id": "adilet_ultraloft-3",
-    "name": "ULTRALOFT 3",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/ultraloft-3/",
-    "image": "data/images/adilet/adilet_ultraloft-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_ultraloft-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_ultraloft-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_ultraloft-3/1_thumb.webp"
   },
   {
     "id": "adilet_ultraloft-4",
@@ -27210,20 +26902,6 @@
     "thumb": "data/images/adilet/adilet_veluta-lux-08/1_thumb.webp"
   },
   {
-    "id": "adilet_veluta-lux-09",
-    "name": "VELUTA LUX 09",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/veluta-lux-09/",
-    "image": "data/images/adilet/adilet_veluta-lux-09/1.webp",
-    "images": [
-      "data/images/adilet/adilet_veluta-lux-09/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_veluta-lux-09/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_veluta-lux-09/1_thumb.webp"
-  },
-  {
     "id": "adilet_veluta-lux-10",
     "name": "VELUTA LUX 10",
     "category": "Ткани: Велюр",
@@ -27336,20 +27014,6 @@
     "thumb": "data/images/adilet/adilet_velvet-7/1_thumb.webp"
   },
   {
-    "id": "adilet_velvet-8",
-    "name": "VELVET 8",
-    "category": "Ткани: Велюр",
-    "url": "https://adilet.net/all/velvet-8/",
-    "image": "data/images/adilet/adilet_velvet-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_velvet-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_velvet-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_velvet-8/1_thumb.webp"
-  },
-  {
     "id": "adilet_bentli-01",
     "name": "BENTLI 01",
     "category": "Ткани: Искусственная замша",
@@ -27376,20 +27040,6 @@
       "data/images/adilet/adilet_bentli-02/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_bentli-02/1_thumb.webp"
-  },
-  {
-    "id": "adilet_bentli-03",
-    "name": "BENTLI 03",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/bentli-03/",
-    "image": "data/images/adilet/adilet_bentli-03/1.webp",
-    "images": [
-      "data/images/adilet/adilet_bentli-03/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_bentli-03/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_bentli-03/1_thumb.webp"
   },
   {
     "id": "adilet_bentli-04",
@@ -27630,20 +27280,6 @@
     "thumb": "data/images/adilet/adilet_dakar-7/1_thumb.webp"
   },
   {
-    "id": "adilet_dakar-8",
-    "name": "DAKAR 8",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/dakar-8/",
-    "image": "data/images/adilet/adilet_dakar-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_dakar-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_dakar-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_dakar-8/1_thumb.webp"
-  },
-  {
     "id": "adilet_enzo-1",
     "name": "ENZO 1",
     "category": "Ткани: Искусственная замша",
@@ -27698,20 +27334,6 @@
       "data/images/adilet/adilet_enzo-4/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_enzo-4/1_thumb.webp"
-  },
-  {
-    "id": "adilet_enzo-5",
-    "name": "ENZO 5",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/enzo-5/",
-    "image": "data/images/adilet/adilet_enzo-5/1.webp",
-    "images": [
-      "data/images/adilet/adilet_enzo-5/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_enzo-5/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_enzo-5/1_thumb.webp"
   },
   {
     "id": "adilet_enzo-6",
@@ -27838,20 +27460,6 @@
       "data/images/adilet/adilet_gamma-1/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_gamma-1/1_thumb.webp"
-  },
-  {
-    "id": "adilet_gamma-2",
-    "name": "GAMMA 2",
-    "category": "Ткани: Искусственная замша",
-    "url": "https://adilet.net/all/gamma-2/",
-    "image": "data/images/adilet/adilet_gamma-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_gamma-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_gamma-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_gamma-2/1_thumb.webp"
   },
   {
     "id": "adilet_gamma-3",
@@ -28160,20 +27768,6 @@
       "data/images/adilet/adilet_avenir-plus-19/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_avenir-plus-19/1_thumb.webp"
-  },
-  {
-    "id": "adilet_avenir-plus-25",
-    "name": "AVENIR PLUS 25",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/avenir-plus-25/",
-    "image": "data/images/adilet/adilet_avenir-plus-25/1.webp",
-    "images": [
-      "data/images/adilet/adilet_avenir-plus-25/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_avenir-plus-25/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_avenir-plus-25/1_thumb.webp"
   },
   {
     "id": "adilet_avenir-plus-28",
@@ -28526,20 +28120,6 @@
     "thumb": "data/images/adilet/adilet_como-2/1_thumb.webp"
   },
   {
-    "id": "adilet_como-3",
-    "name": "COMO 3",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/como-3/",
-    "image": "data/images/adilet/adilet_como-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_como-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_como-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_como-3/1_thumb.webp"
-  },
-  {
     "id": "adilet_como-4",
     "name": "COMO 4",
     "category": "Ткани: Искусственная кожа",
@@ -28594,20 +28174,6 @@
       "data/images/adilet/adilet_como-7/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_como-7/1_thumb.webp"
-  },
-  {
-    "id": "adilet_como-8",
-    "name": "COMO 8",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/como-8/",
-    "image": "data/images/adilet/adilet_como-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_como-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_como-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_como-8/1_thumb.webp"
   },
   {
     "id": "adilet_dallas-amber",
@@ -28764,20 +28330,6 @@
     "thumb": "data/images/adilet/adilet_elite-lux-5/1_thumb.webp"
   },
   {
-    "id": "adilet_elite-lux-6",
-    "name": "ELITE LUX 6",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/elite-lux-6/",
-    "image": "data/images/adilet/adilet_elite-lux-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_elite-lux-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_elite-lux-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_elite-lux-6/1_thumb.webp"
-  },
-  {
     "id": "adilet_elite-lux-7",
     "name": "ELITE LUX 7",
     "category": "Ткани: Искусственная кожа",
@@ -28832,20 +28384,6 @@
       "data/images/adilet/adilet_megapolis-2/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_megapolis-2/1_thumb.webp"
-  },
-  {
-    "id": "adilet_megapolis-3",
-    "name": "MEGAPOLIS 3",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/megapolis-3/",
-    "image": "data/images/adilet/adilet_megapolis-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_megapolis-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_megapolis-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_megapolis-3/1_thumb.webp"
   },
   {
     "id": "adilet_megapolis-4",
@@ -28918,20 +28456,6 @@
     "thumb": "data/images/adilet/adilet_milan-2/1_thumb.webp"
   },
   {
-    "id": "adilet_milan-3",
-    "name": "MILAN 3",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/milan-3/",
-    "image": "data/images/adilet/adilet_milan-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_milan-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_milan-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_milan-3/1_thumb.webp"
-  },
-  {
     "id": "adilet_milan-4",
     "name": "MILAN 4",
     "category": "Ткани: Искусственная кожа",
@@ -28986,20 +28510,6 @@
       "data/images/adilet/adilet_milan-7/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_milan-7/1_thumb.webp"
-  },
-  {
-    "id": "adilet_milan-8",
-    "name": "MILAN 8",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/milan-8/",
-    "image": "data/images/adilet/adilet_milan-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_milan-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_milan-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_milan-8/1_thumb.webp"
   },
   {
     "id": "adilet_only-white-01",
@@ -29058,20 +28568,6 @@
     "thumb": "data/images/adilet/adilet_rich-12/1_thumb.webp"
   },
   {
-    "id": "adilet_rich-13",
-    "name": "RICH 13",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/rich-13/",
-    "image": "data/images/adilet/adilet_rich-13/1.webp",
-    "images": [
-      "data/images/adilet/adilet_rich-13/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_rich-13/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_rich-13/1_thumb.webp"
-  },
-  {
     "id": "adilet_rich-14",
     "name": "RICH 14",
     "category": "Ткани: Искусственная кожа",
@@ -29126,20 +28622,6 @@
       "data/images/adilet/adilet_rich-17/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_rich-17/1_thumb.webp"
-  },
-  {
-    "id": "adilet_soft-1",
-    "name": "SOFT 1",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/soft-1/",
-    "image": "data/images/adilet/adilet_soft-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_soft-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_soft-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_soft-1/1_thumb.webp"
   },
   {
     "id": "adilet_soft-2",
@@ -29198,20 +28680,6 @@
     "thumb": "data/images/adilet/adilet_soft-5/1_thumb.webp"
   },
   {
-    "id": "adilet_soft-6",
-    "name": "SOFT 6",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/soft-6/",
-    "image": "data/images/adilet/adilet_soft-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_soft-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_soft-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_soft-6/1_thumb.webp"
-  },
-  {
     "id": "adilet_soft-7",
     "name": "SOFT 7",
     "category": "Ткани: Искусственная кожа",
@@ -29266,20 +28734,6 @@
       "data/images/adilet/adilet_soft-touch-2/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_soft-touch-2/1_thumb.webp"
-  },
-  {
-    "id": "adilet_soft-touch-3",
-    "name": "SOFT TOUCH 3",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/soft-touch-3/",
-    "image": "data/images/adilet/adilet_soft-touch-3/1.webp",
-    "images": [
-      "data/images/adilet/adilet_soft-touch-3/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_soft-touch-3/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_soft-touch-3/1_thumb.webp"
   },
   {
     "id": "adilet_soft-touch-4",
@@ -29366,20 +28820,6 @@
     "thumb": "data/images/adilet/adilet_victoria-black/1_thumb.webp"
   },
   {
-    "id": "adilet_victoria-bordo",
-    "name": "VICTORIA BORDO",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/victoria-bordo/",
-    "image": "data/images/adilet/adilet_victoria-bordo/1.webp",
-    "images": [
-      "data/images/adilet/adilet_victoria-bordo/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_victoria-bordo/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_victoria-bordo/1_thumb.webp"
-  },
-  {
     "id": "adilet_victoria-brown",
     "name": "VICTORIA BROWN",
     "category": "Ткани: Искусственная кожа",
@@ -29464,20 +28904,6 @@
     "thumb": "data/images/adilet/adilet_zeekr-1/1_thumb.webp"
   },
   {
-    "id": "adilet_zeekr-2",
-    "name": "ZEEKR 2",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/zeekr-2/",
-    "image": "data/images/adilet/adilet_zeekr-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_zeekr-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_zeekr-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_zeekr-2/1_thumb.webp"
-  },
-  {
     "id": "adilet_zeekr-3",
     "name": "ZEEKR 3",
     "category": "Ткани: Искусственная кожа",
@@ -29532,20 +28958,6 @@
       "data/images/adilet/adilet_zeekr-6/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_zeekr-6/1_thumb.webp"
-  },
-  {
-    "id": "adilet_zeekr-7",
-    "name": "ZEEKR 7",
-    "category": "Ткани: Искусственная кожа",
-    "url": "https://adilet.net/all/zeekr-7/",
-    "image": "data/images/adilet/adilet_zeekr-7/1.webp",
-    "images": [
-      "data/images/adilet/adilet_zeekr-7/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_zeekr-7/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_zeekr-7/1_thumb.webp"
   },
   {
     "id": "adilet_zeekr-8",
@@ -29758,20 +29170,6 @@
     "thumb": "data/images/adilet/adilet_chester-1/1_thumb.webp"
   },
   {
-    "id": "adilet_chester-2",
-    "name": "CHESTER 2",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/chester-2/",
-    "image": "data/images/adilet/adilet_chester-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_chester-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_chester-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_chester-2/1_thumb.webp"
-  },
-  {
     "id": "adilet_chester-3",
     "name": "CHESTER 3",
     "category": "Ткани: Рогожка",
@@ -29826,20 +29224,6 @@
       "data/images/adilet/adilet_chester-6/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_chester-6/1_thumb.webp"
-  },
-  {
-    "id": "adilet_chester-7",
-    "name": "CHESTER 7",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/chester-7/",
-    "image": "data/images/adilet/adilet_chester-7/1.webp",
-    "images": [
-      "data/images/adilet/adilet_chester-7/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_chester-7/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_chester-7/1_thumb.webp"
   },
   {
     "id": "adilet_cuba-1",
@@ -30122,20 +29506,6 @@
     "thumb": "data/images/adilet/adilet_kln-05/1_thumb.webp"
   },
   {
-    "id": "adilet_kln-06",
-    "name": "KOLN 6",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/kln-06/",
-    "image": "data/images/adilet/adilet_kln-06/1.webp",
-    "images": [
-      "data/images/adilet/adilet_kln-06/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_kln-06/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_kln-06/1_thumb.webp"
-  },
-  {
     "id": "adilet_koln-9",
     "name": "KOLN 9",
     "category": "Ткани: Рогожка",
@@ -30176,20 +29546,6 @@
       "data/images/adilet/adilet_lester-16/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_lester-16/1_thumb.webp"
-  },
-  {
-    "id": "adilet_lester-17",
-    "name": "LESTER 17",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/lester-17/",
-    "image": "data/images/adilet/adilet_lester-17/1.webp",
-    "images": [
-      "data/images/adilet/adilet_lester-17/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_lester-17/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_lester-17/1_thumb.webp"
   },
   {
     "id": "adilet_lester-3",
@@ -30246,20 +29602,6 @@
       "data/images/adilet/adilet_lester-8/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_lester-8/1_thumb.webp"
-  },
-  {
-    "id": "adilet_lester-9",
-    "name": "LESTER 9",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/lester-9/",
-    "image": "data/images/adilet/adilet_lester-9/1.webp",
-    "images": [
-      "data/images/adilet/adilet_lester-9/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_lester-9/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_lester-9/1_thumb.webp"
   },
   {
     "id": "adilet_loner-1",
@@ -30346,20 +29688,6 @@
     "thumb": "data/images/adilet/adilet_loner-7/1_thumb.webp"
   },
   {
-    "id": "adilet_loner-8",
-    "name": "LONER 8",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/loner-8/",
-    "image": "data/images/adilet/adilet_loner-8/1.webp",
-    "images": [
-      "data/images/adilet/adilet_loner-8/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_loner-8/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_loner-8/1_thumb.webp"
-  },
-  {
     "id": "adilet_marketplace-r-1",
     "name": "MARKETPLACE R 1",
     "category": "Ткани: Рогожка",
@@ -30416,20 +29744,6 @@
     "thumb": "data/images/adilet/adilet_marketplace-r-4/1_thumb.webp"
   },
   {
-    "id": "adilet_marketplace-r-5",
-    "name": "MARKETPLACE R 5",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/marketplace-r-5/",
-    "image": "data/images/adilet/adilet_marketplace-r-5/1.webp",
-    "images": [
-      "data/images/adilet/adilet_marketplace-r-5/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_marketplace-r-5/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_marketplace-r-5/1_thumb.webp"
-  },
-  {
     "id": "adilet_marketplace-r-6",
     "name": "MARKETPLACE R 6",
     "category": "Ткани: Рогожка",
@@ -30484,20 +29798,6 @@
       "data/images/adilet/adilet_matrix-1/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_matrix-1/1_thumb.webp"
-  },
-  {
-    "id": "adilet_matrix-2",
-    "name": "MATRIX 2",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/matrix-2/",
-    "image": "data/images/adilet/adilet_matrix-2/1.webp",
-    "images": [
-      "data/images/adilet/adilet_matrix-2/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_matrix-2/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_matrix-2/1_thumb.webp"
   },
   {
     "id": "adilet_matrix-3",
@@ -30570,20 +29870,6 @@
     "thumb": "data/images/adilet/adilet_matrix-7/1_thumb.webp"
   },
   {
-    "id": "adilet_miami-1",
-    "name": "MIAMI 1",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/miami-1/",
-    "image": "data/images/adilet/adilet_miami-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_miami-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_miami-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_miami-1/1_thumb.webp"
-  },
-  {
     "id": "adilet_miami-2",
     "name": "MIAMI 2",
     "category": "Ткани: Рогожка",
@@ -30638,20 +29924,6 @@
       "data/images/adilet/adilet_miami-5/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_miami-5/1_thumb.webp"
-  },
-  {
-    "id": "adilet_miami-6",
-    "name": "MIAMI 6",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/miami-6/",
-    "image": "data/images/adilet/adilet_miami-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_miami-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_miami-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_miami-6/1_thumb.webp"
   },
   {
     "id": "adilet_monaco-01",
@@ -30710,20 +29982,6 @@
     "thumb": "data/images/adilet/adilet_monaco-04/1_thumb.webp"
   },
   {
-    "id": "adilet_monaco-05",
-    "name": "MONACO 05",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/monaco-05/",
-    "image": "data/images/adilet/adilet_monaco-05/1.webp",
-    "images": [
-      "data/images/adilet/adilet_monaco-05/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_monaco-05/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_monaco-05/1_thumb.webp"
-  },
-  {
     "id": "adilet_monaco-06",
     "name": "MONACO 06",
     "category": "Ткани: Рогожка",
@@ -30780,20 +30038,6 @@
     "thumb": "data/images/adilet/adilet_next-01/1_thumb.webp"
   },
   {
-    "id": "adilet_next-02",
-    "name": "NEXT 02",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/next-02/",
-    "image": "data/images/adilet/adilet_next-02/1.webp",
-    "images": [
-      "data/images/adilet/adilet_next-02/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_next-02/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_next-02/1_thumb.webp"
-  },
-  {
     "id": "adilet_next-03",
     "name": "NEXT 03",
     "category": "Ткани: Рогожка",
@@ -30848,20 +30092,6 @@
       "data/images/adilet/adilet_next-06/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_next-06/1_thumb.webp"
-  },
-  {
-    "id": "adilet_next-07",
-    "name": "NEXT 07",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/next-07/",
-    "image": "data/images/adilet/adilet_next-07/1.webp",
-    "images": [
-      "data/images/adilet/adilet_next-07/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_next-07/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_next-07/1_thumb.webp"
   },
   {
     "id": "adilet_next-08",
@@ -30962,20 +30192,6 @@
     "thumb": "data/images/adilet/adilet_nova-06/1_thumb.webp"
   },
   {
-    "id": "adilet_nova-07",
-    "name": "NOVA 07",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/nova-07/",
-    "image": "data/images/adilet/adilet_nova-07/1.webp",
-    "images": [
-      "data/images/adilet/adilet_nova-07/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_nova-07/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_nova-07/1_thumb.webp"
-  },
-  {
     "id": "adilet_nova-08",
     "name": "NOVA 08",
     "category": "Ткани: Рогожка",
@@ -31030,20 +30246,6 @@
       "data/images/adilet/adilet_pixel-03/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_pixel-03/1_thumb.webp"
-  },
-  {
-    "id": "adilet_pixel-04",
-    "name": "PIXEL 04",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/pixel-04/",
-    "image": "data/images/adilet/adilet_pixel-04/1.webp",
-    "images": [
-      "data/images/adilet/adilet_pixel-04/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_pixel-04/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_pixel-04/1_thumb.webp"
   },
   {
     "id": "adilet_pixel-05",
@@ -31142,20 +30344,6 @@
       "data/images/adilet/adilet_quantum-2/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_quantum-2/1_thumb.webp"
-  },
-  {
-    "id": "adilet_quantum-48",
-    "name": "QUANTUM 48",
-    "category": "Ткани: Рогожка",
-    "url": "https://adilet.net/all/quantum-48/",
-    "image": "data/images/adilet/adilet_quantum-48/1.webp",
-    "images": [
-      "data/images/adilet/adilet_quantum-48/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_quantum-48/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_quantum-48/1_thumb.webp"
   },
   {
     "id": "adilet_quantum-5",
@@ -31858,20 +31046,6 @@
     "thumb": "data/images/adilet/adilet_chiron-6/1_thumb.webp"
   },
   {
-    "id": "adilet_chiron-7",
-    "name": "CHIRON 7",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/chiron-7/",
-    "image": "data/images/adilet/adilet_chiron-7/1.webp",
-    "images": [
-      "data/images/adilet/adilet_chiron-7/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_chiron-7/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_chiron-7/1_thumb.webp"
-  },
-  {
     "id": "adilet_chiron-8",
     "name": "CHIRON 8",
     "category": "Ткани: Шенилл",
@@ -31928,20 +31102,6 @@
     "thumb": "data/images/adilet/adilet_minotti-3/1_thumb.webp"
   },
   {
-    "id": "adilet_minotti-4",
-    "name": "MINOTTI 4",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/minotti-4/",
-    "image": "data/images/adilet/adilet_minotti-4/1.webp",
-    "images": [
-      "data/images/adilet/adilet_minotti-4/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_minotti-4/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_minotti-4/1_thumb.webp"
-  },
-  {
     "id": "adilet_minotti-5",
     "name": "MINOTTI 5",
     "category": "Ткани: Шенилл",
@@ -31996,20 +31156,6 @@
       "data/images/adilet/adilet_minotti-8/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_minotti-8/1_thumb.webp"
-  },
-  {
-    "id": "adilet_phantom-1",
-    "name": "PHANTOM 1",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/phantom-1/",
-    "image": "data/images/adilet/adilet_phantom-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_phantom-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_phantom-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_phantom-1/1_thumb.webp"
   },
   {
     "id": "adilet_phantom-2",
@@ -32334,20 +31480,6 @@
     "thumb": "data/images/adilet/adilet_sky-8/1_thumb.webp"
   },
   {
-    "id": "adilet_slamet-1",
-    "name": "SLAMET 1",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/slamet-1/",
-    "image": "data/images/adilet/adilet_slamet-1/1.webp",
-    "images": [
-      "data/images/adilet/adilet_slamet-1/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_slamet-1/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_slamet-1/1_thumb.webp"
-  },
-  {
     "id": "adilet_slamet-14",
     "name": "SLAMET 14",
     "category": "Ткани: Шенилл",
@@ -32418,20 +31550,6 @@
     "thumb": "data/images/adilet/adilet_slamet-5/1_thumb.webp"
   },
   {
-    "id": "adilet_slamet-6",
-    "name": "SLAMET 6",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/slamet-6/",
-    "image": "data/images/adilet/adilet_slamet-6/1.webp",
-    "images": [
-      "data/images/adilet/adilet_slamet-6/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_slamet-6/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_slamet-6/1_thumb.webp"
-  },
-  {
     "id": "adilet_slamet-7",
     "name": "SLAMET 7",
     "category": "Ткани: Шенилл",
@@ -32500,20 +31618,6 @@
       "data/images/adilet/adilet_storm-4/1_thumb.webp"
     ],
     "thumb": "data/images/adilet/adilet_storm-4/1_thumb.webp"
-  },
-  {
-    "id": "adilet_storm-5",
-    "name": "STORM 5",
-    "category": "Ткани: Шенилл",
-    "url": "https://adilet.net/all/storm-5/",
-    "image": "data/images/adilet/adilet_storm-5/1.webp",
-    "images": [
-      "data/images/adilet/adilet_storm-5/1.webp"
-    ],
-    "thumbs": [
-      "data/images/adilet/adilet_storm-5/1_thumb.webp"
-    ],
-    "thumb": "data/images/adilet/adilet_storm-5/1_thumb.webp"
   },
   {
     "id": "adilet_storm-6",
